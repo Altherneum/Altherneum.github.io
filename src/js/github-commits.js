@@ -1,7 +1,7 @@
 (async function () {
     await getCommits(3, ".github");
-    await getCommits(3, "Altherneum.github.io");
     await getCommits(3, "bot");
+    await getCommits(3, "Altherneum.github.io");
     await getCommits(3, "server");
     await getCommits(3, "plugin");
     await getCommits(3, "resourcePack");
@@ -14,6 +14,7 @@ async function getCommits(amount, repoName) {
     var x = await gather('https://api.github.com/repos/Altherneum/' + repoName + '/commits');
     for (let i = 0; i < amount; i++) {
         var y = getValue(x[i], "sha");
+        if (y !== undefined){
         if (String(y).length >= 8) {
             var y2 = String(y.substring(0, 12) + "...");
         }
@@ -58,6 +59,7 @@ async function getCommits(amount, repoName) {
         newDiv.appendChild(link);
 
         div.appendChild(newDiv);
+        }
     }
     var title = div.querySelector("#title");
     title.textContent = repoName;
