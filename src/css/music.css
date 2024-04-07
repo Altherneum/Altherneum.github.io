@@ -1,0 +1,92 @@
+.music{
+    max-width: 100%;
+}
+
+.music>div>div>iframe {
+    background-color: var(--main-color-transparent);
+
+    display: block;
+    width: 70%;
+    height: 70%;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 24px;
+    margin-top: 24px;
+}
+
+.menu>button {
+    padding: 12px;
+    border-radius: 16px;
+    margin: 8px;
+}
+
+.menu>button>p.background-clip {
+    font-size: 1vw;
+}
+
+.music>div {
+    display: none;
+}
+
+.music>.topvid {
+    display: block;
+}
+
+.background-clip {
+    color: var(--text-color);
+    font-weight: bolder;
+    font-size: 5vw;
+    font-family: Arial;
+    max-width: 100%;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--text-color);
+    text-shadow: 0px 0px 20px var(--background-color);
+}
+
+.music>div>div>h1 {
+    text-align: center;
+    max-width: 95%;
+}
+
+.music>div>div>p {
+    text-align: center;
+    max-width: 90%;
+}
+
+.music>div>div {
+    display: inline-block;
+
+    background-color: var(--background-color-transparent);
+
+    border-radius: 16px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--main-color);
+
+    padding: 5px;
+    margin: 25px;
+}
+
+.music>div>h1 {
+    text-align: center;
+    padding-top: 12px;
+}
+
+@media screen and (max-width: 1024px) {
+.music>div>div{
+    width: 90%;
+    height: 100%;
+    }
+
+    .music>div>div>iframe {
+    }
+}
+
+@media screen and (min-width: 1024px) {
+.music>div>div{
+    min-width: 25%;
+    max-width: 25%;
+    }
+}

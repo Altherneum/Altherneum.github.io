@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>https://doc.Altherneum.fr/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://doc.Altherneum.fr/rss.rss</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+</url>
+
+<url>
+    <loc>https://doc.Altherneum.fr/sitemap.xml</loc>
+    <lastmod>2024-01-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+</url>
+
+<url>
+    <loc>https://doc.Altherneum.fr/robots.txt</loc>
+    <lastmod>2024-01-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+</url>
+
+</urlset>
+
+<!--
+https://www.sitemaps.org/protocol.html
+https://en.wikipedia.org/wiki/Robots.txt
+
+https://developers.google.com/search/docs/crawling-indexing/robots/robots_txt
+https://developers.google.com/search/docs/crawling-indexing/overview-google-crawlers?hl=fr
+
+https://developers.google.com/search/blog/2014/10/best-practices-for-xml-sitemaps-rssatom#:~:text=The%20important%20difference%20between%20these,recent%20updates%20to%20your%20site.
+
+https://www.xml-sitemaps.com/seo-tools.html
+https://www.xml-sitemaps.com/validate-xml-sitemap.html
+-->

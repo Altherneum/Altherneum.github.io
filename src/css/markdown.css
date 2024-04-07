@@ -1,0 +1,176 @@
+.markdowned>img {
+    max-width: 90%;
+}
+
+.markdowned>*:not(hr) {
+    display: inline;
+}
+
+.markdowned>a>* {
+    display: inline;
+}
+
+.markdowned {
+}
+
+.markdowned>*>p {
+    max-width: fit-content;
+    display: inline-block;
+    white-space: pre;
+}
+
+.markdowned>h1,.markdowned>h2,.markdowned>h3,.markdowned>h4,.markdowned>h5,.markdowned>h6 {
+    display: block;
+
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
+
+    padding-top: 10px;
+}
+
+#anchorList{
+    padding: 16px;
+    padding-left:5px;
+
+    display: grid;
+    
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--main-color);
+    border-radius: 16px;
+
+    position: sticky;
+
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    
+    opacity: 1;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transition: 1s;
+
+    z-index: 998;
+}
+
+#anchorList>#AnchorTitle{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#anchorList>#AnchorSummary{
+    display: contents;
+}
+
+#anchorList>#AnchorSummary>button {
+    margin-bottom: 15px;
+    border-radius: 16px;
+}
+
+#anchorList>#AnchorSummary>button>.svg {
+    max-height: 35px;
+    min-width: 100%;
+}
+
+#anchorList>#AnchorSummary>.check>.checkbox {
+    min-width: 100%;
+}
+
+#anchorList:hover,
+#anchorList:active
+{
+    z-index: 1001;
+}
+
+#anchorList>a{
+    transition: 0.5s;
+    font-size: small;
+    padding-bottom: 12px;
+}
+
+#fileData{
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 45px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    width: fit-content;
+    height: fit-content;
+}
+
+#fileData>.author, #fileData>.repo, #fileData>.commit{
+    display: inline-block;
+    padding: 10px;
+}
+
+#fileData>.repo>*{
+    display: inline-block;
+}
+
+#fileData>.repo>p {
+    margin: 6px;
+}
+
+#fileData>.author>.authorImage{
+    margin-bottom: -25px;
+    width: 50px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#fileData>a>button>img {
+    width: 25px;
+    height: 25px;
+
+    margin: 5px;
+}
+
+#fileData>a{
+    text-decoration: none;
+}
+
+#fileData>a>button {
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    padding-right: 15px;
+    background-color: var(--main-color-transparent);
+    display: flex;
+    align-items: center
+}
+
+@media screen and (max-width: 1024px) {
+    #anchorList{
+        padding-right: 25px;
+        display: none;
+        position: fixed;
+        top: 0vh;
+        bottom: 0vh;
+        left: 0vw;
+        right: 0vw;
+        z-index: 1005;
+    }
+
+    #anchorList>a {
+        padding: 5px;
+        pointer-events: none;
+    }
+
+    #anchorList:hover>a,
+    #anchorList:active>a{
+        pointer-events: all !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #anchorList {
+        top: 15vh;
+        max-height: 80vh;
+        display: grid;
+    }
+}

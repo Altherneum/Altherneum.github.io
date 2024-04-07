@@ -1,0 +1,74 @@
+.films>h1 {
+    text-align: center;
+    color: var(--text-color);
+    padding-top: 50px;
+}
+
+.films>div>div {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 25px;
+    margin: 10px;
+
+    width: 17vw;
+    overflow-x: auto;
+}
+
+
+.films>div>div>img.svg {
+    width: 50px;
+    height: 50px;
+}
+
+.films>div>div>img {
+    width: 100%;
+    max-height: 60vh;
+
+    border-radius: 10%;
+
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+.films>div>div>a {
+    font-size: xx-large;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.films>div>div>p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.card {
+    background-color: var(--background-color-transparent);
+
+    border-radius: 16px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--main-color);
+}
+
+.card>img.svg {
+    content: url(/assets/svg/thumbs-down.svg);
+    max-width: 50px;
+}
+
+.card.best>img.svg {
+    content: url(/assets/svg/star.svg);
+}
+
+.card.medium>img.svg {
+    content: url(/assets/svg/star-half.svg);
+}
+
+/*CSS mobile une seule carte par rangé 100%*/
+@media screen and (max-width: 1024px) {
+    .films>div>div {
+        width: 75%;
+    }
+}

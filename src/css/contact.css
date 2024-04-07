@@ -1,0 +1,90 @@
+.contact {
+    text-align: center;
+    margin: auto;
+
+    max-width: 100%;
+}
+
+.contact>h1 {
+    color: var(--text-color);
+    font-size: 15vw;
+    font-weight: bolder;
+    font-family: Arial;
+
+    max-width: 900%;
+
+    margin: 24px;
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--text-color);
+    text-shadow: 0px 0px 20px var(--background-color);
+}
+
+.contact>img {
+    margin-bottom: 4px;
+
+    max-width: 75%;
+
+    width: 256px;
+
+    border-radius: 100%;
+
+    box-shadow: var(--box-shadow-all-inset-main-color);
+}
+
+.contact>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact>div>a>h2 {
+    font-weight: bold;
+    font-size: large;
+    text-decoration: underline;
+
+    padding-top: 3px;
+}
+
+.contact>div>a>p {
+    font-size: 30px;
+    padding-right: 12px;
+}
+
+.contact>div>a>img.svg,
+.contact>div>div>img.svg {
+    max-width: 50px;
+    padding-right: 12px;
+}
+
+.contact>div>a,
+.contact>div>div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    border: 4px ridge var(--main-color);
+    border-radius: 12px;
+
+    margin: 12px;
+    padding: 24px;
+
+    flex-basis: 40%;
+
+    text-decoration: none !important;
+}
+
+.contact>div>a:hover,
+.contact>div>div:hover {
+    background-color: var(--main-color);
+    box-shadow: var(--box-shadow-all-inset-main-color);
+}
+
+.contact>#techno>div{
+    background-color: var(--main-color-transparent);
+}
+
+.contact>#techno{
+    padding-top: 16px;
+}

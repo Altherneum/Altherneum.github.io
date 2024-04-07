@@ -1,0 +1,9 @@
+#settingsmenu>* {
+    margin: 50px;
+}
+
+#settingsmenu>button {
+    border-radius: 6px;
+    padding: 10px;
+}
+

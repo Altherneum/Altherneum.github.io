@@ -1,0 +1,49 @@
+#anchor>a>button>img,
+#anchor>button>img {
+    width: 25px;
+    height: 25px;
+
+    margin: 5px;
+}
+
+#anchor {
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: min-content;
+
+    padding-top: 10px;
+}
+
+#anchor>*{
+    max-width: 50px;
+    min-width: 50px;
+}
+
+#anchor>a>button,
+#anchor>button {
+    border-radius: 10px;
+    margin: 5px;
+    background-color: var(--main-color-transparent);
+}
+
+#SummaryAnchor{
+    position: sticky;
+    top: 0px;
+}
+
+#scroll-up {
+    position: sticky;
+}
+
+@media screen and (max-width: 1024px) {
+    #anchor {
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #anchor {
+    }
+}

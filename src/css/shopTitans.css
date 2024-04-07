@@ -1,0 +1,15 @@
+#ShopTitanDataInvestMenu{
+    align-items: start;
+    gap: 16px;
+}
+
+#ShopTitansDataGuild{
+    flex-direction: column;
+    align-items: center;
+}
+
+#ShopTitansData{
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}

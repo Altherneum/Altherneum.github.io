@@ -1,0 +1,337 @@
+#menu {
+    max-width: fit-content;
+
+    background: rgba(0, 153, 255, 0.006);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    border-style: solid;
+
+    margin-top: 20px;
+    padding: 16px;
+    padding-top: 8px;
+
+    position: absolute;
+
+    z-index: 999;
+
+    top: 25px;
+    left: 25px;
+}
+
+#menu>a {
+    color: white;
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+#menu>a:first-of-type {
+    padding-right: 32px;
+}
+
+#menu>a>img {
+    filter: invert(1);
+    transform: translateY(25%);
+    padding-right: 4px;
+    max-width: 32px;
+}
+
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Anton', sans-serif;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(20, 5vh);
+    grid-template-columns: repeat(20, 5vw);
+    transform-style: preserve-3d;
+}
+
+.monitor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-style: preserve-3d;
+}
+
+.container:active .vr_layer_item {
+    width: 40%;
+    height: 40%;
+    border-radius: 5px;
+}
+
+.camera {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 500ms;
+}
+
+.camera.o-y {
+    animation-name: rotateY;
+    animation-duration: 60s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.camera.o-x {
+    animation-name: rotateX;
+    animation-duration: 30s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.vr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 350px;
+    transform: translate(-50%, -50%);
+    transform-style: preserve-3d;
+}
+
+.vr_layer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 153, 255, 0.006);
+    border-radius: 10px;
+    transform: preserve-3d;
+}
+
+.vr_layer:nth-child(1) {
+    transform: translateZ(-157.5px);
+}
+
+.vr_layer:nth-child(1) .vr_layer_item {
+    animation-delay: -210ms;
+}
+
+.vr_layer:nth-child(2) {
+    transform: translateZ(-140px);
+}
+
+.vr_layer:nth-child(2) .vr_layer_item {
+    animation-delay: -420ms;
+}
+
+.vr_layer:nth-child(3) {
+    transform: translateZ(-122.5px);
+}
+
+.vr_layer:nth-child(3) .vr_layer_item {
+    animation-delay: -630ms;
+}
+
+.vr_layer:nth-child(4) {
+    transform: translateZ(-105px);
+}
+
+.vr_layer:nth-child(4) .vr_layer_item {
+    animation-delay: -840ms;
+}
+
+.vr_layer:nth-child(5) {
+    transform: translateZ(-87.5px);
+}
+
+.vr_layer:nth-child(5) .vr_layer_item {
+    animation-delay: -1050ms;
+}
+
+.vr_layer:nth-child(6) {
+    transform: translateZ(-70px);
+}
+
+.vr_layer:nth-child(6) .vr_layer_item {
+    animation-delay: -1260ms;
+}
+
+.vr_layer:nth-child(7) {
+    transform: translateZ(-52.5px);
+}
+
+.vr_layer:nth-child(7) .vr_layer_item {
+    animation-delay: -1470ms;
+}
+
+.vr_layer:nth-child(8) {
+    transform: translateZ(-35px);
+}
+
+.vr_layer:nth-child(8) .vr_layer_item {
+    animation-delay: -1680ms;
+}
+
+.vr_layer:nth-child(9) {
+    transform: translateZ(-17.5px);
+}
+
+.vr_layer:nth-child(9) .vr_layer_item {
+    animation-delay: -1890ms;
+}
+
+.vr_layer:nth-child(10) {
+    transform: translateZ(0px);
+}
+
+.vr_layer:nth-child(10) .vr_layer_item {
+    animation-delay: -2100ms;
+}
+
+.vr_layer:nth-child(11) {
+    transform: translateZ(17.5px);
+}
+
+.vr_layer:nth-child(11) .vr_layer_item {
+    animation-delay: -2310ms;
+}
+
+.vr_layer:nth-child(12) {
+    transform: translateZ(35px);
+}
+
+.vr_layer:nth-child(12) .vr_layer_item {
+    animation-delay: -2520ms;
+}
+
+.vr_layer:nth-child(13) {
+    transform: translateZ(52.5px);
+}
+
+.vr_layer:nth-child(13) .vr_layer_item {
+    animation-delay: -2730ms;
+}
+
+.vr_layer:nth-child(14) {
+    transform: translateZ(70px);
+}
+
+.vr_layer:nth-child(14) .vr_layer_item {
+    animation-delay: -2940ms;
+}
+
+.vr_layer:nth-child(15) {
+    transform: translateZ(87.5px);
+}
+
+.vr_layer:nth-child(15) .vr_layer_item {
+    animation-delay: -3150ms;
+}
+
+.vr_layer:nth-child(16) {
+    transform: translateZ(105px);
+}
+
+.vr_layer:nth-child(16) .vr_layer_item {
+    animation-delay: -3360ms;
+}
+
+.vr_layer:nth-child(17) {
+    transform: translateZ(122.5px);
+}
+
+.vr_layer:nth-child(17) .vr_layer_item {
+    animation-delay: -3570ms;
+}
+
+.vr_layer:nth-child(18) {
+    transform: translateZ(140px);
+}
+
+.vr_layer:nth-child(18) .vr_layer_item {
+    animation-delay: -3780ms;
+}
+
+.vr_layer:nth-child(19) {
+    transform: translateZ(157.5px);
+}
+
+.vr_layer:nth-child(19) .vr_layer_item {
+    animation-delay: -3990ms;
+}
+
+.vr_layer:nth-child(20) {
+    transform: translateZ(175px);
+}
+
+.vr_layer:nth-child(20) .vr_layer_item {
+    animation-delay: -4200ms;
+}
+
+.vr_layer_item {
+    width: 70%;
+    height: 70%;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.05);
+    animation: sphere 3000ms cubic-bezier(0.215, 0.61, 0.355, 1) alternate infinite, color 5000ms linear alternate infinite;
+    transition: 500ms;
+}
+
+@keyframes sphere {
+    0% {
+        transform: scale(0) rotateZ(45deg);
+    }
+
+    50% {
+        transform: scale(0) rotateZ(45deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(45deg);
+    }
+}
+
+@keyframes color {
+    0% {
+        border-color: #f55;
+    }
+
+    50% {
+        border-color: #55f;
+    }
+
+    100% {
+        border-color: #5f5;
+    }
+}
+
+@keyframes rotateY {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes rotateX {
+    0% {
+        transform: rotateX(160deg);
+    }
+
+    100% {
+        transform: rotateX(220deg);
+    }
+}
