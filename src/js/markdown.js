@@ -123,12 +123,18 @@ async function githubData(repo, file, content, gist) {
  
     content.appendChild(holder);
 
-    anchorButton(repo, file, gist, holder);
-    anchorHolder(repo.split('/')[0], holder);
+    if (gist) {
+        anchorButton(repo, file, gist, holder);
+        anchorEdit(repo, file, gist, holder);
+        anchorRaw(repo, file, holder, gist);
+        anchorHolder(repo.split('/')[0], holder);
+    }
     if (!gist) {
         anchorRepo(repo, holder);
-        //add same as repo but for edit (like old anchor)
-        anchorRaw(repo, file, holder);
+        anchorButton(repo, file, gist, holder);
+        anchorEdit(repo, file, gist, holder);
+        anchorRaw(repo, file, holder, gist);
+        anchorHolder(repo.split('/')[0], holder);
         anchorAuthor(authorLogin, holder);
         anchorUpdate(htmlUrl, holder);
         textData(commitMessage, commitAuthorName, commitAuthorDate, authorLogin, holder, repo, file);
@@ -193,7 +199,7 @@ function anchorAuthor(authorLogin, holder) {
     link.href = "https://github.com/" + authorLogin;
     image.src = "/assets/svg/writer-write-blogger-work-at-desk.svg";
     button.classList = "edit-gist"
-    text.textContent = "@ " + authorLogin;
+    text.textContent = "Auteur(e) : " + authorLogin;
     link.target = "_blank";
     image.classList = "svg";
     button.appendChild(image);
@@ -202,12 +208,17 @@ function anchorAuthor(authorLogin, holder) {
     holder.appendChild(link);
 }
 
-function anchorRaw(repo, file, holder) {
+function anchorRaw(repo, file, holder, gist) {
     var link = document.createElement("a");
     var button = document.createElement("button");
     var image = document.createElement("img");
     var text = document.createElement("p");
-    link.href = "https://raw.githubusercontent.com/" + repo + "/main/" + file;
+    if (gist === true) {
+        link.href = "https://gist.github.com/" + repo + "/" + file + "/raw";
+    }
+    else if (gist === false) {
+        link.href = "https://raw.githubusercontent.com/" + repo + "/main/" + file;
+    }
     image.src = "/assets/svg/language.svg";
     button.classList = "edit-gist"
     text.textContent = "RAW";
@@ -268,13 +279,36 @@ function anchorButton(repo, file, gist, holder) {
     if (gist === true) {
         link.href = "https://gist.github.com/" + repo + "/" + file;
         button.classList = "edit-gist"
-     }
+    }
     else if (gist === false) {
         link.href = "https://github.com/" + repo + "/blob/main/" + file;
         button.classList = "edit-md"
     }
     image.src = "/assets/svg/trademark/github.svg";
     text.textContent = file.split('/').pop();
+    link.target = "_blank";
+    image.classList = "svg";
+    button.appendChild(image);
+    button.appendChild(text);
+    link.appendChild(button);
+    holder.appendChild(link);
+}
+
+function anchorEdit(repo, file, gist, holder) {
+    var link = document.createElement("a");
+    var button = document.createElement("button");
+    var image = document.createElement("img");
+    var text = document.createElement("p");
+    if (gist === true) {
+        link.href = "https://gist.github.com/" + repo + "/" + file + "/edit";
+        button.classList = "edit-gist"
+    }
+    else if (gist === false) {
+        link.href = "https://github.com/" + repo + "/edit/main/" + file;
+        button.classList = "edit-md"
+    }
+    image.src = "/assets/svg/edit.svg";
+    text.textContent = "Modifier";
     link.target = "_blank";
     image.classList = "svg";
     button.appendChild(image);
