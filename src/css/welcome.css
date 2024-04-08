@@ -2,18 +2,19 @@
 }
 
 #banner{
-    text-align: center;
-    margin: auto;
+}
 
-    max-width: 100%;
+#banner>img {
+    border-radius: 20%;
+
+    border-color: var(--text-color);
+    border-style: solid;
+    border-width: 3px;
+    max-width:30vw;
 }
 
 #welcome>#title>* {
     display: inline;
-}
-
-#welcome>#banner>img {
-    max-width: 100%;
 }
 
 #opensource {
@@ -22,7 +23,7 @@
 }
 
 #opensource>:first-child {
-    max-width: 30%;
+    max-width: 35vw;
     padding-right: 15px;
     border-radius: 32px;
 }
@@ -35,7 +36,6 @@
     text-decoration: underline;
 }
 
-#opensource>p,
-#opensource>div>:last-child{
+#opensource>p{
     padding-top: 30px;
 }

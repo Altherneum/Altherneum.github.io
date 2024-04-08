@@ -1,6 +1,7 @@
 footer {
     position: relative;
     bottom: 0;
+
     width: 100%;
 
     padding-bottom: 2.5vh;
@@ -11,9 +12,13 @@ footer {
     background: linear-gradient(var(--background-color), var(--main-color));
 
     display: flex;
-    justify-content: space-around;
+    gap: 16px;
+    justify-content: center;
     align-items: baseline;
-    align-items: center
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
 }
 
 footer>div>a,
