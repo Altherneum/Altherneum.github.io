@@ -13,10 +13,17 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+    align-items: center
 }
 
 footer>div>a,
 footer>div>p {
     margin: 5px;
     text-decoration: none;
+}
+
+.svg{
+    max-width: 40px;
+    margin: 5px;
+    padding-top: 0px;
 }

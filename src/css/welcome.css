@@ -1,6 +1,13 @@
 #welcome{
 }
 
+#banner{
+    text-align: center;
+    margin: auto;
+
+    max-width: 100%;
+}
+
 #welcome>#title>* {
     display: inline;
 }

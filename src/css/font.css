@@ -112,6 +112,21 @@ li::marker {
     animation: animate 30s ease-in-out infinite;
 }
 
+.background-clip-text {
+    color: var(--text-color);
+    font-size: 10vw;
+    font-weight: bolder;
+    font-family: Arial;
+
+    max-width: 100%;
+
+    margin: 24px;
+
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: var(--text-color);
+    text-shadow: 0px 0px 20px var(--background-color);
+}
+
 @keyframes animate {
     0% {
         background-position: 0% 50%;
