@@ -259,7 +259,11 @@ async function pageCours() {
 
         await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false, false);
 
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false, true);
+        await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false, false);
+
+        addHRChapter();
+
+        await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true);
     }
         
     else if (pathNameMatchPage("/cours/html", true)) {
@@ -318,6 +322,11 @@ async function pageCours() {
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/learning.md', false, true); });
     }
 
+    else if (pathNameMatchPage("/cours/sql", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true); });
+    }
+        
     else {
         return false;
     }
