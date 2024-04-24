@@ -368,6 +368,11 @@ async function pageOutils() {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/Liens.md', false, true); });
     }
+        
+    else if (pathNameMatchPage("/outils/matrice-windows", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/OS/Windows/matrice.bat.md', false, true); });
+    }
 
     else {
         return false;
