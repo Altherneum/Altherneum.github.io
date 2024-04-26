@@ -4,11 +4,11 @@ setDateHTML();
 
 function setDateHTML() {
     var div = document.createElement("div");
-    div.style = "max-width: min-content;text-align: center;";
+    div.style = "max-width: min-content;text-align: center;margin-top: 1vh;";
     var date = document.createElement("p")
     date.id = id;
 
-    var content = document.querySelector("#content-right");
+    var content = document.querySelector("#anchor");
     if (content != null) {
         content.appendChild(div);
 

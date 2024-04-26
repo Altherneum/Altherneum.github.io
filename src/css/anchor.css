@@ -25,17 +25,27 @@
 #anchor>a>button,
 #anchor>button {
     border-radius: 10px;
-    margin: 5px;
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
     background-color: var(--main-color-transparent);
 }
 
 #SummaryAnchor{
-    position: sticky;
-    top: 0px;
 }
 
 #scroll-up {
-    position: sticky;
+    margin-top: 2.5vh !important;
+    margin-bottom: 2.5vh !important;
+}
+
+#scroll-down{
+    margin-bottom: 2.5vh !important;
+}
+
+#date{
+    font-size: medium;
 }
 
 @media screen and (max-width: 1024px) {
