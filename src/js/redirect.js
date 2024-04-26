@@ -1,4 +1,4 @@
-function redirect(path) {
+function redirect(path, time) {
     var link = document.getElementById("linksrc");
     link.textContent = path;
 
@@ -8,7 +8,7 @@ function redirect(path) {
 
     setTimeout(() => {
         document.location.href = path;
-    }, 5000);
+    }, time * 1000);
     
     var link = document.getElementById("link");
     link.href = path;

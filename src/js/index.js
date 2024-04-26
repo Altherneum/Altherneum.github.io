@@ -466,7 +466,7 @@ async function pageDiscord() {
         await include_html("/src/html/content/redirect.html", "contentArticle", true);
         await include_css("/src/css/redirect.css");
         await include_script("/src/js/redirect.js");
-        redirect("discord.gg/rF25kjuv4v");
+        redirect("discord.gg/rF25kjuv4v", 0);
     }
 
     else {
