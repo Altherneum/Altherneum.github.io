@@ -123,6 +123,15 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="Mise à jour de la documentation" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[Mises à jour multiples]]></title>
+        <link>https://doc.Altherneum.fr/github/readme</link>
+        <guid isPermaLink="true">https://doc.Altherneum.fr/github/readme</guid>
+        <pubDate>Tue, 14 May 2024 22:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[Les documentations, noms, codes, et erreurs, et de nouvelles pages ont étés ajoutés ]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="Mises à jour multiples" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
-  

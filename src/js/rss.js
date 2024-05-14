@@ -121,6 +121,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "Mises à jour multiples",
+    link: "github/readme",
+    description: "Les documentations, noms, codes, et erreurs, et de nouvelles pages ont étés ajoutés ",
+    publicationDate: buildRFC822Date("2024-05-15T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image

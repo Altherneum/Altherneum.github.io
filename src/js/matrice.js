@@ -19,4 +19,4 @@ function randomChar() {
     var r = Math.random() * (max - min) + min << 0;
     var string = String.fromCharCode(r);
     return string;
-}  
+}
