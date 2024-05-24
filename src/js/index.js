@@ -368,6 +368,11 @@ async function pageOutils() {
         await includes();
         await include_multiple("caesar", "contentArticle");
     }
+        
+    else if (pathNameMatchPage("/outils/vigenere", true)) {
+        await includes();
+        await include_multiple("vigenere", "contentArticle");
+    }
 
     else if (pathNameMatchPage("/outils/liens", true)) {
         await includes();

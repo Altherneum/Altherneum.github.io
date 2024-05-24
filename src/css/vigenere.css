@@ -1,8 +1,8 @@
-#caesar>input::placeholder {
+#vigenere>input::placeholder {
     color: var(--link-color);
 }
 
-#caesar>input {
+#vigenere>input {
     display: block;
     padding: 15px;
 
@@ -12,11 +12,11 @@
     margin-bottom: 20px;
 }
 
-#caesar>#number {
+#vigenere>#number {
     max-width: 105px;
 }
 
-#caesar>#btn {
+#vigenere>#btn {
     margin: 15px;
     border-color: var(--border-color);
     border-radius: 2px;
