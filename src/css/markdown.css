@@ -67,6 +67,8 @@
 #anchorList>#AnchorSummary>button {
     margin-bottom: 15px;
     border-radius: 16px;
+    position: sticky;
+    top: 0;
 }
 
 #anchorList>#AnchorSummary>button>.svg {
