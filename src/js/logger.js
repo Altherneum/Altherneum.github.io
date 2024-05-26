@@ -121,9 +121,15 @@ async function show() {
         logIntoDocument("Connection : ", navigator.connection.effectiveType);
         logIntoDocument("DownLink : ", navigator.connection.downlink + " Mb / s");
         logIntoDocument("Économiseur de données : ", navigator.connection.saveData);
+        logIntoDocument("En ligne : ", navigator.onLine);
         logIntoDocumentHR();
     } catch { }
 
+    try {
+        logIntoDocument("Cookie actifs :", navigator.cookieEnabled);
+        logIntoDocument("Java actifs :", navigator.javaEnabled());
+        logIntoDocumentHR();
+    } catch { }
 
     try {
         const adapter = await navigator.gpu.requestAdapter();
@@ -160,8 +166,39 @@ async function show() {
         }
     }
     catch { }
+
+    try {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(geolocationCallBack);
+        } else {
+            logIntoDocument("Geolocation : ", false);
+        }
+    }
+    catch (error) {
+        if (error.code == error.PERMISSION_DENIED) {
+            logIntoDocument("Gelocation : ", "Permission Off");
+        }
+    }
+
+    try {
+        logIntoDocument("Width : ", screen.width);
+        logIntoDocument("Height : ", screen.height);
+        logIntoDocument("Color depth : ", screen.colorDepth);
+        logIntoDocument("Pixel depth : ", screen.pixelDepth);
+        logIntoDocumentHR();
+    }
+    catch { }
 }
 
+function geolocationCallBack(position) {
+    if (position === undefined) {
+
+        logIntoDocument("Gelocation : ", "Permission Off");
+    }
+    logIntoDocument("Latitude: ", position.coords.latitude);
+    logIntoDocument("Longitude: " + position.coords.longitude);
+    logIntoDocumentHR();
+}
 
 function logIntoDocument(text, data) {
     try {
