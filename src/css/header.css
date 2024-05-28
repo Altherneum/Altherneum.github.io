@@ -22,6 +22,11 @@ header>#navlinklist{
     border-bottom-width: 3px;
 }
 
+header>#navlinklist>*{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 
 header>#navlinklist>a {
     margin-right: 50px;
