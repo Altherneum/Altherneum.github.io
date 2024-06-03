@@ -331,10 +331,15 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/cours/google-dorks", true)) {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Google/learning.md', false, true); });
+    }
+
+    else if (pathNameMatchPage("/cours/forkBomb", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/forkBomb.bat.md', false, true); });
     }
         
     else {
