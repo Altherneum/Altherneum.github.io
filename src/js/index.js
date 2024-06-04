@@ -339,7 +339,7 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/forkBomb", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/forkBomb.bat.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/forkBomb.bat.md', false, true); });
     }
         
     else {
