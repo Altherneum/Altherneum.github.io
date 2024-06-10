@@ -341,6 +341,14 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/forkBomb.bat.md', false, true); });
     }
+
+    else if (pathNameMatchPage("/cours/network", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { 
+            await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Network/notes.md', false, true); 
+        });
+    }
         
     else {
         return false;
