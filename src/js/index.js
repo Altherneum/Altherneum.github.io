@@ -347,6 +347,7 @@ async function pageCours() {
         await include_script("/src/js/markdown.js").then(async () => { 
             await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/networks.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/notes.md', false, true); 
         });
     }
