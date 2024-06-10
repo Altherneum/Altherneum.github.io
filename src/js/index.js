@@ -345,7 +345,8 @@ async function pageCours() {
     else if (pathNameMatchPage("/cours/network", true)) {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { 
-            await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/networks.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/notes.md', false, true); 
         });
     }
