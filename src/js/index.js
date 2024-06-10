@@ -348,6 +348,8 @@ async function pageCours() {
             await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/networks.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/wires.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/Fibre/README.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/notes.md', false, true); 
         });
     }
