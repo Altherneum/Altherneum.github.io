@@ -342,25 +342,27 @@ async function pageCours() {
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/forkBomb.md', false, true); });
     }
 
+    else if (pathNameMatchPage("/cours/ip", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, true); });
+    }
+
+    else if (pathNameMatchPage("/cours/protocoles", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/protocoles.md', false, true); });
+    }
+
+    else if (pathNameMatchPage("/cours/ethernet", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/wires.md', false, true); });
+    }
+
     else if (pathNameMatchPage("/cours/network", true)) {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { 
-            await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
-            await addMarkdown('Altherneum/.github', 'note/Network/cast.md', false, false);
-            
-            addHRChapter();
-
             await addMarkdown('Altherneum/.github', 'note/Network/networks.md', false, false);
-            await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false);
-            await addMarkdown('Altherneum/.github', 'note/Network/protocoles.md', false, false);
-            
-            addHRChapter();
-            
-            await addMarkdown('Altherneum/.github', 'note/Network/wires.md', false, false);
-            
-            addHRChapter();
-
-            await addMarkdown('Altherneum/.github', 'note/Network/notes.md', false, true); 
+            await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/cast.md', false, true);
         });
     }
         
