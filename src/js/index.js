@@ -236,7 +236,7 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/fibre", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/Fibre/README.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/fibre.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/web", true)) {
@@ -346,10 +346,20 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { 
             await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/cast.md', false, false);
+            
+            addHRChapter();
+
             await addMarkdown('Altherneum/.github', 'note/Network/networks.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/protocoles.md', false, false);
+            
+            addHRChapter();
+            
             await addMarkdown('Altherneum/.github', 'note/Network/wires.md', false, false);
-            await addMarkdown('Altherneum/.github', 'note/Network/Fibre/README.md', false, false);
+            
+            addHRChapter();
+
             await addMarkdown('Altherneum/.github', 'note/Network/notes.md', false, true); 
         });
     }
