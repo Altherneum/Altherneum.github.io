@@ -299,7 +299,10 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/binaire", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/learning.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { 
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/learning.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/ip.md', false, true); 
+        });
     }
         
     else if (pathNameMatchPage("/cours/lm-studio", true)) {
@@ -344,7 +347,10 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/ip", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { 
+            await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/ip.md', false, true); 
+        });
     }
 
     else if (pathNameMatchPage("/cours/protocoles", true)) {
