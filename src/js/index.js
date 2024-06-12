@@ -374,7 +374,7 @@ async function pageCours() {
         
     else if (pathNameMatchPage("/cours/hyper-v", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/notes-hyperv.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/notes-hyperv.md', false, true); });
     }
         
     else {
