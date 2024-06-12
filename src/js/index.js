@@ -374,12 +374,17 @@ async function pageCours() {
         
     else if (pathNameMatchPage("/cours/hyper-v", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/notes-hyperv.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/hyperv.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/cours/dns", true)) {
         await includes();
-        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/DNS.md', false, true); });
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/DNS.md', false, true); });
+    }
+
+    else if (pathNameMatchPage("/cours/enterprise-network", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/enterprise-network.md', false, true); });
     }
         
     else {
