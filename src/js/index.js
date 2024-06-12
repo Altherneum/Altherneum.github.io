@@ -458,8 +458,6 @@ async function pageAdmin() {
         await include_html("/src/html/content/contact.html", "contentArticle", true);
     }
 
-
-
     else if (pathNameMatchPage("/admin/donation", true)) {
         await includes();
 
