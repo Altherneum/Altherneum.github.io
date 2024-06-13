@@ -386,6 +386,11 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/enterprise-network.md', false, true); });
     }
+
+    else if (pathNameMatchPage("/cours/active-directory", true)) {
+        await includes();
+        await include_script("/src/js/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/active-directory.md', false, true); });
+    }
         
     else {
         return false;
