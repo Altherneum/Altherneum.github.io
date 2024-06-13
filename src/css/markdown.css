@@ -159,6 +159,7 @@
     }
 
     #anchorList>a {
+        width: fit-content;
         padding: 5px;
         pointer-events: none;
     }
