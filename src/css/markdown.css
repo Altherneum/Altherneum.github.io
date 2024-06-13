@@ -10,9 +10,6 @@
     display: inline;
 }
 
-.markdowned {
-}
-
 .markdowned>*>p {
     max-width: fit-content;
     display: inline-block;
