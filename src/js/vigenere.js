@@ -5,6 +5,19 @@ var textLength;
 var clef;
 var clefLength;
 
+setDefaultAlphabet();
+function setDefaultAlphabet() {
+    var textarea = document.getElementById("alphabet-default");
+    var alphabet = document.getElementById("alphabet");
+    var chars = "";
+    for (var i = 32; i < 255; i++)
+    {
+        chars += String.fromCharCode(i);
+    }
+    textarea.value = chars;
+    alphabet.value = chars;
+}
+
 function cipher(uncipher) {
     getData();
     if (alphabet !== "" && text !== "" && clef !== "") {
