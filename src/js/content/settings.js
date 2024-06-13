@@ -16,6 +16,10 @@ function SwitchDevMode() {
     Switcher("devMode");
 }
 
+function SwitchCursor() {
+    Switcher("customCursor");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -23,15 +27,22 @@ function Switcher(name) {
     console.log("set " + name + " to " + state)
 }
 
-function setSwitch(name) {
+function setSwitch(name, defaultTrue) {
     var checkbox = document.getElementById(name);
     var state = localStorage.getItem(name);
     if (state === 'true') {
         checkbox.checked = true;
     }
+    else if (state === false) {
+        //nothing check box at false state by default
+    }
+    else if ((defaultTrue && state === undefined) || (defaultTrue && state === null)) {
+        checkbox.checked = true;
+    }
 }
 
 function loadSettingsSwitch() {
-    setSwitch("devMode");
-    setSwitch("viewCount");
+    setSwitch("devMode", false);
+    setSwitch("viewCount", true);
+    setSwitch("customCursor", true);
 } loadSettingsSwitch();
