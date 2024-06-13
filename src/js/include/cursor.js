@@ -1,7 +1,30 @@
 var cursor
 //Cursor trigger often on header / Content wrapper (middle part of screen)
 console.log("Loading cursor");
-createCursor();
+getCursorSetting();
+
+function getCursorSetting() {
+    if (localStorage.getItem('customCursor') === "true" || localStorage.getItem('customCursor') === null) {
+        createCursor();
+        hideDefaultCursor();
+    }
+    else {
+        destroyCursor();
+        showDefaultCursor();
+    }
+}
+
+function destroyCursor() {
+    cursor = document.getElementById("cursor");
+    cursor.parentNode.removeChild(cursor);
+}
+
+function showDefaultCursor() {
+    document.querySelector('link[href$="cursor.css"]').remove();
+}
+
+function hideDefaultCursor() {
+}
 
 async function createCursor() {
     cursor = document.createElement("div");

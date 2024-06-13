@@ -18,6 +18,7 @@ function SwitchDevMode() {
 
 function SwitchCursor() {
     Switcher("customCursor");
+    getCursorSetting();
 }
 
 function Switcher(name) {
