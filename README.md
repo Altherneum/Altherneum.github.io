@@ -24,11 +24,11 @@
 # Index / Main
 - [index.html](https://github.com/Altherneum/Altherneum.github.io/blob/main/index.html)
 - 'folderName' / 'pageName' .html, (Exemple) [github/contribuer.html](https://github.com/Altherneum/Altherneum.github.io/blob/main/github/contribuer.html)
-- [index.js](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/index.js)
+- [index.js](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/content/index.js)
 
 # src folders
 - [/assets](https://github.com/Altherneum/Altherneum.github.io/blob/main/assets)
 - [/src](https://github.com/Altherneum/Altherneum.github.io/blob/main/src)
   - [src/html](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/html)
   - [src/css](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/css)
-  - [src/js](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js)
+  - [src/js/content](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/content)

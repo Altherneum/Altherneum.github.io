@@ -1,11 +1,11 @@
 include(); async function include() {
-    await include_script("/src/js/index.js");
+    await include_script("/src/js/include/index.js");
 }
 
 async function include_multiple(name, area) {
     await include_css("/src/css/" + name + ".css");
     await include_html("/src/html/content/" + name + ".html", area, true);
-    await include_script("/src/js/" + name + ".js");
+    await include_script("/src/js/content/" + name + ".js");
 }
 
 async function include_html(link, query, queryOrIndex) {
