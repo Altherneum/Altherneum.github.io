@@ -58,6 +58,11 @@
     max-width: 50px;
 }
 
+.card.unknow>img.svg {
+    content: url(/assets/svg/help-question.svg);
+    max-width: 50px;
+}
+
 .card.best>img.svg {
     content: url(/assets/svg/star.svg);
 }
