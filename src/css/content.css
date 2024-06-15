@@ -62,7 +62,7 @@ article>div>h3 {
     #content-right {
         top: 0vh;
         max-height: 95vh;
-        padding: 6px;
+        padding: 8px;
     }
 
     #content>#markdown {
