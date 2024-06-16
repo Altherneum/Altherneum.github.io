@@ -75,22 +75,6 @@ const links = [
         text: "IP v4 v6 logger & browser scan",
     },
     {
-        href: "/cours/html.html",
-        text: "Cours sur le HTML",
-    },
-    {
-        href: "/cours/css.html",
-        text: "Cours sur le CSS",
-    },
-    {
-        href: "/cours/js.html",
-        text: "Cours sur le JavaScript (JS)",
-    },
-    {
-        href: "/cours/binaire.html",
-        text: "Cours sur le binaire",
-    },
-    {
         href: "/admin/contact.html",
         text: "Contacter l'administrateur du projet",
     },
@@ -121,6 +105,98 @@ const links = [
     {
         href: "/cours/fibre.html",
         text: "Cours sur la fibre optique",
+    },
+    {
+        href: "/cours/active-directory.html",
+        text: "Cours sur l'Active directory Windows",
+    },
+    {
+        href: "/cours/dns.html",
+        text: "Cours sur le DNS Windows server",
+    },
+    {
+        href: "/cours/enterprise-network.html",
+        text: "Cours sur les réseaux d'entreprise avec domaine Windows",
+    },
+    {
+        href: "/cours/ethernet.html",
+        text: "Cours sur les câbles Ethernet et leurs catégories",
+    },
+    {
+        href: "/cours/html.html",
+        text: "Cours sur le HTML",
+    },
+    {
+        href: "/cours/css.html",
+        text: "Cours sur le CSS",
+    },
+    {
+        href: "/cours/js.html",
+        text: "Cours sur le JavaScript (JS)",
+    },
+    {
+        href: "/cours/binaire.html",
+        text: "Cours sur le binaire",
+    },
+    {
+        href: "/cours/fibre.html",
+        text: "Cours sur la fibre optique",
+    },
+    {
+        href: "/cours/forkBomb.html",
+        text: "Cours sur les fork bomb Windows & Linux",
+    },
+    {
+        href: "/cours/google-dorks.html",
+        text: "Cours sur l'utilisation de Google et les Google dorks",
+    },
+    {
+        href: "/cours/hyper-v.html",
+        text: "Cours sur l'utilisation de Hyper-V Windows",
+    },
+    {
+        href: "/cours/ip.html",
+        text: "Cours sur l'IP",
+    },
+    {
+        href: "/cours/linux.html",
+        text: "Cours sur Linux et ses commandes",
+    },
+    {
+        href: "/cours/lm-studio.html",
+        text: "Cours sur LM studio pour lancer un LLM en local",
+    },
+    {
+        href: "/cours/network.html",
+        text: "Cours sur le réseau",
+    },
+    {
+        href: "/cours/protocoles.html",
+        text: "Cours sur les protocoles réseau",
+    },
+    {
+        href: "/cours/readme.html",
+        text: "Le README des cours",
+    },
+    {
+        href: "/cours/retraite.html",
+        text: "Cours sur le système de retraite",
+    },
+    {
+        href: "/cours/scam.html",
+        text: "Cours / liste de scam existant",
+    },
+    {
+        href: "/cours/sql.html",
+        text: "Cours sur le SQL",
+    },
+    {
+        href: "/cours/web.html",
+        text: "Cours sur le développement web (HTML, CSS, JS, SQL)",
+    },
+    {
+        href: "/cours/Windows.html",
+        text: "Cours sur Windows et ses commandes et astuces",
     },
 ];
 
