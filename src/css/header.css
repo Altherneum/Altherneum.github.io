@@ -21,12 +21,12 @@ header>#navlinklist {
     border-bottom-color: var(--main-color);
     border-bottom-width: 3px;
 
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
-header>#navlinklist>* {
-    margin-left: 15px;
-    margin-right: 15px;
+header>#navlinklist>div {
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 
@@ -35,12 +35,12 @@ header>#navlinklist>a {
     text-decoration: none;
 }
 
-header>#navlinklist>div>.subnav-text>img {
+header>#navlinklist>div>div>.subnav-text>img {
     max-width: 25px;
     transform: translateY(25%);
 }
 
-header>#navlinklist>div>.subnav-text>h2 {
+header>#navlinklist>div>div>.subnav-text>h2 {
     margin-right: 25px;
     text-decoration: none;
     font-size: large;
@@ -49,8 +49,8 @@ header>#navlinklist>div>.subnav-text>h2 {
 
 header>#navlinklist>a>h1,
 header>#navlinklist,
-header>#navlinklist>div,
-header>#navlinklist>div>.subnav-text>h2 {
+header>#navlinklist>div>div,
+header>#navlinklist>div>div>.subnav-text>h2 {
     display: inline-block;
 }
 
