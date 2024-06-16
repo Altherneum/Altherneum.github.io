@@ -8,8 +8,14 @@
 
 <url>
     <loc>https://doc.Altherneum.fr/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
+</url>
+
+<url>
+    <loc>https://doc.altherneum.fr/src/html/include/header.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
 </url>
 
 <url>
@@ -21,7 +27,7 @@
 <url>
     <loc>https://doc.Altherneum.fr/sitemap.xml</loc>
     <lastmod>2024-01-08</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
 </url>
 
