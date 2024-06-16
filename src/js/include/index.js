@@ -438,10 +438,15 @@ async function pageOutils() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/Liens.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/outils/matrice-windows", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/OS/Windows/matrice.bat.md', false, true); });
+    }
+
+    else if (pathNameMatchPage("/outils/console", true)) {
+        await includes();
+        await include_multiple("console", "contentArticle");
     }
 
     else {
