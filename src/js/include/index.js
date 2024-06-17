@@ -66,6 +66,8 @@ async function pages() {
 
         await include_html("/src/html/content/welcome.html", "contentArticle", true);
         await include_css("/src/css/welcome.css");
+
+        await include_multiple("console", "contentArticle");
     }
 
     else if (pathNameMatchPage("/settings", true)) {

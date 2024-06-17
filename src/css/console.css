@@ -1,15 +1,17 @@
 #console{
-    width: 80vw;
-    height: 60vh;
+    max-width: 50vw;
+    margin: 50px;
 }
 
 #console-border{
     backdrop-filter: blur(10px);
 
     height: 100%;
+    width: 100%;
 }
 
 #console-header{
+    width: 100%;
     background-color: rgba(15, 15, 15, 0.25);
     padding: 16px;
 
@@ -29,13 +31,21 @@
     display: inline-block;
     padding: 6px;
     font-size: xx-large;
+    
 }
 
 #console-body{
-    min-height: 100%;
-    padding: 12px;
+    overflow-x: auto;
+    max-height: 20vh;
+    width: 100%;
+
+    padding: 16px;
     background-color: rgba(0, 0, 0, 0.25);
 
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
+
+    /*Auto scroll*/
+    display: flex;
+    flex-direction: column-reverse;
 }
