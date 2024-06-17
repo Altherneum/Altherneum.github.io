@@ -68,9 +68,9 @@ const parseMarkdown = (text) => {
         .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
         .replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li>$1</li></ol>') // <li>
 
-        .replace(/([a-z0-9A-Z:;|?!§%'~’"°«»(){}/\[/\]@&=+-/^ _¨$£¤µ*€.,âôœûùéêëèàçïî▶⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
+        .replace(/([a-z0-9A-Z:;|?!§%'~’"°«»(){}/\[/\]@&=+-/^ _¨$£¤µ\*€.,âôœûùéêëèàçïî▶⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
 
-        .replace(/[\n]{1,}/g, "<br>") //new line
+        .replace(/[\n]{2,}/g, "<br>") //new line
 
         .trim();
     console.log("Loading return markdown trim");

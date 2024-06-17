@@ -62,6 +62,11 @@ h1 {
 
 h2 {
     font-size: x-large;
+    font-weight: bolder;
+}
+
+h3,h4,h5,h6{
+    font-size: larger;
     font-weight: bold;
 }
 
