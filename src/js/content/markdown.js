@@ -62,8 +62,8 @@ const parseMarkdown = (text) => {
         .replace(/\_\_(.*?)\_\_/gm, '<u>$1</u>') // underline
 
         
-        .replace(/^-(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
-        .replace(/^ {2,}-(.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
+        .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+        .replace(/^ {2,}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
 
         .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
         .replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li>$1</li></ol>') // <li>
