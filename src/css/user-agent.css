@@ -106,9 +106,44 @@ code{
     color: var(--link-color);
 }
 
+blockquote{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+
+    padding-left: 10px;
+
+    border-left-color: var(--text-color);
+    border-left-width: 2px;
+    border-left-style: solid;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
 input[type=checkbox] {
-    width: 100%;
-    height: 100%;
+    appearance: none;
+
+    transform: scale(1.5);
+
+    border-radius: 4px;
+    height: 15px;
+    width: 15px;
+    background: var(--background-color);
+    border: 1px solid var(--text-color);
+}
+
+input[type="checkbox"]:checked {
+    background: var(--text-color);
+
+    &:before {
+        content: '✖';
+        left: 20%;
+        font-size: 10px;
+        position: absolute;
+        color: var(--background-color);
+    }
 }
 
 html {

@@ -68,6 +68,9 @@ const parseMarkdown = (text) => {
         .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
         .replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li>$1</li></ol>') // <li>
 
+        .replace(/\[x\]/gim, '<input type="checkbox" checked/>')
+        .replace(/\[ \]/gim, '<input type="checkbox"/>')
+
         .replace(/([a-z0-9A-Z:;|?!§%'~’"°«»(){}/\[/\]@&=+-/^ _¨$£¤µ\*€.,âôœûùéêëèàçïî▶⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
 
         .replace(/[\n]{2,}/g, "<br>") //new line

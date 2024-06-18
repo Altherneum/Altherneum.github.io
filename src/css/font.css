@@ -29,7 +29,9 @@ p,
 del,
 i,
 li,
-u {
+u,
+sub,
+sup {
     font-family: Varela;
 
     font-size: larger;
@@ -75,7 +77,9 @@ b,
 del,
 i,
 li,
-u {
+u,
+sub,
+sup {
     color: var(--text-color);
 }
 
