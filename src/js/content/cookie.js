@@ -1,10 +1,13 @@
 updateStats();
 run();
+updatePrice();
+
 
 /*
-Never used : localStorage.setItem("buyMode", 1);
-Jesus effect
-Reset game settings
+To do : 
+- Jesus effect
+- Reset game settings
+- Update price with BuyAmount
 */
 
 function getCookies() {
@@ -92,13 +95,70 @@ function setBuyAmount() {
     }
 }
 
+function updatePrice(){
+    setPrice(1);
+    setPrice(2);
+    setPrice(3);
+    setPrice(4);
+}
+
+function setPrice(Bonus) {
+    var price = getPriceFormula(Bonus);
+    var bonusName;
+
+    if (Bonus == 1) {
+        bonusName = "prix-booster";
+    }
+
+    else if (Bonus == 2) {
+        bonusName = "prix-IA";
+    }
+
+    else if (Bonus == 3) {
+        bonusName = "prix-multiplicateur";
+    }
+
+    else if (Bonus == 4) {
+        bonusName = "prix-jesus";
+    }
+    
+    document.getElementById(bonusName).textContent = price;
+}
+
+function getPriceFormula(bonus) {
+    var BonusAmount = 0;
+    var defaultPrice = 0;
+
+    if (bonus == 1) {
+        BonusAmount = Number(localStorage.getItem("cookie-per-click"));
+        defaultPrice = 10;
+    }
+
+    else if (bonus == 2) {
+        BonusAmount = Number(localStorage.getItem("click-auto-sec"));
+        defaultPrice = 100;
+    }
+
+    else if (bonus == 3) {
+        BonusAmount = Number(localStorage.getItem("cookie-multiplicator"));
+        defaultPrice = 500;
+    }
+
+    else if (bonus == 4) {
+        BonusAmount = Number(localStorage.getItem("jesus"));
+        defaultPrice = 1000;
+    }
+
+    return (BonusAmount * defaultPrice);
+}
+
 
 function bonusClick(bonus) {
     var lastBuyOK = false;
 
     if (bonus == 1) {
         var BonusAmount = Number(localStorage.getItem("cookie-per-click"));
-        if (buyBonus(10 ^ BonusAmount)) {
+        if (buyBonus(getPriceFormula(bonus))) {
             localStorage.setItem("cookie-per-click", BonusAmount + 1);
             lastBuyOK = true;
         }
@@ -106,7 +166,7 @@ function bonusClick(bonus) {
 
     else if (bonus == 2) {
         var BonusAmount = Number(localStorage.getItem("click-auto-sec"));
-        if (buyBonus(250 ^ BonusAmount)) {
+        if (buyBonus(getPriceFormula(bonus))) {
             localStorage.setItem("click-auto-sec", BonusAmount + 1);
             lastBuyOK = true;
         }
@@ -114,7 +174,7 @@ function bonusClick(bonus) {
         
     else if (bonus == 3) {
         var BonusAmount = Number(localStorage.getItem("cookie-multiplicator"));
-        if (buyBonus(1000 ^ BonusAmount)) {
+        if (buyBonus(getPriceFormula(bonus))) {
             localStorage.setItem("cookie-multiplicator", BonusAmount + 1);
             lastBuyOK = true;
         }
@@ -122,14 +182,14 @@ function bonusClick(bonus) {
 
     else if (bonus == 4) {
         var BonusAmount = Number(localStorage.getItem("jesus"));
-        if (buyBonus(100000 ^ BonusAmount)) {
+        if (buyBonus(getPriceFormula(bonus))) {
             localStorage.setItem("jesus", BonusAmount + 1);
             lastBuyOK = true;
         }
     }
 
     
-    buyAmountInt -= 1; 
+    buyAmountInt -= 1;
 
     console.log("Last buy OK : " + lastBuyOK + "   amount remain " + buyAmountInt);
     if (buyAmountInt >= 1 && lastBuyOK) {
@@ -139,7 +199,8 @@ function bonusClick(bonus) {
         console.log("stop");
         updateStats();
         setBuyAmount();
-    } 
+    }
+    setPrice(bonus);
 }
 
 function run() {
