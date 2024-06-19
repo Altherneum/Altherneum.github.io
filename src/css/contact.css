@@ -6,7 +6,8 @@
 }
 
 .contact>img {
-    margin-bottom: 4px;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
 
     max-width: 75%;
 
@@ -15,6 +16,11 @@
     border-radius: 100%;
 
     box-shadow: var(--box-shadow-all-inset-main-color);
+}
+
+.contact>hr{
+    margin-top: 15vh;
+    margin-bottom: 15vh;
 }
 
 .contact>div {
