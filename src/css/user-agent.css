@@ -122,7 +122,16 @@ blockquote{
     border-bottom-left-radius: 6px;
 }
 
-input[type=checkbox] {
+html {
+    scroll-behavior: smooth;
+}
+
+:-webkit-any(article, aside, nav, section) h1,h2,h3,h4,h5,h6 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+input[type=checkboxX] {
     appearance: none;
 
     transform: scale(1.5);
@@ -134,7 +143,7 @@ input[type=checkbox] {
     border: 1px solid var(--text-color);
 }
 
-input[type="checkbox"]:checked {
+input[type="checkboxX"]:checked {
     background: var(--text-color);
 
     &:before {
@@ -146,21 +155,12 @@ input[type="checkbox"]:checked {
     }
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-:-webkit-any(article, aside, nav, section) h1,h2,h3,h4,h5,h6 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
 .check,
 .check>* {
     display: inline-block;
 }
 
-.checkbox {
+.checkboxToggle {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -168,13 +168,13 @@ html {
     transform: translateY(25%);
 }
 
-.checkbox>input {
+.checkboxToggle>input {
     z-index: 999;
     opacity: 0;
 }
 
-.checkbox>input,
-.checkbox>span {
+.checkboxToggle>input,
+.checkboxToggle>span {
     position: absolute;
     top: 0;
     left: 0;
@@ -182,12 +182,12 @@ html {
     bottom: 0;
 }
 
-.checkbox.invert>input,
-.checkbox.invert>span{
+.checkboxToggle.invert>input,
+.checkboxToggle.invert>span{
 background-color: green;
 }
 
-.checkbox>span {
+.checkboxToggle>span {
     position: absolute;
     top: 0;
     left: 0;
@@ -199,7 +199,7 @@ background-color: green;
     transition: 0.5s;
 }
 
-.checkbox>span:before {
+.checkboxToggle>span:before {
     position: absolute;
     content: "";
     --size: 25px;
@@ -211,28 +211,28 @@ background-color: green;
     transition: 0.5s;
 }
 
-.checkbox>input:checked+span {
+.checkboxToggle>input:checked+span {
     background-color: green;
 }
 
-.checkbox.invert>input:checked+span {
+.checkboxToggle.invert>input:checked+span {
     background-color: red;
 }
 
-.checkbox>input:focus+span {
+.checkboxToggle>input:focus+span {
     /*keyboard space / click*/
 }
 
-.checkbox>input:checked+span:before {
+.checkboxToggle>input:checked+span:before {
     transition: 1.5s;
     right: 10%;
     left: unset;
 }
 
-.checkbox>span {
+.checkboxToggle>span {
     border-radius: 34px;
 }
 
-.checkbox>span:before {
+.checkboxToggle>span:before {
     border-radius: 50%;
 }
