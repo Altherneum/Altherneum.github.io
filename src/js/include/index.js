@@ -487,6 +487,11 @@ async function pageAdmin() {
         await include_html("/src/html/content/donation.html", "contentArticle", true);
         await include_script("/src/js/content/donation.js");
     }
+    
+    else if (pathNameMatchPage("/admin/note", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note.md', false, true); });
+    }
 
     else {
         return false;
