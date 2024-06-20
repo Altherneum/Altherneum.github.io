@@ -131,7 +131,7 @@ html {
     margin-block-end: 0;
 }
 
-input[type=checkboxX] {
+input[type=checkbox].checkboxBox {
     appearance: none;
 
     transform: scale(1.5);
@@ -143,7 +143,7 @@ input[type=checkboxX] {
     border: 1px solid var(--text-color);
 }
 
-input[type="checkboxX"]:checked {
+input[type="checkbox"].checkboxBox:checked {
     background: var(--text-color);
 
     &:before {
