@@ -67,7 +67,20 @@ async function pages() {
         await include_html("/src/html/content/welcome.html", "contentArticle", true);
         await include_css("/src/css/welcome.css");
 
-        await include_multiple("console", "contentArticle");
+        var random = Math.floor(Math.random() * 3);
+        if (random == 1) {
+            await include_html("/src/html/content/cube.html", "contentArticle", true);
+            await include_script("/src/js/content/cube.js");
+            await include_css("/src/css/cube.css");
+        }
+        else if (random == 2) {
+            await include_multiple("console", "contentArticle");
+        }
+        else {
+            await include_css("/src/css/settings.css");
+            await include_html("/src/html/content/settings.html", "contentArticle", true);
+            await include_script("/src/js/content/settings.js");
+        }
     }
 
     else if (pathNameMatchPage("/settings", true)) {
@@ -408,10 +421,11 @@ async function pageOutils() {
     }
 
     else if (pathNameMatchPage("/outils/cube", true)) {
-        await include_html("/src/html/include/content.html", "body", false);
+        await includes();
+
         await include_html("/src/html/content/cube.html", "contentArticle", true);
+        await include_script("/src/js/content/cube.js");
         await include_css("/src/css/cube.css");
-        await include_css("/src/css/theme.css");
     }
 
     else if (pathNameMatchPage("/outils/rss", true)) {
