@@ -4,7 +4,7 @@
 
 
 async function getEvents(amount, orgsName) {
-    console.log("Getting Github-PushEvent");
+    console.info("Getting Github-PushEvent");
 
     var x = await gather('https://api.github.com/orgs/' + orgsName + '/events');
     var iResult = 0;

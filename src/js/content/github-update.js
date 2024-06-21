@@ -4,7 +4,7 @@
 
 
 async function getUpdate(repoName) {
-    console.log("Getting Github-Update");
+    console.info("Getting Github-Update");
 
     var div = document.getElementById("github-update");
     var title = div.querySelector("#title");

@@ -25,7 +25,7 @@ function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
     localStorage.setItem(name, state);
-    console.log("set " + name + " to " + state)
+    console.info("set " + name + " to " + state)
 }
 
 function setSwitch(name, defaultTrue) {

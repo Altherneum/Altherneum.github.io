@@ -1,4 +1,4 @@
-console.log("start test RSS");
+console.info("Loading RSS");
 
 function addLeadingZero(num) {
   num = num.toString();
@@ -145,7 +145,7 @@ const feedItems = linksList;
 // Generate the channel feed items based on the filtered pages
 const channelFeed = feedItems?.map((node) => {
   const link = baseUrl + "/" + node.link;
-  console.log("test : " + link)
+  console.info("RSS feed : " + link)
   const meta = node.meta || {}
   const title = node.title
   const description = node.description

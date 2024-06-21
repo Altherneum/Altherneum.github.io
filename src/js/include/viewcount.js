@@ -1,5 +1,5 @@
 async function viewCount(page) {
-    console.log("Loading view counter");
+    console.info("Loading view counter");
     var pathname = window.location.pathname;
     var pathname = pathname.replaceAll("/", ".");
     var pathname = pathname.replace(".html", "");

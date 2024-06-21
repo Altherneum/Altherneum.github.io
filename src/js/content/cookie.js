@@ -191,12 +191,10 @@ function bonusClick(bonus) {
     
     buyAmountInt -= 1;
 
-    console.log("Last buy OK : " + lastBuyOK + "   amount remain " + buyAmountInt);
     if (buyAmountInt >= 1 && lastBuyOK) {
         bonusClick(bonus);
     }
     else {
-        console.log("stop");
         updateStats();
         setBuyAmount();
     }

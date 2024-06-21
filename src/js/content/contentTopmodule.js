@@ -3,7 +3,7 @@ const ids = [/*"statsContentIssues", "statsContentContributor",
     "statsContentConsoleInfo", "ContentLatestRSS", "ContentMusic", "statsContentMenu"];
 
 async function showTopmodule(forceBlock, menuName) {
-    console.log("Loading top module stats");
+    console.info("Loading top module stats");
     var topModule = document.getElementById("TopModule");
 
     if (topModule.style.display == "block") {

@@ -13,7 +13,7 @@ fetch('https://discord.com/api/users/@me', {
 })
     .then(result => result.json())
     .then(response => {
-        console.log(response);
+        console.info(response);
         const { username, discriminator, avatar, id, mfa_enabled, locale, premium_type } = response;
 
         var name = document.createElement("p");
