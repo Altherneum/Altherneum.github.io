@@ -1,8 +1,7 @@
 async function addMarkdown(repo, file, gist, doesSetAnchor) {
-    console.log("Loading markdown CSS");
+    console.info("Loading markdown CSS");
     await include_css("/src/css/markdown.css");
-    console.log("Loading .md");
-    console.log("Setting header markdown");
+    console.info("Loading .md");
 
     var markdownHolder = setMarkdownHolder();
     var content = setMarkdownFileDiv(repo, file, markdownHolder);
@@ -16,7 +15,7 @@ async function addMarkdown(repo, file, gist, doesSetAnchor) {
     }
 
     autoScroll();
-    console.log("Fin markdown");
+    console.info("Fin markdown");
 }
 
 function setMarkdownHolder() {
@@ -40,7 +39,7 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
 }
 
 const parseMarkdown = (text) => {
-    console.log("Loading markdown parser");
+    console.info("Loading markdown parser");
     const toHTML = text
         .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/gim, '$1<a href=\"$3\">$2</a>') // <a>
         .replace(/!\[([^\[]+)\]\(([^\)]+)\)/gim, '<img src=\"$2\" alt=\"$1\" />') // <img>
@@ -76,7 +75,7 @@ const parseMarkdown = (text) => {
         .replace(/[\n]{2,}/g, "<br>") //new line
 
         .trim();
-    console.log("Loading return markdown trim");
+    console.info("Loading return markdown trim");
     return toHTML.trim();
 }
 
@@ -117,7 +116,6 @@ async function githubData(repo, file, content, gist) {
     var htmlUrl = getValue(data[0], "html_url");
 
     var commitAuthor = getValue(commit, "author");
-    console.log(commitAuthor);
     var commitMessage = getValue(commit, "message");
 
     var commitAuthorName = getValue(commitAuthor, "name");
@@ -273,7 +271,7 @@ function anchorHolder(user, holder) {
 }
 
 async function getMarkdown(url) {
-    console.log("Loading download markdown");
+    console.info("Loading download markdown");
     var data = (await fetch(url)).text(); 
     return data;
 }
