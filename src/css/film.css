@@ -71,6 +71,10 @@
     content: url(/assets/svg/star-half.svg);
 }
 
+.card.love>img.svg {
+    content: url(/assets/svg/heart.svg);
+}
+
 /*CSS mobile une seule carte par rangé 100%*/
 @media screen and (max-width: 1024px) {
     .films>div>div {
