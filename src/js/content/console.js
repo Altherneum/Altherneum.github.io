@@ -35,14 +35,14 @@ async function addText(text) {
         }
         else if (text[char] == ".") {
             await breakLine();
-            await sleep(getRandomInt(750));
+            await sleep(getRandomInt(500));
         }
         else if (text[char] == `\n`)
         {
             await breakLine();
         }
         else {
-            await sleep(getRandomInt(50));
+            await sleep(getRandomInt(10));
         }
     }
 } 
