@@ -417,6 +417,11 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/gpo.md', false, true); });
     }
+
+    else if (pathNameMatchPage("/cours/cisco", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/cisco.md', false, true); });
+    }
         
     else {
         return false;
