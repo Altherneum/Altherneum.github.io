@@ -1,54 +1,63 @@
-run("https", "google.fr", 443);
-function run(prot, host, port) {
+run();
+function run() {
     return new Promise(async (resolve, reject) => {
         setInterval(() => {
             setTimeout(() => {
-                ping(prot, host, port).then(resolve);
+                ping(getProtValues(), getHostValues(), getPortValues());
             }, 500);
         }, 500);
     });
 }
 
+var min = Number.MAX_VALUE;
+var max = Number.MIN_VALUE;
+var total = 0;
+var numberOfPing = 0;
 
-async function ping(prot, host, port) {
+function ping(prot, host, port) {
     document.getElementById("text").textContent = prot + "://" + host + ":" + port;
     document.getElementById("adress").href = prot + "://" + host + ":" + port;
 
     var started = new Date().getTime();
-    var http = new XMLHttpRequest();
 
-    http.open("GET", prot + "://" + host + ":" + port, true);
+    fetch(prot + "://" + host + ":" + port, { mode: "no-cors" }).then((response) => {
+        var ended = new Date().getTime();
+        var milliseconds = ended - started;
 
-    http.setRequestHeader("Content-Type", "application/json");
-    http.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-    http.setRequestHeader("Accept", "application/json");
-    http.setRequestHeader("Access-Control-Allow-Origin", "*");
-    http.setRequestHeader("Access-Control-Allow-Headers", "*");
-    http.setRequestHeader("Access-Control-Allow-Methods", "GET,HEAD");
-    
-    http.onreadystatechange = function () {
-        if (http.readyState == http.DONE) {
-            var ended = new Date().getTime();
-            var milliseconds = ended - started;
-
-            document.getElementById("ping-value").textContent = milliseconds;
-            document.getElementById("errorCode").textContent = "Code " + http.DONE;
-            document.getElementById("errorCodeDescription").textContent = "OK"
+        if (min > milliseconds) {
+            min = milliseconds;
+            document.getElementById("min").textContent = "Min : " + min;
         }
-    };
 
+        if (max < milliseconds) {
+            max = milliseconds;
+            document.getElementById("max").textContent = "Max : " + max;
+        }
 
+        total += milliseconds;
+        numberOfPing++;
+        document.getElementById("moyenne").textContent = "Moyenne : " + Math.round(total / numberOfPing);
 
-    http.addEventListener("error", function sendError() {
-        document.getElementById("errorCode").textContent = "Code " + http.status;
-        document.getElementById("errorCodeDescription").textContent = "erreur non géré"
-    });
-
-    try {
-        http.send(null);
-    } catch (exception) {
+        document.getElementById("ping-value").textContent = milliseconds + " ms";
+        document.getElementById("errorCode").textContent = "Code : " + response.status + ".";
+        document.getElementById("errorCodeDescription").textContent = response.statusText;
+    }).catch(exception => {
         document.getElementById("errorCode").textContent = exception;
-        document.getElementById("errorCodeDescription").textContent = "";
-        console.log(exception);
-    }
+
+        console.error(exception);
+    });
+}
+
+//check for null or default
+
+//set max & minimum & average ping stats
+
+function getProtValues() {
+    return document.getElementById("prot").value;
+}
+function getHostValues() {
+    return document.getElementById("host").value;
+}
+function getPortValues() {
+    return document.getElementById("port").value;
 }
