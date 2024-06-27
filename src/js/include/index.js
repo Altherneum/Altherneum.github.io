@@ -475,6 +475,11 @@ async function pageOutils() {
         await includes();
         await include_multiple("console", "contentArticle");
     }
+    
+    else if (pathNameMatchPage("/outils/ping", true)) {
+        await includes();
+        await include_multiple("ping", "contentArticle");
+    }
 
     else {
         return false;
