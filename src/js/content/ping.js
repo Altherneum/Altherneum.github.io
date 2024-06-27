@@ -4,7 +4,7 @@ function run() {
         setInterval(() => {
             setTimeout(() => {
                 ping(getProtValues(), getHostValues(), getPortValues());
-            }, 500);
+            }, 5000);
         }, 500);
     });
 }
@@ -47,10 +47,6 @@ function ping(prot, host, port) {
         console.error(exception);
     });
 }
-
-//check for null or default
-
-//set max & minimum & average ping stats
 
 function getProtValues() {
     return document.getElementById("prot").value;
