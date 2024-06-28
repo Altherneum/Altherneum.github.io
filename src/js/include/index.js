@@ -1,4 +1,4 @@
-var block = true;
+var block = false;
 if (block) {
     if (localStorage.getItem('Granted') === "true" || devMode()) {
         index();
