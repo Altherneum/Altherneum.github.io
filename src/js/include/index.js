@@ -1,4 +1,9 @@
-index();
+if (localStorage.getItem('Granted') === "true") {
+    index();
+}
+else {
+    window.location.href = "https://letmegooglethat.com/?q=Comment+utiliser+google+"
+}
 
 async function index() {
     await include_script("/src/js/content/consoleInfo.js");
