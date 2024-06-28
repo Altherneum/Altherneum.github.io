@@ -1,8 +1,14 @@
-if (localStorage.getItem('Granted') === "true" || devMode()) {
-    index();
+var block = false;
+if (block) {
+    if (localStorage.getItem('Granted') === "true" || devMode()) {
+        index();
+    }
+    else {
+        window.location.href = "https://letmegooglethat.com/?q=Comment+utiliser+google+";
+    }
 }
 else {
-    window.location.href = "https://letmegooglethat.com/?q=Comment+utiliser+google+";
+    index();
 }
 
 async function index() {
