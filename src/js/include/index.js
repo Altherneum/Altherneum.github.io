@@ -1,8 +1,8 @@
-if (localStorage.getItem('Granted') === "true") {
+if (localStorage.getItem('Granted') === "true" || devMode()) {
     index();
 }
 else {
-    window.location.href = "https://letmegooglethat.com/?q=Comment+utiliser+google+"
+    window.location.href = "https://letmegooglethat.com/?q=Comment+utiliser+google+";
 }
 
 async function index() {
