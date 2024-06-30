@@ -78,7 +78,7 @@ async function randomInclude() {
 async function pages() {
     console.info("Loading custom page");
     var block = true;
-    if (block) {
+    if (block && localStorage.getItem('Granted') !== "true") {
         await includes();
         await include_css("/src/css/maintenance.css");
         await include_html("/src/html/content/maintenance.html", "contentArticle", true);
@@ -151,16 +151,12 @@ async function pageGithub() {
     else if (pathNameMatchPage("/github/contributeur", true)) {
         await includes();
 
-
-
         await include_html("/src/html/content/contributeur.html", "contentArticle", true);
         await include_script("/src/js/content/contributeur.js");
     }
 
     else if (pathNameMatchPage("/github/issues", true)) {
         await includes();
-
-
 
         await include_html("/src/html/content/issues.html", "contentArticle", true);
         await include_css("/src/css/issues.css");
