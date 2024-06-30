@@ -60,7 +60,7 @@ async function Metadata() {
 
 
 async function randomInclude() {
-    var random = Math.floor(Math.random() * 3);
+    var random = Math.floor(Math.random() * 2);
     if (random == 1) {
         await include_html("/src/html/content/cube.html", "contentArticle", true);
         await include_script("/src/js/content/cube.js");
@@ -68,11 +68,6 @@ async function randomInclude() {
     }
     else if (random == 2) {
         await include_multiple("console", "contentArticle");
-    }
-    else {
-        await include_css("/src/css/settings.css");
-        await include_html("/src/html/content/settings.html", "contentArticle", true);
-        await include_script("/src/js/content/settings.js");
     }
 }
 async function pages() {

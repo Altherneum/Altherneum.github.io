@@ -21,6 +21,10 @@ function SwitchCursor() {
     getCursorSetting();
 }
 
+function SwitchGranted() {
+    Switcher("Granted");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -46,4 +50,5 @@ function loadSettingsSwitch() {
     setSwitch("devMode", false);
     setSwitch("viewCount", true);
     setSwitch("customCursor", true);
+    setSwitch("Granted", false);
 } loadSettingsSwitch();
