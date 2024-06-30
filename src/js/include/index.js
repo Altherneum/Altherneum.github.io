@@ -60,7 +60,9 @@ async function Metadata() {
 
 
 async function randomInclude() {
-    var random = Math.floor(Math.random() * 2);
+    var max = 2;
+    var random = Math.round(Math.random() * (max - 1) + 1);
+    
     if (random == 1) {
         await include_html("/src/html/content/cube.html", "contentArticle", true);
         await include_script("/src/js/content/cube.js");
