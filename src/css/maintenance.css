@@ -1,4 +1,8 @@
-header{display: none;}
+header, 
+#searchbar,
+#anchor>:not(#theme, #date-holder){
+    display: none;
+}
 
 #contentArticle{
     display: flex;

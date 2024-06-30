@@ -62,7 +62,9 @@ async function Metadata() {
 async function randomInclude() {
     var max = 2;
     var random = Math.round(Math.random() * (max - 1) + 1);
-    
+    //Make settings page back, but not for maintenance page
+    //add settings on this function to avoid it for some specific page
+
     if (random == 1) {
         await include_html("/src/html/content/cube.html", "contentArticle", true);
         await include_script("/src/js/content/cube.js");
@@ -76,6 +78,12 @@ async function pages() {
     console.info("Loading custom page");
     var block = true;
     if (block && localStorage.getItem('Granted') !== "true") {
+
+
+        //remove shearch bar on maintenance page
+        //remove right bar on maintenace page except theme
+
+
         await includes();
         await include_css("/src/css/maintenance.css");
         await include_html("/src/html/content/maintenance.html", "contentArticle", true);
@@ -117,13 +125,12 @@ async function pages() {
                 await include_html("/src/html/content/404-custom.html", "erreur", true);
             }
         }
-
-        await include_script("/src/js/include/viewcount.js");
-        await devFooter();
-        await include_script("/src/js/include/cursor.js");
-        await include_script("/src/js/content/date.js");
-        await include_script("/src/js/include/searchbar.js");
     }
+    await include_script("/src/js/include/viewcount.js");
+    await devFooter();
+    await include_script("/src/js/include/cursor.js");
+    await include_script("/src/js/content/date.js");
+    await include_script("/src/js/include/searchbar.js");
 }
 
 async function pageGithub() {
