@@ -58,12 +58,9 @@ async function Metadata() {
     document.head.appendChild(link);
 }
 
-
-async function randomInclude() {
-    var max = 2;
+async function randomInclude(excludeSettings) {
+    var max = 3;
     var random = Math.round(Math.random() * (max - 1) + 1);
-    //Make settings page back, but not for maintenance page
-    //add settings on this function to avoid it for some specific page
 
     if (random == 1) {
         await include_html("/src/html/content/cube.html", "contentArticle", true);
@@ -73,21 +70,24 @@ async function randomInclude() {
     else if (random == 2) {
         await include_multiple("console", "contentArticle");
     }
+    else if (random == 3) {
+        if (excludeSettings) {
+            randomInclude(excludeSettings);
+        }
+        else {
+            await include_multiple("settings", "contentArticle");
+        }
+    }
 }
+
 async function pages() {
     console.info("Loading custom page");
     var block = true;
     if (block && localStorage.getItem('Granted') !== "true") {
-
-
-        //remove shearch bar on maintenance page
-        //remove right bar on maintenace page except theme
-
-
         await includes();
         await include_css("/src/css/maintenance.css");
         await include_html("/src/html/content/maintenance.html", "contentArticle", true);
-        randomInclude();
+        randomInclude(true);
     }
     else {
         if (pathNameMatchPage("/", true) || pathNameMatchPage("/index", true)) {
@@ -96,7 +96,7 @@ async function pages() {
             await include_html("/src/html/content/welcome.html", "contentArticle", true);
             await include_css("/src/css/welcome.css");
 
-            randomInclude();
+            randomInclude(false);
         }
 
         else if (pathNameMatchPage("/settings", true)) {
