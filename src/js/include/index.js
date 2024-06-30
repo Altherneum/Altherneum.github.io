@@ -1,20 +1,9 @@
-var block = false;
-if (block) {
-    if (localStorage.getItem('Granted') === "true" || devMode()) {
-        index();
-    }
-    else {
-        window.location.href = "https://letmegooglethat.com/?q=Comment+utiliser+google+";
-    }
-}
-else {
-    index();
-}
+index();
 
 async function index() {
     await include_script("/src/js/content/consoleInfo.js");
     console.info("Loading website");
-    await Metadata(); 
+    await Metadata();
     await pages();
 }
 
@@ -27,7 +16,7 @@ async function includes() {
     await include_html("/src/html/include/header.html", "body", false);
 
     await include_html("/src/html/include/content.html", "body", false);
-    
+
     await include_html("/src/html/include/anchor.html", "content-right", true);
     await setIconTheme();
 
@@ -69,70 +58,82 @@ async function Metadata() {
     document.head.appendChild(link);
 }
 
-async function pages() {
-    console.info("Loading custom page");
 
-    if (pathNameMatchPage("/", true) || pathNameMatchPage("/index", true)) {
-        await includes();
-
-        await include_html("/src/html/content/welcome.html", "contentArticle", true);
-        await include_css("/src/css/welcome.css");
-
-        var random = Math.floor(Math.random() * 3);
-        if (random == 1) {
-            await include_html("/src/html/content/cube.html", "contentArticle", true);
-            await include_script("/src/js/content/cube.js");
-            await include_css("/src/css/cube.css");
-        }
-        else if (random == 2) {
-            await include_multiple("console", "contentArticle");
-        }
-        else {
-            await include_css("/src/css/settings.css");
-            await include_html("/src/html/content/settings.html", "contentArticle", true);
-            await include_script("/src/js/content/settings.js");
-        }
+async function randomInclude() {
+    var random = Math.floor(Math.random() * 3);
+    if (random == 1) {
+        await include_html("/src/html/content/cube.html", "contentArticle", true);
+        await include_script("/src/js/content/cube.js");
+        await include_css("/src/css/cube.css");
     }
-
-    else if (pathNameMatchPage("/settings", true)) {
-        await includes();
-
+    else if (random == 2) {
+        await include_multiple("console", "contentArticle");
+    }
+    else {
         await include_css("/src/css/settings.css");
         await include_html("/src/html/content/settings.html", "contentArticle", true);
         await include_script("/src/js/content/settings.js");
     }
-
-    else if (pathNameMatchPage("/github", false) && await pageGithub()) { }
-    else if (pathNameMatchPage("/cours", false) && await pageCours()) { }
-    else if (pathNameMatchPage("/outils", false) && await pageOutils()) { }
-    else if (pathNameMatchPage("/admin", false) && await pageAdmin()) { }
-    else if (pathNameMatchPage("/games", false) && await pageGames()) { }
-    else if (pathNameMatchPage("/discord", false) && await pageDiscord()) { }
-
-    else {
+}
+async function pages() {
+    console.info("Loading custom page");
+    var block = true;
+    if (block) {
         await includes();
-
-        await include_css("/src/css/404.css");
-        await include_html("/src/html/content/404.html", "contentArticle", true);
-        console.warn("Erreur : 404");
-
-        if (pathNameMatchPage("/404", true)) {
-            await include_html("/src/html/content/404-custom.html", "erreur", true);
-        }
+        await include_css("/src/css/maintenance.css");
+        await include_html("/src/html/content/maintenance.html", "contentArticle", true);
+        randomInclude();
     }
+    else {
+        if (pathNameMatchPage("/", true) || pathNameMatchPage("/index", true)) {
+            await includes();
 
-    await include_script("/src/js/include/viewcount.js");
-    await devFooter();
-    await include_script("/src/js/include/cursor.js");
-    await include_script("/src/js/content/date.js");
-    await include_script("/src/js/include/searchbar.js");
+            await include_html("/src/html/content/welcome.html", "contentArticle", true);
+            await include_css("/src/css/welcome.css");
+
+            randomInclude();
+        }
+
+        else if (pathNameMatchPage("/settings", true)) {
+            await includes();
+
+            await include_css("/src/css/settings.css");
+            await include_html("/src/html/content/settings.html", "contentArticle", true);
+            await include_script("/src/js/content/settings.js");
+        }
+
+        else if (pathNameMatchPage("/github", false) && await pageGithub()) { }
+        else if (pathNameMatchPage("/cours", false) && await pageCours()) { }
+        else if (pathNameMatchPage("/outils", false) && await pageOutils()) { }
+        else if (pathNameMatchPage("/admin", false) && await pageAdmin()) { }
+        else if (pathNameMatchPage("/games", false) && await pageGames()) { }
+        else if (pathNameMatchPage("/discord", false) && await pageDiscord()) { }
+
+        else {
+            await includes();
+
+            await include_css("/src/css/404.css");
+            await include_html("/src/html/content/404.html", "contentArticle", true);
+            console.warn("Erreur : 404");
+
+            if (pathNameMatchPage("/404", true)) {
+                await include_html("/src/html/content/404-custom.html", "erreur", true);
+            }
+        }
+
+        await include_script("/src/js/include/viewcount.js");
+        await devFooter();
+        await include_script("/src/js/include/cursor.js");
+        await include_script("/src/js/content/date.js");
+        await include_script("/src/js/include/searchbar.js");
+    }
 }
 
 async function pageGithub() {
     if (pathNameMatchPage("/github/statistiques", true)) {
         await includes();
 
-        
+
 
         await include_css("/src/css/github-update.css");
         await include_html("/src/html/content/github-update.html", "contentArticle", true);
@@ -150,7 +151,7 @@ async function pageGithub() {
     else if (pathNameMatchPage("/github/contributeur", true)) {
         await includes();
 
-        
+
 
         await include_html("/src/html/content/contributeur.html", "contentArticle", true);
         await include_script("/src/js/content/contributeur.js");
@@ -159,7 +160,7 @@ async function pageGithub() {
     else if (pathNameMatchPage("/github/issues", true)) {
         await includes();
 
-        
+
 
         await include_html("/src/html/content/issues.html", "contentArticle", true);
         await include_css("/src/css/issues.css");
@@ -196,32 +197,32 @@ async function pageGithub() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'CODE_OF_CONDUCT.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/github/Altherneum.github.io", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/Altherneum.github.io', 'README.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/github/.github", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'README.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/github/plugin", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/plugin', 'README.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/github/resourcePack", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/resourcePack', 'README.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/github/bot", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/bot', 'README.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/github/server", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/server', 'README.md', false, true); });
@@ -291,7 +292,7 @@ async function pageCours() {
 
         await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true);
     }
-        
+
     else if (pathNameMatchPage("/cours/html", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/learning.md', false, false); });
@@ -308,16 +309,16 @@ async function pageCours() {
     else if (pathNameMatchPage("/cours/css", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/learning.md', false, false); });
-       
+
         addHRChapter();
 
         await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/media-queries.md', false, false);
 
         addHRChapter();
-        
+
         await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false, true);
     }
-        
+
     else if (pathNameMatchPage("/cours/js", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/learning.md', false, true); });
@@ -325,27 +326,27 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/binaire", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { 
-            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/learning.md', false, false); 
-            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/ip.md', false, true); 
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/learning.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/ip.md', false, true);
         });
     }
-        
+
     else if (pathNameMatchPage("/cours/lm-studio", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/IA/learning.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/cours/scam", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Scam/learning.md', false, true); });
     }
-        
+
     else if (pathNameMatchPage("/cours/retraite", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Retraite/learning.md', false, true); });
     }
-         
+
     else if (pathNameMatchPage("/cours/windows", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/learning.md', false, true); });
@@ -373,9 +374,9 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/ip", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { 
-            await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false); 
-            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/ip.md', false, true); 
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Network/ip.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/Binaire/ip.md', false, true);
         });
     }
 
@@ -391,13 +392,13 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/network", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { 
+        await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'note/Network/networks.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/OSI.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/cast.md', false, true);
         });
     }
-        
+
     else if (pathNameMatchPage("/cours/hyper-v", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/hyperv.md', false, true); });
@@ -433,7 +434,7 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/cisco.md', false, true); });
     }
-        
+
     else {
         return false;
     }
@@ -471,7 +472,7 @@ async function pageOutils() {
         await includes();
         await include_multiple("caesar", "contentArticle");
     }
-        
+
     else if (pathNameMatchPage("/outils/vigenere", true)) {
         await includes();
         await include_multiple("vigenere", "contentArticle");
@@ -491,7 +492,7 @@ async function pageOutils() {
         await includes();
         await include_multiple("console", "contentArticle");
     }
-    
+
     else if (pathNameMatchPage("/outils/ping", true)) {
         await includes();
         await include_multiple("ping", "contentArticle");
@@ -533,7 +534,7 @@ async function pageAdmin() {
         await include_html("/src/html/content/donation.html", "contentArticle", true);
         await include_script("/src/js/content/donation.js");
     }
-    
+
     else if (pathNameMatchPage("/admin/note", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note.md', false, true); });

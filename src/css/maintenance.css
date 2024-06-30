@@ -1,0 +1,44 @@
+header{display: none;}
+
+#contentArticle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#maintenance{
+    text-align: center;
+}
+
+#maintenance-title > * {
+    display: inline-block; 
+}
+
+#maintenance-title{
+    margin-bottom: 1vh;
+}
+
+#maintenance-title>img{
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateZ(45deg);
+    }
+
+    50% {
+        transform:  rotateZ(120deg);
+    }
+
+    100% {
+        transform: rotateZ(45deg);
+    }
+}
