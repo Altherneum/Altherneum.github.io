@@ -432,7 +432,12 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/cisco", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/cisco.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Network/Cisco/cisco.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/Cisco/routage.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/Cisco/vlan.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Network/Cisco/dot1q.md', false, true);
+         });
     }
 
     else {
