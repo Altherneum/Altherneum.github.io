@@ -82,7 +82,7 @@ async function randomInclude(excludeSettings) {
 
 async function pages() {
     console.info("Loading custom page");
-    var block = true;
+    var block = false;
     if (block && localStorage.getItem('Granted') !== "true") {
         await includes();
         await include_css("/src/css/maintenance.css");
