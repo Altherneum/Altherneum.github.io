@@ -437,6 +437,7 @@ async function pageCours() {
             await addMarkdown('Altherneum/.github', 'note/Network/Cisco/routage.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/Cisco/vlan.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/Cisco/dot1q.md', false, true);
+            await addMarkdown('Altherneum/.github', 'note/Network/Cisco/acl.md', false, false);
          });
     }
 
