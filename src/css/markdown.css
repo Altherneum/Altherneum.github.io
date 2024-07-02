@@ -93,9 +93,12 @@
     padding-bottom: 12px;
 }
 
+#markdown>.markdowned:not(:first-child)>#fileData{
+    margin-top: 20vh;
+}
+
 #fileData{
     padding: 10px;
-    margin-top: 20vh;
     margin-bottom: 45px;
 
     display: flex;
