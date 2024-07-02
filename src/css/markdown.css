@@ -177,7 +177,7 @@
 @media screen and (min-width: 1024px) {
     #anchorList {
         top: 15vh;
-        max-height: 85vh;
+        max-height: 75vh;
         min-width: 15vw;
         max-width: 20vw;
         display: grid;
