@@ -516,6 +516,8 @@ async function pageAdmin() {
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/film.html", "contentArticle", true);
+        await include_html("/src/html/content/series.html", "contentArticle", true);
+        await include_html("/src/html/content/animes.html", "contentArticle", true);
     }
 
     else if (pathNameMatchPage("/admin/music", true)) {
