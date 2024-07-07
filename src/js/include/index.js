@@ -443,6 +443,11 @@ async function pageCours() {
          });
     }
 
+    else if (pathNameMatchPage("/cours/powershell", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/powershell.md', false, true); });
+    }
+
     else {
         return false;
     }
