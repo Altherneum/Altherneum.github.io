@@ -57,7 +57,7 @@ const parseMarkdown = (text) => {
 
         .replace(/\_\_(.*?)\_\_/g, '<u>$1</u>') // underline
         .replace(/(?<!\\)(?<!\/)\*\*(.*?)\*\*/g, '<b>$1</b>') //bold
-        .replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/g, '<i>$1</i>') //italic
+        .replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/gm, '<i>$1</i>') //italic
 
         .replace(/^\*(.*$)/gim, '<ul><li><p>$1</p></li></ul>') // <li>
         .replace(/^- (.*$)/gim, '<ul><li><p>$1</p></li></ul>') // <li>
@@ -65,8 +65,6 @@ const parseMarkdown = (text) => {
         .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;"><p>$1</p></li></ul>') // <li>
         .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;"><p>$1</p></li></ul>') // <li>
         .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;"><p>$1</p></li></ul>') // <li>
-        //.replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li><p>$1</p></li></ol>') // <li>
-
         .replace(/^([0-9])+\.\s*(.*$)/gim, '<ol><li style="list-style-type: &quot;$1. &quot;;"><p>$2</p></li></ol>') // <li>
 
         .replace(/\\\*/g, '*') //replace /* & \* to *
