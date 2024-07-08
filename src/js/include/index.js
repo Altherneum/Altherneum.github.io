@@ -252,6 +252,11 @@ async function pageCours() {
 
         await addMarkdown('github/.github', 'profile/README.md', false, true);
     }
+        
+    else if (pathNameMatchPage("/cours/markdown-listing", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Github/Markdown/Listing.md', false, true); });
+    }
 
     else if (pathNameMatchPage("/cours/github-readme", true)) {
         await includes();
