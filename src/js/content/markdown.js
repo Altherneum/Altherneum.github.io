@@ -41,8 +41,8 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
 const parseMarkdown = (text) => {
     console.info("Loading markdown parser");
     const toHTML = text
-        .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/gim, '$1<a href=\"$3\">$2</a>') // <a>
-        .replace(/!\[([^\[]+)\]\(([^\)]+)\)/gim, '<img src=\"$2\" alt=\"$1\" />') // <img>
+        .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
+        .replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
         .replace(/^###### (.*$)/gim, '<h6>$1</h6>') // h6 tag
         .replace(/^##### (.*$)/gim, '<h5>$1</h5>') // h5 tag
         .replace(/^#### (.*$)/gim, '<h4>$1</h4>') // h4 tag
@@ -51,26 +51,28 @@ const parseMarkdown = (text) => {
         .replace(/^# (.*$)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$1</h1>') // h1 tag
         .replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
         .replace(/\`{1,3}(.*?)\`{1,3}/gms, '<code>$1</code>') // <code>
-        .replace(/-{3,}/gim, '<hr/>') //hr (Decoration line)
+        .replace(/-{3,}/g, '<hr/>') //hr (Decoration line)
         .replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
         .replace(/\n(?:&gt;|\>)\W*(.*)/gim, '<blockquote><p>$1</p></blockquote>') // <blockquote>
 
-        .replace(/\*\*(.*?)\*\*/gm, '<b>$1</b>') // bold text
-        .replace(/\*(?![^]*(`{1,3}|<|&gt;|<code>\s*|<textarea>\s*)).*?(?=\s*(?!`{0,3}|<\/textarea>)|<|\/code>)/gm, '<em>$&</em>') // italic text inside code or textarea tags
-        .replace(/\*(.*?)\*/gm, '<i>$1</i>') // italic text
-        .replace(/\_\_(.*?)\_\_/gm, '<u>$1</u>') // underline
-
-        
-        .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
-        .replace(/^ {2,}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
+        .replace(/\_\_(.*?)\_\_/g, '<u>$1</u>') // underline
+        .replace(/(?<!\\)(?<!\/)\*\*(.*?)\*\*/g, '<b>$1</b>') //bold
+        .replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/g, '<i>$1</i>') //italic
 
         .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+        .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+        .replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
+        .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;">$1</li></ul>') // <li>
+        .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;">$1</li></ul>') // <li>
+        .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;">$1</li></ul>') // <li>
         .replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li>$1</li></ol>') // <li>
+
+        .replace(/\\\*/g, '*') //replace /* & \* to *
 
         .replace(/\[x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
         .replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
 
-        .replace(/([a-z0-9A-Z:;|?!§%'~’"°«»(){}/\[/\]@&=+-/^ _¨$£¤µ\*€.,âôœûùéêëèàçïî▶⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
+        .replace(/([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,âôœûùéêëèàçïî▶⬇⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
 
         .replace(/[\n]{2,}/g, "<br>") //new line
 
