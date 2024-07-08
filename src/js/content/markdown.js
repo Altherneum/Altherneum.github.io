@@ -59,17 +59,19 @@ const parseMarkdown = (text) => {
         .replace(/(?<!\\)(?<!\/)\*\*(.*?)\*\*/g, '<b>$1</b>') //bold
         .replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/g, '<i>$1</i>') //italic
 
-        .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
-        .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
-        .replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
-        .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;">$1</li></ul>') // <li>
-        .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;">$1</li></ul>') // <li>
-        .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;">$1</li></ul>') // <li>
-        .replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li>$1</li></ol>') // <li>
+        .replace(/^\*(.*$)/gim, '<ul><li><p>$1</p></li></ul>') // <li>
+        .replace(/^- (.*$)/gim, '<ul><li><p>$1</p></li></ul>') // <li>
+        .replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;"><p>$1</p></li></ul>') // <li>
+        .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;"><p>$1</p></li></ul>') // <li>
+        .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;"><p>$1</p></li></ul>') // <li>
+        .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;"><p>$1</p></li></ul>') // <li>
+        //.replace(/^[0-9]+\.\s*(.*$)/gim, '<ol><li><p>$1</p></li></ol>') // <li>
+
+        .replace(/^([0-9])+\.\s*(.*$)/gim, '<ol><li style="list-style-type: &quot;$1. &quot;;"><p>$2</p></li></ol>') // <li>
 
         .replace(/\\\*/g, '*') //replace /* & \* to *
 
-        .replace(/\[x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
+        .replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
         .replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
 
         .replace(/([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,âôœûùéêëèàçïî▶⬇⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
