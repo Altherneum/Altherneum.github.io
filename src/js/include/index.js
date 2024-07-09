@@ -411,7 +411,7 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/dns", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/active-directory-DNS.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/DNS.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/enterprise-network", true)) {
@@ -427,12 +427,12 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/active-directory-approbation", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/active-directory-approbation.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/approbation.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/gpo", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/gpo.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/gpo.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/cisco", true)) {
