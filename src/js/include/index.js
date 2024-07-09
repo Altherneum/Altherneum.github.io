@@ -406,7 +406,7 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/hyper-v", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/hyperv.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/hyper-v.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/dns", true)) {
@@ -503,7 +503,7 @@ async function pageOutils() {
 
     else if (pathNameMatchPage("/outils/matrice-windows", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/OS/Windows/matrice.bat.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/OS/Windows/Scripts/matrice.bat.md', false, true); });
     }
 
     else if (pathNameMatchPage("/outils/console", true)) {
