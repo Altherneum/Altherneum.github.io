@@ -354,7 +354,7 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/windows", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/linux", true)) {
@@ -406,7 +406,7 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/hyper-v", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/hyper-v.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/hyper-v.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/dns", true)) {
