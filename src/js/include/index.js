@@ -354,7 +354,10 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/windows", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/console.md', false, true)
+        });
     }
 
     else if (pathNameMatchPage("/cours/linux", true)) {
