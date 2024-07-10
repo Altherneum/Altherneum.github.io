@@ -525,6 +525,11 @@ async function pageOutils() {
         await includes();
         await include_multiple("ping", "contentArticle");
     }
+        
+    else if (pathNameMatchPage("/outils/base64", true)) {
+        await includes();
+        await include_multiple("base64", "contentArticle");
+    }
 
     else {
         return false;
