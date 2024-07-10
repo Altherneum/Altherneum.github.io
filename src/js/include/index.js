@@ -455,6 +455,10 @@ async function pageCours() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/PowerShell/powershell.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/PowerShell/cmd.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/PowerShell/variables.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/PowerShell/arithmetique.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/PowerShell/logique.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/PowerShell/powershell-AD.md', false, true);
         });
     }
