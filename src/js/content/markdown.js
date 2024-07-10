@@ -50,7 +50,9 @@ const parseMarkdown = (text) => {
         .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
         .replace(/^# (.*$)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$1</h1>') // h1 tag
         .replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
-        .replace(/(?<!<textarea>)(.*?)\`{1,3}(.*?)\`{1,3}/gm, '<code>$2</code>') // <code>
+        //.replace(/(?<!<textarea>)(.*?)\`{1,3}(.*?)\`{1,3}/gm, '<code>$2</code>') // <code>
+        .replace(/(?<!<textarea>)(.*?)\`{2} (.*?) \`{2}/gm, '<code>$2</code>') // backtick inside <code>
+        .replace(/(?<!<textarea>)(.*?)\`{1}(.*?)\`{1}/gm, '<code>$2</code>') // <code>
         .replace(/-{3,}/g, '<hr/>') //hr (Decoration line)
         .replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
         .replace(/\n(?:&gt;|\>)\W*(.*)/gim, '<blockquote><p>$1</p></blockquote>') // <blockquote>
@@ -72,7 +74,7 @@ const parseMarkdown = (text) => {
         .replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
         .replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
 
-        .replace(/([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,âôœûùéêëèàçïî▶⬇⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
+        .replace(/([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,`âôœûùéêëèàçïî▶⬇⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
 
         .replace(/[\n]{2,}/g, "<br>") //new line
 
