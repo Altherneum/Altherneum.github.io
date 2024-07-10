@@ -110,7 +110,7 @@ code{
     font-size: larger;
     font-weight: bold;
     color: var(--link-color);
-    background-color: var(--main-color);
+    background-color: var(--main-color-transparent);
 }
 
 blockquote{
