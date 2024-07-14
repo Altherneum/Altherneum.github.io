@@ -69,4 +69,16 @@ header>#navlinklist>a>h1 {
     header>* {
         padding-bottom: 16px;
     }
+
+    header>#navlinklist>div {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header>#navlinklist>div {
+        margin-left: 10px;
+        margin-right: 150px;
+    }
 }
