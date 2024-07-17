@@ -551,12 +551,19 @@ async function pageAdmin() {
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/animes.html", "contentArticle", true);
     }
-        
+
     else if (pathNameMatchPage("/admin/series", true)) {
         await includes();
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/series.html", "contentArticle", true);
+    }
+
+    else if (pathNameMatchPage("/admin/to-watch", true)) {
+        await includes();
+
+        await include_css("/src/css/film.css");
+        await include_html("/src/html/content/to-watch.html", "contentArticle", true);
     }
 
     else if (pathNameMatchPage("/admin/music", true)) {
