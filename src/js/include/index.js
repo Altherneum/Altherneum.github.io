@@ -355,14 +355,45 @@ async function pageCours() {
     else if (pathNameMatchPage("/cours/windows", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/console.md', false, true)
         });
     }
 
     else if (pathNameMatchPage("/cours/linux", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Linux/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/man.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/cmd-parameters.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/directory.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/lister.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/file.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/permission.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/arithmetique.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/logique.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/variable.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/os-version.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/alias.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/apt.md', false, false);
+
+            // await addMarkdown('Altherneum/.github', 'note/OS/Linux/arch.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/process.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/ufw.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/HTTPD-from-src.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/user.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/sudo.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/password.md', false, true);
+            
+        });
     }
 
     else if (pathNameMatchPage("/cours/sql", true)) {
