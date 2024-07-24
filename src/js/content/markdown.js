@@ -48,7 +48,19 @@ const parseMarkdown = (text) => {
         .replace(/(?<!<textarea>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
         .replace(/(?<!<textarea>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
 
-        .replace(/^(?<!\`)-{3,}/g, '<hr/>') //hr (Decoration line)
+
+
+
+
+
+
+
+        .replace(/(?<!.)(-{3,})(?!.)/g, '<hr/>') //hr (Decoration line)
+
+
+
+
+
         .replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
         .replace(/\n(?:&gt;|\>)\W*(.*)/gim, '<blockquote><p>$1</p></blockquote>') // <blockquote>
 
