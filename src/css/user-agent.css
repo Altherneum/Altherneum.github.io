@@ -34,6 +34,10 @@ del>* {
     display: inline-block;
 }
 
+li>*{
+    vertical-align: text-top;
+}
+
 del>* {
     text-decoration: line-through;
 }
