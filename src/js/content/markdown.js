@@ -43,15 +43,11 @@ const parseMarkdown = (text) => {
     const toHTML = text
         .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
         .replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
-        .replace(/^###### (.*$)/gim, '<h6>$1</h6>') // h6 tag
-        .replace(/^##### (.*$)/gim, '<h5>$1</h5>') // h5 tag
-        .replace(/^#### (.*$)/gim, '<h4>$1</h4>') // h4 tag
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>') // h3 tag
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
-        .replace(/^# (.*$)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$1</h1>') // h1 tag
+
         .replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
         .replace(/(?<!<textarea>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
         .replace(/(?<!<textarea>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
+
         .replace(/^(?<!\`)-{3,}/g, '<hr/>') //hr (Decoration line)
         .replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
         .replace(/\n(?:&gt;|\>)\W*(.*)/gim, '<blockquote><p>$1</p></blockquote>') // <blockquote>
@@ -72,6 +68,13 @@ const parseMarkdown = (text) => {
 
         .replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
         .replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
+
+        .replace(/^###### (.*$)/gim, '<h6>$1</h6>') // h6 tag
+        .replace(/^##### (.*$)/gim, '<h5>$1</h5>') // h5 tag
+        .replace(/^#### (.*$)/gim, '<h4>$1</h4>') // h4 tag
+        .replace(/^### (.*$)/gim, '<h3>$1</h3>') // h3 tag
+        .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
+        .replace(/(?<!<textarea[^>]*>[^<]*)(^# (.*))(?![^<]*<\/textarea>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
 
         .replace(/([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,`âôœûùéêëèàçïî▶⬇⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
         //text inside summary 
