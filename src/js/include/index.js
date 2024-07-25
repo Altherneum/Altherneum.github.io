@@ -396,7 +396,7 @@ async function pageCours() {
         });
     }
         
-    else if (pathNameMatchPage("/cours/windows", true)) {
+    else if (pathNameMatchPage("/cours/docker", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/Docker.md', false, true);
