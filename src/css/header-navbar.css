@@ -72,6 +72,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .subnav-content{
+        transform: translateX(-25%);
+    }
+
     .subnav-content>.sided:first-child {
         float: left;
         padding-right: 15px;
