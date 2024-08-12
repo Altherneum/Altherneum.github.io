@@ -91,14 +91,14 @@ const musiclinks = [
         categorie: "chill",
     },
     {
-        text: "Original : youtube.com/watch?v=DyDfgMOUjCI",
+        text: "<a href='youtube.com/watch?v=DyDfgMOUjCI'>Original</a>",
         videoID: "3Z4efCGd7TE",
         playlist: false,
         top: false,
         categorie: "chill",
     },
     {
-        text: "Origianl : youtube.com/watch?v=Y2V6yjjPbX0",
+        text: "<a href='youtube.com/watch?v=Y2V6yjjPbX0'>Original</a>",
         videoID: "fktD1q8OPa0",
         playlist: false,
         top: false,
@@ -372,7 +372,7 @@ const musiclinks = [
     {
         videoID: "HgJ5JSfe1mE",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "phonk",
     },
     {
@@ -392,14 +392,14 @@ const musiclinks = [
         text: "Slowed & Reverb",
         videoID: "mD7ttofMuJU",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "phonk",
     },
     {
         text: "Cursed Crown",
         videoID: "Cr15_9e7-dE",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "phonk",
     },
     {
@@ -412,7 +412,7 @@ const musiclinks = [
     {
         videoID: "xv8qfsARmMo",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "phonk",
     },
     {
@@ -447,6 +447,7 @@ const musiclinks = [
     },
     {
         videoID: "UULFM9r1xn6s30OnlJWb-jc3Sw",
+        text: "XXXTentatcion",
         playlist: true,
         top: false,
         categorie: "rap",
@@ -458,21 +459,32 @@ const musiclinks = [
         categorie: "rap",
     },
     {
-        text: "youtube.com/watch?v=5CzT1DDhKB8",
         videoID: "tmNpR_xQd8E",
         playlist: false,
         top: false,
         categorie: "rap",
     },
     {
-        text: "youtube.com/watch?v=2xWkATdMQms",
+        videoID: "5CzT1DDhKB8",
+        playlist: false,
+        top: true,
+        categorie: "rap",
+    },
+    {
         videoID: "tExc5EOZ1DY",
+        playlist: false,
+        top: true,
+        categorie: "rap",
+    },
+    {
+        videoID: "2xWkATdMQms",
         playlist: false,
         top: false,
         categorie: "rap",
     },
     {
         videoID: "OLAK5uy_lAo1VUhC2my4SdPRpAn99wdjPhGkoOOE0",
+        text: "Kerchak",
         playlist: true,
         top: false,
         categorie: "rap",
