@@ -597,6 +597,9 @@ const musiclinks = [
     },
     {
         videoID: "wZTIdnooV-s",
+        playlist: false,
+        top: false,
+        categorie: "trool",
     }];
 
 addMusics();
@@ -623,7 +626,7 @@ async function addMusics() {
         var playlist = array[music].playlist;
         var videoID = array[music].videoID;
         var top = array[music].top;
-        var categorie = array[music].categorie; console.log(categorie)
+        var categorie = array[music].categorie;
         var fetchUrl;
         var JSONdata;
 
@@ -634,7 +637,6 @@ async function addMusics() {
         }
 
         await fetch(fetchUrl).then(response => response.json().then(data => { JSONdata = data }));
-        console.log(JSONdata);
 
         var title = JSONdata.title;
         var length = 75;
@@ -651,7 +653,6 @@ async function addMusics() {
         }
 
         var thumbnail = JSONdata.thumbnail_url;
-        console.log(thumbnail);
 
         var videoLink;
         if (playlist) {
@@ -684,8 +685,9 @@ async function addMusics() {
         video_div.appendChild(video_image);
 
         var video_button = document.createElement("button");
-        video_button.addEventListener('click', createIframe);
         video_button.dataset.youtubeButton = videoLink;
+        video_button.dataset.youtubePlayList = playlist;
+        video_button.addEventListener('click', createIframe);
         video_div.appendChild(video_button);
 
 
@@ -696,8 +698,9 @@ async function addMusics() {
     }
 }
 
-function createIframe(event, playlist) {
+function createIframe(event) {
     var url = event.target.dataset.youtubeButton;
+    var playlist = event.target.dataset.youtubePlayList;
     var youtubePlaceholder = event.target.parentNode;
 
     var autoplay;
