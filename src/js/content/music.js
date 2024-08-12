@@ -704,13 +704,13 @@ function createIframe(event) {
     var youtubePlaceholder = event.target.parentNode;
 
     var autoplay;
-    if (playlist) {
+    if (playlist === "true") {
         autoplay = "&autoplay=1";
     }
-    else {
+    else if (playlist === "false"){
         autoplay = "?autoplay=1";
     }
-    var htmlString = '<div class="video__youtube"> <iframe src="' + url + autoplay + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var htmlString = '<div> <iframe src="' + url + autoplay + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
