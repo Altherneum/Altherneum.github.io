@@ -696,11 +696,18 @@ async function addMusics() {
     }
 }
 
-function createIframe(event) {
+function createIframe(event, playlist) {
     var url = event.target.dataset.youtubeButton;
     var youtubePlaceholder = event.target.parentNode;
 
-    var htmlString = '<div class="video__youtube"> <iframe src="' + url + '?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var autoplay;
+    if (playlist) {
+        autoplay = "&autoplay=1";
+    }
+    else {
+        autoplay = "?autoplay=1";
+    }
+    var htmlString = '<div class="video__youtube"> <iframe src="' + url + autoplay + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
