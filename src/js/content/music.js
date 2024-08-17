@@ -807,7 +807,9 @@ async function addMusics() {
         var video_button = document.createElement("button");
         video_button.dataset.youtubeButton = videoLink;
         video_button.dataset.youtubePlayList = playlist;
-        video_button.addEventListener('click', createIframe);
+
+        video_button.setAttribute("onclick", "createIframe(this)");
+
         video_div.appendChild(video_button);
 
         holder.appendChild(div_card);
@@ -819,20 +821,20 @@ async function addMusics() {
 }
 
 function createIframe(event) {
-    var url = event.target.dataset.youtubeButton;
-    var playlist = event.target.dataset.youtubePlayList;
-    var youtubePlaceholder = event.target.parentNode;
+    var url = event.dataset.youtubeButton;
+    var playlist = event.dataset.youtubePlayList;
+    var youtubePlaceholder = event.parentNode;
 
     var autoplay;
     if (playlist === "true") {
         autoplay = "&autoplay=1";
     }
-    else if (playlist === "false"){
+    else if (playlist === "false") {
         autoplay = "?autoplay=1";
     }
     var htmlString = '<div> <iframe src="' + url + autoplay + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
-    youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
-} 
+    youtubePlaceholder.parentNode.removeChild(youtubePlaceholder); 
+}
