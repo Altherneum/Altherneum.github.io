@@ -702,10 +702,10 @@ async function addMusics() {
         video_button.addEventListener('click', createIframe);
         video_div.appendChild(video_button);
 
-
         holder.appendChild(div_card);
         if (top === true) {
-            topHolder.appendChild(div_card);
+            var top_card = div_card.cloneNode(true);
+            topHolder.appendChild(top_card);
         }
     }
 }
