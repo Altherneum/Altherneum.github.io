@@ -196,6 +196,12 @@ const musiclinks = [
         categorie: "chilljp",
     },
     {
+        videoID: "OntcAJYG29A",
+        playlist: false,
+        top: false,
+        categorie: "chilljp",
+    },
+    {
         text: "😈",
         videoID: "8zeyRAFMizc",
         playlist: false,
@@ -353,6 +359,18 @@ const musiclinks = [
     },
     {
         videoID: "SreKbSWY4QY",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "gWi_6QmZ2bs",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "ao4RCon11eY",
         playlist: false,
         top: false,
         categorie: "phonk",
@@ -554,6 +572,12 @@ const musiclinks = [
         categorie: "phonk",
     },
     {
+        videoID: "ab-WFNS27co",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
         videoID: "qR2QIJdtgiU",
         playlist: false,
         top: false,
@@ -567,6 +591,12 @@ const musiclinks = [
     },
     {
         videoID: "Xp4rFiBSAxQ",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "lsWNkpQmJZY",
         playlist: false,
         top: false,
         categorie: "phonk",
