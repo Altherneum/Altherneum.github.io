@@ -35,6 +35,20 @@ const musiclinks = [
         categorie: "rain",
     },
     {
+        videoID: "urxeNbBc1nk",
+        text: "<a href='https://www.youtube.com/playlist?list=PLLj4tKExmpKL_a-wl0fwMcECIRI0X_4Ty'>PlayList</a>",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "6yuDBFn7Suo",
+        text: "✝☠",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
         text: "Rami Malek's style is over 9999 🖥️",
         videoID: "_tUBCmGBO3A",
         playlist: false,
@@ -257,6 +271,12 @@ const musiclinks = [
     {
         text: "Romeo and Juliet",
         videoID: "Z_hOR50u7ek",
+        playlist: false,
+        top: false,
+        categorie: "classic",
+    },
+    {
+        videoID: "ZPdk5GaIDjo",
         playlist: false,
         top: false,
         categorie: "classic",
