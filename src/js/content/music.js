@@ -200,7 +200,7 @@ const musiclinks = [
     {
         videoID: "MgOXIbgPfeI",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "chilljp",
     },
     {
@@ -299,7 +299,7 @@ const musiclinks = [
         text: "Shchedryk",
         videoID: "yx8l0QxV63o",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "histoire",
     },
     {
@@ -327,7 +327,7 @@ const musiclinks = [
         text: "R. Wagner",
         videoID: "KMTRqAgLw04",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "histoire",
     },
     {
@@ -338,7 +338,7 @@ const musiclinks = [
         categorie: "histoire",
     },
     {
-        text: "Rick Astley discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html",
+        text: "Rick Astley <a href='discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html'>Discord URI</a>",
         videoID: "dQw4w9WgXcQ",
         playlist: false,
         top: false,
@@ -348,20 +348,20 @@ const musiclinks = [
         videoID: "0nlJuwO0GDs",
         playlist: false,
         top: true,
-        categorie: "histoire",
+        categorie: "chill",
     },
     {
         text: "Japanese traditional orchestra",
         videoID: "dx76YPgZviE",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "histoire",
     },
     {
         videoID: "PD1EXJScA6k",
         playlist: false,
         top: true,
-        categorie: "histoire",
+        categorie: "chill",
     },
     {
         text: "Tchaikovsky - 1812 Overture",
@@ -371,7 +371,6 @@ const musiclinks = [
         categorie: "histoire",
     },
     {
-        text: "Tchaikovsky - 1812 Overture",
         videoID: "wA8E-f1PCQA",
         playlist: false,
         top: false,
