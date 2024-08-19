@@ -51,6 +51,16 @@
     backdrop-filter: blur(0);
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    padding-bottom: 50px;
+    padding-top: 25px;
+}
+
 .menu>button {
     padding: 12px;
     border-radius: 16px;
