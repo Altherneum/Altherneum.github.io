@@ -623,19 +623,19 @@ const musiclinks = [
     {
         videoID: "PLau9bkm0iK9twhgsxr-bFTEchn_T9O0qW",
         playlist: true,
-        top: false,
+        top: true,
         categorie: "rap",
     },
     {
         videoID: "PLau9bkm0iK9t1DPKultYqH3q8yWpg-SvR",
         playlist: true,
-        top: false,
+        top: true,
         categorie: "rap",
     },
     {
         videoID: "PLau9bkm0iK9t470JP18A4a_mI6G_5ffDt",
         playlist: true,
-        top: false,
+        top: true,
         categorie: "rap",
     },
     {
