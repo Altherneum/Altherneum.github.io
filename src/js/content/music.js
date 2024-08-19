@@ -79,6 +79,42 @@ const musiclinks = [
         categorie: "chill",
     },
     {
+        videoID: "fmI_Ndrxy14",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "Zasx9hjo4WY",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "xoWxv2yZXLQ",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "E_PbH5y70Tc",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "F5tSoaJ93ac",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "oorajmbSJUM",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
         videoID: "oaISU5KmTPA",
         playlist: false,
         top: false,
