@@ -75,7 +75,7 @@ async function randomInclude(excludeSettings) {
             randomInclude(excludeSettings);
         }
         else {
-            await include_multiple("settings", "contentArticle");
+            await include_multiple("settings", "contentArticle"); loadSettingsSwitch();
         }
     }
 }
