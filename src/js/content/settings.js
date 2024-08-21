@@ -25,8 +25,8 @@ function SwitchGranted() {
     Switcher("Granted");
 }
 
-function SwitchYoutubeAutoPlay() {
-    Switcher("youtubeAutoPlay");
+function SwitchYouTubeLoop() {
+    Switcher("YouTubeLoop");
 }
 
 function Switcher(name) {
@@ -55,5 +55,5 @@ function loadSettingsSwitch() {
     setSwitch("viewCount", true);
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
-    setSwitch("youtubeAutoPlay", true);
+    setSwitch("YouTubeLoop", true);
 } loadSettingsSwitch();

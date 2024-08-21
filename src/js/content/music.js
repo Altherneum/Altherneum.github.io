@@ -1039,13 +1039,18 @@ function createIframe(event) {
 
     var url;
     var autoplay;
+    var loop = "1";
+    if (localStorage.getItem('YouTubeLoop') === "false") {
+        loop = "O";
+        console.log("set loop 0");
+    }
     
     if (playlist === "true") {
         autoplay = "&autoplay=1";
         url = "https://www.youtube.com/embed/playlist?list=" + videoID;
     }
     else if (playlist === "false") {
-        autoplay = "?autoplay=1&loop=1&playlist=" + videoID;
+        autoplay = "?autoplay=1&loop=" + loop +"&playlist=" + videoID;
         url = "https://www.youtube.com/embed/" + videoID;
     }
 
