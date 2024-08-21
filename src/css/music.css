@@ -124,6 +124,14 @@
     flex-basis: 100%;
 }
 
+div.card:has(div>iframe){
+    border-color:var(--text-color);
+    border-style: solid;
+    border-width: 2px;
+
+    box-shadow: 0 0 50px var(--text-color);
+}
+
 @media screen and (max-width: 1024px) {
     .music>div>div {
         width: 90%;
