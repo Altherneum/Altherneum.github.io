@@ -104,7 +104,7 @@ async function pages() {
 
             await include_css("/src/css/settings.css");
             await include_html("/src/html/content/settings.html", "contentArticle", true);
-            await include_script("/src/js/content/settings.js");
+            await include_script("/src/js/content/settings.js"); loadSettingsSwitch();
         }
 
         else if (pathNameMatchPage("/github", false) && await pageGithub()) { }
@@ -611,7 +611,7 @@ async function pageAdmin() {
         await include_css("/src/css/music.css");
         await include_html("/src/html/content/music.html", "contentArticle", true);
         await include_script("/src/js/content/music.js");
-        await include_script("/src/js/content/settings.js");
+        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
     }
 
     else if (pathNameMatchPage("/admin/contact", true)) {

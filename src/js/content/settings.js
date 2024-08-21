@@ -56,4 +56,4 @@ function loadSettingsSwitch() {
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", true);
-} loadSettingsSwitch();
+}
