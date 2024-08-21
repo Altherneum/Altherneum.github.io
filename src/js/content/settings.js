@@ -25,6 +25,10 @@ function SwitchGranted() {
     Switcher("Granted");
 }
 
+function SwitchYoutubeAutoPlay() {
+    Switcher("youtubeAutoPlay");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -51,4 +55,5 @@ function loadSettingsSwitch() {
     setSwitch("viewCount", true);
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
+    setSwitch("youtubeAutoPlay", true);
 } loadSettingsSwitch();
