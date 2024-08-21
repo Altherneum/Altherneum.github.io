@@ -128,9 +128,9 @@ async function pages() {
     }
     await include_script("/src/js/include/viewcount.js");
     await devFooter();
-    await include_script("/src/js/include/cursor.js");
     await include_script("/src/js/content/date.js");
     await include_script("/src/js/include/searchbar.js");
+    await include_script("/src/js/include/cursor.js");
 }
 
 async function pageGithub() {

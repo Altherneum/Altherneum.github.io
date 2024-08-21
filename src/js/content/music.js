@@ -825,7 +825,7 @@ function hideAll() {
     hide("topvid"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool");
 }
 
-async function addMusics() {
+function addMusics() {
     var array = musiclinks;
     for (music in array) {
         var playlist = array[music].playlist;
@@ -833,7 +833,14 @@ async function addMusics() {
         var top = array[music].top;
         var categorie = array[music].categorie;
         var fetchUrl;
-        var JSONdata;
+        var text;
+
+        if (array[music].text !== undefined) {
+            text = array[music].text;
+        }
+        else {
+            text = "";
+        }
 
         if (playlist) {
             fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
@@ -841,21 +848,21 @@ async function addMusics() {
             fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
         }
 
-        await fetch(fetchUrl).then(response => response.json().then(data => { JSONdata = data }));
+        fetchMusic(playlist, videoID, top, categorie, fetchUrl, text);
+    }
+}
+
+function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
+    fetch(fetchUrl).then(response => response.json().then(data => {
+        JSONdata = data
 
         var title = JSONdata.title;
         var length = 75;
         var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
 
-        console.log(title);
+        console.log(categorie);
 
-        var text;
-        if (array[music].text !== undefined) {
-            text = array[music].text;
-        }
-        else {
-            text = "";
-        }
+        
 
         var thumbnail = JSONdata.thumbnail_url;
 
@@ -902,7 +909,7 @@ async function addMusics() {
             var top_card = div_card.cloneNode(true);
             topHolder.appendChild(top_card);
         }
-    }
+    }));
 }
 
 function createIframe(event) {
