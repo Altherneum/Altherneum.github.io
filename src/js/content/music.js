@@ -866,13 +866,7 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
 
         var thumbnail = JSONdata.thumbnail_url;
 
-        var videoLink;
-        if (playlist) {
-            videoLink = "https://www.youtube.com/embed/playlist?list=" + videoID;
-        }
-        else {
-            videoLink = "https://www.youtube.com/embed/" + videoID;
-        }
+        
 
         var topHolder = document.getElementById("topvid");
         var holder = document.getElementById(categorie);
@@ -897,7 +891,7 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
         video_div.appendChild(video_image);
 
         var video_button = document.createElement("button");
-        video_button.dataset.youtubeButton = videoLink;
+        video_button.dataset.youtubeButton = videoID;
         video_button.dataset.youtubePlayList = playlist;
 
         video_button.setAttribute("onclick", "createIframe(this)");
@@ -913,17 +907,22 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
 }
 
 function createIframe(event) {
-    var url = event.dataset.youtubeButton;
+    var videoID = event.dataset.youtubeButton;
     var playlist = event.dataset.youtubePlayList;
     var youtubePlaceholder = event.parentNode;
 
+    var url;
     var autoplay;
+    
     if (playlist === "true") {
         autoplay = "&autoplay=1";
+        url = "https://www.youtube.com/embed/playlist?list=" + videoID;
     }
     else if (playlist === "false") {
-        autoplay = "?autoplay=1";
+        autoplay = "?autoplay=1&loop=1&playlist=" + videoID;
+        url = "https://www.youtube.com/embed/" + videoID;
     }
+
     var htmlString = '<div> <iframe src="' + url + autoplay + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     youtubePlaceholder.style.display = 'none';
