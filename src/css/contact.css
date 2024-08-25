@@ -14,6 +14,9 @@
     width: 256px;
 
     border-radius: 100%;
+    border-color: var(--text-color);
+    border-width: 3px;
+    border-style: solid;
 
     box-shadow: var(--box-shadow-all-inset-main-color);
 }
@@ -55,8 +58,10 @@
     justify-content: flex-start;
     align-items: center;
 
-    border: 4px ridge var(--main-color);
+    border: 3px solid var(--main-color);
     border-radius: 12px;
+
+    box-shadow: var(--box-shadow-all-inset-main-transparent-color-small);
 
     margin: 12px;
     padding: 24px;
@@ -64,6 +69,8 @@
     flex-basis: 40%;
 
     text-decoration: none !important;
+
+    background: linear-gradient(var(--background-color), var(--main-color-transparent));
 }
 
 .contact>div>a:hover,

@@ -4,6 +4,14 @@
     padding-top: 50px;
 }
 
+.films>div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
+}
+
 .films>div>div {
     display: inline-flex;
     flex-direction: column;
@@ -44,12 +52,13 @@
 }
 
 .card {
-    background-color: var(--background-color-transparent);
+    background: linear-gradient(var(--background-color), var(--main-color-transparent));
+    box-shadow: var(--box-shadow-all-inset-main-transparent-color);
 
     border-radius: 16px;
 
     border-style: solid;
-    border-width: 1px;
+    border-width: 3px;
     border-color: var(--main-color);
 }
 
