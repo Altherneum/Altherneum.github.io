@@ -267,14 +267,14 @@ const musiclinks = [
         categorie: "chill",
     },
     {
-        text: "<a href='youtube.com/watch?v=DyDfgMOUjCI'>Original</a>",
+        text: "<a href='https://youtube.com/watch?v=DyDfgMOUjCI'>Original</a>",
         videoID: "3Z4efCGd7TE",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "chill",
     },
     {
-        text: "<a href='youtube.com/watch?v=Y2V6yjjPbX0'>Original</a>",
+        text: "<a href='https://youtube.com/watch?v=Y2V6yjjPbX0'>Original</a>",
         videoID: "fktD1q8OPa0",
         playlist: false,
         top: false,
