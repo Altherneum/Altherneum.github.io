@@ -931,6 +931,54 @@ const musiclinks = [
         playlist: false,
         top: false,
         categorie: "trool",
+    },
+    {
+        videoID: "dSPiDFZmAnQ",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "eFSfw6EHvlU",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "fC1HF29n9UA",
+        top: false,
+        playlist: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "qUwSYxoRhaM",
+        top: false,
+        playlist: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "W9GXqCBAZb0",
+        top: false,
+        playlist: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "bsO5G0cY9bc",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "LiovUkBWOos",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "tIelpTlWvBY",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
     }];
 
 addMusics();
