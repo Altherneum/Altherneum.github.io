@@ -948,7 +948,7 @@ function hide(music) {
 }
 
 function hideAll() {
-    hide("topvid"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool");
+    hide("topvid"); hide("all"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool");
 }
 
 function addMusics() {
@@ -995,6 +995,7 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
         
 
         var topHolder = document.getElementById("topvid");
+        var allHolder = document.getElementById("all");
         var holder = document.getElementById(categorie);
 
         var div_card = document.createElement("div");
@@ -1029,6 +1030,9 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
             var top_card = div_card.cloneNode(true);
             topHolder.appendChild(top_card);
         }
+
+        var all_card = div_card.cloneNode(true);
+        allHolder.appendChild(all_card);
     }));
 }
 
