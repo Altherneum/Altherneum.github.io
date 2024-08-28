@@ -979,6 +979,12 @@ const musiclinks = [
         playlist: false,
         top: false,
         categorie: "phonk",
+    },
+    {
+        videoID: "G1BHtPR8eUI",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
     }];
 
 addMusics();
