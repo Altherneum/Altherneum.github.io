@@ -1,4 +1,4 @@
-const musiclinks = [
+var musiclinks = [
     {
         videoID: "1_Ncsri_quY",
         playlist: false,
@@ -992,17 +992,18 @@ addMusics();
 function show(music) {
     hideAll();
 
-    var music = document.getElementById(music);
-    music.style = "display:flex";
+    var videoholder = document.getElementById("videoholder");
+    var classname = videoholder.className;
+    videoholder.className = classname + " show-" + music;
 }
 
-function hide(music) {
-    var music = document.getElementById(music);
-    music.style = "display:none";
+function hide() {
+    var videoholder = document.getElementById("videoholder");
+    videoholder.className = "";
 }
 
 function hideAll() {
-    hide("topvid"); hide("all"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool");
+    hide("top"); hide("all"); hide("playlist"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool");
 }
 
 function addMusics() {
@@ -1042,18 +1043,33 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
 
         console.log(categorie);
 
-        
+        var thumbnail = JSONdata.thumbnail_url;        
 
-        var thumbnail = JSONdata.thumbnail_url;
-
-        
-
-        var topHolder = document.getElementById("topvid");
-        var allHolder = document.getElementById("all");
-        var holder = document.getElementById(categorie);
+        var videoholder = document.getElementById("videoholder");
 
         var div_card = document.createElement("div");
-        div_card.className = "card";
+        var classname = "";
+        if (top) {
+            classname += "top ";
+        }
+        if (playlist) {
+            classname += "playlist ";
+        }
+        classname += "card " + categorie;
+        div_card.className = classname;
+
+        if (top) {
+            var imageTop = document.createElement("img");
+            imageTop.src = "/assets/svg/star.svg";
+            imageTop.className = "topimg svg";
+            div_card.appendChild(imageTop);
+        }
+        if (playlist) {
+            var imageTop = document.createElement("img");
+            imageTop.src = "/assets/svg/playlist.svg";
+            imageTop.className = "playlistimg svg";
+            div_card.appendChild(imageTop);
+        }
 
         var video_title = document.createElement("h1");
         video_title.textContent = title;
@@ -1079,14 +1095,7 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
 
         video_div.appendChild(video_button);
 
-        holder.appendChild(div_card);
-        if (top === true) {
-            var top_card = div_card.cloneNode(true);
-            topHolder.appendChild(top_card);
-        }
-
-        var all_card = div_card.cloneNode(true);
-        allHolder.appendChild(all_card);
+        videoholder.appendChild(div_card);
     }));
 }
 

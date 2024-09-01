@@ -71,14 +71,6 @@
     font-size: 1vw;
 }
 
-.music>div {
-    display: none;
-}
-
-.music>.topvid {
-    display: flex;
-}
-
 .background-clip {
     color: var(--text-color);
     font-weight: bolder;
@@ -102,8 +94,42 @@
     padding: 16px;
 }
 
-.music>div>div {
+.music>div.show-top div.top{
     display: inline-block;
+}
+.music>div.show-all>div {
+    display: inline-block;
+}
+.music>div.show-playlist div.playlist{
+    display: inline-block;
+}
+.music>div.show-rain div.rain {
+    display: inline-block;
+}
+.music>div.show-chill div.chill {
+    display: inline-block;
+}
+.music>div.show-chilljp div.chilljp {
+    display: inline-block;
+}
+.music>div.show-classic div.classic {
+    display: inline-block;
+}
+.music>div.show-histoire div.histoire {
+    display: inline-block;
+}
+.music>div.show-phonk div.phonk {
+    display: inline-block;
+}
+.music>div.show-rap div.rap {
+    display: inline-block;
+}
+.music>div.show-trool div.trool {
+    display: inline-block;
+}
+
+.music>div>div {
+    display: none;
     
     background: linear-gradient(var(--background-color), var(--main-color));
     box-shadow: var(--box-shadow-all-inset-main-transparent-color);
@@ -132,6 +158,19 @@ div.card:has(div>iframe){
     box-shadow: 0 0 50px var(--text-color);
 }
 
+div.card.top{
+    animation-name: topAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+div.card.playlist{
+}
+
+div.card>.topimg{
+}
+
 @media screen and (max-width: 1024px) {
     .music>div>div {
         width: 90%;
@@ -143,5 +182,14 @@ div.card:has(div>iframe){
     .music>div>div {
         min-width: 25%;
         max-width: 25%;
+    }
+}
+
+@keyframes topAnimation {
+    0%{
+        box-shadow: var(--box-shadow-all-inset-main-transparent-color);
+    }
+    100%{
+        box-shadow: var(--box-shadow-all-inset-main-color);
     }
 }

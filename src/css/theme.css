@@ -34,7 +34,11 @@
 }
 
 :root {
+    --box-shadow-all-inset-main-color-big: 0px 0px 100px 50px var(--main-color), inset 0px 0px 100px 5px var(--main-color);
     --box-shadow-all-inset-main-color: 0px 0px 10px 5px var(--main-color), inset 0px 0px 20px 1px var(--main-color);
+    --box-shadow-all-inset-main-color-small: 0px 0px 5px 2px var(--main-color), inset 0px 0px 10px 1px var(--main-color);
+
+    --box-shadow-all-inset-main-transparent-color-big: 0px 0px 100px 50px var(--main-color-transparent), inset 0px 0px 100px 5px var(--main-color-transparent);
     --box-shadow-all-inset-main-transparent-color: 0px 0px 10px 5px var(--main-color-transparent), inset 0px 0px 20px 1px var(--main-color-transparent);
     --box-shadow-all-inset-main-transparent-color-small: 0px 0px 5px 2px var(--main-color-transparent), inset 0px 0px 10px 1px var(--main-color-transparent);
     --blur: blur(5px);
