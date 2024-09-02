@@ -1108,7 +1108,7 @@ function createIframe(event) {
     var autoplay;
     var loop = "1";
     if (localStorage.getItem('YouTubeLoop') === "false") {
-        loop = "O";
+        loop = "0";
         console.log("set loop 0");
     }
     
