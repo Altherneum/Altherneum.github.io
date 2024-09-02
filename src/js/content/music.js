@@ -1041,8 +1041,6 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
         var length = 75;
         var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
 
-        console.log(categorie);
-
         var thumbnail = JSONdata.thumbnail_url;        
 
         var videoholder = document.getElementById("videoholder");
@@ -1109,7 +1107,6 @@ function createIframe(event) {
     var loop = "1";
     if (localStorage.getItem('YouTubeLoop') === "false") {
         loop = "0";
-        console.log("set loop 0");
     }
     
     if (playlist === "true") {
