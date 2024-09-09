@@ -1025,7 +1025,7 @@ function addMusics() {
 
         if (playlist) {
             fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
-        }else {
+        } else {
             fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
         }
 
@@ -1041,7 +1041,7 @@ function fetchMusic(playlist, videoID, top, categorie, fetchUrl, text) {
         var length = 75;
         var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
 
-        var thumbnail = JSONdata.thumbnail_url;        
+        var thumbnail = JSONdata.thumbnail_url;
 
         var videoholder = document.getElementById("videoholder");
 
@@ -1102,25 +1102,32 @@ function createIframe(event) {
     var playlist = event.dataset.youtubePlayList;
     var youtubePlaceholder = event.parentNode;
 
-    var url;
-    var autoplay;
-    var loop = "1";
+    var loop;
     if (localStorage.getItem('YouTubeLoop') === "false") {
-        loop = "0";
+        loop = "&loop=0";
     }
-    
-    if (playlist === "true") {
-        autoplay = "&autoplay=1";
-        url = "https://www.youtube.com/embed/playlist?list=" + videoID;
-    }
-    else if (playlist === "false") {
-        autoplay = "?autoplay=1&loop=" + loop +"&playlist=" + videoID;
-        url = "https://www.youtube.com/embed/" + videoID;
+    else {
+        loop = "&loop=1"
     }
 
-    var htmlString = '<div> <iframe src="' + url + autoplay + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var autoplay;
+
+    var playlist;
+    if (playlist === "true") {
+        playlist = "playlist?list=" + videoID;
+        autoplay = "&autoplay=1";
+    }
+    else if (playlist === "false") {
+        playlist = videoID;
+        autoplay = "?autoplay=1"
+    }
+
+    var preURL = "https://www.youtube.com/embed/";
+    var url = preURL + playlist + autoplay + loop;
+
+    var htmlString = '<div> <iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
-    youtubePlaceholder.parentNode.removeChild(youtubePlaceholder); 
+    youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
 }
