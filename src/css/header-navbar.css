@@ -4,7 +4,6 @@
     background-color: var(--background-color);
     padding: 0px 15px 15px 15px;
 
-    border-radius: 5%;
     border-width: 2px;
     border-color: var(--main-color);
     border-style: solid;
@@ -58,7 +57,7 @@
 
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
     .subnav-content {
         max-height: 50vh;
 
@@ -68,12 +67,16 @@
 
         left: 0vw;
         right: 0vw;
+
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     .subnav-content{
         transform: translateX(-25%);
+        border-radius: 5%;
     }
 
     .subnav-content>.sided:first-child {
