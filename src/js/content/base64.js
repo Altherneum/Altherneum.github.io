@@ -19,17 +19,25 @@ function base64ToString(base64) {
 }
 
 function base64Encoder() {
-    var encode = getEncodeOrDecode();
-    var text = getTextInput();
-    var output;
-    console.log(text);
-    if (!encode) {
-        output = stringToBase64(text);
+    try {
+        var encode = getEncodeOrDecode();
+        var text = getTextInput();
+        var output;
+        console.log(text);
+        if (!encode) {
+            output = stringToBase64(text);
+        }
+        else {
+            output = base64ToString(text);
+        }
+        console.log(output);
+        
     }
-    else {
-        output = base64ToString(text);
+    catch (error) {
+        output = "erreur : " + error;
+        console.log(output);
     }
-    console.log(output);
+
     var outputElem = document.getElementById("base64Output");
     outputElem.textContent = output;
 }
