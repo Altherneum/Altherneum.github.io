@@ -127,6 +127,9 @@
 .music>div.show-trool div.trool {
     display: inline-block;
 }
+.music>div.show-rock div.rock {
+    display: inline-block;
+}
 
 .music>div>div {
     display: none;

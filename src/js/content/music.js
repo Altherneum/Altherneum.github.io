@@ -1039,6 +1039,12 @@ var musiclinks = [
         top: true,
         playlist: false,
         categorie: "rap",
+    },
+    {
+        videoID: "OLAK5uy_mdyVGFbcx-xSVCkG_e-jCj5kXEgRkE0rg",
+        playlist: true,
+        top: false,
+        categorie: "rock",
     }
 ];
 
@@ -1058,7 +1064,7 @@ function hide() {
 }
 
 function hideAll() {
-    hide("top"); hide("all"); hide("playlist"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool");
+    hide("top"); hide("all"); hide("playlist"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool"); hide("rock");
 }
 
 function addMusics() {
