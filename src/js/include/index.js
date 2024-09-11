@@ -411,7 +411,12 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/google-dorks", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Google/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Google/dorking.md', false, true); });
+    }
+
+    else if (pathNameMatchPage("/cours/google-doodle", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Google/doodle.md', false, true); });
     }
 
     else if (pathNameMatchPage("/cours/forkBomb", true)) {

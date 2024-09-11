@@ -86,7 +86,7 @@ var musiclinks = [
     {
         videoID: "R2CzFQpWoLs",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "chill",
     },
     {
@@ -122,7 +122,7 @@ var musiclinks = [
     {
         videoID: "8rg2vkz72a8",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "chill",
     },
     {
@@ -985,7 +985,62 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "phonk",
-    }];
+    },
+    {
+        videoID: "jeeA2MyGXBE",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "wZv62ShoStY",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "T1OrhGs7UnI",
+        playlist: false,
+        top: false,
+        categorie: "trool",
+    },
+    {
+        videoID: "L8H7J8VANQo",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "t-hW1eTUUyo",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "D-Lcvp2PHE4",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "sOHPHVJBvf4",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "6Yw8uWNbFMM",
+        top: false,
+        playlist: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "P9v_yA85a1M",
+        top: true,
+        playlist: false,
+        categorie: "rap",
+    }
+];
 
 addMusics();
 
