@@ -1045,13 +1045,47 @@ var musiclinks = [
         playlist: true,
         top: false,
         categorie: "rock",
-    }
+    },
+    {
+        videoID: "OLAK5uy_k2kT-piI6Ks23gUXuaBMaiU_MmkESL0hI",
+        text: "Vald",
+        playlist: true,
+        top: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "_VuJA-VQRcY",
+        playlist: false,
+        top: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "kc7F34GWpWw",
+        playlist: false,
+        top: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "OLAK5uy_ls_zsXqcs000Aus6LNJPSjUY4DTkQSg5c",
+        text: "Freeze Corleone",
+        playlist: true,
+        top: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "UULFCSFseZ6DfCtVO8giGp7GfA",
+        text: "Koba LaD",
+        playlist: true,
+        top: false,
+        categorie: "rap",
+    },
 ];
 
 /*
 ,
     {
         videoID: "",
+        text: "",
         playlist: false,
         top: false,
         categorie: "",
