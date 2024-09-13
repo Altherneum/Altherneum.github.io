@@ -120,7 +120,12 @@ function createIframe(event) {
         loop = "&loop=0";
     }
     else {
-        loop = "&loop=1"
+        if (playlist === "true") {
+            loop = "&loop=1";
+        }
+        else if (playlist === "false") {
+            loop = "&loop=1&playlist=" + videoID;
+        }
     }
 
     var autoplay;
