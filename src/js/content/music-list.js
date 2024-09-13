@@ -1226,6 +1226,12 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "histoire",
+    },
+    {
+        videoID: "jofNR_WkoCE",
+        playlist: false,
+        top: false,
+        categorie: "trool",
     }
 ];
 
