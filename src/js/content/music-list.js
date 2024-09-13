@@ -1244,6 +1244,12 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "chill",
+    },
+    {
+        videoID: "pM3CFiZOU4k",
+        playlist: false,
+        top: false,
+        categorie: "chill",
     }
 ];
 
