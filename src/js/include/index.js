@@ -385,6 +385,7 @@ async function pageCours() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/process.md', false, false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote-ssh.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/UFW.md', false, false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/HTTPD-from-src.md', false, false);
