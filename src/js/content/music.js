@@ -16,8 +16,8 @@ function hide() {
 }
 
 function hideAll() {
-    hide("top"); hide("all"); hide("playlist"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool"); hide("rock");
-}
+    hide("top"); hide("all"); hide("playlist"); hide("rain"); hide("chill"); hide("chilljp"); hide("classic"); hide("histoire"); hide("phonk"); hide("rap"); hide("trool"); hide("rock"); hide("playing");
+} //this part is somehow wrong, top,all,rain,etc (param) isn't used
 
 function addMusics() {
     var array = musiclinks;
@@ -140,6 +140,10 @@ function createIframe(event) {
     var url = preURL + playlist + autoplay + loop + rel;
 
     var htmlString = '<div> <iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+
+    var card = youtubePlaceholder.parentNode;
+    var classname = card.className;
+    card.className = classname + " playing";
 
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);

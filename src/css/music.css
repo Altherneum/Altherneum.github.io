@@ -94,6 +94,9 @@
     padding: 16px;
 }
 
+.music>div.show-playing div.playing {
+    display: inline-block;
+}
 .music>div.show-top div.top{
     display: inline-block;
 }
