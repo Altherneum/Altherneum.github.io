@@ -51,23 +51,24 @@
     backdrop-filter: blur(0);
 }
 
-.menu {
+.menu{
+    padding-bottom: 25px;
+}
+
+.menu>div {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 25px;
-
-    padding-bottom: 50px;
-    padding-top: 25px;
 }
 
-.menu>button {
+.menu>div>button {
     padding: 12px;
     border-radius: 16px;
     margin: 8px;
 }
 
-.menu>button>p.background-clip {
+.menu>div>button>p.background-clip {
     font-size: 1vw;
 }
 
