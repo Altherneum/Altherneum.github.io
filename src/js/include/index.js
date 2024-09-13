@@ -392,8 +392,9 @@ async function pageCours() {
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/user.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/sudo.md', false, false);
-            await addMarkdown('Altherneum/.github', 'note/OS/Linux/password.md', false, true);
-            
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/password.md', false, false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/copy-paste.md', false, true);
         });
     }
         
