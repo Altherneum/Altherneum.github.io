@@ -571,10 +571,16 @@ async function pageOutils() {
         await includes();
         await include_multiple("ping", "contentArticle");
     }
-        
+
     else if (pathNameMatchPage("/outils/base64", true)) {
         await includes();
         await include_multiple("base64", "contentArticle");
+    }
+
+    else if (pathNameMatchPage("/outils/noise", true)) {
+        await includes();
+        await include_css("/src/css/noise.css");
+        await include_html("/src/html/content/noise.html", "contentArticle", true);
     }
 
     else {
