@@ -1232,6 +1232,18 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "trool",
+    },
+    {
+        videoID: "bLM7pGOxeTs",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "UsR08cY8k0A",
+        playlist: false,
+        top: false,
+        categorie: "chill",
     }
 ];
 
