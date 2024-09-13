@@ -971,7 +971,7 @@ var musiclinks = [
     {
         videoID: "LiovUkBWOos",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "phonk",
     },
     {
@@ -989,7 +989,7 @@ var musiclinks = [
     {
         videoID: "jeeA2MyGXBE",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "chill",
     },
     {
@@ -1079,10 +1079,158 @@ var musiclinks = [
         top: false,
         categorie: "rap",
     },
+    {
+        videoID: "qrxv0JNVtgY",
+        playlist: false,
+        top: false,
+        categorie: "trool",
+    },
+    {
+        videoID: "0E00Zuayv9Q",
+        playlist: false,
+        top: false,
+        categorie: "trool",
+    },
+    {
+        videoID: "r7qovpFAGrQ",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "ke1wSerqAuU",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "Ym9JY1t_CYk",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "wL8DVHuWI7Y",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "F2xnvyMp8Us",
+        text: "<a href='https://youtube.com/watch?v=DF3XjEhJ40Y'>Original</a>",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        text: "Original",
+        videoID: "DF3XjEhJ40Y",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "Wg4Bcwh5F2U",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "96G0ngElPWk",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "OXPQ_4qanxk",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "7Ua_ilBIx9A",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "w-sQRS-Lc9k",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "5yXdpVCmTGc",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "YyoFFkDIT3k",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "7STMf7kDl-E",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "-BM9QDlc4bE",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "tLJYAMYEUoc",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "u-wEeg4YNoY",
+        playlist: false,
+        top: true,
+        categorie: "chill",
+    },
+    {
+        videoID: "ZEcqHA7dbwM",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "Y2rDb4Ur2dw",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "6POZlJAZsok",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "izGwDsrQ1eQ",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "jAqTQOLPdiw",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    }
 ];
 
 /*
-,
+    ,
     {
         videoID: "",
         text: "",
