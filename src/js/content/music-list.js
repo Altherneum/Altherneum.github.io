@@ -1253,12 +1253,14 @@ var musiclinks = [
     },
     {
         videoID: "OLAK5uy_nUwHtzonyTavwJePfgeD17qQTEWKhjFME",
+        text: "Moha La Squale",
         playlist: true,
         top: false,
         categorie: "rap",
     },
     {
         videoID: "OLAK5uy_k_L41kOUwCve-Ahypu7XVmKkG1Q94ezvw",
+        text: "MHD",
         playlist: true,
         top: false,
         categorie: "rap",
