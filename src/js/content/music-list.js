@@ -1250,6 +1250,18 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "chill",
+    },
+    {
+        videoID: "OLAK5uy_nUwHtzonyTavwJePfgeD17qQTEWKhjFME",
+        playlist: true,
+        top: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "OLAK5uy_k_L41kOUwCve-Ahypu7XVmKkG1Q94ezvw",
+        playlist: true,
+        top: false,
+        categorie: "rap",
     }
 ];
 
