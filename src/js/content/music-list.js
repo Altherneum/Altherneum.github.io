@@ -1285,10 +1285,27 @@ var musiclinks = [
     },
     {
         videoID: "zj10k3XytQ4",
-        text: "",
         playlist: false,
         top: false,
         categorie: "chilljp",
+    },
+    {
+        videoID: "Lgs9QUtWc3M",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "auzfTPp4moA",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "_KztNIg4cvE",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
     }
 ];
 
