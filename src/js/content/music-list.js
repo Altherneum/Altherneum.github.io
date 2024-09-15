@@ -1264,6 +1264,31 @@ var musiclinks = [
         playlist: true,
         top: false,
         categorie: "rap",
+    },
+    {
+        videoID: "S9bCLPwzSC0",
+        playlist: false,
+        top: false,
+        categorie: "rap",
+    },
+    {
+        videoID: "DyDfgMOUjCI",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "Y2V6yjjPbX0",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "zj10k3XytQ4",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "chilljp",
     }
 ];
 
