@@ -1306,6 +1306,18 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "histoire",
+    },
+    {
+        videoID: "qsOUv9EzKsg",
+        playlist: false,
+        top: false,
+        categorie: "rain",
+    },
+    {
+        videoID: "eG2XbNpcb2E",
+        playlist: false,
+        top: false,
+        categorie: "classic",
     }
 ];
 
