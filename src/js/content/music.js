@@ -130,7 +130,7 @@ function createIframe(event) {
         playlistarg = "?list=" + videoID + "&listType=playlist";
     }
     else if (playlist === "false") {
-        playlistarg = "?playlist=" + videoID;
+        playlistarg = videoID + "?playlist=" + videoID;
     }
 
     var rel = "&rel=0";
