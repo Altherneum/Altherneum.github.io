@@ -116,33 +116,29 @@ function createIframe(event) {
     var youtubePlaceholder = event.parentNode;
 
     var loop;
+    var autoplay = "&autoplay=1";
+    var playlistarg;
+
     if (localStorage.getItem('YouTubeLoop') === "false") {
         loop = "&loop=0";
     }
     else {
-        if (playlist === "true") {
-            loop = "&loop=1";
-        }
-        else if (playlist === "false") {
-            loop = "&loop=1&playlist=" + videoID;
-        }
+        loop = "&loop=1";
     }
 
-    var autoplay;
-    var playlist;
     if (playlist === "true") {
-        playlist = "playlist?list=" + videoID;
-        autoplay = "&autoplay=1";
+        playlistarg = "?list=" + videoID + "&listType=playlist";
     }
     else if (playlist === "false") {
-        playlist = videoID;
-        autoplay = "?autoplay=1"
+        playlistarg = "?playlist=" + videoID;
     }
 
     var rel = "&rel=0";
 
     var preURL = "https://www.youtube.com/embed/";
-    var url = preURL + playlist + autoplay + loop + rel;
+    var url = preURL + playlistarg + autoplay + loop + rel;
+    
+    console.log("Loading music : " + url);
 
     var htmlString = '<div> <iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
