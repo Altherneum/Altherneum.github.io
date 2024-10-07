@@ -378,7 +378,7 @@ var musiclinks = [
     {
         videoID: "Kl6R4Ui9blc",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "classic",
     },
     {
@@ -398,13 +398,13 @@ var musiclinks = [
         text: "Romeo and Juliet",
         videoID: "Z_hOR50u7ek",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "classic",
     },
     {
         videoID: "ZPdk5GaIDjo",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "classic",
     },
     {
@@ -454,7 +454,7 @@ var musiclinks = [
         videoID: "KMTRqAgLw04",
         playlist: false,
         top: true,
-        categorie: "histoire",
+        categorie: "classic",
     },
     {
         text: "A.K.A music name? trool 🤡",
@@ -611,7 +611,7 @@ var musiclinks = [
         text: "Cursed Crown",
         videoID: "OLAK5uy_lnnelnwQcnS0CCsRGpjLGWiVmMEyuIHJk",
         playlist: true,
-        top: false,
+        top: true,
         categorie: "phonk",
     },
     {
@@ -1316,7 +1316,7 @@ var musiclinks = [
     {
         videoID: "eG2XbNpcb2E",
         playlist: false,
-        top: false,
+        top: true,
         categorie: "classic",
     }
 ];
