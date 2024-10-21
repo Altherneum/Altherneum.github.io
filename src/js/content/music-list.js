@@ -1318,6 +1318,20 @@ var musiclinks = [
         playlist: false,
         top: true,
         categorie: "classic",
+    },
+    {
+        videoID: "_KEQxsXjZuY",
+        text: "Music version",
+        playlist: false,
+        top: false,
+        categorie: "chill",
+    },
+    {
+        videoID: "PozNmD_FgZY",
+        text: "TV version",
+        playlist: false,
+        top: false,
+        categorie: "chill",
     }
 ];
 
