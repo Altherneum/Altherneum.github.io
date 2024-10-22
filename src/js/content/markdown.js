@@ -547,9 +547,3 @@ function autoScroll() {
         element.scrollIntoView();
     }
 }
-
-function addHRChapter() {
-    var hr = document.createElement("hr");
-    hr.style.marginTop = "100px"; hr.style.marginBottom = "100px";
-    document.getElementById("markdown").appendChild(hr);
-}
