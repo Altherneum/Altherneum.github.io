@@ -156,7 +156,7 @@ async function githubData(repo, file, content, gist) {
 }
 
 function textData(commitMessage, commitAuthorDate, holder) {
-     var commitDiv = document.createElement("div");
+    var commitDiv = document.createElement("div");
     commitDiv.className = "commit";
 
     if (commitMessage !== undefined) {
