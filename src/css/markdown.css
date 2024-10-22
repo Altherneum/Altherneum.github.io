@@ -20,7 +20,12 @@
     display: block;
 }
 
-.markdowned>h1,.markdowned>h2,.markdowned>h3,.markdowned>h4,.markdowned>h5,.markdowned>h6 {
+.markdowned>h1,
+.markdowned>h2,
+.markdowned>h3,
+.markdowned>h4,
+.markdowned>h5,
+.markdowned>h6 {
     display: block;
 
     text-decoration: underline;
