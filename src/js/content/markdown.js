@@ -117,20 +117,7 @@ async function addMarkdownText(gist, content, repo, file) {
 
 async function githubData(repo, file, content, gist) {
     var fileTrimed = file.replaceAll("/", "%2F");
-    var data = await gather("https://api.github.com/repos/" + repo + "/commits?path=" + fileTrimed + "&page=1&per_page=1");
-    console.log(data);
-
-    var commit = getValue(data[0], "commit");
-    var author = getValue(data[0], "author");
-    var htmlUrl = getValue(data[0], "html_url");
-
-    var commitAuthor = getValue(commit, "author");
-    var commitMessage = getValue(commit, "message");
-
-    var commitAuthorName = getValue(commitAuthor, "name");
-    var commitAuthorDate = getValue(commitAuthor, "date");
-
-    var authorLogin = getValue(author, "login");
+    
 
     var holder = document.createElement("div");
     holder.id = "fileData";
@@ -144,26 +131,33 @@ async function githubData(repo, file, content, gist) {
         anchorHolder(repo.split('/')[0], holder);
     }
     if (!gist) {
+        var data = await gather("https://api.github.com/repos/" + repo + "/commits?path=" + fileTrimed + "&page=1&per_page=1");
+
+        var commit = getValue(data[0], "commit");
+        var author = getValue(data[0], "author");
+        var htmlUrl = getValue(data[0], "html_url");
+
+        var commitAuthor = getValue(commit, "author");
+        var commitMessage = getValue(commit, "message");
+
+        var commitAuthorName = getValue(commitAuthor, "name");
+        var commitAuthorDate = getValue(commitAuthor, "date");
+
+        var authorLogin = getValue(author, "login");
         anchorRepo(repo, holder);
         anchorButton(repo, file, gist, holder);
         anchorEdit(repo, file, gist, holder);
         anchorRaw(repo, file, holder, gist);
         anchorHolder(repo.split('/')[0], holder);
-        anchorAuthor(authorLogin, holder);
         anchorUpdate(htmlUrl, holder);
-        textData(commitMessage, commitAuthorName, commitAuthorDate, authorLogin, holder, repo, file);
+        anchorAuthor(authorLogin, holder, commitAuthorName, authorLogin, holder);
+        textData(commitMessage, commitAuthorDate, holder);
     }
 }
 
-function textData(commitMessage, commitAuthorName, commitAuthorDate, authorLogin, holder) {
-    var commitDiv = document.createElement("div");
+function textData(commitMessage, commitAuthorDate, holder) {
+     var commitDiv = document.createElement("div");
     commitDiv.className = "commit";
-
-    if (authorLogin !== commitAuthorName) {
-        var updatedBy = document.createElement("a");
-        updatedBy.textContent = commitAuthorName;
-        commitDiv.appendChild(updatedBy);
-    }
 
     if (commitMessage !== undefined) {
         var updateMessage = document.createElement("p");
@@ -202,7 +196,7 @@ function anchorUpdate(url, holder) {
     holder.appendChild(link);
 }
 
-function anchorAuthor(authorLogin, holder) {
+function anchorAuthor(authorLogin, holder, commitAuthorName, authorLogin, holder) {
     if (authorLogin === undefined) {
         return;
     }
@@ -213,7 +207,13 @@ function anchorAuthor(authorLogin, holder) {
     link.href = "https://github.com/" + authorLogin;
     image.src = "/assets/svg/writer-write-blogger-work-at-desk.svg";
     button.classList = "edit-gist"
-    text.textContent = "Auteur(e) : " + authorLogin;
+    
+    if (authorLogin !== commitAuthorName) {
+        text.textContent = "committer : " + authorLogin + " (" + commitAuthorName + ")";
+    }else{
+        text.textContent = "committer : " + authorLogin;
+    }
+
     link.target = "_blank";
     image.classList = "svg";
     button.appendChild(image);

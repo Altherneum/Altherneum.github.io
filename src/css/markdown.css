@@ -107,6 +107,10 @@
     padding: 10px;
 }
 
+.commit>*{
+    padding: 5px;
+}
+
 #fileData>.repo>*{
     display: inline-block;
 }
