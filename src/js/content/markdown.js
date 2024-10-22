@@ -132,6 +132,7 @@ async function githubData(repo, file, content, gist) {
     }
     if (!gist) {
         var data = await gather("https://api.github.com/repos/" + repo + "/commits?path=" + fileTrimed + "&page=1&per_page=1");
+        //console.log(data);
 
         var commit = getValue(data[0], "commit");
         var author = getValue(data[0], "author");

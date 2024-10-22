@@ -170,62 +170,86 @@ async function pageGithub() {
 
     else if (pathNameMatchPage("/github/readme", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'profile/README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/contribuer", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'CONTRIBUTING.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'CONTRIBUTING.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/support", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'SUPPORT.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'SUPPORT.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/security", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'SECURITY.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'SECURITY.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/license", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'LICENSE.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'LICENSE.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/code_of_conduct", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'CODE_OF_CONDUCT.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'CODE_OF_CONDUCT.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/Altherneum.github.io", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/Altherneum.github.io', 'README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/Altherneum.github.io', 'README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/.github", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/plugin", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/plugin', 'README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/plugin', 'README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/resourcePack", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/resourcePack', 'README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/resourcePack', 'README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/bot", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/bot', 'README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/bot', 'README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/github/server", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/server', 'README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/server', 'README.md', false, true);
+        });
     }
 
     else {
@@ -237,20 +261,17 @@ async function pageGithub() {
 async function pageCours() {
     if (pathNameMatchPage("/cours/readme", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/README.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/README.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/markdown", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Github/Markdown/Learning.md', false, false); });
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Github/Markdown/Listing.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('github/.github', 'profile/README.md', false, true);
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Github/Markdown/Learning.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Github/Markdown/Listing.md', false, true);
+        });
     }
         
     else if (pathNameMatchPage("/cours/markdown-listing", true)) {
@@ -272,65 +293,47 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/fibre", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/fibre.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Network/fibre.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/web", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/learning.md', false, false); });
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/liste.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/learning.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/media-queries.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false, false);
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true);
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/learning.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/liste.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/learning.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/media-queries.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/html", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/learning.md', false, false); });
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/liste.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false, true);
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/learning.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/liste.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/css", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/learning.md', false, false); });
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/media-queries.md', false, false);
-
-        addHRChapter();
-
-        await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false, true);
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/learning.md', false, false); 
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/media-queries.md', false, false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/js", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/learning.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/binaire", true)) {
@@ -343,24 +346,30 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/lm-studio", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/IA/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/IA/learning.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/scam", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Scam/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Scam/learning.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/retraite", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Retraite/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Retraite/learning.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/windows", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false, false);
-            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/console.md', false, true)
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/console.md', false, true);
         });
     }
 
@@ -414,22 +423,30 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/sql", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/google-dorks", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Google/dorking.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Google/dorking.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/google-doodle", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Google/doodle.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Google/doodle.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/forkBomb", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/forkBomb.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/forkBomb.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/ip", true)) {
@@ -442,12 +459,16 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/protocoles", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/protocoles.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Network/protocoles.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/ethernet", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/wires.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Network/wires.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/network", true)) {
@@ -461,33 +482,45 @@ async function pageCours() {
 
     else if (pathNameMatchPage("/cours/hyper-v", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/hyper-v.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/hyper-v.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/dns", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/DNS.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/DNS.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/enterprise-network", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/Network/enterprise-network.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Network/enterprise-network.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/active-directory", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/active-directory.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/active-directory.md', false, true);
+        });
     }
 
 
     else if (pathNameMatchPage("/cours/active-directory-approbation", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/approbation.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/approbation.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/gpo", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/gpo.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Active-Directory/gpo.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/cours/cisco", true)) {
@@ -500,7 +533,7 @@ async function pageCours() {
             await addMarkdown('Altherneum/.github', 'note/Network/Cisco/router-on-stick.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/Cisco/fil-rouge.md', false, false);
             await addMarkdown('Altherneum/.github', 'note/Network/Cisco/acl.md', false, true);
-         });
+        });
     }
 
     else if (pathNameMatchPage("/cours/powershell", true)) {
@@ -560,12 +593,16 @@ async function pageOutils() {
 
     else if (pathNameMatchPage("/outils/liens", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/Liens.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', '/note/Liens.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/outils/matrice-windows", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', '/note/OS/Windows/Scripts/matrice.bat.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', '/note/OS/Windows/Scripts/matrice.bat.md', false, true);
+        });
     }
 
     else if (pathNameMatchPage("/outils/console", true)) {
@@ -651,7 +688,9 @@ async function pageAdmin() {
 
     else if (pathNameMatchPage("/admin/note", true)) {
         await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => { await addMarkdown('Altherneum/.github', 'note.md', false, true); });
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note.md', false, true);
+        });
     }
 
     else {
