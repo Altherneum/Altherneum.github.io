@@ -47,7 +47,7 @@ const parseMarkdown = (text) => {
         .replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
         .replace(/(?<!<textarea>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
         .replace(/(?<!<textarea>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
-        
+
         .replace(/(?<!.)(-{3,})(?!.)/g, '<hr/>') //hr (Decoration line)
 
         .replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
@@ -57,13 +57,13 @@ const parseMarkdown = (text) => {
         .replace(/(?<!\\)(?<!\/)\*\*(.*?)\*\*/g, '<b>$1</b>') //bold
         .replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/gm, '<i>$1</i>') //italic
 
-        .replace(/^\*(.*$)/gim, '<ul><li><p>$1</p></li></ul>') // <li>
-        .replace(/^- (.*$)/gim, '<ul><li><p>$1</p></li></ul>') // <li>
-        .replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;"><p>$1</p></li></ul>') // <li>
-        .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;"><p>$1</p></li></ul>') // <li>
-        .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;"><p>$1</p></li></ul>') // <li>
-        .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;"><p>$1</p></li></ul>') // <li>
-        .replace(/^([0-9])+\.\s*(.*$)/gim, '<ol><li style="list-style-type: &quot;$1. &quot;;"><p>$2</p></li></ol>') // <li>
+        .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+        .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+        .replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
+        .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;">$1</li></ul>') // <li>
+        .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;">$1</li></ul>') // <li>
+        .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;">$1</li></ul>') // <li>
+        .replace(/(^[0-9])+\.\s*(.*$)/gim, '<ol><li style="list-style-type: &quot;$1. &quot;;">$2</li></ol>') // <li>
 
         .replace(/\\\*/g, '*') //replace /* & \* to *
 
@@ -77,7 +77,8 @@ const parseMarkdown = (text) => {
         .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
         .replace(/(?<!<textarea[^>]*>[^<]*)(^# (.*))(?![^<]*<\/textarea>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
 
-        .replace(/(?![^<]*>|[^>]*<\/)([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,`âôœûùéêëèàçïî<>▶⬇⚠/]+)(?![^<]*>|[^>]*<\/)/gim, '<p>$1</p>') // text p balise
+        //.replace(/(?![^<]*>|[^>]*<\/)([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,`âôœûùéêëèàçïî<>▶⬇⚠/]+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
+        .replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
         //text inside summary 
 
         .replace(/[\n]{1,}/g, "<br>") //new line
@@ -133,7 +134,7 @@ async function githubData(repo, file, content, gist) {
 
     var holder = document.createElement("div");
     holder.id = "fileData";
- 
+
     content.appendChild(holder);
 
     if (gist) {
@@ -280,7 +281,7 @@ function anchorHolder(user, holder) {
 
 async function getMarkdown(url) {
     console.info("Loading download markdown");
-    var data = (await fetch(url)).text(); 
+    var data = (await fetch(url)).text();
     return data;
 }
 
@@ -330,13 +331,13 @@ function anchorEdit(repo, file, gist, holder) {
     holder.appendChild(link);
 }
 
-function setAnchorButton(id, asset) { 
+function setAnchorButton(id, asset) {
     var content = document.querySelector(id);
 
     var button = document.createElement("button");
     button.id = "SummaryAnchor";
     var image = document.createElement("img");
-    
+
     button.onclick = function () {
         var anchorList = document.getElementById("anchorList");
 

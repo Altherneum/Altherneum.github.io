@@ -1,23 +1,11 @@
-.markdowned>*>img {
+.markdowned img {
     max-width: 90%;
 }
 
-.markdowned>*:not(hr) {
-    display: inline;
-}
-
-.markdowned>a>* {
-    display: inline;
-}
-
-.markdowned>*>p {
+.markdowned p{
     max-width: fit-content;
-    display: inline-block;
-    white-space: pre;
-}
-
-.markdowned>textarea{
-    display: block;
+    white-space: pre-wrap;
+    display: inline;
 }
 
 .markdowned>h1,

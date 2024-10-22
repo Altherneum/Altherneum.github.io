@@ -31,7 +31,8 @@ i,
 li,
 u,
 sub,
-sup {
+sup, 
+details {
     font-family: Varela;
 
     font-size: larger;
@@ -79,7 +80,8 @@ i,
 li,
 u,
 sub,
-sup {
+sup,
+details {
     color: var(--text-color);
 }
 
