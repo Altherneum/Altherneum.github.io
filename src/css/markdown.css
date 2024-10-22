@@ -1,4 +1,4 @@
-.markdowned>img {
+.markdowned>*>img {
     max-width: 90%;
 }
 
