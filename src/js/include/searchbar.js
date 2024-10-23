@@ -5,6 +5,7 @@ const links = [
     {
         href: "/discord.html",
         text: "Serveur Discord",
+        svg: "/assets/svg/trademark/discord.svg",
     },
     {
         href: "https://Altherneum.fr",
@@ -209,6 +210,10 @@ function keyup() {
         result = links.filter((link) => {
             return link.text.toLowerCase().includes(input.toLowerCase());
         });
+
+        if(result.length > 5){
+            result = result.slice(0, 5);
+        }
     }
 
     searchbarResult(result);
@@ -219,9 +224,12 @@ function searchbarResult(result) {
     if (result.length) {
         const content = result.map((list, index) => {
             const href = list.href;
-            return `<li><a href="` + href + `">` + list.text + `</a></li>`;
+            if (list.svg === undefined) {
+                list.svg = "/assets/svg/link.svg";
+            }
+            return '<li><a href="' + href + '"><img src="' + list.svg + '" class="svg">' + list.text + '</a></li>';
         });
-        resultsBox.innerHTML = `<ul>` + content.join() + `</ul>`;
+        resultsBox.innerHTML = '<ul>' + content.join() + '</ul>';
         resultsBox.style.display = "block"
     } else {
         resultsBox.style.display = "none"

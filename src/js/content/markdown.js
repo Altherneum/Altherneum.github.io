@@ -534,8 +534,20 @@ function setAnchor() {
             anchorOnList.style = "padding-left:35px;text-decoration:none;font-size: xx-small;";
             anchorOnList.className = "summary-hidder";
         }
+
+        setScrollBehavior(anchorOnList);
         anchorList.appendChild(anchorOnList);
     }
+}
+function setScrollBehavior(anchor){
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        window.location.hash = this.getAttribute('href');
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: "smooth", block: "center"
+        });
+    });
 }
 
 function autoScroll() {
@@ -544,6 +556,6 @@ function autoScroll() {
 
     var element = document.getElementById(hash);
     if (element !== null) {
-        element.scrollIntoView();
+        element.scrollIntoView({ behavior: "smooth", block: "center" });
     }
 }
