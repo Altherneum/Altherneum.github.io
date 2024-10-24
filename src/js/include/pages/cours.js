@@ -156,7 +156,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/cours/docker", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'note/OS/Linux/Docker.md', false, true);
+            await addMarkdown('Altherneum/.github', 'note/OS/Container/Docker.md', false, true);
         });
     }
 

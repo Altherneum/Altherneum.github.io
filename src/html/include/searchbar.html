@@ -1,7 +1,7 @@
 <div id="searchbar">
     <div id="search-box">
-        <span data-clear-input onclick="clearSearchBarInput()">&times;</span>
-        <input type="text" id="input-box" placeholder="Rechercher du contenu ..." autocomplete="on" onkeyup="keyup(event, this)">
+        <span tabindex="0" data-clear-input onclick="clearSearchBarInput()" onkeypress="clearSearchBarInput()">&times;</span>
+        <input tabindex="0" type="text" id="input-box" placeholder="Rechercher du contenu ..." autocomplete="on" onkeyup="keyup(event, this)">
     </div>
     <div id="result-box"></div>
 </div>

@@ -15,7 +15,6 @@ footer {
     gap: 16px;
     justify-content: center;
     align-items: baseline;
-    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
@@ -27,8 +26,6 @@ footer>div>p {
     text-decoration: none;
 }
 
-.svg{
-    max-width: 40px;
-    margin: 5px;
-    padding-top: 0px;
+footer>nav>a>img.svg {
+    transform: translateY(35%);
 }

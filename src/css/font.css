@@ -21,6 +21,17 @@ summary {
     font-weight: bolder;
 }
 
+.svg {
+    max-width: 40px;
+    margin: 5px;
+    padding-top: 0px;
+}
+.svg-color {
+    max-width: 40px;
+    margin: 5px;
+    transform: translateY(25%);
+}
+
 i {
     font-style: italic;
 }

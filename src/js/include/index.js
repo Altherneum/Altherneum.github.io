@@ -14,8 +14,16 @@ async function includes() {
     console.info("Loading includes");
 
     await include_html("/src/html/include/header.html", "body", false);
-    await include_html("/src/html/include/searchbar.html", "navlinklist", true);
-    await include_script("/src/js/include/searchbar.js");
+    console.log(localStorage.getItem("OldSearchBar"));
+    if (localStorage.getItem('OldSearchBar') === "true") {
+        await include_html("/src/html/include/navlink.html", "navlinklist", true);
+        await include_css("/src/css/header-navbar.css");
+    }
+    else {
+        await include_html("/src/html/include/searchbar.html", "navlinklist", true);
+        await include_css("/src/css/searchbar.css");
+        await include_script("/src/js/include/searchbar.js");
+    }
 
     await include_html("/src/html/include/content.html", "body", false);
 
@@ -37,7 +45,6 @@ async function styles() {
     await include_css("/src/css/font.css");
     await include_css("/src/css/user-agent.css");
     await include_css("/src/css/header.css");
-    await include_css("/src/css/header-navbar.css");
     await include_css("/src/css/anchor.css");
 
     await include_css("/src/css/content.css");
@@ -45,7 +52,6 @@ async function styles() {
 
     await include_css("/src/css/footer.css");
     await include_css("/src/css/scrollbar.css");
-    await include_css("/src/css/searchbar.css");
 }
 
 async function Metadata() {

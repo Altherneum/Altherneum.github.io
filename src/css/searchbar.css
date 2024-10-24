@@ -3,14 +3,14 @@
     flex-direction: column;
     align-items: stretch;
 
-    padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 12px;
 }
 
 #search-box{
     padding-bottom: 5px;
-    display: inline;
+    display: block;
 }
 
 #search-box,
@@ -90,10 +90,7 @@
     color: var(--text-color);
     float: right;
     position: relative;
-    transform: translate(-100%, 110%);
-}
-
-#search-box>[data-clear-input]:hover {
-    transform: translate(-100%, 110%) rotate(90deg);
-    transition: 1s;
+    height: 0px;
+    width: 0px;
+    transform: translate(-25px, 5px);
 }
