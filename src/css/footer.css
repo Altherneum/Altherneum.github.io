@@ -14,7 +14,7 @@ footer {
     display: flex;
     gap: 16px;
     justify-content: center;
-    align-items: baseline;
+    align-items: flex-end;
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
@@ -24,6 +24,14 @@ footer>div>a,
 footer>div>p {
     margin: 5px;
     text-decoration: none;
+}
+footer>*{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    align-content: center;
+    flex-direction: row;
 }
 
 footer>nav>a>img.svg {
