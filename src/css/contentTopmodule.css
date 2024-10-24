@@ -19,8 +19,8 @@
     width: 90vw;
     max-width: 90vw;
     min-width: 90vw;
-    min-height: 30px;
-    height: 30px;
+    min-height: 0px;
+    height: 10px;
     backdrop-filter: var(--blur);
     resize: vertical;
 }
@@ -35,4 +35,9 @@
     border-style: solid;
     border-width: 2px;
     border-top-width: 0px;
+}
+
+#ContentLatestRSS>img {
+    transform: translateY(-25%);
+    width: 25px;
 }

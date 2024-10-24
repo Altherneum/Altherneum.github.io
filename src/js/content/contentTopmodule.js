@@ -1,5 +1,7 @@
-const ids = ["statsContentConsoleInfo", "ContentLatestRSS"];
+const ids = ["ContentLatestRSS", "statsContentConsoleInfo", "nothingWillRun"];
+
 showMenu("default");
+
 
 async function showMenu(module) {
     if (module === "default") {
@@ -7,7 +9,14 @@ async function showMenu(module) {
         var choiceRNG = Math.floor(Math.random() * max);
         var moduleName = ids[choiceRNG];
         module = moduleName;
+
+        if (!devMode() && module === "statsContentConsoleInfo") {
+            return showMenu("default");
+        }
+    } else if (module === "nothingWillRun") {
+        return;
     }
+
     console.log(module)
     for (i in ids) {
         if (module === ids[i]) {

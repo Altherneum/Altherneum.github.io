@@ -47,7 +47,7 @@ async function statsConsoleInfo(msg, count, text) {
         text = "ErrorType";
     }
 
-    var textOutput = "\n" + count + " : " + text + " : \n" + msg + "\n";
+    var textOutput = "\n\n" + count + " : " + text + " : \n" + msg;
     messages += textOutput;
 
     var testDoc = document.getElementById("statsContentConsoleInfoAll");
