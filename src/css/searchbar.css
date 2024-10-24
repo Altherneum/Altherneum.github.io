@@ -53,29 +53,30 @@ a.cardTitle{
     border: 2px solid var(--main-color);
 }
 
-#result-box>ul {
+#result-box>div {
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
-#result-box>ul>li {
+#result-box>div>div {
     list-style: none;
     color: var(--link-color);
     text-align: left !important;
 }
 
-#result-box>ul>li:hover {
+#result-box>div>div:hover {
     color: var(--text-color);
 }
 
-#result-box>ul>li>a>img{
+#result-box>div>a>img{
     max-width: 35px;
     min-width: 35px;
+    transform: translateY(25%);
 }
 
-#result-box>ul>li>a {
+#result-box>div>div>a {
     color: inherit;
     display: inline-flex;
     flex-wrap: nowrap;

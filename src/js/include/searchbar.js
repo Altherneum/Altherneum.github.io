@@ -543,6 +543,8 @@ const links = [
     },
 ];
 
+
+var lastResult = [];
 function keyup(event, inputBoxParam) {
 
     var code = event.charCode || event.keyCode;
@@ -560,34 +562,57 @@ function keyup(event, inputBoxParam) {
         });
 
         /* if(result.length > 10){
-            result = result.slice(0, 10);
-        } */
+                    result = result.slice(0, 10);
+            } */
+        
+        if (lastResult.toString() !== result.toString()) {
+            searchbarResult(result);
+        }
+        lastResult = result;
+    } else {
+        clearAllSearchBar();
     }
-
-    searchbarResult(result);
 }
 
 function searchbarResult(result) {
     const resultsBox = document.getElementById("result-box");
+    clearSearchBarResultHTML();
     if (result.length) {
-        const content = result.map((list, index) => {
-            const href = list.href;
-            if (list.svg === undefined) {
-                list.svg = "/assets/svg/link.svg";
+        for (i in result) {
+            const href = result[i].href;
+            const title = result[i].text;
+            let svg;
+            if (result[i].svg === undefined) {
+                svg = "/assets/svg/link.svg";
             }
-            return '<li><a href="' + href + '"><img src="' + list.svg + '" class="svg">' + list.text + '</a></li>';
-        });
-        resultsBox.innerHTML = '<ul>' + content.join() + '</ul>';
+            else { svg = result[i].svg; }
+
+            //console.log(href + ", " + svg + result[i].text);
+            resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a></div>'
+        }
         resultsBox.style.display = "block"
     } else {
         resultsBox.style.display = "none"
     }
 }
 
-function clearSearchBarInput(){
+function clearAllSearchBar() {
+    clearSearchBarResult();
+    clearInputSearchBar();
+    clearSearchBarResultHTML();
+}
+
+function clearSearchBarResult(){
     const resultsBox = document.getElementById("result-box");
     resultsBox.style.display = "none"
+}
 
+function clearSearchBarResultHTML() {
+    const resultsBox = document.getElementById("result-box");
+    resultsBox.innerHTML = '';
+}
+
+function clearInputSearchBar() {
     const inputBox = document.getElementById("input-box");
     inputBox.value = '';
 }
