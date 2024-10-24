@@ -43,7 +43,7 @@ a.cardTitle{
     display: none;
     position: fixed;
     max-height: 50vh;
-    overflow: scroll;
+    overflow: auto;
 }
 
 #result-box,
@@ -76,14 +76,13 @@ a.cardTitle{
     transform: translateY(25%);
 }
 
-#result-box>div>div>a {
-    color: inherit;
+#result-box>div>a {
     display: inline-flex;
     flex-wrap: nowrap;
-    align-content: start;
-    align-items: center;
+    align-items: baseline;
     flex-direction: row;
     gap: 15px;
+    text-decoration: none;
 }
 
 #search-box > [data-clear-input] {

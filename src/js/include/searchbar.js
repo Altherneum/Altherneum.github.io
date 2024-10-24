@@ -15,10 +15,16 @@ const links = [
     {
         href: "https://Altherneum.fr",
         text: "Serveur Minecraft",
+        svg: "/assets/svg/trademark/minecraft.svg",
+    },
+    {
+        href: "/",
+        text: "Accueil",
+        svg: "/assets/svg/home.svg",
     },
     {
         href: "/settings.html",
-        text: "Paramètres",
+        text: "Paramètres (Settings)",
         svg: "/assets/svg/settings.svg",
     },
     {
@@ -567,6 +573,7 @@ function keyup(event, inputBoxParam) {
         
         if (lastResult.toString() !== result.toString()) {
             searchbarResult(result);
+            addAllTags();
         }
         lastResult = result;
     } else {
