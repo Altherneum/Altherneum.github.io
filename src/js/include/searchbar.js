@@ -48,7 +48,7 @@ function searchbarResult(result) {
             //console.log(href + ", " + svg + result[i].text);
             resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a></div>'
         }
-        resultsBox.style.display = "block"
+        resultsBox.style.display = "flex"
     } else {
         resultsBox.style.display = "none"
     }

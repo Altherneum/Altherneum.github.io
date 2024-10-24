@@ -50,7 +50,11 @@ a.cardTitle{
     display: none;
     position: fixed;
     max-height: 50vh;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: clip;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #result-box,
@@ -61,10 +65,7 @@ a.cardTitle{
 }
 
 #result-box>div {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding: 5px;
 }
 
 #result-box>div>div {
@@ -80,16 +81,16 @@ a.cardTitle{
 #result-box>div>a>img{
     max-width: 35px;
     min-width: 35px;
-    transform: translateY(25%);
 }
 
 #result-box>div>a {
     display: inline-flex;
     flex-wrap: nowrap;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
-    gap: 15px;
+    gap: 10px;
     text-decoration: none;
+    font-size: medium;
 }
 
 #search-box > [data-clear-input] {
