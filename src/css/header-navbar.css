@@ -17,6 +17,7 @@ a.cardTitle{
 
 .cardUI {
     display: inline-block;
+    padding-bottom: 16px;
 }
 
 .cardUI>div,
