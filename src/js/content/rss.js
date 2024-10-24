@@ -129,6 +129,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "Mises à jour multiples",
+    link: "settings",
+    description: "Ajout de cours et changement d'UI header",
+    publicationDate: buildRFC822Date("2024-10-24T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image
