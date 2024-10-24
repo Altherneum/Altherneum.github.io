@@ -5,6 +5,7 @@
     z-index: 980;
     position: relative;
     justify-content: center;
+    flex-wrap: wrap;
 
     border-bottom-width: 0px;
     margin-bottom: -2px;
@@ -16,9 +17,9 @@
 }
 
 #statsContentConsoleInfoAll{
-    width: 90vw;
-    max-width: 90vw;
-    min-width: 90vw;
+    width: 90%;
+    max-width: 100%;
+    min-width: 80%;
     min-height: 0px;
     height: 10px;
     backdrop-filter: var(--blur);
@@ -26,7 +27,7 @@
 }
 
 #ContentLatestRSS{
-    width: 100%;
+    max-width: 100%;
 
     padding: 16px;
 

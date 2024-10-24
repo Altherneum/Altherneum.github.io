@@ -26,10 +26,6 @@ header>#navlinklist {
     header {
         position: relative;
     }
-
-    header>* {
-        padding-bottom: 16px;
-    }
 }
 
 a.cardTitle {
