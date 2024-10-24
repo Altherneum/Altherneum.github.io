@@ -28,7 +28,10 @@
     position: sticky;
     top: 20vh;
     max-height: 80vh;
+    height: fit-content;
+    margin-top: 12px;
     padding: 12px;
+    padding-top: 0px;
 }
 
 
