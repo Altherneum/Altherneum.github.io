@@ -76,7 +76,7 @@ a.cardTitle{
     transform: translateY(25%);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1800px) {
     .subnav-content {
         max-height: 50vh;
 
@@ -92,7 +92,7 @@ a.cardTitle{
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1800px) {
     .subnav-content{
         transform: translateX(-25%);
         border-radius: 25px;
