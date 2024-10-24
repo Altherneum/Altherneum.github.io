@@ -32,16 +32,8 @@ header>#navlinklist {
     header>* {
         padding-bottom: 16px;
     }
-
-    header>#navlinklist>div.cardUI {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 }
 
-@media screen and (min-width: 1024px) {
-    header>#navlinklist>div.cardUI {
-        margin-left: 10px;
-        margin-right: 150px;
-    }
+a.cardTitle {
+    display: inline-block;
 }

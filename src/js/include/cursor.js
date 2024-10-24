@@ -81,7 +81,12 @@ async function addAllTags() {
 
     list = document.getElementsByTagName("summary");
     for (i in list) {
-        addHandlers(list[i]); 
+        addHandlers(list[i]);
+    }
+
+    list = document.getElementsByTagName("span");
+    for (i in list) {
+        addHandlers(list[i]);
     }
 }
 

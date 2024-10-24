@@ -1,7 +1,9 @@
+a.cardTitle{
+    transform: translateY(25%);
+}
+
 #searchbar {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    display: inline-block;
 
     margin-left: auto;
     margin-right: auto;

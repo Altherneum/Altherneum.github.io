@@ -1,3 +1,7 @@
+a.cardTitle{
+    transform: translateY(15%);
+}
+
 .subnav-content {
     display: none;
     position: absolute;
@@ -11,18 +15,7 @@
     z-index: 999;
 }
 
-a.cardTitle>h1 {
-    margin-block-start: 0.67em;
-    margin-block-end: 0.10em;
-}
-
 .cardUI {
-    display: inline-block;
-}
-
-a.cardTitle {
-    margin-right: 50px;
-    text-decoration: none;
     display: inline-block;
 }
 
@@ -113,5 +106,19 @@ a.cardTitle {
     .subnav-content>.sided:last-child {
         float: right;
         padding-left: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    div.cardUI {
+        margin-left: 10px;
+        margin-right: 150px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.cardUI {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
