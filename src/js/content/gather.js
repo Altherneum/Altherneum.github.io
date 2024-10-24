@@ -1,13 +1,30 @@
-function gather(url) {
+function gather(url, tries) {
+    if (tries === undefined) {
+        tries = 1;
+    }
     return new Promise(function (resolve, reject) {
         setTimeout(() => {
             fetch(url)
-                .then(response => response.json())
+                .then(response => {
+                    console.log(tries);
+                    console.log(response);
+                    if (!response.ok || response.status !== 200) {
+                        console.error(url + " : " + response.status + " : " + response.statusText);
+
+                        if (tries >0){
+                            const delay = Math.floor(Math.random() * 1000 * 60);
+                            setTimeout(() => { gather(url, tries - 1); }, delay);
+                        }
+                    }
+                    return response.json();
+                })
                 .then(data => {
                     resolve(data);
                     return;
                 })
-                .catch(error => console.error(error))
+                .catch(error => {
+                    console.warn(error);
+                });
         }, 250);
     });
 }

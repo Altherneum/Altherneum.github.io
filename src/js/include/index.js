@@ -14,7 +14,7 @@ async function includes() {
     console.info("Loading includes");
 
     await include_html("/src/html/include/header.html", "body", false);
-    console.log(localStorage.getItem("OldSearchBar"));
+    console.info("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
     if (localStorage.getItem('OldSearchBar') === "true") {
         await include_html("/src/html/include/navlink.html", "navlinklist", true);
         await include_css("/src/css/header-navbar.css");
@@ -22,15 +22,16 @@ async function includes() {
     else {
         await include_html("/src/html/include/searchbar.html", "navlinklist", true);
         await include_css("/src/css/searchbar.css");
+        await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
     }
 
+    await include_html("/src/html/include/contentTopModule.html", "navlinklist", true)
     await include_html("/src/html/include/content.html", "body", false);
 
     await include_html("/src/html/include/anchor.html", "content-right", true);
     await setIconTheme();
 
-    await include_html("/src/html/include/contentTopModule.html", "header", false)
     await include_script("/src/js/content/contentTopmodule.js");
 
 

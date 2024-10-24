@@ -1,65 +1,39 @@
-const ids = [/*"statsContentIssues", "statsContentContributor",
-    "statsContentBuild", "statsContentDiscussion", "statsContentGithubStatus",*/
-    "statsContentConsoleInfo", "ContentLatestRSS", "ContentMusic", "statsContentMenu"];
-
-async function showTopmodule(forceBlock, menuName) {
-    console.info("Loading top module stats");
-    var topModule = document.getElementById("TopModule");
-
-    if (topModule.style.display == "block") {
-        topModule.style = "display:none;";
-        closeMenu();
-    } else if (topModule.style.display == "none") {
-        topModule.style = "display:block;";
-        showMenu(menuName);
-    }
-
-    if (forceBlock === true) {
-        topModule.style = "display:block;";
-        showMenu(menuName);
-    }
-    else if (forceBlock === false) {
-        topModule.style = "display:none;";
-        closeMenu();
-    }
-}
+const ids = ["statsContentConsoleInfo", "ContentLatestRSS"];
+showMenu("default");
 
 async function showMenu(module) {
-    closeMenu();
-
     if (module === "default") {
         var max = ids.length;
         var choiceRNG = Math.floor(Math.random() * max);
         var moduleName = ids[choiceRNG];
         module = moduleName;
     }
-
+    console.log(module)
     for (i in ids) {
         if (module === ids[i]) {
             var element = document.getElementById(module);
-            element.className = "visible";
-            activateMenu(module);
+            if (element.classList.contains("visible")) {
+                element.classList.remove("visible");
+            } else {
+                element.classList.add("visible");
+                activateMenu(module);
+            }
+        }
+        else {
+            var element = document.getElementById(ids[i]);
+            element.classList.remove("visible");
         }
     }
 }
 
 function activateMenu(menuName) {
     if (menuName === "statsContentConsoleInfo") {
-        statsConsoleSetup();
+        console.info("Loading console embed")
     }
     else if (menuName === "ContentLatestRSS") {
         getRSS();
     }
 }
-
-function closeMenu() {
-    for (i in ids) {
-        var element = document.getElementById(ids[i]);
-        element.classList.remove("visible");
-    }
-}
-
-
 
 function getRSS() {
     const RSS_URL = location.origin + "/rss.rss";

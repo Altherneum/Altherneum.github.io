@@ -3,7 +3,7 @@ var warnMsg = "";
 console.warn = async function (msg) {
     warnCount++;
     warnMsg = msg;
-    await statsConsoleInfo( msg, warnCount, "statsContentConsoleInfoWarn", "Warn");
+    await statsConsoleInfo( msg, warnCount, "Warn");
     console.log(msg);
 }
 
@@ -12,7 +12,7 @@ var errorMsg = "";
 console.error = async function (msg) {
     errorCount++;
     errorMsg = msg;
-    await statsConsoleInfo( msg, errorCount, "statsContentConsoleInfoError", "Error");
+    await statsConsoleInfo( msg, errorCount, "Error");
     console.log(msg);
 }
 
@@ -21,7 +21,7 @@ var infoMsg = "";
 console.info = async function (msg) {
     infoCount++;
     infoMsg = msg;
-    await statsConsoleInfo( msg, infoCount, "statsContentConsoleInfoInfo", "Info");
+    await statsConsoleInfo( msg, infoCount, "Info");
     console.log(msg);
 }
 
@@ -30,47 +30,29 @@ var traceMsg = "";
 console.trace = async function (msg) {
     traceCount++;
     traceMsg = msg;
-    await statsConsoleInfo( msg, traceCount, "statsContentConsoleInfoTrace", "Trace");
+    await statsConsoleInfo(msg, traceCount, "Trace");
     console.log(msg);
 }
 
-async function statsConsoleInfo(msg, count, div, text) {
-        if (div !== undefined) {
-            if (msg === undefined) {
-                msg = "...";
-            }
-            if (count === undefined) {
-                count = 0;
-            }
-
-            if (text === undefined) {
-                text = "ErrorType";
-            }
-
-            var countInfo = document.getElementById(div);
-            if(countInfo !== null){
-                var textOutput = text + " : " + count + " : " + msg;
-
-                countInfo.textContent = textOutput;
-                countInfo.style = "padding-left: 12px;";
-            }
-        }
-}
-
-function statsConsoleSetup() {
-    if (errorCount > 0) {
-        statsConsoleInfo(errorMsg, errorCount, "statsContentConsoleInfoError", "Error");
+var messages;
+async function statsConsoleInfo(msg, count, text) {
+    if (msg === undefined) {
+        msg = "...";
     }
-    
-    if (warnCount > 0) {
-        statsConsoleInfo(warnMsg, warnCount, "statsContentConsoleInfoWarn", "Warn");
+    if (count === undefined) {
+        count = 0;
     }
-    
-    if (infoCount > 0) {
-        statsConsoleInfo(infoMsg, infoCount, "statsContentConsoleInfoInfo", "Info");
+
+    if (text === undefined) {
+        text = "ErrorType";
     }
-    
-    if (traceCount > 0) {
-        statsConsoleInfo(traceMsg, traceCount, "statsContentConsoleInfoTrace", "Trace");
+
+    var textOutput = "\n" + count + " : " + text + " : \n" + msg + "\n";
+    messages += textOutput;
+
+    var testDoc = document.getElementById("statsContentConsoleInfoAll");
+    if (testDoc !== null && testDoc !== undefined){
+        testDoc.value = messages;
+        testDoc.scrollTop = testDoc.scrollHeight;
     }
 }

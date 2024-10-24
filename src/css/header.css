@@ -20,8 +20,6 @@ header>#navlinklist {
     border-bottom-style: solid;
     border-bottom-color: var(--main-color);
     border-bottom-width: 3px;
-
-    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 1024px) {
