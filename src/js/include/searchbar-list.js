@@ -485,6 +485,36 @@ const links = [
         text: "URL : KeePassXC",
     },
     {
+        href: "https://github.com/keepassxreboot/keepassxc",
+        svg: "/assets/svg/trademark/repo.svg",
+        text: "URL : KeePassXC Repo",
+    },
+    {
+        href: "https://github.com/keeweb/keeweb",
+        svg: "/assets/svg/trademark/repo.svg",
+        text: "URL : KeeWeb Repo",
+    },
+    {
+        href: "https://app.keeweb.info/",
+        svg: "/assets/svg/password.svg",
+        text: "URL : App.KeeWeb.info",
+    },
+    {
+        href: "https://github.com/Kunzisoft/KeePassDX",
+        svg: "/assets/svg/trademark/repo.svg",
+        text: "URL : KeePassDX Repo",
+    },
+    {
+        href: "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
+        svg: "/assets/svg/trademark/google-play.svg",
+        text: "URL : KeePassDX Android",
+    },
+    {
+        href: "https://www.keepassdx.com/",
+        svg: "/assets/svg/password.svg",
+        text: "URL : KeePassDX.com",
+    },
+    {
         href: "https://www.motdepasse.xyz/",
         svg: "/assets/svg/password.svg",
         text: "URL : motdepasse .xyz",
@@ -545,3 +575,11 @@ const links = [
         text: "URL : Npcap",
     },
 ];
+
+/*
+    {
+        href: "",
+        svg: "/assets/svg/.svg",
+        text: "URL : ",
+    },
+*/
