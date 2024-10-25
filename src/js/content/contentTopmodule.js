@@ -22,7 +22,7 @@ async function showMenu(module) {
         if (module === ids[i]) {
             var element = document.getElementById(module);
             if (!removeVisibleTag(element)) {
-                element.classList.add("visible");
+                switchVisibleTag(element);
                 activateMenu(module);
             }
         }
@@ -39,6 +39,20 @@ function removeVisibleTag(element) {
         element.classList.remove("visible");
         return true;
     }
+    return false;
+}
+
+function switchVisibleTag(element) {
+    if (element !== null && element.classList !== null)
+        if (element.classList.length > 0) {
+            if (element.classList.contains("visible")) {
+                element.classList.remove("visible");
+                return true;
+            } else {
+                element.classList.add("visible");
+                return true;
+            }
+        }
     return false;
 }
 
