@@ -21,18 +21,25 @@ async function showMenu(module) {
     for (i in ids) {
         if (module === ids[i]) {
             var element = document.getElementById(module);
-            if (element.classList.contains("visible")) {
-                element.classList.remove("visible");
-            } else {
+            if (!removeVisibleTag(element)) {
                 element.classList.add("visible");
                 activateMenu(module);
             }
         }
         else {
             var element = document.getElementById(ids[i]);
-            element.classList.remove("visible");
+            removeVisibleTag(element);
         }
     }
+}
+
+function removeVisibleTag(element) {
+    if (element !== null && element.classList !== null)
+    if (element.classList.contains("visible") && element.classList.length > 0) {
+        element.classList.remove("visible");
+        return true;
+    }
+    return false;
 }
 
 function activateMenu(menuName) {
