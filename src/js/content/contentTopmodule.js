@@ -44,14 +44,12 @@ function removeVisibleTag(element) {
 
 function switchVisibleTag(element) {
     if (element !== null && element.classList !== null)
-        if (element.classList.length > 0) {
-            if (element.classList.contains("visible")) {
-                element.classList.remove("visible");
-                return true;
-            } else {
-                element.classList.add("visible");
-                return true;
-            }
+        if (element.classList.contains("visible") && element.classList.length > 0) {
+            element.classList.remove("visible");
+            return true;
+        } else {
+            element.classList.add("visible");
+            return true;
         }
     return false;
 }
