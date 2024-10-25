@@ -144,7 +144,7 @@ li::marker {
 
     margin: 24px;
 
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 0.25vw;
     -webkit-text-stroke-color: var(--text-color);
     text-shadow: 0px 0px 20px var(--background-color);
 }
