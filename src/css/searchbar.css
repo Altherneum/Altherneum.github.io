@@ -108,6 +108,11 @@ a.cardTitle{
     margin-left: 5px;
 }
 
-#close-search>img{
+#close-search>img {
     max-width: 25px;
+}
+
+#close-search>img:active {
+    transition: 0.25s;
+    transform: scale(120%);
 }

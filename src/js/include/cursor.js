@@ -88,6 +88,11 @@ async function addAllTags() {
     for (i in list) {
         addHandlers(list[i]);
     }
+
+    list = document.getElementById("close-search");
+    for (i in list) {
+        addHandlers(list[i]);
+    }
 }
 
 
