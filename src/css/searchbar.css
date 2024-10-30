@@ -20,8 +20,8 @@ a.cardTitle{
 
 #search-box{
     padding-bottom: 5px;
-    display: block;
     position: relative;
+    display: inline-flex;
 }
 
 #search-box,
@@ -30,15 +30,6 @@ a.cardTitle{
 #searchbar {
     z-index: 990;
     width: 100%;
-}
-
-#search-box>input {
-    height: 40px;
-    font-size: 25px;
-    color: var(--text-color);
-    outline: none;
-    background-color: transparent;
-    text-indent: 10px;
 }
 
 #search-box>input::placeholder {
@@ -58,10 +49,22 @@ a.cardTitle{
 }
 
 #result-box,
-#search-box>input {
+#search-box>input,
+#close-search {
     border-radius: 10px;
     background: linear-gradient(var(--main-color), var(--background-color));
     border: 2px solid var(--main-color);
+}
+
+#search-box>input {
+    height: 40px;
+    font-size: 25px;
+    color: var(--text-color);
+    outline: none;
+    background-color: transparent;
+    text-indent: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
 }
 
 #result-box>div {
@@ -93,14 +96,18 @@ a.cardTitle{
     font-size: medium;
 }
 
-#search-box > [data-clear-input] {
-    font-weight: bold;
-    font-size: xx-large;
-    cursor: none;
-    color: var(--text-color);
-    float: right;
-    position: relative;
-    height: 10px;
-    width: 10px;
-    transform: translate(-20px, 10px);
+#close-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    margin-left: 5px;
+}
+
+#close-search>img{
+    max-width: 25px;
 }

@@ -58,6 +58,11 @@ function clearAllSearchBar() {
     clearSearchBarResult();
     clearInputSearchBar();
     clearSearchBarResultHTML();
+    clearLastResult();
+}
+
+function clearLastResult() {
+    lastResult = [];
 }
 
 function clearSearchBarResult(){
