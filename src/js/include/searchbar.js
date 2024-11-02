@@ -84,31 +84,30 @@ function clearInputSearchBar() {
 
 document.body.addEventListener('keydown', function (e) {
     if (e.key == "Escape") {
-
-        const inputBox = document.getElementById("input-box");
-        const resultsBox = document.getElementById("result-box");
-
-        console.info("Try close search tab : Escape key press");
-
-        if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
-            clearAllSearchBar();
-            console.info("Closing search tab : Escape key press");
-        }
+        closeSearchBar();
     }
 });
 
 //searchbar
 window.addEventListener('click', function (e) {
     if (!document.getElementById('searchbar').contains(e.target)) {
-        // Clicked outside the box
-
-        const inputBox = document.getElementById("input-box");
-        const resultsBox = document.getElementById("result-box");
-
-        console.info("Try close search tab : Click outside");
-        if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
-            clearAllSearchBar();
-            console.info("Closing search tab : Click outside");
-        }
+        closeSearchBar();
     }
 });
+
+function isSearchBarOpend(){
+    const inputBox = document.getElementById("input-box");
+    const resultsBox = document.getElementById("result-box");
+
+    console.info("Try close search tab : Click outside");
+    if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
+        return true;
+    }
+    return false;
+}
+
+function closeSearchBar() {
+    if (isSearchBarOpend) {
+        clearAllSearchBar();
+    }
+}
