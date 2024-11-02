@@ -14,9 +14,11 @@ function keyup(event, inputBoxParam) {
     let input = inputBox.value;
 
     if (input.length > 0) {
-        result = links.filter((link) => {
-            return link.text.toLowerCase().includes(input.toLowerCase());
-        });
+        result = links.filter(link => {
+            return link.text.toLowerCase().includes(input.toLowerCase())
+                || link.href.toLowerCase().includes(input.toLowerCase())
+                || link.tag.toLowerCase().includes(input.toLowerCase()); 
+        }); 
 
         /* if(result.length > 10){
                     result = result.slice(0, 10);
