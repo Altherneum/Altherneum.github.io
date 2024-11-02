@@ -137,6 +137,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "Mise à jour de la barre de recherche",
+    link: "https://github.com/Altherneum/Altherneum.github.io/compare/b6a61b951601...db327599ff04",
+    description: "Ajout de cours et changement d'UI header",
+    publicationDate: buildRFC822Date("2024-11-02T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image
@@ -152,7 +160,13 @@ const feedItems = linksList;
 
 // Generate the channel feed items based on the filtered pages
 const channelFeed = feedItems?.map((node) => {
-  const link = baseUrl + "/" + node.link;
+  var link;
+  if (node.link.startsWith("https://")) {
+    link = node.link;
+  } else {
+    link = baseUrl + "/" + node.link;
+  }
+  
   console.info("RSS feed : " + link)
   const meta = node.meta || {}
   const title = node.title

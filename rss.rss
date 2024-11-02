@@ -143,6 +143,15 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="Mises à jour multiples" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[Mise à jour de la barre de recherche]]></title>
+        <link>https://github.com/Altherneum/Altherneum.github.io/compare/b6a61b951601...db327599ff04</link>
+        <guid isPermaLink="true">https://github.com/Altherneum/Altherneum.github.io/compare/b6a61b951601...db327599ff04</guid>
+        <pubDate>Fri, 01 Nov 2024 23:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[Ajout de cours et changement d'UI header]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="Mise à jour de la barre de recherche" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
-  

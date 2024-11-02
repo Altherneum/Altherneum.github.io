@@ -689,9 +689,16 @@ const links = [
         tag: "URL Network OpSec",
         text: "Npcap",
     },
+    {
+        href: "/src/js/content/rss.js",
+        svg: "/assets/svg/languages/js.svg",
+        tag: "RSS URL",
+        text: "RSS .JS",
+    },
 ];
 
 /*
+
     {
         href: "",
         svg: "/assets/svg/.svg",
