@@ -88,7 +88,6 @@ document.body.addEventListener('keydown', function (e) {
     }
 });
 
-//searchbar
 window.addEventListener('click', function (e) {
     if (!document.getElementById('searchbar').contains(e.target)) {
         closeSearchBar();
@@ -99,7 +98,6 @@ function isSearchBarOpend(){
     const inputBox = document.getElementById("input-box");
     const resultsBox = document.getElementById("result-box");
 
-    console.info("Try close search tab : Click outside");
     if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
         return true;
     }
@@ -111,3 +109,22 @@ function closeSearchBar() {
         clearAllSearchBar();
     }
 }
+
+//Target Search bar with shortcut Shift+F
+let keysPressed = {};
+
+document.addEventListener('keydown', (event) => {
+    keysPressed[event.key] = true;
+});
+
+document.addEventListener('keyup', (event) => {
+    keysPressed[event.key] = '';
+});
+
+document.body.addEventListener('keydown', function (e) {
+    keysPressed[e.key] = true;
+    if (keysPressed["Shift"] && e.key == "F") {
+        e.preventDefault();
+        document.getElementById("input-box").focus();
+    }
+});
