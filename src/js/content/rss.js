@@ -140,7 +140,7 @@ const linksList = [
   {
     title: "Mise à jour de la barre de recherche",
     link: "https://github.com/Altherneum/Altherneum.github.io/compare/b6a61b951601...db327599ff04",
-    description: "Ajout de cours et changement d'UI header",
+    description: "Mise à jour de QOL sur la barre de recherche",
     publicationDate: buildRFC822Date("2024-11-02T00:00:00.0000"),
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
