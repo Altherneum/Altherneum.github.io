@@ -88,11 +88,27 @@ document.body.addEventListener('keydown', function (e) {
         const inputBox = document.getElementById("input-box");
         const resultsBox = document.getElementById("result-box");
 
-        console.info("Try Close search tab");
+        console.info("Try close search tab : Escape key press");
 
         if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
             clearAllSearchBar();
-            console.info("Closing search tab by escape key press");
+            console.info("Closing search tab : Escape key press");
+        }
+    }
+});
+
+//searchbar
+window.addEventListener('click', function (e) {
+    if (!document.getElementById('searchbar').contains(e.target)) {
+        // Clicked outside the box
+
+        const inputBox = document.getElementById("input-box");
+        const resultsBox = document.getElementById("result-box");
+
+        console.info("Try close search tab : Click outside");
+        if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
+            clearAllSearchBar();
+            console.info("Closing search tab : Click outside");
         }
     }
 });
