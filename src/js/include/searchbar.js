@@ -81,3 +81,18 @@ function clearInputSearchBar() {
     const inputBox = document.getElementById("input-box");
     inputBox.value = '';
 }
+
+document.body.addEventListener('keydown', function (e) {
+    if (e.key == "Escape") {
+
+        const inputBox = document.getElementById("input-box");
+        const resultsBox = document.getElementById("result-box");
+
+        console.info("Try Close search tab");
+
+        if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
+            clearAllSearchBar();
+            console.info("Closing search tab by escape key press");
+        }
+    }
+});
