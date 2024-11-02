@@ -37,6 +37,10 @@ a.cardTitle{
     opacity: 0.9;
 }
 
+#search-box>input:focus {
+    border-color: var(--text-color);
+}
+
 #result-box{
     display: none;
     position: fixed;
