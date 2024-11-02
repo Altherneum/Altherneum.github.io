@@ -98,14 +98,17 @@ function isSearchBarOpend(){
     const inputBox = document.getElementById("input-box");
     const resultsBox = document.getElementById("result-box");
 
-    if ((resultsBox !== null && resultsBox.style.display !== "none") || (inputBox !== null && inputBox.value !== '')) {
+    if (inputBox === null) { return false; }
+    if (resultsBox === null) { return false; }
+
+    if ((resultsBox.style.display !== "none") || (inputBox.value !== '')) {
         return true;
     }
     return false;
 }
 
 function closeSearchBar() {
-    if (isSearchBarOpend) {
+    if (isSearchBarOpend()) {
         clearAllSearchBar();
     }
 }
@@ -124,7 +127,10 @@ document.addEventListener('keyup', (event) => {
 document.body.addEventListener('keydown', function (e) {
     keysPressed[e.key] = true;
     if (keysPressed["Shift"] && e.key == "F") {
-        e.preventDefault();
-        document.getElementById("input-box").focus();
+        var inputBox = document.getElementById("input-box");
+        if (inputBox !== null) {
+            e.preventDefault();
+            inputBox.focus();
+        }
     }
 });
