@@ -26,7 +26,7 @@
 #content-right,
 #content-left{
     position: sticky;
-    top: 20vh;
+    top: 15vh;
     max-height: 80vh;
     height: fit-content;
     margin-top: 12px;
