@@ -1,5 +1,5 @@
 header {
-    position: sticky;
+    position: relative;
     top: 0;
 
     width: 100%;
@@ -20,12 +20,6 @@ header>#navlinklist {
     border-bottom-style: solid;
     border-bottom-color: var(--main-color);
     border-bottom-width: 3px;
-}
-
-@media screen and (max-width: 1024px) {
-    header {
-        position: relative;
-    }
 }
 
 a.cardTitle {

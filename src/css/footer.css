@@ -9,7 +9,7 @@ footer {
 
     z-index: 999;
 
-    background: linear-gradient(var(--background-color), var(--main-color));
+    background: linear-gradient(var(--background-color-transparent), var(--main-color));
 
     display: flex;
     gap: 16px;
