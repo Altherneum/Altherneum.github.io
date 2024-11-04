@@ -18,7 +18,7 @@ function keyup(event, inputBoxParam) {
             return link.text.toLowerCase().includes(input.toLowerCase())
                 || link.href.toLowerCase().includes(input.toLowerCase())
                 || link.tag.toLowerCase().includes(input.toLowerCase()); 
-        }); 
+        });
 
         /* if(result.length > 10){
                     result = result.slice(0, 10);
