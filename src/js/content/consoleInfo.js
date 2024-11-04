@@ -56,3 +56,18 @@ async function statsConsoleInfo(msg, count, text) {
         testDoc.scrollTop = testDoc.scrollHeight;
     }
 }
+
+function addConsoleInfoOnAnchor() {
+    console.info("start adding anchor console info");
+    var anchor = document.getElementById("anchor-button");
+
+    var button = document.createElement("button");
+    button.onclick = function () { showMenu('statsContentConsoleInfo'); }
+
+    var img = document.createElement("img");
+    img.src = "/assets/svg/console.svg";
+    img.classList.add("svg");
+
+    button.appendChild(img);
+    anchor.appendChild(button);
+}

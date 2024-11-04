@@ -358,7 +358,7 @@ function setAnchorButton(id, asset) {
 }
 
 function setAnchor() {
-    setAnchorButton("#anchor", "/assets/svg/book.svg");
+    setAnchorButton("#anchor-button", "/assets/svg/book.svg");
     var anchorList = document.createElement("div");
     anchorList.id = "anchorList";
     var contentLeft = document.getElementById("content-left");

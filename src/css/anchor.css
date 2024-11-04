@@ -1,5 +1,5 @@
-#anchor>a>button>img,
-#anchor>button>img {
+#anchor>#anchor-button>a>button>img,
+#anchor>#anchor-button>button>img {
     width: 25px;
     height: 25px;
 
@@ -22,8 +22,8 @@
     min-width: 50px;
 }
 
-#anchor>a>button,
-#anchor>button {
+#anchor>#anchor-button>a>button,
+#anchor>#anchor-button>button {
     border-radius: 10px;
     
     margin-top: 5px;

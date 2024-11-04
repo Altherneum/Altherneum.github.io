@@ -135,9 +135,10 @@ async function pages() {
         }
     }
     await include_script("/src/js/include/viewcount.js");
-    await devFooter();
     await include_script("/src/js/content/date.js");
     await include_script("/src/js/include/cursor.js");
+
+    await includeDevFeatures();
 }
 
 async function CheckPageWith(PageName){
@@ -179,6 +180,11 @@ function devMode() {
     else {
         return false;
     }
+}
+
+async function includeDevFeatures() {
+    addConsoleInfoOnAnchor();
+    await devFooter();
 }
 
 async function devFooter() {
