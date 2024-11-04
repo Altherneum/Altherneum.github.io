@@ -183,24 +183,24 @@ function devMode() {
 }
 
 async function includeDevFeatures() {
-    addConsoleInfoOnAnchor();
-    await devFooter();
+    if (devMode()) {
+        addConsoleInfoOnAnchor();
+        await devFooter();
+    }
 }
 
 async function devFooter() {
-    if (devMode()) {
-        var devFooter = document.getElementById("devFooter");
-        if (devFooter != null) {
-            devFooter.style = "";
-            var offline = document.getElementById("offline-url");
-            var online = document.getElementById("online-url");
+    var devFooter = document.getElementById("devFooter");
+    if (devFooter != null) {
+        devFooter.style = "";
+        var offline = document.getElementById("offline-url");
+        var online = document.getElementById("online-url");
 
-            offline.href = "http://127.0.0.1:3000" + window.location.pathname;
-            online.href = "https://doc.Altherneum.fr" + window.location.pathname;
-        }
-
-        await devTest();
+        offline.href = "http://127.0.0.1:3000" + window.location.pathname;
+        online.href = "https://doc.Altherneum.fr" + window.location.pathname;
     }
+
+    await devTest();
 }
 
 async function devTest() {
