@@ -25,6 +25,9 @@ async function includes() {
         await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
     }
+    
+    await include_html("/src/html/include/scrollPercentage.html", "body", false);
+    await include_script("/src/js/include/scrollPercentage.js");
 
     await include_html("/src/html/include/contentTopModule.html", "navlinklist", true)
     await include_html("/src/html/include/content.html", "body", false);
@@ -53,6 +56,7 @@ async function styles() {
 
     await include_css("/src/css/footer.css");
     await include_css("/src/css/scrollbar.css");
+    await include_css("/src/css/scrollPercentage.css");
 }
 
 async function Metadata() {
