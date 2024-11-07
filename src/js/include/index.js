@@ -17,12 +17,12 @@ async function includes() {
     console.info("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
     console.info("All search Bar : " + localStorage.getItem('AllSearchBar'));
     if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') === "true" || localStorage.getItem('AllSearchBar') === null) {
-        await include_html("/src/html/include/navlink.html", "navlinklist", true);
         await include_css("/src/css/header-navbar.css");
+        await include_html("/src/html/include/navlink.html", "navlinklist", true);
     }
     if (localStorage.getItem('OldSearchBar') === "false" || localStorage.getItem('AllSearchBar') === "true" || localStorage.getItem('AllSearchBar') === null) {
-        await include_html("/src/html/include/searchbar.html", "navlinklist", true);
         await include_css("/src/css/searchbar.css");
+        await include_html("/src/html/include/searchbar.html", "navlinklist", true);
         await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
     }
@@ -76,9 +76,9 @@ async function randomInclude(excludeSettings) {
     var random = Math.round(Math.random() * (max - 1) + 1);
 
     if (random == 1) {
+        await include_css("/src/css/cube.css");
         await include_html("/src/html/content/cube.html", "contentArticle", true);
         await include_script("/src/js/content/cube.js");
-        await include_css("/src/css/cube.css");
     }
     else if (random == 2) {
         await include_multiple("console", "contentArticle");
@@ -106,8 +106,8 @@ async function pages() {
         if (pathNameMatchPage("/", true) || pathNameMatchPage("/index", true)) {
             await includes();
 
-            await include_html("/src/html/content/welcome.html", "contentArticle", true);
             await include_css("/src/css/welcome.css");
+            await include_html("/src/html/content/welcome.html", "contentArticle", true);
 
             randomInclude(false);
         }
