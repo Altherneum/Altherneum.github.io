@@ -16,11 +16,11 @@ async function includes() {
     await include_html("/src/html/include/header.html", "body", false);
     console.info("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
     console.info("All search Bar : " + localStorage.getItem('AllSearchBar'));
-    if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') === "true") {
+    if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') === "true" || localStorage.getItem('AllSearchBar') === null) {
         await include_html("/src/html/include/navlink.html", "navlinklist", true);
         await include_css("/src/css/header-navbar.css");
     }
-    if (localStorage.getItem('OldSearchBar') === "false" || localStorage.getItem('AllSearchBar') === "true") {
+    if (localStorage.getItem('OldSearchBar') === "false" || localStorage.getItem('AllSearchBar') === "true" || localStorage.getItem('AllSearchBar') === null) {
         await include_html("/src/html/include/searchbar.html", "navlinklist", true);
         await include_css("/src/css/searchbar.css");
         await include_script("/src/js/include/searchbar-list.js");

@@ -1,7 +1,6 @@
 document.addEventListener('scroll', function () {
     var scroll = getScrollPercentage();
     setWidthPercentage(scroll);
-    console.log(scroll);
 });
 
 function getScrollPercentage() {
