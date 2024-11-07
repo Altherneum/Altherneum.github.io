@@ -8,6 +8,6 @@
     background: linear-gradient(in hsl longer hue 45deg, red 0 0);
     z-index: 10000;
 
-    animation: animate 30s ease-in-out infinite;
+    animation: animate 10s ease-in-out infinite;
     background-size: 400% 400%;
 }
