@@ -145,6 +145,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "MàJ du parser MarkDown vers HTML",
+    link: "https://github.com/Altherneum/Altherneum.github.io/commit/c44e019b33e43a78cd02f61465beb99428f3dfcf",
+    description: "Plus rapide et bloque moins la page lors de gros document MarkDown",
+    publicationDate: buildRFC822Date("2024-11-08T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image

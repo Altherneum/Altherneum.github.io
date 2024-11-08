@@ -153,6 +153,16 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="Mise à jour de la barre de recherche" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[MàJ du parser MarkDown vers HTML]]></title>
+        <link>https://github.com/Altherneum/Altherneum.github.io/commit/c44e019b33e43a78cd02f61465beb99428f3dfcf</link>
+        <guid isPermaLink="true">https://github.com/Altherneum/Altherneum.github.io/commit/c44e019b33e43a78cd02f61465beb99428f3dfcf</guid>
+        <pubDate>Thu, 07 Nov 2024 23:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[Plus rapide et bloque moins la page lors de gros document MarkDown]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="MàJ du parser MarkDown vers HTML" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
   
