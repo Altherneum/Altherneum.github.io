@@ -1,3 +1,5 @@
+var isAnchorListSet = false;
+var anchorList;
 async function addMarkdown(repo, file, gist, doesSetAnchor) {
     console.info("Loading markdown CSS");
     await include_css("/src/css/markdown.css");
@@ -8,11 +10,15 @@ async function addMarkdown(repo, file, gist, doesSetAnchor) {
 
     await githubData(repo, file, content, gist);
 
-    await addMarkdownText(gist, content, repo, file);
-
-    if (doesSetAnchor === true) {
-        setAnchor();
+    if (!isAnchorListSet) {
+        anchorList = setAnchor();
+        isAnchorListSet = true;
     }
+
+    var text = await getMarkdownTextParsed(gist, content, repo, file);
+    content.innerHTML += text;
+    
+    setAnchorTitles(anchorList, content);
 
     autoScroll();
     console.info("Fin markdown");
@@ -88,7 +94,7 @@ const parseMarkdown = (text) => {
     return toHTML.trim();
 }
 
-async function addMarkdownText(gist, content, repo, file) {
+async function getMarkdownTextParsed(gist, content, repo, file) {
     var x;
     var x2;
     if (gist === true) {
@@ -103,21 +109,26 @@ async function addMarkdownText(gist, content, repo, file) {
     // console.log("Loading HTML wrapped .md :" + x2);
 
     //console.log("Loading clean code in .md");
+    x2 = cleanMarkdownBR(x2);
+
+    return x2;
+}
+
+function cleanMarkdownBR(text) {
     var regex = /<textarea>((?!<<textarea>>))*((?!<\/textarea>)[\s\S])*<\/textarea>/gim;
-    var x3 = x2.match(regex);
+    var x3 = text.match(regex);
     //console.log(x3);
 
     for (i in x3) {
         var res = x3[i].replaceAll("<br>", "\n");
-        x2 = x2.replace(x3[i], res);
+        text = text.replace(x3[i], res);
     }
-
-    content.innerHTML += x2;
+    return text;
 }
 
 async function githubData(repo, file, content, gist) {
     var fileTrimed = file.replaceAll("/", "%2F");
-    
+
 
     var holder = document.createElement("div");
     holder.id = "fileData";
@@ -208,10 +219,10 @@ function anchorAuthor(authorLogin, holder, commitAuthorName, authorLogin, holder
     link.href = "https://github.com/" + authorLogin;
     image.src = "/assets/svg/writer-write-blogger-work-at-desk.svg";
     button.classList = "edit-gist"
-    
+
     if (authorLogin !== commitAuthorName) {
         text.textContent = "committer : " + authorLogin + " (" + commitAuthorName + ")";
-    }else{
+    } else {
         text.textContent = "committer : " + authorLogin;
     }
 
@@ -367,8 +378,6 @@ function setAnchor() {
     var divAnchorTitle = document.createElement("div");
     divAnchorTitle.id = "AnchorTitle";
 
-
-
     var anchorTitleLogo = document.createElement("img");
     anchorTitleLogo.src = "/assets/svg/book.svg";
     anchorTitleLogo.classList = "svg";
@@ -382,6 +391,17 @@ function setAnchor() {
     var AnchorSummary = document.createElement("div");
     AnchorSummary.id = "AnchorSummary";
 
+    addChapterHidder(AnchorSummary, "summary-h2", "Titre #2");
+    addChapterHidder(AnchorSummary, "summary-hidder", "Titre #3+");
+
+    anchorList.appendChild(divAnchorTitle);
+    anchorList.appendChild(AnchorSummary);
+    setAnchorButton("#AnchorSummary", "/assets/svg/close.svg");
+
+    return anchorList;
+}
+
+function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     var check = document.createElement("div");
     check.classList = "check";
     check.style = "padding:10px;";
@@ -391,16 +411,14 @@ function setAnchor() {
     input.type = "checkbox";
     var isOn = false;
     input.onclick = () => {
-        var list = document.getElementById('anchorList').getElementsByClassName("summary-hidder");
+        var list = document.getElementById('anchorList').getElementsByClassName(ElementClassName);
 
         if (isOn) {
             isOn = false;
-
         } else {
             isOn = true;
         }
 
-        console.log("run");
         for (i = 0; i < list.length; i++) {
             var childDiv = list[i];
             if (isOn) {
@@ -408,73 +426,25 @@ function setAnchor() {
             } else {
                 childDiv.style.display = "block";
             }
-            console.log("run child");
         }
     };
+
     var textCheck = document.createElement("p");
-    textCheck.textContent = "# Titre 3+";
+    textCheck.textContent = Title;
     textCheck.style = "padding:10px;";
     var span = document.createElement("span");
-
-
-
-    //
-
-    var check2 = document.createElement("div");
-    check2.classList = "check";
-    check2.style = "padding:10px;";
-    var checkbox2 = document.createElement("div");
-    checkbox2.classList = "checkboxToggle invert";
-    var input2 = document.createElement("input");
-    input2.type = "checkbox";
-    var isOn2 = false;
-    input2.onclick = () => {
-        var list2 = document.getElementById('anchorList').getElementsByClassName("summary-h2");
-
-        if (isOn2) {
-            isOn2 = false;
-        } else {
-            isOn2 = true;
-        }
-
-        console.log("run");
-        for (i = 0; i < list2.length; i++) {
-            var childDiv2 = list2[i];
-            if (isOn2) {
-                childDiv2.style.display = "none";
-            } else {
-                childDiv2.style.display = "block";
-            }
-            console.log("run child");
-        }
-    };
-    var textCheck2 = document.createElement("p");
-    textCheck2.textContent = "Titre #2";
-    textCheck2.style = "padding:10px;";
-    var span2 = document.createElement("span");
-
-
-    check2.appendChild(checkbox2);
-    check2.appendChild(textCheck2);
-    checkbox2.appendChild(input2);
-    checkbox2.appendChild(span2);
-    AnchorSummary.appendChild(check2);
-
-    //
 
     check.appendChild(checkbox);
     check.appendChild(textCheck);
     checkbox.appendChild(input);
     checkbox.appendChild(span);
-    AnchorSummary.appendChild(check);
+    AnchorSummaryElement.appendChild(check);
+}
 
-    anchorList.appendChild(divAnchorTitle);
-    anchorList.appendChild(AnchorSummary);
-    setAnchorButton("#AnchorSummary", "/assets/svg/close.svg");
-
-
-    var childDivs = document.getElementById('markdown').querySelectorAll("h1, h2, h3, h4, h5, h6");
-
+function setAnchorTitles(anchorListElement, text) {
+    console.log(text);
+    //var childDivs = document.getElementById('markdown').querySelectorAll("h1, h2, h3, h4, h5, h6");
+    var childDivs = text.querySelectorAll("h1, h2, h3, h4, h5, h6");
     for (i = 0; i < childDivs.length; i++) {
         var childDiv = childDivs[i];
         var textPre = childDiv.textContent;
@@ -536,10 +506,11 @@ function setAnchor() {
         }
 
         setScrollBehavior(anchorOnList);
-        anchorList.appendChild(anchorOnList);
+        anchorListElement.appendChild(anchorOnList);
     }
 }
-function setScrollBehavior(anchor){
+
+function setScrollBehavior(anchor) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
