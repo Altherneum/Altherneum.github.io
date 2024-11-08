@@ -1332,6 +1332,13 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "chill",
+    },
+    {
+        videoID: "PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM",
+        text: "",
+        playlist: true,
+        top: false,
+        categorie: "chilljp",
     }
 ];
 
