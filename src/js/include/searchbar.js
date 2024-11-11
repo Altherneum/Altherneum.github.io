@@ -20,19 +20,28 @@ function keyup(event, inputBoxParam) {
                 || link.tag.toLowerCase().includes(input.toLowerCase()); 
         });
 
-        /* if(result.length > 10){
-                    result = result.slice(0, 10);
-            } */
+        /*
+            if(result.length > 10) {
+                result = result.slice(0, 10);
+            }
+        */
         
-        if (lastResult.toString() !== result.toString()) {
+        if(!compareArrays(result, lastResult)){
+            console.log("result & last !=")
             searchbarResult(result);
             addAllTags();
         }
+        
         lastResult = result;
-    } else {
+    }
+    else {
         clearAllSearchBar();
     }
 }
+
+const compareArrays = (a, b) => {
+    return JSON.stringify(a) === JSON.stringify(b);
+};
 
 function searchbarResult(result) {
     const resultsBox = document.getElementById("result-box");
