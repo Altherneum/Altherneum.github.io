@@ -16,7 +16,7 @@ function keyup(event, inputBoxParam) {
     if (input.length > 0) {
         result = links.filter(link => {
             return link.text.toLowerCase().includes(input.toLowerCase())
-                || link.href.toLowerCase().includes(input.toLowerCase())
+                || link.href.replace(".html","").toLowerCase().includes(input.toLowerCase())
                 || link.tag.toLowerCase().includes(input.toLowerCase()); 
         });
 
