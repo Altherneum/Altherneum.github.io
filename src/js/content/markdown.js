@@ -83,9 +83,9 @@ const parseMarkdown = (text) => {
         .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
         .replace(/(?<!<textarea[^>]*>[^<]*)(^# (.*))(?![^<]*<\/textarea>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
 
-        //.replace(/(?![^<]*>|[^>]*<\/)([a-z0-9A-Z:;\\\/\|?!§%'~’"°«»\(\)\{\}\[\]@&=+-/^ _¨$£¤µ\*€.,`âôœûùéêëèàçïî<>▶⬇⚠/]+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
         .replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
-        //text inside summary 
+        
+        //text inside summary to do
 
         .replace(/[\n]{1,}/g, "<br>") //new line
 
