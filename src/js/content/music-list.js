@@ -464,7 +464,7 @@ var musiclinks = [
         categorie: "histoire",
     },
     {
-        text: "Rick Astley <a href='discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html'>Discord URI</a>",
+        text: "Rick Astley <a href='https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html'>Discord URI</a>",
         videoID: "dQw4w9WgXcQ",
         playlist: false,
         top: true,
