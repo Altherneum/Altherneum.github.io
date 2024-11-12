@@ -2,22 +2,24 @@ const resultsBox = document.getElementById("result-box");
 resultsBox.style.display = "none"
 
 var lastResult = [];
-function keyup(event, inputBoxParam) {
 
+function keyup(event, inputBoxParam) {
     var code = event.charCode || event.keyCode;
     if (code == 27) {
         inputBoxParam.value = '';
     }
-
-    let result = [];
     const inputBox = document.getElementById("input-box");
     let input = inputBox.value;
+    getResult(input, true);
+}
 
-    if (input.length > 0) {
+function getResult(query, addCursorTag) {
+    let result = [];
+    if (query.length > 0) {
         result = links.filter(link => {
-            return link.text.toLowerCase().includes(input.toLowerCase())
-                || link.href.replace(".html","").toLowerCase().includes(input.toLowerCase())
-                || link.tag.toLowerCase().includes(input.toLowerCase()); 
+            return link.text.toLowerCase().includes(query.toLowerCase())
+                || link.href.replace(".html", "").toLowerCase().includes(query.toLowerCase())
+                || link.tag.toLowerCase().includes(query.toLowerCase());
         });
 
         /*
@@ -25,13 +27,15 @@ function keyup(event, inputBoxParam) {
                 result = result.slice(0, 10);
             }
         */
-        
-        if(!compareArrays(result, lastResult)){
+
+        if (!compareArrays(result, lastResult)) {
             console.log("result & last !=")
-            searchbarResult(result);
-            addAllTags();
+            showSearchbarResult(result);
+            if(addCursorTag){
+                addAllTags();
+            }
         }
-        
+
         lastResult = result;
     }
     else {
@@ -43,7 +47,7 @@ const compareArrays = (a, b) => {
     return JSON.stringify(a) === JSON.stringify(b);
 };
 
-function searchbarResult(result) {
+function showSearchbarResult(result) {
     const resultsBox = document.getElementById("result-box");
     clearSearchBarResultHTML();
     if (result.length) {
@@ -143,3 +147,22 @@ document.body.addEventListener('keydown', function (e) {
         }
     }
 });
+
+function getURLParameter() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const paramName = "search";
+    if (urlParams.has(paramName)) {
+        const searchQuery = urlParams.get(paramName);
+        console.warn("found ; " + paramName + " = " + searchQuery);
+
+        getResult(searchQuery, false);
+        //set All tags to false as AddAllTags() did not exist yet & cursor auto load will get tags
+        
+        const inputBox = document.getElementById("input-box");
+        inputBox.value = searchQuery;
+        document.getElementById("input-box").setAttribute('value', searchQuery);
+    }
+}
+
+getURLParameter();
