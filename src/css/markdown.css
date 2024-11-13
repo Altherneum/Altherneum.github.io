@@ -1,25 +1,25 @@
-.markdowned img {
+.markdowned>p img {
     max-width: 90%;
 }
 
-.markdowned p{
+.markdowned>p p{
     max-width: fit-content;
     white-space: pre-wrap;
     display: inline;
 }
 
-.markdowned>h1,
-.markdowned>h2,
-.markdowned>h3,
-.markdowned>h4,
-.markdowned>h5,
-.markdowned>h6 {
+.markdowned>p>h1,
+.markdowned>p>h2,
+.markdowned>p>h3,
+.markdowned>p>h4,
+.markdowned>p>h5,
+.markdowned>p>h6 {
     display: block;
 
     text-decoration: underline;
     text-decoration-color: var(--link-color);
 
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 #anchorList{
