@@ -14,8 +14,11 @@ a.cardTitle{
 }
 
 #searchbar,
-#result-box{
+#result-box,
+#search-tips,
+#search-tips-holder {
     max-width: 80%;
+    width: 80%;
 }
 
 #search-box{
@@ -27,8 +30,15 @@ a.cardTitle{
 #search-box,
 #result-box,
 #search-box>input,
-#searchbar {
+#searchbar,
+#search-tips {
     z-index: 990;
+}
+
+#search-box,
+#result-box,
+#search-box>input,
+#searchbar {
     width: 100%;
 }
 
@@ -54,7 +64,8 @@ a.cardTitle{
 
 #result-box,
 #search-box>input,
-#close-search {
+#close-search,
+#search-tips {
     border-radius: 10px;
     background: linear-gradient(var(--main-color), var(--background-color));
     border: 2px solid var(--main-color);
@@ -91,11 +102,14 @@ a.cardTitle{
 }
 
 #result-box>div>a {
+    text-align: left;
+
     display: inline-flex;
     flex-wrap: nowrap;
     align-items: center;
     flex-direction: row;
     gap: 10px;
+
     text-decoration: none;
     font-size: medium;
 }
@@ -119,4 +133,33 @@ a.cardTitle{
 #close-search>img:active {
     transition: 0.25s;
     transform: scale(120%);
+}
+
+#search-tips{
+    position: fixed;
+
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-tips>*{
+    padding: 15px;
+}
+
+#search-tips-holder{
+    display: inline-flex;
+    align-content: center;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+
+    padding-left: 0px;
+}
+
+#search-tips>p{
+        padding-right: 0px;
 }

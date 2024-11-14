@@ -5,9 +5,11 @@ var lastResult = [];
 
 function keyup(event, inputBoxParam) {
     var code = event.charCode || event.keyCode;
+
     if (code == 27) {
         inputBoxParam.value = '';
     }
+
     const inputBox = document.getElementById("input-box");
     let input = inputBox.value;
     getResult(input, true);
@@ -31,16 +33,43 @@ function getResult(query, addCursorTag) {
         if (!compareArrays(result, lastResult)) {
             console.log("result & last !=")
             showSearchbarResult(result);
-            if(addCursorTag){
+            if (addCursorTag) {
                 addAllTags();
             }
         }
+        hideTips();
 
         lastResult = result;
     }
     else {
         clearAllSearchBar();
+
+        showTips();
     }
+}
+
+function showTips() {
+    if (!isTipsOpen()) {
+        addSearchTips();
+    }
+    var tips = document.getElementById("search-tips");
+    tips.style.display = "flex";
+}
+
+function hideTips() {
+    var tips = document.getElementById("search-tips");
+    tips.style.display = "none";
+}
+
+function isTipsOpen() {
+    const tipsBox = document.getElementById("search-tips");
+    
+    if (tipsBox === null) { return false; }
+    
+    if ((tipsBox.style.display !== "none")) {
+        return true;
+    }
+    return false;
 }
 
 const compareArrays = (a, b) => {
@@ -80,7 +109,7 @@ function clearLastResult() {
     lastResult = [];
 }
 
-function clearSearchBarResult(){
+function clearSearchBarResult() {
     const resultsBox = document.getElementById("result-box");
     resultsBox.style.display = "none"
 }
@@ -105,9 +134,16 @@ window.addEventListener('click', function (e) {
     if (!document.getElementById('searchbar').contains(e.target)) {
         closeSearchBar();
     }
+    else {
+        if (document.getElementById('input-box').contains(e.target)) {
+            showTips();
+        }
+    }
 });
 
-function isSearchBarOpend(){
+
+
+function isSearchBarOpend() {
     const inputBox = document.getElementById("input-box");
     const resultsBox = document.getElementById("result-box");
 
@@ -124,6 +160,11 @@ function closeSearchBar() {
     if (isSearchBarOpend()) {
         clearAllSearchBar();
     }
+
+    hideTips();
+
+    var inputBox = document.getElementById("input-box");
+    inputBox.blur();
 }
 
 //Target Search bar with shortcut Shift+F
@@ -135,6 +176,12 @@ document.addEventListener('keydown', (event) => {
 
 document.addEventListener('keyup', (event) => {
     keysPressed[event.key] = '';
+    if (event.key == "Tab") {
+        if (!document.getElementById("searchbar").contains(event.target)) {
+            hideTips();
+            clearAllSearchBar();
+        }
+    }
 });
 
 document.body.addEventListener('keydown', function (e) {
@@ -142,11 +189,54 @@ document.body.addEventListener('keydown', function (e) {
     if (keysPressed["Shift"] && e.key == "F") {
         var inputBox = document.getElementById("input-box");
         if (inputBox !== null) {
-            e.preventDefault();
-            inputBox.focus();
+            if(!inputBox.contains(e.target)){
+                e.preventDefault();
+                inputBox.focus();
+            }
         }
     }
 });
+
+function addSearchTips() {
+    var tips = document.getElementById("search-tips-holder");
+    tips.innerHTML = '';
+    var tipsList = getTagList(3);
+    for (tipsText in tipsList) {
+        var a = document.createElement("a");
+
+        var tip = tipsList[tipsText]
+        a.textContent = tip;
+        a.tabIndex = 0;
+
+        a.setAttribute("onClick", "setURLParameterClick(\"" + tip + "\", " + true + ", " + true + ", " + true + ")");
+        a.setAttribute("onkeypress", "setURLParameterClick(\"" + tip + "\", " + true + ", " + true + ", " + true + ")");
+
+        tips.appendChild(a);
+    }
+}
+
+function setURLParameterClick(value, runGetAfter, setSearchInput, doHideTips) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const paramName = "search";
+
+    urlParams.set(paramName, value);
+    console.warn("set ; " + paramName + " = " + value);
+
+    if (runGetAfter) {
+        getResult(value, false);
+    }
+    //set All tags to false as AddAllTags() did not exist yet & cursor auto load will get tags
+
+    if (setSearchInput) {
+        const inputBox = document.getElementById("input-box");
+        inputBox.value = value;
+    }
+
+    if (doHideTips) {
+        hideTips();
+    }
+}
 
 function getURLParameter() {
     const queryString = window.location.search;
@@ -158,7 +248,7 @@ function getURLParameter() {
 
         getResult(searchQuery, false);
         //set All tags to false as AddAllTags() did not exist yet & cursor auto load will get tags
-        
+
         const inputBox = document.getElementById("input-box");
         inputBox.value = searchQuery;
         document.getElementById("input-box").setAttribute('value', searchQuery);

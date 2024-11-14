@@ -708,3 +708,22 @@ const links = [
 */
 
 var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Github", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux"];
+
+function getTagList(maxSize){
+    var tagListReturned = [];
+    if (maxSize >= 1) {
+        for (let id = 0; id < maxSize; id++) {
+            var random = Math.floor(Math.random() * tagList.length);
+            if (!tagListReturned.includes(tagList[random])) {
+                tagListReturned.push(tagList[random]);
+            }
+            else {
+                id--;
+            }
+        }
+    }
+    else {
+        tagListReturned = tagList;
+    }
+    return tagListReturned;
+}
