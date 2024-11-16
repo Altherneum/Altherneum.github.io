@@ -1,6 +1,6 @@
 var isAnchorListSet = false;
 var anchorList;
-async function addMarkdown(repo, file, gist, doesSetAnchor) {
+async function addMarkdown(repo, file, gist) {
     console.info("Loading markdown CSS");
     await include_css("/src/css/markdown.css");
     console.info("Loading .md");

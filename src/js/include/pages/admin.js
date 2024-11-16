@@ -55,7 +55,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/admin/note", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'note.md', false, true);
+            await addMarkdown('Altherneum/.github', 'note.md', false);
         });
     }
 

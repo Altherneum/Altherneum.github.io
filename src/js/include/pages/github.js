@@ -34,84 +34,84 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/readme", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'profile/README.md', false, true);
+            await addMarkdown('Altherneum/.github', 'profile/README.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/contribuer", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'CONTRIBUTING.md', false, true);
+            await addMarkdown('Altherneum/.github', 'CONTRIBUTING.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/support", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'SUPPORT.md', false, true);
+            await addMarkdown('Altherneum/.github', 'SUPPORT.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/security", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'SECURITY.md', false, true);
+            await addMarkdown('Altherneum/.github', 'SECURITY.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/license", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'LICENSE.md', false, true);
+            await addMarkdown('Altherneum/.github', 'LICENSE.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/code_of_conduct", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'CODE_OF_CONDUCT.md', false, true);
+            await addMarkdown('Altherneum/.github', 'CODE_OF_CONDUCT.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/Altherneum.github.io", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/Altherneum.github.io', 'README.md', false, true);
+            await addMarkdown('Altherneum/Altherneum.github.io', 'README.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/.github", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'README.md', false, true);
+            await addMarkdown('Altherneum/.github', 'README.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/plugin", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/plugin', 'README.md', false, true);
+            await addMarkdown('Altherneum/plugin', 'README.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/resourcePack", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/resourcePack', 'README.md', false, true);
+            await addMarkdown('Altherneum/resourcePack', 'README.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/bot", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/bot', 'README.md', false, true);
+            await addMarkdown('Altherneum/bot', 'README.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/server", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/server', 'README.md', false, true);
+            await addMarkdown('Altherneum/server', 'README.md', false);
         });
     }
 

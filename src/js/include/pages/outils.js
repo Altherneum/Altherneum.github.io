@@ -38,14 +38,14 @@ async function CheckPage() {
     else if (pathNameMatchPage("/outils/liens", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', '/note/Liens.md', false, true);
+            await addMarkdown('Altherneum/.github', '/note/Liens.md', false);
         });
     }
 
     else if (pathNameMatchPage("/outils/matrice-windows", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', '/note/OS/Windows/Scripts/matrice.bat.md', false, true);
+            await addMarkdown('Altherneum/.github', '/note/OS/Windows/Scripts/matrice.bat.md', false);
         });
     }
 
