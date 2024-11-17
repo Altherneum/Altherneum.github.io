@@ -701,6 +701,18 @@ const links = [
         tag: "URL Outils Web",
         text: "JavaScript Keyboard code",
     },
+    {
+        href: "https://virtualbox.org",
+        svg: "/assets/svg/network.svg",
+        tag: "URL Linux Outils",
+        text: "VirtualBox",
+    },
+    {
+        href: "https://proxmox.com",
+        svg: "/assets/svg/.svg",
+        tag: "URL Linux Outils",
+        text: "ProxMox",
+    },
 ];
 
 /*
