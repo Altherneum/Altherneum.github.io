@@ -695,6 +695,12 @@ const links = [
         tag: "RSS URL",
         text: "RSS .JS",
     },
+    {
+        href: "https://www.toptal.com/developers/keycode",
+        svg: "/assets/svg/languages/js.svg",
+        tag: "URL Outils Web",
+        text: "JavaScript Keyboard code",
+    },
 ];
 
 /*
