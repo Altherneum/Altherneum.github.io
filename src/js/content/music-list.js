@@ -1346,6 +1346,20 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "histoire",
+    },
+    {
+        videoID: "uT3_6ct-WGE",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
+    },
+    {
+        videoID: "jNd_LxLnIkM",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "phonk",
     }
 ];
 
