@@ -31,7 +31,7 @@ const links = [
     },
     {
         href: "/outils/liens.html",
-        svg: "/assets/svg/.svg",
+        svg: "/assets/svg/link.svg",
         tag: "URL Admin Cours ReadMe Outils",
         text: "Liste de liens utiles",
     },
