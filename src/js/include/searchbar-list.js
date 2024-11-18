@@ -715,7 +715,7 @@ const links = [
     },
     {
         href: "https://proxmox.com",
-        svg: "/assets/svg/.svg",
+        svg: "/assets/svg/network.svg",
         tag: "URL Linux Outils",
         text: "ProxMox",
     },
