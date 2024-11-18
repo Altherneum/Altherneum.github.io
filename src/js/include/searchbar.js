@@ -16,13 +16,8 @@ function keyup(event, inputBoxParam) {
 }
 
 function getResult(query, addCursorTag) {
-    let result = [];
     if (query.length > 0) {
-        result = links.filter(link => {
-            return link.text.toLowerCase().includes(query.toLowerCase())
-                || link.href.replace(".html", "").toLowerCase().includes(query.toLowerCase())
-                || link.tag.toLowerCase().includes(query.toLowerCase());
-        });
+       var result = checkIfInputMatchLink(query);
 
         /*
             if(result.length > 10) {
@@ -48,6 +43,47 @@ function getResult(query, addCursorTag) {
     }
 }
 
+function checkIfInputMatchLink(query) {
+    let result = [];
+    var queryListed = query.split(" ");
+    var counter = 0;
+
+    for (link in links) {
+        var linkText = links[link].text.toLowerCase();
+        var linkHref = links[link].href.replace(".html", "").toLowerCase();
+        var linkTag = links[link].tag.toLowerCase();
+        var linkSVG = links[link].svg;
+
+        var lowerCaseQuery;
+
+        let matchAll = true;
+
+        for (singleQuery in queryListed) {
+
+            lowerCaseQuery = queryListed[singleQuery].toLowerCase();
+
+            if (linkText.includes(lowerCaseQuery) || linkHref.includes(lowerCaseQuery) || linkTag.includes(lowerCaseQuery)) {
+                //console.log(lowerCaseQuery + " : " + linkText + " : " + linkHref + " : " + linkTag);
+            }
+            else {
+                matchAll = false;
+                break;
+            }
+        }
+
+        if (matchAll) {
+            console.log("OK : " + query + " : " + linkHref);
+            result[counter] = { "href": linkHref, "svg": linkSVG, "tag": linkTag, "text": linkText };
+            counter++;
+            console.log(result);
+        }
+        else {
+        }
+    }
+
+    return result;
+}
+
 function showTips() {
     if (!isTipsOpen()) {
         addSearchTips();
@@ -63,9 +99,9 @@ function hideTips() {
 
 function isTipsOpen() {
     const tipsBox = document.getElementById("search-tips");
-    
+
     if (tipsBox === null) { return false; }
-    
+
     if ((tipsBox.style.display !== "none")) {
         return true;
     }
@@ -189,7 +225,7 @@ document.body.addEventListener('keydown', function (e) {
     if (keysPressed["Shift"] && e.key == "F") {
         var inputBox = document.getElementById("input-box");
         if (inputBox !== null) {
-            if(!inputBox.contains(e.target)){
+            if (!inputBox.contains(e.target)) {
                 e.preventDefault();
                 inputBox.focus();
             }
