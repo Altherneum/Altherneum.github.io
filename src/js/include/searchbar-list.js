@@ -30,6 +30,12 @@ const links = [
         svg: "/assets/svg/settings.svg",
     },
     {
+        href: "/outils/liens.html",
+        svg: "/assets/svg/.svg",
+        tag: "URL Admin Cours ReadMe Outils",
+        text: "Liste de liens utiles",
+    },
+    {
         href: "/github/statistiques.html",
         tag: "Github ReadMe Outils",
         text: "Statistiques Github",
