@@ -250,6 +250,7 @@ function addSearchTips() {
 
         tips.appendChild(a);
     }
+    addAllTags();
 }
 
 function setURLParameterClick(value, runGetAfter, setSearchInput, doHideTips) {
