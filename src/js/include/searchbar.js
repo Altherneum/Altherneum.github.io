@@ -72,10 +72,8 @@ function checkIfInputMatchLink(query) {
         }
 
         if (matchAll) {
-            console.log("OK : " + query + " : " + linkHref);
             result[counter] = { "href": linkHref, "svg": linkSVG, "tag": linkTag, "text": linkText };
             counter++;
-            console.log(result);
         }
         else {
         }
