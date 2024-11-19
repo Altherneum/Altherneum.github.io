@@ -517,9 +517,7 @@ function setScrollBehavior(anchor) {
         e.preventDefault();
 
         window.location.hash = this.getAttribute('href');
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: "smooth", block: "center"
-        });
+        DoScrollIntoView(document.querySelector(this.getAttribute('href')));
     });
 }
 
@@ -528,7 +526,11 @@ function autoScroll() {
     hash = hash.replace("#", "");
 
     var element = document.getElementById(hash);
+    DoScrollIntoView(element);
+}
+
+function DoScrollIntoView(element) {
     if (element !== null) {
-        element.scrollIntoView({ behavior: "smooth", block: "center" });
+        element.scrollIntoView({ behavior: "smooth" });
     }
 }
