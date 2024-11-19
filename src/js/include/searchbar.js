@@ -121,6 +121,9 @@ function showSearchbarResult(result) {
             if (result[i].svg === undefined) {
                 svg = "/assets/svg/link.svg";
             }
+            else if (result[i].svg === "/assets/svg/.svg") {
+                svg = "/assets/svg/help-question.svg";
+            }
             else { svg = result[i].svg; }
 
             //console.log(href + ", " + svg + result[i].text);
