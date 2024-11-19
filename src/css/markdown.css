@@ -135,6 +135,7 @@
 
 #fileData>a{
     text-decoration: none;
+    height: fit-content;
 }
 
 #fileData>a>button {
