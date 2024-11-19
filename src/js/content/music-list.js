@@ -1335,7 +1335,7 @@ var musiclinks = [
     },
     {
         videoID: "PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM",
-        text: "",
+        text: "<a href='https://www.youtube.com/@uni_mafumafu'>@uni_mafumafu</a>",
         playlist: true,
         top: false,
         categorie: "chilljp",
