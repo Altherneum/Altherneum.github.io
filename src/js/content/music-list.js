@@ -1360,6 +1360,13 @@ var musiclinks = [
         playlist: false,
         top: true,
         categorie: "phonk",
+    },
+    {
+        videoID: "OLAK5uy_k78kIlOnPe61B7Xv56LDwVBX-hVikh9B8",
+        text: "DVRST",
+        playlist: true,
+        top: true,
+        categorie: "phonk",
     }
 ];
 
