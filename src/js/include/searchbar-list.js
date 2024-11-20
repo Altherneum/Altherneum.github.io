@@ -719,6 +719,18 @@ const links = [
         tag: "URL Linux Outils",
         text: "ProxMox",
     },
+    {
+        href: "https://learn.microsoft.com/fr-fr/sysinternals/",
+        svg: "/assets/svg/tools.svg",
+        tag: "Windows URL Outils",
+        text: "Microsoft SysInternals",
+    },
+    {
+        href: "https://live.sysinternals.com/",
+        svg: "/assets/svg/tools.svg",
+        tag: "Windows URL Outils",
+        text: "Live.SysInternals.com",
+    },
 ];
 
 /*
