@@ -1374,6 +1374,27 @@ var musiclinks = [
         playlist: false,
         top: false,
         categorie: "phonk",
+    },
+    {
+        videoID: "y8VfziFZMGY",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "PGNiXGX2nLU",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
+        videoID: "9jK-NcRmVcw",
+        text: "",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
     }
 ];
 
