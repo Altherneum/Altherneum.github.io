@@ -1,5 +1,6 @@
 var APIURL = "https://smartytitans.com/api/info/";
 fetchShopTitansDataStart("guilde", "5de2449be1c7e40b7f573b38"); 
+//fetchShopTitansDataStart("invest", "5f42e6dba8f22a129d2a2748"); 
 
 async function fetchShopTitansDataStart(statsType, id) {
     if (id === null || id === 'undefined') {
@@ -11,7 +12,7 @@ async function fetchShopTitansDataStart(statsType, id) {
             return;
         }
     }
-    
+     
     if (id !== null && id !== 'undefined' && id !== '') { 
         var docMenu;
 
@@ -22,25 +23,20 @@ async function fetchShopTitansDataStart(statsType, id) {
         
         if (statsType === "stats"){
             docMenu = document.getElementById("ShopTitansData");
-            docMenu.style = "display:flex";
             
             await fetchShopTitansData(id);
         }
         else if (statsType === "invest") {
             docMenu = document.getElementById("ShopTitanDataInvestMenu");
-            docMenu.style = "display:flex";
 
             docMenu = document.getElementById("ShopTitansDataInvest");
-            docMenu.style = "display:block";
 
             docMenu = document.getElementById("ShopTitansDataInvestVIP");
-            docMenu.style = "display:block";
 
             await fetchShopTitansDataInvest(id);
         }
         else if (statsType === "guilde") {
             docMenu = document.getElementById("ShopTitansDataGuild");
-            docMenu.style = "display:flex";
             
             await fetchShopTitansDataGuilde(id);
         }
@@ -66,7 +62,6 @@ function showButtons(id) {
 function hideDivShopTitans(id) {
     for (value in id) {
         var doc = document.getElementById(id[value]);
-        doc.style = "display: none;";
         cleanInsideDiv(doc);
     }
     return;
@@ -95,6 +90,10 @@ async function fetchShopTitansDataGuilde(id) {
     div.appendChild(titre);
 
     for (value in members) {
+        var divplayer = document.createElement("div");
+        divplayer.id = "player-" + value;
+        div.appendChild(divplayer);
+
         var member = members[value];
         var pre;
         if (member.rank === 0) {
@@ -105,8 +104,8 @@ async function fetchShopTitansDataGuilde(id) {
             pre = "👑";
         } else { pre = "???"; }
 
-        await addData("ShopTitansDataGuild", pre, member.name);
-        await addData("ShopTitansDataGuild", "ID", member._id)
+        await addData("player-" + value, pre, member.name);
+        await addData("player-" + value, "ID", member._id)
 
 
         var button1 = document.createElement("button");
@@ -114,22 +113,20 @@ async function fetchShopTitansDataGuilde(id) {
         button1.setAttribute("onClick", "fetchShopTitansDataStart('invest', '" + member._id + "')");
         button1p.textContent = "Invest";
         button1.appendChild(button1p);
-        div.appendChild(button1);
+        divplayer.appendChild(button1);
 
         var button2 = document.createElement("button");
         var button2p = document.createElement("p");
         button2.setAttribute("onClick", "fetchShopTitansDataStart('stats', '" + member._id + "')");
         button2p.textContent = "Stats";
         button2.appendChild(button2p);
-        div.appendChild(button2);
+        divplayer.appendChild(button2);
 
-        await addData("ShopTitansDataGuild", "Level", member.level);
-        await addData("ShopTitansDataGuild", "Gold", formatCompactNumber(member.gld));
-        await addData("ShopTitansDataGuild", "Investissement", formatCompactNumber(member.invst));
-        await addData("ShopTitansDataGuild", "Aides de guilde", member.help);
-        await addData("ShopTitansDataGuild", "Primes", member.bounty);
-
-        await addDataHR("ShopTitansDataGuild");
+        await addData("player-" + value, "Level", member.level);
+        await addData("player-" + value, "Gold", formatCompactNumber(member.gld));
+        await addData("player-" + value, "Investissement", formatCompactNumber(member.invst));
+        await addData("player-" + value, "Aides de guilde", member.help);
+        await addData("player-" + value, "Primes", member.bounty);
     }
 
     //ajouter bâtiment data (même request)
@@ -139,59 +136,62 @@ async function fetchShopTitansDataGuilde(id) {
 }
 
 async function fetchShopTitansDataInvest(id) {
-    var investments = await gather(APIURL + 'player/' + id + '/investments');
-    console.log(investments);
+    var investments = await gather(APIURL + 'player/' + id + '/investments')
+        console.log(investments);
 
-    var data = await getValue(investments, "data");
-    console.log(data);
+        var data = await getValue(investments, "data");
+        console.log(data);
 
-    var dataSorted = data.sort((a, b) => (a.value - b.value || a.uid.localeCompare(b.uid)));
+        var dataSorted = data.sort((a, b) => (a.value - b.value || a.uid.localeCompare(b.uid)));
 
-    var div = document.getElementById("ShopTitansDataInvestVIP");
-    var titre = document.createElement("h1");
-    titre.textContent = "Bâtiment VIP (€)";
-    div.appendChild(titre);
+        var div = document.getElementById("ShopTitansDataInvestVIP");
+        var titre = document.createElement("h1");
+        titre.textContent = "Bâtiment P2W";
+        div.appendChild(titre);
 
-    var div = document.getElementById("ShopTitansDataInvest");
-    var titre = document.createElement("h1");
-    titre.textContent = "Bâtiment";
-    div.appendChild(titre);
+        var div = document.getElementById("ShopTitansDataInvest");
+        var titre = document.createElement("h1");
+        titre.textContent = "Bâtiment F2P";
+        div.appendChild(titre);
 
-    for (value in dataSorted) {
-        var divID;
-        var VIP = investIsVIP(getValue(data[value], "uid"));
-        if (VIP === true) {
-            divID = "ShopTitansDataInvestVIP";
+        for (value in dataSorted) {
+            var divID;
+            var VIP = investIsVIP(getValue(data[value], "uid"));
+            if (VIP === true) {
+                divID = "ShopTitansDataInvestVIP";
+            }
+            else if (VIP === false) {
+                divID = "ShopTitansDataInvest";
+            }
+
+            var divBatiment = document.createElement("div");
+            divBatiment.id = "batiment-" + value;
+
+            document.getElementById(divID).appendChild(divBatiment);
+
+            var urgentInvest = false;
+            var topInvest = false;
+            if (value >= 0 && value <= 12) {
+                urgentInvest = true;
+            } if (value >= 20) {
+                topInvest = true;
+            }
+
+            if (urgentInvest === true) {
+                await addData(divBatiment.id, "Bâtiment", getValue(data[value], "uid"));
+                await addData(divBatiment.id, "Click", getValue(data[value], "ticks"));
+                await addData(divBatiment.id, "Gold 👎", formatCompactNumber(getValue(data[value], "value")));
+            } else if (topInvest === true) {
+                await addData(divBatiment.id, "Bâtiment", getValue(data[value], "uid"));
+                await addData(divBatiment.id, "Click", getValue(data[value], "ticks"));
+                await addData(divBatiment.id, "Gold 👌", formatCompactNumber(getValue(data[value], "value")));
+            }
+            else {
+                await addData(divBatiment.id, "Bâtiment", getValue(data[value], "uid"));
+                await addData(divBatiment.id, "Click", getValue(data[value], "ticks"));
+                await addData(divBatiment.id, "Gold", formatCompactNumber(getValue(data[value], "value")));
+            }
         }
-        else if (VIP === false) {
-            divID = "ShopTitansDataInvest";
-           
-        }
-
-        var urgentInvest = false;
-        var topInvest = false;
-        if (value >= 0 && value <= 12) {
-            urgentInvest = true;
-        } if (value >= 20) {
-            topInvest = true;
-        }
-
-        if (urgentInvest === true) {
-            await addData(divID, "Bâtiment", getValue(data[value], "uid"));
-            await addData(divID, "Click", getValue(data[value], "ticks"));
-            await addData(divID, "Gold 👎", formatCompactNumber(getValue(data[value], "value")));
-        } else if (topInvest === true) {
-            await addData(divID, "Bâtiment", getValue(data[value], "uid"));
-            await addData(divID, "Click", getValue(data[value], "ticks"));
-            await addData(divID, "Gold 👌", formatCompactNumber(getValue(data[value], "value")));
-        }
-        else {
-            await addData(divID, "Bâtiment", getValue(data[value], "uid"));
-            await addData(divID, "Click", getValue(data[value], "ticks"));
-            await addData(divID, "Gold", formatCompactNumber(getValue(data[value], "value")));
-        }
-        await addDataHR(divID);
-    }
 }
 
 async function fetchShopTitansData(id) {
