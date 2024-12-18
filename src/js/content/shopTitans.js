@@ -273,7 +273,7 @@ async function  addDataHR(divID) {
 }
 
 function investIsVIP(invest){
-    if (invest === "engineer" || invest === "academy" || invest === "baker" || invest === "moondragon" || invest === "bard" || invest === "elven")
+    if (invest === "engineer" || invest === "academy" || invest === "baker" || invest === "moondragon" || invest === "bard" || invest === "elven" || invest === "veteran")
     { return true; }
     return false;
 }
