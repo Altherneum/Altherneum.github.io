@@ -222,7 +222,7 @@ async function fetchShopTitansData(id) {
     await addData("ShopTitansData", "Guilde", cityName);
 
     var cityUUID = await getValue(data, "city");
-    await addData("ShopTitansData", "Guilde", cityUUID);
+    await addData("ShopTitansData", "ID", cityUUID);
 
     var cityLevel = await getValue(data, "cityLevel");
     await addData("ShopTitansData", "Niveau de guilde", cityLevel);
