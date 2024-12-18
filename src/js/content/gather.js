@@ -11,9 +11,18 @@ function gather(url, tries) {
                     if (!response.ok || response.status !== 200) {
                         console.error(url + " : " + response.status + " : " + response.statusText);
 
-                        if (tries >0){
-                            const delay = Math.floor(Math.random() * 1000 * 60);
+                        const delay = Math.floor(Math.random * 60 * 1000) + 1000;
+                        // 0 à 1 * minutes * secondes + 1 seconde
+                        // (0 à 1 minutes + 1 seconde)
+                        console.log("Retry in : " + delay);
+                        
+                        if (tries > 0){
                             setTimeout(() => { gather(url, tries - 1); }, delay);
+                        }
+                        else {
+                            console.error("Trop de tentatives en echec pour l'URL : " + URL);
+                            delay = delay * 5;
+                            setTimeout(() => { gather(url, 1); }, delay);
                         }
                     }
                     return response.json();
