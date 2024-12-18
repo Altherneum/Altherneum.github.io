@@ -1,4 +1,5 @@
 function gather(url, tries) {
+    console.log("start gather for " + url);
     if (tries === undefined) {
         tries = 1;
     }
@@ -11,10 +12,10 @@ function gather(url, tries) {
                     if (!response.ok || response.status !== 200) {
                         console.error(url + " : " + response.status + " : " + response.statusText);
 
-                        const delay = Math.floor(Math.random * 60 * 1000) + 1000;
+                        var delay = Math.floor((Math.random() * 60 * 1000) + 1000);
                         // 0 à 1 * minutes * secondes + 1 seconde
                         // (0 à 1 minutes + 1 seconde)
-                        console.log("Retry in : " + delay);
+                        console.warn("Retry in : " + (delay / 1000) + " sec");
                         
                         if (tries > 0){
                             setTimeout(() => { gather(url, tries - 1); }, delay);

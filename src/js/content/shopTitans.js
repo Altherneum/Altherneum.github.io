@@ -86,9 +86,12 @@ async function fetchShopTitansDataGuilde(id) {
     var members = await getValue(data, "members");
     console.log(members);
 
+    var guildeName = await getValue(data, "name");
+    console.log(guildeName);
+
     var div = document.getElementById("ShopTitansDataGuild");
     var titre = document.createElement("h1");
-    titre.textContent = "Guilde";
+    titre.textContent = "Guilde : " + guildeName;
     div.appendChild(titre);
 
     for (value in members) {
@@ -212,9 +215,14 @@ async function fetchShopTitansData(id) {
 
     var lvl = await getValue(stats, "lvl");
     await addData("ShopTitansData", "Niveau de marchand", lvl);
-
+    
     var vip = await getValue(stats, "vip");
-    await addData("ShopTitansData", "VIP", vip);
+    if (vip === 0) {
+        await addData("ShopTitansData", "VIP", "🔴");
+    }
+    else if (vip > 0) {
+        await addData("ShopTitansData", "VIP", "🟢 " + vip + " jours");
+    }
 
     await addDataHR("ShopTitansData",);
 
@@ -248,11 +256,11 @@ async function fetchShopTitansData(id) {
 
     await addDataHR("ShopTitansData",);
 
-    var accountage = await getValue(stats, "accountage");
-    await addData("ShopTitansData", "Âge du compte" ,accountage);
-
     var accountdb = await getValue(stats, "accountdb");
-    await addData("ShopTitansData", "Date du compte" , accountdb);
+    await addData("ShopTitansData", "Âge du compte", accountdb + " ( " + getDateFromTimeStamp(accountdb) + " )");
+
+    var activity = await getValue(stats, "activity");
+    await addData("ShopTitansData", "Dernière activité", activity + " ( " + getDateFromTimeStamp(activity) + " )");
 
     await addDataHR("ShopTitansData",);
 
@@ -279,4 +287,9 @@ function investIsVIP(invest){
     if (invest === "engineer" || invest === "academy" || invest === "baker" || invest === "moondragon" || invest === "bard" || invest === "elven" || invest === "veteran")
     { return true; }
     return false;
+}
+
+function getDateFromTimeStamp(UNIX_timestamp) {
+    var s = new Date(UNIX_timestamp).toLocaleDateString("fr-FR");
+    return s;
 }
