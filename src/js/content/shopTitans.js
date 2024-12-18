@@ -1,5 +1,5 @@
 var APIURL = "https://smartytitans.com/api/info/";
-fetchShopTitansDataStart("guilde", "64766ee4300f3e7b2917892e"); 
+fetchShopTitansDataStart("guilde", "5de2449be1c7e40b7f573b38"); 
 
 async function fetchShopTitansDataStart(statsType, id) {
     if (id === null || id === 'undefined') {
@@ -220,6 +220,9 @@ async function fetchShopTitansData(id) {
 
     var cityName = await getValue(data, "cityName");
     await addData("ShopTitansData", "Guilde", cityName);
+
+    var cityUUID = await getValue(data, "city");
+    await addData("ShopTitansData", "Guilde", cityUUID);
 
     var cityLevel = await getValue(data, "cityLevel");
     await addData("ShopTitansData", "Niveau de guilde", cityLevel);

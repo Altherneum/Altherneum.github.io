@@ -20,7 +20,7 @@ function gather(url, tries) {
                             setTimeout(() => { gather(url, tries - 1); }, delay);
                         }
                         else {
-                            console.error("Trop de tentatives en echec pour l'URL : " + URL);
+                            console.error("Trop de tentatives en echec pour l'URL : " + url);
                             delay = delay * 5;
                             setTimeout(() => { gather(url, 1); }, delay);
                         }
