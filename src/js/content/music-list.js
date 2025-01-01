@@ -12,6 +12,36 @@ var musiclinks = [
         categorie: "phonk",
     },
     {
+        videoID: "Vn6Dcfs0zjk",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "tHuheXqYwyA",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "G9CVOSRkxUs",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "56mZ_1uBg20",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "6z28nf8OeEs",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
         videoID: "ZFspOYo8wWQ",
         playlist: false,
         top: true,
