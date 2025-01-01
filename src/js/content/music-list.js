@@ -12,6 +12,18 @@ var musiclinks = [
         categorie: "phonk",
     },
     {
+        videoID: "ZFspOYo8wWQ",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
+        videoID: "yIZw-Tg5cFg",
+        playlist: false,
+        top: true,
+        categorie: "phonk",
+    },
+    {
         text: "Menace Santana",
         videoID: "OLAK5uy_lDgixFppOqJ5phO8I9XUtWLj9r0sq38zw",
         playlist: true,
