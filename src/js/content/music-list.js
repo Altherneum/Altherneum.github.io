@@ -39,7 +39,7 @@ var musiclinks = [
         videoID: "6z28nf8OeEs",
         playlist: false,
         top: true,
-        categorie: "phonk",
+        categorie: "rap",
     },
     {
         videoID: "ZFspOYo8wWQ",
