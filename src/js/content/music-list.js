@@ -12,6 +12,12 @@ var musiclinks = [
         categorie: "phonk",
     },
     {
+        videoID: "OLAK5uy_lDgixFppOqJ5phO8I9XUtWLj9r0sq38zw",
+        playlist: true,
+        top: true,
+        categorie: "rap",
+    },
+    {
         videoID: "E5LqtCpdsTs",
         playlist: false,
         top: false,
