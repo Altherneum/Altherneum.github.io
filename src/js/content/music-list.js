@@ -6,6 +6,12 @@ var musiclinks = [
         categorie: "phonk",
     },
     {
+        videoID: "lTVqAU_spq4",
+        playlist: false,
+        top: false,
+        categorie: "rap",
+    },
+    {
         videoID: "TMSlTQmDLx4",
         playlist: false,
         top: true,
