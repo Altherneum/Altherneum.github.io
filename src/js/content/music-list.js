@@ -12,6 +12,12 @@ var musiclinks = [
         categorie: "phonk",
     },
     {
+        videoID: "SwYN7mTi6HM",
+        playlist: false,
+        top: false,
+        categorie: "histoire",
+    },
+    {
         videoID: "lTVqAU_spq4",
         playlist: false,
         top: false,
