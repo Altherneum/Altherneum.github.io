@@ -1,3 +1,6 @@
+stopTime("load");
+startTime("index");
+
 index();
 
 async function index() {
@@ -5,6 +8,7 @@ async function index() {
     console.info("Loading website");
     await Metadata();
     await pages();
+    stopTime("index");
 }
 
 async function includes() {

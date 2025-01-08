@@ -1,3 +1,21 @@
+var time;
+function startTime(name) {
+    console.info("start timer for " + name);
+    console.time(name);
+
+    time = window.performance.now();
+}
+
+function stopTime(name) {
+    console.timeEnd(name);
+
+    var end = window.performance.now();
+    var timing = end - time;
+    console.info("stop timer for " + name + "\nended in " + timing);
+}
+
+startTime("load");
+
 include(); async function include() {
     await include_script("/src/js/include/index.js");
 }
