@@ -119,18 +119,21 @@ function createIframe(event) {
     var autoplay = "&autoplay=1";
     var playlistarg;
 
-    if (localStorage.getItem('YouTubeLoop') === "false") {
-        loop = "&loop=0";
-    }
-    else {
+    if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "false") {
         loop = "&loop=1";
+        playlistarg = videoID + "?si=Altherneum.fr";
     }
-
-    if (playlist === "true") {
+    else if (localStorage.getItem('YouTubeLoop') === "false" && playlist === "false"){
+        loop = "&loop=0";
+        playlistarg = videoID + "?playlist=" + videoID;
+    }
+    else if (localStorage.getItem('YouTubeLoop') === "false" && playlist === "true") {
+        loop = "&loop=0";
         playlistarg = "?list=" + videoID + "&listType=playlist";
     }
-    else if (playlist === "false") {
-        playlistarg = videoID + "?playlist=" + videoID;
+    else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
+        loop = "&loop=1";
+        playlistarg = "?list=" + videoID + "&listType=playlist";
     }
 
     var rel = "&rel=0";
@@ -140,7 +143,7 @@ function createIframe(event) {
     
     console.log("Loading music : " + url);
 
-    var htmlString = '<div> <iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var htmlString = '<div><iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     var card = youtubePlaceholder.parentNode;
     var classname = card.className;
