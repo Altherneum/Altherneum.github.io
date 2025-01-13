@@ -1,0 +1,19 @@
+.youtubeEmbed>div.show-hack div.hack {
+    display: inline-block;
+}
+
+.youtubeEmbed>div.show-IT div.IT {
+    display: inline-block;
+}
+
+.youtubeEmbed>div.show-discord div.discord {
+    display: inline-block;
+}
+
+.youtubeEmbed>div.show-code div.code {
+    display: inline-block;
+}
+
+#video-menu{
+    display: flex;
+}

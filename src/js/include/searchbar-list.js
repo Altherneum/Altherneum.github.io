@@ -198,6 +198,12 @@ const links = [
         svg: "/assets/svg/music.svg",
     },
     {
+        href: "/admin/video.html",
+        tag: "Admin",
+        text: "Vidéos conseillés par l'administrateur d'Altherneum (YouTube)",
+        svg: "/assets/svg/tv2.svg",
+    },
+    {
         href: "/admin/series.html",
         tag: "Admin",
         text: "Séries conseillés par l'administrateur d'Altherneum (Series)",

@@ -1,203 +1,39 @@
-.music {
-    max-width: 100%;
-}
-
-.music>div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.music>div>div>div>img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.music>div>div>p {
-    padding-bottom: 25px;
-}
-
-.music>div>div>div>iframe {
-    width: 100%;
-    height: 100%;
-    margin-right: auto;
-    position: absolute;
-}
-
-.music>div>div>div {
-    padding-bottom: 56.23%;
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    position: relative;
-    object-fit: cover;
-}
-
-.music>div>div>div>button {
-    height: 100%;
-    position: absolute;
-    text-indent: -9999px;
-    width: 100%;
-
-    background-color: transparent;
-    border-color: transparent;
-    -webkit-backdrop-filter: blur(0px);
-    backdrop-filter: blur(0);
-}
-
-.menu{
-    padding-bottom: 25px;
-}
-
-.menu>div {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 25px;
-}
-
-.menu>div>button {
-    padding: 12px;
-    border-radius: 16px;
-    margin: 8px;
-}
-
-.menu>div>button>p.background-clip {
-    font-size: 1vw;
-}
-
-.background-clip {
-    color: var(--text-color);
-    font-weight: bolder;
-    font-size: 5vw;
-    font-family: Arial;
-    max-width: 100%;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: var(--text-color);
-    text-shadow: 0px 0px 20px var(--background-color);
-}
-
-.music>div>div>h1 {
-    text-align: center;
-    max-width: 100%;
-    padding:16px;
-}
-
-.music>div>div>p {
-    text-align: center;
-    max-width: 100%;
-    padding: 16px;
-}
-
-.music>div.show-playing div.playing {
-    display: inline-block;
-}
-.music>div.show-top div.top{
-    display: inline-block;
-}
-.music>div.show-all>div {
-    display: inline-block;
-}
-.music>div.show-playlist div.playlist{
-    display: inline-block;
-}
-.music>div.show-rain div.rain {
-    display: inline-block;
-}
-.music>div.show-chill div.chill {
-    display: inline-block;
-}
-.music>div.show-chilljp div.chilljp {
-    display: inline-block;
-}
-.music>div.show-classic div.classic {
-    display: inline-block;
-}
-.music>div.show-histoire div.histoire {
-    display: inline-block;
-}
-.music>div.show-phonk div.phonk {
-    display: inline-block;
-}
-.music>div.show-rap div.rap {
-    display: inline-block;
-}
-.music>div.show-trool div.trool {
-    display: inline-block;
-}
-.music>div.show-rock div.rock {
+.youtubeEmbed>div.show-rain div.rain {
     display: inline-block;
 }
 
-.music>div>div {
-    display: none;
-    
-    background: linear-gradient(var(--background-color), var(--main-color));
-    box-shadow: var(--box-shadow-all-inset-main-transparent-color);
-    
-    border-radius: 16px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: var(--main-color);
-
-    overflow: hidden;
-
-    margin: 25px;
+.youtubeEmbed>div.show-chill div.chill {
+    display: inline-block;
 }
 
-.music>div>h1 {
-    text-align: center;
-    padding-top: 12px;
-    flex-basis: 100%;
+.youtubeEmbed>div.show-chilljp div.chilljp {
+    display: inline-block;
 }
 
-div.card:has(div>iframe){
-    border-color:var(--text-color);
-    border-style: solid;
-    border-width: 2px;
-
-    box-shadow: var(--box-shadow-all-inset-main-color-big);
+.youtubeEmbed>div.show-classic div.classic {
+    display: inline-block;
 }
 
-div.card.top{
-    animation-name: topAnimation;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+.youtubeEmbed>div.show-histoire div.histoire {
+    display: inline-block;
 }
 
-div.card.playlist{
+.youtubeEmbed>div.show-phonk div.phonk {
+    display: inline-block;
 }
 
-div.card>.topimg{
+.youtubeEmbed>div.show-rap div.rap {
+    display: inline-block;
 }
 
-@media screen and (max-width: 1024px) {
-    .music>div>div {
-        width: 90%;
-        height: 100%;
-    }
+.youtubeEmbed>div.show-trool div.trool {
+    display: inline-block;
 }
 
-@media screen and (min-width: 1024px) {
-    .music>div>div {
-        min-width: 25%;
-        max-width: 25%;
-    }
+.youtubeEmbed>div.show-rock div.rock {
+    display: inline-block;
 }
 
-@keyframes topAnimation {
-    0%{
-        box-shadow: var(--box-shadow-all-inset-main-color-small);
-    }
-    100%{
-        box-shadow: var(--box-shadow-all-inset-main-color-big);
-    }
+#music-menu{
+    display: flex !important;
 }

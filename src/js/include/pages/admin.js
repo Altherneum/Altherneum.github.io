@@ -30,10 +30,22 @@ async function CheckPage() {
     else if (pathNameMatchPage("/admin/music", true)) {
         await includes();
 
+        await include_css("/src/css/youtubeEmbed.css");
         await include_css("/src/css/music.css");
-        await include_html("/src/html/content/music.html", "contentArticle", true);
-        await include_script("/src/js/content/music-list.js");
+        await include_html("/src/html/content/video.html", "contentArticle", true);
+        await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/music.js");
+        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
+    }
+        
+    else if (pathNameMatchPage("/admin/video", true)) {
+        await includes();
+
+        await include_css("/src/css/youtubeEmbed.css");
+        await include_css("/src/css/video.css");
+        await include_html("/src/html/content/video.html", "contentArticle", true);
+        await include_script("/src/js/content/youtubeEmbed.js");
+        await include_script("/src/js/content/video.js");
         await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
     }
 
