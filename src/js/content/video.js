@@ -62,7 +62,6 @@ var videolinks = [
     {
         videoID: "vNxl7L3Zuck",
         categorie: "IT",
-        short: true,
     },
 ];
 
