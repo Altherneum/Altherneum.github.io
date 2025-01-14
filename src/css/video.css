@@ -15,5 +15,5 @@
 }
 
 #video-menu{
-    display: flex;
+    display: flex !important;
 }
