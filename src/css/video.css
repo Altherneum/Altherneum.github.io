@@ -18,6 +18,10 @@
     display: inline-block;
 }
 
+.youtubeEmbed>div.show-game div.game {
+    display: inline-block;
+}
+
 #video-menu{
     display: flex !important;
 }
