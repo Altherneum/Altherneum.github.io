@@ -6,7 +6,7 @@ const links = [
         svg: "/assets/svg/trademark/discord.svg",
     },
     {
-        href: "https://discord.gg/EphmMg7vbn",
+        href: "https://discord.gg/yba6vQv7Q4",
         tag: ".gg URL Discord",
         text: "Salon vocal Discord",
         svg: "/assets/svg/telephone.svg",
@@ -14,7 +14,7 @@ const links = [
     {
         href: "/discord/tempvoc",
         tag: ".gg URL Discord",
-        text: "Salon vocal temporaire Discord",
+        text: "Salon vocal invité Discord",
         svg: "/assets/svg/telephone.svg",
     },
     {
