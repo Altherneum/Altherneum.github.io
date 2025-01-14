@@ -12,6 +12,12 @@ const links = [
         svg: "/assets/svg/telephone.svg",
     },
     {
+        href: "/discord/tempvoc",
+        tag: ".gg URL Discord",
+        text: "Salon vocal temporaire Discord",
+        svg: "/assets/svg/telephone.svg",
+    },
+    {
         href: "https://Altherneum.fr",
         tag: "URL",
         text: "Serveur Minecraft",
