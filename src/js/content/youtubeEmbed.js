@@ -13,7 +13,8 @@ function hide() {
     videoholder.className = "";
 }
 
-function GetVideos(array) {
+async function GetVideos(array) {
+    await include_script("/src/js/content/auto-scroll.js");
     for (video in array) {
         var playlist = array[video].playlist;
         if (playlist === undefined) {
@@ -43,12 +44,14 @@ function GetVideos(array) {
             fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
         }
 
-        addIFrame(playlist, videoID, top, categorie, fetchUrl, text);
+        await addIFrame(playlist, videoID, top, categorie, fetchUrl, text);
+
+        autoScroll(true);
     }
 }
 
-function addIFrame(playlist, videoID, top, categorie, fetchUrl, text) {
-    fetch(fetchUrl).then(response => response.json().then(data => {
+async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text) {
+    await fetch(fetchUrl).then(response => response.json().then(data => {
         JSONdata = data
 
         var title = JSONdata.title;
@@ -69,6 +72,18 @@ function addIFrame(playlist, videoID, top, categorie, fetchUrl, text) {
         }
         classname += "card " + categorie;
         div_card.className = classname;
+
+        var anchor = document.createElement("a");
+        anchor.href = "#yt-" + videoID;
+        anchor.id = "yt-" + videoID;
+        div_card.appendChild(anchor);
+        setScrollBehavior(anchor);
+        console.log("adding YT embed : " + videoID);
+
+        var imageTop = document.createElement("img");
+        imageTop.src = "/assets/svg/link.svg";
+        imageTop.className = "topimg svg";
+        anchor.appendChild(imageTop);
 
         if (top) {
             var imageTop = document.createElement("img");

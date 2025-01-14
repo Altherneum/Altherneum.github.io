@@ -1,6 +1,7 @@
 var isAnchorListSet = false;
 var anchorList;
 async function addMarkdown(repo, file, gist) {
+    await include_script("/src/js/content/auto-scroll.js");
     console.info("Loading markdown CSS");
     await include_css("/src/css/markdown.css");
     console.info("Loading .md");
@@ -509,28 +510,5 @@ function setAnchorTitles(anchorListElement, text) {
 
         setScrollBehavior(anchorOnList);
         anchorListElement.appendChild(anchorOnList);
-    }
-}
-
-function setScrollBehavior(anchor) {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        window.location.hash = this.getAttribute('href');
-        DoScrollIntoView(document.querySelector(this.getAttribute('href')));
-    });
-}
-
-function autoScroll() {
-    var hash = decodeURIComponent(window.location.hash);
-    hash = hash.replace("#", "");
-
-    var element = document.getElementById(hash);
-    DoScrollIntoView(element);
-}
-
-function DoScrollIntoView(element) {
-    if (element !== null) {
-        element.scrollIntoView({ behavior: "smooth" });
     }
 }
