@@ -14,6 +14,10 @@
     display: inline-block;
 }
 
+.youtubeEmbed>div.show-malware div.malware {
+    display: inline-block;
+}
+
 #video-menu{
     display: flex !important;
 }
