@@ -15,6 +15,7 @@ var videolinks = [
     {
         videoID: "bVmukCdg7SQ",
         categorie: "IT",
+        short: true,
     },
     {
         videoID: "_26Fg09tW_0",
@@ -43,10 +44,12 @@ var videolinks = [
     {
         videoID: "0C_0qaT81HE",
         categorie: "IT",
+        short: true,
     },
     {
         videoID: "GkErU_r5QIs",
         categorie: "IT",
+        short: true,
     },
     {
         videoID: "mVKAyw0xqxw",
@@ -59,6 +62,7 @@ var videolinks = [
     {
         videoID: "vNxl7L3Zuck",
         categorie: "IT",
+        short: true,
     },
 ];
 

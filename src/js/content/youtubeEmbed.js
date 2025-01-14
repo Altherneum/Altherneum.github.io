@@ -21,6 +21,11 @@ async function GetVideos(array) {
             playlist = false;
         }
 
+        var short = array[video].short;
+        if (short === undefined) {
+            short = false;
+        }
+
         var top = array[video].top;
         if (top === undefined) {
             top = false;
@@ -44,13 +49,13 @@ async function GetVideos(array) {
             fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
         }
 
-        await addIFrame(playlist, videoID, top, categorie, fetchUrl, text);
+        await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short);
 
         autoScroll(true);
     }
 }
 
-async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text) {
+async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short) {
     await fetch(fetchUrl).then(response => response.json().then(data => {
         JSONdata = data
 
@@ -64,11 +69,13 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text) {
 
         var div_card = document.createElement("div");
         var classname = "";
-        if (top) {
-            classname += "top ";
-        }
-        if (playlist) {
-            classname += "playlist ";
+        if(short === false){
+            if (top) {
+                classname += "top ";
+            }
+            if (playlist) {
+                classname += "playlist ";
+            }
         }
         classname += "card " + categorie;
         div_card.className = classname;
