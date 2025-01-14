@@ -1,7 +1,6 @@
 var videolinks = [
     {
         videoID: "XYgM9jSkYAM",
-        top: false,
         categorie: "hack",
     },
     {
@@ -11,9 +10,12 @@ var videolinks = [
     },
     {
         videoID: "fV-pTu5T59M",
-        top: false,
         categorie: "malware",
-    }
+    },
+    {
+        videoID: "bVmukCdg7SQ",
+        categorie: "IT",
+    },
 ];
 
 const videoTypes = ["hack", "IT", "discord", "code", "malware"];

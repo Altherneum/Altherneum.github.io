@@ -16,12 +16,20 @@ function hide() {
 function GetVideos(array) {
     for (video in array) {
         var playlist = array[video].playlist;
-        var videoID = array[video].videoID;
+        if (playlist === undefined) {
+            playlist = false;
+        }
+
         var top = array[video].top;
+        if (top === undefined) {
+            top = false;
+        }
+
+        var videoID = array[video].videoID;        
         var categorie = array[video].categorie;
         var fetchUrl;
-        var text;
 
+        var text;
         if (array[video].text !== undefined) {
             text = array[video].text;
         }
