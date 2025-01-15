@@ -142,7 +142,9 @@ function createIframe(event) {
     var autoplay = "&autoplay=1";
     var playlistarg;
 
+    console.log(short);
     if (short === false) {
+        console.log("not short");
         if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "false") {
             console.log("T+F");
             loop = "&loop=1";
