@@ -22,6 +22,14 @@
     display: inline-block;
 }
 
+.youtubeEmbed>div.show-science div.science {
+    display: inline-block;
+}
+
+.youtubeEmbed>div.show-DeepWeb div.DeepWeb {
+    display: inline-block;
+}
+
 #video-menu{
     display: flex !important;
 }
