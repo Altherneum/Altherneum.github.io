@@ -65,6 +65,6 @@ var videolinks = [
     },
 ];
 
-const videoTypes = ["hack", "IT", "discord", "code", "malware", "game"];
+const videoTypes = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
 
 GetVideos(videolinks);
