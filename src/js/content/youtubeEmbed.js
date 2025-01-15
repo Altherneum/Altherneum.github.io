@@ -1,5 +1,5 @@
 // https://developers.google.com/youtube/player_parameters?hl=fr#listType
-
+var total = 0;
 function show(name) {
     hide();
 
@@ -52,10 +52,14 @@ async function GetVideos(array) {
         await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short);
 
         autoScroll(true);
+
+        total += 1;
+        console.log(total);
     }
 }
 
 async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short) {
+    try { 
     await fetch(fetchUrl).then(response => response.json().then(data => {
         JSONdata = data
 
@@ -130,6 +134,9 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
 
         videoholder.appendChild(div_card);
     }));
+    } catch (error) {
+        console.error(error + "\n" + videoID);
+    }
 }
 
 function createIframe(event) {
