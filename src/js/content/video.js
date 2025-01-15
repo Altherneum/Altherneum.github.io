@@ -91,6 +91,15 @@ var videolinks = [
         videoID: "JdxfhMbSwL0",
         categorie: "science",
     },
+    {
+        videoID: "z_8hGSGCK3Q",
+        categorie: "IT",
+        short: true,
+    },
+    {
+        videoID: "_LiZWbBR96A",
+        categorie: "IT",
+    },
 ];
 
 const videoTypes = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
