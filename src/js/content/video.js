@@ -75,6 +75,10 @@ var videolinks = [
         videoID: "hdHjjBS4cs8",
         categorie: "code",
     },
+    {
+        videoID: "KdoaiGTIBY4",
+        categorie: "IT",
+    },
 ];
 
 const videoTypes = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
