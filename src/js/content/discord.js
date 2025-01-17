@@ -1,6 +1,6 @@
 const https = require('https')
 
-const version = 6;
+const version = 10; // https://discord.com/developers/docs/reference
 const URL = "";
 const token = "";
 var methode = "PUT";
