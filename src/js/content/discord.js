@@ -1,3 +1,7 @@
+function sendToAPI(){
+    
+}
+
 const https = require('https')
 
 const version = 10; // https://discord.com/developers/docs/reference
@@ -24,3 +28,23 @@ const req = https.request(options, res => {
 req.on('error', error => {
     console.error(error)
 });
+
+//Fin send to API function
+
+function sendToWebHook(){
+    fetch("your_webhook_url", {
+        body: JSON.stringify({
+        content: `type your message here`,
+    }),
+    headers: {
+        "Content-Type": "application/json",
+    },
+        method: "POST",
+    })
+    .then(function (res) {
+        console.log(res);
+    })
+    .catch(function (res) {
+        console.log(res);
+    });
+}
