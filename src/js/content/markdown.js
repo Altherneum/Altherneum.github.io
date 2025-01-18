@@ -23,7 +23,7 @@ async function addMarkdown(repo, file, gist) {
     content.appendChild(textElem);
     setAnchorTitles(anchorList, content);
 
-    autoScroll();
+    autoScroll(true);
     console.info("Fin markdown");
 }
 

@@ -3,7 +3,7 @@ function setScrollBehavior(anchor) {
         e.preventDefault();
 
         window.location.hash = this.getAttribute('href');
-        DoScrollIntoView(document.querySelector(this.getAttribute('href')));
+        DoScrollIntoView(document.querySelector(this.getAttribute('href')), false);
     });
 }
 
