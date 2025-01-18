@@ -149,26 +149,20 @@ function createIframe(event) {
     var autoplay = "&autoplay=1";
     var playlistarg;
 
-    console.log(typeof short);
     if (short === "false") {
-        console.log("not short");
         if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "false") {
-            console.log("T+F");
             loop = "&loop=1";
             playlistarg = videoID + "?playlist=" + videoID;
         }
         else if (localStorage.getItem('YouTubeLoop') === "false" && playlist === "false") {
-            console.log("F+F");
             loop = "&loop=0";
             playlistarg = videoID + "?si=Altherneum.fr";
         }
         else if (localStorage.getItem('YouTubeLoop') === "false" && playlist === "true") {
-            console.log("F+T");
             loop = "&loop=0";
             playlistarg = "?list=" + videoID + "&listType=playlist";
         }
         else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
-            console.log("T+T");
             loop = "&loop=1";
             playlistarg = "?list=" + videoID + "&listType=playlist";
         }
