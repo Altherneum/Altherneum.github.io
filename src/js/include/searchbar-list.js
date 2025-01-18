@@ -354,6 +354,12 @@ const links = [
         svg: "/assets/svg/languages/css.svg",
     },
     {
+        href: "/cours/js.html",
+        tag: "Cours Web",
+        text: "JS",
+        svg: "/assets/svg/languages/js.svg",
+    },
+    {
         href: "/cours/binaire.html",
         tag: "Cours",
         text: "Binaire",
