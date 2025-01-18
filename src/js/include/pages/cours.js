@@ -48,6 +48,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/Code/Web/CSS/liste.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/HTML/boilerplate.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/learning.md', false);
         });
     }
 
