@@ -1,10 +1,16 @@
 var isAnchorListSet = false;
+var isAutoScrollLoaded = false;
 var anchorList;
+
 async function addMarkdown(repo, file, gist) {
-    await include_script("/src/js/content/auto-scroll.js");
     console.info("Loading markdown CSS");
     await include_css("/src/css/markdown.css");
     console.info("Loading .md");
+
+    if (isAutoScrollLoaded === false) {
+        await include_script("/src/js/content/auto-scroll.js");
+        isAutoScrollLoaded = true;
+    }
 
     var markdownHolder = setMarkdownHolder();
     var content = setMarkdownFileDiv(repo, file, markdownHolder);
