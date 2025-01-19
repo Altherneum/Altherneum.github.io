@@ -65,7 +65,7 @@ var videolinks = [
     },
     {
         videoID: "WLJGZlt5y2E",
-        categorie: "DeepWeb",
+        categorie: "malware",
     },
     {
         videoID: "4N2GWTQX0rk",
@@ -101,8 +101,56 @@ var videolinks = [
         categorie: "IT",
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "3FhdEDjzHt0",
+        categorie: "hack",
+        short: true,
+    },
+    {
+        videoID: "IRD06dycqYc",
+        categorie: "game",
+        short: true,
+        text: "<a href='#yt-Ab65Cr-XU8U'>The TRUTH about the MIG Switch Nintendo Flash Cart</a>",
+    },
+    {
+        videoID: "Ab65Cr-XU8U",
+        categorie: "game",
+    },
+    {
+        videoID: "gO44cB1pqWI",
+        categorie: "malware",
+    },
+    {
+        videoID: "nwEN0H6rdY4",
+        categorie: "malware",
+        short: true,
+    },
+    {
+        videoID: "jmHKJfKkF3Y",
+        categorie: "game",
+    },
+    {
+        videoID: "JRzNHDcUk3w",
+        categorie: "science",
+        short: true,
+    },
+    {
+        videoID: "304UONRtVqI",
+        categorie: "IT",
+        short: true,
+    },
+    {
+        videoID: "PLp31D6HATKfeEHEFqFo5hlCOYwHi4Sl9O",
+        categorie: "IT",
+        playlist: true,
+    },
+    {
+        videoID: "3v5saN9J94A",
+        categorie: "IT",
+        short: true,
+    },
+    {
+        videoID: "ePiF7BWB6_s",
+        categorie: "code",
     },
 ];
 
