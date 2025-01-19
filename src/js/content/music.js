@@ -1125,6 +1125,14 @@ var musiclinks = [
         categorie: "histoire",
         top: true,
     },
+    {
+        videoID: "LJzp_mDxaT0",
+        categorie: "histoire",
+    },
+    {
+        videoID: "RBtlPT23PTM",
+        categorie: "histoire",
+    },
 ];
 
 /*
