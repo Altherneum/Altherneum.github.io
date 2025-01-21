@@ -1163,16 +1163,6 @@ var musiclinks = [
     },
 ];
 
-/*
-    ,
-    {
-        videoID: "",
-        text: "",
-        categorie: "",
-        top: true,
-    }
-*/
-
 const musicTypes = ["top", "all", "playlist", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "playing"];
 
 GetVideos(musiclinks);
