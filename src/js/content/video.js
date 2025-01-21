@@ -181,6 +181,55 @@ var videolinks = [
         categorie: "IT",
         short: true,
     },
+    {
+        videoID: "5H7cQAl-vno",
+        categorie: "hack",
+        short: true,
+    },
+    {
+        videoID: "mMZNWx4r4Rk",
+        categorie: "IT",
+        short: true,
+    },
+    {
+        videoID: "2EL2MVgVrso",
+        categorie: "game",
+        short: true,
+    },
+    {
+        videoID: "F429yqTVUyI",
+        categorie: "hack",
+        short: true,
+    },
+    {
+        videoID: "heBrCo9ondM",
+        categorie: "IT",
+        short: true,
+    },
+    {
+        videoID: "kE3rGmoSOqs",
+        categorie: "IT",
+    },
+    {
+        videoID: "WIQAu0Sd5s0",
+        categorie: "discord",
+    },
+    {
+        videoID: "fGQhdzc571w",
+        categorie: "hack",
+    },
+    {
+        videoID: "6LUl57Qoxic",
+        categorie: "hack",
+    },
+    {
+        videoID: "pQCT2ZnpHfY",
+        categorie: "code",
+    },
+    {
+        videoID: "VUMUgL_nh-g",
+        categorie: "game",
+    },
 ];
 
 const videoTypes = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
