@@ -1145,6 +1145,18 @@ var musiclinks = [
         videoID: "VHoT4N43jK8",
         categorie: "histoire",
     },
+    {
+        videoID: "iRvkMzy4Gcg",
+        categorie: "chilljp",
+    },
+    {
+        videoID: "jj7FHv6xsx0",
+        categorie: "phonk",
+    },
+    {
+        videoID: "MSjXSNbMB9o",
+        categorie: "phonk",
+    },
 ];
 
 /*
