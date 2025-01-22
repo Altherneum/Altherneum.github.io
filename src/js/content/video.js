@@ -245,6 +245,35 @@ var videolinks = [
     }
 ];
 
-const videoTypes = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
 
-GetVideos(videolinks);
+function getVideoListType(){
+    return VideoListType;
+}
+
+function GetVideoList(){
+    return videolinks;
+}
+
+function getEmoji(VideoListType){
+    switch (VideoListType) {
+        case 'hack':
+            return "💀";
+        case 'IT':
+            return "💻";
+        case 'discord':
+            return "📞";
+        case 'code':
+            return "💾";
+        case 'malware':
+            return "🦠";
+        case 'game':
+            return "🕹";
+        case 'science':
+            return "🔬";
+        case 'DeepWeb':
+            return "🕸️";
+        default:
+            return "X";
+      }
+}

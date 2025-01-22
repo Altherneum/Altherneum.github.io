@@ -1,4 +1,4 @@
-var musiclinks = [
+var videolinks = [
     {
         videoID: "1_Ncsri_quY",
         categorie: "phonk",
@@ -1185,6 +1185,37 @@ var musiclinks = [
     }
 */
 
-const musicTypes = ["top", "all", "playlist", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "playing"];
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock"];
 
-GetVideos(musiclinks);
+function getVideoListType(){
+    return VideoListType;
+}
+
+function GetVideoList(){
+    return videolinks;
+}
+
+function getEmoji(VideoListType){
+    switch (VideoListType) {
+        case 'rain':
+            return "☔";
+        case 'chill':
+            return "☕";
+        case 'chilljp':
+            return "🀄";
+        case 'classic':
+            return "🎹";
+        case 'histoire':
+            return "🌌";
+        case 'phonk':
+            return "🔥";
+        case 'rap':
+            return "🐀";
+        case 'trool':
+            return "💩";
+        case 'rock':
+            return "🎸";
+        default:
+            return "X";
+      }
+}

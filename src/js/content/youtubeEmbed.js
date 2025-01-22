@@ -13,31 +13,36 @@ function hide() {
     videoholder.className = "";
 }
 
-async function GetVideos(array) {
+async function GetVideos(videoList, VideoListType) {    
+    //add buttons and videoTypes
+    console.log("------------------------" + VideoListType);
+    
+    addButtons(VideoListType);
+
     await include_script("/src/js/content/auto-scroll.js");
-    for (video in array) {
-        var playlist = array[video].playlist;
+    for (video in videoList) {
+        var playlist = videoList[video].playlist;
         if (playlist === undefined) {
             playlist = false;
         }
 
-        var short = array[video].short;
+        var short = videoList[video].short;
         if (short === undefined) {
             short = false;
         }
 
-        var top = array[video].top;
+        var top = videoList[video].top;
         if (top === undefined) {
             top = false;
         }
 
-        var videoID = array[video].videoID;
-        var categorie = array[video].categorie;
+        var videoID = videoList[video].videoID;
+        var categorie = videoList[video].categorie;
         var fetchUrl;
 
         var text;
-        if (array[video].text !== undefined) {
-            text = array[video].text;
+        if (videoList[video].text !== undefined) {
+            text = videoList[video].text;
         }
         else {
             text = "";
@@ -54,7 +59,24 @@ async function GetVideos(array) {
         autoScroll(true);
 
         total += 1;
-        console.log(total);
+    }
+    console.log(total);
+}
+
+function addButtons(Types){
+    var menu = document.getElementById("menu-all");
+    for(videoType in Types){
+        var type = Types[videoType];
+        var emoji = getEmoji(type);
+
+        var button = document.createElement("button");
+        button.setAttribute("onClick", "show('" + type + "');");
+
+        var text = document.createElement("p");
+        text.textContent = emoji + " " + type;
+
+        button.appendChild(text);
+        menu.appendChild(button);
     }
 }
 
@@ -87,7 +109,6 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
         anchor.id = "yt-" + videoID;
         div_card.appendChild(anchor);
         setScrollBehavior(anchor);
-        console.log("adding YT embed : " + videoID);
 
         var imageTop = document.createElement("img");
         imageTop.src = "/assets/svg/link.svg";
