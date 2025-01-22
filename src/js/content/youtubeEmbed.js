@@ -6,6 +6,15 @@ function show(name) {
     var videoholder = document.getElementById("videoholder");
     var classname = videoholder.className;
     videoholder.className = classname + " show-" + name;
+
+
+    //Update this function
+    /*
+    Loop in each video
+    If class name contain "name"
+    show video
+    else hide
+    */ // will be used to remove the video.css & music.css files
 }
 
 function hide() {
