@@ -14,7 +14,7 @@ var videolinks = [
     },
     {
         videoID: "bVmukCdg7SQ",
-        categorie: "IT",
+        categorie: "Linux",
         short: true,
     },
     {
@@ -53,7 +53,7 @@ var videolinks = [
     },
     {
         videoID: "mVKAyw0xqxw",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "RhfM24skj34",
@@ -61,7 +61,7 @@ var videolinks = [
     },
     {
         videoID: "vNxl7L3Zuck",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "WLJGZlt5y2E",
@@ -77,7 +77,7 @@ var videolinks = [
     },
     {
         videoID: "KdoaiGTIBY4",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "XTcP4oo4JI4",
@@ -85,7 +85,7 @@ var videolinks = [
     },
     {
         videoID: "LKCVKw9CzFo",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "JdxfhMbSwL0",
@@ -140,7 +140,7 @@ var videolinks = [
     },
     {
         videoID: "PLp31D6HATKfeEHEFqFo5hlCOYwHi4Sl9O",
-        categorie: "IT",
+        categorie: "Linux",
         playlist: true,
     },
     {
@@ -168,7 +168,7 @@ var videolinks = [
     },
     {
         videoID: "lXuKTSU2XBY",
-        categorie: "IT",
+        categorie: "Linux",
         short: true,
     },
     {
@@ -240,12 +240,12 @@ var videolinks = [
     },
     {
         videoID: "7YM2EKc0Tk4",
-        categorie: "IT",
+        categorie: "Linux",
         short: true,
     }
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux"];
 
 function getVideoListType(){
     return VideoListType;
@@ -273,6 +273,8 @@ function getEmoji(VideoListType){
             return "🔬";
         case 'DeepWeb':
             return "🕸️";
+        case 'Linux':
+            return "🐧";
         default:
             return "X";
       }
