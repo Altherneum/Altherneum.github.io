@@ -30,6 +30,10 @@
     display: inline-block;
 }
 
+.youtubeEmbed>div.show-Linux div.Linux {
+    display: inline-block;
+}
+
 #video-menu{
     display: flex !important;
 }
