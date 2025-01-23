@@ -749,6 +749,24 @@ const links = [
         tag: "Windows URL Outils",
         text: "Live.SysInternals.com",
     },
+    {
+        href: "https://openjdk.org/",
+        svg: "/assets/svg/tools.svg",
+        tag: "Windows URL Outils",
+        text: "openjdk.org",
+    },
+    {
+        href: "https://learn.microsoft.com/fr-fr/java/",
+        svg: "/assets/svg/tools.svg",
+        tag: "Windows URL Outils",
+        text: "learn.microsoft.com /java",
+    },
+    {
+        href: "https://learn.microsoft.com/fr-fr/java/openjdk",
+        svg: "/assets/svg/tools.svg",
+        tag: "Windows URL Outils",
+        text: "learn.microsoft.com /java /openjdk",
+    },
 ];
 
 /*
