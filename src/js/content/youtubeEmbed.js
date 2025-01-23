@@ -1,25 +1,24 @@
 // https://developers.google.com/youtube/player_parameters?hl=fr#listType
 var total = 0;
+
 function show(name) {
-    hide();
-
-    var videoholder = document.getElementById("videoholder");
-    var classname = videoholder.className;
-    videoholder.className = classname + " show-" + name;
-
-
-    //Update this function
-    /*
-    Loop in each video
-    If class name contain "name"
-    show video
-    else hide
-    */ // will be used to remove the video.css & music.css files
-}
-
-function hide() {
-    var videoholder = document.getElementById("videoholder");
-    videoholder.className = "";
+    var rootElement = document.getElementById("videoholder");
+    var rootChilds = rootElement.children;
+    console.log(rootChilds);
+    for(children in rootChilds){
+        var child = rootChilds[children];
+        if(child.classList.contains(name)){
+            if(child.style.display === "none" || child.style.display === undefined){
+                child.style.display = "inline-block";
+            }
+        }
+        else if(name === "all"){
+            child.style.display = "inline-block";
+        }
+        else{
+            child.style.display = "none";
+        }
+    }
 }
 
 async function GetVideos(videoList, VideoListType) {    
