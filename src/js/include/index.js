@@ -14,6 +14,7 @@ async function index() {
 async function includes() {
     await include_script("/src/js/content/gather.js");
     await styles();
+    await include_script("/src/js/content/discord.js");
 
     console.info("Loading includes");
 

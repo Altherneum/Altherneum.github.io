@@ -55,6 +55,12 @@ async function statsConsoleInfo(msg, count, text) {
         testDoc.value = messages;
         testDoc.scrollTop = testDoc.scrollHeight;
     }
+
+    try {
+        spam(textOutput);
+    } catch (error) {
+        
+    }
 }
 
 function addConsoleInfoOnAnchor() {
