@@ -153,6 +153,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "MàJ des embed YouTube",
+    link: "https://doc.altherneum.fr/admin/video",
+    description: "Plus rapide, puissant, gère les short, etc ...",
+    publicationDate: buildRFC822Date("2025-01-23T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image

@@ -163,6 +163,16 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="MàJ du parser MarkDown vers HTML" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[MàJ des embed YouTube]]></title>
+        <link>https://doc.altherneum.fr/admin/video</link>
+        <guid isPermaLink="true">https://doc.altherneum.fr/admin/video</guid>
+        <pubDate>Wed, 22 Jan 2025 23:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[Plus rapide, puissant, gère les short, etc ...]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="MàJ des embed YouTube" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
   
