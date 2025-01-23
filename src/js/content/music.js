@@ -1176,7 +1176,7 @@ var videolinks = [
     {
         videoID: "NLPyySN9Czw",
         categorie: "rock",
-    }
+    },
 ];
 
 /*
