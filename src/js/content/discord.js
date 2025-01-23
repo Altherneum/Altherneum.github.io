@@ -21,6 +21,8 @@ function sendToAPI(Version, Token, AccountType, Methode, URL, Message){
       },
       body: JSON.stringify(Message)
     } */
+
+      //Crash due to cors origin
     
     fetch(`https://discord.com/api/v` + Version + `/` + URL, {
         body: JSON.stringify({
