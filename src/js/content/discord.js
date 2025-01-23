@@ -1,41 +1,56 @@
-function sendToAPI(){
+// sendMessage(10, "TOKEN", "Bot", "POST", "1328803239109464205", "Test");
+function sendMessage(Version, Token, AccountType, Methode, ChannelID, Message){
+    var URL = ChannelID + "/messages";
+    sendToAPI(Version, Token, AccountType, Methode, URL, Message);
+}
+
+// sendToAPI(10, "TOKEN", "Bot", "POST", "", "");
+function sendToAPI(Version, Token, AccountType, Methode, URL, Message){
+    
+    // https://discord.com/developers/docs/reference
+    
+    /* 
     const https = require('https')
     
-    const version = 10; // https://discord.com/developers/docs/reference
-    const URL = "";
-    const token = "";
-    var methode = "PUT";
-    
     const options = {
-        hostname: `https://discord.com/api/v` + version + `/` + URL,
-        method: methode,
+        hostname: `https://discord.com/api/v` + Version + `/` + URL,
+        method: Methode,
         headers: {
         "Content-Type": "application/json",
-        'Authorization': `Bot ` + token
-      }
-    }
+        'Authorization': AccountType + ` ` + Token
+      },
+      body: JSON.stringify(Message)
+    } */
     
-    const req = https.request(options, res => {
-        console.log(`statusCode: ` + res.statusCode);
-        res.on('data', d => {
-            console.log(d)
-        })
-    });
-
-    req.on('error', error => {
-        console.error(error)
+    fetch(`https://discord.com/api/v` + Version + `/` + URL, {
+        body: JSON.stringify({
+        content: Message,
+    }),
+    headers: {
+        "Content-Type": "application/json",
+        'Authorization': AccountType + ` ` + Token,
+        "Access-Control-Allow-Origin": "*",
+    },
+        method: Methode,
+    })
+    .then(function (res) {
+        console.log(res);
+    })
+    .catch(function (res) {
+        console.log(res);
     });
 }
 
-function sendToWebHook(){
-    fetch("your_webhook_url", {
+// sendToWebHook("000000000000000", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "test", "POST");
+function sendToWebHook(ServerID, Token, Message, Methode){
+    fetch("https://discord.com/api/webhooks/" + ServerID + "/" + Token, {
         body: JSON.stringify({
-        content: `type your message here`,
+        content: Message,
     }),
     headers: {
         "Content-Type": "application/json",
     },
-        method: "POST",
+        method: Methode,
     })
     .then(function (res) {
         console.log(res);

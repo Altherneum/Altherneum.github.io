@@ -28,6 +28,12 @@ async function CheckPage() {
         await include_script("/src/js/content/redirect.js");
         redirect("discord.gg/rF25kjuv4v", 0);
     }
+    
+    else if (pathNameMatchPage("/discord/api", true)) {
+        await includes();
+
+        await include_script("/src/js/content/discord.js");
+    }
 
     else {
         return false;
