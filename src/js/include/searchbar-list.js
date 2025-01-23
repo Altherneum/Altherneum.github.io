@@ -751,19 +751,19 @@ const links = [
     },
     {
         href: "https://openjdk.org/",
-        svg: "/assets/svg/tools.svg",
+        svg: "/assets/svg/languages/java.svg",
         tag: "Windows URL Outils",
         text: "openjdk.org",
     },
     {
         href: "https://learn.microsoft.com/fr-fr/java/",
-        svg: "/assets/svg/tools.svg",
+        svg: "/assets/svg/languages/java.svg",
         tag: "Windows URL Outils",
         text: "learn.microsoft.com /java",
     },
     {
         href: "https://learn.microsoft.com/fr-fr/java/openjdk",
-        svg: "/assets/svg/tools.svg",
+        svg: "/assets/svg/languages/java.svg",
         tag: "Windows URL Outils",
         text: "learn.microsoft.com /java /openjdk",
     },
