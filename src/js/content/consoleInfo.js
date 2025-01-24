@@ -3,7 +3,7 @@ var warnMsg = "";
 console.warn = async function (msg) {
     warnCount++;
     warnMsg = msg;
-    await statsConsoleInfo( msg, warnCount, "Warn");
+    await statsConsoleInfo(msg, warnCount, "Warn");
     console.log(msg);
 }
 
@@ -12,7 +12,7 @@ var errorMsg = "";
 console.error = async function (msg) {
     errorCount++;
     errorMsg = msg;
-    await statsConsoleInfo( msg, errorCount, "Error");
+    await statsConsoleInfo(msg, errorCount, "Error");
     console.log(msg);
 }
 
@@ -21,7 +21,7 @@ var infoMsg = "";
 console.info = async function (msg) {
     infoCount++;
     infoMsg = msg;
-    await statsConsoleInfo( msg, infoCount, "Info");
+    await statsConsoleInfo(msg, infoCount, "Info");
     console.log(msg);
 }
 
@@ -32,6 +32,14 @@ console.trace = async function (msg) {
     traceMsg = msg;
     await statsConsoleInfo(msg, traceCount, "Trace");
     console.log(msg);
+}
+
+var logsCount = 0;
+var logsMsg = "";
+console.log = async function (msg) {
+    logsCount++;
+    logsMsg = msg;
+    await statsConsoleInfo(msg, logsCount, "Log");
 }
 
 var messages;
@@ -56,10 +64,13 @@ async function statsConsoleInfo(msg, count, text) {
         testDoc.scrollTop = testDoc.scrollHeight;
     }
 
-    try {
-        spam(textOutput);
-    } catch (error) {
-        
+    if(text != "Log" && text != "Info")
+    {
+        try {
+            spam(textOutput); 
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 
