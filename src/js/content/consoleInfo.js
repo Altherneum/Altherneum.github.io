@@ -81,6 +81,7 @@ function SendToLog(text, textOutput){
             return;
         }
     }
+    else if(text === "Index.JS"){}
     else
     {
         if (localStorage.getItem('AllLogs') !== "true") {

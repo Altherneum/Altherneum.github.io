@@ -168,6 +168,7 @@ function pathNameMatchPage(path, strict) {
     if (strict === true) {
         if (path.toLowerCase() === pathname.toLowerCase()) {
             console.log("Loading : " + pathname);
+            statsConsoleInfo("Index.JS", pathname);
             return true;
         }
     }
