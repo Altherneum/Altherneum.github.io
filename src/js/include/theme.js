@@ -3,7 +3,7 @@ toggleTheme();
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
-    console.info("Loading theme : " + themeName);
+    console.log("Loading theme : " + themeName);
 }
 
 function toggleTheme() {
@@ -18,7 +18,7 @@ function toggleTheme() {
     }
 
     else {
-        console.info("Default color scheme");
+        console.log("Default color scheme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         if (systemSettingDark) {
             setTheme('day');

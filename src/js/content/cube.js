@@ -4,7 +4,7 @@ var layer = 20;
 spawnCube("cubeHolder");
 
 function spawnCube(divID) {
-    console.info("Loading 3D cube");
+    console.log("Loading 3D cube");
     var cubeHolder = document.getElementById(divID);
     for (i = 0; i < 20; i++){
         var div = document.createElement("div");

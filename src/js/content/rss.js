@@ -1,4 +1,4 @@
-console.info("Loading RSS");
+console.log("Loading RSS");
 
 function addLeadingZero(num) {
   num = num.toString();
@@ -183,7 +183,7 @@ const channelFeed = feedItems?.map((node) => {
     link = baseUrl + "/" + node.link;
   }
   
-  console.info("RSS feed : " + link)
+  console.log("RSS feed : " + link)
   const meta = node.meta || {}
   const title = node.title
   const description = node.description

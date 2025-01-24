@@ -18,7 +18,7 @@ console.error = async function (msg) {
 
 var infoCount = 0;
 var infoMsg = "";
-console.info = async function (msg) {
+console.log = async function (msg) {
     infoCount++;
     infoMsg = msg;
     await statsConsoleInfo(msg, infoCount, "Info");
@@ -40,6 +40,7 @@ console.log = async function (msg) {
     logsCount++;
     logsMsg = msg;
     await statsConsoleInfo(msg, logsCount, "Log");
+    console.dir(msg);
 }
 
 var messages;
@@ -64,18 +65,38 @@ async function statsConsoleInfo(msg, count, text) {
         testDoc.scrollTop = testDoc.scrollHeight;
     }
 
-    if(text != "Log" && text != "Info")
+    SendToLog(text, textOutput);
+}
+
+function SendToLog(text, textOutput){
+    if(text === "Error" || text === "ErrorType")
     {
-        try {
-            spam(textOutput); 
-        } catch (error) {
-            console.log(error);
+        if (localStorage.getItem('ErrorLogging') === "false") {
+            return;
         }
+    }
+    else if(text === "Warn")
+    {
+        if (localStorage.getItem('WarningLogging') === "false") {
+            return;
+        }
+    }
+    else
+    {
+        if (localStorage.getItem('AllLogs') !== "true") {
+            return;
+        }
+    }
+
+    try {
+        GetData(textOutput); 
+    } catch (error) {
+        console.log(error);
     }
 }
 
 function addConsoleInfoOnAnchor() {
-    console.info("start adding anchor console info");
+    console.log("start adding anchor console info");
     var anchor = document.getElementById("anchor-button");
 
     var button = document.createElement("button");
