@@ -758,19 +758,19 @@ const links = [
     {
         href: "https://openjdk.org/",
         svg: "/assets/svg/languages/java.svg",
-        tag: "Windows URL Outils",
+        tag: "URL Outils OS Développement",
         text: "openjdk.org",
     },
     {
         href: "https://learn.microsoft.com/fr-fr/java/",
         svg: "/assets/svg/languages/java.svg",
-        tag: "Windows URL Outils",
+        tag: "URL Outils OS Développement",
         text: "learn.microsoft.com /java",
     },
     {
         href: "https://learn.microsoft.com/fr-fr/java/openjdk",
         svg: "/assets/svg/languages/java.svg",
-        tag: "Windows URL Outils",
+        tag: "URL Outils OS Développement",
         text: "learn.microsoft.com /java /openjdk",
     },
 ];
@@ -785,7 +785,7 @@ const links = [
     },
 */
 
-var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin"];
+var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
