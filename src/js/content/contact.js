@@ -10,7 +10,7 @@ async function setContactNameRandom(){
         var y = intToChar(x);
         name += y;
     }
-
+ 
     var text = document.getElementById("contact-name");
     text.textContent = name;
 }
@@ -26,15 +26,17 @@ function swapNameLetter(){
     var newLetter = intToChar(newLetterValue);
 
     text.textContent = replaceChar(textContent, newLetter, charToSwap);
+console.log(text.textContent.length);
 }
 
+//this function has an issue and randomly add new char or remove some
 function replaceChar(origString, replaceChar, index) {
     let firstPart = origString.substr(0, index);
-    let lastPart = origString.substr(index + 1);
+    let lastPart = origString.substr(index + 1, origString.length);
       
     let newString = firstPart + replaceChar + lastPart;
     return newString;
 }
 
 setContactNameRandom();
-setInterval(swapNameLetter, 100);
+setInterval(swapNameLetter, 50);
