@@ -1,7 +1,7 @@
 async function setContactNameRandom(){
     await include_script("/src/js/content/randomtext.js");
 
-    var length = getRandomInt(6, 15);
+    var length = getRandomInt(6, 11);
     var name = "";
 
     for(var i = 0; i <= length; i++){
