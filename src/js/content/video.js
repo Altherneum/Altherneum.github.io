@@ -242,10 +242,15 @@ var videolinks = [
         videoID: "7YM2EKc0Tk4",
         categorie: "Linux",
         short: true,
-    }
+    },
+    {
+        videoID: "PL5e6ZkQmSoKeA-KmjgHVOTtYZFH7XIfeM",
+        playlist: true,
+        categorie: "humour",
+    },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour"];
 
 function getVideoListType(){
     return VideoListType;
@@ -275,6 +280,8 @@ function getEmoji(VideoListType){
             return "🕸️";
         case 'Linux':
             return "🐧";
+        case 'humour':
+            return "🤣";
         default:
             return "X";
       }
