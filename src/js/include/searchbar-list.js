@@ -773,6 +773,36 @@ const links = [
         tag: "URL Outils OS Développement",
         text: "learn.microsoft.com /java /openjdk",
     },
+    {
+        href: "https://portswigger.net/burp",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "Burp Suite",
+    },
+    {
+        href: "https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "Download Burp Suite",
+    },
+    {
+        href: "https://portswigger.net/burp/vulnerability-scanner",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "Burp Suite vulnerability scanner",
+    },
+    {
+        href: "https://github.com/centreon/centreon",
+        svg: "/assets/svg/trademark/github.svg",
+        tag: "Repo Github OS URL",
+        text: "Repo Github Centreon",
+    },
+    {
+        href: "https://www.centreon.com/",
+        svg: "/assets/svg/link.svg",
+        tag: "URL Outils OS Web",
+        text: "Centreon.com",
+    },
 ];
 
 /*

@@ -248,6 +248,14 @@ var videolinks = [
         playlist: true,
         categorie: "humour",
     },
+    {
+        videoID: "2i3sGc4l1zc",
+        categorie: "linux",
+    },
+    {
+        videoID: "yal2V4pu-ks",
+        categorie: "IT",
+    }
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour"];
