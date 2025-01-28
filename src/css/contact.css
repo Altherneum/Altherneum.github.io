@@ -5,6 +5,18 @@
     max-width: 100%;
 }
 
+.contact>h1{
+    max-width: 90vw;
+    font-size: 7.5vw;
+    font-weight: bolder;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
 .contact>img {
     margin-bottom: 5vh;
     margin-top: 5vh;
