@@ -1179,21 +1179,7 @@ var videolinks = [
     },
 ];
 
-<<<<<<< HEAD
-const musicTypes = ["top", "all", "playlist", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "playing"];
-=======
-/*
-    ,
-    {
-        videoID: "",
-        text: "",
-        categorie: "",
-        top: true,
-    }
-*/
-
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock"];
->>>>>>> 3a8f0dca7304ac4826db3df65eb45331ec8b0c05
 
 function getVideoListType(){
     return VideoListType;
