@@ -749,6 +749,12 @@ const links = [
         tag: "Windows URL Outils",
         text: "Live.SysInternals.com",
     },
+    {
+        href: "https://haveibeenpwned.com/",
+        svg: "",
+        tag: "URL OpSec Outils",
+        text: "have i been pwned?",
+    },
 ];
 
 /*
