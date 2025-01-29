@@ -1177,6 +1177,34 @@ var videolinks = [
         videoID: "NLPyySN9Czw",
         categorie: "rock",
     },
+    {
+        videoID: "9ka0Q2im8eE",
+        categorie: "rap",
+    },
+    {
+        videoID: "vbInQmgTszk",
+        categorie: "phonk",
+    },
+    {
+        videoID: "jhgJV0Pg54Y",
+        categorie: "phonk",
+    },
+    {
+        videoID: "0aUav1lx3rA",
+        categorie: "histoire",
+    },
+    {
+        videoID: "eJIL35tCbVE",
+        categorie: "phonk",
+    },
+    {
+        videoID: "yDoyUJkNEL4",
+        categorie: "chill",
+    },
+    {
+        videoID: "ofIPV7hI1_Y",
+        categorie: "phonk",
+    }
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock"];
