@@ -33,9 +33,9 @@
     box-shadow: var(--box-shadow-all-inset-main-color);
 }
 
-.contact>hr{
-    margin-top: 15vh;
-    margin-bottom: 15vh;
+.contact>hr, .contact>#link>hr{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .contact>div {
