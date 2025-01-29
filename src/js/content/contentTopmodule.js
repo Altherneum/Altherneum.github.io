@@ -56,7 +56,7 @@ function switchVisibleTag(element) {
 
 function activateMenu(menuName) {
     if (menuName === "statsContentConsoleInfo") {
-        console.info("Loading console embed");
+        console.log("Loading console embed");
     }
     else if (menuName === "ContentLatestRSS") {
         getRSS();

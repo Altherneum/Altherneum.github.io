@@ -37,11 +37,23 @@ function SwitchYouTubeLoop() {
     Switcher("YouTubeLoop");
 }
 
+function SwitchErrorLogging() {
+    Switcher("ErrorLogging");
+}
+
+function SwitchWarningLogging() {
+    Switcher("WarningLogging");
+}
+
+function SwitcAllLogs() {
+    Switcher("AllLogs");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
     localStorage.setItem(name, state);
-    console.info("set " + name + " to " + state)
+    console.log("set " + name + " to " + state)
 }
 
 function setSwitch(name, defaultTrue) {
@@ -66,4 +78,7 @@ function loadSettingsSwitch() {
     setSwitch("YouTubeLoop", true);
     setSwitch("OldSearchBar", false);
     setSwitch("AllSearchBar", true);
+    setSwitch("WarningLogging", true);
+    setSwitch("ErrorLogging", true);
+    setSwitch("AllLogs", false);
 }

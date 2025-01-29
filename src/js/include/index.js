@@ -4,8 +4,9 @@ startTime("index");
 index();
 
 async function index() {
+    await include_script("/src/js/content/discord.js");
     await include_script("/src/js/content/consoleInfo.js");
-    console.info("Loading website");
+    console.log("Loading website");
     await Metadata();
     await pages();
     stopTime("index");
@@ -15,11 +16,11 @@ async function includes() {
     await include_script("/src/js/content/gather.js");
     await styles();
 
-    console.info("Loading includes");
+    console.log("Loading includes");
 
     await include_html("/src/html/include/header.html", "body", false);
-    console.info("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
-    console.info("All search Bar : " + localStorage.getItem('AllSearchBar'));
+    console.log("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
+    console.log("All search Bar : " + localStorage.getItem('AllSearchBar'));
     if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') === "true") {
         await include_css("/src/css/header-navbar.css");
         await include_html("/src/html/include/navlink.html", "navlinklist", true);
@@ -48,7 +49,7 @@ async function includes() {
 }
 
 async function styles() {
-    console.info("Loading style");
+    console.log("Loading style");
 
     await include_css("/src/css/theme.css");
     await include_script("/src/js/include/theme.js");
@@ -99,7 +100,7 @@ async function randomInclude(excludeSettings) {
 }
 
 async function pages() {
-    console.info("Loading custom page");
+    console.log("Loading custom page");
     var block = false;
     if (block && localStorage.getItem('Granted') !== "true") {
         await includes();
@@ -166,14 +167,15 @@ function pathNameMatchPage(path, strict) {
     var pathname = getShortPathname();
     if (strict === true) {
         if (path.toLowerCase() === pathname.toLowerCase()) {
-            console.info("Loading : " + pathname);
+            console.log("Loading : " + pathname);
+            statsConsoleInfo("Index.JS", pathname);
             return true;
         }
     }
     else if (strict === false) {
         var lowerCasePath = path.toLowerCase();
         if (pathname.startsWith(lowerCasePath.toLowerCase())) {
-            console.info("Finding : " + lowerCasePath + "/...");
+            console.log("Finding : " + lowerCasePath + "/...");
             return true;
         }
     }
@@ -214,6 +216,6 @@ async function devFooter() {
 }
 
 async function devTest() {
-    console.info("Dev mode ON : " + window.location.hostname);
+    console.log("Dev mode ON : " + window.location.hostname);
     //Test module ⏬
 }

@@ -1,6 +1,6 @@
 var time;
 function startTime(name) {
-    console.info("start timer for " + name);
+    console.log("start timer for " + name);
     console.time(name);
 
     time = window.performance.now();
@@ -11,7 +11,7 @@ function stopTime(name) {
 
     var end = window.performance.now();
     var timing = end - time;
-    console.info("stop timer for " + name + "\nended in " + timing);
+    console.log("stop timer for " + name + "\nended in " + timing);
 }
 
 startTime("load");

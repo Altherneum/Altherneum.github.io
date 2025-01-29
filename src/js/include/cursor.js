@@ -1,6 +1,6 @@
 var cursor
 //Cursor trigger often on header / Content wrapper (middle part of screen)
-console.info("Loading cursor");
+console.log("Loading cursor");
 getCursorSetting();
 
 function getCursorSetting() {

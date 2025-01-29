@@ -3,9 +3,9 @@ var isAutoScrollLoaded = false;
 var anchorList;
 
 async function addMarkdown(repo, file, gist) {
-    console.info("Loading markdown CSS");
+    console.log("Loading markdown CSS");
     await include_css("/src/css/markdown.css");
-    console.info("Loading .md");
+    console.log("Loading .md");
 
     if (isAutoScrollLoaded === false) {
         await include_script("/src/js/content/auto-scroll.js");
@@ -30,7 +30,7 @@ async function addMarkdown(repo, file, gist) {
     setAnchorTitles(anchorList, content);
 
     autoScroll(true);
-    console.info("Fin markdown");
+    console.log("Fin markdown");
 }
 
 function setMarkdownHolder() {
@@ -54,7 +54,7 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
 }
 
 const parseMarkdown = (text) => {
-    console.info("Loading markdown parser");
+    console.log("Loading markdown parser");
     const toHTML = text
         .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
         .replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
@@ -99,7 +99,7 @@ const parseMarkdown = (text) => {
         .replace(/[\n]{1,}/g, "<br>") //new line
 
         .trim();
-    console.info("Loading return markdown trim");
+    console.log("Loading return markdown trim");
     return toHTML.trim();
 }
 
@@ -301,7 +301,7 @@ function anchorHolder(user, holder) {
 }
 
 async function getMarkdown(url) {
-    console.info("Loading download markdown");
+    console.log("Loading download markdown");
     var data = (await fetch(url)).text();
     return data;
 }

@@ -14,7 +14,7 @@ var videolinks = [
     },
     {
         videoID: "bVmukCdg7SQ",
-        categorie: "IT",
+        categorie: "Linux",
         short: true,
     },
     {
@@ -53,7 +53,7 @@ var videolinks = [
     },
     {
         videoID: "mVKAyw0xqxw",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "RhfM24skj34",
@@ -61,7 +61,7 @@ var videolinks = [
     },
     {
         videoID: "vNxl7L3Zuck",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "WLJGZlt5y2E",
@@ -77,7 +77,7 @@ var videolinks = [
     },
     {
         videoID: "KdoaiGTIBY4",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "XTcP4oo4JI4",
@@ -85,7 +85,7 @@ var videolinks = [
     },
     {
         videoID: "LKCVKw9CzFo",
-        categorie: "IT",
+        categorie: "Linux",
     },
     {
         videoID: "JdxfhMbSwL0",
@@ -140,7 +140,7 @@ var videolinks = [
     },
     {
         videoID: "PLp31D6HATKfeEHEFqFo5hlCOYwHi4Sl9O",
-        categorie: "IT",
+        categorie: "Linux",
         playlist: true,
     },
     {
@@ -168,7 +168,7 @@ var videolinks = [
     },
     {
         videoID: "lXuKTSU2XBY",
-        categorie: "IT",
+        categorie: "Linux",
         short: true,
     },
     {
@@ -234,8 +234,63 @@ var videolinks = [
         videoID: "Nz1BVWjTfb8",
         categorie: "IT",
     },
+    {
+        videoID: "SRsILJ6q1qQ",
+        categorie: "hack",
+    },
+    {
+        videoID: "7YM2EKc0Tk4",
+        categorie: "Linux",
+        short: true,
+    },
+    {
+        videoID: "PL5e6ZkQmSoKeA-KmjgHVOTtYZFH7XIfeM",
+        playlist: true,
+        categorie: "humour",
+    },
+    {
+        videoID: "2i3sGc4l1zc",
+        categorie: "linux",
+    },
+    {
+        videoID: "yal2V4pu-ks",
+        categorie: "IT",
+    }
 ];
 
-const videoTypes = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour"];
 
-GetVideos(videolinks);
+function getVideoListType(){
+    return VideoListType;
+}
+
+function GetVideoList(){
+    return videolinks;
+}
+
+function getEmoji(VideoListType){
+    switch (VideoListType) {
+        case 'hack':
+            return "💀";
+        case 'IT':
+            return "💻";
+        case 'discord':
+            return "📞";
+        case 'code':
+            return "💾";
+        case 'malware':
+            return "🦠";
+        case 'game':
+            return "🕹";
+        case 'science':
+            return "🔬";
+        case 'DeepWeb':
+            return "🕸️";
+        case 'Linux':
+            return "🐧";
+        case 'humour':
+            return "🤣";
+        default:
+            return "X";
+      }
+}

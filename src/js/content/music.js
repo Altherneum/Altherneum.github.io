@@ -1,4 +1,4 @@
-var musiclinks = [
+var videolinks = [
     {
         videoID: "1_Ncsri_quY",
         categorie: "phonk",
@@ -1161,8 +1161,69 @@ var musiclinks = [
         videoID: "BhpCyHHlIDo",
         categorie: "phonk",
     },
+    {
+        videoID: "tm9GpM3lV3s",
+        categorie: "phonk",
+    },
+    {
+        videoID: "EtbKfGSn3rM",
+        categorie: "phonk",
+    },
+    {
+        videoID: "o4yCEc5AgUY",
+        categorie: "rap",
+    },
+    {
+        videoID: "NLPyySN9Czw",
+        categorie: "rock",
+    },
 ];
 
+<<<<<<< HEAD
 const musicTypes = ["top", "all", "playlist", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "playing"];
+=======
+/*
+    ,
+    {
+        videoID: "",
+        text: "",
+        categorie: "",
+        top: true,
+    }
+*/
 
-GetVideos(musiclinks);
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock"];
+>>>>>>> 3a8f0dca7304ac4826db3df65eb45331ec8b0c05
+
+function getVideoListType(){
+    return VideoListType;
+}
+
+function GetVideoList(){
+    return videolinks;
+}
+
+function getEmoji(VideoListType){
+    switch (VideoListType) {
+        case 'rain':
+            return "☔";
+        case 'chill':
+            return "☕";
+        case 'chilljp':
+            return "🀄";
+        case 'classic':
+            return "🎹";
+        case 'histoire':
+            return "🌌";
+        case 'phonk':
+            return "🔥";
+        case 'rap':
+            return "🐀";
+        case 'trool':
+            return "💩";
+        case 'rock':
+            return "🎸";
+        default:
+            return "X";
+      }
+}

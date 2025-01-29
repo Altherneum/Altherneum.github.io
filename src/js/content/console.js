@@ -25,7 +25,7 @@ xoxoxo
 addText(input);
 
 async function addText(text) {
-    console.info("Loading console text adder");
+    console.log("Loading console text adder");
     var console_text = document.getElementById("console-body-text");
     for (char in text) {
         console_text.innerHTML += text[char];

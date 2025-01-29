@@ -1,4 +1,4 @@
-console.info("Loading RSS");
+console.log("Loading RSS");
 
 function addLeadingZero(num) {
   num = num.toString();
@@ -153,6 +153,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "MàJ des embed YouTube",
+    link: "https://doc.altherneum.fr/admin/video",
+    description: "Plus rapide, puissant, gère les short, etc ...",
+    publicationDate: buildRFC822Date("2025-01-23T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image
@@ -175,7 +183,7 @@ const channelFeed = feedItems?.map((node) => {
     link = baseUrl + "/" + node.link;
   }
   
-  console.info("RSS feed : " + link)
+  console.log("RSS feed : " + link)
   const meta = node.meta || {}
   const title = node.title
   const description = node.description

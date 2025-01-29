@@ -18,6 +18,12 @@ const links = [
         svg: "/assets/svg/telephone.svg",
     },
     {
+        href: "/discord/api",
+        tag: ".gg Discord Outils",
+        text: "Salon vocal invité Discord",
+        svg: "/assets/svg/telephone.svg",
+    },
+    {
         href: "https://Altherneum.fr",
         tag: "URL",
         text: "Serveur Minecraft",
@@ -755,6 +761,54 @@ const links = [
         tag: "URL OpSec Outils",
         text: "have i been pwned?",
     },
+    {
+        href: "https://openjdk.org/",
+        svg: "/assets/svg/languages/java.svg",
+        tag: "URL Outils OS Développement",
+        text: "openjdk.org",
+    },
+    {
+        href: "https://learn.microsoft.com/fr-fr/java/",
+        svg: "/assets/svg/languages/java.svg",
+        tag: "URL Outils OS Développement",
+        text: "learn.microsoft.com /java",
+    },
+    {
+        href: "https://learn.microsoft.com/fr-fr/java/openjdk",
+        svg: "/assets/svg/languages/java.svg",
+        tag: "URL Outils OS Développement",
+        text: "learn.microsoft.com /java /openjdk",
+    },
+    {
+        href: "https://portswigger.net/burp",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "Burp Suite",
+    },
+    {
+        href: "https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "Download Burp Suite",
+    },
+    {
+        href: "https://portswigger.net/burp/vulnerability-scanner",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "Burp Suite vulnerability scanner",
+    },
+    {
+        href: "https://github.com/centreon/centreon",
+        svg: "/assets/svg/trademark/github.svg",
+        tag: "Repo Github OS URL",
+        text: "Repo Github Centreon",
+    },
+    {
+        href: "https://www.centreon.com/",
+        svg: "/assets/svg/link.svg",
+        tag: "URL Outils OS Web",
+        text: "Centreon.com",
+    },
 ];
 
 /*
@@ -767,7 +821,7 @@ const links = [
     },
 */
 
-var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin"];
+var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement"];
 
 function getTagList(maxSize){
     var tagListReturned = [];

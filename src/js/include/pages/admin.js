@@ -35,6 +35,7 @@ async function CheckPage() {
         await include_html("/src/html/content/video.html", "contentArticle", true);
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/music.js");
+        GetVideos(GetVideoList(), getVideoListType());
         await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
     }
         
@@ -42,10 +43,10 @@ async function CheckPage() {
         await includes();
 
         await include_css("/src/css/youtubeEmbed.css");
-        await include_css("/src/css/video.css");
         await include_html("/src/html/content/video.html", "contentArticle", true);
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/video.js");
+        GetVideos(GetVideoList(), getVideoListType());
         await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
     }
 
@@ -54,6 +55,7 @@ async function CheckPage() {
 
         await include_css("/src/css/contact.css");
         await include_html("/src/html/content/contact.html", "contentArticle", true);
+        await include_script("/src/js/content/contact.js");
     }
 
     else if (pathNameMatchPage("/admin/donation", true)) {

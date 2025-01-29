@@ -70,6 +70,11 @@ async function CheckPage() {
         await include_html("/src/html/content/noise.html", "contentArticle", true);
     }
 
+    else if (pathNameMatchPage("/outils/rsa", true)) {
+        await includes();
+        await include_script("/src/js/content/rsa.js");
+    }
+
     else {
         return false;
     }
