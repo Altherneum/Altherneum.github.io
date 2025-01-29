@@ -49,9 +49,9 @@ function checkIfInputMatchLink(query) {
     var counter = 0;
 
     for (link in links) {
-        var linkText = links[link].text.toLowerCase();
-        var linkHref = links[link].href.replace(".html", "").toLowerCase();
-        var linkTag = links[link].tag.toLowerCase();
+        var linkText = links[link].text;
+        var linkHref = links[link].href.replace(".html", "");
+        var linkTag = links[link].tag;
         var linkSVG = links[link].svg;
 
         var lowerCaseQuery;
@@ -62,8 +62,7 @@ function checkIfInputMatchLink(query) {
 
             lowerCaseQuery = queryListed[singleQuery].toLowerCase();
 
-            if (linkText.includes(lowerCaseQuery) || linkHref.includes(lowerCaseQuery) || linkTag.includes(lowerCaseQuery)) {
-                //console.log(lowerCaseQuery + " : " + linkText + " : " + linkHref + " : " + linkTag);
+            if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHref.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery)) {
             }
             else {
                 matchAll = false;

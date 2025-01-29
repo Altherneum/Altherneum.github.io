@@ -799,7 +799,7 @@ const links = [
     },
     {
         href: "https://github.com/centreon/centreon",
-        svg: "/assets/svg/trademark/github.svg",
+        svg: "/assets/svg/trademark/repo.svg",
         tag: "Repo Github OS URL",
         text: "Repo Github Centreon",
     },

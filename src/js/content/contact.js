@@ -5,7 +5,7 @@ async function setContactNameRandom(){
     var name = "";
 
     for(var i = 0; i <= length; i++){
-        var x = getRandomInt(32, 255);
+        var x = getRandomInt(32, 1024);
 
         var y = intToChar(x);
         name += y;
@@ -22,21 +22,25 @@ function swapNameLetter(){
     var charToSwap = getRandomInt(0, textLength+1);
     var textContent = text.textContent;
 
-    var newLetterValue = getRandomInt(32, 255);
+    var newLetterValue = getRandomInt(32, 1024);
     var newLetter = intToChar(newLetterValue);
 
-    text.textContent = replaceChar(textContent, newLetter, charToSwap);
-console.log(text.textContent.length);
+    text.textContent = replaceCharWith(textContent, newLetter, charToSwap);
 }
 
-//this function has an issue and randomly add new char or remove some
-function replaceChar(origString, replaceChar, index) {
-    let firstPart = origString.substr(0, index);
-    let lastPart = origString.substr(index + 1, origString.length);
-      
-    let newString = firstPart + replaceChar + lastPart;
-    return newString;
+function replaceCharWith(textContent, newLetter, charToSwap) {
+    var length = textContent.length;
+    var text = "";
+    for (var i = 0; i < length; i++){
+        if (i === charToSwap) {
+            text += newLetter;
+        }
+        else {
+            text += textContent[i];
+        }
+    }
+    return text;
 }
 
 setContactNameRandom();
-setInterval(swapNameLetter, 50);
+setInterval(swapNameLetter, 150);
