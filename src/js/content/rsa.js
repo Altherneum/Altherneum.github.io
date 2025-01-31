@@ -1,14 +1,16 @@
 var privateKey;
 var publicKey;
 
-function getRandomKey(maxBits){
+async function getRandomKey(maxBits){
     var value = 1;
+    console.log("Starting generation of random prime number");
     while(!isPrime(value)){
-        value = Math.floor(Math.random() * bitsToInt(maxBits));
-        console.log("trying random key : " + value);
+        value = getRandomNumber(maxBits);
     }
-    console.log(value + " is prime");
     return value;
+}
+function getRandomNumber(maxBits) {
+    return Math.floor(Math.random() * bitsToInt(maxBits));
 }
 
 function intToBits(value){
@@ -19,9 +21,9 @@ function bitsToInt(maxBits){
     return Math.pow(2, maxBits)-1;
 }
 
-function isPrime(value){
+function isPrime(value) {
     if (value > 1) {
-        for (let i = 2; i <= value/2; i++) {
+        for (let i = 2; i <= value / 2; i++) {
             if (value % i == 0) {
                 return false;
             }
@@ -31,19 +33,26 @@ function isPrime(value){
     else{ return false; }
 }
 
-function getCoprime(prime, maxBits){
-    var value = prime;
-    while(value == prime && gcd(value, prime) != 1){
+async function getCoprime(prime, maxBits) {
+    console.log("getting coprime");
+    var value = getRandomKey(maxBits);
+    while (!IsFactorOf(prime, value) || value > prime) {
         value = getRandomKey(maxBits);
+    } return value;
+}
+
+function IsFactorOf(prime, value) {
+    if (prime % value == 0) {
+        return false;
     }
-    return value;
+    return true;
 }
 
 function gcd(a, b) {
     if (!b) {
       return a;
     }
-  
+
     return gcd(b, a % b);
 }
 
@@ -59,53 +68,95 @@ function modInverse(value, modulo) {
     }
 }
  
-function RSA(maxBits){
-    var p = getRandomKey(maxBits);
-    console.log("p = " + p);
-    
-    var q = getRandomKey(maxBits);
-    console.log("q = " + q);
+async function RSA(maxBits) {
+    console.log("starting RSA keyGen");
 
-    var n = p*q;
-    console.log("n = " + n);
+    var p = await getRandomKey(maxBits);
+    console.log("p = " + p);
+
+    var q = await getRandomKey(maxBits);
+    console.log("q = " + q);    
+
+    var n = p * q;
+    console.log("n = " + p + "x" + q + " = " + n);
 
     var phi = (p-1) * (q-1);
     console.log("phi = " + phi);
 
-    var e = getCoprime(phi, maxBits);
+    var e = await getCoprime(phi, maxBits);
     console.log("coprime e = " + e);
-    var d = modInverse(e, phi);
+
+    //var d = modInverse(e, phi); // seem not OK
+    var d = await getPrivateKey(e, phi, maxBits);
     console.log("modInverse d = " + d);
 
     privateKey = {n,d};
-    publicKey = {n, e};
+    publicKey = { n, e };     
 }
 
-function encrypt(value){
+async function getPrivateKey(e, phi, maxBits) {
+    var value = 2;
+    while (!isPrivateKeyOK(e, phi, value)) {
+        value += 1;
+    }
+    return value;
+}
+
+function isPrivateKeyOK(e, phi, value) {
+    if ((value * e) % phi === 1) {
+        return true;
+    }
+    return false;
+}
+
+function encrypt(value, maxBits){
     if (value < 0 || value >= publicKey.n) {
-        throw new Error(`Condition 0 <= m < n not met. m = ${value}`);
+        console.error(`Condition 0 <= m < n not met. m = ${value}`);
+        RSA(maxBits); encrypt(value);
     }
     
     if (gcd(value, publicKey.n) !== 1) {
-        throw new Error("Condition gcd(value, n) = 1 not met.");
+        console.error("Condition gcd(value, n) = 1 not met.");
+        RSA(maxBits); encrypt(value);
     }
 
-    var x = Math.exp(value, publicKey.e) % publicKey.n;
-    console.log("x = " + x);
+    //var x = Math.pow(BigInt(value), BigInt(publicKey.e)) % BigInt(publicKey.n);
+    var x = Number(BigInt(value) ** BigInt(publicKey.e) % BigInt(publicKey.n));
+    
+    //BigInt(60n ** 41n % 133n) = 72n // is OK
+
     return x;
-    // value ** e % n
+    // value ** publicKey.e % publicKey.n
 }
 
 function decrypt(value){
-    var x = Math.exp(value, privateKey.d) % privateKey.n;
-    console.log("x = " + x);
+    var x = Number(BigInt(value) ** BigInt(privateKey.d) % BigInt(privateKey.n));
     return x;
-    //value ** d % n
+    //value ** privateKey.d % privateKey.n
 }
 
+async function test() {
+    console.log("STARTING RSA TEST");
+    
+    var valueToCrypt = 6;
+    var maxBits = 6;
 
-RSA(8);
-var x1 = Math.round(encrypt(17));
-console.log(x1);
-var x2 = Math.round(decrypt(x1));
-console.log(x2);
+    await RSA(maxBits);
+
+    console.log("value to crypt ; " + valueToCrypt);
+    
+    var x1 = Math.round(encrypt(valueToCrypt, maxBits));
+    console.log("---------------------- crypt  "+x1);
+    var x2 = Math.round(decrypt(x1));
+    console.log("---------------------- decrypt  " + x2);
+    
+    if (valueToCrypt === x2)
+    {
+        console.log("OK result");
+    }
+    else {
+        console.log("Result NOK");
+    }
+}
+
+test(); 
