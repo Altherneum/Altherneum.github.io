@@ -1,22 +1,29 @@
 // https://developers.google.com/youtube/player_parameters?hl=fr#listType
 var total = 0;
 
+var shown = "all";
 function show(name) {
+    shown = name;
     var rootElement = document.getElementById("videoholder");
     var rootChilds = rootElement.children;
-    console.log(rootChilds);
     for(children in rootChilds){
         var child = rootChilds[children];
-        if(child.classList.contains(name)){
-            if(child.style.display === "none" || child.style.display === undefined){
-                child.style.display = "inline-block";
+        showOrHideSong(shown, child);
+    }
+}
+
+function showOrHideSong(name, element) {
+    if (element != undefined && element.classList != undefined){
+        if (element.classList.contains(name)) {
+            if (element.style.display === "none" || element.style.display === undefined) {
+                element.style.display = "inline-block";
             }
         }
-        else if(name === "all"){
-            child.style.display = "inline-block";
+        else if (name === "all") {
+            element.style.display = "inline-block";
         }
-        else{
-            child.style.display = "none";
+        else {
+            element.style.display = "none";
         }
     }
 }
@@ -89,80 +96,96 @@ function addButtons(Types){
 }
 
 async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short) {
-    try { 
-    await fetch(fetchUrl).then(response => response.json().then(data => {
-        JSONdata = data
+    try {        
+        var response = await fetch(fetchUrl);
+        var status = response.status;
+        if (status === 200) {
+            var jsonResponse = await response.json();
+            JSONdata = jsonResponse;
 
-        var title = JSONdata.title;
-        var length = 75;
-        var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
+            var title = JSONdata.title;
+            var length = 75;
+            var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
 
-        var thumbnail = JSONdata.thumbnail_url;
+            var thumbnail = JSONdata.thumbnail_url;
 
-        var videoholder = document.getElementById("videoholder");
+            var videoholder = document.getElementById("videoholder");
 
-        var div_card = document.createElement("div");
-        var classname = "";
-        if (top) {
-            classname += "top ";
-        }
-        if (playlist) {
-            classname += "playlist ";
-        }
-        classname += "card " + categorie;
-        div_card.className = classname;
+            var div_card = document.createElement("div");
+            var classname = "";
+            if (top) {
+                classname += "top ";
+            }
+            if (playlist) {
+                classname += "playlist ";
+            }
+            classname += "card " + categorie;
+            div_card.className = classname;
+            showOrHideSong(shown, div_card);
 
-        var anchor = document.createElement("a");
-        anchor.href = "#yt-" + videoID;
-        anchor.id = "yt-" + videoID;
-        div_card.appendChild(anchor);
-        setScrollBehavior(anchor);
+            var anchor = document.createElement("a");
+            anchor.href = "#yt-" + videoID;
+            anchor.id = "yt-" + videoID;
+            div_card.appendChild(anchor);
+            setScrollBehavior(anchor);
 
-        var imageTop = document.createElement("img");
-        imageTop.src = "/assets/svg/link.svg";
-        imageTop.className = "topimg svg";
-        anchor.appendChild(imageTop);
-
-        if (top) {
             var imageTop = document.createElement("img");
-            imageTop.src = "/assets/svg/star.svg";
+            imageTop.src = "/assets/svg/link.svg";
             imageTop.className = "topimg svg";
-            div_card.appendChild(imageTop);
+            anchor.appendChild(imageTop);
+
+            if (top) {
+                var imageTop = document.createElement("img");
+                imageTop.src = "/assets/svg/star.svg";
+                imageTop.className = "topimg svg";
+                div_card.appendChild(imageTop);
+            }
+            if (playlist) {
+                var imageTop = document.createElement("img");
+                imageTop.src = "/assets/svg/playlist.svg";
+                imageTop.className = "playlistimg svg";
+                div_card.appendChild(imageTop);
+            }
+
+            var video_title = document.createElement("h1");
+            video_title.textContent = title;
+            div_card.appendChild(video_title);
+
+            var video_subtext = document.createElement("p");
+            video_subtext.innerHTML = text;
+            div_card.appendChild(video_subtext);
+
+            var video_div = document.createElement("div");
+            div_card.appendChild(video_div);
+
+            var video_image = document.createElement("img");
+            video_image.src = thumbnail;
+            video_image.loading = "lazy";
+            video_div.appendChild(video_image);
+
+            var video_button = document.createElement("button");
+            video_button.dataset.youtubeButton = videoID;
+            video_button.dataset.youtubePlayList = playlist;
+            video_button.dataset.youtubeShort = short;
+
+            video_button.setAttribute("onclick", "createIframe(this)");
+
+            video_div.appendChild(video_button);
+
+            videoholder.appendChild(div_card);
         }
-        if (playlist) {
-            var imageTop = document.createElement("img");
-            imageTop.src = "/assets/svg/playlist.svg";
-            imageTop.className = "playlistimg svg";
-            div_card.appendChild(imageTop);
+        else if (status === 404) {
+            console.warn("erreur (-------------------------------")
+            var jsonResponse = null;
         }
-
-        var video_title = document.createElement("h1");
-        video_title.textContent = title;
-        div_card.appendChild(video_title);
-
-        var video_subtext = document.createElement("p");
-        video_subtext.innerHTML = text;
-        div_card.appendChild(video_subtext);
-
-        var video_div = document.createElement("div");
-        div_card.appendChild(video_div);
-
-        var video_image = document.createElement("img");
-        video_image.src = thumbnail;
-        video_image.loading = "lazy";
-        video_div.appendChild(video_image);
-
-        var video_button = document.createElement("button");
-        video_button.dataset.youtubeButton = videoID;
-        video_button.dataset.youtubePlayList = playlist;
-        video_button.dataset.youtubeShort = short;
-
-        video_button.setAttribute("onclick", "createIframe(this)");
-
-        video_div.appendChild(video_button);
-
-        videoholder.appendChild(div_card);
-    }));
+        else if (status === 403) {
+            console.warn("erreur (-------------------------------")
+            var jsonResponse = undefined;
+        }
+        else {
+            console.warn("erreur (-------------------------------")
+            var jsonResponse = null;
+        }
     } catch (error) {
         console.error(error + "\n" + videoID);
     }
