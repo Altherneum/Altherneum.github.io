@@ -255,6 +255,18 @@ var videolinks = [
     {
         videoID: "yal2V4pu-ks",
         categorie: "IT",
+    },
+    {
+        videoID: "r4caY9qdRF0",
+        categorie: "game",
+    },
+    {
+        videoID: "mh_o9pWmWOQ",
+        categorie: "game",
+    },
+    {
+        videoID: "VUMUgL_nh-g",
+        categorie: "game",
     }
 ];
 
