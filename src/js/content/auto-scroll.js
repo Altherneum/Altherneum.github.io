@@ -22,7 +22,7 @@ function DoScrollIntoView(element, once) {
             return;
         }
         else {
-            element.scrollIntoView({ behavior: "smooth" });
+            element.scrollIntoView({ behavior: "smooth", block: "center", inline: 'center' });
             onceIsDone = true;
         }
     }
