@@ -26,7 +26,7 @@ async function includes() {
     if (localStorage.getItem('OldSearchBar') === "false" || localStorage.getItem('OldSearchBar') === null
         || localStorage.getItem('AllSearchBar') !== "false") {
         await include_css("/src/css/searchbar.css");
-        await include_html("/src/html/include/searchbar.html", "navlinklist", true);
+        await include_html("/src/html/include/searchbar.html", "NavBarHolder", true);
         await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
     }
@@ -34,7 +34,7 @@ async function includes() {
     await include_html("/src/html/include/scrollPercentage.html", "body", false);
     await include_script("/src/js/include/scrollPercentage.js");
 
-    await include_html("/src/html/include/contentTopModule.html", "navlinklist", true)
+    await include_html("/src/html/include/contentTopModule.html", "NavTopModuleHolder", true)
     await include_html("/src/html/include/content.html", "body", false);
 
     await include_html("/src/html/include/anchor.html", "content-right", true);
