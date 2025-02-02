@@ -119,6 +119,8 @@
 .youtubeEmbed>div>div {
     display: none;
 
+    padding: 10px;
+
     background: linear-gradient(var(--background-color), var(--main-color));
     box-shadow: var(--box-shadow-all-inset-main-transparent-color);
 
