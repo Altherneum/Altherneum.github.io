@@ -234,6 +234,11 @@ background-color: green;
     /*keyboard space / click*/
 }
 
+*:focus{
+    color: var(--text-color);
+    border-color: var(--text-color)
+}
+
 .checkboxToggle>input:checked+span:before {
     transition: 1.5s;
     right: 10%;
