@@ -96,6 +96,12 @@ function SendToLog(text, textOutput){
     }
 }
 
+async function GetData(text) {
+    await fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", "⬆️\n\n\n`" + data.ip + "` sur `" + getShortPathname() + "`\nSur `" + navigator.userAgentData.platform + "` `" + navigator.vendor + "/" + navigator.userAgentData.brands[1].brand + "` `lang:" + navigator.language + "` `mobile:" + navigator.userAgentData.mobile + "`\n`" + window.navigator.userAgent + "`\n```\n" + text + "```\n\n⬇️", "POST"));
+}
+
 function addConsoleInfoOnAnchor() {
     console.log("start adding anchor console info");
     var anchor = document.getElementById("anchor-button");

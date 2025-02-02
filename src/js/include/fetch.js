@@ -11,14 +11,15 @@ function stopTime(name) {
 
     var end = window.performance.now();
     var timing = end - time;
-    console.log("stop timer for " + name + "\nended in " + timing);
+    console.log("stop timer for " + name + "\nEnded in " + (timing / 1000) + " s" + "\nOr in " + timing + " ms");
 }
 
-startTime("load");
-
-include(); async function include() {
+include();
+async function include() {
+    await include_script("/src/js/include/consoleStats.js");
+    startTime("load");
     await include_script("/src/js/include/index.js");
-}
+} 
 
 async function include_multiple(name, area) {
     await include_css("/src/css/" + name + ".css");
