@@ -275,13 +275,13 @@ var videolinks = [
         categorie: "chill",
     },
     {
-        text: "<a href='https://youtube.com/watch?v=DyDfgMOUjCI'>Original</a>",
+        text: "<a href='#yt-DyDfgMOUjCI'>Original</a>",
         videoID: "3Z4efCGd7TE",
         top: true,
         categorie: "chill",
     },
     {
-        text: "<a href='https://youtube.com/watch?v=Y2V6yjjPbX0'>Original</a>",
+        text: "<a href='#yt-Y2V6yjjPbX0'>Original</a>",
         videoID: "fktD1q8OPa0",
         top: true,
         categorie: "chill",
@@ -912,7 +912,7 @@ var videolinks = [
     },
     {
         videoID: "F2xnvyMp8Us",
-        text: "<a href='https://youtube.com/watch?v=DF3XjEhJ40Y'>Original</a>",
+        text: "<a href='#yt-DF3XjEhJ40Y'>Original</a>",
         top: true,
         categorie: "chill",
     },
