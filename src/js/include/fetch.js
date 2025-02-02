@@ -16,7 +16,7 @@ function stopTime(name) {
 
 include();
 async function include() {
-    await include_script("/src/js/include/consoleStats.js");
+    await include_script("/src/js/include/consoleStats.js"); await loadFiles();
     startTime("load");
     await include_script("/src/js/include/index.js");
 } 

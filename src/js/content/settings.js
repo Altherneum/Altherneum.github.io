@@ -45,8 +45,12 @@ function SwitchWarningLogging() {
     Switcher("WarningLogging");
 }
 
-function SwitcAllLogs() {
+function SwitchAllLogs() {
     Switcher("AllLogs");
+}
+
+function SwitchVisitedLogs() {
+    Switcher("VisitedLogs");
 }
 
 function Switcher(name) {
@@ -76,9 +80,10 @@ function loadSettingsSwitch() {
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", true);
-    setSwitch("OldSearchBar", false);
+    setSwitch("OldSearchBar", true);
     setSwitch("AllSearchBar", true);
     setSwitch("WarningLogging", true);
     setSwitch("ErrorLogging", true);
     setSwitch("AllLogs", false);
+    setSwitch("VisitedLogs", true);
 }
