@@ -12,13 +12,13 @@ const links = [
         svg: "/assets/svg/telephone.svg",
     },
     {
-        href: "/discord/tempvoc",
+        href: "/discord/tempvoc.html",
         tag: ".gg URL Discord",
         text: "Salon vocal invité Discord",
         svg: "/assets/svg/telephone.svg",
     },
     {
-        href: "/discord/api",
+        href: "/discord/api.html",
         tag: ".gg Discord Outils",
         text: "API Discord",
         svg: "/assets/svg/telephone.svg",
