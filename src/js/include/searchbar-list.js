@@ -809,6 +809,12 @@ const links = [
         tag: "URL Outils OS Web",
         text: "Centreon.com",
     },
+    {
+        href: "https://dotnet.microsoft.com/download/dotnet/",
+        text: "DotNet Download",
+        tag: "URL OS Windows",
+        svg: "/assets/svg/link.svg",
+    },
 ];
 
 /*
