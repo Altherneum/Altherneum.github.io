@@ -126,8 +126,8 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var anchor = document.createElement("a");
             anchor.href = "#" + videoID;
             anchor.id = videoID;
-            div_card.appendChild(anchor);
             setScrollBehavior(anchor);
+            div_card.appendChild(anchor);
 
             var imageTop = document.createElement("img");
             imageTop.src = "/assets/svg/link.svg";
