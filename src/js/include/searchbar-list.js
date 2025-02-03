@@ -20,8 +20,14 @@ const links = [
     {
         href: "/discord/api",
         tag: ".gg Discord Outils",
-        text: "Salon vocal invité Discord",
+        text: "API Discord",
         svg: "/assets/svg/telephone.svg",
+    },
+    {
+        href: "/discord/login.html",
+        tag: ".gg Discord Outils",
+        text: "Exemple d'API Discord login",
+        svg: "/assets/svg/trademark/discord.svg",
     },
     {
         href: "https://Altherneum.fr",
@@ -124,12 +130,6 @@ const links = [
         tag: "Outils",
         text: "Console",
         svg: "/assets/svg/console.svg",
-    },
-    {
-        href: "/discord/login.html",
-        tag: ".gg Discord Outils",
-        text: "Exemple d'API Discord login",
-        svg: "/assets/svg/trademark/discord.svg",
     },
     {
         href: "/outils/rss.html",
