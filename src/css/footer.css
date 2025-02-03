@@ -34,6 +34,7 @@ footer>*{
     flex-direction: row;
 }
 
-footer>nav>a>img.svg {
-    transform: translateY(35%);
+footer>nav>a {
+    padding: 8px;
+    transform: translateY(20%);
 }
