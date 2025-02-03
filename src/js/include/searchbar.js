@@ -50,7 +50,8 @@ function checkIfInputMatchLink(query) {
 
     for (link in links) {
         var linkText = links[link].text;
-        var linkHref = links[link].href.replace(".html", "");
+        var linkHref = links[link].href;
+        var linkHrefTrim = links[link].href.replace(".html", "");
         var linkTag = links[link].tag;
         var linkSVG = links[link].svg;
 
@@ -62,7 +63,7 @@ function checkIfInputMatchLink(query) {
 
             lowerCaseQuery = queryListed[singleQuery].toLowerCase();
 
-            if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHref.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery)) {
+            if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery)) {
             }
             else {
                 matchAll = false;
@@ -71,7 +72,17 @@ function checkIfInputMatchLink(query) {
         }
 
         if (matchAll) {
-            result[counter] = { "href": linkHref, "svg": linkSVG, "tag": linkTag, "text": linkText };
+            //if devmode linkHref
+            //else trimed
+            var linkToUse = "";
+            if (devMode()) {
+                linkToUse = linkHref;
+            }
+            else {
+                linkToUse = linkHrefTrim
+            }
+
+            result[counter] = { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText };
             counter++;
         }
         else {

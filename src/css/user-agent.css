@@ -236,6 +236,9 @@ background-color: green;
 
 *:focus{
     color: var(--text-color);
+    
+    border-style: solid;
+    border-width: 2px;
     border-color: var(--text-color)
 }
 
