@@ -23,6 +23,7 @@ function DoScrollIntoView(element, once) {
         }
         else {
             element.scrollIntoView({ behavior: "smooth", block: "start" });
+            // no browser good support yet : // element.focus({ focusVisible: true });
             element.focus();
             onceIsDone = true;
         }
