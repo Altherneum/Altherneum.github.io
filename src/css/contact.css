@@ -6,6 +6,9 @@
 }
 
 .contact>h1{
+    padding-top: 50px;
+    padding-bottom: 25px;
+
     max-width: 90vw;
     font-size: 7.5vw;
     font-weight: bolder;
