@@ -124,8 +124,8 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             showOrHideSong(shown, div_card);
 
             var anchor = document.createElement("a");
-            anchor.href = "#yt-" + videoID;
-            anchor.id = "yt-" + videoID;
+            anchor.href = "#" + videoID;
+            anchor.id = videoID;
             div_card.appendChild(anchor);
             setScrollBehavior(anchor);
 
