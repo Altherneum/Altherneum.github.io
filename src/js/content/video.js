@@ -268,9 +268,17 @@ var videolinks = [
         videoID: "Xc6G3oV24yE",
         categorie: "code",
     },
+    {
+        videoID: "kopoLzvh5jY",
+        categorie: "IA",
+    },
+    {
+        videoID: "Lu56xVlZ40M",
+        categorie: "IA",
+    },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA"];
 
 function getVideoListType(){
     return VideoListType;
@@ -302,6 +310,8 @@ function getEmoji(VideoListType){
             return "🐧";
         case 'humour':
             return "🤣";
+        case 'IA':
+            return "🤖";
         default:
             return "X";
       }
