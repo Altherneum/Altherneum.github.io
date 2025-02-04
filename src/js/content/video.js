@@ -10,7 +10,7 @@ var videolinks = [
     },
     {
         videoID: "fV-pTu5T59M",
-        categorie: "malware",
+        categorie: "malware game",
     },
     {
         videoID: "bVmukCdg7SQ",
@@ -39,7 +39,7 @@ var videolinks = [
     },
     {
         videoID: "qQcHkMvsQwA",
-        categorie: "game",
+        categorie: "game hack",
     },
     {
         videoID: "0C_0qaT81HE",
@@ -193,7 +193,7 @@ var videolinks = [
     },
     {
         videoID: "2EL2MVgVrso",
-        categorie: "game",
+        categorie: "game IA",
         short: true,
     },
     {
@@ -224,7 +224,7 @@ var videolinks = [
     },
     {
         videoID: "pQCT2ZnpHfY",
-        categorie: "code",
+        categorie: "code hack",
     },
     {
         videoID: "VUMUgL_nh-g",
@@ -258,7 +258,7 @@ var videolinks = [
     },
     {
         videoID: "r4caY9qdRF0",
-        categorie: "game",
+        categorie: "game hack",
     },
     {
         videoID: "mh_o9pWmWOQ",
@@ -276,6 +276,10 @@ var videolinks = [
         videoID: "Lu56xVlZ40M",
         categorie: "IA",
     },
+    {
+        videoID: "NUl6QikjR04",
+        categorie: "IA game",
+    }
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA"];
