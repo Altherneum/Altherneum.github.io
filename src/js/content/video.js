@@ -73,7 +73,7 @@ var videolinks = [
     },
     {
         videoID: "hdHjjBS4cs8",
-        categorie: "code",
+        categorie: "code humour",
     },
     {
         videoID: "KdoaiGTIBY4",
@@ -135,7 +135,7 @@ var videolinks = [
     },
     {
         videoID: "304UONRtVqI",
-        categorie: "IT",
+        categorie: "IT humour",
         short: true,
     },
     {
@@ -178,7 +178,7 @@ var videolinks = [
     },
     {
         videoID: "upXQQaDTuFM",
-        categorie: "IT",
+        categorie: "IT humour",
         short: true,
     },
     {
@@ -203,7 +203,7 @@ var videolinks = [
     },
     {
         videoID: "heBrCo9ondM",
-        categorie: "IT",
+        categorie: "IT humour",
         short: true,
     },
     {
@@ -240,7 +240,7 @@ var videolinks = [
     },
     {
         videoID: "7YM2EKc0Tk4",
-        categorie: "Linux",
+        categorie: "Linux humour",
         short: true,
     },
     {
@@ -279,7 +279,11 @@ var videolinks = [
     {
         videoID: "NUl6QikjR04",
         categorie: "IA game",
-    }
+    },
+    {
+        videoID: "Io-m6KxNEdE",
+        categorie: "IT humour"
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA"];
