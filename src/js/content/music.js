@@ -1220,6 +1220,28 @@ var videolinks = [
     {
         videoID: "6DBA5Wx9T7U",
         categorie: "histoire",
+    },
+    {
+        text: "<a href='#34CZjsEI1yU'>Rock remix</a>",
+        videoID: "ytWz0qVvBZ0",
+        categorie: "trool",
+    },
+    {
+        text: "<a href='#ytWz0qVvBZ0'>Original</a>",
+        videoID: "34CZjsEI1yU",
+        categorie: "rock",
+    },
+    {
+        videoID: "yzC4hFK5P3g",
+        categorie: "chilljp",
+    },
+    {
+        videoID: "xl1B0kNhRy0",
+        categorie: "trool",
+    },
+    {
+        videoID: "CpTLFchI8Zk",
+        categorie: "histoire"
     }
 ];
 
