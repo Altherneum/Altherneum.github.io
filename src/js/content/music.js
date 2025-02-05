@@ -709,12 +709,11 @@ var videolinks = [
         categorie: "trool",
     },
     {
-        text: "ITI - Les Kassos #88",
         videoID: "OAmhM-jWTzg",
         categorie: "trool",
     },
     {
-        text: "Lien : youtube.com/watch?v=tzx8gCkIKkU",
+        text: "<a href='youtube.com/watch?v=tzx8gCkIKkU'>Lien</a>",
         videoID: "lBa_oZU_wao",
         categorie: "trool",
     },
