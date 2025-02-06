@@ -757,7 +757,7 @@ const links = [
     },
     {
         href: "https://haveibeenpwned.com/",
-        svg: "",
+        svg: "/assets/svg/password.svg",
         tag: "URL OpSec Outils",
         text: "have i been pwned?",
     },
