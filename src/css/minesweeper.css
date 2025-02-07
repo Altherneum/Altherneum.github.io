@@ -1,0 +1,29 @@
+#plate>table>caption{
+    font-size: xx-large;
+    color: green;
+}
+
+#plate>* th{
+    color:red;
+}
+
+
+#plate>* td{
+    color: var(--text-color);
+}
+
+#plate th, #plate td{
+    text-align: center;
+    font-size: large;
+    border-style: solid;
+    min-width: 30px;
+    width: 30px;
+    min-height: 30px;
+    height: 30px;
+}
+
+#plate{
+    max-width: 80vw;
+    overflow: auto;
+    max-height: 80vh;
+}
