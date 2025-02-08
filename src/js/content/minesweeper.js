@@ -1,9 +1,10 @@
-var minesAmount = 8;
+var minesAmount = 25;
 var currentMinesAmount = 0;
-var plateSizeRow = 3;
-var plateSizeCol = 3;
+var plateSizeRow = 15;
+var plateSizeCol = 15;
 var plateSize = plateSizeCol * plateSizeRow;
 let plateMines = [];
+var cheat = false;
 
 start();
 function start() {
@@ -48,17 +49,14 @@ function placeMines(){
         while(currentMinesAmount < minesAmount){
             var cellX = getRandomInt(0, plateSizeRow);
             var cellY = getRandomInt(0, plateSizeCol);
-            console.log("Mine to test : " + plateMines[cellX][cellY]);
 
             if (plateMines[cellX][cellY] == 0) {
-                console.log("OK 0")
                 plateMines[cellX][cellY] = 1;
                 currentMinesAmount++;
             }
             else if (plateMines[cellX][cellY] == 1) {
-                console.log("already a mine")
             }
-            else { console.log("erreur"); }
+            else { console.log("erreur placeMine"); }
         }
         platePreGen = true;
     }
@@ -66,6 +64,7 @@ function placeMines(){
 
 function createTable(){
     var table = document.createElement("table");
+    table.addEventListener("contextmenu", e => { e.preventDefault(); });
 
     var caption = document.createElement("caption");
     table.appendChild(caption);
@@ -108,16 +107,12 @@ function createTable(){
         for (y = 0; y < plateSizeCol; y++){
             if(x!=0){
                 var td = document.createElement("td");
-                var cell = plateMines[x - 1][y];
-                if (cell == 0) {
-                    td.textContent = ""
-                }
-                else if (cell == 1) {
-                    td.textContent = "💣"
-                }
-                else{
-                    td.textContent = plateMines[x-1][y];
-                }
+
+                setMineText(x-1, y, td);
+
+                // add click event
+                setMineClick(td);
+
                 tr.appendChild(td);
             }
         }
@@ -150,4 +145,123 @@ function createTable(){
 
     var holder = document.getElementById("plate");
     holder.appendChild(table);
+}
+
+function setMineText(x, y, td) {
+    var cell = plateMines[x][y];
+    if (cell == 0) {
+        td.textContent = " "; //No mine not discovered
+        td.style.background = "var(--main-color)";
+    }
+    else if (cell == 1) {
+        if (!cheat) {
+            td.textContent = " "; //Mine no cheat
+            td.style.background = "var(--main-color)";
+        }
+        else {
+            td.textContent = "💣"; //Mine Cheater
+        }
+    }
+    else if (cell == 2) {
+        td.textContent = "💣"; //Mine visible
+    }
+    else if (cell == 3) {
+        td.textContent = "🚩"; //Nothing under
+    }
+    else if (cell == 4) {
+        td.textContent = "🚩"; //Mine under
+    }
+    else if (cell == 5) {
+        var text = getNearbyBomb(x, y);
+        if (text == 0) {
+            td.textContent = " ";
+        }
+        else { td.textContent = text; }
+        td.style.background = "var(--background-color)";
+    }
+    else if (cell == 6) {
+        td.textContent = "💀"; // Loosed
+    }
+    else {
+        td.textContent = plateMines[x - 1][y];
+    }
+}
+
+function setMineClick(td) {
+    td.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+        var cellPose = getPoseOfCell(this);
+        var x = (cellPose.x - 1);
+        var y = (cellPose.y - 1);
+
+        setFlag(x, y, td);
+    }, false);
+
+    td.addEventListener("click", function (e) {
+        var cellPose = getPoseOfCell(this);
+        var x = (cellPose.x - 1);
+        var y = (cellPose.y - 1);
+
+        clickCell(x, y, td);
+    });
+}
+
+function getPoseOfCell(td) {
+    return {
+        "x": (td.parentElement.rowIndex - 1),
+        "y": td.cellIndex,
+    };
+}
+
+function setFlag(x, y, td) {
+    var cell = plateMines[x][y];
+    if (cell == 0) {
+        plateMines[x][y] = 3;
+    }
+    else if (cell == 1) {
+        plateMines[x][y] = 4;
+    }
+    else if (cell == 3) {
+        plateMines[x][y] = 0;
+    }
+    else if (cell == 4) {
+        plateMines[x][y] = 1;
+    }
+
+    setMineText(x, y, td);
+}
+
+function clickCell(x, y, td) {
+    var cell = plateMines[x][y];
+    if (cell == 0 || cell == 3) {
+        plateMines[x][y] = 5;
+    }
+    else if (cell == 1 || cell == 2 || cell == 4) {
+        plateMines[x][y] = 6;
+        //Game Over screen
+    }
+
+    setMineText(x, y, td);
+}
+
+function getNearbyBomb(x, y) {
+    var count = 0;
+
+    for (i = -1; i < 2; i++){
+        for (i2 = -1; i2 < 2; i2++){
+            var x2 = x-i;
+            var y2 = y - i2;
+            console.log("try ; " + x2 + ":" + y2);
+            if (x2 >= 0 && x2 < plateSizeCol && y2 >= 0 && y2 < plateSizeRow){
+                var cell = plateMines[x2][y2];
+                if (cell == 1 || cell == 2 || cell == 4 || cell == 6) {
+                    count++;
+                }
+                console.log(cell);
+            }
+        }
+    }
+
+    console.log(count);
+    return count;
 }
