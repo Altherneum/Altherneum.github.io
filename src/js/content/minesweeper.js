@@ -1,7 +1,7 @@
-var minesAmount = 25;
+var minesAmount = 10;
 var currentMinesAmount = 0;
-var plateSizeRow = 15;
-var plateSizeCol = 15;
+var plateSizeRow = 10;
+var plateSizeCol = 8;
 var plateSize = plateSizeCol * plateSizeRow;
 let plateMines = [];
 var cheat = false;
@@ -98,7 +98,7 @@ function createTable(){
         }
         var th = document.createElement("th");
         th.scope = "row";
-        th.textContent = x;
+        th.textContent = (x-1);
         tr.appendChild(th);
         if (x == 0) {
             th.style.visibility = "hidden";
@@ -202,7 +202,7 @@ function setMineClick(td) {
         var x = (cellPose.x - 1);
         var y = (cellPose.y - 1);
 
-        clickCell(x, y, td);
+        clickCell(x, y, td, true);
     });
 }
 
@@ -231,7 +231,7 @@ function setFlag(x, y, td) {
     setMineText(x, y, td);
 }
 
-function clickCell(x, y, td) {
+function clickCell(x, y, td, human) {
     var cell = plateMines[x][y];
     if (cell == 0 || cell == 3) {
         plateMines[x][y] = 5;
@@ -241,27 +241,73 @@ function clickCell(x, y, td) {
         //Game Over screen
     }
 
+    if(human){
+        autoUnlockNearbyZone(x, y, td, true);
+    }
+
     setMineText(x, y, td);
+}
+
+function getNearbyCell(x, y) {
+    var plateMinesToCheck = new Array();
+    for (i = -1; i < 2; i++) {
+        for (i2 = -1; i2 < 2; i2++) {
+            var cellToCheck = new Array();
+            var x2 = x - i;
+            var y2 = y - i2;
+
+            if (x2 >= 0 && x2 < plateSizeRow && y2 >= 0 && y2 < plateSizeCol) {
+                cellToCheck[0] = x2;
+                cellToCheck[1] = y2;
+
+                plateMinesToCheck.push(cellToCheck)
+            }
+        }
+    }
+    return plateMinesToCheck;
+}
+
+// Dont work & last step
+// script run in weird order and go down on path only and stop randomely
+function autoUnlockNearbyZone(x, y, td, firstRun) {
+    var cell = plateMines[x][y];
+    if (cell == 0 || cell == 3 || (cell == 5 && firstRun)) {
+        var mineAmout = getNearbyBomb(x, y);
+        clickCell(x, y, td, false);
+
+        if (mineAmout < 1) { 
+            var cells = getNearbyCell(x, y);
+             for (j = 0; j < cells.length; j++) {
+                 var newX = cells[j][0];
+                 var newY = cells[j][1];
+
+                 autoUnlockNearbyZone(newX, newY, getTD(newX, newY), false);}
+        }
+    }
 }
 
 function getNearbyBomb(x, y) {
     var count = 0;
 
-    for (i = -1; i < 2; i++){
-        for (i2 = -1; i2 < 2; i2++){
-            var x2 = x-i;
-            var y2 = y - i2;
-            console.log("try ; " + x2 + ":" + y2);
-            if (x2 >= 0 && x2 < plateSizeCol && y2 >= 0 && y2 < plateSizeRow){
-                var cell = plateMines[x2][y2];
-                if (cell == 1 || cell == 2 || cell == 4 || cell == 6) {
-                    count++;
-                }
-                console.log(cell);
-            }
+    var list = getNearbyCell(x, y);
+    for (j = 0; j < (list.length); j++) {
+        var x = list[j][0];
+        var y = list[j][1];
+
+        var cell = plateMines[x][y];
+        if (cell == 1 || cell == 2 || cell == 4 || cell == 6) {
+            count++;
         }
     }
-
-    console.log(count);
     return count;
+}
+
+function getTD(x, y) {
+    var plate = document.getElementById("plate");
+    var table = plate.querySelector("table");
+    var tbodys = table.querySelector("tbody");
+    var trs = tbodys.querySelectorAll("tr");
+    var tds = trs[x].querySelectorAll("td");
+    var td = tds[y];
+    return td;
 }
