@@ -1,40 +1,95 @@
-var minesAmount = 10;
+
+var minesAmount = 0;
 var currentMinesAmount = 0;
-var plateSizeRow = 10;
-var plateSizeCol = 8;
+var plateSizeRow = 0;
+var plateSizeCol = 0;
 var plateSize = plateSizeCol * plateSizeRow;
 let plateMines = [];
 var cheat = false;
+var dateOfCreation;
+var platePreGen = false;
 
-start();
-function start() {
-    if (plateSizeCol < 1 || plateSizeRow < 1) {
-        console.error("pas de taille de tableau logique")
-        return;
-    }
+start(true);
+function start(mustDeletePlate) {
 
-    if (minesAmount >= plateSize) {
-        console.error("Trop de mine")
-        return;
+    setInterval(
+        function () {
+            updateChrono();
+    }, 500);
+
+    resetVar();
+
+    if (mustDeletePlate) {
+        deletePlate();
     }
-    
+    else {
+        if (plateSizeCol < 1 || plateSizeRow < 1) {
+            console.error("pas de taille de tableau logique")
+            return;
+        }
+
+        if (minesAmount >= plateSize) {
+            console.error("Trop de mine")
+            return;
+        }
+    }
     createPlate();
+
+    placeMines();
+
+    createTable();
+    console.warn(plateMines);
+
+}
+
+function updateChrono() {
+    var dateHolder = document.getElementById("dateHolderMine");
+    var nowDate = Date(Date.now);
+    var now = Date.parse(nowDate);
+    var prev = dateOfCreation;
+    var diffTime = now - prev;
+    var sec = Math.round(diffTime / 1000);
+    dateHolder.textContent = sec + " s";
+}
+
+function resetVar() {
+
+    minesAmount = 10;
+    currentMinesAmount = 0;
+    plateSizeRow = 10;
+    plateSizeCol = 8;
+    plateSize = plateSizeCol * plateSizeRow;
+    plateMines = [];
+    cheat = false;
+    platePreGen = false;
+
+
+    dateOfCreation = Date.now();
+    minesAmount = Number(document.getElementById("Mines").value);
+    currentMinesAmount = 0;
+    plateSizeRow = Number(document.getElementById("Row").value);
+    plateSizeCol = Number(document.getElementById("Col").value);
+    plateSize = plateSizeCol * plateSizeRow;
+    plateMines = [];
+    cheat = Boolean(document.getElementById("cheatMode").checked);
+    platePreGen = false;
+}
+
+function deletePlate() {
+    var plate = document.getElementById("plate");
+    var table = plate.querySelector("table");
+    if(table !== null){
+        table.remove();
+    }
 }
 
 function createPlate() {
     for (let x = 0; x < plateSizeRow; x++) {
         plateMines[x] = [];
         for (let y = 0; y < plateSizeCol; y++) {
-            
             plateMines[x][y] = 0;
         }
     }
-
-    placeMines();
-
-    console.warn(plateMines);
-
-    createTable();
 }
 
 function getRandomInt(min, max) {
@@ -43,13 +98,13 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); 
 }
 
-var platePreGen = false;
 function placeMines(){
     if(!platePreGen){
         while(currentMinesAmount < minesAmount){
             var cellX = getRandomInt(0, plateSizeRow);
             var cellY = getRandomInt(0, plateSizeCol);
 
+            console.log("place miine");
             if (plateMines[cellX][cellY] == 0) {
                 plateMines[cellX][cellY] = 1;
                 currentMinesAmount++;
@@ -68,7 +123,7 @@ function createTable(){
 
     var caption = document.createElement("caption");
     table.appendChild(caption);
-    caption.textContent = "MineSweeper : " + (currentMinesAmount-minesAmount) + "/" + minesAmount + " mines";
+    caption.textContent = "MineSweeper : " + minesAmount + " mines";
 
     var holder = document.createElement("div");
     
@@ -286,26 +341,22 @@ function getNearbyCell(x, y) {
 // script run in weird order and go down on path only and stop randomely
 function autoUnlockNearbyZone(x, y, td, firstRun) {
     var cell = plateMines[x][y];
-    if (cell == 0 || cell == 3) {
+    if (cell == 0) {
         var mineAmout = getNearbyBomb(x, y);
 
         if (mineAmout < 1) {
             var cells = getNearbyCell(x, y);
-            console.log(cells);
             for (j = 0; j < cells.length; j++) {
                 setTimeout(
                     function(cells, j) {
-                        console.log(j);
                         var newX = cells[j][0];
                         var newY = cells[j][1];
-                        console.log("index : " + j + " : " + newX + " " + newY);
 
                         var tdx = getTD(newX, newY);
 
-                        console.log("clicked " + tdx);
                         autoUnlockNearbyZone(newX, newY, tdx, false); 
                         clickCell(newX, newY, tdx, false);
-                }, 100*j, cells, j);
+                }, 50*j, cells, j);
             }
         }
     }

@@ -1,3 +1,33 @@
-<div id="plate">
+<div id="menu">
+    <div>
+        <input type="number" name="Col" id="Col" placeholder="Colonnes" value="10">
+        <input type="number" name="Row" id="Row" placeholder="Rangées" value="10">
+        <input type="number" name="Mines" id="Mines" placeholder="Mines" value="10">
+    </div>
+    
+    <div>
+        <div class="check">
+            <div class="checkboxToggle">
+                <input type="checkbox" id="cheatMode" />
+                <span></span>
+            </div>
+            <p>Cheat Mode</p>
+        </div>
+        <div class="check">
+            <div class="checkboxToggle">
+                <input type="checkbox" id="autoUnlockk" />
+                <span></span>
+            </div>
+            <p>Auto Unlock nearby</p>
+        </div>
+    </div>
 
+    <button>
+        <p onclick="start(true)">Start Game</p>
+    </button>
+
+    <p id="dateHolderMine"></p>
+</div>
+
+<div id="plate">
 </div>
