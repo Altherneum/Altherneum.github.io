@@ -144,6 +144,12 @@ const links = [
         svg: "/assets/image/ShopTitans.webp",
     },
     {
+        href: "/games/minesweeper.html",
+        tag: "Jeux",
+        text: "MineSweeper (Démineur)",
+        svg: "/assets/svg/bomb.svg",
+    },
+    {
         href: "/games/cookie.html",
         tag: "Jeux",
         text: "Cookie clicker",
