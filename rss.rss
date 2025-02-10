@@ -173,6 +173,16 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="MàJ des embed YouTube" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[Ajout d'un démineur]]></title>
+        <link>https://doc.altherneum.fr/games/minesweeper</link>
+        <guid isPermaLink="true">https://doc.altherneum.fr/games/minesweeper</guid>
+        <pubDate>Sun, 09 Feb 2025 23:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[MineSweeper 💣]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/icon/icone.png" alt="Ajout d'un démineur" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
   

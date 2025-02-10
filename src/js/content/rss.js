@@ -161,6 +161,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/icon/icone.png",
     creator: "Altherneum",
   },
+  {
+    title: "Ajout d'un démineur",
+    link: "https://doc.altherneum.fr/games/minesweeper",
+    description: "MineSweeper 💣",
+    publicationDate: buildRFC822Date("2025-02-10T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image
