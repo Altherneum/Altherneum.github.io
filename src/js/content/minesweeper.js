@@ -160,10 +160,12 @@ function setMineText(x, y, td) {
         }
         else {
             td.textContent = "💣"; //Mine Cheater
+            td.style.background = "red";
         }
     }
     else if (cell == 2) {
         td.textContent = "💣"; //Mine visible
+        td.style.background = "red";
     }
     else if (cell == 3) {
         td.textContent = "🚩"; //Nothing under
@@ -181,6 +183,15 @@ function setMineText(x, y, td) {
     }
     else if (cell == 6) {
         td.textContent = "💀"; // Loosed
+        td.style.background = "red";
+    }
+    else if (cell == 7) {
+        td.textContent = "🏴‍☠️"; //Nothing under
+        td.style.background = "red";
+    }
+    else if (cell == 8) {
+        td.textContent = "🏴‍☠️"; //Mine under
+        td.style.background = "red";
     }
     else {
         td.textContent = plateMines[x - 1][y];
@@ -202,6 +213,7 @@ function setMineClick(td) {
         var x = (cellPose.x - 1);
         var y = (cellPose.y - 1);
 
+        autoUnlockNearbyZone(x, y, td, true);
         clickCell(x, y, td, true);
     });
 }
@@ -216,10 +228,10 @@ function getPoseOfCell(td) {
 function setFlag(x, y, td) {
     var cell = plateMines[x][y];
     if (cell == 0) {
-        plateMines[x][y] = 3;
+        plateMines[x][y] = 7;
     }
     else if (cell == 1) {
-        plateMines[x][y] = 4;
+        plateMines[x][y] = 8;
     }
     else if (cell == 3) {
         plateMines[x][y] = 0;
@@ -227,11 +239,18 @@ function setFlag(x, y, td) {
     else if (cell == 4) {
         plateMines[x][y] = 1;
     }
+    else if (cell == 7) {
+        plateMines[x][y] = 3;
+    }
+    else if (cell == 8) {
+
+        plateMines[x][y] = 4;
+    }
 
     setMineText(x, y, td);
 }
 
-function clickCell(x, y, td, human) {
+function clickCell(x, y, td) {
     var cell = plateMines[x][y];
     if (cell == 0 || cell == 3) {
         plateMines[x][y] = 5;
@@ -239,11 +258,7 @@ function clickCell(x, y, td, human) {
     else if (cell == 1 || cell == 2 || cell == 4) {
         plateMines[x][y] = 6;
         //Game Over screen
-    }
-
-    if(human){
-        autoUnlockNearbyZone(x, y, td, true);
-    }
+    }    
 
     setMineText(x, y, td);
 }
@@ -271,17 +286,27 @@ function getNearbyCell(x, y) {
 // script run in weird order and go down on path only and stop randomely
 function autoUnlockNearbyZone(x, y, td, firstRun) {
     var cell = plateMines[x][y];
-    if (cell == 0 || cell == 3 || (cell == 5 && firstRun)) {
+    if (cell == 0 || cell == 3) {
         var mineAmout = getNearbyBomb(x, y);
-        clickCell(x, y, td, false);
 
-        if (mineAmout < 1) { 
+        if (mineAmout < 1) {
             var cells = getNearbyCell(x, y);
-             for (j = 0; j < cells.length; j++) {
-                 var newX = cells[j][0];
-                 var newY = cells[j][1];
+            console.log(cells);
+            for (j = 0; j < cells.length; j++) {
+                setTimeout(
+                    function(cells, j) {
+                        console.log(j);
+                        var newX = cells[j][0];
+                        var newY = cells[j][1];
+                        console.log("index : " + j + " : " + newX + " " + newY);
 
-                 autoUnlockNearbyZone(newX, newY, getTD(newX, newY), false);}
+                        var tdx = getTD(newX, newY);
+
+                        console.log("clicked " + tdx);
+                        autoUnlockNearbyZone(newX, newY, tdx, false); 
+                        clickCell(newX, newY, tdx, false);
+                }, 100*j, cells, j);
+            }
         }
     }
 }
@@ -295,7 +320,7 @@ function getNearbyBomb(x, y) {
         var y = list[j][1];
 
         var cell = plateMines[x][y];
-        if (cell == 1 || cell == 2 || cell == 4 || cell == 6) {
+        if (cell == 1 || cell == 2 || cell == 4 || cell == 6 || cell == 8) {
             count++;
         }
     }
