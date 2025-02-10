@@ -102,7 +102,7 @@ function placeMines(){
             var cellX = getRandomInt(0, plateSizeRow);
             var cellY = getRandomInt(0, plateSizeCol);
 
-            console.log("place miine");
+            console.log("place mine");
             if (plateMines[cellX][cellY] == 0) {
                 plateMines[cellX][cellY] = 1;
                 currentMinesAmount++;
