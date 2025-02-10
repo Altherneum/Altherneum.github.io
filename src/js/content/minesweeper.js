@@ -8,13 +8,16 @@ let plateMines = [];
 var cheat = false;
 var dateOfCreation;
 var platePreGen = false;
+var finish = false;
+var sec = 0;
 
-start(true);
+start(false);
 function start(mustDeletePlate) {
-
     setInterval(
         function () {
-            updateChrono();
+            if(!finish){
+                updateChrono();
+            }
     }, 500);
 
     resetVar();
@@ -46,22 +49,11 @@ function updateChrono() {
     var now = Date.parse(nowDate);
     var prev = dateOfCreation;
     var diffTime = now - prev;
-    var sec = Math.round(diffTime / 1000);
+    sec = Math.round(diffTime / 1000);
     dateHolder.textContent = sec + " s";
 }
 
 function resetVar() {
-
-    minesAmount = 10;
-    currentMinesAmount = 0;
-    plateSizeRow = 10;
-    plateSizeCol = 8;
-    plateSize = plateSizeCol * plateSizeRow;
-    plateMines = [];
-    cheat = false;
-    platePreGen = false;
-
-
     dateOfCreation = Date.now();
     minesAmount = Number(document.getElementById("Mines").value);
     currentMinesAmount = 0;
@@ -115,13 +107,12 @@ function placeMines(){
     }
 }
 
-function createTable(){
+function createTable() {
+    var caption = document.getElementById("MineCaption");
+    caption.textContent = "MineSweeper : " + minesAmount + " 💣";
+
     var table = document.createElement("table");
     table.addEventListener("contextmenu", e => { e.preventDefault(); });
-
-    var caption = document.createElement("caption");
-    table.appendChild(caption);
-    caption.textContent = "MineSweeper : " + minesAmount + " mines";
 
     var holder = document.createElement("div");
     
@@ -229,7 +220,7 @@ function setMineText(x, y, td) {
     else if (cell == 5) {
         var text = getNearbyBomb(x, y);
         if (text == 0) {
-            td.textContent = " ";
+            td.textContent = " ";  // Unlocked // no mine
         }
         else { td.textContent = text; }
         td.style.background = "var(--background-color)";
@@ -251,6 +242,53 @@ function setMineText(x, y, td) {
     }
 }
 
+function checkIfHasWin() {
+    var cell6 = 0;
+
+    var cell1 = 0;
+    var cell5 = 0;
+    var cell8 = 0;
+
+    for (x = 0; x < plateSizeRow + 1; x++) {
+        if (x != 0) {
+            for (y = 0; y < plateSizeCol; y++) {
+                var cell = plateMines[x - 1][y];
+                if (cell == 1) {
+                    cell1++;
+                }
+                else if (cell == 5) {
+                    cell5++;
+                }
+                else if (cell == 6) {
+                    cell6++;
+                }
+                else if (cell == 8) {
+                    cell8++;
+                }
+            }
+        }
+    }
+
+    if (cell6 > 0 && !cheat) {
+        finish = true;
+
+        var caption = document.getElementById("MineCaption");
+        caption.textContent = "MineSweeper : 💀 En " + sec + " secondes !";
+    }
+    else if (cheat) {
+        //cant win with cheat
+    }
+    else{
+        var total = cell1 + cell5 + cell8;
+        if (total == plateSize) {
+            finish = true;
+
+            var caption = document.getElementById("MineCaption");
+            caption.textContent = "MineSweeper : 🟢 En " + sec + " secondes !";
+        }
+    }
+}
+
 function setMineClick(td) {
     td.addEventListener('contextmenu', function (e) {
         e.preventDefault();
@@ -259,6 +297,8 @@ function setMineClick(td) {
         var y = (cellPose.y - 1);
 
         setFlag(x, y, td);
+
+        checkIfHasWin();
     }, false);
 
     td.addEventListener("click", function (e) {
@@ -268,6 +308,8 @@ function setMineClick(td) {
 
         autoUnlockNearbyZone(x, y, td, true);
         clickCell(x, y, td, true);
+
+        checkIfHasWin();
     });
 }
 
