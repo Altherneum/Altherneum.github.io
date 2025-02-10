@@ -38,8 +38,6 @@ function start(mustDeletePlate) {
     placeMines();
 
     createTable();
-    console.warn(plateMines);
-
 }
 
 function updateChrono() {
