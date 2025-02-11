@@ -821,6 +821,18 @@ const links = [
         tag: "URL OS Windows",
         svg: "/assets/svg/link.svg",
     },
+    {
+        href: "https://github.com/windirstat/windirstat",
+        svg: "/assets/svg/trademark/windows.svg",
+        tag: "URL Repo OS Windows Outils",
+        text: "Win Dir Stat Github Repo",
+    },
+    {
+        href: "https://windirstat.net/",
+        svg: "/assets/svg/link.svg",
+        tag: "URL OS Outils Windows",
+        text: "Win Dir Stat",
+    },
 ];
 
 /*
