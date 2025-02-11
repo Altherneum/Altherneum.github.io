@@ -77,11 +77,13 @@ var videolinks = [
     },
     {
         videoID: "KdoaiGTIBY4",
-        categorie: "Linux",
+        categorie: "Linux IT humour",
+        top: true,
     },
     {
         videoID: "XTcP4oo4JI4",
         categorie: "science",
+        top: true,
     },
     {
         videoID: "LKCVKw9CzFo",
@@ -142,6 +144,7 @@ var videolinks = [
         videoID: "PLp31D6HATKfeEHEFqFo5hlCOYwHi4Sl9O",
         categorie: "Linux",
         playlist: true,
+        top: true,
     },
     {
         videoID: "3v5saN9J94A",
@@ -200,6 +203,7 @@ var videolinks = [
         videoID: "F429yqTVUyI",
         categorie: "hack",
         short: true,
+        top: true,
     },
     {
         videoID: "heBrCo9ondM",
@@ -274,7 +278,8 @@ var videolinks = [
     },
     {
         videoID: "Lu56xVlZ40M",
-        categorie: "IA",
+        categorie: "IA science",
+        top: true,
     },
     {
         videoID: "NUl6QikjR04",
@@ -290,11 +295,13 @@ var videolinks = [
     },
     {
         videoID: "C4ATDMIz5wc",
-        categorie: "Science IT",
+        categorie: "science IT",
+        top: true,
     },
     {
         videoID: "Ip6RIHwi21c",
-        categorie: "Science IT IA",
+        categorie: "science IT IA",
+        top: true,
     },
     {
         videoID: "rU603keI9lg",
