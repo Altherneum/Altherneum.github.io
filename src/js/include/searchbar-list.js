@@ -833,6 +833,12 @@ const links = [
         tag: "URL OS Outils Windows",
         text: "Win Dir Stat",
     },
+    {
+        href: "https://minesweeper.online/help/patterns",
+        svg: "/assets/svg/.svg",
+        tag: "Jeux Outils Cours URL",
+        text: "MineSweeper / Démineur - Patterns",
+    },
 ];
 
 /*
