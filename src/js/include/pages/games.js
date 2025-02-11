@@ -29,6 +29,11 @@ async function CheckPage() {
         await include_multiple("minesweeper", "contentArticle");
     }
 
+    else if (pathNameMatchPage("/games/snake", true)) {
+        await includes();
+        await include_multiple("snake", "contentArticle");
+    }
+
     else {
         return false;
     }
