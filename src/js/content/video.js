@@ -296,6 +296,11 @@ var videolinks = [
         videoID: "Ip6RIHwi21c",
         categorie: "Science IT IA",
     },
+    {
+        videoID: "rU603keI9lg",
+        categorie: "IA",
+        short: true,
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA"];
