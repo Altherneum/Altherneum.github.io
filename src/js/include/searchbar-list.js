@@ -835,9 +835,15 @@ const links = [
     },
     {
         href: "https://minesweeper.online/help/patterns",
-        svg: "/assets/svg/.svg",
+        svg: "/assets/svg/link.svg",
         tag: "Jeux Outils Cours URL",
         text: "MineSweeper / Démineur - Patterns",
+    },
+    {
+        href: "/outils/crashmybrowser",
+        svg: "/assets/svg/languages/html.svg",
+        tag: "Web Outils URL",
+        text: "Crash Memory & CPU grinder",
     },
 ];
 

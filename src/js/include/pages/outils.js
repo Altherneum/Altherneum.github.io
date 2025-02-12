@@ -74,6 +74,11 @@ async function CheckPage() {
         await includes();
         await include_script("/src/js/content/rsa.js");
     }
+        
+    else if (pathNameMatchPage("/outils/crashmybrowser", true)) {
+        await includes();
+        await include_multiple("crashmybrowser", "contentArticle");
+    }
 
     else {
         return false;
