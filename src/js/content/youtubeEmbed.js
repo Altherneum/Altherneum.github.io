@@ -99,6 +99,9 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
     try {        
         var response = await fetch(fetchUrl);
         var status = response.status;
+        
+        var videoholder = document.getElementById("videoholder");
+
         if (status === 200) {
             var jsonResponse = await response.json();
             JSONdata = jsonResponse;
@@ -106,89 +109,114 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var title = JSONdata.title;
             var length = 75;
             var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
-
             var thumbnail = JSONdata.thumbnail_url;
 
-            var videoholder = document.getElementById("videoholder");
+            var div_card = addCard(top, playlist, videoID, categorie);
 
-            var div_card = document.createElement("div");
-            var classname = "";
-            if (top) {
-                classname += "top ";
-            }
-            if (playlist) {
-                classname += "playlist ";
-            }
-            classname += "card " + categorie;
-            div_card.className = classname;
-            showOrHideSong(shown, div_card);
-
-            var anchor = document.createElement("a");
-            anchor.href = "#" + videoID;
-            anchor.id = videoID;
-            setScrollBehavior(anchor);
-            div_card.appendChild(anchor);
-
-            var imageTop = document.createElement("img");
-            imageTop.src = "/assets/svg/link.svg";
-            imageTop.className = "topimg svg";
-            anchor.appendChild(imageTop);
-
-            if (top) {
-                var imageTop = document.createElement("img");
-                imageTop.src = "/assets/svg/star.svg";
-                imageTop.className = "topimg svg";
-                div_card.appendChild(imageTop);
-            }
-            if (playlist) {
-                var imageTop = document.createElement("img");
-                imageTop.src = "/assets/svg/playlist.svg";
-                imageTop.className = "playlistimg svg";
-                div_card.appendChild(imageTop);
-            }
-
-            var video_title = document.createElement("h1");
-            video_title.textContent = title;
-            div_card.appendChild(video_title);
-
-            var video_subtext = document.createElement("p");
-            video_subtext.innerHTML = text;
-            div_card.appendChild(video_subtext);
-
-            var video_div = document.createElement("div");
-            div_card.appendChild(video_div);
-
-            var video_image = document.createElement("img");
-            video_image.src = thumbnail;
-            video_image.loading = "lazy";
-            video_div.appendChild(video_image);
-
-            var video_button = document.createElement("button");
-            video_button.dataset.youtubeButton = videoID;
-            video_button.dataset.youtubePlayList = playlist;
-            video_button.dataset.youtubeShort = short;
-
-            video_button.setAttribute("onclick", "createIframe(this)");
-
-            video_div.appendChild(video_button);
+            var video_div = addCardData(div_card, title, text, thumbnail, false);
+            addVideoCard(video_div, videoID, playlist, short);
 
             videoholder.appendChild(div_card);
         }
-        else if (status === 404) {
-            console.warn("erreur (-------------------------------")
-            var jsonResponse = null;
+        else if (status === 404) {            
+            var div_card = addCard(top, playlist, videoID, categorie);
+            var video_div = addCardData(div_card, "404", "Video supprimée !", "/assets/svg/link-broken.svg", true);
+            videoholder.appendChild(div_card);
         }
         else if (status === 403) {
-            console.warn("erreur (-------------------------------")
-            var jsonResponse = undefined;
+            var div_card = addCard(top, playlist, videoID, categorie);
+            var video_div = addCardData(div_card, "403", "Video privée !", "/assets/svg/link-broken.svg", true);
+            videoholder.appendChild(div_card);
+        }
+        else if (status === 401) {
+            var div_card = addCard(top, playlist, videoID, categorie);
+            var video_div = addCardData(div_card, "401", "Video sans embed !", "/assets/svg/link-broken.svg", true);
+            videoholder.appendChild(div_card);
         }
         else {
-            console.warn("erreur (-------------------------------")
+            console.warn("erreur ? (-------------------------------")
+            console.log(response);
             var jsonResponse = null;
         }
     } catch (error) {
         console.error(error + "\n" + videoID);
     }
+}
+
+function addCard(top, playlist, videoID, categorie) {
+    var div_card = document.createElement("div");
+    var classname = "";
+    if (top) {
+        classname += "top ";
+    }
+    if (playlist) {
+        classname += "playlist ";
+    }
+    classname += "card " + categorie;
+    div_card.className = classname;
+    showOrHideSong(shown, div_card);
+
+    var anchor = document.createElement("a");
+    anchor.href = "#" + videoID;
+    anchor.id = videoID;
+    setScrollBehavior(anchor);
+    div_card.appendChild(anchor);
+
+    var imageAnchor = document.createElement("img");
+    imageAnchor.src = "/assets/svg/link.svg";
+    imageAnchor.className = "topimg svg";
+    anchor.appendChild(imageAnchor);
+
+    if (top) {
+        var imageTop = document.createElement("img");
+        imageTop.src = "/assets/svg/star.svg";
+        imageTop.className = "topimg svg";
+        div_card.appendChild(imageTop);
+    }
+    if (playlist) {
+        var imagePlayList = document.createElement("img");
+        imagePlayList.src = "/assets/svg/playlist.svg";
+        imagePlayList.className = "playlistimg svg";
+        div_card.appendChild(imagePlayList);
+    }
+    return div_card;
+}
+
+function addCardData(div_card, title, text, thumbnail, error) {
+    var video_title = document.createElement("h1");
+    video_title.textContent = title;
+    div_card.appendChild(video_title);
+
+    var video_subtext = document.createElement("p");
+    video_subtext.innerHTML = text;
+    div_card.appendChild(video_subtext);
+
+    var video_div = document.createElement("div");
+    div_card.appendChild(video_div);
+
+    var video_image = document.createElement("img");
+    video_image.src = thumbnail;
+    if (error) {
+        video_image.style.width = "100%";
+        video_image.style.height = "100%";
+        video_image.style.maxWidth = "none";
+        video_image.className = "svg";
+    }
+    video_image.loading = "lazy";
+    video_div.appendChild(video_image);
+
+    return video_div;
+}
+
+function addVideoCard(video_div, videoID, playlist, short) {
+    var video_button = document.createElement("button");
+    video_button.dataset.youtubeButton = videoID;
+    video_button.dataset.youtubePlayList = playlist;
+    video_button.dataset.youtubeShort = short;
+
+    video_button.setAttribute("onclick", "createIframe(this)");
+
+    video_div.appendChild(video_button);
 }
 
 function createIframe(event) {
