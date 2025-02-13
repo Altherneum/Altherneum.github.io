@@ -69,35 +69,33 @@ async function statsConsoleInfo(msg, count, text) {
 }
 
 function SendToLog(text, textOutput) {
-    if(text === "Error" || text === "ErrorType")
-    {
-        if (localStorage.getItem('ErrorLogging') === "false") {
-            return;
+    if (localStorage.getItem('AllLogs') === "true") {}
+    else {
+        if (text === "Error" || text === "ErrorType") {
+            if (localStorage.getItem('ErrorLogging') !== "true") {
+                return;
+            }
         }
-    }
-    else if(text === "Warn")
-    {
-        if (localStorage.getItem('WarningLogging') === "false") {
-            return;
+        else if (text === "Warn") {
+            if (localStorage.getItem('WarningLogging') !== "true") {
+                return;
+            }
         }
-    }
-    else if (text === "Index.JS") {
-        if (localStorage.getItem('VisitedLogs') === "false") {
-            return;
+        else if (text === "Index.JS") {
+            if (localStorage.getItem('VisitedLogs') !== "true") {
+                return;
+            }
         }
-    }
-    else
-    {
-        if (localStorage.getItem('AllLogs') !== "false") {
-            return;
+        else {
+            if (localStorage.getItem("LogLogging") !== "true") {
+                return;
+            }
         }
-    }
 
-    //if devMode
-    //return in order to not spam discord
-    if (devMode()) {
-        return;
-    }
+        if (devMode()) {
+            return;
+        }
+    }    
     
     try {
         GetData(textOutput); 

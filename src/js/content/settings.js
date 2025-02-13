@@ -53,6 +53,10 @@ function SwitchVisitedLogs() {
     Switcher("VisitedLogs");
 }
 
+function SwitchLogLogging() {
+    Switcher("LogLogging");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -82,8 +86,9 @@ function loadSettingsSwitch() {
     setSwitch("YouTubeLoop", true);
     setSwitch("OldSearchBar", true);
     setSwitch("AllSearchBar", true);
+    setSwitch("LogLogging", false);
     setSwitch("WarningLogging", true);
     setSwitch("ErrorLogging", true);
-    setSwitch("AllLogs", false);
     setSwitch("VisitedLogs", false);
+    setSwitch("AllLogs", false);
 }

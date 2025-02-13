@@ -47,9 +47,9 @@ function sendToWebHook(ServerID, Token, Message, Methode){
         method: Methode,
     })
     .then(function (res) {
-        console.log(res);
+        console.dir(res);
     })
     .catch(function (res) {
-        console.log(res);
+        console.error(res);
     });
 }
