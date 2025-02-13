@@ -85,5 +85,5 @@ function loadSettingsSwitch() {
     setSwitch("WarningLogging", true);
     setSwitch("ErrorLogging", true);
     setSwitch("AllLogs", false);
-    setSwitch("VisitedLogs", true);
+    setSwitch("VisitedLogs", false);
 }
