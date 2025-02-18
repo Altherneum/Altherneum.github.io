@@ -385,6 +385,24 @@ var videolinks = [
         categorie: "science hack IT malware",
         short: true,
     },
+    {
+        videoID: "-0Z2nFy0hV8",
+        categorie: "IT science",
+        short: true,
+    },
+    {
+        videoID: "F7MmwLMw-Pw",
+        categorie: "IT science",
+    },
+    {
+        videoID: "qNLjPdIZF-o",
+        categorie: "hack IT science",
+    },
+    {
+        videoID: "cb6lIg2nZu0",
+        categorie: "hack game IA",
+        top: true,
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA"];
