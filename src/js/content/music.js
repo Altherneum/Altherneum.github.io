@@ -1293,30 +1293,6 @@ var videolinks = [
         videoID: "6nWAgVIAMck",
         categorie: "rock chill classic",
     },
-    {
-        videoID: "",
-        categorie: "",
-    },
-    {
-        videoID: "",
-        categorie: "",
-    },
-    {
-        videoID: "",
-        categorie: "",
-    },
-    {
-        videoID: "",
-        categorie: "",
-    },
-    {
-        videoID: "",
-        categorie: "",
-    },
-    {
-        videoID: "",
-        categorie: "",
-    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock"];
