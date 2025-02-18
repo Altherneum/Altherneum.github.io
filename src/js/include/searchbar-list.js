@@ -845,6 +845,12 @@ const links = [
         tag: "Web Outils URL",
         text: "Crash Memory & CPU grinder",
     },
+    {
+        href: "https://discord.com/developers/active-developer",
+        svg: "/assets/svg/trademark/discord.svg",
+        tag: ".gg Discord Outils URL Développement",
+        text: "Active Developer Badge",
+    },
 ];
 
 /*
