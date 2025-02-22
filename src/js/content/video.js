@@ -4,6 +4,11 @@ var videolinks = [
         categorie: "hack",
     },
     {
+        videoID: "QDzzW3C7wMc",
+        categorie: "code IT science",
+        short: true,
+    },
+    {
         videoID: "Zcvxw7yAXK0",
         top: true,
         categorie: "discord",
