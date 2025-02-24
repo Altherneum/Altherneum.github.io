@@ -1,7 +1,44 @@
 var videolinks = [
     {
+        videoID: "foZJrtErAak",
+        categorie: "science IT",
+    },
+    {
+        videoID: "54jbXAVy_Rw",
+        categorie: "hack science IT",
+    },
+    {
+        videoID: "8y__g_DEvcM",
+        categorie: "game hack",
+    },
+    {
+        videoID: "FM1E0ucndFw",
+        categorie: "game hack IT science",
+    },
+    {
+        videoID: "SuHONSyHsoc",
+        categorie: "game science",
+    },
+    {
+        videoID: "SwC0_BpSmMM",
+        categorie: "malware IT science",
+    },
+    {
+        videoID: "LmgkuWAZCDM",
+        categorie: "game hack science IT",
+    },
+    {
         videoID: "XYgM9jSkYAM",
         categorie: "hack",
+    },
+    {
+        videoID: "qgR88PEYXYE",
+        categorie: "hack malware IT",
+    },
+    {
+        videoID: "QDzzW3C7wMc",
+        categorie: "code IT science",
+        short: true,
     },
     {
         videoID: "Zcvxw7yAXK0",
