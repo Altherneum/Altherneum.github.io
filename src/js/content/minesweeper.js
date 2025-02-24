@@ -63,6 +63,7 @@ function resetVar() {
     plateMines = [];
     cheat = Boolean(document.getElementById("cheatMode").checked);
     platePreGen = false;
+    finish = false;
 }
 
 function deletePlate() {
