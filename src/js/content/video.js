@@ -7,6 +7,7 @@ var videolinks = [
     {
         videoID: "8rmNzeMovTo",
         categorie: "hack science IT code",
+        top: true,
     },
     {
         videoID: "ImP4v2tRilk",
@@ -32,6 +33,7 @@ var videolinks = [
     {
         videoID: "5xfAcfSeyX4",
         categorie: "code OpSec IT science hack",
+        top: true,
     },
     {
         videoID: "s5qQR0uoubI",
@@ -40,10 +42,12 @@ var videolinks = [
     {
         videoID: "foZJrtErAak",
         categorie: "science IT",
+        top: true,
     },
     {
         videoID: "54jbXAVy_Rw",
         categorie: "hack science IT",
+        top: true,
     },
     {
         videoID: "8y__g_DEvcM",
@@ -149,6 +153,7 @@ var videolinks = [
     {
         videoID: "hdHjjBS4cs8",
         categorie: "code humour",
+        top: true,
     },
     {
         videoID: "KdoaiGTIBY4",
@@ -175,7 +180,8 @@ var videolinks = [
     },
     {
         videoID: "_LiZWbBR96A",
-        categorie: "IT",
+        categorie: "IT humour",
+        top: true,
     },
     {
         videoID: "3FhdEDjzHt0",
@@ -228,7 +234,8 @@ var videolinks = [
     },
     {
         videoID: "ePiF7BWB6_s",
-        categorie: "code",
+        categorie: "code humour",
+        top: true,
     },
     {
         videoID: "wPLyH1lp0bM",
@@ -266,7 +273,7 @@ var videolinks = [
     },
     {
         videoID: "mMZNWx4r4Rk",
-        categorie: "IT",
+        categorie: "IT malware hack",
         short: true,
     },
     {
