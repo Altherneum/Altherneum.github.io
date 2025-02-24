@@ -5,6 +5,7 @@ getCursorSetting();
 
 function getCursorSetting() {
     if (localStorage.getItem('customCursor') === "true" || localStorage.getItem('customCursor') === null) {
+        destroyCursor();
         createCursor();
         hideDefaultCursor();
     }
@@ -16,7 +17,9 @@ function getCursorSetting() {
 
 function destroyCursor() {
     cursor = document.getElementById("cursor");
-    cursor.parentNode.removeChild(cursor);
+    if (cursor !== null) {
+        cursor.parentNode.removeChild(cursor);
+    }
 }
 
 function showDefaultCursor() {
