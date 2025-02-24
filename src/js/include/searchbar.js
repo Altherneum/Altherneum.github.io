@@ -233,7 +233,7 @@ document.addEventListener('keyup', (event) => {
 
 document.body.addEventListener('keydown', function (e) {
     keysPressed[e.key] = true;
-    if (keysPressed["Shift"] && e.key == "F") {
+    if ((keysPressed["Shift"] && e.key == "F") || (keysPressed["Shift"] && e.key == "f")) {
         var inputBox = document.getElementById("input-box");
         if (inputBox !== null) {
             if (!inputBox.contains(e.target)) {
