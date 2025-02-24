@@ -35,7 +35,7 @@ async function CheckPage() {
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/music.js");
         GetVideos(GetVideoList(), getVideoListType());
-        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
+        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", null);
     }
         
     else if (pathNameMatchPage("/admin/video", true)) {
@@ -46,7 +46,7 @@ async function CheckPage() {
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/video.js");
         GetVideos(GetVideoList(), getVideoListType());
-        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", true);
+        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", null);
     }
 
     else if (pathNameMatchPage("/admin/contact", true)) {
