@@ -179,6 +179,18 @@ function addCard(top, playlist, videoID, categorie) {
         imagePlayList.className = "playlistimg svg";
         div_card.appendChild(imagePlayList);
     }
+
+    var categories = categorie;
+    let categorieList = categories.split(" ");
+    var categorieHolder = document.createElement("p");
+    categorieHolder.className = "categorieList";
+
+    for (categorieIndex in categorieList) {
+        categorieHolder.textContent += " " + getEmoji(categorieList[categorieIndex]); 
+    }
+
+    div_card.appendChild(categorieHolder);
+
     return div_card;
 }
 
@@ -189,6 +201,7 @@ function addCardData(div_card, title, text, thumbnail, error) {
 
     var video_subtext = document.createElement("p");
     video_subtext.innerHTML = text;
+    video_subtext.className = "textSub";
     div_card.appendChild(video_subtext);
 
     var video_div = document.createElement("div");

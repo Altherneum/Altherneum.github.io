@@ -17,6 +17,9 @@
 
     margin-right: auto;
     margin-left: auto;
+
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 
 .youtubeEmbed>div>div>p {
@@ -94,13 +97,20 @@
     padding: 16px;
 }
 
-.youtubeEmbed>div>div>p {
+.youtubeEmbed>div>div>p.textSub {
     text-align: center;
     max-width: 100%;
     padding: 16px;
 }
 
-    .youtubeEmbed>div>div>a{
+.youtubeEmbed>div>div>p.categorieList {
+    width: fit-content;
+    display: inline-block;
+    transform: translateY(-15%);
+    font-size: x-large;
+}
+
+.youtubeEmbed>div>div>a{
         font-size: 40px;
         padding: 10px;
         padding-bottom: 0px;
