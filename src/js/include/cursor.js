@@ -1,4 +1,6 @@
-var cursor
+var cursor;
+var positionX = 0;
+var positionY = 0;
 //Cursor trigger often on header / Content wrapper (middle part of screen)
 console.log("Loading cursor");
 getCursorSetting();
@@ -39,6 +41,7 @@ async function createCursor() {
     await include_css("/src/css/cursor.css");
 
     getHandler();
+    setCursorPosition(positionX, positionY);
 }
 
 async function getHandler() {
@@ -136,10 +139,16 @@ async function cursorClick() {
 async function moveEvent() {
     document.addEventListener("mousemove", (event) => {
         if (cursor != null) {
-            let mousex = event.clientX - 15;
-            let mousey = event.clientY - 10;
-            cursor.style.left = mousex + 'px';
-            cursor.style.top = mousey + 'px';
+            positionX = event.clientX;
+            positionY = event.clientY;
+            setCursorPosition(positionX, positionY);
         }
     });
+}
+
+function setCursorPosition(x, y) {
+    let mousex = x - 15;
+    let mousey = y - 10;
+    cursor.style.left = mousex + 'px';
+    cursor.style.top = mousey + 'px';
 }
