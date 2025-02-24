@@ -193,11 +193,6 @@ input[type="checkbox"].checkboxBox:checked {
     bottom: 0;
 }
 
-.checkboxToggle.invert>input,
-.checkboxToggle.invert>span{
-background-color: green;
-}
-
 .checkboxToggle>span {
     position: absolute;
     top: 0;
@@ -222,11 +217,17 @@ background-color: green;
     transition: 0.5s;
 }
 
-.checkboxToggle>input:checked+span {
+
+.checkboxToggle.invert>input+span,
+.checkboxToggle>input:checked+span,
+.checkboxToggle>input.defaultTrue:indeterminate+span {
+    transition: 1s;
     background-color: green;
 }
-
-.checkboxToggle.invert>input:checked+span {
+.checkboxToggle.invert>input:checked+span,
+.checkboxToggle>input+span,
+.checkboxToggle>input.defaultFalse:indeterminate+span {
+    transition: 1s;
     background-color: red;
 }
 
@@ -246,6 +247,13 @@ background-color: green;
     transition: 1.5s;
     right: 10%;
     left: unset;
+}
+
+.checkboxToggle>input.defaultTrue:indeterminate+span:before,
+.checkboxToggle>input.defaultFalse:indeterminate+span:before{
+    transition: 1.5s;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .checkboxToggle>span {

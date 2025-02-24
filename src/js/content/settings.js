@@ -62,19 +62,32 @@ function Switcher(name) {
     var state = checkbox.checked;
     localStorage.setItem(name, state);
     console.log("set " + name + " to " + state)
+    setSwitch(name, null);
 }
 
 function setSwitch(name, defaultTrue) {
     var checkbox = document.getElementById(name);
     var state = localStorage.getItem(name);
-    if (state === 'true') {
-        checkbox.checked = true;
+    
+    if(state === undefined || state === null){
+        if (defaultTrue) {
+            checkbox.indeterminate = true;
+            checkbox.className += "defaultTrue";
+        }
+        if (!defaultTrue) {
+            checkbox.indeterminate = true;
+            checkbox.className += "defaultFalse";
+        }
     }
-    else if (state === false) {
-        //nothing check box at false state by default
-    }
-    else if ((defaultTrue && state === undefined) || (defaultTrue && state === null)) {
-        checkbox.checked = true;
+    else {
+        checkbox.className -= "defaultFalse";
+        checkbox.className -= "defaultTrue";
+        if (state === 'true') {
+            checkbox.checked = true;
+        }
+        else if (state === false) {
+            checkbox.checked = false;
+        }
     }
 }
 
@@ -83,7 +96,7 @@ function loadSettingsSwitch() {
     setSwitch("viewCount", true);
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
-    setSwitch("YouTubeLoop", true);
+    setSwitch("YouTubeLoop", false);
     setSwitch("OldSearchBar", true);
     setSwitch("AllSearchBar", true);
     setSwitch("LogLogging", false);
