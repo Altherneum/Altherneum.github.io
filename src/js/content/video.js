@@ -1,5 +1,38 @@
 var videolinks = [
     {
+        videoID: "8rmNzeMovTo",
+        categorie: "hack science IT code",
+    },
+    {
+        videoID: "ImP4v2tRilk",
+        categorie: "code science IT",
+        short: true,
+    },
+    {
+        videoID: "QnmzlWsvywQ",
+        categorie: "IT science",
+    },
+    {
+        videoID: "uENgdPK45GE",
+        categorie: "IT science",
+    },
+    {
+        videoID: "CZ7W8AJTWbQ",
+        categorie: "IT science OpSec",
+    },
+    {
+        videoID: "tTkgr1ruOb0",
+        categorie: "code science IT",
+    },
+    {
+        videoID: "5xfAcfSeyX4",
+        categorie: "code OpSec IT science hack",
+    },
+    {
+        videoID: "s5qQR0uoubI",
+        categorie: "science chem",
+    },
+    {
         videoID: "foZJrtErAak",
         categorie: "science IT",
     },
@@ -479,7 +512,7 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem"];
 
 function getVideoListType(){
     return VideoListType;
@@ -513,6 +546,10 @@ function getEmoji(VideoListType){
             return "🤣";
         case 'IA':
             return "🤖";
+        case 'OpSec':
+            return "🔐";
+        case 'chem':
+            return "🧪";
         default:
             return "X";
       }
