@@ -29,9 +29,6 @@ function showOrHideSong(name, element) {
 }
 
 async function GetVideos(videoList, VideoListType) {    
-    //add buttons and videoTypes
-    console.log("------------------------" + VideoListType);
-    
     addButtons(VideoListType);
 
     await include_script("/src/js/content/auto-scroll.js");
@@ -94,7 +91,7 @@ function addButtons(Types){
     }
 }
 
-async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short) {
+async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, latest) {
     try {        
         var response = await fetch(fetchUrl);
         var status = response.status;
@@ -110,7 +107,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
             var thumbnail = JSONdata.thumbnail_url;
 
-            var div_card = addCard(top, playlist, videoID, categorie);
+            var div_card = addCard(top, playlist, videoID, categorie, latest);
 
             var video_div = addCardData(div_card, title, text, thumbnail, false);
             addVideoCard(video_div, videoID, playlist, short);
@@ -142,7 +139,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
     }
 }
 
-function addCard(top, playlist, videoID, categorie) {
+function addCard(top, playlist, videoID, categorie, latest) {
     var div_card = document.createElement("div");
     var classname = "";
     if (top) {
@@ -151,6 +148,10 @@ function addCard(top, playlist, videoID, categorie) {
     if (playlist) {
         classname += "playlist ";
     }
+    if (latest) {
+        classname += "latest ";
+    }
+
     classname += "card " + categorie;
     div_card.className = classname;
     showOrHideSong(shown, div_card);
@@ -177,6 +178,12 @@ function addCard(top, playlist, videoID, categorie) {
         imagePlayList.src = "/assets/svg/playlist.svg";
         imagePlayList.className = "playlistimg svg";
         div_card.appendChild(imagePlayList);
+    }
+    if (latest) {
+        var imageNew = document.createElement("img");
+        imageNew.src = "/assets/svg/new.svg";
+        imageNew.className = "newimg svg";
+        div_card.appendChild(imageNew);
     }
 
     var categories = categorie;
@@ -284,12 +291,23 @@ function createIframe(event) {
     youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
 }
 
-// need to work on it
-getLatestVideoOfChannel("UC_un3YZXBtAlCyApGu4_eSQ");
-async function getLatestVideoOfChannel(ChannelID) {
+async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, text, top, latest) {
     const channelURL = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ChannelID;
-    var response = await fetch(channelURL);
-    console.log(response.text);
+    var data = await fetch("https://api.rss2json.com/v1/api.json?rss_url=" + channelURL)
+        .then(resp => resp.json())
+        .then(responseData => responseData.items)
+        .then(items => {
+            console.log(items);
+            for (i in items) {
+                if (i > maxVideoAmount) {
+                    break;
+                }
+
+                let videoID = items[i].link.replace("https://www.youtube.com/watch?v=", "");
+
+                addIFrame(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, latest)
+            }
+        });
 }
 
 function LoadSingleVideo() {

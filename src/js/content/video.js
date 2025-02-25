@@ -524,10 +524,26 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news"];
 
 function getVideoListType(){
     return VideoListType;
+}
+
+getVideoChannel();
+function getVideoChannel(){
+    getLatestVideoOfChannel("UCYnvxJ-PKiGXo_tYXpWAC-w", 1, "IT", "", true, true);
+    getLatestVideoOfChannel("UCWedHS9qKebauVIK2J7383g", 1, "IT", "", true, true);
+    getLatestVideoOfChannel("UCA6rJQnIFgQOcjO-xtNV7lg", 1, "IT", "", true, true);
+    getLatestVideoOfChannel("UCAJM0dH9j5xv6Uu94Mu5REQ", 4, "police", "", true, true);
+    getLatestVideoOfChannel("UCRwOa76W_4rQlPD4fvn_ydQ", 4, "police", "", true, true);
+    getLatestVideoOfChannel("UCl3u0qB4GKX3JjrO7hAmsdw", 4, "police", "", true, true);
+    getLatestVideoOfChannel("UCH-kpxfF4TUEuGqUBj6HVRg", 4, "news", "", true, true);
+    getLatestVideoOfChannel("UC9GGzAhhvhJO1hL10-BcgNA", 4, "news", "", true, true);
+    getLatestVideoOfChannel("UCCDz_XYeKWd0OIyjp95dqyQ", 4, "news", "", true, true);
+    getLatestVideoOfChannel("UCCCPCZNChQdGa9EkATeye4g", 4, "news", "", true, true);
+    getLatestVideoOfChannel("UCsrPUA0ZSDCNZC6wyRlR7ZA", 4, "news", "", true, true);
+    getLatestVideoOfChannel("UCAcAnMF0OrCtUep3Y4M-ZPw", 4, "news", "", true, true);
 }
 
 function GetVideoList(){
@@ -562,6 +578,10 @@ function getEmoji(VideoListType){
             return "🔐";
         case 'chem':
             return "🧪";
+        case 'police':
+            return "👮‍♂️";
+        case 'news':
+            return "📰";
         default:
             return "X";
       }

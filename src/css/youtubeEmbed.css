@@ -116,22 +116,6 @@
         padding-bottom: 0px;
 }
 
-.youtubeEmbed>div.show-playing div.playing {
-    display: inline-block;
-}
-
-.youtubeEmbed>div.show-top div.top {
-    display: inline-block;
-}
-
-.youtubeEmbed>div.show-all>div {
-    display: inline-block;
-}
-
-.youtubeEmbed>div.show-playlist div.playlist {
-    display: inline-block;
-}
-
 .youtubeEmbed>div>div {
     display: none;
 
@@ -171,10 +155,6 @@ div.card.top {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
 }
-
-div.card.playlist {}
-
-div.card>.topimg {}
 
 @media screen and (max-width: 1024px) {
     .youtubeEmbed>div>div {
