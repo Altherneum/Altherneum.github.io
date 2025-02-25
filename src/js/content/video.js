@@ -522,6 +522,12 @@ var videolinks = [
         videoID: "3pC-Itoz08U",
         categorie: "hack IT malware science DeepWeb",
     },
+    {
+        videoID: "gXtp6C-3JKo",
+        categorie: "hack IT malware code OpSec",
+        text: "Stuxnet A.K.A <a href='https://wikipedia.org/wiki/Operation_Olympic_Games'>Operation Olympic Games</a>",
+        top: true,
+    }
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news"];
