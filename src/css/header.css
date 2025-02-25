@@ -20,6 +20,8 @@ header>#navlinklist {
     border-bottom-style: solid;
     border-bottom-color: var(--main-color);
     border-bottom-width: 3px;
+    
+    user-select: none;
 }
 
 a.cardTitle {

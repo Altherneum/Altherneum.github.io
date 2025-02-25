@@ -46,6 +46,8 @@
     transition: 1s;
 
     z-index: 998;
+    
+    user-select: none;
 }
 
 #anchorList>#AnchorTitle{
@@ -100,6 +102,8 @@
     
     width: fit-content;
     height: fit-content;
+
+    user-select: none;
 }
 
 #fileData>.author, #fileData>.repo, #fileData>.commit{

@@ -18,6 +18,8 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     align-content: center;
+    
+    user-select: none;
 }
 
 footer>div>a,

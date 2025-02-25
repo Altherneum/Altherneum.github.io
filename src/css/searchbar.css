@@ -53,6 +53,8 @@ a.cardTitle{
 #search-box>input::placeholder {
     color: var(--link-color);
     opacity: 0.9;
+
+    user-select: none;
 }
 
 #search-box>input:focus {
@@ -68,6 +70,8 @@ a.cardTitle{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
+    
+    user-select: none;
 }
 
 #result-box,
@@ -132,6 +136,7 @@ a.cardTitle{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     margin-left: 5px;
+    user-select: none;
 }
 
 #close-search>img {
