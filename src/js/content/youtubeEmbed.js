@@ -283,3 +283,16 @@ function createIframe(event) {
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
     youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
 }
+
+// need to work on it
+getLatestVideoOfChannel("UC_un3YZXBtAlCyApGu4_eSQ");
+async function getLatestVideoOfChannel(ChannelID) {
+    const channelURL = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ChannelID;
+    var response = await fetch(channelURL);
+    console.log(response.text);
+}
+
+function LoadSingleVideo() {
+    //To Do
+    // get param from ?vid = abc // from url
+}
