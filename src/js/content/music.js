@@ -1,5 +1,15 @@
 var videolinks = [
     {
+        videoID: "4Js-XbNj6Tk",
+        categorie: "histoire chill",
+        text: "Rick & Morty, <a href='#zh4gzV_x3UM'>remix</a>",
+    },
+    {
+        videoID: "zh4gzV_x3UM",
+        categorie: "histoire chill",
+        text: "<a href='#4Js-XbNj6Tk'>original</a>"
+    },
+    {
         videoID: "1_Ncsri_quY",
         categorie: "phonk",
     },
