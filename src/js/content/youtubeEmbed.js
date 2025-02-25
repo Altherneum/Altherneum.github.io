@@ -36,11 +36,6 @@ async function GetVideos(videoList, VideoListType) {
 
     await include_script("/src/js/content/auto-scroll.js");
     for (video in videoList) {
-        var playlist = videoList[video].playlist;
-        if (playlist === undefined) {
-            playlist = false;
-        }
-
         var short = videoList[video].short;
         if (short === undefined) {
             short = false;
@@ -63,6 +58,10 @@ async function GetVideos(videoList, VideoListType) {
             text = "";
         }
 
+        var playlist = videoList[video].playlist;
+        if (playlist === undefined) {
+            playlist = false;
+        }
         if (playlist) {
             fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
         } else {
@@ -243,20 +242,20 @@ function createIframe(event) {
     var playlistarg;
 
     if (short === "false") {
-        if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "false") {
+        if (localStorage.getItem('YouTubeLoop') === "true" && playlist !== "true") {
             loop = "&loop=1";
             playlistarg = videoID + "?playlist=" + videoID;
         }
-        else if (localStorage.getItem('YouTubeLoop') === "false" && playlist === "false") {
+        else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
+            loop = "&loop=1";
+            playlistarg = "?list=" + videoID + "&listType=playlist";
+        }
+        else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist !== "true") {
             loop = "&loop=0";
             playlistarg = videoID + "?si=Altherneum.fr";
         }
-        else if (localStorage.getItem('YouTubeLoop') === "false" && playlist === "true") {
+        else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist === "true") {
             loop = "&loop=0";
-            playlistarg = "?list=" + videoID + "&listType=playlist";
-        }
-        else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
-            loop = "&loop=1";
             playlistarg = "?list=" + videoID + "&listType=playlist";
         }
     }
