@@ -534,6 +534,11 @@ var videolinks = [
         top: true,
         text: "XZ backdoor",
     },
+    {
+        videoID: "2-UWuBcBZjg",
+        categorie: "humour code IT",
+        short: true,
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news"];
