@@ -539,9 +539,98 @@ var videolinks = [
         categorie: "humour code IT",
         short: true,
     },
+    {
+        videoID: "cXEkSQl9wmw",
+        categorie: "hack IT malware code science",
+    },
+    {
+        videoID: "dZ21eDJl0co",
+        categorie: "code IT science",
+        top: true,
+    },
+    {
+        videoID: "fwBIZRq-vzY",
+        categorie: "Linux IT science",
+        short: true,
+        top: true,
+    },
+    {
+        videoID: "x9aGS-FzONg",
+        categorie: "code IT",
+    },
+    {
+        videoID: "1wndo0DAfqg",
+        categorie: "hack IT science",
+        short: true,
+    },
+    {
+        videoID: "khbe1ObjQhY",
+        categorie: "code humour IT",
+    },
+    {
+        videoID: "vOGhAV-84iI",
+        categorie: "archive",
+        text: "<a href='/admin/video#sVjk5nrb_lI'>Spooky Scary Skeletons</a>",
+    },
+    {
+        videoID: "Dmy3IThKO14",
+        categorie: "IT science",
+    },
+    {
+        videoID: "5_UCkcb7iGY",
+        categorie: "code IT science",
+    },
+    {
+        videoID: "xySQUNvxIpI",
+        categorie: "hack malware IT science",
+    },
+    {
+        videoID: "eP_P4KOjwhs",
+        categorie: "code science IT",
+    },
+    {
+        videoID: "qiOtinFFfk8",
+        categorie: "code science IT",
+    },
+    {
+        videoID: "bC6tngl0PTI",
+        categorie: "science IT",
+    },
+    {
+        videoID: "Gm8v_MR7TGk",
+        categorie: "code IT science",
+    },
+    {
+        videoID: "wTl4vEednkQ",
+        categorie: "code science IT hack",
+    },
+    {
+        videoID: "X0bKkXYx4aM",
+        categorie: "science IT humour",
+    },
+    {
+        videoID: "Rz2z2kiGei0",
+        categorie: "code science IT",
+    },
+    {
+        videoID: "pc8V5wxAXGk",
+        categorie: "science chem",
+    },
+    {
+        videoID: "JFpLGDmcx2g",
+        categorie: "science IT",
+    },
+    {
+        videoID: "bFJUCAg6fOY",
+        categorie: "game science IT",
+    },
+    {
+        videoID: "ExwqNreocpg",
+        categorie: "code science IT",
+    },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
 
 function getVideoListType(){
     return VideoListType;
@@ -599,6 +688,8 @@ function getEmoji(VideoListType){
             return "👮‍♂️";
         case 'news':
             return "📰";
+        case 'archive':
+            return "🕸";
         default:
             return "X";
       }

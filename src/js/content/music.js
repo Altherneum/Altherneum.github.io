@@ -1,5 +1,88 @@
 var videolinks = [
     {
+        videoID: "OV9lCkiMy9o",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "43HK-seUbJs",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "mjsJzKry6E0",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "NZDAouMTba4",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "rGWXuBv2hEA",
+        categorie: "phonk",
+        top: true,
+        text: "<a href='#InH6WOodkkA'>Slowed version</a>",
+    },
+    {
+        videoID: "InH6WOodkkA",
+        categorie: "phonk",
+        top: true,
+        text: "<a href='#rGWXuBv2hEA'>Original</a>",
+    },
+    {
+        videoID: "7mRJQlR-v7Q",
+        categorie: "phonk",
+    },
+    {
+        videoID: "fgFudAUQqEE",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "sVjk5nrb_lI",
+        categorie: "histoire",
+        text: "<a href='/admin/video#vOGhAV-84iI'>Silly Symphonies - The Skeleton Dance - Walt Disney Animation Studios</a>, <a href='#q6-ZGAGcJrk'>remix</a>",
+    },
+    {
+        videoID: "q6-ZGAGcJrk",
+        categorie: "histoire",
+        text: "<a href='#sVjk5nrb_lI'>Original</a>",
+    },
+    {
+        videoID: "BpMAP2ZFlXQ",
+        categorie: "phonk",
+    },
+    {
+        videoID: "pIZ0QRWK0zg",
+        categorie: "phonk",
+    },
+    {
+        videoID: "zOC3FbDcFx8",
+        categorie: "phonk",
+    },
+    {
+        videoID: "CsXCA4-GrTg",
+        categorie: "phonk",
+    },
+    {
+        videoID: "VrXVHZimv9g",
+        categorie: "phonk",
+    },
+    {
+        videoID: "rfJHduzTbV8",
+        categorie: "phonk",
+    },
+    {
+        videoID: "59MEnsSisug",
+        categorie: "phonk",
+    },
+    {
+        videoID: "ZO7yYRIM0-g",
+        categorie: "phonk",
+    },
+    {
         videoID: "4Js-XbNj6Tk",
         categorie: "histoire chill",
         text: "Rick & Morty, <a href='#zh4gzV_x3UM'>remix</a>",
@@ -8,6 +91,10 @@ var videolinks = [
         videoID: "zh4gzV_x3UM",
         categorie: "histoire chill",
         text: "<a href='#4Js-XbNj6Tk'>original</a>"
+    },
+    {
+        videoID: "ayFFHoj5wwk",
+        categorie: "histoire chill",
     },
     {
         videoID: "1_Ncsri_quY",
