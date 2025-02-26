@@ -1,5 +1,10 @@
-var size = 350; //px
-var layer = 20;
+var multiplyer = 2;
+
+var sizeDefault = 175; //px
+var size = sizeDefault * multiplyer;
+
+var layerDefault = 10;
+var layer = layerDefault * multiplyer;
 
 spawnCube("cubeHolder");
 
