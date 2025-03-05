@@ -28,7 +28,14 @@
 
 # src folders
 - [/assets](https://github.com/Altherneum/Altherneum.github.io/blob/main/assets)
+  - [/svg](https://github.com/Altherneum/Altherneum.github.io/blob/main/assets/svg)
+  - [/image](https://github.com/Altherneum/Altherneum.github.io/blob/main/assets/image)
+  - [/font](https://github.com/Altherneum/Altherneum.github.io/blob/main/assets/font)
 - [/src](https://github.com/Altherneum/Altherneum.github.io/blob/main/src)
-  - [src/html](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/html)
-  - [src/css](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/css)
-  - [src/js/content](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/content)
+  - [/html](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/html)
+    - [/include](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/html/include/)
+    - [/content](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/html/content/)
+  - [/css](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/css)
+  - [/js](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js)
+    - [/include](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/include/)
+    - [/content](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/content/)
