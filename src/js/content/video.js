@@ -782,7 +782,7 @@ var videolinks = [
         videoID: "JPeStPPBOCk",
         categorie: "humour IT science",
         short: true,
-    }
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
