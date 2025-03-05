@@ -1,5 +1,36 @@
 var videolinks = [
     {
+        videoID: "pS5d77DQHOI",
+        categorie: "histoire trool",
+    },
+    {
+        videoID: "dv13gl0a-FA",
+        categorie: "histoire trool",
+    },
+    {
+        videoID: "6dYWe1c3OyU",
+        categorie: "histoire",
+    },
+    {
+        videoID: "9-HsYATW7yA",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "8Nzy1cfnKh4",
+        categorie: "histoire",
+        top: true,
+    },
+    {
+        videoID: "FYGTT7YhywA",
+        categorie: "histoire",
+    },
+    {
+        videoID: "iQEpTa3VqLU",
+        categorie: "histoire",
+        top: true,
+    },
+    {
         videoID: "OV9lCkiMy9o",
         categorie: "phonk",
         top: true,

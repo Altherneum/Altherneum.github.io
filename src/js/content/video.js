@@ -628,6 +628,151 @@ var videolinks = [
         videoID: "ExwqNreocpg",
         categorie: "code science IT",
     },
+    {
+        videoID: "n9uhXdViqtg",
+        categorie: "game science",
+    },
+    {
+        videoID: "MOlO1_mj1dU",
+        categorie: "IA science IT",
+    },
+    {
+        videoID: "AfgAEIK9F8c",
+        categorie: "IA science IT",
+    },
+    {
+        videoID: "xxBaV7cgI4s",
+        categorie: "science IT code humour",
+        short: true,
+    },
+    {
+        videoID: "9hMh98FHRp4",
+        categorie: "science IT code humour Linux",
+    },
+    {
+        videoID: "ZYkLgZyiUkQ",
+        categorie: "IT science",
+        short: true,
+    },
+    {
+        videoID: "r6tH55syq0o",
+        categorie: "code IT science humour",
+    },
+    {
+        videoID: "dS01AoUF1xo",
+        categorie: "hack malware OpSec code IT science police",
+    },
+    {
+        videoID: "BAsD84K6eeQ",
+        categorie: "code IT humour",
+        short: true,
+    },
+    {
+        videoID: "HXk5BzoJ-io",
+        categorie: "code IT humour",
+        short: true,
+    },
+    {
+        videoID: "6bq2OaZtnIc",
+        categorie: "code IT humour",
+        short: true,
+    },
+    {
+        videoID: "LgmFg4hRRN4",
+        categorie: "code IT humour linux",
+        short: true,
+    },
+    {
+        videoID: "MpXXK-o1G8Y",
+        categorie: "code IT humour",
+        short: true,
+    },
+    {
+        videoID: "EEF0Nju0S2A",
+        categorie: "code IT humour",
+        short: true,
+    },
+    {
+        videoID: "WBTnGtfKEa0",
+        categorie: "code IT humour",
+        short: true,
+    },
+    {
+        videoID: "7revMCR3O4M",
+        categorie: "hack science IT humour",
+    },
+    {
+        videoID: "R2B2QetWGag",
+        categorie: "code IT science",
+        top: true,
+    },
+    {
+        videoID: "6StTD-ozQsU",
+        categorie: "code IT science chem",
+        top: true,
+    },
+    {
+        videoID: "SlIZxdeoWDY",
+        categorie: "science IT Linux OpSec",
+        top: true,
+    },
+    {
+        videoID: "4litc5DxoHQ",
+        categorie: "OpSec science IT",
+    },
+    {
+        videoID: "k3CJB_az3_M",
+        categorie: "code science IT humour",
+        short: true,
+    },
+    {
+        videoID: "vc4yL3YTwWk",
+        categorie: "OpSec IT science malware",
+    },
+    {
+        videoID: "puxHXjszzbE",
+        categorie: "science IT",
+        short: true,
+    },
+    {
+        videoID: "GqKgFdk0PfE",
+        categorie: "science code IT humour",
+        short: true,
+    },
+    {
+        videoID: "1AVQCANqC-s",
+        categorie: "IA science IT game",
+        top: true,
+    },
+    {
+        videoID: "PLFD075FAE2C2288FE",
+        categorie: "humour archive",
+        playlist: true,
+        top: true,
+    },
+    {
+        videoID: "32BKHhSV3II",
+        categorie: "OpSec science IT",
+    },
+    {
+        videoID: "o0Ix7_toPuo",
+        categorie: "science IT",
+        short: true,
+        top: true,
+    },
+    {
+        videoID: "Z4sYZrKuL_E",
+        categorie: "code science IT",
+        top: true,
+    },
+    {
+        videoID: "wqeGPX7TRv0",
+        categorie: "code humour IT",
+    },
+    {
+        videoID: "fv_MPosiINw",
+        categorie: "discord IT science",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
