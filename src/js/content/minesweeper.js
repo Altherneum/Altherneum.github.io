@@ -378,8 +378,6 @@ function getNearbyCell(x, y) {
     return plateMinesToCheck;
 }
 
-// Dont work & last step
-// script run in weird order and go down on path only and stop randomely
 function autoUnlockNearbyZone(x, y, td, firstRun) {
     var cell = plateMines[x][y];
     if (cell == 0) {
