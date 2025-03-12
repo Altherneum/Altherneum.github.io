@@ -38,4 +38,5 @@
   - [/css](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/css)
   - [/js](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js)
     - [/include](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/include/)
+      - [/page](https://github.com/Altherneum/Altherneum.github.io/tree/main/src/js/include/pages)
     - [/content](https://github.com/Altherneum/Altherneum.github.io/blob/main/src/js/content/)
