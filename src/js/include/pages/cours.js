@@ -110,6 +110,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/cours/windows", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/shortcut.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/console.md', false);
         });
