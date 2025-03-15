@@ -169,19 +169,19 @@ const links = [
     },
     {
         href: "/outils/caesar.html",
-        tag: "Outils",
+        tag: "Outils OpSec",
         text: "Chiffrement par décalage (Caesar / César)",
         svg: "/assets/svg/password.svg",
     },
     {
         href: "/outils/vigenere.html",
-        tag: "Outils",
+        tag: "Outils OpSec",
         text: "Chiffre de Vigenère",
         svg: "/assets/svg/password.svg",
     },
     {
         href: "/outils/base64.html",
-        tag: "Outils",
+        tag: "Outils OpSec",
         text: "Base64",
         svg: "/assets/svg/password.svg",
     },
@@ -850,6 +850,12 @@ const links = [
         svg: "/assets/svg/trademark/discord.svg",
         tag: ".gg Discord Outils URL Développement",
         text: "Active Developer Badge",
+    },
+    {
+        href: "/outils/rsa.html",
+        svg: "/assets/svg/password.svg",
+        tag: "Outils OpSec",
+        text: "Chiffrement RSA",
     },
 ];
 

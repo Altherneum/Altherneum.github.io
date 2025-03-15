@@ -1,14 +1,21 @@
 var privateKey;
 var publicKey;
+var consoleHTML = document.getElementById("rsa-console");
+consoleHTML.textContent += "\n- RSA (Info console) -";
 
-async function getRandomKey(maxBits){
-    var value = 1;
-    console.log("Starting generation of random prime number");
+function getRandomKey(maxBits) {
+    consoleHTML.textContent += "\nStarting generation of random prime number";
+    var value = getRandomNumber(maxBits);
+    consoleHTML.textContent += "\nStarting with randome prime : " + value;
+
     while(!isPrime(value)){
-        value = getRandomNumber(maxBits);
+        value += 1;
+        consoleHTML.textContent += "\ntesting prime : " + value;
     }
+
     return value;
 }
+
 function getRandomNumber(maxBits) {
     return Math.floor(Math.random() * bitsToInt(maxBits));
 }
@@ -33,19 +40,31 @@ function isPrime(value) {
     else{ return false; }
 }
 
-async function getCoprime(prime, maxBits) {
-    console.log("getting coprime");
+function getCoprime(prime, maxBits) {
+    consoleHTML.textContent += "\ngetting coprime";
     var value = getRandomKey(maxBits);
-    while (!IsFactorOf(prime, value) || value > prime) {
-        value = getRandomKey(maxBits);
-    } return value;
+    while (!IsFactorOf(prime, value) && value > prime) {
+        consoleHTML.textContent += "\ntesting : " + value;
+        
+        if (value > 1) {
+            value -= 1;
+            consoleHTML.textContent += "\ntesting new coprime " + value;
+        }
+        else {
+            value = getRandomKey(maxBits);
+            consoleHTML.textContent += "\nValue to low, getting new random key " + value;
+        }
+    }
+    consoleHTML.textContent += "\nfound value is " + value;
+
+    return value;
 }
 
 function IsFactorOf(prime, value) {
-    if (prime % value == 0) {
-        return false;
-    }
-    return true;
+    consoleHTML.textContent += "Check if " + prime + " is factor of " + value + " = ";
+    var boolIsFactor = prime % value == 0;
+    consoleHTML.textContent += boolIsFactor;
+    return boolIsFactor;
 }
 
 function gcd(a, b) {
@@ -68,33 +87,39 @@ function modInverse(value, modulo) {
     }
 }
  
-async function RSA(maxBits) {
-    console.log("starting RSA keyGen");
+function RSAKeyGen() {
+    var maxBits = document.getElementById("valueMaxBits").value;
+    consoleHTML.textContent += "\nstarting RSA keyGen";
 
-    var p = await getRandomKey(maxBits);
-    console.log("p = " + p);
+    var p = getRandomKey(maxBits);
+    consoleHTML.textContent += "\n\np = " + p;
 
-    var q = await getRandomKey(maxBits);
-    console.log("q = " + q);    
+    var q = getRandomKey(maxBits);
+    consoleHTML.textContent += "\n\nq = " + q;
 
     var n = p * q;
-    console.log("n = " + p + "x" + q + " = " + n);
+    consoleHTML.textContent += "\n\nn = " + p + "x" + q + " = " + n;
+    document.getElementById("valueN").value = n;
 
     var phi = (p-1) * (q-1);
-    console.log("phi = " + phi);
+    consoleHTML.textContent += "\n\nphi = " + phi;
 
-    var e = await getCoprime(phi, maxBits);
-    console.log("coprime e = " + e);
+    var e = getCoprime(phi, maxBits);
+    consoleHTML.textContent += "\n\ncoprime e = " + e;
+    document.getElementById("valueE").value = e;
 
     //var d = modInverse(e, phi); // seem not OK
-    var d = await getPrivateKey(e, phi, maxBits);
-    console.log("modInverse d = " + d);
+    var d = getPrivateKey(e, phi, maxBits);
+    consoleHTML.textContent += "\n\nmodInverse d = " + d;
+    document.getElementById("valueD").value = d;
 
     privateKey = {n,d};
-    publicKey = { n, e };     
+    publicKey = {n,e};
+    
+    return;
 }
 
-async function getPrivateKey(e, phi, maxBits) {
+function getPrivateKey(e, phi, maxBits) {
     var value = 2;
     while (!isPrivateKeyOK(e, phi, value)) {
         value += 1;
@@ -109,15 +134,18 @@ function isPrivateKeyOK(e, phi, value) {
     return false;
 }
 
-function encrypt(value, maxBits){
+function encrypt() {
+    var value = document.getElementById("value").value;
+    var maxBits = document.getElementById("valueMaxBits").value;
+    
     if (value < 0 || value >= publicKey.n) {
-        console.error(`Condition 0 <= m < n not met. m = ${value}`);
-        RSA(maxBits); encrypt(value);
+        consoleHTML.textContent += "Condition 0 <= m < n not met. m = " + value;
+        RSAKeyGen(maxBits); encrypt(value);
     }
     
     if (gcd(value, publicKey.n) !== 1) {
-        console.error("Condition gcd(value, n) = 1 not met.");
-        RSA(maxBits); encrypt(value);
+        consoleHTML.textContent += "Condition gcd(value, n) = 1 not met.";
+        RSAKeyGen(maxBits); encrypt(value);
     }
 
     //var x = Math.pow(BigInt(value), BigInt(publicKey.e)) % BigInt(publicKey.n);
@@ -125,38 +153,47 @@ function encrypt(value, maxBits){
     
     //BigInt(60n ** 41n % 133n) = 72n // is OK
 
+    consoleHTML.textContent += "\n\n---------------------- crypt  " + x;
     return x;
     // value ** publicKey.e % publicKey.n
 }
 
-function decrypt(value){
+function decrypt() {
+    var value = document.getElementById("value").value;
+
     var x = Number(BigInt(value) ** BigInt(privateKey.d) % BigInt(privateKey.n));
+
+    consoleHTML.textContent += "\n\n---------------------- decrypt  " + x;
     return x;
     //value ** privateKey.d % privateKey.n
 }
 
-async function test() {
-    console.log("STARTING RSA TEST");
+function test() {
+    consoleHTML.textContent += "\n\nSTARTING RSA TEST";
+
+    RSAKeyGen();
+
+
     
-    var valueToCrypt = 6;
-    var maxBits = 6;
-
-    await RSA(maxBits);
-
-    console.log("value to crypt ; " + valueToCrypt);
+    
+    consoleHTML.textContent += "\n\nvalue to crypt ; " + valueToCrypt;
+    
     
     var x1 = Math.round(encrypt(valueToCrypt, maxBits));
-    console.log("---------------------- crypt  "+x1);
+    consoleHTML.textContent += "\n\ncrypt  "+x1;
+    
+    
     var x2 = Math.round(decrypt(x1));
-    console.log("---------------------- decrypt  " + x2);
+    consoleHTML.textContent += "\n\ndecrypt  " + x2;
+    
     
     if (valueToCrypt === x2)
     {
-        console.log("OK result");
+        consoleHTML.textContent += "\nOK result\n\n";
     }
     else {
-        console.log("Result NOK");
+        consoleHTML.textContent += "\nResult NOK\n\n";
     }
-}
 
-test(); 
+    return;
+}
