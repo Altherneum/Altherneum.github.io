@@ -1435,9 +1435,82 @@ var videolinks = [
         videoID: "oC2HvHKDjeU",
         categorie: "chilljp trool",
     },
+    {
+        videoID: "yAxWl72m2fc",
+        categorie: "trool electro hardbass phonk",
+    },
+    {
+        videoID: "3fEg1r6SH9Q",
+        categorie: "trool electro hardbass phonk",
+    },
+    {
+        videoID: "mM14xW7edWM",
+        categorie: "trool electro hardbass phonk histoire",
+        top: true,
+    },
+    {
+        videoID: "mDFBTdToRmw",
+        categorie: "trool electro hardbass",
+    },
+    {
+        videoID: "FBnAZnfNB6U",
+        categorie: "trool electro hardbass",
+    },
+    {
+        videoID: "iL1HvAu8V1w",
+        categorie: "trool electro hardbass phonk",
+    },
+    {
+        videoID: "j4IgNPmaKkw",
+        categorie: "trool electro hardbass phonk",
+    },
+    {
+        videoID: "Ra5qZDJefJs",
+        categorie: "phonk electro",
+        text: "<a href='#mw7Y0jQ8_BU'>Spinnin Records 1st upload</a>",
+    },
+    {
+        videoID: "mw7Y0jQ8_BU",
+        categorie: "phonk electro",
+        top: true,
+        text: "<a href='#Ra5qZDJefJs'>Re-upload by YouTube</a>",
+    },
+    {
+        videoID: "Zx8UqdI91z8",
+        categorie: "trool electro hardbass phonk",
+    },
+    {
+        videoID: "DB1095Erdyg",
+        short: true,
+        categorie: "electro hardbass",
+    },
+    {
+        videoID: "zJwB8IncHso",
+        categorie: "electro",
+    },
+    {
+        videoID: "ZhENkIaiaQ8",
+        categorie: "electro",
+    },
+    {
+        videoID: "4nmTNaSyh_k",
+        categorie: "electro",
+    },
+    {
+        videoID: "3wuHRIJXgzc",
+        categorie: "electro",
+    },
+    {
+        videoID: "RSkBWcXpVKA",
+        categorie: "electro",
+    },
+    {
+        videoID: "BfrnfP1zZRI",
+        categorie: "electro",
+    },
 ];
 
-var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock"];
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass"];
 
 function getVideoListType(){
     return VideoListType;
@@ -1467,6 +1540,10 @@ function getEmoji(VideoListType){
             return "💩";
         case 'rock':
             return "🎸";
+        case 'hardbass':
+            return "🥁";
+        case 'electro':
+            return "⚡";
         default:
             return "X";
       }

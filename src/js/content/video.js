@@ -377,7 +377,7 @@ var videolinks = [
     },
     {
         videoID: "C4ATDMIz5wc",
-        categorie: "science IT",
+        categorie: "science code IT",
         top: true,
     },
     {
@@ -787,6 +787,27 @@ var videolinks = [
         videoID: "uY8BpZBF2f0",
         categorie: "hack IT science code malware",
         top: true,
+    },
+    {
+        videoID: "EFg3u_E6eHU",
+        categorie: "science code IT",
+    },
+    {
+        videoID: "I6Unxb-PFhs",
+        categorie: "science code IT",
+    },
+    {
+        videoID: "85oMrKd8afY",
+        categorie: "science code IT",
+    },
+    {
+        videoID: "wcbH4t5SJpg",
+        categorie: "science code IT",
+        text: "<a href='https://www.cryptool.org/en/cto/rsa-step-by-step/'>cryptool / rsa step by step</a>",
+    },
+    {
+        videoID: "k_VV_nceRE0",
+        categorie: "game hack science IT",
     },
 ];
 
