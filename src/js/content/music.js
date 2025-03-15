@@ -1522,6 +1522,14 @@ var videolinks = [
         categorie: "electro classic chill rock",
         top: true,
     },
+    {
+        videoID: "PDJLvF1dUek",
+        categorie: "trool",
+    },
+    {
+        videoID: "k85mRPqvMbE",
+        categorie: "trool",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass"];
