@@ -29,7 +29,7 @@ async function addMarkdown(repo, file, gist) {
     content.appendChild(textElem);
     setAnchorTitles(anchorList, content);
 
-    autoScroll(true);
+    autoScroll(true, "start");
     console.log("Fin markdown");
 }
 
@@ -514,7 +514,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchorOnList.className = "summary-hidder";
         }
 
-        setScrollBehavior(anchorOnList);
+        setScrollBehavior(anchorOnList, "start");
         anchorListElement.appendChild(anchorOnList);
     }
 }

@@ -67,7 +67,7 @@ async function GetVideos(videoList, VideoListType) {
 
         await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short);
 
-        autoScroll(true);
+        autoScroll(true, "center");
 
         total += 1;
     }
@@ -158,8 +158,11 @@ function addCard(top, playlist, videoID, categorie, latest) {
 
     var anchor = document.createElement("a");
     anchor.href = "#" + videoID;
+    anchor.onclick = () => {
+
+    };
     anchor.id = videoID;
-    setScrollBehavior(anchor);
+    setScrollBehavior(anchor, "center");
     div_card.appendChild(anchor);
 
     var imageAnchor = document.createElement("img");

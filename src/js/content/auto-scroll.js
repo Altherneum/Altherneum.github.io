@@ -1,30 +1,28 @@
-function setScrollBehavior(anchor) {
+function setScrollBehavior(anchor, type) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
         window.location.hash = this.getAttribute('href');
-        DoScrollIntoView(document.querySelector(this.getAttribute('href')), false);
+        DoScrollIntoView(document.getElementById(this.getAttribute('href').replace("#", "")), false, type);
     });
 }
 
 var onceIsDone = false;
-function autoScroll(once) {
+function autoScroll(once, type) {
     var hash = decodeURIComponent(window.location.hash);
-    hash = hash.replace("#", "");
+    var element = document.getElementById(hash.replace("#", ""));
 
-    var element = document.getElementById(hash);
-    DoScrollIntoView(element, once);
+    DoScrollIntoView(element, once, type);
 }
 
-function DoScrollIntoView(element, once) {
+function DoScrollIntoView(element, once, type) {
     if (element !== null) {
         if (once === true && onceIsDone === true) {
             return;
         }
         else {
-            element.scrollIntoView({ behavior: "smooth", block: "start" });
-            // no browser good support yet : // element.focus({ focusVisible: true });
-            element.focus();
+            element.scrollIntoView({ behavior: "smooth", block: type });
+            element.focus(); // no browser good support yet : // element.focus({ focusVisible: true });
             onceIsDone = true;
         }
     }
