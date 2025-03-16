@@ -34,7 +34,8 @@ async function CheckPage() {
         await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/music.js");
-        GetVideos(GetVideoList(), getVideoListType());
+
+        loadYouTubeEmbed();
         await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", null);
     }
         
@@ -46,7 +47,7 @@ async function CheckPage() {
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/video.js");
 
-        GetVideos(GetVideoList(), getVideoListType());
+        loadYouTubeEmbed();
         await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", null);
     }
 

@@ -817,7 +817,6 @@ function getVideoListType(){
     return VideoListType;
 }
 
-getVideoChannel();
 function getVideoChannel(){
     getLatestVideoOfChannel("UCYnvxJ-PKiGXo_tYXpWAC-w", 1, "IT", "", false, true);
     getLatestVideoOfChannel("UCWedHS9qKebauVIK2J7383g", 1, "IT", "", false, true);
@@ -872,6 +871,6 @@ function getEmoji(VideoListType){
         case 'archive':
             return "🕸";
         default:
-            return "X";
+            return "❓";
       }
 }

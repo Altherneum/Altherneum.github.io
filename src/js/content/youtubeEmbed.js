@@ -1,6 +1,10 @@
 // https://developers.google.com/youtube/player_parameters?hl=fr#listType
 var total = 0;
 
+function loadYouTubeEmbed() {
+    GetVideos(GetVideoList(), getVideoListType());
+}
+
 var shown = "all";
 function show(name) {
     shown = name;
@@ -12,10 +16,15 @@ function show(name) {
     }
 }
 
+function hideMenu(menuName) {
+    var menu = document.getElementById(menuName);
+    menu.style.display = "none";
+}
+
 function showOrHideSong(name, element) {
     if (element != undefined && element.classList != undefined){
         if (element.classList.contains(name)) {
-            if (element.style.display === "none" || element.style.display === undefined) {
+            if (element.style.display === "none" || element.style.display === undefined || element.style.display === "") {
                 element.style.display = "inline-block";
             }
         }
@@ -29,49 +38,82 @@ function showOrHideSong(name, element) {
 }
 
 async function GetVideos(videoList, VideoListType) {    
+    await include_script("/src/js/content/auto-scroll.js");
     addButtons(VideoListType);
 
-    await include_script("/src/js/content/auto-scroll.js");
+    var hash = decodeURIComponent(window.location.hash).replace("#", "");
+    var LoadSingleVideo = false;
+    if(hash !== ""){
+        LoadSingleVideo = true;
+        hideMenu("menu-all");
+        hideMenu("menu-default");
+    }
+    else {
+        hideMenu("menu-link");
+    }
+
     for (video in videoList) {
-        var short = videoList[video].short;
-        if (short === undefined) {
-            short = false;
-        }
-
-        var top = videoList[video].top;
-        if (top === undefined) {
-            top = false;
-        }
-
         var videoID = videoList[video].videoID;
-        var categorie = videoList[video].categorie;
-        var fetchUrl;
 
-        var text;
-        if (videoList[video].text !== undefined) {
-            text = videoList[video].text;
+        if (LoadSingleVideo) {
+            if (videoID === hash) {
+                await parseVideoParam(videoList, video, videoID);
+                total = 1;
+                break;
+            }
         }
         else {
-            text = "";
+            await parseVideoParam(videoList, video, videoID);
+            total += 1;
         }
-
-        var playlist = videoList[video].playlist;
-        if (playlist === undefined) {
-            playlist = false;
-        }
-        if (playlist) {
-            fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
-        } else {
-            fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
-        }
-
-        await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short);
 
         autoScroll(true, "center");
-
-        total += 1;
     }
+
+    if (LoadSingleVideo && total !== 1) {
+        var div_card = addCard(false, false, hash, "");
+        addCardData(div_card, "404", "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
+        videoholder.appendChild(div_card);
+        div_card.style.display = "block";
+    }
+
+    getVideoChannel();
     console.log(total);
+}
+
+async function parseVideoParam(videoList, video, videoID) {
+    var short = videoList[video].short;
+    if (short === undefined) {
+        short = false;
+    }
+
+    var top = videoList[video].top;
+    if (top === undefined) {
+        top = false;
+    }
+
+    var categorie = videoList[video].categorie;
+    var fetchUrl;
+
+    var text;
+    if (videoList[video].text !== undefined) {
+        text = videoList[video].text;
+    }
+    else {
+        text = "";
+    }
+
+    var playlist = videoList[video].playlist;
+    if (playlist === undefined) {
+        playlist = false;
+    }
+    if (playlist) {
+        fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
+    } else {
+        fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
+    }
+
+    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short);
 }
 
 function addButtons(Types){
@@ -97,6 +139,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
         var status = response.status;
         
         var videoholder = document.getElementById("videoholder");
+        var div_card;
 
         if (status === 200) {
             var jsonResponse = await response.json();
@@ -107,26 +150,27 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
             var thumbnail = JSONdata.thumbnail_url;
 
-            var div_card = addCard(top, playlist, videoID, categorie, latest);
+            div_card = addCard(top, playlist, videoID, categorie, latest);
 
             var video_div = addCardData(div_card, title, text, thumbnail, false);
             addVideoCard(video_div, videoID, playlist, short);
 
             videoholder.appendChild(div_card);
+            showOrHideSong(shown, div_card);
         }
         else if (status === 404) {            
-            var div_card = addCard(top, playlist, videoID, categorie);
-            var video_div = addCardData(div_card, "404", "Video supprimée !", "/assets/svg/link-broken.svg", true);
+            div_card = addCard(top, playlist, videoID, categorie);
+            var video_div = addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else if (status === 403) {
-            var div_card = addCard(top, playlist, videoID, categorie);
-            var video_div = addCardData(div_card, "403", "Video privée !", "/assets/svg/link-broken.svg", true);
+            div_card = addCard(top, playlist, videoID, categorie);
+            var video_div = addCardData(div_card, "403", "Vidéo privée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else if (status === 401) {
-            var div_card = addCard(top, playlist, videoID, categorie);
-            var video_div = addCardData(div_card, "401", "Video sans embed !", "/assets/svg/link-broken.svg", true);
+            div_card = addCard(top, playlist, videoID, categorie);
+            var video_div = addCardData(div_card, "401", "Vidéo sans embed !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else {
@@ -154,7 +198,6 @@ function addCard(top, playlist, videoID, categorie, latest) {
 
     classname += "card " + categorie;
     div_card.className = classname;
-    showOrHideSong(shown, div_card);
 
     var anchor = document.createElement("a");
     anchor.href = "#" + videoID;
