@@ -89,8 +89,10 @@ async function GetVideos(videoList, VideoListType) {
         videoholder.appendChild(div_card);
         div_card.style.display = "block";
     }
+    else if(!LoadSingleVideo){
+        getVideoChannel();
+    }
 
-    getVideoChannel();
     console.log(total);
 }
 
