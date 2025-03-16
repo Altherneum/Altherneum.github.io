@@ -849,9 +849,14 @@ var videolinks = [
         categorie: "trool",
     },
     {
-        text: "PoV Dev's life",
         videoID: "i8lDuo9yqfs",
         categorie: "trool",
+        text: "PoV Dev's life, <a href='#FtutLA63Cp8'>Original</a>",
+    },
+    {
+        videoID: "FtutLA63Cp8",
+        categorie: "trool",
+        text: "<a href='#i8lDuo9yqfs'>Remix</a>"
     },
     {
         text: "⚡",
