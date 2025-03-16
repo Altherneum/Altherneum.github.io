@@ -1530,6 +1530,71 @@ var videolinks = [
         videoID: "k85mRPqvMbE",
         categorie: "trool",
     },
+    {
+        videoID: "1Grg7u6KQkE",
+        categorie: "classic electro",
+    },
+    {
+        videoID: "LGxISDwQ350",
+        categorie: "electro",
+    },
+    {
+        videoID: "Q3Kvu6Kgp88",
+        categorie: "histoire classic",
+    },
+    {
+        videoID: "qobUwe3EP_U",
+        categorie: "histoire classic",
+    },
+    {
+        videoID: "st8xWyMZXOU",
+        categorie: "trool electro",
+    },
+    {
+        videoID: "4mNDYWhRSaw",
+        categorie: "trool",
+    },
+    {
+        videoID: "shi6I6mkJAk",
+        categorie: "trool",
+    },
+    {
+        videoID: "GGPXjiwlWZc",
+        categorie: "trool",
+    },
+    {
+        videoID: "tP6tQ7OEFlY",
+        categorie: "histoire classic",
+    },
+    {
+        videoID: "AS4GlgkW5Fc",
+        categorie: "trool",
+    },
+    {
+        videoID: "PI9yKr39vGI",
+        categorie: "trool",
+    },
+    {
+        videoID: "fJ9rUzIMcZQ",
+        categorie: "histoire rock",
+    },
+    {
+        videoID: "uT3SBzmDxGk",
+        categorie: "classic rock",
+    },
+    {
+        videoID: "qYyaKNvcKEA",
+        categorie: "histoire",
+    },
+    {
+        videoID: "Eu-9OhZ8jYM",
+        categorie: "trool",
+    },
+    {
+        videoID: "V1bFr2SWP1I",
+        categorie: "histoire",
+        text: "🌈",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass"];
