@@ -1190,12 +1190,12 @@ var videolinks = [
     {
         videoID: "_KEQxsXjZuY",
         text: "Music version",
-        categorie: "chill",
+        categorie: "chill trool",
     },
     {
         videoID: "PozNmD_FgZY",
         text: "TV version",
-        categorie: "chill",
+        categorie: "chill trool",
     },
     {
         videoID: "PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM",
@@ -1499,14 +1499,17 @@ var videolinks = [
     {
         videoID: "3wuHRIJXgzc",
         categorie: "electro",
+        top: true,
     },
     {
         videoID: "RSkBWcXpVKA",
         categorie: "electro",
+        top: true,
     },
     {
         videoID: "BfrnfP1zZRI",
         categorie: "electro",
+        top: true,
     },
     {
         videoID: "W7Q54_BEhgQ",
