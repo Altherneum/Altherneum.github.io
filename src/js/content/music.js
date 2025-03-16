@@ -54,13 +54,13 @@ var videolinks = [
         videoID: "rGWXuBv2hEA",
         categorie: "phonk",
         top: true,
-        text: "<a href='#InH6WOodkkA'>Slowed version</a>",
+        text: "<a target='_blank' href='#InH6WOodkkA'>Slowed version</a>",
     },
     {
         videoID: "InH6WOodkkA",
         categorie: "phonk",
         top: true,
-        text: "<a href='#rGWXuBv2hEA'>Original</a>",
+        text: "<a target='_blank' href='#rGWXuBv2hEA'>Original</a>",
     },
     {
         videoID: "7mRJQlR-v7Q",
@@ -74,12 +74,12 @@ var videolinks = [
     {
         videoID: "sVjk5nrb_lI",
         categorie: "histoire",
-        text: "<a href='/admin/video#vOGhAV-84iI'>Silly Symphonies - The Skeleton Dance - Walt Disney Animation Studios</a>, <a href='#q6-ZGAGcJrk'>remix</a>",
+        text: "<a target='_blank' href='/admin/video#vOGhAV-84iI'>Silly Symphonies - The Skeleton Dance - Walt Disney Animation Studios</a>, <a target='_blank' href='#q6-ZGAGcJrk'>remix</a>",
     },
     {
         videoID: "q6-ZGAGcJrk",
         categorie: "histoire",
-        text: "<a href='#sVjk5nrb_lI'>Original</a>",
+        text: "<a target='_blank' href='#sVjk5nrb_lI'>Original</a>",
         top: true,
     },
     {
@@ -117,12 +117,12 @@ var videolinks = [
     {
         videoID: "4Js-XbNj6Tk",
         categorie: "histoire chill",
-        text: "Rick & Morty, <a href='#zh4gzV_x3UM'>remix</a>",
+        text: "Rick & Morty, <a target='_blank' href='#zh4gzV_x3UM'>remix</a>",
     },
     {
         videoID: "zh4gzV_x3UM",
         categorie: "histoire chill",
-        text: "<a href='#4Js-XbNj6Tk'>original</a>"
+        text: "<a target='_blank' href='#4Js-XbNj6Tk'>original</a>"
     },
     {
         videoID: "ayFFHoj5wwk",
@@ -325,7 +325,7 @@ var videolinks = [
     },
     {
         videoID: "urxeNbBc1nk",
-        text: "<a href='https://www.youtube.com/playlist?list=PLLj4tKExmpKL_a-wl0fwMcECIRI0X_4Ty'>PlayList</a>",
+        text: "<a target='_blank' href='https://www.youtube.com/playlist?list=PLLj4tKExmpKL_a-wl0fwMcECIRI0X_4Ty'>PlayList</a>",
         top: true,
         categorie: "chill",
     },
@@ -406,13 +406,13 @@ var videolinks = [
         categorie: "chill",
     },
     {
-        text: "<a href='#yt-DyDfgMOUjCI'>Original</a>",
+        text: "<a target='_blank' href='#yt-DyDfgMOUjCI'>Original</a>",
         videoID: "3Z4efCGd7TE",
         top: true,
         categorie: "chill",
     },
     {
-        text: "<a href='#yt-Y2V6yjjPbX0'>Original</a>",
+        text: "<a target='_blank' href='#yt-Y2V6yjjPbX0'>Original</a>",
         videoID: "fktD1q8OPa0",
         top: true,
         categorie: "chill",
@@ -556,7 +556,7 @@ var videolinks = [
         categorie: "histoire",
     },
     {
-        text: "Rick Astley <a href='https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html'>Discord URI</a>",
+        text: "Rick Astley <a target='_blank' href='https://discord.com/vanityurl/dotcom/steakpants/flour/flower/index11.html'>Discord URI</a>",
         videoID: "dQw4w9WgXcQ",
         top: true,
         categorie: "histoire",
@@ -844,19 +844,19 @@ var videolinks = [
         categorie: "trool",
     },
     {
-        text: "<a href='youtube.com/watch?v=tzx8gCkIKkU'>Lien</a>",
+        text: "<a target='_blank' href='youtube.com/watch?v=tzx8gCkIKkU'>Lien</a>",
         videoID: "lBa_oZU_wao",
         categorie: "trool",
     },
     {
         videoID: "i8lDuo9yqfs",
         categorie: "trool",
-        text: "PoV Dev's life, <a href='#FtutLA63Cp8'>Original</a>",
+        text: "PoV Dev's life, <a target='_blank' href='#FtutLA63Cp8'>Original</a>",
     },
     {
         videoID: "FtutLA63Cp8",
         categorie: "trool",
-        text: "<a href='#i8lDuo9yqfs'>Remix</a>"
+        text: "<a target='_blank' href='#i8lDuo9yqfs'>Remix</a>"
     },
     {
         text: "⚡",
@@ -1050,7 +1050,7 @@ var videolinks = [
     },
     {
         videoID: "F2xnvyMp8Us",
-        text: "<a href='#yt-DF3XjEhJ40Y'>Original</a>",
+        text: "<a target='_blank' href='#yt-DF3XjEhJ40Y'>Original</a>",
         top: true,
         categorie: "chill",
     },
@@ -1204,7 +1204,7 @@ var videolinks = [
     },
     {
         videoID: "PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM",
-        text: "<a href='https://www.youtube.com/@uni_mafumafu'>@uni_mafumafu</a>",
+        text: "<a target='_blank' href='https://www.youtube.com/@uni_mafumafu'>@uni_mafumafu</a>",
         playlist: true,
         categorie: "chilljp",
     },
@@ -1371,12 +1371,12 @@ var videolinks = [
         categorie: "histoire",
     },
     {
-        text: "<a href='#34CZjsEI1yU'>Rock remix</a>",
+        text: "<a target='_blank' href='#34CZjsEI1yU'>Rock remix</a>",
         videoID: "ytWz0qVvBZ0",
         categorie: "trool",
     },
     {
-        text: "<a href='#ytWz0qVvBZ0'>Original</a>",
+        text: "<a target='_blank' href='#ytWz0qVvBZ0'>Original</a>",
         videoID: "34CZjsEI1yU",
         categorie: "rock",
     },
@@ -1476,13 +1476,13 @@ var videolinks = [
     {
         videoID: "Ra5qZDJefJs",
         categorie: "phonk electro",
-        text: "<a href='#mw7Y0jQ8_BU'>Spinnin Records 1st upload</a>",
+        text: "<a target='_blank' href='#mw7Y0jQ8_BU'>Spinnin Records 1st upload</a>",
     },
     {
         videoID: "mw7Y0jQ8_BU",
         categorie: "phonk electro",
         top: true,
-        text: "<a href='#Ra5qZDJefJs'>Re-upload by YouTube</a>",
+        text: "<a target='_blank' href='#Ra5qZDJefJs'>Re-upload by YouTube</a>",
     },
     {
         videoID: "Zx8UqdI91z8",

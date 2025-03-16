@@ -192,7 +192,7 @@ var videolinks = [
         videoID: "IRD06dycqYc",
         categorie: "game",
         short: true,
-        text: "<a href='#yt-Ab65Cr-XU8U'>The TRUTH about the MIG Switch Nintendo Flash Cart</a>",
+        text: "<a target='_blank' href='#yt-Ab65Cr-XU8U'>The TRUTH about the MIG Switch Nintendo Flash Cart</a>",
     },
     {
         videoID: "Ab65Cr-XU8U",
@@ -525,7 +525,7 @@ var videolinks = [
     {
         videoID: "gXtp6C-3JKo",
         categorie: "hack IT malware code OpSec",
-        text: "Stuxnet A.K.A <a href='https://wikipedia.org/wiki/Operation_Olympic_Games'>Operation Olympic Games</a>",
+        text: "Stuxnet A.K.A <a target='_blank' href='https://wikipedia.org/wiki/Operation_Olympic_Games'>Operation Olympic Games</a>",
         top: true,
     },
     {
@@ -570,7 +570,7 @@ var videolinks = [
     {
         videoID: "vOGhAV-84iI",
         categorie: "archive",
-        text: "<a href='/admin/video#sVjk5nrb_lI'>Spooky Scary Skeletons</a>",
+        text: "<a target='_blank' href='/admin/video#sVjk5nrb_lI'>Spooky Scary Skeletons</a>",
     },
     {
         videoID: "Dmy3IThKO14",
@@ -803,7 +803,7 @@ var videolinks = [
     {
         videoID: "wcbH4t5SJpg",
         categorie: "science code IT",
-        text: "<a href='https://www.cryptool.org/en/cto/rsa-step-by-step/'>cryptool / rsa step by step</a>",
+        text: "<a target='_blank' href='https://www.cryptool.org/en/cto/rsa-step-by-step/'>cryptool / rsa step by step</a>",
     },
     {
         videoID: "k_VV_nceRE0",
