@@ -2,7 +2,7 @@
 var total = 0;
 
 function loadYouTubeEmbed() {
-    GetVideos(GetVideoList(), getVideoListType());
+    GetVideos(shuffle(GetVideoList()), getVideoListType());
 }
 
 var shown = "all";
@@ -35,6 +35,19 @@ function showOrHideSong(name, element) {
             element.style.display = "none";
         }
     }
+}
+
+function shuffle(array) {
+    let currentIndex = array.length;
+    console.log("array length is : " + array.length)
+
+    while (currentIndex != 0) {
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+    return array;
 }
 
 async function GetVideos(videoList, VideoListType) {    
