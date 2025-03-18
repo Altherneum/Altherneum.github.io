@@ -57,7 +57,10 @@ const parseMarkdown = (text) => {
     console.log("Loading markdown parser");
     const toHTML = text
         //match YTB url, onload(AddIframe(.... match regex)); .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>')
-        .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a> 
+        //.replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
+        //          ([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/[^\)]+\))
+        .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
+
         .replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
 
         .replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
