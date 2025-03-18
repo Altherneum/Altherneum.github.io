@@ -128,7 +128,7 @@ async function parseVideoParam(videoList, video, videoID) {
         fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
     }
 
-    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, "videoholder");
+    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, false, "videoholder");
 }
 
 function addButtons(Types){
