@@ -24,13 +24,6 @@ function destroyCursor() {
     }
 }
 
-function showDefaultCursor() {
-    document.querySelector('link[href$="cursor.css"]').remove();
-}
-
-function hideDefaultCursor() {
-}
-
 async function createCursor() {
     cursor = document.createElement("div");
     cursor.id = "cursor";
