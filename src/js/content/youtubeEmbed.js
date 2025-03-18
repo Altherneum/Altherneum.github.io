@@ -128,7 +128,7 @@ async function parseVideoParam(videoList, video, videoID) {
         fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
     }
 
-    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short);
+    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, "videoholder");
 }
 
 function addButtons(Types){
@@ -148,12 +148,13 @@ function addButtons(Types){
     }
 }
 
-async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, latest) {
+//let call addIframe with custom elem to add on markdown file when ytb url is found
+async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, latest, element) {
     try {        
         var response = await fetch(fetchUrl);
         var status = response.status;
         
-        var videoholder = document.getElementById("videoholder");
+        var videoholder = document.getElementById(element); 
         var div_card;
 
         if (status === 200) {
@@ -366,7 +367,7 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 
                 let videoID = items[i].link.replace("https://www.youtube.com/watch?v=", "");
 
-                addIFrame(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, latest)
+                addIFrame(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, latest, "videoholder")
             }
         });
 }
