@@ -166,13 +166,18 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
             var thumbnail = JSONdata.thumbnail_url;
 
+            console.log("OK1")
             div_card = addCard(top, playlist, videoID, categorie, latest);
+            console.log("OK2")
 
             var video_div = addCardData(div_card, title, text, thumbnail, false);
             addVideoCard(video_div, videoID, playlist, short);
+            console.log("OK3")
 
             videoholder.appendChild(div_card);
             showOrHideSong(shown, div_card);
+
+            console.log("OK4")
         }
         else if (status === 404) {            
             div_card = addCard(top, playlist, videoID, categorie);
@@ -253,8 +258,10 @@ function addCard(top, playlist, videoID, categorie, latest) {
     var categorieHolder = document.createElement("p");
     categorieHolder.className = "categorieList";
 
+    if (categories !== "Markdown"){
     for (categorieIndex in categorieList) {
         categorieHolder.textContent += " " + getEmoji(categorieList[categorieIndex]); 
+        }
     }
 
     div_card.appendChild(categorieHolder);

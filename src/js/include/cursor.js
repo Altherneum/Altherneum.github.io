@@ -9,11 +9,9 @@ function getCursorSetting() {
     if (localStorage.getItem('customCursor') === "true" || localStorage.getItem('customCursor') === null) {
         destroyCursor();
         createCursor();
-        hideDefaultCursor();
     }
     else {
         destroyCursor();
-        showDefaultCursor();
     }
 }
 

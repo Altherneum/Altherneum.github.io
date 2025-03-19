@@ -53,57 +53,67 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
     return content;
 }
 
-const parseMarkdown = (text) => {
+const parseMarkdown = async (text) => {
     console.log("Loading markdown parser");
-    const toHTML = text
-        //match YTB url, onload(AddIframe(.... match regex)); .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>')
-        .replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<a href=\"$3\">$2 / $4</a>') //$3 = URL $4 = video ID, $2 = text 
-        .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
+    var toHTML = text;
+    //match YTB url, onload(AddIframe(.... match regex)); .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>')
+    
+    const regex = /\(https:\/\/youtube\.com\/watch\?v=(.*)\)/g;
+    var matched = toHTML.match(regex);
+    if (matched) {
+        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<a href=\"$3\">$2 / $4</a><div class="youtubeEmbed"><div id="videoholder"><div id="video-id-$4"></div></div></div>') //$3 = URL $4 = video ID, $2 = text
+        const words = matched[0].split("v=");
+        const videoID = words[1].split("&")[0].replace(")", "");
+        await include_script("/src/js/content/youtubeEmbed.js");
+        await include_css("/src/css/youtubeEmbed.css");
+        addIFrame(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "text", false, false, "video-id-"+videoID)
+    }
+    toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
 
-        .replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
+    toHTML = toHTML.replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
 
-        .replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
-        .replace(/(?<!<textarea>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
-        .replace(/(?<!<textarea>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
+    toHTML = toHTML.replace(/\`{3}(.*?)\`{3}/gms, '<textarea>$1</textarea>') // <code>
+    toHTML = toHTML.replace(/(?<!<textarea>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
+    toHTML = toHTML.replace(/(?<!<textarea>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
 
-        .replace(/(?<!.)(-{3,})(?!.)/g, '<hr/>') //hr (Decoration line)
+    toHTML = toHTML.replace(/(?<!.)(-{3,})(?!.)/g, '<hr/>') //hr (Decoration line)
 
-        .replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
-        .replace(/\n(?:&gt;|\>)\W*(.*)/gim, '<blockquote><p>$1</p></blockquote>') // <blockquote>
+    toHTML = toHTML.replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
+    toHTML = toHTML.replace(/\n(?:&gt;|\>)\W*(.*)/gim, '<blockquote><p>$1</p></blockquote>') // <blockquote>
 
-        .replace(/\_\_(.*?)\_\_/g, '<u>$1</u>') // underline
-        .replace(/(?<!\\)(?<!\/)\*\*(.*?)\*\*/g, '<b>$1</b>') //bold
-        .replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/gm, '<i>$1</i>') //italic
+    toHTML = toHTML.replace(/\_\_(.*?)\_\_/g, '<u>$1</u>') // underline
+    toHTML = toHTML.replace(/(?<!\\)(?<!\/)\*\*(.*?)\*\*/g, '<b>$1</b>') //bold
+    toHTML = toHTML.replace(/^(?<!\`)(?<!\\)(?<!\/)\*(.*?)\*/gm, '<i>$1</i>') //italic
 
-        .replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
-        .replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
-        .replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
-        .replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;">$1</li></ul>') // <li>
-        .replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;">$1</li></ul>') // <li>
-        .replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;">$1</li></ul>') // <li>
-        .replace(/(^[0-9])+\.\s*(.*$)/gim, '<ol><li style="list-style-type: &quot;$1. &quot;;">$2</li></ol>') // <li>
+    toHTML = toHTML.replace(/^\*(.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+    toHTML = toHTML.replace(/^- (.*$)/gim, '<ul><li>$1</li></ul>') // <li>
+    toHTML = toHTML.replace(/^ {2}- (.*$)/gim, '<ul><li style="margin-left:12px;">$1</li></ul>') // <li>
+    toHTML = toHTML.replace(/^ {4}- (.*$)/gim, '<ul><li style="margin-left:24px;">$1</li></ul>') // <li>
+    toHTML = toHTML.replace(/^ {6}- (.*$)/gim, '<ul><li style="margin-left:36px;">$1</li></ul>') // <li>
+    toHTML = toHTML.replace(/^ {8,}- (.*$)/gim, '<ul><li style="margin-left:48px;">$1</li></ul>') // <li>
+    toHTML = toHTML.replace(/(^[0-9])+\.\s*(.*$)/gim, '<ol><li style="list-style-type: &quot;$1. &quot;;">$2</li></ol>') // <li>
 
-        .replace(/\\\*/g, '*') //replace /* & \* to *
+    toHTML = toHTML.replace(/\\\*/g, '*') //replace /* & \* to *
 
-        .replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
-        .replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
+    toHTML = toHTML.replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
+    toHTML = toHTML.replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
 
-        .replace(/^###### (.*$)/gim, '<h6>$1</h6>') // h6 tag
-        .replace(/^##### (.*$)/gim, '<h5>$1</h5>') // h5 tag
-        .replace(/^#### (.*$)/gim, '<h4>$1</h4>') // h4 tag
-        .replace(/^### (.*$)/gim, '<h3>$1</h3>') // h3 tag
-        .replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
-        .replace(/(?<!<textarea[^>]*>[^<]*)(^# (.*))(?![^<]*<\/textarea>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
+    toHTML = toHTML.replace(/^###### (.*$)/gim, '<h6>$1</h6>') // h6 tag
+    toHTML = toHTML.replace(/^##### (.*$)/gim, '<h5>$1</h5>') // h5 tag
+    toHTML = toHTML.replace(/^#### (.*$)/gim, '<h4>$1</h4>') // h4 tag
+    toHTML = toHTML.replace(/^### (.*$)/gim, '<h3>$1</h3>') // h3 tag
+    toHTML = toHTML.replace(/^## (.*$)/gim, '<h2>$1</h2>') // h2 tag
+    toHTML = toHTML.replace(/(?<!<textarea[^>]*>[^<]*)(^# (.*))(?![^<]*<\/textarea>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
 
-        //.replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
-        
-        //text inside summary to do
+    //toHTML = toHTML.replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
+    
+    //text inside summary to do
 
-        .replace(/[\n]{1,}/g, "<br>") //new line
+    toHTML = toHTML.replace(/[\n]{1,}/g, "<br>") //new line
 
-        .trim();
+    toHTML.trim();
     console.log("Loading return markdown trim");
-    return toHTML.trim();
+    return toHTML;
 }
 
 async function getMarkdownTextParsed(gist, content, repo, file) {
@@ -115,7 +125,7 @@ async function getMarkdownTextParsed(gist, content, repo, file) {
         x2 = x;
     } else if (gist === false) {
         x = await getMarkdown('https://raw.githubusercontent.com/' + repo + "/main/" + file);
-        x2 = parseMarkdown(x);
+        x2 = await parseMarkdown(x);
     }
     // console.log(".md : " + x);
     // console.log("Loading HTML wrapped .md :" + x2);
