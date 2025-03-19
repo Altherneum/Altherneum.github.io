@@ -2,14 +2,14 @@
     max-width: 100%;
 }
 
-.youtubeEmbed>#videoholder {
+.youtubeEmbed>.videoholder {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-.youtubeEmbed>#videoholder>.card>div>img {
+.youtubeEmbed>.videoholder>.card>div>img {
     display: block;
     width: 100%;
     height: 100%;
@@ -22,22 +22,22 @@
     border-bottom-right-radius: 16px;
 }
 
-.youtubeEmbed>#videoholder>.card>div{
+.youtubeEmbed>.videoholder>.card>div{
     border-radius: 16px;
 }
 
-.youtubeEmbed>#videoholder>.card>p {
+.youtubeEmbed>.videoholder>.card>p {
     padding-bottom: 25px;
 }
 
-.youtubeEmbed>#videoholder>.card>div>iframe {
+.youtubeEmbed>.videoholder>.card>div>iframe {
     width: 100%;
     height: 100%;
     margin-right: auto;
     position: absolute;
 }
 
-.youtubeEmbed>#videoholder>.card>div {
+.youtubeEmbed>.videoholder>.card>div {
     padding-bottom: 56.23%;
     width: 100%;
     height: 0;
@@ -46,7 +46,7 @@
     object-fit: cover;
 }
 
-.youtubeEmbed>#videoholder>.card>div>button {
+.youtubeEmbed>.videoholder>.card>div>button {
     height: 100%;
     position: absolute;
     text-indent: -9999px;
@@ -95,32 +95,36 @@
     text-shadow: 0px 0px 20px var(--background-color);
 }
 
-.youtubeEmbed>#videoholder>.card>h1 {
+.youtubeEmbed>.videoholder>.card>h1 {
     text-align: center;
     max-width: 100%;
     padding: 16px;
 }
 
-.youtubeEmbed>#videoholder>.card>p.textSub {
+.youtubeEmbed>.videoholder>.card>p.textSub {
     text-align: center;
     max-width: 100%;
     padding: 16px;
 }
 
-.youtubeEmbed>#videoholder>.card>p.categorieList {
+.youtubeEmbed>.videoholder>.card>p.categorieList {
     width: fit-content;
     display: inline-block;
     transform: translateY(-15%);
     font-size: x-large;
 }
 
-.youtubeEmbed>#videoholder>.card>a{
+.youtubeEmbed>.videoholder>.card>a{
         font-size: 40px;
         padding: 10px;
         padding-bottom: 0px;
 }
 
-.youtubeEmbed>#videoholder>.card {
+.youtubeEmbed>.videoholder>.card>a>img {
+max-width: 40px !important;
+}
+
+.youtubeEmbed>.videoholder>.card {
     display: none;
 
     padding: 10px;
@@ -138,7 +142,7 @@
     margin: 25px;
 }
 
-.youtubeEmbed>#videoholder>h1 {
+.youtubeEmbed>.videoholder>h1 {
     text-align: center;
     padding-top: 12px;
     flex-basis: 100%;
@@ -161,14 +165,14 @@ div.card.top {
 }
 
 @media screen and (max-width: 1024px) {
-    .youtubeEmbed>#videoholder>.card {
+    .youtubeEmbed>.videoholder>.card {
         width: 90%;
         height: 100%;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .youtubeEmbed>#videoholder>.card {
+    .youtubeEmbed>.videoholder>.card {
         min-width: 25%;
         max-width: 25%;
     }

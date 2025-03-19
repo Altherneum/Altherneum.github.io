@@ -56,18 +56,18 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
 const parseMarkdown = async (text) => {
     console.log("Loading markdown parser");
     var toHTML = text;
-    //match YTB url, onload(AddIframe(.... match regex)); .replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>')
     
     const regex = /\(https:\/\/youtube\.com\/watch\?v=(.*)\)/g;
     var matched = toHTML.match(regex);
     if (matched) {
-        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<a href=\"$3\">$2 / $4</a><div class="youtubeEmbed"><div id="videoholder"><div id="video-id-$4"></div></div></div>') //$3 = URL $4 = video ID, $2 = text
+        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<h1>$2 - <a href=\"$3\">$4</a></h1><div class="youtubeEmbed"><div class="videoholder" id="video-id-$4"></div></div>') //$3 = URL $4 = video ID, $2 = text
         const words = matched[0].split("v=");
         const videoID = words[1].split("&")[0].replace(")", "");
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_css("/src/css/youtubeEmbed.css");
-        addIFrame(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "text", false, false, "video-id-"+videoID)
+        addIFrame(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "# " + videoID, false, false, "video-id-"+videoID)
     }
+
     toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>
 
     toHTML = toHTML.replace(/!\[([^\[]+)\]\(([^\)]+)\)/g, '<img src=\"$2\" alt=\"$1\" />') // <img>
