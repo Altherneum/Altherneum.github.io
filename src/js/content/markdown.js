@@ -22,7 +22,7 @@ async function addMarkdown(repo, file, gist) {
         isAnchorListSet = true;
     }
 
-    var text = await getMarkdownTextParsed(gist, content, repo, file);
+    var text = await getMarkdownTextParsed(gist, content, repo, file); isFinished = true;
     //content.innerHTML += text;
     var textElem = document.createElement("p");
     textElem.innerHTML += text;
@@ -53,19 +53,52 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
     return content;
 }
 
+var isFinished = false;
 const parseMarkdown = async (text) => {
     console.log("Loading markdown parser");
+    isFinished = false;
     var toHTML = text;
     
     const regex = /\(https:\/\/youtube\.com\/watch\?v=(.*)\)/g;
     var matched = toHTML.match(regex);
     if (matched) {
-        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<h1>$2 - <a href=\"$3\">$4</a></h1><div class="youtubeEmbed"><div class="videoholder" id="video-id-$4"></div></div>') //$3 = URL $4 = video ID, $2 = text
-        const words = matched[0].split("v=");
-        const videoID = words[1].split("&")[0].replace(")", "");
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_css("/src/css/youtubeEmbed.css");
-        addIFrame(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "# " + videoID, false, false, "video-id-"+videoID)
+
+        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<h1>$2 - <a href=\"$3\">$4</a></h1><div class="youtubeEmbed"><div class="videoholder" id="video-id-$4"></div></div>') //$3 = URL $4 = video ID, $2 = text
+        for (index in matched) {
+            const words = matched[index].split("v=");
+            const videoID = words[1].split("&")[0].replace(")", "");
+
+            let timer = setInterval(async function () {
+                console.log("check ----------------------------" + timer);
+                if (isFinished) {
+                    clearInterval(timer);
+                    await addIFrame(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "# " + videoID, false, false, "video-id-" + videoID);
+                }
+            }, 100);
+        }
+    }
+
+    const regexShort = /\(https:\/\/youtube\.com\/shorts\/(.*)\)/g;
+    var matchedShort = toHTML.match(regexShort);
+    if (matchedShort) {
+        await include_script("/src/js/content/youtubeEmbed.js");
+        await include_css("/src/css/youtubeEmbed.css");
+
+        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/shorts\/([^)]*)*)\)/g, '$1<h1>$2 - <a href=\"$3\">$4</a></h1><div class="youtubeEmbed"><div class="videoholder" id="video-id-$4"></div></div>') //$3 = URL $4 = video ID, $2 = text
+        for (index in matchedShort) {
+            const words = matchedShort[index].split("/");
+            const videoID = words[4].replace(")", "");
+            
+            let timer = setInterval(async function () {
+                console.log("check ----------------------------" + timer);
+                if (isFinished) {
+                    clearInterval(timer);
+                    await addIFrame(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "# " + videoID, true, false, "video-id-" + videoID);
+                }
+            }, 100);
+        }
     }
 
     toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\(([^\)]+)\)/g, '$1<a href=\"$3\">$2</a>') // <a>

@@ -9,6 +9,10 @@
     align-items: center;
 }
 
+.markdowned * >.youtubeEmbed>.videoholder{
+    justify-content: start !important;
+}
+
 .youtubeEmbed>.videoholder>.card>div>img {
     display: block;
     width: 100%;
