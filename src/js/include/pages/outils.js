@@ -80,6 +80,11 @@ async function CheckPage() {
         await include_multiple("crashmybrowser", "contentArticle");
     }
 
+    else if (pathNameMatchPage("/outils/question-mark", true)) {
+        await includes();
+        await include_multiple("question-mark", "contentArticle");
+    }
+
     else {
         return false;
     }
