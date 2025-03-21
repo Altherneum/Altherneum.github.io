@@ -79,7 +79,7 @@ a.cardTitle{
 #close-search,
 #search-tips {
     border-radius: 10px;
-    background: linear-gradient(var(--main-color), var(--main-color-transparent));
+    background-color: var(--main-color-transparent);
     border: 2px solid var(--second-hover);
     backdrop-filter: blur(20px);
 }
