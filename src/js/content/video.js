@@ -809,6 +809,11 @@ var videolinks = [
         videoID: "k_VV_nceRE0",
         categorie: "game hack science IT",
     },
+    {
+        videoID: "PL20d08yDDGW-5Ue2sllMKkWv3XJp7I8iD",
+        playlist: true,
+        categorie: "game archive",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
