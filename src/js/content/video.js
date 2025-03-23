@@ -814,6 +814,79 @@ var videolinks = [
         playlist: true,
         categorie: "game archive",
     },
+    {
+        videoID: "odJbSQKmL5Q",
+        categorie: "IT hack malware DeepWeb OpSec",
+    },
+    {
+        videoID: "wrOvb94UvVE",
+        categorie: "humour Linux IT",
+        short: true,
+    },
+    {
+        videoID: "2gIgBtIb4iM",
+        categorie: "game science archive",
+    },
+    {
+        videoID: "dL-SX7IVR_w",
+        categorie: "game science archive",
+        text: "🖖",
+    },
+    {
+        videoID: "ctMyvJsBSzI",
+        categorie: "IT science",
+    },
+    {
+        videoID: "ES8CwzkCvGU",
+        categorie: "IT science code archive code",
+        short: true,
+    },
+    {
+        videoID: "JB4ClW9_Zdk",
+        categorie: "game science",
+        short: true,
+    },
+    {
+        videoID: "qyhaQLT4Upg",
+        categorie: "code science IT",
+        short: true,
+    },
+    {
+        videoID: "0E0-f2Bc2zA",
+        categorie: "code humour",
+        short: true,
+    },
+    {
+        videoID: "dwI5b-wRLic",
+        categorie: "game science",
+    },
+    {
+        videoID: "kYLJLJkVfLk",
+        categorie: "game hack science IT code",
+        top: true,
+    },
+    {
+        videoID: "G0E4u6TuSFo",
+        categorie: "game hack science IT code",
+        top: true,
+    },
+    {
+        videoID: "nJ9zJ_PDatU",
+        categorie: "game hack science IT code",
+        top: true,
+    },
+    {
+        videoID: "KxaPYhfJV4U",
+        categorie: "game science IT IA",
+    },
+    {
+        videoID: "6wWgLjvQYys",
+        categorie: "game archive",
+    },
+    {
+        videoID: "JsHcfTZq0-g",
+        categorie: "game archive",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
