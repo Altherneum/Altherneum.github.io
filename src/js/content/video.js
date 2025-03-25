@@ -923,18 +923,19 @@ function getVideoListType(){
 }
 
 function getVideoChannel(){
-    getLatestVideoOfChannel("UCYnvxJ-PKiGXo_tYXpWAC-w", 1, "IT", "", false, true);
-    getLatestVideoOfChannel("UCWedHS9qKebauVIK2J7383g", 1, "IT", "", false, true);
-    getLatestVideoOfChannel("UCA6rJQnIFgQOcjO-xtNV7lg", 1, "IT", "", false, true);
-    getLatestVideoOfChannel("UCAJM0dH9j5xv6Uu94Mu5REQ", 4, "police", "", false, true);
-    getLatestVideoOfChannel("UCRwOa76W_4rQlPD4fvn_ydQ", 4, "police", "", false, true);
-    getLatestVideoOfChannel("UCl3u0qB4GKX3JjrO7hAmsdw", 4, "police", "", false, true);
-    getLatestVideoOfChannel("UCH-kpxfF4TUEuGqUBj6HVRg", 4, "news", "", false, true);
-    getLatestVideoOfChannel("UC9GGzAhhvhJO1hL10-BcgNA", 4, "news", "", false, true);
-    getLatestVideoOfChannel("UCCDz_XYeKWd0OIyjp95dqyQ", 4, "news", "", false, true);
-    getLatestVideoOfChannel("UCCCPCZNChQdGa9EkATeye4g", 4, "news", "", false, true);
-    getLatestVideoOfChannel("UCsrPUA0ZSDCNZC6wyRlR7ZA", 4, "news", "", false, true);
-    getLatestVideoOfChannel("UCAcAnMF0OrCtUep3Y4M-ZPw", 4, "news", "", false, true);
+    getLatestVideoOfChannel("UCYnvxJ-PKiGXo_tYXpWAC-w", 2, "IT", "", false, true);
+    getLatestVideoOfChannel("UCWedHS9qKebauVIK2J7383g", 2, "IT", "", false, true);
+    getLatestVideoOfChannel("UCA6rJQnIFgQOcjO-xtNV7lg", 2, "IT", "", false, true);
+    getLatestVideoOfChannel("UCAJM0dH9j5xv6Uu94Mu5REQ", 2, "police", "", false, true);
+    getLatestVideoOfChannel("UCRwOa76W_4rQlPD4fvn_ydQ", 2, "police", "", false, true);
+    getLatestVideoOfChannel("UCl3u0qB4GKX3JjrO7hAmsdw", 2, "police", "", false, true);
+    getLatestVideoOfChannel("UCH-kpxfF4TUEuGqUBj6HVRg", 2, "news", "", false, true);
+    getLatestVideoOfChannel("UC9GGzAhhvhJO1hL10-BcgNA", 2, "news", "", false, true);
+    getLatestVideoOfChannel("UCCDz_XYeKWd0OIyjp95dqyQ", 2, "news", "", false, true);
+    getLatestVideoOfChannel("UCCCPCZNChQdGa9EkATeye4g", 2, "news", "", false, true);
+    getLatestVideoOfChannel("UCsrPUA0ZSDCNZC6wyRlR7ZA", 2, "news", "", false, true);
+    getLatestVideoOfChannel("UCAcAnMF0OrCtUep3Y4M-ZPw", 2, "news", "", false, true);
+    getLatestVideoOfChannel("UC6VU3w1kFiBuXdPabVT2jCA", 2, "IT", "", false, true);
 }
 
 function GetVideoList(){
