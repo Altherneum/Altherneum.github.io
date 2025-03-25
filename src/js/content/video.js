@@ -910,6 +910,10 @@ var videolinks = [
         categorie: "science hack IT OpSec",
         top: true,
     },
+    {
+        videoID: "FptLxALgMV4",
+        categorie: "hack science IT",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
