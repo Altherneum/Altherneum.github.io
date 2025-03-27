@@ -5,14 +5,41 @@ function loadYouTubeEmbed() {
     GetVideos(shuffle(GetVideoList()), getVideoListType());
 }
 
-var shown = "all";
-function show(name) {
-    shown = name;
+var shown = ["top"];
+function show(name) {    
+    setMenuActiveColor(name);
+
     var rootElement = document.getElementById("videoholder");
     var rootChilds = rootElement.children;
     for(children in rootChilds){
         var child = rootChilds[children];
         showOrHideSong(shown, child);
+    }
+}
+
+function setMenuActiveColor(MenuID){
+    var menu = document.getElementById(MenuID);
+    menu.classList.toggle("active");
+    
+    if(MenuID === "all"){
+        var allMenu = document.getElementById("menu-all").querySelectorAll("button");
+        for(element in allMenu){
+            allMenu[element].classList = "";
+        }
+
+        var defaultMenu = document.getElementById("menu-default").querySelectorAll("button");        
+        for(element in defaultMenu){
+            defaultMenu[element].classList = "";
+        }
+        shown = ["all"];
+    }else{
+        if(menu.classList.contains("active")){
+            shown.push(MenuID);
+        }
+        else{
+            var NewShown = shown.filter(e => e !== MenuID);
+            shown = NewShown;
+        }
     }
 }
 
@@ -23,16 +50,21 @@ function hideMenu(menuName) {
 
 function showOrHideSong(name, element) {
     if (element != undefined && element.classList != undefined){
-        if (element.classList.contains(name)) {
-            if (element.style.display === "none" || element.style.display === undefined || element.style.display === "") {
+        var found = true;
+        for(tags in name){
+            if(!element.classList.contains(name[tags])){
+                found = false;
+                element.style.display = "none";
+            }
+            if (name[tags] === "all") {
+                found = true;
                 element.style.display = "inline-block";
             }
         }
-        else if (name === "all") {
-            element.style.display = "inline-block";
-        }
-        else {
-            element.style.display = "none";
+        if(found) {
+            if (element.style.display === "none" || element.style.display === undefined || element.style.display === "") {
+                element.style.display = "inline-block";
+            }
         }
     }
 }
@@ -138,6 +170,7 @@ function addButtons(Types){
         var emoji = getEmoji(type);
 
         var button = document.createElement("button");
+        button.id = type;
         button.setAttribute("onClick", "show('" + type + "');");
 
         var text = document.createElement("p");

@@ -70,8 +70,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    padding-bottom: 25px;
+    gap: 5px;
 }
+
 
 .menu>#music-menu,
 .menu>#video-menu{
@@ -80,8 +82,19 @@
 
 .menu>div>button {
     padding: 12px;
-    border-radius: 16px;
-    margin: 8px;
+    border-radius: 5px;
+}
+
+.menu>div>div.check{
+    transform: translate(25px, -10%);
+}
+
+.menu>div>button.active, .menu>div>button:active{
+    background-color: var(--text-color);
+}
+
+.menu>div>button.active>p, .menu>div>button:active>p{
+    color: var(--background-color);
 }
 
 .menu>div>button>p.background-clip {
