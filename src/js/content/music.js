@@ -1616,6 +1616,10 @@ var videolinks = [
         videoID: "_3cuQ7ti7d0",
         categorie: "histoire",
     },
+    {
+        videoID: "NHFq31K5_XY",
+        categorie: "trool",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass"];

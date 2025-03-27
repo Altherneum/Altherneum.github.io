@@ -933,9 +933,94 @@ var videolinks = [
         categorie: "malware hack IT code science",
         short: true,
     },
+    {
+        videoID: "25NvCdFSkA4",
+        categorie: "hack malware code IT science",
+    },
+    {
+        videoID: "UtSlHGCtifU",
+        categorie: "science chem",
+    },
+    {
+        videoID: "LR8qHY5tThQ",
+        categorie: "code IT science",
+        short: true,
+    },
+    {
+        videoID: "j0ANZ7vIBe8",
+        categorie: "crypto hack IT science",
+    },
+    {
+        videoID: "Sao7wxraf4s",
+        categorie: "OpSec IT hack",
+        short: true,
+    },
+    {
+        videoID: "1xzKuu7ctKA",
+        categorie: "OpSec hack IT",
+        short: true,
+    },
+    {
+        videoID: "OdGdtRU7-Ww",
+        categorie: "code science IT",
+    },
+    {
+        videoID: "dA0ODlZ3SvE",
+        categorie: "science IT hardware",
+        short: true,
+    },
+    {
+        videoID: "VPRakukX1aQ",
+        categorie: "IT science",
+    },
+    {
+        videoID: "ulmB8Gl0IlA",
+        categorie: "code IT science crypto",
+    },
+    {
+        videoID: "iqM3uvxmU9Y",
+        categorie: "hack malware IT science crypto",
+    },
+    {
+        videoID: "iroP09xNiw4",
+        categorie: "DeepWeb science IT",
+    },
+    {
+        videoID: "HA3bDe-thbE",
+        categorie: "code science IT",
+    },
+    {
+        videoID: "DKamPa64SC4",
+        categorie: "science IT",
+    },
+    {
+        videoID: "iL5LC0a7KJY",
+        categorie: "science police",
+        top: true,
+    },
+    {
+        videoID: "yZna2zNgaFc",
+        categorie: "IA science IT",
+        short: true,
+    },
+    {
+        videoID: "142b8FJLWY0",
+        categorie: "science IT",
+        top: true,
+    },
+    {
+        videoID: "WkZCGWWmxNM",
+        categorie: "code IT science",
+        short: true,
+    },
+    {
+        videoID: "opcRUbVb208",
+        categorie: "IT science code",
+        text: "<a href='/cours/windows#netsh-WiFi-key'>/cours /Windows #netsh-WiFi-key</a>",
+    },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive"];
+var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
 
 function getVideoListType(){
     return VideoListType;
@@ -970,7 +1055,7 @@ function getEmoji(VideoListType){
         case 'discord':
             return "📞";
         case 'code':
-            return "💾";
+            return "👩‍💻";
         case 'malware':
             return "🦠";
         case 'game':
@@ -995,6 +1080,10 @@ function getEmoji(VideoListType){
             return "📰";
         case 'archive':
             return "🕸";
+        case 'crypto':
+            return "💲";
+        case 'hardware':
+            return "💾";
         default:
             return "❓";
       }
