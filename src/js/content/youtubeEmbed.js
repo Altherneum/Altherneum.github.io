@@ -5,7 +5,7 @@ function loadYouTubeEmbed() {
     GetVideos(shuffle(GetVideoList()), getVideoListType());
 }
 
-var shown = ["top"];
+var shown = ["all"];
 function show(name) {    
     setMenuActiveColor(name);
 
