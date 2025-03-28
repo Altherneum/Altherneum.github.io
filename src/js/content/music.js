@@ -142,7 +142,7 @@ var videolinks = [
     },
     {
         videoID: "lTVqAU_spq4",
-        categorie: "rap",
+        categorie: "rap slavic",
     },
     {
         videoID: "TMSlTQmDLx4",
@@ -177,7 +177,7 @@ var videolinks = [
     {
         videoID: "6z28nf8OeEs",
         top: true,
-        categorie: "rap",
+        categorie: "rap slavic",
     },
     {
         videoID: "ZFspOYo8wWQ",
@@ -240,7 +240,7 @@ var videolinks = [
     {
         videoID: "8DN3PjKG0wE",
         top: true,
-        categorie: "rap",
+        categorie: "rap slavic",
     },
     {
         videoID: "aD1IyIBdqjQ",
@@ -249,7 +249,7 @@ var videolinks = [
     },
     {
         videoID: "eWNUtapgAIs",
-        categorie: "rap",
+        categorie: "rap slavic",
     },
     {
         videoID: "W5Sq71VTJ9Q",
@@ -793,11 +793,11 @@ var videolinks = [
     },
     {
         videoID: "3Hcg-s3nVQw",
-        categorie: "rap",
+        categorie: "rap slavic",
     },
     {
         videoID: "tmNpR_xQd8E",
-        categorie: "rap",
+        categorie: "rap slavic",
         top: true,
     },
     {
@@ -1317,7 +1317,7 @@ var videolinks = [
     },
     {
         videoID: "o4yCEc5AgUY",
-        categorie: "rap",
+        categorie: "rap slavic",
     },
     {
         videoID: "NLPyySN9Czw",
@@ -1623,7 +1623,7 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "Slavic"];
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic"];
 
 function getVideoListType(){
     return VideoListType;
