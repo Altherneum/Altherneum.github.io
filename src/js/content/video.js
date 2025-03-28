@@ -1018,6 +1018,10 @@ var videolinks = [
         categorie: "IT science code",
         text: "<a href='/cours/windows#netsh-WiFi-key'>/cours /Windows #netsh-WiFi-key</a>",
     },
+    {
+        videoID: "sFuwakFFgXo",
+        categorie: "IT science",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
