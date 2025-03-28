@@ -1623,7 +1623,7 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass"];
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "Slavic"];
 
 function getVideoListType(){
     return VideoListType;
@@ -1661,6 +1661,8 @@ function getEmoji(VideoListType){
             return "🥁";
         case 'electro':
             return "⚡";
+        case 'slavic':
+            return "❄️";
         default:
             return "❓";
       }
