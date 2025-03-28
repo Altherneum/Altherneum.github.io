@@ -1624,6 +1624,10 @@ var videolinks = [
     {
         videoID: "nSVeqz__Ydw",
         categorie: "phonk electro",
+    },
+    {
+        videoID: "XRB5SUhRZY8",
+        categorie: "classic electro",
     }
 ];
 
