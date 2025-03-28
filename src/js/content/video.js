@@ -1022,6 +1022,12 @@ var videolinks = [
         videoID: "sFuwakFFgXo",
         categorie: "IT science",
     },
+    {
+        videoID: "PLe3Ed8eZnsnqBUA8b7vYC46fUm4iHrhZc",
+        categorie: "humour archive",
+        playlist: true,
+        top: true,
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
