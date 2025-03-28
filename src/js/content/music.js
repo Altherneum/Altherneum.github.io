@@ -851,18 +851,18 @@ var videolinks = [
     },
     {
         videoID: "i8lDuo9yqfs",
-        categorie: "trool",
+        categorie: "trool chilljp",
         text: "PoV Dev's life, <a target='_blank' href='#FtutLA63Cp8'>Original</a>",
     },
     {
         videoID: "FtutLA63Cp8",
-        categorie: "trool",
+        categorie: "trool chilljp",
         text: "<a target='_blank' href='#i8lDuo9yqfs'>Remix</a>"
     },
     {
         text: "⚡",
         videoID: "HZsiToZ8zCI",
-        categorie: "trool",
+        categorie: "trool slavic",
     },
     {
         text: "🍾",
@@ -1025,7 +1025,7 @@ var videolinks = [
     },
     {
         videoID: "qrxv0JNVtgY",
-        categorie: "trool",
+        categorie: "trool slavic",
     },
     {
         videoID: "0E00Zuayv9Q",
@@ -1290,7 +1290,7 @@ var videolinks = [
     },
     {
         videoID: "iRvkMzy4Gcg",
-        categorie: "chilljp",
+        categorie: "chilljp trool",
         text: "Serani Poji - Pipo pipo"
     },
     {
@@ -1433,7 +1433,7 @@ var videolinks = [
     },
     {
         videoID: "BinWA0EenDY",
-        categorie: "histoire",
+        categorie: "histoire trool",
     },
     {
         videoID: "qVqFuokjRMc",
@@ -1446,11 +1446,11 @@ var videolinks = [
     },
     {
         videoID: "yAxWl72m2fc",
-        categorie: "trool electro hardbass phonk",
+        categorie: "trool electro hardbass phonk slavic",
     },
     {
         videoID: "3fEg1r6SH9Q",
-        categorie: "trool electro hardbass phonk",
+        categorie: "trool electro hardbass phonk slavic",
     },
     {
         videoID: "mM14xW7edWM",
