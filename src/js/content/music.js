@@ -1195,12 +1195,12 @@ var videolinks = [
     },
     {
         videoID: "_KEQxsXjZuY",
-        text: "Music version",
+        text: "<a target='_blank' href='#PozNmD_FgZY'>TV version</a>",
         categorie: "chill trool",
     },
     {
         videoID: "PozNmD_FgZY",
-        text: "TV version",
+        text: "<a target='_blank' href='#_KEQxsXjZuY'>Music version</a>",
         categorie: "chill trool",
     },
     {
