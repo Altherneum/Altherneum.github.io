@@ -857,6 +857,18 @@ const links = [
         tag: "Outils OpSec",
         text: "Chiffrement RSA",
     },
+    {
+        href: "https://steamdb.info/",
+        svg: "/assets/svg/.svg",
+        tag: "URL Outils Jeux",
+        text: "Steamdb",
+    },
+    {
+        href: "https://steamladder.com/",
+        svg: "/assets/svg/.svg",
+        tag: "URL Outils Jeux",
+        text: "Steamladder",
+    },
 ];
 
 /*
