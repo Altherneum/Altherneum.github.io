@@ -947,6 +947,12 @@ const links = [
         tag: "Repo Github Linux OS Outils URL",
         text: "Arch install.sh",
     },
+    {
+        href: "https://guacamole.apache.org/",
+        svg: "/assets/svg/trademark/apache.svg",
+        tag: "URL OS Outils Web Linux Admin Network",
+        text: "Apache Guacamole",
+    },
 ];
 
 /*
