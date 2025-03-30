@@ -895,7 +895,7 @@ var videolinks = [
     {
         text: "Animation : <a href='https://youtube.com/@timyg'>Youtube / @timyg</a>",
         videoID: "eDW53rXqlRw",
-        categorie: "trool",
+        categorie: "trool slavic",
     },
     {
         text: "Michel ❤",
