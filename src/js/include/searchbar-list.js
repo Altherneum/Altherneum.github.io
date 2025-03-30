@@ -911,6 +911,42 @@ const links = [
         tag: "URL OpSec Web",
         text: "hBlock",
     },
+    {
+        href: "https://archlinux.org/",
+        svg: "/assets/svg/linux.svg",
+        tag: "OS Linux URL",
+        text: "ArchLinux",
+    },
+    {
+        href: "https://wiki.archlinux.org/",
+        svg: "/assets/svg/book.svg",
+        tag: "OS Linux URL Développement ReadMe Cours",
+        text: "Wiki ArchLinux",
+    },
+    {
+        href: "https://github.com/archlinux",
+        svg: "/assets/svg/trademark/repo.svg",
+        tag: "Repo Github OS Linux",
+        text: "Repo ArchLinux",
+    },
+    {
+        href: "https://archlinux.org/download/",
+        svg: "/assets/svg/download.svg",
+        tag: "OS Linux URL ",
+        text: "Download ArchLinux",
+    },
+    {
+        href: "http://github.com/Altherneum/.github/blob/main/note/OS/Linux/Arch/",
+        svg: "/assets/svg/trademark/repo.svg",
+        tag: "Repo Github Linux OS Outils URL",
+        text: ".github Arch",
+    },
+    {
+        href: "https://raw.githubusercontent.com/Altherneum/.github/refs/heads/main/note/OS/Linux/Arch/install.sh",
+        svg: "/assets/svg/link.svg",
+        tag: "Repo Github Linux OS Outils URL",
+        text: "Arch install.sh",
+    },
 ];
 
 /*
