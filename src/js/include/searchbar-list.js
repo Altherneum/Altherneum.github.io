@@ -869,6 +869,18 @@ const links = [
         tag: "URL Outils Jeux",
         text: "Steamladder",
     },
+    {
+        href: "https://grapheneos.org/",
+        svg: "/assets/svg/.svg",
+        tag: "URL Outils OpSec OS",
+        text: "GrapheneOS",
+    },
+    {
+        href: "https://github.com/GrapheneOS",
+        svg: "/assets/svg/trademark/repo.svg",
+        tag: "Repo Github OS OpSec Outils",
+        text: "Repo GrapheneOS",
+    },
 ];
 
 /*
