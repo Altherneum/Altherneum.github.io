@@ -859,13 +859,13 @@ const links = [
     },
     {
         href: "https://steamdb.info/",
-        svg: "/assets/svg/.svg",
+        svg: "/assets/svg/trademark/steam.svg",
         tag: "URL Outils Jeux",
         text: "Steamdb",
     },
     {
         href: "https://steamladder.com/",
-        svg: "/assets/svg/.svg",
+        svg: "/assets/svg/trademark/steam.svg",
         tag: "URL Outils Jeux",
         text: "Steamladder",
     },
