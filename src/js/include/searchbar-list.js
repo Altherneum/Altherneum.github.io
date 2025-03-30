@@ -881,6 +881,36 @@ const links = [
         tag: "Repo Github OS OpSec Outils",
         text: "Repo GrapheneOS",
     },
+    {
+        href: "https://atlasos.net/",
+        svg: "/assets/svg/trademark/windows.svg",
+        tag: "URL Outils OpSec OS Windows",
+        text: "Atlas OS",
+    },
+    {
+        href: "https://github.com/Atlas-OS/Atlas",
+        svg: "/assets/svg/trademark/repo.svg",
+        tag: "Repo Github OS OpSec Outils Windows",
+        text: "Repo Atlas OS",
+    },
+    {
+        href: "https://www.ntlite.com/",
+        svg: "/assets/svg/trademark/windows.svg",
+        tag: "URL OS Windows Admin",
+        text: "NTLite",
+    },
+    {
+        href: "https://github.com/hectorm/hblock",
+        svg: "/assets/svg/trademark/repo.svg",
+        tag: "Repo Github OpSec Web",
+        text: "Repo hBlock",
+    },
+    {
+        href: "https://hblock.molinero.dev/",
+        svg: "/assets/svg/network.svg",
+        tag: "URL OpSec Web",
+        text: "hBlock",
+    },
 ];
 
 /*
