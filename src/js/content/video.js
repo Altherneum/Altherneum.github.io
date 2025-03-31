@@ -1028,6 +1028,56 @@ var videolinks = [
         playlist: true,
         top: true,
     },
+    {
+        videoID: "oHpVQsNpo04",
+        categorie: "science IT",
+    },
+    {
+        videoID: "KCgseiMtnuc",
+        categorie: "science IT malware code hack",
+    },
+    {
+        videoID: "TKRpvgtyYNY",
+        categorie: "science IT code game hack",
+    },
+    {
+        videoID: "hhkFT0EgT6o",
+        categorie: "science IT code hack",
+    },
+    {
+        videoID: "4P-bsrvhG1w",
+        categorie: "science IT hardware malware",
+    },
+    {
+        videoID: "AwzN7TRf0Eg",
+        categorie: "science IT game",
+    },
+    {
+        videoID: "KGKidFpTFH4",
+        categorie: "science IT hack malware",
+    },
+    {
+        videoID: "lVx5auDj7Hs",
+        categorie: "science IT hardware hack",
+    },
+    {
+        videoID: "2H5EGNSR_O8",
+        categorie: "science IT Linux OpSec",
+        short: true,
+    },
+    {
+        videoID: "x7ODtRlxPgA",
+        categorie: "science IT hardware",
+        short: true,
+    },
+    {
+        videoID: "HQCUdRHSz34",
+        categorie: "science IT code hack",
+    },
+    {
+        videoID: "MA1rI5ffwDY",
+        categorie: "game archive",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
