@@ -120,7 +120,7 @@
     padding: 16px;
 }
 
-.youtubeEmbed>.videoholder>.card>#logoHolder>p.categorieList {
+.youtubeEmbed>.videoholder>.card>p.categorieList {
     width: fit-content;
     display: inline-block;
     transform: translateY(-15%);
