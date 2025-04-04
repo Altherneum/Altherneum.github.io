@@ -58,12 +58,12 @@ function showOrHideSong(name, element) {
             }
             if (name[tags] === "all") {
                 found = true;
-                element.style.display = "inline-block";
+                element.style.display = "flex";
             }
         }
         if(found) {
             if (element.style.display === "none" || element.style.display === undefined || element.style.display === "") {
-                element.style.display = "inline-block";
+                element.style.display = "flex";
             }
         }
     }
@@ -119,7 +119,7 @@ async function GetVideos(videoList, VideoListType) {
         var div_card = addCard(false, false, hash, "");
         addCardData(div_card, "404", "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
         videoholder.appendChild(div_card);
-        div_card.style.display = "block";
+        div_card.style.display = "flex";
     }
     else if(!LoadSingleVideo){
         getVideoChannel();
@@ -205,7 +205,6 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             addVideoCard(video_div, videoID, playlist, short);
 
             videoholder.appendChild(div_card);
-            showOrHideSong(shown, div_card);
         }
         else if (status === 404) {            
             div_card = addCard(top, playlist, videoID, categorie);
@@ -227,6 +226,8 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             console.log(response);
             var jsonResponse = null;
         }
+        
+        showOrHideSong(shown, div_card);
     } catch (error) {
         console.error(error + "\n" + videoID);
     }
@@ -253,33 +254,39 @@ function addCard(top, playlist, videoID, categorie, latest) {
     anchor.onclick = () => {
 
     };
+
+    var divLogoHolder = document.createElement("div");
+    divLogoHolder.id = "logoHolder";
+
     anchor.id = videoID;
     setScrollBehavior(anchor, "center");
-    div_card.appendChild(anchor);
+    divLogoHolder.appendChild(anchor);
 
     var imageAnchor = document.createElement("img");
     imageAnchor.src = "/assets/svg/link.svg";
     imageAnchor.className = "topimg svg";
     anchor.appendChild(imageAnchor);
 
+
     if (top) {
         var imageTop = document.createElement("img");
         imageTop.src = "/assets/svg/star.svg";
         imageTop.className = "topimg svg";
-        div_card.appendChild(imageTop);
+        divLogoHolder.appendChild(imageTop);
     }
     if (playlist) {
         var imagePlayList = document.createElement("img");
         imagePlayList.src = "/assets/svg/playlist.svg";
         imagePlayList.className = "playlistimg svg";
-        div_card.appendChild(imagePlayList);
+        divLogoHolder.appendChild(imagePlayList);
     }
     if (latest) {
         var imageNew = document.createElement("img");
         imageNew.src = "/assets/svg/new.svg";
         imageNew.className = "newimg svg";
-        div_card.appendChild(imageNew);
+        divLogoHolder.appendChild(imageNew);
     }
+    div_card.appendChild(divLogoHolder);
 
     var categories = categorie;
     let categorieList = categories.split(" ");
@@ -308,6 +315,7 @@ function addCardData(div_card, title, text, thumbnail, error) {
     div_card.appendChild(video_subtext);
 
     var video_div = document.createElement("div");
+    video_div.id = "videoDiv";
     div_card.appendChild(video_div);
 
     var video_image = document.createElement("img");
@@ -377,7 +385,7 @@ function createIframe(event) {
 
     console.log("Loading embed : " + url);
 
-    var htmlString = '<div><iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var htmlString = '<div id="videoDiv"><iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     var card = youtubePlaceholder.parentNode;
     var classname = card.className;
