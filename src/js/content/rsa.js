@@ -37,7 +37,7 @@ function isPrime(value) {
         }
         return true;
     }
-    else{ return false; }
+    else { return false; }
 }
 
 function getCoprime(prime, maxBits) {
