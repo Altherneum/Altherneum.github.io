@@ -28,7 +28,7 @@ const channel = {
   title: "doc.Altherneum.fr",
   feedUrl: "https://doc.Altherneum.fr/rss.rss",
   language: "fr",
-  image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+  image: "https://doc.Altherneum.fr/assets/gif/small.gif",
   description: "Test description RSS feed for doc.Altherneum.fr",
 }
 
@@ -38,7 +38,7 @@ const linksList = [
     link: "cours/html",
     description: "Début du cours sur le HTML (Date, histoire, syntaxe)",
     publicationDate: buildRFC822Date("2023-12-14T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -46,7 +46,7 @@ const linksList = [
     link: "outils/rss",
     description: "Flux RSS",
     publicationDate: buildRFC822Date("2023-12-15T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -54,7 +54,7 @@ const linksList = [
     link: "outils/cube",
     description: "3D",
     publicationDate: buildRFC822Date("2023-12-19T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum & YusukeNakaya",
   },
   {
@@ -62,7 +62,7 @@ const linksList = [
     link: "discord/login",
     description: "Discord OAuth",
     publicationDate: buildRFC822Date("2023-12-19T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -70,7 +70,7 @@ const linksList = [
     link: "outils/caesar",
     description: "Chiffrement par décalage",
     publicationDate: buildRFC822Date("2023-12-27T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -78,7 +78,7 @@ const linksList = [
     link: "cours/binaire",
     description: "Un cours rapide et facile sur le binaire",
     publicationDate: buildRFC822Date("2024-01-07T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -86,7 +86,7 @@ const linksList = [
     link: "",
     description: "Mise à jour de qualité de vie sur le site",
     publicationDate: buildRFC822Date("2024-01-08T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -94,7 +94,7 @@ const linksList = [
     link: "github/issues",
     description: "Mise à jour de qualité de vie sur le site",
     publicationDate: buildRFC822Date("2024-01-09T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   }, 
   {
@@ -102,7 +102,7 @@ const linksList = [
     link: "admin/music",
     description: "Mise à jour de qualité de vie sur le site (musique)",
     publicationDate: buildRFC822Date("2024-01-09T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -110,7 +110,7 @@ const linksList = [
     link: "github/statistiques",
     description: "Mise à jour de qualité de vie sur le site et ajouts de fonctions",
     publicationDate: buildRFC822Date("2024-01-11T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -118,7 +118,7 @@ const linksList = [
     link: "github/readme",
     description: "Les documentations, README, liens, etc ..., ont étés mises à jour",
     publicationDate: buildRFC822Date("2024-01-13T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -126,7 +126,7 @@ const linksList = [
     link: "github/readme",
     description: "Les documentations, noms, codes, et erreurs, et de nouvelles pages ont étés ajoutés ",
     publicationDate: buildRFC822Date("2024-05-15T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -134,7 +134,7 @@ const linksList = [
     link: "settings",
     description: "Ajout de cours et changement d'UI header",
     publicationDate: buildRFC822Date("2024-10-24T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -142,7 +142,7 @@ const linksList = [
     link: "https://github.com/Altherneum/Altherneum.github.io/compare/b6a61b951601...db327599ff04",
     description: "Mise à jour de QOL sur la barre de recherche",
     publicationDate: buildRFC822Date("2024-11-02T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -150,7 +150,7 @@ const linksList = [
     link: "https://github.com/Altherneum/Altherneum.github.io/commit/c44e019b33e43a78cd02f61465beb99428f3dfcf",
     description: "Plus rapide et bloque moins la page lors de gros document MarkDown",
     publicationDate: buildRFC822Date("2024-11-08T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -158,7 +158,7 @@ const linksList = [
     link: "https://doc.altherneum.fr/admin/video",
     description: "Plus rapide, puissant, gère les short, etc ...",
     publicationDate: buildRFC822Date("2025-01-23T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
   {
@@ -166,7 +166,7 @@ const linksList = [
     link: "https://doc.altherneum.fr/games/minesweeper",
     description: "MineSweeper 💣",
     publicationDate: buildRFC822Date("2025-02-10T00:00:00.0000"),
-    image: "https://doc.Altherneum.fr/assets/icon/icone.png",
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
 ];
