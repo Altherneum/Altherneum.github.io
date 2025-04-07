@@ -522,6 +522,12 @@ const links = [
         svg: "/assets/svg/trademark/cisco.svg",
     },
     {
+        href: "/cours/reverse-shell.html",
+        tag: "Cours URL OS OpSec Outils CMD Windows Linux Network",
+        text: "Reverse Shell",
+        svg: "/assets/svg/console.svg",
+    },
+    {
         href: "/sitemap.xml",
         tag: "URL XML",
         text: "Sitemap",
