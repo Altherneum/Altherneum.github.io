@@ -350,7 +350,7 @@ var videolinks = [
     {
         videoID: "Kt-tLuszKBA",
         top: true,
-        categorie: "chill",
+        categorie: "chill long histoire",
     },
     {
         videoID: "WCce-3XMdJs",
@@ -442,7 +442,7 @@ var videolinks = [
     },
     {
         videoID: "jrTMMG0zJyI",
-        categorie: "chilljp",
+        categorie: "chilljp phonk electro chill long",
     },
     {
         videoID: "goxmvGJkoi0",
@@ -1694,6 +1694,8 @@ function getEmoji(VideoListType){
             return "⚡";
         case 'slavic':
             return "❄️";
+        case 'long':
+            return "⌛";
         default:
             return "❓";
       }
