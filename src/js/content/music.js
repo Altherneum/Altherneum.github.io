@@ -847,7 +847,7 @@ var videolinks = [
         categorie: "trool",
     },
     {
-        text: "<a target='_blank' href='youtube.com/watch?v=tzx8gCkIKkU'>Lien</a>",
+        text: "<a target='_blank' href='https://youtube.com/watch?v=tzx8gCkIKkU'>Les Kassos #99</a>",
         videoID: "lBa_oZU_wao",
         categorie: "trool",
     },
