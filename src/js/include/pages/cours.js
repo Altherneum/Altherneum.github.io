@@ -116,6 +116,13 @@ async function CheckPage() {
         });
     }
 
+    else if (pathNameMatchPage("/cours/reverse-shell", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/reverse-shell.md', false);
+        });
+    }
+
     else if (pathNameMatchPage("/cours/linux", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
