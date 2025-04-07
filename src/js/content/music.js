@@ -847,7 +847,7 @@ var videolinks = [
     },
     {
         videoID: "OAmhM-jWTzg",
-        categorie: "trool",
+        categorie: "trool rap",
     },
     {
         text: "<a target='_blank' href='https://youtube.com/watch?v=tzx8gCkIKkU'>Les Kassos #99</a>",
