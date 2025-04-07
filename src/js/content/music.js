@@ -113,7 +113,8 @@ var videolinks = [
     },
     {
         videoID: "ZO7yYRIM0-g",
-        categorie: "phonk",
+        categorie: "phonk electro slavic",
+        top: true,
     },
     {
         videoID: "4Js-XbNj6Tk",
@@ -463,7 +464,7 @@ var videolinks = [
     },
     {
         videoID: "OntcAJYG29A",
-        categorie: "chilljp",
+        categorie: "chilljp long electro phonk",
     },
     {
         text: "😈",
