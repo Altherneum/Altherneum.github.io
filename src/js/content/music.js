@@ -1655,7 +1655,7 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic"];
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
 
 function getVideoListType(){
     return VideoListType;
