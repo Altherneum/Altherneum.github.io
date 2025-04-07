@@ -429,7 +429,7 @@ var videolinks = [
     {
         text: "神秘的BGM】蒼ノ世界 / 幻想世界の音楽たち",
         videoID: "uqUP66TTXiY",
-        categorie: "chilljp",
+        categorie: "chilljp long chill",
     },
     {
         videoID: "Jg73p9udbAQ",
