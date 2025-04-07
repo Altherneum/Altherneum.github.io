@@ -422,7 +422,8 @@ var videolinks = [
     },
     {
         videoID: "UbQgXeY_zi4",
-        categorie: "chill",
+        categorie: "chill electro",
+        top: true,
     },
     {
         text: "神秘的BGM】蒼ノ世界 / 幻想世界の音楽たち",
