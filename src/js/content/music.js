@@ -305,7 +305,7 @@ var videolinks = [
     {
         text: "⚡☔",
         videoID: "Dnu4qR03Dpc",
-        categorie: "rain",
+        categorie: "rain long",
     },
     {
         text: "🎹🌁",
@@ -316,16 +316,16 @@ var videolinks = [
         text: "☔⚡",
         videoID: "S8wE-SjecT4",
         top: true,
-        categorie: "rain",
+        categorie: "rain long",
     },
     {
         text: "🎹🌁",
         videoID: "MYTfTKGSRr8",
-        categorie: "rain",
+        categorie: "rain long",
     },
     {
         videoID: "QHIyFIMu4uQ",
-        categorie: "rain",
+        categorie: "rain long",
     },
     {
         videoID: "urxeNbBc1nk",
@@ -342,7 +342,7 @@ var videolinks = [
     {
         text: "Rami Malek's style is over 9999 🖥️",
         videoID: "_tUBCmGBO3A",
-        categorie: "chill",
+        categorie: "chill long",
     },
     {
         videoID: "Y4uGmNUR8DQ",
@@ -403,11 +403,11 @@ var videolinks = [
     },
     {
         videoID: "oaISU5KmTPA",
-        categorie: "chill",
+        categorie: "chill long",
     },
     {
         videoID: "Yui-e1VDGM8",
-        categorie: "chill",
+        categorie: "chill long electro",
     },
     {
         text: "<a target='_blank' href='#yt-DyDfgMOUjCI'>Original</a>",
@@ -451,7 +451,7 @@ var videolinks = [
     },
     {
         videoID: "LUxd9GUJHN8",
-        categorie: "chilljp",
+        categorie: "chilljp long phonk electro",
     },
     {
         videoID: "MgOXIbgPfeI",
@@ -460,7 +460,7 @@ var videolinks = [
     },
     {
         videoID: "eSZFIXbqmhs",
-        categorie: "chilljp",
+        categorie: "chilljp long phonk electro",
     },
     {
         videoID: "OntcAJYG29A",
@@ -469,7 +469,7 @@ var videolinks = [
     {
         text: "😈",
         videoID: "8zeyRAFMizc",
-        categorie: "classic",
+        categorie: "classic long",
     },
     {
         text: "Symphonie n°9 philharmonique",
@@ -593,7 +593,7 @@ var videolinks = [
     },
     {
         videoID: "SreKbSWY4QY",
-        categorie: "phonk",
+        categorie: "phonk long trool",
     },
     {
         videoID: "gWi_6QmZ2bs",
@@ -606,7 +606,7 @@ var videolinks = [
     },
     {
         videoID: "EyyzROaB0Ek",
-        categorie: "phonk",
+        categorie: "phonk long",
     },
     {
         videoID: "JzslnqZGSp0",
@@ -627,7 +627,7 @@ var videolinks = [
     },
     {
         videoID: "6sD-s_mrVhM",
-        categorie: "phonk",
+        categorie: "phonk long",
     },
     {
         videoID: "_HwHK-QiXK8",
@@ -704,7 +704,7 @@ var videolinks = [
     {
         videoID: "lbcqbVhQhik",
         top: true,
-        categorie: "phonk",
+        categorie: "phonk trool",
     },
     {
         videoID: "L5zE7EthV1o",
@@ -754,7 +754,7 @@ var videolinks = [
     },
     {
         videoID: "ab-WFNS27co",
-        categorie: "phonk",
+        categorie: "phonk long electro",
     },
     {
         videoID: "qR2QIJdtgiU",
@@ -798,7 +798,7 @@ var videolinks = [
     },
     {
         videoID: "3Hcg-s3nVQw",
-        categorie: "rap slavic",
+        categorie: "rap slavic long",
     },
     {
         videoID: "tmNpR_xQd8E",
@@ -1192,7 +1192,7 @@ var videolinks = [
     },
     {
         videoID: "qsOUv9EzKsg",
-        categorie: "rain",
+        categorie: "rain long",
     },
     {
         videoID: "eG2XbNpcb2E",
@@ -1327,7 +1327,7 @@ var videolinks = [
     },
     {
         videoID: "NLPyySN9Czw",
-        categorie: "rock",
+        categorie: "rock trool",
     },
     {
         videoID: "9ka0Q2im8eE",
