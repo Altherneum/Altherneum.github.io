@@ -183,6 +183,9 @@
 
 .contact>.software>div>div>div{
     display: flex;
+    
+    align-items: center;
+    justify-content: center;
 }
 
 .contact>.software>div>div>div:not(:first-of-type){
