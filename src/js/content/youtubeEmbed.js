@@ -435,6 +435,7 @@ async function setVideoScreenLocking() {
             if (document.visibilityState === 'visible') {
                 navigator.wakeLock.request('screen').then(result => {
                     wakeLock = result;
+                    console.log(wakeLock.type);
                 });
             }
         });
