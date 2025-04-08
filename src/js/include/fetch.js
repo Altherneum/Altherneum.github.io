@@ -16,18 +16,21 @@ function stopTime(name) {
 
 include();
 async function include() {
+    console.log("Loading included files ...");
     await include_script("/src/js/include/consoleStats.js"); await loadFiles();
     startTime("load");
     await include_script("/src/js/include/index.js");
 } 
 
 async function include_multiple(name, area) {
+    console.log("Loading multiple files : " + name + " ➡️ " + area);
     await include_css("/src/css/" + name + ".css");
     await include_html("/src/html/content/" + name + ".html", area, true);
     await include_script("/src/js/content/" + name + ".js");
 }
 
 async function include_html(link, query, queryOrIndex) {
+    console.log("Loading HTML file : " + link + " ➡️ " + query);
     let response = await fetch(link)
         .then(response => {
             return response.text()
@@ -45,6 +48,7 @@ async function include_html(link, query, queryOrIndex) {
 }
 
 async function include_script(url) {
+    console.log("Loading script file : " + url);
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src = url;
@@ -61,6 +65,7 @@ async function include_script(url) {
 }
 
 async function include_css(url) {
+    console.log("Loading CSS file : " + url);
     var head = document.getElementsByTagName('HEAD')[0];
 
     var link = document.createElement('link');
