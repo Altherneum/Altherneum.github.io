@@ -1,7 +1,8 @@
 // https://developers.google.com/youtube/player_parameters?hl=fr#listType
 var total = 0;
 
-function loadYouTubeEmbed() {
+async function loadYouTubeEmbed() {
+    await setVideoScreenLocking();
     GetVideos(shuffle(GetVideoList()), getVideoListType());
 }
 
@@ -416,9 +417,30 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 }
 
 async function setVideoScreenLocking() {
-    document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'visible') {
-          navigator.wakeLock.request("screen")
+    if ("wakeLock" in navigator) {
+        console.log("Screen Wake Lock API supported!");
+        
+        let wakeLock = null;
+
+        try {
+            wakeLock = await navigator.wakeLock.request("screen");
+            statusElem.textContent = "Wake Lock is active!";
+        } catch (err) {
+            // The Wake Lock request has failed - usually system related, such as battery.
+            statusElem.textContent = `${err.name}, ${err.message}`;
         }
-      });
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'visible') {
+                navigator.wakeLock.request('screen').then(result => {
+                    wakeLock = result;
+                });
+            }
+        });
+
+        console.log(wakeLock);
+
+    } else {
+        console.log("Wake lock is not supported by this browser.");
+    }
 }
