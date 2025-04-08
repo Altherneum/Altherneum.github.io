@@ -417,6 +417,7 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 }
 
 async function setVideoScreenLocking() {
+    //https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API
     if ("wakeLock" in navigator) {
         console.log("Screen Wake Lock API supported!");
         
