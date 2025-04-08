@@ -1090,6 +1090,14 @@ var videolinks = [
         videoID: "eTcVLqKpZJc",
         categorie: "science code IT",
     },
+    {
+        videoID: "WPCxtFkLa7g",
+        categorie: "code IT science Linux",
+    },
+    {
+        videoID: "HxRwRMFhAdE",
+        categorie: "science IT code Linux",
+    },
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
