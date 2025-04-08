@@ -386,7 +386,7 @@ function createIframe(event) {
 
     console.log("Loading embed : " + url);
 
-    var htmlString = '<div id="videoDiv"><iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var htmlString = '<div id="videoDiv"><iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="screen-wake-lock; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
 
     var card = youtubePlaceholder.parentNode;
     var classname = card.className;
