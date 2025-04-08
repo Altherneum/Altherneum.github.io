@@ -37,8 +37,7 @@
 }
 
 .contact>hr,
-.contact>#link>hr,
-.contact>.software>hr{
+.contact>#link>hr{
     margin-top: 7.5vh;
     margin-bottom: 7.5vh;
 }
@@ -64,8 +63,7 @@
 }
 
 .contact>div>a>img.svg,
-.contact>div>div>img.svg,
-.contact>.software>div>div>div>img.svg {
+.contact>div>div>img.svg {
     max-width: 50px;
     padding-right: 12px;
 }
@@ -103,109 +101,4 @@
 
 .contact>#techno{
     padding-top: 16px;
-}
-
-.contact>.software{
-    display: flex;
-
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: nowrap;
-}
-
-.contact>.software>div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    gap: 25px;
-    padding: 6px !important;
-
-    border-radius: 24px;
-}
-
-.contact>.software>div>div:first-of-type,
-.contact>.software>.Linux>div:nth-of-type(2)
-{
-    width: 100%;
-}
-
-.contact>.software>.Linux>div:nth-of-type(2)>div>textarea
-{
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-
-    resize: none;
-    overflow-y: auto;
-    overflow-y: hidden;
-
-    height: 95px;
-    max-height: 95px;
-    min-height: 95px;
-
-    padding: 6px;
-    padding-top: 9px;
-
-    border-radius: 8px;
-    
-    overflow-wrap: normal;
-    white-space: nowrap;
-}
-
-.contact>.software>div>div{
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-
-    border-color: var(--main-color);
-    border-style: solid;
-    border-width: 3px;
-    border-radius: 16px;
-
-    margin-bottom: 12px;
-    padding: 5px;
-
-    background: linear-gradient(var(--background-color), var(--main-color-transparent));
-    box-shadow: var(--box-shadow-all-inset-main-transparent-color-small);
-}
-
-.contact>.software>div>div:hover{
-    background-color: var(--main-color);
-    box-shadow: var(--box-shadow-all-inset-main-color);
-}
-
-.contact>.software>div:has(div:hover){
-    border: 3px solid var(--main-color);
-    background: linear-gradient(var(--background-color), var(--main-color-transparent));
-    box-shadow: var(--box-shadow-all-inset-main-transparent-color-small);
-}
-
-.contact>.software>div>div>div{
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-}
-
-.contact>.software>div>div>div:not(:first-of-type){
-    padding: 6px;
-}
-
-.contact>.software>div>div>div:first-of-type{
-    border-bottom-color: var(--main-color);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-
-    padding: 4px;
-    margin-bottom: 8px;
-}
-
-.contact>.software>div>div>div:not(:first-of-type)>img
-{
-    max-width: 24px;
 }
