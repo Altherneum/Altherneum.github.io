@@ -381,10 +381,8 @@ function createIframe(event) {
 
     var rel = "&rel=0";
 
-    var desktop = "&app=desktop";
-
     var preURL = "https://www.youtube.com/embed/";
-    var url = preURL + playlistarg + autoplay + loop + rel + desktop;
+    var url = preURL + playlistarg + autoplay + loop + rel;
 
     console.log("Loading embed : " + url);
 
