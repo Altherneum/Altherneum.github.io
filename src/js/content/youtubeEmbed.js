@@ -414,3 +414,11 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
             }
         });
 }
+
+async function setVideoScreenLocking() {
+    document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') {
+          navigator.wakeLock.request("screen")
+        }
+      });
+}
