@@ -425,10 +425,10 @@ async function setVideoScreenLocking() {
 
         try {
             wakeLock = await navigator.wakeLock.request("screen");
-            statusElem.textContent = "Wake Lock is active!";
+            console.log("Wake Lock is active!");
         } catch (err) {
             // The Wake Lock request has failed - usually system related, such as battery.
-            statusElem.textContent = `${err.name}, ${err.message}`;
+            console.error(err);
         }
 
         document.addEventListener('visibilitychange', () => {
