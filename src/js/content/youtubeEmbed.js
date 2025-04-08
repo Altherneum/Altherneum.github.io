@@ -414,8 +414,3 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
             }
         });
 }
-
-function LoadSingleVideo() {
-    //To Do
-    // get param from ?vid = abc // from url
-}
