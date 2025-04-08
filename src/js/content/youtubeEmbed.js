@@ -421,7 +421,7 @@ async function setVideoScreenLocking() {
     if ("wakeLock" in navigator) {
         console.log("Screen Wake Lock API supported!");
         
-        let wakeLock = null;
+        var wakeLock = null;
 
         try {
             wakeLock = await navigator.wakeLock.request("screen");
