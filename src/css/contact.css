@@ -36,9 +36,11 @@
     box-shadow: var(--box-shadow-all-inset-main-color);
 }
 
-.contact>hr, .contact>#link>hr{
-    margin-top: 2.5vh;
-    margin-bottom: 2.5vh;
+.contact>hr,
+.contact>#link>hr,
+.contact>.software>hr{
+    margin-top: 7.5vh;
+    margin-bottom: 7.5vh;
 }
 
 .contact>div {
@@ -62,7 +64,8 @@
 }
 
 .contact>div>a>img.svg,
-.contact>div>div>img.svg {
+.contact>div>div>img.svg,
+.contact>.software>div>div>div>img.svg {
     max-width: 50px;
     padding-right: 12px;
 }
@@ -138,11 +141,12 @@
     min-width: 95%;
 
     resize: none;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-y: hidden;
 
-    height: 90px;
-    max-height: 90px;
-    min-height: 90px;
+    height: 95px;
+    max-height: 95px;
+    min-height: 95px;
 
     padding: 6px;
     padding-top: 9px;
@@ -201,7 +205,7 @@
     margin-bottom: 8px;
 }
 
-.contact>.software>div>div>div>img{
-    width: 24px;
-    padding-right: 6px;
+.contact>.software>div>div>div:not(:first-of-type)>img
+{
+    max-width: 24px;
 }
