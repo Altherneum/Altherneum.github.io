@@ -431,6 +431,10 @@ async function setVideoScreenLocking() {
             console.error(err);
         }
 
+        wakeLock.addEventListener('release', () => {
+            console.log('Screen Wake State used : ' + !wakeLock.released);
+        });
+
         document.addEventListener('visibilitychange', () => {
             if (document.visibilityState === 'visible') {
                 navigator.wakeLock.request('screen').then(result => {
@@ -441,7 +445,7 @@ async function setVideoScreenLocking() {
         });
 
         console.log(wakeLock);
-
+        console.log("Wakelock is released : " + wakeLock.released);
     } else {
         console.log("Wake lock is not supported by this browser.");
     }
