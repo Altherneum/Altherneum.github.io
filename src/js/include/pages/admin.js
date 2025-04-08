@@ -57,6 +57,9 @@ async function CheckPage() {
         await include_css("/src/css/contact.css");
         await include_html("/src/html/content/contact.html", "contentArticle", true);
         await include_script("/src/js/content/contact.js");
+        
+        await include_html("/src/html/content/techno.html", ".contact", false);
+        await include_html("/src/html/content/software.html", ".contact", false);
     }
 
     else if (pathNameMatchPage("/admin/donation", true)) {
