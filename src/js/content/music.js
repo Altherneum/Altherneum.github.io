@@ -1489,12 +1489,12 @@ var videolinks = [
     },
     {
         videoID: "Ra5qZDJefJs",
-        categorie: "phonk electro",
+        categorie: "phonk electro chilljp",
         text: "<a target='_blank' href='#mw7Y0jQ8_BU'>Spinnin Records 1st upload</a>",
     },
     {
         videoID: "mw7Y0jQ8_BU",
-        categorie: "phonk electro",
+        categorie: "phonk electro chilljp",
         top: true,
         text: "<a target='_blank' href='#Ra5qZDJefJs'>Re-upload by YouTube</a>",
     },
