@@ -1691,6 +1691,13 @@ var videolinks = [
         categorie: "rock histoire",
         top: true,
     },
+    {
+        videoID: "RDNRtnUVaRwXM",
+        categorie : "chill histoire classic rock",
+        top: true,
+        playlist: true,
+        text: "TEST WARNING",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
