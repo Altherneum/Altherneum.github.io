@@ -1686,6 +1686,11 @@ var videolinks = [
         categorie: "rock",
         top: true,
     },
+    {
+        videoID: "sO8d1CIFV8w",
+        categorie: "rock histoire",
+        top: true,
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
