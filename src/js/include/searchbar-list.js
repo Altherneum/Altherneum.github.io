@@ -210,6 +210,12 @@ const links = [
         svg: "/assets/svg/tools.svg",
     },
     {
+        href: "/admin/hardware.html",
+        tag: "Admin Outils URL",
+        text: "HardWare (Matériel) de l'administrateur du projet",
+        svg: "/assets/svg/tools.svg",
+    },
+    {
         href: "/admin/film.html",
         tag: "Admin",
         text: "Les films conseillés par l'administrateur d'Altherneum",
