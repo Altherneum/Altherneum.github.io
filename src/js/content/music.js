@@ -1659,6 +1659,33 @@ var videolinks = [
         videoID: "vfc42Pb5RA8",
         categorie: "trool",
     },
+    {
+        videoID: "NRtnUVaRwXM",
+        categorie: "rock histoire",
+        top: true,
+    },
+    {
+        videoID: "eDajkN_GBC4",
+        categorie: "histoire chill",
+    },
+    {
+        videoID: "NxxjLD2pmlk",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "uThdFoa3sNY",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "djV11Xbc914",
+        categorie: "histoire chill rock",
+        top: true,
+    },
+    {
+        videoID: "UQ-Fb90GBhE",
+        categorie: "rock",
+        top: true,
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
