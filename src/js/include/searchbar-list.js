@@ -995,6 +995,18 @@ const links = [
         tag: "URL OS Outils Web",
         text: "Wayback Machine",
     },
+    {
+        href: "https://drivenlisten.com/",
+        svg: "/assets/svg/link.svg",
+        tag: "URL Outils Web",
+        text: "Drive & Listen",
+    },
+    {
+        href: "https://www.shodan.io/",
+        svg: "/assets/svg/link.svg",
+        tag: "URL Outils Web OpSec",
+        text: "Shodan .io",
+    },
 ];
 
 /*
