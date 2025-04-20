@@ -73,12 +73,6 @@
     box-shadow: var(--box-shadow-all-inset-main-color);
 }
 
-.software>div:has(div:hover){
-    border: 3px solid var(--main-color);
-    background: linear-gradient(var(--background-color), var(--main-color-transparent));
-    box-shadow: var(--box-shadow-all-inset-main-transparent-color-small);
-}
-
 .software>div>div>div{
     display: flex;
     
@@ -114,20 +108,10 @@
     padding-right: 12px;
 }
 
-.software>div:hover {
-    background-color: var(--main-color);
-    box-shadow: var(--box-shadow-all-inset-main-color);
-}
-
 .software>div {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border: 3px solid var(--main-color);
-    border-radius: 12px;
-
-    box-shadow: var(--box-shadow-all-inset-main-transparent-color-small);
 
     margin: 12px;
     padding: 24px;
@@ -135,6 +119,4 @@
     flex-basis: 40%;
 
     text-decoration: none !important;
-
-    background: linear-gradient(var(--background-color), var(--main-color-transparent));
 }

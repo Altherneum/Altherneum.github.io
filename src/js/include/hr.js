@@ -1,4 +1,4 @@
-function  addHR(divID, isClass) {
+async function addHR(divID, isClass) {
     var dataHolder;
     if(isClass){
         dataHolder = document.getElementsByClassName(divID)[0];
