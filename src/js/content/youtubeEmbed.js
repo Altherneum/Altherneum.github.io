@@ -418,35 +418,57 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 
 async function setVideoScreenLocking() {
     //https://developer.mozilla.org/en-US/docs/Web/API/Screen_Wake_Lock_API
-    if ("wakeLock" in navigator) {
-        console.log("Screen Wake Lock API supported!");
-        
-        var wakeLock = null;
+    try {
+        if ("wakeLock" in navigator) {
+            console.log("Screen Wake Lock API supported!");
+            
+            var wakeLock = null;
 
-        try {
-            wakeLock = await navigator.wakeLock.request("screen");
-            console.log("Wake Lock is active!");
-        } catch (err) {
-            // The Wake Lock request has failed - usually system related, such as battery.
-            console.error(err);
-        }
-
-        wakeLock.addEventListener('release', () => {
-            console.log('Screen Wake State used : ' + !wakeLock.released);
-        });
-
-        document.addEventListener('visibilitychange', () => {
             if (document.visibilityState === 'visible') {
-                navigator.wakeLock.request('screen').then(result => {
-                    wakeLock = result;
-                    console.log(result + " : " + wakeLock);
+                wakeLock = await navigator.wakeLock.request("screen");
+                console.log("Wake Lock is active!");
+                
+                wakeLock.addEventListener('release', () => {
+                    console.log('Screen Wake State used : ' + !wakeLock.released);
                 });
             }
-        });
+            else{
+                console.log("Screen is not visible : Document visibilty state ; " + document.visibilityState);
+            }
 
-        console.log(wakeLock);
-        console.log("Wakelock is released : " + wakeLock.released);
-    } else {
-        console.log("Wake lock is not supported by this browser.");
+            document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === 'visible') {
+                    console.log("Requesting WakeLock ...");
+                    navigator.wakeLock.request('screen').then(result => {
+                        wakeLock = result;
+                        console.log(wakeLock);
+                    });
+                }
+                else{
+                    console.log("Releasing WakeLock ...");
+                    console.log(wakeLock);
+                    
+                    wakeLock.release();
+                    
+                    if(wakeLock === null){
+                        console.log("WakeLock is equal to \"null\", release OK !");
+                    }else{
+                        console.log("WakeLock not equal to \"null\" ...");
+                        if(wakeLock.released){
+                            console.log("WakeLock is released (sucess)");
+                        }
+                        else{
+                            console.log("WakeLock is not released (error)");
+                        }
+                        console.log(wakeLock);
+                    }
+                }
+            });
+        }
+        else {
+            console.log("Wake lock is not supported by this browser.");
+        }
+    } catch (err) {
+        console.error(err);
     }
 }
