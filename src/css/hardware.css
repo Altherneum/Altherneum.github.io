@@ -23,15 +23,15 @@
 
     gap: 16px;
 
-    max-width: fit-content;
+    max-width: 40vw;
     min-width: 20vw;
 }
 
 #hardware>div>div{
-    border-top-style: dashed;
+    border-top-style: solid;
     width: 100%;
     border-color: var(--main-color);
-    border-width: 1px;
+    border-width: 3px;
 
     padding-top: 16px;
     padding-bottom: 8px;
