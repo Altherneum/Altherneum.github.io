@@ -207,13 +207,13 @@ const links = [
         href: "/admin/software.html",
         tag: "Admin Outils URL",
         text: "Software de l'administrateur du projet",
-        svg: "/assets/svg/tools.svg",
+        svg: "/assets/svg/computer-configuration.svg",
     },
     {
         href: "/admin/hardware.html",
         tag: "Admin Outils URL",
         text: "HardWare (Matériel) de l'administrateur du projet",
-        svg: "/assets/svg/tools.svg",
+        svg: "/assets/svg/gpu.svg",
     },
     {
         href: "/admin/film.html",
