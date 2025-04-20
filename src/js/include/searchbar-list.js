@@ -914,7 +914,7 @@ const links = [
     {
         href: "https://www.ntlite.com/",
         svg: "/assets/svg/trademark/windows.svg",
-        tag: "URL OS Windows Admin",
+        tag: "URL OS Windows",
         text: "NTLite",
     },
     {
@@ -968,7 +968,7 @@ const links = [
     {
         href: "https://guacamole.apache.org/",
         svg: "/assets/svg/trademark/apache.svg",
-        tag: "URL OS Outils Web Linux Admin Network",
+        tag: "URL OS Outils Web Linux Network",
         text: "Apache Guacamole",
     },
 ];
