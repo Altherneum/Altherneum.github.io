@@ -971,6 +971,18 @@ const links = [
         tag: "URL OS Outils Web Linux Network",
         text: "Apache Guacamole",
     },
+    {
+        href: "https://etcher.balena.io/",
+        svg: "/assets/svg/usb-flash-drive.svg",
+        tag: "URL OS Outils",
+        text: "Balena Etcher",
+    },
+    {
+        href: "https://rufus.ie/",
+        svg: "/assets/svg/usb-flash-drive.svg",
+        tag: "URL OS Outils",
+        text: "Rufus",
+    },
 ];
 
 /*
