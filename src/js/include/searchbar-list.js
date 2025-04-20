@@ -983,6 +983,12 @@ const links = [
         tag: "URL OS Outils",
         text: "Rufus",
     },
+    {
+        href: "https://drive.google.com/drive/home",
+        svg: "/assets/svg/trademark/google-drive.svg",
+        tag: "URL OS Outils Web Windows",
+        text: "Google Drive",
+    },
 ];
 
 /*
