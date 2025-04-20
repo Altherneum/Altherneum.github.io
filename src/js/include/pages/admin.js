@@ -75,7 +75,6 @@ async function CheckPage() {
     else if (pathNameMatchPage("/admin/software", true)) {
         await includes();
 
-        await include_css("/src/css/contact.css");
         await include_css("/src/css/software.css");
         await include_html("/src/html/content/software.html", "contentArticle", true);
     }
@@ -83,7 +82,6 @@ async function CheckPage() {
     else if (pathNameMatchPage("/admin/hardware", true)) {
         await includes();
 
-        await include_css("/src/css/contact.css");
         await include_css("/src/css/hardware.css");
         await include_html("/src/html/content/hardware.html", "contentArticle", true);
     }
