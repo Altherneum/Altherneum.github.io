@@ -1698,6 +1698,39 @@ var videolinks = [
         playlist: true,
         text: "TEST WARNING",
     },
+    {
+        videoID: "NeQM1c-XCDc",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "W3q8Od5qJio",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "EOnSh3QlpbQ",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "Rr8ljRgcJNM",
+        categorie: "rock histoire",
+        top: true,
+    },
+    {
+        videoID: "af59U2BRRAU",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "1M4ADcMn3dA",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "gNdnVVHfseA",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "6iaxDxHUWP8",
+        categorie: "rock histoire",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
