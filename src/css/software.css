@@ -61,6 +61,9 @@
     border-width: 3px;
     border-radius: 16px;
 
+    min-width: 20vw;
+    min-height: 15vh;
+    
     margin: 5px;
     margin-bottom: 12px;
 
