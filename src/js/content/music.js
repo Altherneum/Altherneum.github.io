@@ -1731,6 +1731,10 @@ var videolinks = [
         videoID: "6iaxDxHUWP8",
         categorie: "rock histoire",
     },
+    {
+        videoID: "XMo6aye_6TA",
+        categorie: "slavic rap",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
