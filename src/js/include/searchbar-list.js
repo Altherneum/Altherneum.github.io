@@ -989,6 +989,12 @@ const links = [
         tag: "URL OS Outils Web Windows",
         text: "Google Drive",
     },
+    {
+        href: "https://web.archive.org/",
+        svg: "/assets/svg/download.svg",
+        tag: "URL OS Outils Web",
+        text: "Wayback Machine",
+    },
 ];
 
 /*
