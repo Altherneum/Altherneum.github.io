@@ -36,12 +36,6 @@
     box-shadow: var(--box-shadow-all-inset-main-color);
 }
 
-.contact>hr,
-.contact>#link>hr{
-    margin-top: 7.5vh;
-    margin-bottom: 7.5vh;
-}
-
 .contact>div {
     display: flex;
     flex-direction: row;
