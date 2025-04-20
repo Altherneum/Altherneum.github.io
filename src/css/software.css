@@ -30,9 +30,9 @@
 
 .software>.Linux>div:nth-of-type(2)>div>textarea
 {
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    width: 95%;
+    max-width: 95%;
+    min-width: 95%;
 
     resize: none;
     overflow-y: auto;
@@ -44,6 +44,7 @@
 
     padding: 6px;
     padding-top: 9px;
+    margin-bottom: 16px;
 
     border-radius: 8px;
     
