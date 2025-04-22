@@ -1737,7 +1737,7 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long"];
+var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
 
 function getVideoListType(){
     return VideoListType;
@@ -1779,6 +1779,8 @@ function getEmoji(VideoListType){
             return "❄️";
         case 'long':
             return "⌛";
+        case 'moody':
+            return "😔";
         default:
             return "❓";
       }
