@@ -1140,6 +1140,17 @@ var videolinks = [
         short: true,
         top: true,
     },
+    {
+        videoID: "sdLwYyF-ZsY",
+        categorie: "science IT hardware",
+        text: "MicroSoft : Majorana 1, puce quantique",
+        short: true,
+    },
+    {
+        videoID: "geOYLVdtmQQ",
+        categorie: "science IT chem",
+        short: true,
+    }
 ];
 
 var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
