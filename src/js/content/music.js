@@ -1988,7 +1988,11 @@ var videolinks = [
         videoID: "1TLFnokO1Oo",
         categorie: "chill histoire",
         top: true,
-    }
+    },
+    {
+        videoID: "n4uhmetIV2o",
+        categorie: "trool slavic electro hardbass",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
