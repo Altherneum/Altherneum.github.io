@@ -586,7 +586,8 @@ var videolinks = [
     {
         videoID: "PD1EXJScA6k",
         top: true,
-        categorie: "chill",
+        categorie: "chill moody histoire",
+        text: "<a target='_blank' href='#3vEiqil5d3Q'>Alternative upload</a>",
     },
     {
         text: "Tchaikovsky - 1812 Overture",
@@ -1734,6 +1735,249 @@ var videolinks = [
     {
         videoID: "XMo6aye_6TA",
         categorie: "slavic rap",
+    },
+    {
+        videoID: "CD_tD26E7k0",
+        categorie: "rap moody",
+    },
+    {
+        videoID: "T2fjQrsKbAM",
+        categorie: "chill moody",
+    },
+    {
+        videoID: "mk2MrrfD-zk",
+        categorie: "histoire moody chill",
+        top: true,
+    },
+    {
+        videoID: "RgjN09waabQ",
+        categorie: "moody",
+        top: true,
+    },
+    {
+        videoID: "6vNh-QW6Hlc",
+        categorie: "chill",
+    },
+    {
+        videoID: "MoN9ql6Yymw",
+        categorie: "histoire chill moody",
+        top: true,
+    },
+    {
+        videoID: "G0XmGby7Zag",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "dvQJIgjlR3I",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "jwIWJIdpNFs",
+        categorie: "electro chill",
+    },
+    {
+        videoID: "gbsi0JSbHdg",
+        categorie: "chill",
+    },
+    {
+        videoID: "BO7gq-jdKnA",
+        categorie: "moody chill histoire",
+    },
+    {
+        videoID: "3rkJ3L5Ce80",
+        categorie: "rap",
+    },
+    {
+        videoID: "K1FlAphL2p8",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "mWRU9lyXDms",
+        categorie: "moody chill",
+    },
+    {
+        videoID: "CIu-qF1JbZ0",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "EgKdyHcZJcs",
+        categorie: "histoire phonk chill",
+        top: true,
+    },
+    {
+        videoID: "2SUwOgmvzK4",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "OJ62RzJkYUo",
+        categorie: "histoire chill rock",
+        top: true,
+    },
+    {
+        videoID: "lyO-Sveg6a8",
+        categorie: "chill",
+    },
+    {
+        videoID: "nyuo9-OjNNg",
+        categorie: "chill moody",
+    },
+    {
+        videoID: "vXZHHg823ro",
+        categorie: "phonk histoire electro",
+        top: true,
+    },
+    {
+        videoID: "sADmwWhU5ZM",
+        categorie: "chill moody histoire",
+        top: true,
+        text: "<a target='_blank' href='#VNyGaTO0dU0'>Alternative upload</a>",
+    },
+    {
+        videoID: "Ijk4j-r7qPA",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "4TV_128Fz2g",
+        categorie: "histoire chill moody",
+        top: true,
+    },
+    {
+        videoID: "Lwd7WQ8L5dQ",
+        categorie: "chill moody",
+    },
+    {
+        videoID: "VNyGaTO0dU0",
+        categorie: "chill moody histoire",
+        text: "<a target='_blank' href='#sADmwWhU5ZM'>Alternative upload</a>",
+    },
+    {
+        videoID: "evJ6gX1lp2o",
+        categorie: "histoire rock moody",
+        top: true,
+    },
+    {
+        videoID: "Ro0vTEuSUuo",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "-sSMARZ-1lg",
+        categorie: "moody chill",
+        text: "<a target='_blank' href='#xknnD47tcMU'>Alternative upload</a>",
+    },
+    {
+        videoID: "xknnD47tcMU",
+        categorie: "phonk moody chill",
+        text: "<a target='_blank' href='#-sSMARZ-1lg'>Alternative upload</a>",
+        top: true,
+    },
+    {
+        videoID: "ETbaHU736Tg",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "ZOLisBrHmGw",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "DK6IRG4CAbw",
+        categorie: "phonk electro histoire",
+        top: true,
+    },
+    {
+        videoID: "TdrL3QxjyVw",
+        categorie: "moody chill histoire",
+        top: true,
+    },
+    {
+        videoID: "8GW6sLrK40k",
+        categorie: "chill moody",
+        top: true,
+    },
+    {
+        videoID: "DrJ7grCnwUc",
+        categorie: "histoire electro",
+    },
+    {
+        videoID: "RBtlPT23PTM",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "cYT325Fe9zU",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "UeSDvg5xsWI",
+        categorie: "chill moody histoire",
+        top: true,
+    },
+    {
+        videoID: "sVx1mJDeUjY",
+        categorie: "moody chill histoire rock",
+        top: true,
+    },
+    {
+        videoID: "3vjkh-acmTE",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "pqrUQrAcfo4",
+        categorie: "chill histoire rock",
+        top: true,
+    },
+    {
+        videoID: "FkFVMDlcJF8",
+        categorie: "chill rock moody",
+    },
+    {
+        videoID: "3vEiqil5d3Q",
+        categorie: "chill moody histoire",
+        text: "<a target='_blank' href='#PD1EXJScA6k'>Alternative upload</a>",
+        top: true,
+    },
+    {
+        videoID: "qU9mHegkTc4",
+        categorie: "rock histoire",
+        top: true,
+    },
+    {
+        videoID: "V1Pl8CzNzCw",
+        categorie: "moody chill histoire",
+        top: true,
+    },
+    {
+        videoID: "lX44CAz-JhU",
+        categorie: "histoire chill rock",
+        top: true,
+    },
+    {
+        videoID: "lCvMtQSdCXo",
+        categorie: "chill histoire moody",
+        top: true,
+    },
+    {
+        videoID: "8F2s8ivKXNY",
+        categorie: "chill histoire moody",
+        top: true,
+    },
+    {
+        videoID: "uThdFoa3sNY",
+        categorie: "chill histoire",
+        top: true,
+    },
+    {
+        videoID: "M7X6oYg6iro",
+        categorie: "histoire rock",
     },
 ];
 
