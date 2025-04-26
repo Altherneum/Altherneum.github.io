@@ -53,8 +53,10 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/Code/Web/SQL/learning.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/learning.md', false);
+            
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/variables.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/operateurs.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/function.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/conditions.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/boucles.md', false);
         });
@@ -85,6 +87,7 @@ async function CheckPage() {
             
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/variables.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/operateurs.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/function.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/conditions.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/boucles.md', false);
 
