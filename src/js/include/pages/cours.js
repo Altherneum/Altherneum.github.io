@@ -74,6 +74,12 @@ async function CheckPage() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/learning.md', false);
+            
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/variables.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/operateurs.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/conditions.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/boucles.md', false);
+
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/Anti-devtools.md', false);
         });
     }
