@@ -1,8 +1,9 @@
-// https://developers.google.com/youtube/player_parameters?hl=fr#listType
+// https://developers.google.com/youtube/player_parameters
 var total = 0;
 
 async function loadYouTubeEmbed() {
     await setVideoScreenLocking();
+    createPlayListList();
     GetVideos(shuffle(GetVideoList()), getVideoListType());
 }
 
@@ -103,13 +104,13 @@ async function GetVideos(videoList, VideoListType) {
 
         if (LoadSingleVideo) {
             if (videoID === hash) {
-                await parseVideoParam(videoList, video, videoID);
+                await parseVideoParam(videoList, video, videoID, false);
                 total = 1;
                 break;
             }
         }
         else {
-            await parseVideoParam(videoList, video, videoID);
+            await parseVideoParam(videoList, video, videoID, false);
             total += 1;
         }
 
@@ -129,39 +130,67 @@ async function GetVideos(videoList, VideoListType) {
     console.log(total);
 }
 
-async function parseVideoParam(videoList, video, videoID) {
-    var short = videoList[video].short;
-    if (short === undefined) {
-        short = false;
-    }
-
-    var top = videoList[video].top;
-    if (top === undefined) {
-        top = false;
-    }
-
-    var categorie = videoList[video].categorie;
+async function parseVideoParam(videoList, video, videoID, premadePlayList) {
+    var short;
+    var top;
+    var premadePlayList;
+    var categorie;
     var fetchUrl;
-
     var text;
-    if (videoList[video].text !== undefined) {
-        text = videoList[video].text;
+    var playlist;
+
+
+    if (premadePlayList == false){
+        short = videoList[video].short;
+        if (short === undefined) {
+            short = false;
+        }
+
+        top = videoList[video].top;
+        if (top === undefined) {
+            top = false;
+        }
+
+        premadePlayList = videoList[video].premadePlayList;
+        if (premadePlayList === undefined) {
+            premadePlayList = false;
+        }
+
+        categorie = videoList[video].categorie;
+
+        if (videoList[video].text !== undefined) {
+            text = videoList[video].text;
+        }
+        else {
+            text = "";
+        }
+
+        playlist = videoList[video].playlist;
+        if (playlist === undefined) {
+            playlist = false;
+        }
     }
     else {
-        text = "";
+        short = false;
+        top = true;
+        console.log(categorie + " ! " + premadePlayList);
+        categorie = premadePlayList;
+        console.log(categorie + " ! " + premadePlayList);
+        premadePlayList = true;
+        text = "Auto Mix";
+        playlist = true;
     }
 
-    var playlist = videoList[video].playlist;
-    if (playlist === undefined) {
-        playlist = false;
-    }
-    if (playlist) {
+    if (playlist == true && premadePlayList == false) {
         fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
-    } else {
+    } else if (playlist == true && premadePlayList == true) {
+        fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
+    }
+    else {
         fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
     }
 
-    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, false, "videoholder");
+    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, false, "videoholder");
 }
 
 function addButtons(Types){
@@ -182,8 +211,7 @@ function addButtons(Types){
     }
 }
 
-//let call addIframe with custom elem to add on markdown file when ytb url is found
-async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, latest, element) {
+async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element) {
     try {        
         var response = await fetch(fetchUrl);
         var status = response.status;
@@ -203,9 +231,11 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             div_card = addCard(top, playlist, videoID, categorie, latest);
 
             var video_div = addCardData(div_card, title, text, thumbnail, false);
-            addVideoCard(video_div, videoID, playlist, short);
+            addVideoCard(video_div, videoID, playlist, short, premadePlayList);
 
             videoholder.appendChild(div_card);
+
+            constructPlayList(videoID, playlist, top, categorie);
         }
         else if (status === 404) {            
             div_card = addCard(top, playlist, videoID, categorie);
@@ -223,8 +253,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             videoholder.appendChild(div_card);
         }
         else {
-            console.warn("erreur ? (-------------------------------")
-            console.log(response);
+            console.error(response);
             var jsonResponse = null;
         }
         
@@ -234,7 +263,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
     }
 }
 
-function addCard(top, playlist, videoID, categorie, latest) {
+function addCard(top, playlist, videoID, categorie, latest, premadePlayList) {
     var div_card = document.createElement("div");
     var classname = "";
     if (top) {
@@ -246,15 +275,16 @@ function addCard(top, playlist, videoID, categorie, latest) {
     if (latest) {
         classname += "latest ";
     }
+    if (premadePlayList) {
+        classname += "premadePlayList";
+    }
 
     classname += "card " + categorie;
     div_card.className = classname;
 
     var anchor = document.createElement("a");
     anchor.href = "#" + videoID;
-    anchor.onclick = () => {
-
-    };
+    anchor.onclick = () => { };
 
     var divLogoHolder = document.createElement("div");
     divLogoHolder.id = "logoHolder";
@@ -285,6 +315,12 @@ function addCard(top, playlist, videoID, categorie, latest) {
         var imageNew = document.createElement("img");
         imageNew.src = "/assets/svg/new.svg";
         imageNew.className = "newimg svg";
+        divLogoHolder.appendChild(imageNew);
+    }
+    if (premadePlayList) {
+        var imageNew = document.createElement("img");
+        imageNew.src = "/assets/svg/dj-turntable-vinyl.svg";
+        imageNew.className = "premadePlayList svg";
         divLogoHolder.appendChild(imageNew);
     }
     div_card.appendChild(divLogoHolder);
@@ -333,11 +369,12 @@ function addCardData(div_card, title, text, thumbnail, error) {
     return video_div;
 }
 
-function addVideoCard(video_div, videoID, playlist, short) {
+function addVideoCard(video_div, videoID, playlist, short, premadePlayList) {
     var video_button = document.createElement("button");
     video_button.dataset.youtubeButton = videoID;
     video_button.dataset.youtubePlayList = playlist;
     video_button.dataset.youtubeShort = short;
+    video_button.dataset.youtubePremadePlayList = premadePlayList;
 
     video_button.setAttribute("onclick", "createIframe(this)");
 
@@ -348,41 +385,53 @@ function createIframe(event) {
     var videoID = event.dataset.youtubeButton;
     var playlist = event.dataset.youtubePlayList;
     var short = event.dataset.youtubeShort;
+    var premadePlayList = event.dataset.youtubePremadePlayList;
     var youtubePlaceholder = event.parentNode;
 
     var loop;
     var autoplay = "&autoplay=1";
     var playlistarg;
+    var rel = "&rel=0";
+    var preURL = "https://www.youtube.com/embed/";
 
-    if (short === "false") {
-        if (localStorage.getItem('YouTubeLoop') === "true" && playlist !== "true") {
-            loop = "&loop=1";
-            playlistarg = videoID + "?playlist=" + videoID;
-        }
-        else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
-            loop = "&loop=1";
-            playlistarg = "?list=" + videoID + "&listType=playlist";
-        }
-        else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist !== "true") {
-            loop = "&loop=0";
-            playlistarg = videoID + "?si=Altherneum.fr";
-        }
-        else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist === "true") {
-            loop = "&loop=0";
-            playlistarg = "?list=" + videoID + "&listType=playlist";
-        }
+    var url;
+
+    if (premadePlayList) {
+        playlistarg = "?playlist=" + videoID;
+        loop = "";
+        var firstVideoID = videoID.split(",")[0];
+        url = preURL + firstVideoID + playlistarg + autoplay + loop + rel;
     }
     else {
-        console.log("short");
-        loop = "";
-        autoplay = "?autoplay=1";
-        playlistarg = videoID;
+        if (short === "false") {
+            if (localStorage.getItem('YouTubeLoop') === "true" && playlist !== "true") {
+                loop = "&loop=1";
+                playlistarg = videoID + "?playlist=" + videoID;
+            }
+            else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
+                loop = "&loop=1";
+                playlistarg = "?list=" + videoID + "&listType=playlist";
+            }
+            else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist !== "true") {
+                loop = "&loop=0";
+                playlistarg = videoID + "?si=Altherneum.fr";
+            }
+            else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist === "true") {
+                loop = "&loop=0";
+                playlistarg = "?list=" + videoID + "&listType=playlist";
+            }
+        }
+        else {
+            console.log("short");
+            loop = "";
+            autoplay = "?autoplay=1";
+            playlistarg = videoID;
+        }
+
+        url = preURL + playlistarg + autoplay + loop + rel;
     }
 
-    var rel = "&rel=0";
 
-    var preURL = "https://www.youtube.com/embed/";
-    var url = preURL + playlistarg + autoplay + loop + rel;
 
     console.log("Loading embed : " + url);
 
@@ -411,7 +460,7 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 
                 let videoID = items[i].link.replace("https://www.youtube.com/watch?v=", "");
 
-                addIFrame(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, latest, "videoholder")
+                addIFrame(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, false, latest, "videoholder")
             }
         });
 }
@@ -470,5 +519,43 @@ async function setVideoScreenLocking() {
         }
     } catch (err) {
         console.error(err);
+    }
+}
+
+var categorieList;
+var playListList;
+function createPlayListList() {
+    categorieList = getVideoListType();
+    playListList = [];
+    for (categorieType in categorieList) {
+        playListList.push({tag : categorieList[categorieType], videoIDList: "", amount: 0});
+    }
+
+    console.log(playListList);
+}
+
+async function constructPlayList(videoID, playlist, top, categorie) {
+    if(top === true && playlist == false){
+        var VideoCategorieList = categorie.split(" ");
+        for (categorieType in VideoCategorieList) {
+            var tag = VideoCategorieList[categorieType];
+            var objectIndex = playListList.findIndex(obj => obj.tag == tag);
+            playListList[objectIndex].videoIDList += videoID + ",";
+            playListList[objectIndex].amount += 1;
+            
+            CheckIfPlayListAtLimit(tag);
+        }
+    }
+}
+
+var limit = 20;
+var alreadyMadeCategorie = "";
+async function CheckIfPlayListAtLimit(tag) {
+    let videoIDList = playListList[playListList.findIndex(obj => obj.tag == tag)].videoIDList;
+    let videoAmount = playListList[playListList.findIndex(obj => obj.tag == tag)].amount;
+    if (videoAmount >= limit && !alreadyMadeCategorie.includes(tag)) {
+        //await addIFrame(true, videoIDList, top, tag, fetchUrl, "Auto Mix", false, true, false, "videoholder");
+        await parseVideoParam(null, null, videoIDList, tag);
+        alreadyMadeCategorie += (" " + tag);
     }
 }
