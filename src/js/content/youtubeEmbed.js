@@ -449,10 +449,15 @@ async function createIframe(event) {
 
     if (premadePlayList === "true") {
         //Décharge et recharge la vidéo car l'API YT est à chier :3 ...        //NB:Uniquement sur les PlayList temporaires "TL" "TempList"
-        var vid = document.getElementById(videoID); vid.firstChild.remove();
-        vid.innerHTML += iframe;
-
-        // seem not to work :/
+        setTimeout(() => {
+            console.log("deleting video");
+            var vid = document.getElementById(videoID);
+            vid.firstChild.remove();
+            console.log("reinserting video");
+            vid.innerHTML += iframe;
+        }, 1500);
+        // reloading too fast dont help,
+        //reloading after 1sec or more let youtube some spare time to really create the playList & embed
     }
 }
 
