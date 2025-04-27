@@ -281,22 +281,23 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList) {
     classname += "card " + categorie;
     div_card.className = classname;
 
-    var anchor = document.createElement("a");
-    anchor.href = "#" + videoID;
-    anchor.onclick = () => { };
-
     var divLogoHolder = document.createElement("div");
     divLogoHolder.id = "logoHolder";
 
-    anchor.id = videoID;
-    setScrollBehavior(anchor, "center");
-    divLogoHolder.appendChild(anchor);
+    if (!premadePlayList) {
+        var anchor = document.createElement("a");
+        anchor.href = "#" + videoID;
+        anchor.onclick = () => { };
 
-    var imageAnchor = document.createElement("img");
-    imageAnchor.src = "/assets/svg/link.svg";
-    imageAnchor.className = "topimg svg";
-    anchor.appendChild(imageAnchor);
+        anchor.id = videoID;
+        setScrollBehavior(anchor, "center");
+        divLogoHolder.appendChild(anchor);
 
+        var imageAnchor = document.createElement("img");
+        imageAnchor.src = "/assets/svg/link.svg";
+        imageAnchor.className = "topimg svg";
+        anchor.appendChild(imageAnchor);
+    }
 
     if (top) {
         var imageTop = document.createElement("img");
