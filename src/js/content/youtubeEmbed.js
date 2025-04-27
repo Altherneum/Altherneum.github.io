@@ -173,9 +173,7 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList) {
     else {
         short = false;
         top = true;
-        console.log(categorie + " ! " + premadePlayList);
         categorie = premadePlayList;
-        console.log(categorie + " ! " + premadePlayList);
         premadePlayList = true;
         text = "Auto Mix";
         playlist = true;
