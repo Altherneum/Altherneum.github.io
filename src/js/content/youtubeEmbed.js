@@ -396,7 +396,7 @@ function createIframe(event) {
 
     var url;
 
-    if (premadePlayList) {
+    if (premadePlayList === "true") {
         playlistarg = "?playlist=" + videoID;
         loop = "";
         var firstVideoID = videoID.split(",")[0];
