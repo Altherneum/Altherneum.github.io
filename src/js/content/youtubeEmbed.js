@@ -352,7 +352,7 @@ function addCardData(div_card, title, text, thumbnail, error) {
     div_card.appendChild(video_subtext);
 
     var video_div = document.createElement("div");
-    video_div.id = "videoDiv";
+    video_div.className += "videoDiv";
     div_card.appendChild(video_div);
 
     var video_image = document.createElement("img");
@@ -381,7 +381,7 @@ function addVideoCard(video_div, videoID, playlist, short, premadePlayList) {
     video_div.appendChild(video_button);
 }
 
-function createIframe(event) {
+async function createIframe(event) {
     var videoID = event.dataset.youtubeButton;
     var playlist = event.dataset.youtubePlayList;
     var short = event.dataset.youtubeShort;
@@ -435,15 +435,25 @@ function createIframe(event) {
 
     console.log("Loading embed : " + url);
 
-    var htmlString = '<div id="videoDiv"><iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="screen-wake-lock; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    var iframe = '<iframe src="' + url + '" title="YouTube video player" frameborder="0" allow="screen-wake-lock; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
+    var htmlString = '<div id=' + videoID + ' class="videoDiv">' + iframe + '</div>';
 
     var card = youtubePlaceholder.parentNode;
     var classname = card.className;
     card.className = classname + " playing";
 
+    console.log(youtubePlaceholder);
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
     youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
+
+    if (premadePlayList === "true") {
+        //Décharge et recharge la vidéo car l'API YT est à chier :3 ...        //NB:Uniquement sur les PlayList temporaires "TL" "TempList"
+        var vid = document.getElementById(videoID); vid.firstChild.remove();
+        vid.innerHTML += iframe;
+
+        // seem not to work :/
+    }
 }
 
 async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, text, top, latest) {
@@ -543,7 +553,7 @@ async function constructPlayList(videoID, playlist, top, categorie) {
             playListList[objectIndex].videoIDList += videoID + ",";
             playListList[objectIndex].amount += 1;
             
-            CheckIfPlayListAtLimit(tag);
+            await CheckIfPlayListAtLimit(tag);
         }
     }
 }
@@ -555,7 +565,7 @@ async function CheckIfPlayListAtLimit(tag) {
     let videoAmount = playListList[playListList.findIndex(obj => obj.tag == tag)].amount;
     if (videoAmount >= limit && !alreadyMadeCategorie.includes(tag)) {
         //await addIFrame(true, videoIDList, top, tag, fetchUrl, "Auto Mix", false, true, false, "videoholder");
-        await parseVideoParam(null, null, videoIDList, tag);
         alreadyMadeCategorie += (" " + tag);
+        await parseVideoParam(null, null, videoIDList, tag);
     }
 }
