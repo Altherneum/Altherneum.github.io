@@ -118,7 +118,7 @@ async function GetVideos(videoList, VideoListType) {
     }
 
     if (LoadSingleVideo && total !== 1) {
-        var div_card = addCard(false, false, hash, "");
+        var div_card = addCard(false, false, hash, "", false, false);
         addCardData(div_card, "404", "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
         videoholder.appendChild(div_card);
         div_card.style.display = "flex";
@@ -226,7 +226,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
             var thumbnail = JSONdata.thumbnail_url;
 
-            div_card = addCard(top, playlist, videoID, categorie, latest);
+            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
 
             var video_div = addCardData(div_card, title, text, thumbnail, false);
             addVideoCard(video_div, videoID, playlist, short, premadePlayList);
@@ -236,17 +236,17 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             constructPlayList(videoID, playlist, top, categorie);
         }
         else if (status === 404) {            
-            div_card = addCard(top, playlist, videoID, categorie);
+            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
             var video_div = addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else if (status === 403) {
-            div_card = addCard(top, playlist, videoID, categorie);
+            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
             var video_div = addCardData(div_card, "403", "Vidéo privée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else if (status === 401) {
-            div_card = addCard(top, playlist, videoID, categorie);
+            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
             var video_div = addCardData(div_card, "401", "Vidéo sans embed !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
@@ -273,8 +273,9 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList) {
     if (latest) {
         classname += "latest ";
     }
+
     if (premadePlayList) {
-        classname += "premadePlayList";
+        classname += "premadePlayList ";
     }
 
     classname += "card " + categorie;
@@ -316,10 +317,10 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList) {
         divLogoHolder.appendChild(imageNew);
     }
     if (premadePlayList) {
-        var imageNew = document.createElement("img");
-        imageNew.src = "/assets/svg/dj-turntable-vinyl.svg";
-        imageNew.className = "premadePlayList svg";
-        divLogoHolder.appendChild(imageNew);
+        var imagepremadePlayList = document.createElement("img");
+        imagepremadePlayList.src = "/assets/svg/dj-turntable-vinyl.svg";
+        imagepremadePlayList.className = "premadePlayList svg";
+        divLogoHolder.appendChild(imagepremadePlayList);
     }
     div_card.appendChild(divLogoHolder);
 
