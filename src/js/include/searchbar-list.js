@@ -1007,6 +1007,12 @@ const links = [
         tag: "URL Outils Web OpSec",
         text: "Shodan .io",
     },
+    {
+        href: "https://www.microsoft.com/fr-fr/software-download/windows11",
+        svg: "/assets/svg/download.svg",
+        tag: "URL OS Outils Web Windows",
+        text: "Télécharger Windows 11 (ISO/Setup)"
+    }
 ];
 
 /*
