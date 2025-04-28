@@ -1044,10 +1044,34 @@ const links = [
         text: "ShareX (ScreenShot)",
     },
     {
-        href: "hhttps://www.amd.com/fr/support/download/drivers.html",
+        href: "https://www.amd.com/fr/support/download/drivers.html",
         svg: "/assets/svg/download.svg",
         tag: "URL Outils Jeux OS Web Windows Linux",
         text: "AMD Driver (GPU)",
+    },
+    {
+        href: "https://github.com/Altherneum/.github/blob/main/note/OS/Windows/GPU_config.xml",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils Jeux OS Web Windows Linux Admin",
+        text: "AMD Config (GPU)",
+    },
+    {
+        href: "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
+        svg: "/assets/svg/download.svg",
+        tag: ".gg Discord Outils URL Windows",
+        text: "Discord Setup",
+    },
+    {
+        href: "https://vencord.dev/",
+        svg: "/assets/svg/link.svg",
+        tag: ".gg Discord Outils URL Développement",
+        text: "Vencord",
+    },
+    {
+        href: "https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe",
+        svg: "/assets/svg/download.svg",
+        tag: ".gg Discord Outils URL Développement Windows",
+        text: "Vencord Installer latest release",
     },
 ];
 
