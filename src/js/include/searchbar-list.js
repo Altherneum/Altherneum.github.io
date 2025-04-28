@@ -582,6 +582,12 @@ const links = [
         svg: "/assets/svg/trademark/git.svg",
     },
     {
+        href: "https://github.com/git-for-windows/git/releases/latest",
+        tag: "URL Github",
+        text: "Git latest releases",
+        svg: "/assets/svg/trademark/git.svg",
+    },
+    {
         href: "https://developer.mozilla.org/",
         tag: "URL",
         text: "MSDN",
@@ -990,6 +996,12 @@ const links = [
         text: "Google Drive",
     },
     {
+        href: "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe",
+        svg: "/assets/svg/trademark/google-drive.svg",
+        tag: "URL OS Outils Web Windows",
+        text: "Google Drive Setup",
+    },
+    {
         href: "https://web.archive.org/",
         svg: "/assets/svg/download.svg",
         tag: "URL OS Outils Web",
@@ -1012,7 +1024,31 @@ const links = [
         svg: "/assets/svg/download.svg",
         tag: "URL OS Outils Web Windows",
         text: "Télécharger Windows 11 (ISO/Setup)"
-    }
+    },
+    {
+        href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "PuTTY",
+    },
+    {
+        href: "https://filezilla-project.org/download.php?platform=win64",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "FileZila",
+    },
+    {
+        href: "https://github.com/ShareX/ShareX/releases/latest",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS Web Windows",
+        text: "ShareX (ScreenShot)",
+    },
+    {
+        href: "hhttps://www.amd.com/fr/support/download/drivers.html",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils Jeux OS Web Windows Linux",
+        text: "AMD Driver (GPU)",
+    },
 ];
 
 /*
