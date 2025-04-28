@@ -1026,10 +1026,16 @@ const links = [
         text: "Télécharger Windows 11 (ISO/Setup)"
     },
     {
-        href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest",
+        href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
         svg: "/assets/svg/download.svg",
         tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
         text: "PuTTY",
+    },
+    {
+        href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "PuTTY latest",
     },
     {
         href: "https://filezilla-project.org/download.php?platform=win64",
