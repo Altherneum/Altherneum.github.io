@@ -1027,7 +1027,7 @@ const links = [
     },
     {
         href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
-        svg: "/assets/svg/link.svg",
+        svg: "/assets/svg/console.svg",
         tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
         text: "PuTTY",
     },
@@ -1038,10 +1038,16 @@ const links = [
         text: "PuTTY latest",
     },
     {
+        href: "https://filezilla-project.org/",
+        svg: "/assets/svg/ftp.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "FileZila",
+    },
+    {
         href: "https://filezilla-project.org/download.php?platform=win64",
         svg: "/assets/svg/download.svg",
         tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
-        text: "FileZila",
+        text: "FileZila latest",
     },
     {
         href: "https://github.com/ShareX/ShareX/releases/latest",
