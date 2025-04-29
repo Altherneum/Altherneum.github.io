@@ -1693,13 +1693,6 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "RDNRtnUVaRwXM",
-        categorie : "chill histoire classic rock",
-        top: true,
-        playlist: true,
-        text: "TEST WARNING",
-    },
-    {
         videoID: "NeQM1c-XCDc",
         categorie: "rock histoire",
     },
@@ -2024,6 +2017,30 @@ var videolinks = [
     {
         videoID: "Jrg9KxGNeJY",
         categorie: "rock",
+        top: true,
+    },
+    {
+        videoID: "n6B5gQXlB-0",
+        categorie: "chilljp",
+        top: true,
+    },
+    {
+        videoID: "4vYOwhll1fs",
+        categorie: "histoire rap",
+        top: true,
+    },
+    {
+        videoID: "L9dnK_WNDcg",
+        categorie: "chilljp moody",
+    },
+    {
+        videoID: "RkZkekS8NQU",
+        categorie: "histoire classic chill",
+        top: true,
+    },
+    {
+        videoID: "etSsiGyLSmw",
+        categorie: "phonk trool classic",
         top: true,
     },
 ];
