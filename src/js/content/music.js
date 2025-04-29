@@ -1993,6 +1993,39 @@ var videolinks = [
         videoID: "n4uhmetIV2o",
         categorie: "trool slavic electro hardbass",
     },
+    {
+        videoID: "R9PNKMwVW5M",
+        categorie: "chill histoire chilljp",
+        top: true,
+    },
+    {
+        videoID: "wCQfkEkePx8",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "91GTuZWCQmY",
+        categorie: "histoire chill rock slavic",
+        top: true,
+    },
+    {
+        videoID: "K1NP4UTL8d8",
+        categorie: "histoire chill classic",
+        top: true,
+    },
+    {
+        videoID: "eO7jCbcFzAo",
+        categorie: "histoire",
+    },
+    {
+        videoID: "rdSXXwkuaT0",
+        categorie: "trool histoire",
+    },
+    {
+        videoID: "Jrg9KxGNeJY",
+        categorie: "rock",
+        top: true,
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
