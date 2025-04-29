@@ -63,7 +63,7 @@ function gameLoop(){
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
             var cell = plate[x][y];
-            console.log(movementList[x][y]);
+            console.log(movementList[x][y]);// it log wrong elem :( should be only 0's
             if(movementList[x][y] != "NA"){
                 var move = movementList[x][y];
                 if(move == "left"){
