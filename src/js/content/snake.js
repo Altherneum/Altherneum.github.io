@@ -1,6 +1,6 @@
 var direction = "down";
-let plate = [];
-let movementList = [];
+var plate = [];
+var movementList = [];
 var plateSizeRow = 5;
 var plateSizeCol = 5;
 var plateSize = plateSizeCol * plateSizeRow;
@@ -9,9 +9,10 @@ var gametimer;
 start();
 function start(){
     console.log("start")
-    createPlate();
+    createPlate(plate);
 
-    movementList = plate;
+    createPlate(movementList);
+    console.log(movementList);
 
 
     plate[0][0] = 1;
@@ -22,11 +23,11 @@ function start(){
     runGame();
 }
 
-function createPlate() {
+function createPlate(variable) {
     for (let x = 0; x < plateSizeRow; x++) {
-        plate[x] = [];
+        variable[x] = [];
         for (let y = 0; y < plateSizeCol; y++) {
-            plate[x][y] = 0;
+            variable[x][y] = 0;
         }
     }
 }
@@ -62,25 +63,29 @@ function gameLoop(){
     console.log(movementList);
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
-            var cell = plate[x][y];
-            console.log(movementList[x][y]);// it log wrong elem :( should be only 0's
-            if(movementList[x][y] != "NA"){
-                var move = movementList[x][y];
-                if(move == "left"){
-
-                }
-                else if(move == "up"){
-                    plate[x-1][y] = cell;
-                }
-                else if(move == "right"){
-
-                }
-                else if(move == "down"){
-                    plate[x+1][y] = cell;
-                }
-                plate[x][y] = 0;
-            }
+            console.log(x + " : " + y);
+            moveCell(x, y); //Need to start from head to tail
         }
+    }
+}
+
+function moveCell(x, y){
+    var move = movementList[x][y];
+    if(move != "0"){
+        if(move == "left"){
+            plate[x-1][y] = plate[x][y];
+        }
+        else if(move == "up"){
+            plate[x][y+1] = plate[x][y];
+        }
+        else if(move == "right"){
+            plate[x+1][y] = plate[x][y];
+        }
+        else if(move == "down"){
+            plate[x][y-1] = plate[x][y];
+        }
+        plate[x][y] = 0;
+        setMineText(x, y, getTD(x,y));
     }
 }
 
@@ -175,4 +180,14 @@ function setMineText(x, y, td) {
         td.textContent = "🐍"; //Mine no cheat
         td.style.background = "var(--main-color)";
     }
+}
+
+function getTD(x, y) {
+    var plate = document.getElementById("plate");
+    var table = plate.querySelector("table");
+    var tbodys = table.querySelector("tbody");
+    var trs = tbodys.querySelectorAll("tr");
+    var tds = trs[x].querySelectorAll("td");
+    var td = tds[y];
+    return td;
 }
