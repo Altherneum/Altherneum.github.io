@@ -1027,7 +1027,7 @@ const links = [
     },
     {
         href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
-        svg: "/assets/svg/download.svg",
+        svg: "/assets/svg/link.svg",
         tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
         text: "PuTTY",
     },
