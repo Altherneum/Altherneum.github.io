@@ -4,17 +4,22 @@ let movementList = [];
 var plateSizeRow = 5;
 var plateSizeCol = 5;
 var plateSize = plateSizeCol * plateSizeRow;
+var gametimer;
 
 start();
 function start(){
     console.log("start")
     createPlate();
 
+    movementList = plate;
+
+
     plate[0][0] = 1;
     plate[1][0] = 1;
     plate[2][0] = 2;
 
     createTable();
+    runGame();
 }
 
 function createPlate() {
@@ -53,9 +58,12 @@ document.onkeydown = function handleKeyDown(e){
 }
 
 function gameLoop(){
+    console.log("tick");
+    console.log(movementList);
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
             var cell = plate[x][y];
+            console.log(movementList[x][y]);
             if(movementList[x][y] != "NA"){
                 var move = movementList[x][y];
                 if(move == "left"){
@@ -76,9 +84,12 @@ function gameLoop(){
     }
 }
 
+function runGame(){
+    gametimer = setInterval(gameLoop(), 500);
+}
+
 function createTable() {
     var table = document.createElement("table");
-    table.addEventListener("contextmenu", e => { e.preventDefault(); });
 
     var holder = document.createElement("div");
     
@@ -91,7 +102,6 @@ function createTable() {
     for (x = 0; x < plateSizeCol + 1; x++){
         var th = document.createElement("th");
         th.scope = "col";
-        th.textContent = String.fromCharCode(x+64);
         if (x == 0) {
             th.style.visibility = "hidden";
         }
@@ -108,7 +118,6 @@ function createTable() {
         }
         var th = document.createElement("th");
         th.scope = "row";
-        th.textContent = (x-1);
         tr.appendChild(th);
         if (x == 0) {
             th.style.visibility = "hidden";
@@ -126,7 +135,6 @@ function createTable() {
         
         var th = document.createElement("th");
         th.scope = "row";
-        th.textContent = x;
         tr.appendChild(th);
         if (x == 0) {
             th.style.visibility = "hidden";
@@ -143,7 +151,6 @@ function createTable() {
     for (x = 0; x < plateSizeCol + 1; x++) {
         var th = document.createElement("th");
         th.scope = "col";
-        th.textContent = String.fromCharCode(x + 64);
         if (x == 0) {
             th.style.visibility = "hidden";
         }
