@@ -795,7 +795,7 @@ const links = [
         href: "https://openjdk.org/",
         svg: "/assets/svg/languages/java.svg",
         tag: "URL Outils OS Développement",
-        text: "Java openjdk.org",
+        text: "openjdk.org (Java)",
     },
     {
         href: "https://learn.microsoft.com/fr-fr/java/",
@@ -808,6 +808,18 @@ const links = [
         svg: "/assets/svg/languages/java.svg",
         tag: "URL Outils OS Développement",
         text: "learn.microsoft.com /java /openjdk",
+    },
+    {
+        href: "https://learn.microsoft.com/fr-fr/java/openjdk/download",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS Développement",
+        text: "learn.microsoft.com /java /openjdk /download",
+    },
+    {
+        href: "https://aka.ms/download-jdk/microsoft-jdk-21.0.6-windows-x64.msi",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS Développement",
+        text: "microsoft-jdk-21.0.6-windows-x64.msi (OpenJDK Java)",
     },
     {
         href: "https://portswigger.net/burp",
