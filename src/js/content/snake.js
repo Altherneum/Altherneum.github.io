@@ -85,7 +85,7 @@ function moveCell(x, y){
         else if(move == "4"){
             nextStatePlate[x][y-1] = plate[x][y];
         }
-        plate[x][y] = 0;
+        movementList[x][y] = 0;
         //setMineText(x, y, getTD(x,y));
     }
 }
