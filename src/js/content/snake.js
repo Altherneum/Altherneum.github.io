@@ -64,25 +64,25 @@ function gameLoop(){
     nextStatePlate = plate;
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
-            moveCell(x, y); //Need to start from head to tail
+            moveCell(x, y);
         }
     }
 }
 
 function moveCell(x, y){
     var move = movementList[x][y];
-    if(move == 0){
+    if(move != 0){
         console.log(x + " : " + y);
-        if(move == "left"){
+        if(move == "1"){
             nextStatePlate[x-1][y] = plate[x][y];
         }
-        else if(move == "up"){
+        else if(move == "2"){
             nextStatePlate[x][y+1] = plate[x][y];
         }
-        else if(move == "right"){
+        else if(move == "3"){
             nextStatePlate[x+1][y] = plate[x][y];
         }
-        else if(move == "down"){
+        else if(move == "4"){
             nextStatePlate[x][y-1] = plate[x][y];
         }
         plate[x][y] = 0;
