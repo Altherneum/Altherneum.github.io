@@ -1,5 +1,6 @@
 var direction = "down";
 var plate = [];
+var nextStatePlate = [];
 var movementList = [];
 var plateSizeRow = 5;
 var plateSizeCol = 5;
@@ -9,11 +10,10 @@ var gametimer;
 start();
 function start(){
     console.log("start")
+
     createPlate(plate);
-
     createPlate(movementList);
-    console.log(movementList);
-
+    createPlate(nextStatePlate);
 
     plate[0][0] = 1;
     plate[1][0] = 1;
@@ -61,9 +61,9 @@ document.onkeydown = function handleKeyDown(e){
 function gameLoop(){
     console.log("tick");
     console.log(movementList);
+    nextStatePlate = plate;
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
-            console.log(x + " : " + y);
             moveCell(x, y); //Need to start from head to tail
         }
     }
@@ -71,21 +71,22 @@ function gameLoop(){
 
 function moveCell(x, y){
     var move = movementList[x][y];
-    if(move != "0"){
+    if(move == 0){
+        console.log(x + " : " + y);
         if(move == "left"){
-            plate[x-1][y] = plate[x][y];
+            nextStatePlate[x-1][y] = plate[x][y];
         }
         else if(move == "up"){
-            plate[x][y+1] = plate[x][y];
+            nextStatePlate[x][y+1] = plate[x][y];
         }
         else if(move == "right"){
-            plate[x+1][y] = plate[x][y];
+            nextStatePlate[x+1][y] = plate[x][y];
         }
         else if(move == "down"){
-            plate[x][y-1] = plate[x][y];
+            nextStatePlate[x][y-1] = plate[x][y];
         }
         plate[x][y] = 0;
-        setMineText(x, y, getTD(x,y));
+        //setMineText(x, y, getTD(x,y));
     }
 }
 
@@ -183,8 +184,8 @@ function setMineText(x, y, td) {
 }
 
 function getTD(x, y) {
-    var plate = document.getElementById("plate");
-    var table = plate.querySelector("table");
+    //dont exist anymore //var plate = document.getElementById("plate");
+    var table = document.querySelector("table");
     var tbodys = table.querySelector("tbody");
     var trs = tbodys.querySelectorAll("tr");
     var tds = trs[x].querySelectorAll("td");
