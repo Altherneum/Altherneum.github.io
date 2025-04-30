@@ -582,6 +582,12 @@ const links = [
         svg: "/assets/svg/trademark/git.svg",
     },
     {
+        href: "https://github.com/git-for-windows/git/releases/latest",
+        tag: "URL Github",
+        text: "Git latest releases",
+        svg: "/assets/svg/trademark/git.svg",
+    },
+    {
         href: "https://developer.mozilla.org/",
         tag: "URL",
         text: "MSDN",
@@ -990,6 +996,12 @@ const links = [
         text: "Google Drive",
     },
     {
+        href: "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe",
+        svg: "/assets/svg/trademark/google-drive.svg",
+        tag: "URL OS Outils Web Windows",
+        text: "Google Drive Setup",
+    },
+    {
         href: "https://web.archive.org/",
         svg: "/assets/svg/download.svg",
         tag: "URL OS Outils Web",
@@ -1006,6 +1018,72 @@ const links = [
         svg: "/assets/svg/link.svg",
         tag: "URL Outils Web OpSec",
         text: "Shodan .io",
+    },
+    {
+        href: "https://www.microsoft.com/fr-fr/software-download/windows11",
+        svg: "/assets/svg/download.svg",
+        tag: "URL OS Outils Web Windows",
+        text: "Télécharger Windows 11 (ISO/Setup)"
+    },
+    {
+        href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
+        svg: "/assets/svg/console.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "PuTTY",
+    },
+    {
+        href: "https://www.chiark.greenend.org.uk/~sgtatham/putty/latest",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "PuTTY latest",
+    },
+    {
+        href: "https://filezilla-project.org/",
+        svg: "/assets/svg/ftp.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "FileZila",
+    },
+    {
+        href: "https://filezilla-project.org/download.php?platform=win64",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS OpSec CMD Web Développement Windows Linux",
+        text: "FileZila latest",
+    },
+    {
+        href: "https://github.com/ShareX/ShareX/releases/latest",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils OS Web Windows",
+        text: "ShareX (ScreenShot)",
+    },
+    {
+        href: "https://www.amd.com/fr/support/download/drivers.html",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils Jeux OS Web Windows Linux",
+        text: "AMD Driver (GPU)",
+    },
+    {
+        href: "https://github.com/Altherneum/.github/blob/main/note/OS/Windows/GPU_config.xml",
+        svg: "/assets/svg/download.svg",
+        tag: "URL Outils Jeux OS Web Windows Linux Admin",
+        text: "AMD Config (GPU)",
+    },
+    {
+        href: "https://discord.com/api/downloads/distributions/app/installers/latest?channel=stable&platform=win&arch=x64",
+        svg: "/assets/svg/download.svg",
+        tag: ".gg Discord Outils URL Windows",
+        text: "Discord Setup",
+    },
+    {
+        href: "https://vencord.dev/",
+        svg: "/assets/svg/link.svg",
+        tag: ".gg Discord Outils URL Développement",
+        text: "Vencord",
+    },
+    {
+        href: "https://github.com/Vencord/Installer/releases/latest/download/VencordInstaller.exe",
+        svg: "/assets/svg/download.svg",
+        tag: ".gg Discord Outils URL Développement Windows",
+        text: "Vencord Installer latest release",
     },
 ];
 

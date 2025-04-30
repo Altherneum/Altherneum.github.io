@@ -1693,13 +1693,6 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "RDNRtnUVaRwXM",
-        categorie : "chill histoire classic rock",
-        top: true,
-        playlist: true,
-        text: "TEST WARNING",
-    },
-    {
         videoID: "NeQM1c-XCDc",
         categorie: "rock histoire",
     },
@@ -1992,6 +1985,68 @@ var videolinks = [
     {
         videoID: "n4uhmetIV2o",
         categorie: "trool slavic electro hardbass",
+    },
+    {
+        videoID: "R9PNKMwVW5M",
+        categorie: "chill histoire chilljp",
+        top: true,
+    },
+    {
+        videoID: "wCQfkEkePx8",
+        categorie: "histoire chill",
+        top: true,
+    },
+    {
+        videoID: "91GTuZWCQmY",
+        categorie: "histoire chill rock slavic",
+        top: true,
+    },
+    {
+        videoID: "K1NP4UTL8d8",
+        categorie: "histoire chill classic",
+        top: true,
+    },
+    {
+        videoID: "eO7jCbcFzAo",
+        categorie: "histoire",
+    },
+    {
+        videoID: "rdSXXwkuaT0",
+        categorie: "trool histoire",
+    },
+    {
+        videoID: "Jrg9KxGNeJY",
+        categorie: "rock",
+        top: true,
+    },
+    {
+        videoID: "n6B5gQXlB-0",
+        categorie: "chilljp",
+        top: true,
+    },
+    {
+        videoID: "4vYOwhll1fs",
+        categorie: "histoire rap",
+        top: true,
+    },
+    {
+        videoID: "L9dnK_WNDcg",
+        categorie: "chilljp moody",
+    },
+    {
+        videoID: "RkZkekS8NQU",
+        categorie: "histoire classic chill",
+        top: true,
+    },
+    {
+        videoID: "etSsiGyLSmw",
+        categorie: "phonk trool classic",
+        top: true,
+    },
+    {
+        videoID: "OBbHZoEylNk",
+        categorie: "trool histoire chill",
+        top: true,
     },
 ];
 

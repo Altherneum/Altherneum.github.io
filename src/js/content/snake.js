@@ -1,27 +1,33 @@
 var direction = "down";
-let plate = [];
-let movementList = [];
+var plate = [];
+var nextStatePlate = [];
+var movementList = [];
 var plateSizeRow = 5;
 var plateSizeCol = 5;
 var plateSize = plateSizeCol * plateSizeRow;
+var gametimer;
 
 start();
 function start(){
     console.log("start")
-    createPlate();
+
+    createPlate(plate);
+    createPlate(movementList);
+    createPlate(nextStatePlate);
 
     plate[0][0] = 1;
     plate[1][0] = 1;
     plate[2][0] = 2;
 
     createTable();
+    runGame();
 }
 
-function createPlate() {
+function createPlate(variable) {
     for (let x = 0; x < plateSizeRow; x++) {
-        plate[x] = [];
+        variable[x] = [];
         for (let y = 0; y < plateSizeCol; y++) {
-            plate[x][y] = 0;
+            variable[x][y] = 0;
         }
     }
 }
@@ -53,32 +59,43 @@ document.onkeydown = function handleKeyDown(e){
 }
 
 function gameLoop(){
+    console.log("tick");
+    console.log(movementList);
+    nextStatePlate = plate;
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
-            var cell = plate[x][y];
-            if(movementList[x][y] != "NA"){
-                var move = movementList[x][y];
-                if(move == "left"){
-
-                }
-                else if(move == "up"){
-                    plate[x-1][y] = cell;
-                }
-                else if(move == "right"){
-
-                }
-                else if(move == "down"){
-                    plate[x+1][y] = cell;
-                }
-                plate[x][y] = 0;
-            }
+            moveCell(x, y);
         }
     }
 }
 
+function moveCell(x, y){
+    var move = movementList[x][y];
+    if(move != 0){
+        console.log(x + " : " + y);
+        if(move == "1"){
+            nextStatePlate[x-1][y] = plate[x][y];
+        }
+        else if(move == "2"){
+            nextStatePlate[x][y+1] = plate[x][y];
+        }
+        else if(move == "3"){
+            nextStatePlate[x+1][y] = plate[x][y];
+        }
+        else if(move == "4"){
+            nextStatePlate[x][y-1] = plate[x][y];
+        }
+        movementList[x][y] = 0;
+        //setMineText(x, y, getTD(x,y));
+    }
+}
+
+function runGame(){
+    gametimer = setInterval(gameLoop(), 500);
+}
+
 function createTable() {
     var table = document.createElement("table");
-    table.addEventListener("contextmenu", e => { e.preventDefault(); });
 
     var holder = document.createElement("div");
     
@@ -91,7 +108,6 @@ function createTable() {
     for (x = 0; x < plateSizeCol + 1; x++){
         var th = document.createElement("th");
         th.scope = "col";
-        th.textContent = String.fromCharCode(x+64);
         if (x == 0) {
             th.style.visibility = "hidden";
         }
@@ -108,7 +124,6 @@ function createTable() {
         }
         var th = document.createElement("th");
         th.scope = "row";
-        th.textContent = (x-1);
         tr.appendChild(th);
         if (x == 0) {
             th.style.visibility = "hidden";
@@ -126,7 +141,6 @@ function createTable() {
         
         var th = document.createElement("th");
         th.scope = "row";
-        th.textContent = x;
         tr.appendChild(th);
         if (x == 0) {
             th.style.visibility = "hidden";
@@ -143,7 +157,6 @@ function createTable() {
     for (x = 0; x < plateSizeCol + 1; x++) {
         var th = document.createElement("th");
         th.scope = "col";
-        th.textContent = String.fromCharCode(x + 64);
         if (x == 0) {
             th.style.visibility = "hidden";
         }
@@ -168,4 +181,14 @@ function setMineText(x, y, td) {
         td.textContent = "🐍"; //Mine no cheat
         td.style.background = "var(--main-color)";
     }
+}
+
+function getTD(x, y) {
+    //dont exist anymore //var plate = document.getElementById("plate");
+    var table = document.querySelector("table");
+    var tbodys = table.querySelector("tbody");
+    var trs = tbodys.querySelectorAll("tr");
+    var tds = trs[x].querySelectorAll("td");
+    var td = tds[y];
+    return td;
 }
