@@ -789,7 +789,7 @@ const links = [
         href: "https://openjdk.org/",
         svg: "/assets/svg/languages/java.svg",
         tag: "URL Outils OS Développement",
-        text: "openjdk.org",
+        text: "Java openjdk.org",
     },
     {
         href: "https://learn.microsoft.com/fr-fr/java/",
