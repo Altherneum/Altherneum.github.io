@@ -26,6 +26,33 @@
     margin: 12px;
 }
 
+.software>.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-direction: column;
+    align-content: stretch;
+
+    padding-bottom: 150px;
+}
+
+.software>.menu>button{
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.software>.menu>button:active {
+    background-color: var(--text-color);
+}
+
+.software>.menu>button:active>p{
+    color: var(--background-color);
+}
+
+.software>.menu>button:active>img{
+    filter: invert(0);
+}
+
 .software>div>div:first-of-type,
 .software>.Linux>div:nth-of-type(2)
 {

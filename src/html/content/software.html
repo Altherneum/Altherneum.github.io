@@ -1,5 +1,27 @@
 <div class="software">
-    <div class="Windows">
+
+    <div class="menu">
+        <button id="Windows-Btn" onclick="
+                    document.getElementsByClassName('Windows')[0].style.display = 'flex';
+                    document.getElementsByClassName('Linux')[0].style.display = 'none';
+                    this.style.display = 'none';
+                    document.getElementById('Linux-Btn').style.display = 'block';
+        ">
+            <img src="/assets/svg/trademark/windows.svg" class="svg" alt="">
+            <p>Windows</p>
+        </button>
+        <button id="Linux-Btn" onclick="
+            document.getElementsByClassName('Windows')[0].style.display = 'none';
+            document.getElementsByClassName('Linux')[0].style.display = 'flex';
+            this.style.display = 'none';
+            document.getElementById('Windows-Btn').style.display = 'block';
+        ">
+            <img src="/assets/svg/linux.svg" class="svg" alt="">
+            <p>Linux</p>
+        </button>
+    </div>
+
+    <div class="Windows" style="display: none;">
         <div>
             <div>
                 <img src="/assets/svg/trademark/windows.svg" class="svg" alt="">
@@ -261,10 +283,8 @@
             </div>
         </div>
     </div>
-
-    <hr>
     
-    <div class="Linux">
+    <div class="Linux" style="display: none;">
         <div>
             <div>
                 <img src="/assets/svg/linux.svg" class="svg" alt="">
