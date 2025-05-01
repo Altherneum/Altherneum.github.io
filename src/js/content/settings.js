@@ -33,6 +33,10 @@ function SwitchAllSearchBar() {
     Switcher("AllSearchBar");
 }
 
+function SwitchSearchBarList() {
+    Switcher("SearchBarList");
+}
+
 function SwitchYouTubeLoop() {
     Switcher("YouTubeLoop");
 }
@@ -98,6 +102,7 @@ function loadSettingsSwitch() {
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", false);
     setSwitch("OldSearchBar", false);
+    setSwitch("SearchBarList", true);
     setSwitch("AllSearchBar", false);
     setSwitch("LogLogging", false);
     setSwitch("WarningLogging", false);
