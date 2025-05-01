@@ -57,19 +57,6 @@ async function CheckPage() {
         await include_css("/src/css/contact.css");
         await include_html("/src/html/content/contact.html", "contentArticle", true);
         await include_script("/src/js/content/contact.js");
-        
-        await include_script("/src/js/include/hr.js");
-        await addHR("contact", true, "7.5vh", "7.5vh");
-        
-        await include_html("/src/html/content/techno.html", ".contact", false);
-        await addHR("contentArticle", false, "7.5vh", "7.5vh");
-
-        await include_css("/src/css/software.css");
-        await include_html("/src/html/content/software.html", "contentArticle", true);
-        await addHR("contentArticle", false, "7.5vh", "7.5vh");
-
-        await include_css("/src/css/hardware.css");
-        await include_html("/src/html/content/hardware.html", "contentArticle", true);
     }
 
     else if (pathNameMatchPage("/admin/software", true)) {
