@@ -172,7 +172,7 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList) {
 
     let fetchURL = getFetchURL(playlist, premadePlayList, videoID);
 
-    await addIFrame(playlist, videoID, top, categorie, fetchURL, text, short, premadePlayList, false, "videoholder");
+    await parseResponse(playlist, videoID, top, categorie, fetchURL, text, short, premadePlayList, false, "videoholder");
 }
 
 function getFetchURL(playlist, premadePlayList, videoID) {
@@ -204,13 +204,28 @@ function addButtons(Types) {
     }
 }
 
-async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element) {
+async function addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card) {
+    var length = 75;
+    var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
+
+
+    var video_div = addCardData(div_card, title, text, thumbnail, false);
+    addVideoCard(video_div, videoID, playlist, short, premadePlayList);
+
+    videoholder.appendChild(div_card);
+
+    constructPlayList(videoID, playlist, top, categorie);
+
+    showOrHideSong(shown, div_card);
+}
+
+async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element) {
     try {
         var response = await fetch(fetchUrl);
         var status = response.status;
 
         var videoholder = document.getElementById(element);
-        var div_card;
+        let div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
 
         if (status === 200) {
             var jsonResponse = await response.json();
@@ -221,28 +236,19 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
             var thumbnail = JSONdata.thumbnail_url;
 
-            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
-
-            var video_div = addCardData(div_card, title, text, thumbnail, false);
-            addVideoCard(video_div, videoID, playlist, short, premadePlayList);
-
-            videoholder.appendChild(div_card);
-
-            constructPlayList(videoID, playlist, top, categorie);
+            addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card);
+            return;
         }
         else if (status === 404) {
-            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
-            var video_div = addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
+            addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else if (status === 403) {
-            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
-            var video_div = addCardData(div_card, "403", "Vidéo privée !", "/assets/svg/link-broken.svg", true);
+            addCardData(div_card, "403", "Vidéo privée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else if (status === 401) {
-            div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
-            var video_div = addCardData(div_card, "401", "Vidéo sans embed !", "/assets/svg/link-broken.svg", true);
+            addCardData(div_card, "401", "Vidéo sans embed !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
         }
         else {
@@ -471,7 +477,7 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 
                 let videoID = items[i].link.replace("https://www.youtube.com/watch?v=", "");
 
-                addIFrame(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, false, latest, "videoholder")
+                parseResponse(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, false, latest, "videoholder")
             }
         });
 }
@@ -566,7 +572,9 @@ async function CheckIfPlayListAtLimit(tag) {
     let videoAmount = playListList[playListList.findIndex(obj => obj.tag == tag)].amount;
     if (videoAmount >= limit && !alreadyMadeCategorie.includes(tag)) {
         alreadyMadeCategorie += (" " + tag);
-        await addIFrame(true, videoIDList, true, tag, getFetchURL(true, true, videoIDList), "Auto Mix", false, true, false, "videoholder");
+        //await parseResponse(true, videoIDList, true, tag, getFetchURL(true, true, videoIDList), "Auto Mix", false, true, false, "videoholder");
+        let div_card = addCard(true, true, videoIDList, tag, false, true);
+        addIFrame(true, videoIDList, true, tag, "Auto Mix", false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
         //await parseVideoParam(null, null, videoIDList, tag);
     }
 }
