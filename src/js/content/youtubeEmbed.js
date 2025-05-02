@@ -125,6 +125,7 @@ async function GetVideos(videoList, VideoListType) {
     }
     else if (!LoadSingleVideo) {
         getVideoChannel();
+        setGlobalPlayList();
     }
 
     console.log(total);
@@ -540,15 +541,16 @@ async function setVideoScreenLocking() {
 }
 
 var categorieList;
-var playListList;
+var smallAutoMix;
+var fullAutoMix;
 function createPlayListList() {
     categorieList = getVideoListType();
-    playListList = [];
+    smallAutoMix = [];
+    fullAutoMix = [];
     for (categorieType in categorieList) {
-        playListList.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        smallAutoMix.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        fullAutoMix.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
     }
-
-    console.log(playListList);
 }
 
 async function constructPlayList(videoID, playlist, top, categorie) {
@@ -556,25 +558,40 @@ async function constructPlayList(videoID, playlist, top, categorie) {
         var VideoCategorieList = categorie.split(" ");
         for (categorieType in VideoCategorieList) {
             var tag = VideoCategorieList[categorieType];
-            var objectIndex = playListList.findIndex(obj => obj.tag == tag);
-            playListList[objectIndex].videoIDList += videoID + ",";
-            playListList[objectIndex].amount += 1;
+
+            var objectIndex = smallAutoMix.findIndex(obj => obj.tag == tag);
+            smallAutoMix[objectIndex].videoIDList += videoID + ",";
+            smallAutoMix[objectIndex].amount += 1;
+
+            var objectIndex = fullAutoMix.findIndex(obj => obj.tag == tag);
+            fullAutoMix[objectIndex].videoIDList += videoID + ",";
+            fullAutoMix[objectIndex].amount += 1;
 
             await CheckIfPlayListAtLimit(tag);
         }
     }
 }
 
-var limit = 20;
-var alreadyMadeCategorie = "";
 async function CheckIfPlayListAtLimit(tag) {
-    let videoIDList = playListList[playListList.findIndex(obj => obj.tag == tag)].videoIDList;
-    let videoAmount = playListList[playListList.findIndex(obj => obj.tag == tag)].amount;
-    if (videoAmount >= limit && !alreadyMadeCategorie.includes(tag)) {
-        alreadyMadeCategorie += (" " + tag);
-        //await parseResponse(true, videoIDList, true, tag, getFetchURL(true, true, videoIDList), "Auto Mix", false, true, false, "videoholder");
+    let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].videoIDList;
+    let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].amount;
+    if (videoAmount >= 20) {
+        smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].videoIDList = "";
+        smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].amount = 0;
         let div_card = addCard(true, true, videoIDList, tag, false, true);
-        addIFrame(true, videoIDList, true, tag, "Auto Mix", false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
-        //await parseVideoParam(null, null, videoIDList, tag);
+        addIFrame(true, videoIDList, true, tag, "Auto Mix : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
+    }
+}
+
+async function setGlobalPlayList() {
+    let categorieList = getVideoListType();
+    for (categorieType in categorieList) {
+        var tag = categorieList[categorieType];
+
+        let videoIDList = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmount = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag)].amount;
+
+        let div_card = addCard(true, true, videoIDList, tag, false, true);
+        addIFrame(true, videoIDList, true, tag, "Auto Mix : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
     }
 }
