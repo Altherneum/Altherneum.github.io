@@ -1732,6 +1732,7 @@ var videolinks = [
     {
         videoID: "CD_tD26E7k0",
         categorie: "rap moody",
+        top: true,
     },
     {
         videoID: "T2fjQrsKbAM",
@@ -1777,6 +1778,7 @@ var videolinks = [
     {
         videoID: "BO7gq-jdKnA",
         categorie: "moody chill histoire",
+        top: true,
     },
     {
         videoID: "3rkJ3L5Ce80",
@@ -1790,6 +1792,7 @@ var videolinks = [
     {
         videoID: "mWRU9lyXDms",
         categorie: "moody chill",
+        top: true,
     },
     {
         videoID: "CIu-qF1JbZ0",
@@ -1830,6 +1833,7 @@ var videolinks = [
         categorie: "chill moody histoire",
         top: true,
         text: "<a target='_blank' href='#VNyGaTO0dU0'>Alternative upload</a>",
+        top: true,
     },
     {
         videoID: "Ijk4j-r7qPA",
@@ -1843,6 +1847,7 @@ var videolinks = [
     {
         videoID: "Lwd7WQ8L5dQ",
         categorie: "chill moody",
+        top: true,
     },
     {
         videoID: "VNyGaTO0dU0",
