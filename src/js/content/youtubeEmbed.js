@@ -8,37 +8,37 @@ async function loadYouTubeEmbed() {
 }
 
 var shown = ["all"];
-function show(name) {    
+function show(name) {
     setMenuActiveColor(name);
 
     var rootElement = document.getElementById("videoholder");
     var rootChilds = rootElement.children;
-    for(children in rootChilds){
+    for (children in rootChilds) {
         var child = rootChilds[children];
         showOrHideSong(shown, child);
     }
 }
 
-function setMenuActiveColor(MenuID){
+function setMenuActiveColor(MenuID) {
     var menu = document.getElementById(MenuID);
     menu.classList.toggle("active");
-    
-    if(MenuID === "all"){
+
+    if (MenuID === "all") {
         var allMenu = document.getElementById("menu-all").querySelectorAll("button");
-        for(element in allMenu){
+        for (element in allMenu) {
             allMenu[element].classList = "";
         }
 
-        var defaultMenu = document.getElementById("menu-default").querySelectorAll("button");        
-        for(element in defaultMenu){
+        var defaultMenu = document.getElementById("menu-default").querySelectorAll("button");
+        for (element in defaultMenu) {
             defaultMenu[element].classList = "";
         }
         shown = ["all"];
-    }else{
-        if(menu.classList.contains("active")){
+    } else {
+        if (menu.classList.contains("active")) {
             shown.push(MenuID);
         }
-        else{
+        else {
             var NewShown = shown.filter(e => e !== MenuID);
             shown = NewShown;
         }
@@ -51,10 +51,10 @@ function hideMenu(menuName) {
 }
 
 function showOrHideSong(name, element) {
-    if (element != undefined && element.classList != undefined){
+    if (element != undefined && element.classList != undefined) {
         var found = true;
-        for(tags in name){
-            if(!element.classList.contains(name[tags])){
+        for (tags in name) {
+            if (!element.classList.contains(name[tags])) {
                 found = false;
                 element.style.display = "none";
             }
@@ -63,7 +63,7 @@ function showOrHideSong(name, element) {
                 element.style.display = "flex";
             }
         }
-        if(found) {
+        if (found) {
             if (element.style.display === "none" || element.style.display === undefined || element.style.display === "") {
                 element.style.display = "flex";
             }
@@ -84,13 +84,13 @@ function shuffle(array) {
     return array;
 }
 
-async function GetVideos(videoList, VideoListType) {    
+async function GetVideos(videoList, VideoListType) {
     await include_script("/src/js/content/auto-scroll.js");
     addButtons(VideoListType);
 
     var hash = decodeURIComponent(window.location.hash).replace("#", "");
     var LoadSingleVideo = false;
-    if(hash !== ""){
+    if (hash !== "") {
         LoadSingleVideo = true;
         hideMenu("menu-all");
         hideMenu("menu-default");
@@ -123,7 +123,7 @@ async function GetVideos(videoList, VideoListType) {
         videoholder.appendChild(div_card);
         div_card.style.display = "flex";
     }
-    else if(!LoadSingleVideo){
+    else if (!LoadSingleVideo) {
         getVideoChannel();
     }
 
@@ -135,12 +135,11 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList) {
     var top;
     var premadePlayList;
     var categorie;
-    var fetchUrl;
     var text;
     var playlist;
 
 
-    if (premadePlayList == false){
+    if (premadePlayList == false) {
         short = videoList[video].short;
         if (short === undefined) {
             short = false;
@@ -170,30 +169,26 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList) {
             playlist = false;
         }
     }
-    else {
-        short = false;
-        top = true;
-        categorie = premadePlayList;
-        premadePlayList = true;
-        text = "Auto Mix";
-        playlist = true;
-    }
 
-    if (playlist == true && premadePlayList == false) {
-        fetchUrl = "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json"
-    } else if (playlist == true && premadePlayList == true) {
-        fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
-    }
-    else {
-        fetchUrl = "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json"
-    }
+    let fetchURL = getFetchURL(playlist, premadePlayList, videoID);
 
-    await addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, false, "videoholder");
+    await addIFrame(playlist, videoID, top, categorie, fetchURL, text, short, premadePlayList, false, "videoholder");
 }
 
-function addButtons(Types){
+function getFetchURL(playlist, premadePlayList, videoID) {
+    if (playlist == true && premadePlayList == false) {
+        return "https://youtube.com/oembed?url=https://www.youtube.com/playlist?list=" + videoID + "&format=json";
+    } else if (playlist == true && premadePlayList == true) {
+        return "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json";
+    }
+    else {
+        return "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json";
+    }
+}
+
+function addButtons(Types) {
     var menu = document.getElementById("menu-all");
-    for(videoType in Types){
+    for (videoType in Types) {
         var type = Types[videoType];
         var emoji = getEmoji(type);
 
@@ -210,11 +205,11 @@ function addButtons(Types){
 }
 
 async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element) {
-    try {        
+    try {
         var response = await fetch(fetchUrl);
         var status = response.status;
-        
-        var videoholder = document.getElementById(element); 
+
+        var videoholder = document.getElementById(element);
         var div_card;
 
         if (status === 200) {
@@ -235,7 +230,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
 
             constructPlayList(videoID, playlist, top, categorie);
         }
-        else if (status === 404) {            
+        else if (status === 404) {
             div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList);
             var video_div = addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
             videoholder.appendChild(div_card);
@@ -254,7 +249,7 @@ async function addIFrame(playlist, videoID, top, categorie, fetchUrl, text, shor
             console.error(response);
             var jsonResponse = null;
         }
-        
+
         showOrHideSong(shown, div_card);
     } catch (error) {
         console.error(error + "\n" + videoID);
@@ -330,9 +325,9 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList) {
     var categorieHolder = document.createElement("p");
     categorieHolder.className = "categorieList";
 
-    if (categories !== "Markdown"){
-    for (categorieIndex in categorieList) {
-        categorieHolder.textContent += " " + getEmoji(categorieList[categorieIndex]); 
+    if (categories !== "Markdown") {
+        for (categorieIndex in categorieList) {
+            categorieHolder.textContent += " " + getEmoji(categorieList[categorieIndex]);
         }
     }
 
@@ -388,50 +383,7 @@ async function createIframe(event) {
     var premadePlayList = event.dataset.youtubePremadePlayList;
     var youtubePlaceholder = event.parentNode;
 
-    var loop;
-    var autoplay = "&autoplay=1";
-    var playlistarg;
-    var rel = "&rel=0";
-    var preURL = "https://www.youtube.com/embed/";
-
-    var url;
-
-    if (premadePlayList === "true") {
-        playlistarg = "?playlist=" + videoID;
-        loop = "";
-        var firstVideoID = videoID.split(",")[0];
-        url = preURL + firstVideoID + playlistarg + autoplay + loop + rel;
-    }
-    else {
-        if (short === "false") {
-            if (localStorage.getItem('YouTubeLoop') === "true" && playlist !== "true") {
-                loop = "&loop=1";
-                playlistarg = videoID + "?playlist=" + videoID;
-            }
-            else if (localStorage.getItem('YouTubeLoop') === "true" && playlist === "true") {
-                loop = "&loop=1";
-                playlistarg = "?list=" + videoID + "&listType=playlist";
-            }
-            else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist !== "true") {
-                loop = "&loop=0";
-                playlistarg = videoID + "?si=Altherneum.fr";
-            }
-            else if (localStorage.getItem('YouTubeLoop') !== "true" && playlist === "true") {
-                loop = "&loop=0";
-                playlistarg = "?list=" + videoID + "&listType=playlist";
-            }
-        }
-        else {
-            console.log("short");
-            loop = "";
-            autoplay = "?autoplay=1";
-            playlistarg = videoID;
-        }
-
-        url = preURL + playlistarg + autoplay + loop + rel;
-    }
-
-
+    var url = getURL(premadePlayList, short, playlist, videoID);
 
     console.log("Loading embed : " + url);
 
@@ -461,6 +413,50 @@ async function createIframe(event) {
     }
 }
 
+function getURL(premadePlayList, short, playlist, videoID) {
+    let loop;
+    let autoplay = "&autoplay=1";
+    let playlistarg;
+    let rel = "&rel=0";
+    let preURL = "https://www.youtube.com/embed/";
+
+    if (premadePlayList === "true") {
+        playlistarg = "?playlist=" + videoID;
+        loop = "";
+        let firstVideoID = videoID.split(",")[0];
+        return preURL + firstVideoID + playlistarg + autoplay + loop + rel;
+    }
+    else {
+        if (short === "false") {
+            let YouTubeLoop = localStorage.getItem('YouTubeLoop');
+            if (YouTubeLoop === "true" && playlist !== "true") {
+                loop = "&loop=1";
+                playlistarg = videoID + "?playlist=" + videoID;
+            }
+            else if (YouTubeLoop === "true" && playlist === "true") {
+                loop = "&loop=1";
+                playlistarg = "?list=" + videoID + "&listType=playlist";
+            }
+            else if (YouTubeLoop !== "true" && playlist !== "true") {
+                loop = "&loop=0";
+                playlistarg = videoID + "?si=Altherneum.fr";
+            }
+            else if (YouTubeLoop !== "true" && playlist === "true") {
+                loop = "&loop=0";
+                playlistarg = "?list=" + videoID + "&listType=playlist";
+            }
+        }
+        else {
+            console.log("short");
+            loop = "";
+            autoplay = "?autoplay=1";
+            playlistarg = videoID;
+        }
+
+        return preURL + playlistarg + autoplay + loop + rel;
+    }
+}
+
 async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, text, top, latest) {
     const channelURL = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ChannelID;
     var data = await fetch("https://api.rss2json.com/v1/api.json?rss_url=" + channelURL)
@@ -485,18 +481,18 @@ async function setVideoScreenLocking() {
     try {
         if ("wakeLock" in navigator) {
             console.log("Screen Wake Lock API supported!");
-            
+
             var wakeLock = null;
 
             if (document.visibilityState === 'visible') {
                 wakeLock = await navigator.wakeLock.request("screen");
                 console.log("Wake Lock is active!");
-                
+
                 wakeLock.addEventListener('release', () => {
                     console.log('Screen Wake State used : ' + !wakeLock.released);
                 });
             }
-            else{
+            else {
                 console.log("Screen is not visible : Document visibilty state ; " + document.visibilityState);
             }
 
@@ -508,20 +504,20 @@ async function setVideoScreenLocking() {
                         console.log(wakeLock);
                     });
                 }
-                else{
+                else {
                     console.log("Releasing WakeLock ...");
                     console.log(wakeLock);
-                    
+
                     wakeLock.release();
-                    
-                    if(wakeLock === null){
+
+                    if (wakeLock === null) {
                         console.log("WakeLock is equal to \"null\", release OK !");
-                    }else{
+                    } else {
                         console.log("WakeLock not equal to \"null\" ...");
-                        if(wakeLock.released){
+                        if (wakeLock.released) {
                             console.log("WakeLock is released (sucess)");
                         }
-                        else{
+                        else {
                             console.log("WakeLock is not released (error)");
                         }
                         console.log(wakeLock);
@@ -543,21 +539,21 @@ function createPlayListList() {
     categorieList = getVideoListType();
     playListList = [];
     for (categorieType in categorieList) {
-        playListList.push({tag : categorieList[categorieType], videoIDList: "", amount: 0});
+        playListList.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
     }
 
     console.log(playListList);
 }
 
 async function constructPlayList(videoID, playlist, top, categorie) {
-    if(top === true && playlist == false){
+    if (top === true && playlist == false) {
         var VideoCategorieList = categorie.split(" ");
         for (categorieType in VideoCategorieList) {
             var tag = VideoCategorieList[categorieType];
             var objectIndex = playListList.findIndex(obj => obj.tag == tag);
             playListList[objectIndex].videoIDList += videoID + ",";
             playListList[objectIndex].amount += 1;
-            
+
             await CheckIfPlayListAtLimit(tag);
         }
     }
@@ -569,8 +565,8 @@ async function CheckIfPlayListAtLimit(tag) {
     let videoIDList = playListList[playListList.findIndex(obj => obj.tag == tag)].videoIDList;
     let videoAmount = playListList[playListList.findIndex(obj => obj.tag == tag)].amount;
     if (videoAmount >= limit && !alreadyMadeCategorie.includes(tag)) {
-        //await addIFrame(true, videoIDList, top, tag, fetchUrl, "Auto Mix", false, true, false, "videoholder");
         alreadyMadeCategorie += (" " + tag);
-        await parseVideoParam(null, null, videoIDList, tag);
+        await addIFrame(true, videoIDList, true, tag, getFetchURL(true, true, videoIDList), "Auto Mix", false, true, false, "videoholder");
+        //await parseVideoParam(null, null, videoIDList, tag);
     }
 }
