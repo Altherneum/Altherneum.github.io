@@ -23,7 +23,7 @@ async function getCommits(amount, repoName) {
         var name = getValue(z2, "name");
 
         var date = getValue(z2, "date");
-        const date1 = new Date(date);
+        const date1 = new Date(Date.parse(date));
         var date2 = date1.toLocaleString();
 
         var message = getValue(z, "message");
