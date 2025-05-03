@@ -104,13 +104,13 @@ async function GetVideos(videoList, VideoListType) {
 
         if (LoadSingleVideo) {
             if (videoID === hash) {
-                await parseVideoParam(videoList, video, videoID, false);
+                await parseVideoParam(videoList, video, videoID, false, "videoholder");
                 total = 1;
                 break;
             }
         }
         else {
-            await parseVideoParam(videoList, video, videoID, false);
+            await parseVideoParam(videoList, video, videoID, false, "videoholder");
             total += 1;
         }
 
@@ -131,7 +131,7 @@ async function GetVideos(videoList, VideoListType) {
     console.log(total);
 }
 
-async function parseVideoParam(videoList, video, videoID, premadePlayList) {
+async function parseVideoParam(videoList, video, videoID, premadePlayList, divName) {
     var short;
     var top;
     var premadePlayList;
@@ -173,7 +173,7 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList) {
 
     let fetchURL = getFetchURL(playlist, premadePlayList, videoID);
 
-    await parseResponse(playlist, videoID, top, categorie, fetchURL, text, short, premadePlayList, false, "videoholder");
+    await parseResponse(playlist, videoID, top, categorie, fetchURL, text, short, premadePlayList, false, divName);
 }
 
 function getFetchURL(playlist, premadePlayList, videoID) {
