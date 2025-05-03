@@ -27,7 +27,7 @@ async function getUpdate(repoName) {
     document.getElementById("author").textContent = "👤 Par : " + name;
 
     var date = getValue(z2, "date");
-    const date1 = new Date(date);
+    const date1 = new Date(Date.parse(date)); //Break date convert as it's a NEW date
     var date2 = date1.toLocaleString();
     document.getElementById("date").textContent = "⏰ " + date2;
 
