@@ -75,7 +75,7 @@ async function Metadata() {
 }
 
 async function randomInclude(excludeSettings) {
-    var max = 3;
+    var max = 7;
     var random = Math.round(Math.random() * (max - 1) + 1);
 
     if (random == 1) {
@@ -93,6 +93,24 @@ async function randomInclude(excludeSettings) {
         else {
             await include_multiple("settings", "contentArticle"); loadSettingsSwitch();
         }
+    }
+    else if (random == 4) {
+        await include_multiple("contact", "contentArticle");
+    }
+    else if (random == 5) {
+        await include_css("/src/css/github-update.css");
+        await include_html("/src/html/content/github-update.html", "contentArticle", true);
+        await include_script("/src/js/content/github-update.js");
+    }
+    else if (random == 6) {
+        await include_css("/src/css/github-commits.css");
+        await include_html("/src/html/content/github-commits.html", "contentArticle", true);
+        await include_script("/src/js/content/github-commits.js");
+    }
+    else if (random == 7) {
+        await include_css("/src/css/github-events.css");
+        await include_html("/src/html/content/github-events.html", "contentArticle", true);
+        await include_script("/src/js/content/github-events.js");
     }
 }
 
