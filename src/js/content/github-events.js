@@ -35,7 +35,7 @@ async function getEvents(amount, orgsName) {
             RepoName.textContent = name2;
 
             var TextDate = document.createElement("p");
-            const date1 = new Date(date);
+            const date1 = new Date(Date.parse(date));
             var date2 = date1.toLocaleString();
             TextDate.textContent = date2;
 
