@@ -972,7 +972,7 @@ const links = [
         text: "Download ArchLinux",
     },
     {
-        href: "http://github.com/Altherneum/.github/blob/main/note/OS/Linux/Arch/",
+        href: "https://github.com/Altherneum/.github/blob/main/note/OS/Linux/Arch/",
         svg: "/assets/svg/trademark/repo.svg",
         tag: "Repo Github Linux OS Outils URL",
         text: ".github Arch",

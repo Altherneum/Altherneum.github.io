@@ -62,13 +62,14 @@ function compareLinks(linkID, queryListed) {
     var linkText = links[linkID].text;
     var linkHref = links[linkID].href;
     var linkHrefTrim = links[linkID].href.replace(".html", "");
+    var linkHrefTrimBis = links[linkID].href.replace("https://", "");
     var linkTag = links[linkID].tag;
     var linkSVG = links[linkID].svg;
 
     let matchAll = true;
 
     for (singleQuery in queryListed) {
-        let match = compareStringToLink(queryListed[singleQuery], linkText, linkHrefTrim, linkTag);
+        let match = compareStringToLink(queryListed[singleQuery], linkText, linkHrefTrimBis, linkTag);
         if (!match) {
             matchAll = false;
         }
