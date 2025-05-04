@@ -71,8 +71,6 @@ function checkIfInputMatchLink(query) {
         }
 
         if (matchAll) {
-            //if devmode linkHref
-            //else trimed
             var linkToUse = "";
             if (devMode()) {
                 linkToUse = linkHref;
