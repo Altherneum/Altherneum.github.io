@@ -107,6 +107,6 @@ function loadSettingsSwitch() {
     setSwitch("LogLogging", false);
     setSwitch("WarningLogging", false);
     setSwitch("ErrorLogging", false);
-    setSwitch("VisitedLogs", false);
+    setSwitch("VisitedLogs", true);
     setSwitch("AllLogs", false);
 }
