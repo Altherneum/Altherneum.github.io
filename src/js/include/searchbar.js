@@ -15,10 +15,10 @@ function keyup(event, inputBoxParam) {
     getResult(input, true);
 }
 
-function getResult(query, addCursorTag) {
+async function getResult(query, addCursorTag) {
     if (query.length > 0) {
-       var result = checkIfInputMatchLink(query);
-
+        console.log("SearchBar : " + query);
+        var result = await checkIfInputMatchLink(query);
         /*
             if(result.length > 10) {
                 result = result.slice(0, 10);
@@ -36,57 +36,70 @@ function getResult(query, addCursorTag) {
         lastResult = result;
     }
     else {
+        console.log("SearchBar vide");
         clearAllSearchBar();
-
         showTips();
     }
 }
 
-function checkIfInputMatchLink(query) {
+async function checkIfInputMatchLink(query) {
     let result = [];
     var queryListed = query.split(" ");
     var counter = 0;
 
     for (link in links) {
-        var linkText = links[link].text;
-        var linkHref = links[link].href;
-        var linkHrefTrim = links[link].href.replace(".html", "");
-        var linkTag = links[link].tag;
-        var linkSVG = links[link].svg;
-
-        var lowerCaseQuery;
-
-        let matchAll = true;
-
-        for (singleQuery in queryListed) {
-
-            lowerCaseQuery = queryListed[singleQuery].toLowerCase();
-
-            if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery)) {
-            }
-            else {
-                matchAll = false;
-                break;
-            }
-        }
-
-        if (matchAll) {
-            var linkToUse = "";
-            if (devMode()) {
-                linkToUse = linkHref;
-            }
-            else {
-                linkToUse = linkHrefTrim
-            }
-
-            result[counter] = { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText };
+        let resultTemp = compareLinks(link, queryListed);
+        if (resultTemp !== null) {
+            result[counter] = resultTemp;
             counter++;
-        }
-        else {
         }
     }
 
     return result;
+}
+
+function compareLinks(linkID, queryListed) {
+    var linkText = links[linkID].text;
+    var linkHref = links[linkID].href;
+    var linkHrefTrim = links[linkID].href.replace(".html", "");
+    var linkTag = links[linkID].tag;
+    var linkSVG = links[linkID].svg;
+
+    let matchAll = true;
+
+    for (singleQuery in queryListed) {
+        let match = compareStringToLink(queryListed[singleQuery], linkText, linkHrefTrim, linkTag);
+        if (!match) {
+            matchAll = false;
+        }
+    }
+
+    if (matchAll) {
+        var linkToUse = getLinkForURL(linkHref, linkHrefTrim);
+        
+        return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText };
+    }
+    return null;
+}
+
+function compareStringToLink(input, linkText, linkHrefTrim, linkTag) {
+    let lowerCaseQuery = input.toLowerCase();
+
+    if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+function getLinkForURL(linkHref, linkHrefTrim) {
+    if (devMode()) {
+        return linkHref;
+    }
+    else {
+        return linkHrefTrim
+    }
 }
 
 function showTips() {
@@ -133,7 +146,6 @@ function showSearchbarResult(result) {
             }
             else { svg = result[i].svg; }
 
-            //console.log(href + ", " + svg + result[i].text);
             resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a></div>'
         }
         resultsBox.style.display = "flex"
