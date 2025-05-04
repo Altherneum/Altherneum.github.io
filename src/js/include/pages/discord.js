@@ -12,13 +12,21 @@ async function CheckPage() {
         await include_css("/src/css/discord.css");
         await include_script("/src/js/content/discord-login.js");
     }
-    
+
     else if (pathNameMatchPage("/discord/tempvoc", true)) {
         await includes();
         await include_html("/src/html/content/redirect.html", "contentArticle", true);
         await include_css("/src/css/redirect.css");
         await include_script("/src/js/content/redirect.js");
         redirect("discord.gg/Ak9kDNTJKV", 0);
+    }
+
+    else if (pathNameMatchPage("/discord/voc", true)) {
+        await includes();
+        await include_html("/src/html/content/redirect.html", "contentArticle", true);
+        await include_css("/src/css/redirect.css");
+        await include_script("/src/js/content/redirect.js");
+        redirect("discord.gg/yba6vQv7Q4", 0);
     }
 
     else if (pathNameMatchPage("/discord", true)) {
