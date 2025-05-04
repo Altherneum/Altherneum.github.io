@@ -92,8 +92,13 @@ function SendToLog(text, textOutput) {
             }
         }
 
-        if (devMode()) {
-            return;
+        try {
+            if (devMode()) {
+                return;
+            }
+        }
+        catch (error) {
+            console.error(error);
         }
     }
     
