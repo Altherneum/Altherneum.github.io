@@ -82,7 +82,7 @@ function SendToLog(text, textOutput) {
             }
         }
         else if (text === "Index.JS") {
-            if (localStorage.getItem('VisitedLogs') !== "true") {
+            if (localStorage.getItem('VisitedLogs') === "false") {
                 return;
             }
         }
@@ -95,7 +95,7 @@ function SendToLog(text, textOutput) {
         if (devMode()) {
             return;
         }
-    }    
+    }
     
     try {
         GetData(textOutput); 
