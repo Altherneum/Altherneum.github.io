@@ -1109,7 +1109,7 @@ const links = [
     },
 */
 
-var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement"];
+var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
