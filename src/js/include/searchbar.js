@@ -26,7 +26,6 @@ function getResult(query, addCursorTag) {
         */
 
         if (!compareArrays(result, lastResult)) {
-            console.log("result & last !=")
             showSearchbarResult(result);
             if (addCursorTag) {
                 addAllTags();
