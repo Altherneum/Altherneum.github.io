@@ -18,7 +18,7 @@ async function CheckPage() {
         await include_html("/src/html/content/redirect.html", "contentArticle", true);
         await include_css("/src/css/redirect.css");
         await include_script("/src/js/content/redirect.js");
-        redirect("discord.gg/EphmMg7vbn", 0);
+        redirect("discord.gg/Ak9kDNTJKV", 0);
     }
 
     else if (pathNameMatchPage("/discord", true)) {
