@@ -547,7 +547,7 @@ const links = [
     },
     {
         href: "vscode://",
-        tag: "URL",
+        tag: "URL Developpement Admin ://",
         text: "VSCode ://",
         svg: "/assets/svg/link.svg",
     },
@@ -565,7 +565,7 @@ const links = [
     },
     {
         href: "github-windows://",
-        tag: "URL Github",
+        tag: "URL Developpement Github ://",
         text: "Github Windows ://",
         svg: "/assets/svg/link.svg",
     },
@@ -613,8 +613,14 @@ const links = [
     },
     {
         href: "calculator://",
-        tag: "URL",
+        tag: "URL :// Outils",
         text: "Calculatrice ://",
+        svg: "/assets/svg/link.svg",
+    },
+    {
+        href: "https://fr.wikipedia.org/wiki/Schéma_d'URI",
+        tag: "URL Cours Web ://",
+        text: "Wikipedia.org Schéma d'URI",
         svg: "/assets/svg/link.svg",
     },
     {
