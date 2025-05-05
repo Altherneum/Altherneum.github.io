@@ -29,7 +29,7 @@ async function getUpdate(repoName) {
     var date = getValue(z2, "date");
     const date1 = new Date(Date.parse(date));
     var date2 = date1.toLocaleString();
-    document.getElementById("date").textContent = "⏰ " + date2;
+    document.getElementById("date-github").textContent = "⏰ " + date2;
 
     var message = getValue(z, "message")
     document.getElementById("message").textContent = "💬 " + message;
