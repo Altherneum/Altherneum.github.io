@@ -9,6 +9,15 @@
     box-shadow: var(--box-shadow-all-inset-main-transparent-color);
 }
 
+#github-update>#github-update-build {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
 #github-update>div>h1 {
     display: inline-block;
 
