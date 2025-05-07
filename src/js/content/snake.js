@@ -61,7 +61,7 @@ document.onkeydown = function handleKeyDown(e){
 function gameLoop(){
     console.log("tick");
     console.log(movementList);
-    nextStatePlate = plate;
+    nextStatePlate = createPlate(nextStatePlate);
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
             if(plate[x][y] == 2){
@@ -74,33 +74,74 @@ function gameLoop(){
 
 function PreMoveCell(x, y, direction, prevX, prevY){
     console.log(x + " : " + y);
+    let nextStateX; let nextStateY;
+    
     switch(direction){
         case "left":
           movementList[x][y] = 1;
+          nextStatePlate[x][y-1] = plate[x][y];
+          nextStateX = x; nextStateY = y-1;
           break;
         case "up":
             movementList[x][y] = 2;
+            nextStatePlate[x+1][y] = plate[x][y];
+            nextStateX = x+1; nextStateY = y;
           break;
         case "right":
             movementList[x][y] = 3;
+            nextStatePlate[x][y+1] = plate[x][y];
+            nextStateX = x; nextStateY = y+1;
           break;
         case "down":
             movementList[x][y] = 4;
+            nextStatePlate[x-1][y] = plate[x][y];
+            nextStateX = x-1; nextStateY = y;
           break;
         default:
-          movementList[x][y] = 0;
           return;
     }
-    getNextBodyPart(prevX, prevY);
+    
+    setMineText(nextStateX, nextStateY, getTD(nextStateX,nextStateY));
+    
+    var next = getNextBodyPart(x, y, prevX, prevY);
+    if(next != null){
+        PreMoveCell(next[0], next[1], getNextDirectionFromHead(next[0], next[1], x, y), x, y);
+
+    }
     //setMineText(x, y, getTD(x,y));
 }
 
-function getNextBodyPart(x, y){
+function getNextDirectionFromHead(x, y, prevX, prevY){
+    if(x - prevX >= 1){
+        return "up";
+    }
+    else if (x - prevX <= -1){
+        return "down";
+    }
+    else{
+        if(y - prevY >= 1){
+            return "right";
+        }
+        else if (y - prevY <= -1){
+            return "left";
+        }
+    }
+}
+
+function getNextBodyPart(x, y, prevX, prevY){
     cell = plate[x][y];
     let cells = [[x+1,y],[x-1,y],[x,y+1],[x,y-1]];
     for(testCell in cells){
         CellToTest = cells[testCell];
+        let x = CellToTest[0];
+        let y = CellToTest[1];
+        if(prevX != x && prevY != y){
+            if(plate[x][y] != 0){
+                return [x][y];
+            }
+        }        
     }
+    return null;
 }
 
 function runGame(){
