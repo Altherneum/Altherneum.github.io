@@ -64,29 +64,42 @@ function gameLoop(){
     nextStatePlate = plate;
     for (let x = 0; x < plateSizeRow; x++) {
         for (let y = 0; y < plateSizeCol; y++) {
-            moveCell(x, y);
+            if(plate[x][y] == 2){
+                PreMoveCell(x, y, direction, x, y);
+            }
         }
     }
+    //RunMouvement
 }
 
-function moveCell(x, y){
-    var move = movementList[x][y];
-    if(move != 0){
-        console.log(x + " : " + y);
-        if(move == "1"){
-            nextStatePlate[x-1][y] = plate[x][y];
-        }
-        else if(move == "2"){
-            nextStatePlate[x][y+1] = plate[x][y];
-        }
-        else if(move == "3"){
-            nextStatePlate[x+1][y] = plate[x][y];
-        }
-        else if(move == "4"){
-            nextStatePlate[x][y-1] = plate[x][y];
-        }
-        movementList[x][y] = 0;
-        //setMineText(x, y, getTD(x,y));
+function PreMoveCell(x, y, direction, prevX, prevY){
+    console.log(x + " : " + y);
+    switch(direction){
+        case "left":
+          movementList[x][y] = 1;
+          break;
+        case "up":
+            movementList[x][y] = 2;
+          break;
+        case "right":
+            movementList[x][y] = 3;
+          break;
+        case "down":
+            movementList[x][y] = 4;
+          break;
+        default:
+          movementList[x][y] = 0;
+          return;
+    }
+    getNextBodyPart(prevX, prevY);
+    //setMineText(x, y, getTD(x,y));
+}
+
+function getNextBodyPart(x, y){
+    cell = plate[x][y];
+    let cells = [[x+1,y],[x-1,y],[x,y+1],[x,y-1]];
+    for(testCell in cells){
+        CellToTest = cells[testCell];
     }
 }
 
