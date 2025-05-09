@@ -160,7 +160,7 @@ async function display(issueURL, issueLabels, repo, issueTitle, userLogin, userA
     var p2 = document.createElement('p');
     p2.className = "textIssue";
     if (body != null){
-    var textIssue = parseMarkdown(body);
+    var textIssue = await parseMarkdown(body);
     p2.innerHTML = textIssue;
     }
     else {
