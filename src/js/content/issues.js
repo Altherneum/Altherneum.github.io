@@ -32,37 +32,45 @@ async function getRepo(orgs) {
 
         var root = document.getElementById("github_issue");
 
-        var div = document.createElement('div');
+        var div = document.createElement('details');
         div.id = repo;
         div.className = "repo";
 
         var divIssue = document.createElement("div");
         divIssue.className = "issues";
 
-        var repoName = document.createElement('div');
+        var repoName = document.createElement('summary');
         repoName.className = "RepoName";
+
+        var RepoHolder = document.createElement("div");
+        RepoHolder.id = "RepoHolder";
+        repoName.appendChild(RepoHolder);
 
         var RepoLogo = document.createElement('img');
         RepoLogo.src = "/assets/svg/trademark/repo.svg";
         RepoLogo.className = "svg RepoLogo";
-        repoName.appendChild(RepoLogo);
+        RepoHolder.appendChild(RepoLogo);
 
         var RepoLink = document.createElement('a');
         RepoLink.href = "https://github.com/" + orgs + "/" + repo;
         RepoLink.textContent = orgs + " / " + repo;
         RepoLink.className = "RepoLink";
-        repoName.appendChild(RepoLink);
+        RepoHolder.appendChild(RepoLink);
+
+        var repoIssueHolder = document.createElement("div");
+        repoIssueHolder.id = "repoIssueHolder";
+        repoName.appendChild(repoIssueHolder);
 
         var RepoIssueLogo = document.createElement('img');
         RepoIssueLogo.src = "/assets/svg/issue.svg";
         RepoIssueLogo.className = "svg RepoIssueLogo";
-        repoName.appendChild(RepoIssueLogo);
+        repoIssueHolder.appendChild(RepoIssueLogo);
 
         var RepoIssue = document.createElement('a');
         RepoIssue.href = "https://github.com/" + orgs + "/" + repo + "/issues/new";
         RepoIssue.textContent = "new issue";
         RepoIssue.className = "RepoIssue";
-        repoName.appendChild(RepoIssue);
+        repoIssueHolder.appendChild(RepoIssue);
 
         div.appendChild(repoName);
         div.appendChild(divIssue);

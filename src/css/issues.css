@@ -3,47 +3,42 @@
 #github_issue>.repo {
     width: 100%;
     max-height: 75vh;
-    overflow-x: hidden;
     overflow-y: auto;
 
     border-style: solid;
     border-color: var(--main-color);
     border-width: 3px;
-    border-radius: 10px;
+    border-radius: 16px;
 
     margin-bottom: 30px;
 }
 
 #github_issue>.repo>.RepoName{
     position:sticky;
+    border-radius: 16px;
     top: 0;
-    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
 
     padding: 16px;
-    padding-bottom: 30px;
-
-    border-bottom-style: solid;
-    border-bottom-color: var(--main-color);
-    border-bottom-width: 3px;
+    padding-bottom: 35px;
 
     background: linear-gradient(var(--background-color), var(--main-color));
 }
 
-#github_issue>.repo>.RepoName>.RepoLogo {
+#github_issue>.repo>.RepoName>div>img{
     transform: translateY(40%);
-    margin-right: 10px;
     max-width: 50px;
+    padding-right: 10px;
 }
 
-#github_issue>.repo>.RepoName>.RepoIssueLogo {
-    transform: translateY(40%);
-    margin-right: 10px;
-    max-width: 30px;
-
-    padding-left: 64px;
-}
-
-#github_issue>.repo>.RepoName>.RepoIssue{
+#github_issue>.repo>.issues{
+    margin-top: 16px;
 }
 
 #github_issue>.repo>.issues>.issue {
