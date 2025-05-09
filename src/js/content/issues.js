@@ -34,6 +34,7 @@ async function getRepo(orgs) {
 
         var div = document.createElement('details');
         div.id = repo;
+        div.name = "issueDetails";
         div.className = "repo";
 
         var divIssue = document.createElement("div");
