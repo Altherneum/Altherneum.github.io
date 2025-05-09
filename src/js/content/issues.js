@@ -6,6 +6,7 @@ async function start(orgs) {
 
 async function getIssues(repo, orgs) {
     var x = await gather('https://api.github.com/repos/' + orgs + '/' + repo + '/issues');
+    let xLength = x.length;
     for (var i in x) {
         var issueURL = await getValue(x[i], "html_url");
         var issueNumber = await getValue(x[i], "number");
@@ -20,9 +21,15 @@ async function getIssues(repo, orgs) {
         var body = await getValue(x[i], "body");
 
         await display(issueURL, issueLabels, repo, issueTitle, userLogin, userAvatar, state, dateUpdate, body);
+        setIssueCounter(repo, xLength);
     }
     if (x === null || x === undefined || x.length <= 0) { } else {
     }
+}
+
+function setIssueCounter(repoName, xLength){
+    let doc = document.getElementById("IssueCounter-" + repoName);
+    doc.textContent = xLength;
 }
 
 async function getRepo(orgs) {
@@ -72,6 +79,11 @@ async function getRepo(orgs) {
         RepoIssue.textContent = "new issue";
         RepoIssue.className = "RepoIssue";
         repoIssueHolder.appendChild(RepoIssue);
+
+        var IssueCounter = document.createElement("p");
+        IssueCounter.id = "IssueCounter-" + repo;
+        IssueCounter.textContent = "...";
+        repoIssueHolder.appendChild(IssueCounter);
 
         div.appendChild(repoName);
         div.appendChild(divIssue);
