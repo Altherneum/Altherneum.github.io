@@ -29,7 +29,7 @@ async function getIssues(repo, orgs) {
 
 function setIssueCounter(repoName, xLength){
     let doc = document.getElementById("IssueCounter-" + repoName);
-    doc.textContent = xLength;
+    doc.textContent = xLength + " issues";
 }
 
 async function getRepo(orgs) {
@@ -82,7 +82,7 @@ async function getRepo(orgs) {
 
         var IssueCounter = document.createElement("p");
         IssueCounter.id = "IssueCounter-" + repo;
-        IssueCounter.textContent = "...";
+        IssueCounter.textContent = "Chargement...";
         div.appendChild(IssueCounter);
 
         div.appendChild(repoName);
