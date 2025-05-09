@@ -83,7 +83,7 @@ async function getRepo(orgs) {
         var IssueCounter = document.createElement("p");
         IssueCounter.id = "IssueCounter-" + repo;
         IssueCounter.textContent = "...";
-        repoIssueHolder.appendChild(IssueCounter);
+        div.appendChild(IssueCounter);
 
         div.appendChild(repoName);
         div.appendChild(divIssue);
