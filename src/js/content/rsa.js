@@ -5,7 +5,7 @@ consoleHTML.textContent += "\n- RSA (Info console) -";
 
 function getRandomKey(maxBits) {
     consoleHTML.textContent += "\nStarting generation of random prime number";
-    var value = getRandomNumber(maxBits);
+    let value = getRandomNumber(maxBits);
     consoleHTML.textContent += "\nStarting with randome prime : " + value;
 
     while(!isPrime(value)){
@@ -42,7 +42,7 @@ function isPrime(value) {
 
 function getCoprime(prime, maxBits) {
     consoleHTML.textContent += "\ngetting coprime";
-    var value = getRandomKey(maxBits);
+    let value = getRandomKey(maxBits);
     while (!IsFactorOf(prime, value) && value > prime) {
         consoleHTML.textContent += "\ntesting : " + value;
         
@@ -62,7 +62,7 @@ function getCoprime(prime, maxBits) {
 
 function IsFactorOf(prime, value) {
     consoleHTML.textContent += "Check if " + prime + " is factor of " + value + " = ";
-    var boolIsFactor = prime % value == 0;
+    let boolIsFactor = prime % value == 0;
     consoleHTML.textContent += boolIsFactor;
     return boolIsFactor;
 }
@@ -120,7 +120,7 @@ function RSAKeyGen() {
 }
 
 function getPrivateKey(e, phi, maxBits) {
-    var value = 2;
+    let value = 2;
     while (!isPrivateKeyOK(e, phi, value)) {
         value += 1;
     }
@@ -135,8 +135,8 @@ function isPrivateKeyOK(e, phi, value) {
 }
 
 function encrypt() {
-    var value = document.getElementById("value").value;
-    var maxBits = document.getElementById("valueMaxBits").value;
+    let value = document.getElementById("value").value;
+    let maxBits = document.getElementById("valueMaxBits").value;
     
     if (value < 0 || value >= publicKey.n) {
         consoleHTML.textContent += "Condition 0 <= m < n not met. m = " + value;
@@ -149,7 +149,7 @@ function encrypt() {
     }
 
     //var x = Math.pow(BigInt(value), BigInt(publicKey.e)) % BigInt(publicKey.n);
-    var x = Number(BigInt(value) ** BigInt(publicKey.e) % BigInt(publicKey.n));
+    let x = Number(BigInt(value) ** BigInt(publicKey.e) % BigInt(publicKey.n));
     
     //BigInt(60n ** 41n % 133n) = 72n // is OK
 
@@ -159,9 +159,9 @@ function encrypt() {
 }
 
 function decrypt() {
-    var value = document.getElementById("value").value;
+    let value = document.getElementById("value").value;
 
-    var x = Number(BigInt(value) ** BigInt(privateKey.d) % BigInt(privateKey.n));
+    let x = Number(BigInt(value) ** BigInt(privateKey.d) % BigInt(privateKey.n));
 
     consoleHTML.textContent += "\n\n---------------------- decrypt  " + x;
     return x;
@@ -179,11 +179,11 @@ function test() {
     consoleHTML.textContent += "\n\nvalue to crypt ; " + valueToCrypt;
     
     
-    var x1 = Math.round(encrypt(valueToCrypt, maxBits));
+    let x1 = Math.round(encrypt(valueToCrypt, maxBits));
     consoleHTML.textContent += "\n\ncrypt  "+x1;
     
     
-    var x2 = Math.round(decrypt(x1));
+    let x2 = Math.round(decrypt(x1));
     consoleHTML.textContent += "\n\ndecrypt  " + x2;
     
     
