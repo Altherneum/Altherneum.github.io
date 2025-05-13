@@ -75,9 +75,3 @@ async function include_css(url) {
 
     head.appendChild(link);
 }
-
-test();
-function test(){
-    const metaDescription = metas.find((m) => m.attributes[0].nodeValue === 'og:description')
-    metaDescription.attributes[1].nodeValue = 'a description test'
-}

@@ -19,5 +19,14 @@
 <meta property="og:site_name" content="doc.Altherneum.fr" />
 <meta property="profile:username" content="Altherneum.fr" />
 <meta property="og:description" content="Snake" />
-
+<script>
+    
+test();
+function test(){
+    console.log("test run ------------")
+    const metas = Array.from(document.getElementsByTagName('meta'))
+    const metaDescription = metas.find((m) => m.attributes[0].nodeValue === 'og:description')
+    metaDescription.attributes.content.nodeValue = 'a description test'
+}
+</script>
 </html>
