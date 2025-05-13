@@ -4,6 +4,7 @@ startTime("index");
 index();
 
 async function index() {
+    await include_html("/src/html/content/og-meta-test.html", "head", false);
     console.log("Loading website");
     await Metadata();
     await pages();
