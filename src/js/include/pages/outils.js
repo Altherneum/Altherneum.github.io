@@ -85,10 +85,6 @@ async function CheckPage() {
         await include_multiple("question-mark", "contentArticle");
     }
 
-    else if(pathNameMatchPage("/outils/og-meta-test", true)) {
-        await include_html("/src/html/content/og-meta-test.html", "head", false);
-    }
-
     else {
         return false;
     }
