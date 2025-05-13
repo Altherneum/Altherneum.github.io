@@ -86,7 +86,7 @@ async function CheckPage() {
     }
 
     else if(pathNameMatchPage("/outils/og-meta-test", true)) {
-        await include_html("/src/html/content/og-meta-test.html", "html", false);
+        await include_html("/src/html/content/og-meta-test.html", "head", false);
     }
 
     else {
