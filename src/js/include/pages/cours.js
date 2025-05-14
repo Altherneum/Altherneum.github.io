@@ -59,6 +59,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/function.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/conditions.md', false);
             await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/boucles.md', false);
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/JS/wtfjs.md', false);
         });
     }
 
