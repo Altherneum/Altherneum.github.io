@@ -515,44 +515,45 @@ function setAnchorTitles(anchorListElement, text) {
         var anchor = document.createElement("a");
         anchor.href = "#" + text;
         anchor.id = text;
-        anchor.style = "margin-left:12px;scroll-margin-top: 100px;";
-        childDiv.append(anchor);
+        anchor.className = childDivs[i].tagName;
+        anchor.style = "margin-right:12px;margin-left:12px;scroll-margin-top: 100px;";
+        childDiv.prepend(anchor);
 
         var anchorOnList = document.createElement("a");
         anchorOnList.href = "#" + text;
         if (childDivs[i].tagName.toLocaleLowerCase() === "h1") {
             anchorOnList.textContent = "#1 " + textPre;
-            anchor.textContent = "#";
+            anchor.textContent = " # ";
             anchorOnList.style = "margin-left:5px;font-size: large;";
             anchorOnList.className = "summary-h1";
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h2") {
             anchorOnList.textContent = "#2 " + textPre;
-            anchor.textContent = "##";
+            anchor.textContent = " ## ";
             anchorOnList.style = "margin-left:10px;text-decoration:none;font-size: medium;";
             anchorOnList.className = "summary-h2";
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h3") {
             anchorOnList.textContent = "#3 " + textPre;
-            anchor.textContent = "###";
+            anchor.textContent = " ### ";
             anchorOnList.style = "margin-left:15px;text-decoration:none;font-size: small;";
             anchorOnList.className = "summary-hidder";
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h4") {
             anchorOnList.textContent = "#4 " + textPre;
-            anchor.textContent = "####";
+            anchor.textContent = " #### ";
             anchorOnList.style = "margin-left:20px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h5") {
             anchorOnList.textContent = "#5 " + textPre;
-            anchor.textContent = "#####";
+            anchor.textContent = " ##### ";
             anchorOnList.style = "margin-left:25px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h6") {
             anchorOnList.textContent = "#6 " + textPre;
-            anchor.textContent = "######";
+            anchor.textContent = " ###### ";
             anchorOnList.style = "margin-left:30px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
         }

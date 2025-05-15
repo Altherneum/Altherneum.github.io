@@ -152,6 +152,16 @@
     align-items: center
 }
 
+.H1,
+.H2,
+.H3,
+.H4,
+.H5,
+.H6,
+.H7 {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 1024px) {
     #anchorList{
         padding-right: 25px;
