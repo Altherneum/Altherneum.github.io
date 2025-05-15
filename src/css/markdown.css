@@ -160,6 +160,8 @@
 .H6,
 .H7 {
     text-decoration: none;
+    scroll-margin-top: 100px;
+    padding-left: 10px;
 }
 
 @media screen and (max-width: 1024px) {
