@@ -147,6 +147,10 @@ const parseMarkdown = async (text) => {
         */
     //this regex detect H1 and capture until next H1
     // need to update to include <code> <textarea> as ignored
+    //https://regexr.com/8eo85
+
+
+
 
     //toHTML = toHTML.replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
     
