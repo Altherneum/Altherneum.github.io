@@ -140,6 +140,13 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{3} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h3>$2</h3>') // h3 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{2} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h2>$2</h2>') // h2 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^# (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
+    /*
+    For the next update
+        /*
+        ^#{1} (.*)(?:\n|$)(([\s\S](?!^#{1} .*))*)
+        */
+    //this regex detect H1 and capture until next H1
+    // need to update to include <code> <textarea> as ignored
 
     //toHTML = toHTML.replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
     
