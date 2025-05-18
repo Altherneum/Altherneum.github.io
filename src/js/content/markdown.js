@@ -133,6 +133,8 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
     toHTML = toHTML.replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
 
+
+    toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code)[^>]*>[^<]*)))*)/gim, '<details><summary><h1>$1</h1></summary>$2</details>')
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{7,} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h7+ tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{6} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h6 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{5} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h5>$2</h5>') // h5 tag
@@ -140,6 +142,7 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{3} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h3>$2</h3>') // h3 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{2} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h2>$2</h2>') // h2 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^# (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
+
     /*
     For the next update
         /*

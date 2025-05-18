@@ -8,18 +8,66 @@
     display: inline;
 }
 
-.markdowned>p>h1,
-.markdowned>p>h2,
-.markdowned>p>h3,
-.markdowned>p>h4,
-.markdowned>p>h5,
-.markdowned>p>h6 {
+.markdowned {
+    margin-bottom: 50px;
+    border-radius: 16px;
+    border-style: solid;
+}
+
+.markdowned>p>details{
+    border-top-style: solid;
+}
+
+.markdowned,
+.markdowned>p>details {
+    border-color: var(--text-color);
+    border-width: 2px;
+}
+
+.markdowned>p{
+    padding:15px;
+    padding-top:0px;
+}
+
+.markdowned>p>details>summary>h1
+{
+    display: inline;
+}
+
+.markdowned>p>details>summary {
+    padding: 10px;
+    padding-left: 15px;
+}
+
+.markdowned>p>details[open] summary{
+    border-bottom-style: solid;
+}
+
+.markdowned>p>details>summary:active,
+.markdowned>p>details>summary:focus{
+    border-radius: 16px;
+    border-bottom-style: solid;
+    border-color: var(--text-color);
+}
+
+.markdowned>p>details {
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 25px;
+}
+
+.markdowned>p h1,
+.markdowned>p h2,
+.markdowned>p h3,
+.markdowned>p h4,
+.markdowned>p h5,
+.markdowned>p h6 {
     display: block;
 
     text-decoration: underline;
     text-decoration-color: var(--link-color);
 
-    padding-top: 50px;
+    margin-top: 50px;
 }
 
 #anchorList{
@@ -88,27 +136,31 @@
     padding-bottom: 12px;
 }
 
-#markdown>.markdowned:not(:first-child)>#fileData{
-    margin-top: 20vh;
-}
-
 #fileData{
     padding: 10px;
-    margin-bottom: 45px;
+    width: 100%;
 
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    
-    width: fit-content;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: fit-content;
+    user-select: none;
+    flex-direction: row;
+    align-items: center;
+
     height: fit-content;
 
     user-select: none;
 }
 
 #fileData>.author, #fileData>.repo, #fileData>.commit{
-    display: inline-block;
+    display: flex;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 .commit>*{

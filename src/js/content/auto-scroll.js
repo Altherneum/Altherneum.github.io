@@ -11,7 +11,7 @@ var onceIsDone = false;
 function autoScroll(once, type) {
     var hash = decodeURIComponent(window.location.hash);
     var element = document.getElementById(hash.replace("#", ""));
-
+    openParentSummaryIfFound(element);
     DoScrollIntoView(element, once, type);
 }
 
@@ -25,5 +25,12 @@ function DoScrollIntoView(element, once, type) {
             element.focus(); // no browser good support yet : // element.focus({ focusVisible: true });
             onceIsDone = true;
         }
+    }
+}
+
+function openParentSummaryIfFound(element) {
+    var parent = element.parentNode.parentNode;
+    if (parent.nodeName === 'DETAILS'){
+        parent.open = true;
     }
 }
