@@ -33,6 +33,41 @@ function openParentSummaryIfFound(element) {
         var parent = element.parentNode.parentNode;
         if (parent.nodeName === 'DETAILS'){
             parent.open = true;
+            makeElementMoreVisible(element);
         }
     }
+}
+
+function makeElementMoreVisible(element) {
+    var newNode = element.parentNode;
+    newNode.animate(
+        [
+        /*
+            { transform: "translate3d(0, 0, 0)"},
+            { transform: "translate3d(0, -10px, 0)"},
+            { transform: "translate3d(0, 0, 0)"},
+            { transform: "translate3d(0, 10px, 0)"},
+            { transform: "translate3d(0, 0, 0)"},
+        */
+
+            {
+                opacity: "0",
+                transform: "rotateX(90def)",
+            },
+            {
+                opacity: "0.80",
+                transform: "rotateX(720deg)",
+            },
+            {
+                opacity: "1",
+                transform: "rotateX(720deg)"
+            }
+        ],
+        {
+            duration: 2000,
+            delay: 500,
+            easing: 'ease',
+            iterations: 1,
+        }
+    );
 }
