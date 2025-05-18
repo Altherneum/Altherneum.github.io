@@ -1103,6 +1103,12 @@ const links = [
         tag: ".gg Discord Outils URL Développement Windows",
         text: "Vencord Installer latest release",
     },
+    {
+        href: "/outils/donut.html",
+        svg: "/assets/svg/link.svg",
+        tag: "URL Admin Cours ReadMe Outils",
+        text: "Un donut en 3D 🍩",
+    },
 ];
 
 /*
