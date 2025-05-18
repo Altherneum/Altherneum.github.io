@@ -30,9 +30,9 @@ function DoScrollIntoView(element, once, type) {
 
 function openParentSummaryIfFound(element) {
     if (element !== null) {    
-    var parent = element.parentNode.parentNode;
-    if (parent.nodeName === 'DETAILS'){
-        parent.open = true;
+        var parent = element.parentNode.parentNode;
+        if (parent.nodeName === 'DETAILS'){
+            parent.open = true;
+        }
     }
-}
 }
