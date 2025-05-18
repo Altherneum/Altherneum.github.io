@@ -85,6 +85,12 @@ async function CheckPage() {
         await include_multiple("question-mark", "contentArticle");
     }
 
+    else if (pathNameMatchPage("/outils/donut", true)) {
+        await includes();
+
+        include_multiple("donut", "contentArticle", true);
+    }
+
     else {
         return false;
     }
