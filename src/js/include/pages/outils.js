@@ -87,8 +87,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/outils/donut", true)) {
         await includes();
-
-        include_multiple("donut", "contentArticle", true);
+        await include_multiple("donut", "contentArticle", true);
     }
 
     else {
