@@ -13,8 +13,8 @@ o-a*e,m=40+30*          B*(f*A*n-d*c)|0
 *v,h=8*((a*e-l*r*o)*n-l*r*e-a*o-f*r*c)|
  0;v<22&&v>=0&&m>=0&&m<79&&B>t[I]&&(t[
  I]=B,s[I]=".,-~:;=!*#$@"[h>0?h:0])}}//
-  var p = document.getElementById("d");
-   p.textContent = `3D Donut LUL x)\n`
-    +s.join("")},i=setInterval(a,50);
-     //doc.Altherneum.fr/outils/donut
-       //remade in 2025 by random
+ var p = document.getElementById("d");
+  p.textContent = `3D 🍩\n\n`+s.join
+  ("")},i=setInterval(a,50);//////
+   //doc.Altherneum.fr/outils/donut
+     //remade in 2025 by random
