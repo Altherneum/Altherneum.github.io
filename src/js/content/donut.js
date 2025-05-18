@@ -17,4 +17,4 @@ o-a*e,m=40+30*          B*(f*A*n-d*c)|0
    p.textContent = `3D Donut LUL x)\n`
     +s.join("")},i=setInterval(a,50);
      //doc.Altherneum.fr/outils/donut
-      //remade in 2025 by random
+       //remade in 2025 by random
