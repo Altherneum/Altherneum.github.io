@@ -183,6 +183,16 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Ajout d'un démineur" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[/outils /donut]]></title>
+        <link>https://doc.altherneum.fr/outils/donut.html</link>
+        <guid isPermaLink="true">https://doc.altherneum.fr/outils/donut.html</guid>
+        <pubDate>Fri, 09 May 2025 22:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[Donut 3D 🍩]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="/outils /donut" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
   

@@ -169,6 +169,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
+  {
+    title: "/outils /donut",
+    link: "https://doc.altherneum.fr/outils/donut.html",
+    description: "Donut 3D 🍩",
+    publicationDate: buildRFC822Date("2025-05-10T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image
