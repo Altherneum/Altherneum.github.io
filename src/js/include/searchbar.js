@@ -1,5 +1,6 @@
 const resultsBox = document.getElementById("result-box");
 resultsBox.style.display = "none"
+var showMore = false;
 
 var lastResult = [];
 
@@ -17,29 +18,69 @@ function keyup(event, inputBoxParam) {
 
 async function getResult(query, addCursorTag) {
     if (query.length > 0) {
-        console.log("SearchBar : " + query);
-        var result = await checkIfInputMatchLink(query);
-        /*
-            if(result.length > 10) {
-                result = result.slice(0, 10);
-            }
-        */
+        var result = checkIfInputMatchLink(query).then(result => {
 
-        if (!compareArrays(result, lastResult)) {
-            showSearchbarResult(result);
-            if (addCursorTag) {
-                addAllTags();
+            console.log("SearchBar : " + query + " : " + result.length + " resultat !");
+            
+            var needToShowMore = false;
+            if (result.length > 6 && showMore === false) {
+                result = result.slice(0, 6);
+                needToShowMore = true;
             }
-        }
-        hideTips();
 
-        lastResult = result;
+            if (!compareArrays(result, lastResult) || showMore === true) {
+                if (showMore === true) {
+                    showMore = false;
+                }
+
+                showSearchbarResult(result);
+                
+                if (needToShowMore) {
+                    AddShowMoreButton(query, addCursorTag);
+                }
+                
+                if (addCursorTag) {
+                    addAllTags();
+                }
+            }
+            
+            hideTips();
+
+            lastResult = result;
+        });
     }
     else {
         console.log("SearchBar vide");
         clearAllSearchBar();
         showTips();
     }
+}
+
+function AddShowMoreButton(PrevQuery, addCursorTag) {
+    var resultBox = document.getElementById("result-box");
+    var ShowMore = document.createElement("div");
+    ShowMore.id = "showMore";
+    ShowMore.className = "showMoreElem";
+    
+    var showMoreLink = document.createElement("a");
+    showMoreLink.tabIndex = 0;
+    showMoreLink.textContent = "Plus de résultat";
+    showMoreLink.className = "showMoreElem";
+    showMoreLink.href = ""; //permet de rendre le lien cliquable
+    showMoreLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        showMore = true;
+        let query = document.getElementById("input-box").value;
+        getResult(query, addCursorTag);
+    });
+
+    var showMoreImage = document.createElement("img");
+    showMoreImage.src = "/assets/svg/magnifier-plus.svg";
+    showMoreImage.className = "svg showMoreElem";
+
+    ShowMore.appendChild(showMoreLink);
+    showMoreLink.appendChild(showMoreImage);
+    resultBox.appendChild(ShowMore);
 }
 
 async function checkIfInputMatchLink(query) {
@@ -149,9 +190,9 @@ function showSearchbarResult(result) {
 
             resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a></div>'
         }
-        resultsBox.style.display = "flex"
+        resultsBox.style.display = "flex";
     } else {
-        resultsBox.style.display = "none"
+        resultsBox.style.display = "none";
     }
 }
 
@@ -188,17 +229,20 @@ document.body.addEventListener('keydown', function (e) {
 });
 
 window.addEventListener('click', function (e) {
+    if (e.target.classList.contains("showMoreElem")) {
+        return;
+    }
+    
     if (!document.getElementById('searchbar').contains(e.target)) {
         closeSearchBar();
+        return;
     }
-    else {
-        if (document.getElementById('input-box').contains(e.target)) {
-            showTips();
-        }
+        
+    if (document.getElementById('input-box').contains(e.target)) {
+        showTips();
+        return;
     }
 });
-
-
 
 function isSearchBarOpend() {
     const inputBox = document.getElementById("input-box");
@@ -237,6 +281,7 @@ document.addEventListener('keyup', (event) => {
         if (!document.getElementById("searchbar").contains(event.target)) {
             hideTips();
             clearAllSearchBar();
+            console.log(event.target)
         }
     }
 });
