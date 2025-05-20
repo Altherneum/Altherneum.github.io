@@ -1151,9 +1151,43 @@ var videolinks = [
         categorie: "science IT chem",
         short: true,
     },
+    {
+        videoID: "c2cXGP5f90E",
+        short: true,
+        categorie: "humour code IT",
+    },
+    {
+        videoID: "sjW-jdKpsw8",
+        categorie: "hack science IT",
+        top: true,
+    },
+    {
+        videoID: "eELgK61Du-c",
+        categorie: "hack IT science code",
+    },
+    {
+        videoID: "MMT10Qf5Z1U",
+        categorie: "hack IT science",
+    },
+    {
+        videoID: "TyChpiuZHVQ",
+        categorie: "science chem",
+    },
+    {
+        videoID: "fUczXMVDBaw",
+        categorie: "code IT science hack malware",
+    },
+    {
+        videoID: "zciHsiRuUFE",
+        categorie: "code IT science"
+    },
+    {
+        videoID: "GQmgFexWBsk",
+        categorie: "science news politique"
+    },
 ];
 
-var VideoListType = ["hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
+var VideoListType = ["politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
 
 function getVideoListType(){
     return VideoListType;
@@ -1217,6 +1251,8 @@ function getEmoji(VideoListType){
             return "💲";
         case 'hardware':
             return "💾";
+        case 'politique':
+            return "📖";
         default:
             return "❓";
       }
