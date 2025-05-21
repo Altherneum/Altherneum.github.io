@@ -14,7 +14,7 @@ o-a*e,m=40+30*          B*(f*A*n-d*c)|0
  0;v<22&&v>=0&&m>=0&&m<79&&B>t[I]&&(t[
  I]=B,s[I]=".,-~:;=!*#$@"[h>0?h:0])}}//
  var p = document.getElementById("d");
-  p.textContent = `3D 🍩\n\n`+s.join
-  ("")},$=setInterval(a,50);//////
+  p.textContent = s.join("")},//3D🍩
+  $=setInterval(a,50);/////////////
    //doc.Altherneum.fr/outils/donut
      //remade in 2025 by random
