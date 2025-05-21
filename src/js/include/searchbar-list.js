@@ -397,13 +397,13 @@ const links = [
     },
     {
         href: "/cours/google-dorks.html",
-        tag: "Cours Web",
+        tag: "Cours Web Google",
         text: "Google et les Google dorks",
         svg: "/assets/svg/note.svg",
     },
     {
         href: "/cours/google-doodle.html",
-        tag: "Cours Web",
+        tag: "Cours Web Google",
         text: "Liste des doodles Google",
         svg: "/assets/svg/note.svg",
     },
@@ -674,7 +674,7 @@ const links = [
     {
         href: "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
         svg: "/assets/svg/trademark/google-play.svg",
-        tag: "URL OpSec",
+        tag: "URL OpSec Google",
         text: "KeePassDX Android",
     },
     {
@@ -1010,13 +1010,13 @@ const links = [
     {
         href: "https://drive.google.com/drive/home",
         svg: "/assets/svg/trademark/google-drive.svg",
-        tag: "URL OS Outils Web Windows",
+        tag: "URL OS Outils Web Windows Google",
         text: "Google Drive",
     },
     {
         href: "https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe",
         svg: "/assets/svg/trademark/google-drive.svg",
-        tag: "URL OS Outils Web Windows",
+        tag: "URL OS Outils Web Windows Google",
         text: "Google Drive Setup",
     },
     {
@@ -1109,6 +1109,66 @@ const links = [
         tag: "URL Admin Cours ReadMe Outils",
         text: "Un donut en 3D 🍩",
     },
+    {
+        href: "https://messages.google.com/",
+        text: "Google SMS",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/contact.svg",
+    },
+    {
+        href: "https://translate.google.fr/",
+        text: "Google traduction",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/langue.svg",
+    },
+    {
+        href: "https://maps.google.fr/",
+        text: "Google map",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/map-pin.svg",
+    },
+    {
+        href: "https://keep.google.com/",
+        text: "Goole notes",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/note.svg",
+    },
+    {
+        href: "https://mail.google.com/",
+        text: "GMail",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/mail.svg",
+    },
+    {
+        href: "https://www.google.com/chrome/",
+        text: "Télécharger Google Chrome",
+        tag: "Google URL Web Outils OS Windows",
+        svg: "/assets/svg/download.svg",
+    },
+    {
+        href: "https://console.cloud.google.com/vertex-ai/studio/multimodal",
+        text: "Google Cloud Console",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/console.svg",
+    },
+    {
+        href: "https://myaccount.google.com/",
+        text: "Google My Account",
+        tag: "Google URL Web Outils OpSec",
+        svg: "/assets/svg/password.svg",
+    },
+    {
+        href: "https://calendar.google.com/",
+        text: "Calendrier Google",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg",
+    },
+    {
+        href: "https://contacts.google.com/",
+        text: "Google Contacts",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/people.svg",
+    },
 ];
 
 /*
@@ -1121,7 +1181,7 @@ const links = [
     },
 */
 
-var tagList = ["Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
+var tagList = ["Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
