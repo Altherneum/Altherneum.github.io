@@ -75,7 +75,7 @@ async function Metadata() {
 }
 
 async function randomInclude(excludeSettings) {
-    var max = 7;
+    var max = 8;
     var random = Math.round(Math.random() * (max - 1) + 1);
 
     if (random == 1) {
@@ -111,6 +111,9 @@ async function randomInclude(excludeSettings) {
         await include_css("/src/css/github-events.css");
         await include_html("/src/html/content/github-events.html", "contentArticle", true);
         await include_script("/src/js/content/github-events.js");
+    }
+    else if (random == 8) {
+        await include_multiple("donut", "contentArticle", true);
     }
 }
 
