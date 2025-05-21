@@ -1169,6 +1169,12 @@ const links = [
         tag: "Google URL Web Outils",
         svg: "/assets/svg/people.svg",
     },
+    {
+        href: "https://youtube.com/",
+        text: "YouTube",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/trademark/youtube.svg"
+    }
 ];
 
 /*
