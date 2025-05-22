@@ -1116,6 +1116,12 @@ const links = [
         svg: "/assets/svg/contact.svg",
     },
     {
+        href: "https://messages.google.com/web",
+        text: "Google SMS Web",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/contact.svg",
+    },
+    {
         href: "https://www.google.fr/search",
         text: "Rechercher sur Google",
         tag: "Google URL Web Outils queryable",
@@ -1131,19 +1137,22 @@ const links = [
     {
         href: "https://maps.google.fr/",
         text: "Google map",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils queryable",
+        queryURL: "https://www.google.fr/maps/search/",
         svg: "/assets/svg/map-pin.svg",
     },
     {
         href: "https://keep.google.com/",
         text: "Goole notes",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils queryable",
+        queryURL: "https://keep.google.com/#search/text%253D",
         svg: "/assets/svg/note.svg",
     },
     {
         href: "https://mail.google.com/",
         text: "GMail",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils queryable",
+        queryURL: "https://mail.google.com/mail/#search/",
         svg: "/assets/svg/mail.svg",
     },
     {
@@ -1173,7 +1182,8 @@ const links = [
     {
         href: "https://contacts.google.com/",
         text: "Google Contacts",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils queryable",
+        queryURL: "https://contacts.google.com/search/",
         svg: "/assets/svg/people.svg",
     },
     {
@@ -1195,7 +1205,7 @@ const links = [
     },
 */
 
-var tagList = ["Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
+var tagList = ["Query", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
