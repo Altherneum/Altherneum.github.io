@@ -110,7 +110,7 @@ function compareLinks(linkID, queryListed) {
     let matchAll = true;
 
     for (singleQuery in queryListed) {
-        let match = compareStringToLink(queryListed[singleQuery], linkText, linkHrefTrimBis, linkTag);
+        let match = compareStringToLink(queryListed[singleQuery], linkText, linkHrefTrimBis, linkTag, singleQuery);
         if (!match) {
             matchAll = false;
         }
@@ -118,16 +118,19 @@ function compareLinks(linkID, queryListed) {
 
     if (matchAll) {
         var linkToUse = getLinkForURL(linkHref, linkHrefTrim);
+        if(linkTag.toLowerCase().includes("queryable")){
+            return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText, "query": queryListed.slice(1), "queryURL": links[linkID].queryURL};
+        }
         
         return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText };
     }
     return null;
 }
 
-function compareStringToLink(input, linkText, linkHrefTrim, linkTag) {
+function compareStringToLink(input, linkText, linkHrefTrim, linkTag, queryNumber) {
     let lowerCaseQuery = input.toLowerCase();
 
-    if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery)) {
+    if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery) || (linkTag.toLowerCase().includes("queryable") && queryNumber >= 1)) {
         return true;
     }
     else {
@@ -177,6 +180,19 @@ function showSearchbarResult(result) {
     clearSearchBarResultHTML();
     if (result.length) {
         for (i in result) {
+            //check if result
+            var query = "";
+            console.log(result[i]);
+            if(result[i].query != undefined){
+                // we have a query
+                var queryText = "";
+                for(textqueryIndex in result[i].query){
+                    queryText += result[i].query[textqueryIndex] + " ";
+                }
+                query = '<p>Rechercher : </p><a target="_blank" href="' + result[i].queryURL + queryText + '">' + queryText + '</a>';
+            }
+            // 
+
             const href = result[i].href;
             const title = result[i].text;
             let svg;
@@ -188,7 +204,7 @@ function showSearchbarResult(result) {
             }
             else { svg = result[i].svg; }
 
-            resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a></div>'
+            resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a>' + query + '</div>'
         }
         resultsBox.style.display = "flex";
     } else {
@@ -281,7 +297,7 @@ document.addEventListener('keyup', (event) => {
         if (!document.getElementById("searchbar").contains(event.target)) {
             hideTips();
             clearAllSearchBar();
-            console.log(event.target)
+            console.log(event.target);
         }
     }
 });

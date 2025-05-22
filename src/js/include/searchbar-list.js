@@ -1116,6 +1116,13 @@ const links = [
         svg: "/assets/svg/contact.svg",
     },
     {
+        href: "https://www.google.fr/search",
+        text: "Rechercher sur Google",
+        tag: "Google URL Web Outils queryable",
+        queryURL: "https://www.google.fr/search?q=",
+        svg: "/assets/svg/loading.svg",
+    },
+    {
         href: "https://translate.google.fr/",
         text: "Google traduction",
         tag: "Google URL Web Outils",
@@ -1172,7 +1179,8 @@ const links = [
     {
         href: "https://youtube.com/",
         text: "YouTube",
-        tag: "Google URL Web Outils",
+        tag: "Google queryable URL Web Outils",
+        queryURL: "https://www.youtube.com/results?search_query=",
         svg: "/assets/svg/trademark/youtube.svg"
     }
 ];

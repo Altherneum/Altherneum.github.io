@@ -95,8 +95,16 @@ a.cardTitle{
     border-bottom-right-radius: 0px;
 }
 
-#result-box>div {
+#result-box>div {    
     padding-left: 5px;
+
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 #result-box>div>div {
@@ -114,6 +122,9 @@ a.cardTitle{
     min-width: 35px;
 }
 
+#result-box>div>p {
+    font-size: medium;
+}
 #result-box>div>a {
     padding: 15px;
     margin:5px;
@@ -128,6 +139,10 @@ a.cardTitle{
 
     text-decoration: none;
     font-size: medium;
+}
+
+#result-box>div>a:not(:first-of-type){
+    padding: 5px;
 }
 
 #close-search{
