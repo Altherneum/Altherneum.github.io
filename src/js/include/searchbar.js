@@ -183,7 +183,7 @@ function showSearchbarResult(result) {
             //check if result
             var query = "";
             console.log(result[i]);
-            if(result[i].query != undefined && result[i].query.length > 0){
+            if(result[i].query != undefined && result[i].query.length > 0 && result[i].query[0] != ""){
                 // we have a query
                 var queryText = "";
                 for(textqueryIndex in result[i].query){
