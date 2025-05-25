@@ -1220,7 +1220,14 @@ const links = [
         text: "Google Alertes",
         tag: "Google URL Web Outils OpSec",
         svg: "/assets/svg/warning.svg"
-    }
+    },
+    {
+        href: "https://doc.altherneum.fr",
+        text: "Doc.Altherneum",
+        tag: "URL queryable",
+        svg: "/assets/svg/home.svg",
+        queryURL: "https://doc.altherneum.fr/?search=",
+    },
 ];
 
 /*
