@@ -1211,7 +1211,7 @@ const links = [
     {
         href: "https://www.google.com/alerts",
         text: "Google Alertes",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils OpSec",
         svg: "/assets/svg/warning.svg"
     }
 ];
