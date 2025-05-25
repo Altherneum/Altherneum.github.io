@@ -576,6 +576,13 @@ const links = [
         svg: "/assets/svg/download.svg",
     },
     {
+        href: "https://github.com/",
+        tag: "Queryable URL Github Web",
+        queryURL: "https://github.com/search?q=",
+        text: "Github",
+        svg: "/assets/svg/trademark/github.svg",
+    },
+    {
         href: "https://git-scm.com/",
         tag: "URL Github",
         text: "Git",
