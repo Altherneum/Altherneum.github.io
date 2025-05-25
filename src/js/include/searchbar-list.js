@@ -595,8 +595,9 @@ const links = [
     },
     {
         href: "https://www.svgrepo.com/",
-        tag: "URL",
+        tag: "Queryable URL Outils Web",
         text: "SVGRepo",
+        queryURL: "https://www.svgrepo.com/vectors/",
         svg: "/assets/svg/svg.svg",
     },
     {
@@ -1192,6 +1193,26 @@ const links = [
         tag: "Google queryable URL Web Outils",
         queryURL: "https://www.youtube.com/results?search_query=",
         svg: "/assets/svg/trademark/youtube.svg"
+    },
+    {
+        href: "https://trends.google.fr/",
+        text: "Google Trends",
+        tag: "Google queryable URL Web Outils",
+        queryURL: "https://trends.google.fr/trends/explore?q=",
+        svg: "/assets/svg/chart-column.svg"
+    },
+    {
+        href: "https://news.google.com/",
+        text: "Google Actualités",
+        tag: "Google queryable URL Web Outils",
+        queryURL: "https://news.google.com/search?q=",
+        svg: "/assets/svg/new.svg"
+    },
+    {
+        href: "https://www.google.com/alerts",
+        text: "Google Alertes",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/warning.svg"
     }
 ];
 
