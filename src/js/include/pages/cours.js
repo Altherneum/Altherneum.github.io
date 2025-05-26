@@ -160,16 +160,34 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/logique.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/variable.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/os-version.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/shebang.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/alias.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/apt.md', false);
 
             // await addMarkdown('Altherneum/.github', 'note/OS/Linux/arch.md', false);
 
-            await addMarkdown('Altherneum/.github', 'note/OS/Linux/process.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/who.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/whoami.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD.md', false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/free.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/top.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/uptime.md', false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/Jobs.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/kill.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/PIDof.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/systemctl.md', false);
+
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/netstat.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/ps.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/ssh.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD-SSH.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/scp.md', false);
+
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/UFW.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/HTTPD-from-src.md', false);
