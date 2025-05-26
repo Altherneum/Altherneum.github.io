@@ -134,8 +134,13 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
 
 
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code)[^>]*>[^<]*)))*)/gim, '<details name="markdown"><summary><h1>$1</h1></summary>$2</details>')
+    //toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code)[^>]*>[^<]*)))*)/gim, '<details name="markdown"><summary><h1>$1</h1></summary>$2</details>')
     //toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2"><summary><h2>$1</h2></summary>$2</details>')
+    //tester sur le cours linux
+    // parfois cela va laisser un "<" ou concat H1 dans des textarea
+    //fix auto scroll not working H2+
+    //fix animation autoscroll
+    
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{7,} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h7+ tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{6} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h6 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{5} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h5>$2</h5>') // h5 tag
