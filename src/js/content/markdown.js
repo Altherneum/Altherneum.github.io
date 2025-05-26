@@ -135,6 +135,7 @@ const parseMarkdown = async (text) => {
 
 
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code)[^>]*>[^<]*)))*)/gim, '<details><summary><h1>$1</h1></summary>$2</details>')
+    toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code)[^>]*>[^<]*)))*)/gim, '<details><summary><h2>$1</h2></summary>$2</details>')
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{7,} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h7+ tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{6} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h6 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{5} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h5>$2</h5>') // h5 tag

@@ -14,12 +14,13 @@
     border-style: solid;
 }
 
-.markdowned>p>details{
-    border-top-style: solid;
+.markdowned>p details{
+    border-style: solid;
+    border-radius: 16px;
 }
 
 .markdowned,
-.markdowned>p>details {
+.markdowned>p details {
     border-color: var(--text-color);
     border-width: 2px;
 }
@@ -29,28 +30,29 @@
     padding-top:0px;
 }
 
-.markdowned>p>details>summary>h1
+.markdowned>p>details summary>*
 {
     display: inline;
 }
 
-.markdowned>p>details>summary {
+.markdowned>p>details summary {
     padding: 10px;
     padding-left: 15px;
 }
 
 .markdowned>p>details[open] summary{
     border-bottom-style: solid;
+    transition: 5s;
 }
 
-.markdowned>p>details>summary:active,
-.markdowned>p>details>summary:focus{
+.markdowned>p>details summary:active,
+.markdowned>p>details summary:focus{
     border-radius: 16px;
     border-bottom-style: solid;
     border-color: var(--text-color);
 }
 
-.markdowned>p>details {
+.markdowned>p details {
     padding: 10px;
     padding-left: 15px;
     margin-top: 25px;
@@ -138,6 +140,7 @@
 
 #fileData{
     width: 100%;
+    padding-top: 15px;
 
     display: flex;
 
