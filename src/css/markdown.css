@@ -14,15 +14,20 @@
     border-style: solid;
 }
 
-.markdowned>p details{
-    border-style: solid;
+.markdowned>p details[open] {
+    border-style: dashed;
+    border-radius: 16px;
+}
+
+.markdowned>p details {
     border-radius: 16px;
 }
 
 .markdowned,
 .markdowned>p details {
     border-color: var(--text-color);
-    border-width: 2px;
+    border-width: 1px;
+    border-top-width: 3px;
 }
 
 .markdowned>p{
@@ -40,9 +45,19 @@
     padding-left: 15px;
 }
 
-.markdowned>p>details[open] summary{
+.markdowned>p>details[open]>summary,
+.markdowned>p>details[open] *[open]>summary{
     border-bottom-style: solid;
-    transition: 5s;
+}
+
+.markdowned>p>details:not(:first-child){
+    margin-top: 15px;
+}
+
+.markdowned>p>details>details{
+    border-width: 1px;
+    border-top-width: 2px;
+    border-style: solid;
 }
 
 .markdowned>p>details summary:active,
