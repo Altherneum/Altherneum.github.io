@@ -55,6 +55,7 @@
     border-color: var(--text-color);
     border-width: 1px;
     border-top-width: 3px;
+    font-size: inherit;
 }
 
 .markdowned>p{
