@@ -1,3 +1,30 @@
+.markdowned details{
+    margin-bottom: -25px;
+}
+
+.markdowned details.markdown2{
+    margin-top: -25px;
+}
+
+.markdowned details[open]>summary{
+    margin-bottom: -40px;
+}
+
+.markdowned .youtubeEmbed>div>div {
+    width: 50% !important;
+    min-width: 45% !important;
+    max-width: 75%;
+}
+
+.markdowned .youtubeEmbed{
+    display: flex;
+    justify-content: center;
+}
+
+.markdowned .youtubeEmbed>.videoholder{
+    justify-content: center !important;
+}
+
 .markdowned>p img {
     max-width: 90%;
 }
@@ -70,7 +97,6 @@
 .markdowned>p details {
     padding: 10px;
     padding-left: 15px;
-    margin-top: 25px;
 }
 
 .markdowned>p h1,
@@ -83,8 +109,6 @@
 
     text-decoration: underline;
     text-decoration-color: var(--link-color);
-
-    margin-top: 50px;
 }
 
 #anchorList{
