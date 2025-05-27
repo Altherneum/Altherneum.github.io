@@ -11,7 +11,7 @@ var onceIsDone = false;
 function autoScroll(once, type) {
     var hash = decodeURIComponent(window.location.hash);
     var element = document.getElementById(hash.replace("#", ""));
-    openParentSummaryIfFound(element);
+    openParentSummaryIfFound(element, once);
     DoScrollIntoView(element, once, type);
 }
 
@@ -28,13 +28,26 @@ function DoScrollIntoView(element, once, type) {
     }
 }
 
-function openParentSummaryIfFound(element) {
-    if (element !== null) {    
-        var parent = element.parentNode.parentNode;
-        if (parent.nodeName === 'DETAILS'){
-            parent.open = true;
-            makeElementMoreVisible(element);
+function openParentSummaryIfFound(element, once) {
+    if (element !== null) {
+        if (once === true && onceIsDone === true) {
+            return;
         }
+        let parentElements = [];
+        let currentElement = element;
+
+        while (currentElement !== document) {
+            parentElements.push(currentElement.parentNode);
+            currentElement = currentElement.parentNode;
+        }
+
+        for (parent in parentElements) {
+            if (parentElements[parent].nodeName === 'DETAILS') {
+                parentElements[parent].open = true;
+            }
+        }
+
+        makeElementMoreVisible(element);
     }
 }
 

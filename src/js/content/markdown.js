@@ -109,6 +109,13 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
 
+    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="markdown">\n<summary><h1>$1</h1></summary>$2\n</details>\n')
+    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2">\n<summary><h2>$1</h2></summary>\n$2</details>\n')
+    //fix le regex laisse parfois le dernier char dans le groupe n°3 et ça fait déconner tout même si le $3 est pas use
+    //semble fix par les \n ajoutés dans le replace (à vérifier par le temps)
+
+    //ajouter l'auto scroll quand cliqué sur un chapitre
+
     toHTML = toHTML.replace(/(?<!.)(-{3,})(?!.)/g, '<hr/>') //hr (Decoration line)
 
     toHTML = toHTML.replace(/\~\~(.*?)\~\~/gim, '<del>$1</del>')// <del>
@@ -132,22 +139,14 @@ const parseMarkdown = async (text) => {
 
     toHTML = toHTML.replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
     toHTML = toHTML.replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
-
-
-    //toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code)[^>]*>[^<]*)))*)/gim, '<details name="markdown"><summary><h1>$1</h1></summary>$2</details>')
-    //toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2"><summary><h2>$1</h2></summary>$2</details>')
-    //tester sur le cours linux
-    // parfois cela va laisser un "<" ou concat H1 dans des textarea
-    //fix auto scroll not working H2+
-    //fix animation autoscroll
     
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{7,} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h7+ tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{6} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h6 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{5} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h5>$2</h5>') // h5 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{4} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h4>$2</h4>') // h4 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{3} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h3>$2</h3>') // h3 tag
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{2} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h2>$2</h2>') // h2 tag
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^# (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
+    //toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{2} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h2>$2</h2>') // h2 tag
+    //toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^# (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<hr style="margin-top:50px;margin-bottom:20px"><h1>$2</h1>') // h1 tag
 
     /*
     For the next update
@@ -165,7 +164,7 @@ const parseMarkdown = async (text) => {
     
     //text inside summary to do
 
-    toHTML = toHTML.replace(/[\n]{1,}/g, "<br>") //new line
+    //toHTML = toHTML.replace(/[\n]{1,}/g, "<br>") //new line
 
     toHTML.trim();
     console.log("Loading return markdown trim");
