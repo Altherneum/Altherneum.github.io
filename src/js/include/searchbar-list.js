@@ -1235,6 +1235,27 @@ const links = [
         svg: "/assets/svg/ip.svg",
         queryURL: "https://www.geolocation.com/fr/index?ip=",
     },
+    {
+        href: "https://dnschecker.org/",
+        text: "DNS checker CNAME ➡️ A",
+        tag: "URL queryable outils web OpSec",
+        svg: "/assets/svg/ip.svg",
+        queryURL: "https://dnschecker.org/#A/",
+    },
+    {
+        href: "https://dnschecker.org/",
+        text: "DNS checker CNAME ➡️ CNAME",
+        tag: "URL queryable outils web OpSec",
+        svg: "/assets/svg/ip.svg",
+        queryURL: "https://dnschecker.org/#CNAME/",
+    },
+    {
+        href: "https://dnschecker.org/",
+        text: "DNS checker SRV ➡️ CNAME:Port",
+        tag: "URL queryable outils web OpSec",
+        svg: "/assets/svg/ip.svg",
+        queryURL: "https://dnschecker.org/#SRV/",
+    },
 ];
 
 /*
