@@ -187,7 +187,7 @@ const links = [
     },
     {
         href: "/outils/logger.html",
-        tag: "Outils Web",
+        tag: "Outils Web Network IP",
         text: "IP v4 v6 logger & browser scan",
         svg: "/assets/svg/ip.svg",
     },
@@ -415,7 +415,7 @@ const links = [
     },
     {
         href: "/cours/ip.html",
-        tag: "Cours Network",
+        tag: "Cours Network IP",
         text: "IP",
         svg: "/assets/svg/ip.svg",
     },
@@ -493,7 +493,7 @@ const links = [
     },
     {
         href: "https://www.calculator.net/ip-subnet-calculator.html",
-        tag: "URL Outils",
+        tag: "URL Outils Network IP",
         text: "IP subnet calculator",
         svg: "/assets/svg/link.svg",
     },
@@ -634,7 +634,7 @@ const links = [
     {
         href: "/outils/logger.html",
         svg: "/assets/svg/ip.svg",
-        tag: "OpSec Outils",
+        tag: "OpSec Outils Network IP Web",
         text: "Outils IP & UserAgent",
     },
     {
@@ -1231,28 +1231,28 @@ const links = [
     {
         href: "https://www.geolocation.com/",
         text: "GeoLocation IP",
-        tag: "URL Queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec IP Network",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://www.geolocation.com/fr/index?ip=",
     },
     {
         href: "https://dnschecker.org/",
         text: "DNS checker CNAME ➡️ A",
-        tag: "URL Queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec IP Network",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#A/",
     },
     {
         href: "https://dnschecker.org/",
         text: "DNS checker CNAME ➡️ CNAME",
-        tag: "URL Queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec IP Network",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#CNAME/",
     },
     {
         href: "https://dnschecker.org/",
         text: "DNS checker SRV ➡️ CNAME:Port",
-        tag: "URL Queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec IP Network",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#SRV/",
     },
@@ -1268,7 +1268,7 @@ const links = [
     },
 */
 
-var tagList = ["Queryable", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
+var tagList = ["IP", "Queryable", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
