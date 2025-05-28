@@ -1228,6 +1228,13 @@ const links = [
         svg: "/assets/svg/home.svg",
         queryURL: "https://doc.altherneum.fr/?search=",
     },
+    {
+        href: "https://www.geolocation.com/",
+        text: "GeoLocation IP",
+        tag: "URL queryable outils web OpSec",
+        svg: "/assets/svg/ip.svg",
+        queryURL: "https://www.geolocation.com/fr/index?ip=",
+    },
 ];
 
 /*
