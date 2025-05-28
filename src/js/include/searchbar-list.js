@@ -1132,7 +1132,7 @@ const links = [
     {
         href: "https://www.google.fr/search",
         text: "Rechercher sur Google",
-        tag: "Google URL Web Outils queryable",
+        tag: "Google URL Web Outils Queryable",
         queryURL: "https://www.google.fr/search?q=",
         svg: "/assets/svg/loading.svg",
     },
@@ -1145,21 +1145,21 @@ const links = [
     {
         href: "https://maps.google.fr/",
         text: "Google map",
-        tag: "Google URL Web Outils queryable",
+        tag: "Google URL Web Outils Queryable",
         queryURL: "https://www.google.fr/maps/search/",
         svg: "/assets/svg/map-pin.svg",
     },
     {
         href: "https://keep.google.com/",
         text: "Goole notes",
-        tag: "Google URL Web Outils queryable",
+        tag: "Google URL Web Outils Queryable",
         queryURL: "https://keep.google.com/#search/text%253D",
         svg: "/assets/svg/note.svg",
     },
     {
         href: "https://mail.google.com/",
         text: "GMail",
-        tag: "Google URL Web Outils queryable",
+        tag: "Google URL Web Outils Queryable",
         queryURL: "https://mail.google.com/mail/#search/",
         svg: "/assets/svg/mail.svg",
     },
@@ -1190,28 +1190,28 @@ const links = [
     {
         href: "https://contacts.google.com/",
         text: "Google Contacts",
-        tag: "Google URL Web Outils queryable",
+        tag: "Google URL Web Outils Queryable",
         queryURL: "https://contacts.google.com/search/",
         svg: "/assets/svg/people.svg",
     },
     {
         href: "https://youtube.com/",
         text: "YouTube",
-        tag: "Google queryable URL Web Outils",
+        tag: "Google Queryable URL Web Outils",
         queryURL: "https://www.youtube.com/results?search_query=",
         svg: "/assets/svg/trademark/youtube.svg"
     },
     {
         href: "https://trends.google.fr/",
         text: "Google Trends",
-        tag: "Google queryable URL Web Outils",
+        tag: "Google Queryable URL Web Outils",
         queryURL: "https://trends.google.fr/trends/explore?q=",
         svg: "/assets/svg/chart-column.svg"
     },
     {
         href: "https://news.google.com/",
         text: "Google Actualités",
-        tag: "Google queryable URL Web Outils",
+        tag: "Google Queryable URL Web Outils",
         queryURL: "https://news.google.com/search?q=",
         svg: "/assets/svg/new.svg"
     },
@@ -1224,35 +1224,35 @@ const links = [
     {
         href: "https://doc.altherneum.fr",
         text: "Doc.Altherneum",
-        tag: "URL queryable",
+        tag: "URL Queryable",
         svg: "/assets/svg/home.svg",
         queryURL: "https://doc.altherneum.fr/?search=",
     },
     {
         href: "https://www.geolocation.com/",
         text: "GeoLocation IP",
-        tag: "URL queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://www.geolocation.com/fr/index?ip=",
     },
     {
         href: "https://dnschecker.org/",
         text: "DNS checker CNAME ➡️ A",
-        tag: "URL queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#A/",
     },
     {
         href: "https://dnschecker.org/",
         text: "DNS checker CNAME ➡️ CNAME",
-        tag: "URL queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#CNAME/",
     },
     {
         href: "https://dnschecker.org/",
         text: "DNS checker SRV ➡️ CNAME:Port",
-        tag: "URL queryable outils web OpSec",
+        tag: "URL Queryable outils web OpSec",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#SRV/",
     },
@@ -1268,7 +1268,7 @@ const links = [
     },
 */
 
-var tagList = ["Query", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
+var tagList = ["Queryable", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
