@@ -780,24 +780,6 @@ var videolinks = [
         categorie: "phonk",
     },
     {
-        videoID: "PLau9bkm0iK9twhgsxr-bFTEchn_T9O0qW",
-        playlist: true,
-        top: true,
-        categorie: "rap",
-    },
-    {
-        videoID: "PLau9bkm0iK9t1DPKultYqH3q8yWpg-SvR",
-        playlist: true,
-        top: true,
-        categorie: "rap",
-    },
-    {
-        videoID: "PLau9bkm0iK9t470JP18A4a_mI6G_5ffDt",
-        playlist: true,
-        top: true,
-        categorie: "rap",
-    },
-    {
         videoID: "UULFM9r1xn6s30OnlJWb-jc3Sw",
         text: "XXXTentatcion",
         playlist: true,
@@ -2062,6 +2044,178 @@ var videolinks = [
         videoID: "D_LgE4bSWE",
         categorie: "phonk",
         top: true,
+    },
+    {
+        videoID: "6XvMofl_T9M",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "5SejM_hBvMM",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "9LSyWM2CL-U",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "onbC6N-QGPc",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "lzQpS1rH3zI",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "RG9xHEF1vyk",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "HA1srD2DwaI",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "euSAgaub3m8",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "3JBKp0YbSEc",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "Z9yaG27quz0",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "OcQ71ubUXAE",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "1VSZtyenNlA",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "0_6RDuiUyFk",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "Hivf9Z_E3qU",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "3Klj_pjjqUM",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "rJZynxvJnlI",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "DqZhP-Vuxgs",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "9gHwgVRRCWg",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "pqiO8wV4-wc",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "2avPJ9TZNmU",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "5Di20x6vVVU",
+        categorie: "moody rap electro",
+        top: true,
+    },
+    {
+        videoID: "swDam6Hrsm8",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "dIzgiclddlM",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "C5i-UnuUKUI",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "ZengOKCUBHo",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "RRl_C73vFtQ",
+        categorie: "moody rap",
+        top: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9uO97iFU4T_Ye0oC2SfHlcn",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9seiLWf_LsCkUYmaOzcFL0F",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9t470JP18A4a_mI6G_5ffDt",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9t1DPKultYqH3q8yWpg-SvR",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9t7prUV3Lg-Wraqi4k43yVs",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9ssN1pNrA2Fr1o5686CGCSK",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
+    },
+    {
+        videoID: "PLau9bkm0iK9twhgsxr-bFTEchn_T9O0qW",
+        categorie: "moody rap",
+        top: true,
+        playlist: true,
     }
 ];
 
