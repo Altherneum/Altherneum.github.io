@@ -2216,6 +2216,21 @@ var videolinks = [
         categorie: "moody rap",
         top: true,
         playlist: true,
+    },
+    {
+        videoID: "tOq_kHo6jNc",
+        categorie: "chilljp chill classic",
+        top: true,
+    },
+    {
+        videoID: "OsUFgUxm5bY",
+        categorie: "classic histoire",
+        top: true,
+    },
+    {
+        videoID: "GkI9X5g9nKc",
+        categorie: "phonk",
+        top: true,
     }
 ];
 
