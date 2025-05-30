@@ -1262,6 +1262,13 @@ const links = [
         tag: "URL Web outils Queryable Film",
         svg: "/assets/svg/film.svg",
         queryURL: "https://www.imdb.com/fr/find/?q=",
+    },
+    {
+        href: "https://fr.wikipedia.org/",
+        text: "Wikipédia",
+        tag: "URL Web outils Queryable",
+        svg: "/assets/svg/book.svg",
+        queryURL: "https://fr.wikipedia.org/wiki/",
     }
 ];
 
