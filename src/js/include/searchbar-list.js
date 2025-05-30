@@ -1256,6 +1256,13 @@ const links = [
         svg: "/assets/svg/ip.svg",
         queryURL: "https://dnschecker.org/#SRV/",
     },
+    {
+        href: "https://www.imdb.com/",
+        text: "IMDB Internet Movie DataBase",
+        tag: "URL Web outils Queryable Film",
+        svg: "/assets/svg/film.svg",
+        queryURL: "https://www.imdb.com/fr/find/?q=",
+    }
 ];
 
 /*
