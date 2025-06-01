@@ -2231,7 +2231,105 @@ var videolinks = [
         videoID: "GkI9X5g9nKc",
         categorie: "phonk",
         top: true,
-    }
+    },
+    {
+        videoID: "a2giXO6eyuI",
+        categorie: "histoire moody",
+        top: true,
+    },
+    {
+        videoID: "v2-OP8GvYUo",
+        categorie: "phonk histoire",
+        top: true,
+    },
+    {
+        videoID: "kO6ZJTl5tG4",
+        categorie: "phonk electro moody",
+    },
+    {
+        videoID: "E2ByhtoKmww",
+        categorie: "histoire",
+        top: true,
+    },
+    {
+        videoID: "9PpXu-2fPHc",
+        categorie: "rock histoire",
+        top: true,
+    },
+    {
+        videoID: "orfnDxKJ-bk",
+        categorie: "electro chill",
+        top: true,
+    },
+    {
+        videoID: "WvV5TbJc9tQ",
+        categorie: "rap moody",
+        top: true,
+    },
+    {
+        videoID: "-jRKsiAOAA8",
+        categorie: "rap moody",
+        top: true,
+    },
+    {
+        videoID: "3rkJ3L5Ce80",
+        categorie: "rap moody",
+        top: true,
+    },
+    {
+        videoID: "xAMgQQMZ9Lk",
+        categorie: "rap moody",
+        top: true,
+    },
+    {
+        videoID: "zOujzvtwZ6M",
+        categorie: "rap moody",
+        top: true,
+    },
+    {
+        videoID: "heJNHYCSsIc",
+        categorie: "rap moody",
+    },
+    {
+        videoID: "KQBRM1GK3T4",
+        categorie: "rap moody",
+    },
+    {
+        videoID: "fudsUhWAG_o",
+        categorie: "rap moody",
+    },
+    {
+        videoID: "IS00aMLD71I",
+        categorie: "chill classic",
+        top: true,
+    },
+    {
+        videoID: "Wp5tq856U5U",
+        categorie: "phonk",
+        top: true,
+    },
+    {
+        videoID: "M3AQ6W116jo",
+        categorie: "slavic rap",
+        top: true,
+    },
+    {
+        videoID: "NfGw8crLcDw",
+        categorie: "histoire",
+        top: true,
+    },
+    {
+        videoID: "Lq5cYU2obvw",
+        categorie: "histoire trool classic",
+    },
+    {
+        videoID: "_qZ4Uc9gOtk",
+        categorie: "histoire trool classic",
+    },
+    {
+        videoID: "ZEqGswXDYQM",
+        categorie: "histoire chill classic",
+    },
 ];
 
 var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];

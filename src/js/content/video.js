@@ -5,6 +5,24 @@ var videolinks = [
         top: true,
     },
     {
+        videoID: "qKLthUOsUAE",
+        categorie: "science",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "NmWC8icpcHI",
+        categorie: "IT humour",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "G9Nd9mKbMJo",
+        categorie: "IT science",
+        top: true,
+        short: true,
+    },
+    {
         videoID: "8rmNzeMovTo",
         categorie: "hack science IT code",
         top: true,
@@ -1189,6 +1207,116 @@ var videolinks = [
         videoID: "aj3uBl9hFxY",
         categorie: "science IT hack malware",
     },
+    {
+        videoID: "VZQEuUgktNs",
+        categorie: "IT science hack politique",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "afxO-FAsYSU",
+        categorie: "science chem",
+        short: true,
+    },
+    {
+        videoID: "sB-NuoWZrrw",
+        categorie: "science IA IT",
+    },
+    {
+        videoID: "PL59a7l4KFi02WEYV11Yp-wpJPfQJFMEEz",
+        categorie: "humour archive",
+        playlist: true,
+        top: true,
+    },
+    {
+        videoID: "2_HsFuPHHLw",
+        categorie: "science IT",
+    },
+    {
+        videoID: "5aN4Xg0VvCs",
+        categorie: "IA science IT politique",
+    },
+    {
+        videoID: "0oH-eqODWXI",
+        categorie: "IA science IT code hack",
+        top: true,
+    },
+    {
+        videoID: "f-x5cB6qCzA",
+        categorie: "science IT code Linux",
+    },
+    {
+        videoID: "CHAN-S3WYqg",
+        categorie: "science IT code Linux game",
+    },
+    {
+        videoID: "pr9s8779FkA",
+        categorie: "hack IT OpSec malware Linux",
+    },
+    {
+        videoID: "yxWW7IlugQA",
+        categorie: "science IT Linux code",
+    },
+    {
+        videoID: "GN1Oaw3iEmQ",
+        categorie: "IA discord",
+    },
+    {
+        videoID: "BaxFKU5bZMo",
+        categorie: "discord game",
+    },
+    {
+        videoID: "mjxYv19HGrw",
+        categorie: "hack malware politique science IT",
+    },
+    {
+        videoID: "Jt5YeKvPa9g",
+        categorie: "science IT hardware",
+        short: true,
+    },
+    {
+        videoID: "iX3JT6q3AxA",
+        categorie: "IT OpSec",
+        top: true,
+    },
+    {
+        videoID: "OCIwAp3W87A",
+        categorie: "chem science",
+    },
+    {
+        videoID: "XJD9MQLaQ-g",
+        categorie: "discord",
+    },
+    {
+        videoID: "hE55JVTCwuI",
+        categorie: "malware hack science IT",
+    },
+    {
+        videoID: "C8fkun4Gfhk",
+        categorie: "hardware science IT",
+    },
+    {
+        videoID: "XMzQCPfG0x4",
+        categorie: "IT science hardware",
+    },
+    {
+        videoID: "jqq86RkhEvM",
+        categorie: "IT science IA hack",
+        top: true,
+    },
+    {
+        videoID: "bLO0fKAVBLU",
+        categorie: "IT science",
+    },
+    {
+        videoID: "10-IndqupZo",
+        categorie: "science IT chem",
+    },
+    {
+        videoID: "2kAcVsVYSUY",
+        categorie: "science IT game",
+        top: true,
+    },
 ];
 
 var VideoListType = ["politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
@@ -1211,6 +1339,7 @@ function getVideoChannel(){
     getLatestVideoOfChannel("UCsrPUA0ZSDCNZC6wyRlR7ZA", 2, "news", "", false, true);
     getLatestVideoOfChannel("UCAcAnMF0OrCtUep3Y4M-ZPw", 2, "news", "", false, true);
     getLatestVideoOfChannel("UC6VU3w1kFiBuXdPabVT2jCA", 2, "IT", "", false, true);
+    getLatestVideoOfChannel("UCssa3kvvvzM5cUeOG-FnQIw", 5, "science", "", true, true);
 }
 
 function GetVideoList(){
