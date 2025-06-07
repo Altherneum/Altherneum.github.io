@@ -409,11 +409,11 @@ var videolinks = [
     },
     {
         videoID: "oaISU5KmTPA",
-        categorie: "chill long",
+        categorie: "chill long jazz",
     },
     {
         videoID: "Yui-e1VDGM8",
-        categorie: "chill long electro",
+        categorie: "chill long electro jazz",
     },
     {
         text: "<a target='_blank' href='#yt-DyDfgMOUjCI'>Original</a>",
@@ -1337,12 +1337,14 @@ var videolinks = [
     },
     {
         videoID: "eJIL35tCbVE",
-        categorie: "phonk",
+        categorie: "phonk jazz",
+        text: "<a target='_blank' href='#yDoyUJkNEL4'>Original</a>",
         top: true,
     },
     {
         videoID: "yDoyUJkNEL4",
-        categorie: "chill",
+        categorie: "chill jazz",
+        text: "<a target='_blank' href='#eJIL35tCbVE'>Remix</a>",
         top: true,
     },
     {
@@ -1357,7 +1359,7 @@ var videolinks = [
     },
     {
         videoID: "lp5PwrOshgE",
-        categorie: "chill",
+        categorie: "chill jazz",
     },
     {
         videoID: "PKQPey6L42M",
