@@ -73,19 +73,8 @@
     padding-left: 15px;
 }
 
-.markdowned>p>details[open]>summary,
-.markdowned>p>details[open] *[open]>summary{
-    border-bottom-style: solid;
-}
-
 .markdowned>p>details:not(:first-child){
     margin-top: 15px;
-}
-
-.markdowned>p>details>details{
-    border-width: 1px;
-    border-top-width: 2px;
-    border-style: solid;
 }
 
 .markdowned>p>details summary:active,
@@ -93,11 +82,13 @@
     border-radius: 16px;
     border-bottom-style: solid;
     border-color: var(--text-color);
+    border-style: none;
 }
 
 .markdowned>p details {
     padding: 10px;
     padding-left: 15px;
+    padding-bottom: 20px;
 }
 
 .markdowned>p h1,
