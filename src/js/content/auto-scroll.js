@@ -27,7 +27,7 @@ function DoScrollIntoView(element, once, type) {
             onceIsDone = true;
         }
         console.log(element.id);
-        document.title = pageTitle + " # " + element.parentElement.textContent.replace("#", "");
+        document.title = pageTitle + " # " + element.parentElement.textContent.replaceAll("#", "");
     }
 }
 
