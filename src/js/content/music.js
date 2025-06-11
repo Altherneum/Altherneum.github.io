@@ -409,11 +409,11 @@ var videolinks = [
     },
     {
         videoID: "oaISU5KmTPA",
-        categorie: "chill long",
+        categorie: "chill long jazz",
     },
     {
         videoID: "Yui-e1VDGM8",
-        categorie: "chill long electro",
+        categorie: "chill long electro jazz",
     },
     {
         text: "<a target='_blank' href='#yt-DyDfgMOUjCI'>Original</a>",
@@ -462,7 +462,7 @@ var videolinks = [
     {
         videoID: "MgOXIbgPfeI",
         top: true,
-        categorie: "chilljp",
+        categorie: "chilljp phonk",
     },
     {
         videoID: "eSZFIXbqmhs",
@@ -1259,7 +1259,7 @@ var videolinks = [
     },
     {
         videoID: "seJ83vfHoIU",
-        categorie: "histoire",
+        categorie: "histoire moody chill",
         top: true,
     },
     {
@@ -1337,12 +1337,14 @@ var videolinks = [
     },
     {
         videoID: "eJIL35tCbVE",
-        categorie: "phonk",
+        categorie: "phonk jazz",
+        text: "<a target='_blank' href='#yDoyUJkNEL4'>Original</a>",
         top: true,
     },
     {
         videoID: "yDoyUJkNEL4",
-        categorie: "chill",
+        categorie: "chill jazz",
+        text: "<a target='_blank' href='#eJIL35tCbVE'>Remix</a>",
         top: true,
     },
     {
@@ -1357,7 +1359,7 @@ var videolinks = [
     },
     {
         videoID: "lp5PwrOshgE",
-        categorie: "chill",
+        categorie: "chill jazz",
     },
     {
         videoID: "PKQPey6L42M",
@@ -2330,9 +2332,60 @@ var videolinks = [
         videoID: "ZEqGswXDYQM",
         categorie: "histoire chill classic",
     },
+    {
+        videoID: "TqbF2egtSvY",
+        categorie: "electro",
+        top: true,
+    },
+    {
+        videoID: "qG9-ukXaJ5M",
+        categorie: "electro chill classic jazz",
+        top: true,
+    },
+    {
+        videoID: "wed87yyVNcM",
+        categorie: "electro moody",
+        text: "<a target='_blank' href='#QrwzGEOKcfw'>Original</a>",
+        top: true,
+    },
+    {
+        videoID: "QrwzGEOKcfw",
+        categorie: "moody chill histoire",
+        text: "<a target='_blank' href='#wed87yyVNcM'>Remix</a>",
+        top: true,
+    },
+    {
+        videoID: "LC_FdVkjSMQ",
+        categorie: "electro",
+        text: "<a target='_blank' href='#248eDM0rKtc'>Original</a>",
+        top: true,
+    },
+    {
+        videoID: "248eDM0rKtc",
+        categorie: "electro",
+        text: "<a target='_blank' href='#LC_FdVkjSMQ'>Remix</a>",
+        top: true,
+    },
+    {
+        videoID: "wU5xRUkUVFM",
+        categorie: "moody electro",
+        text: "<a target='_blank' href='#yI_TvT5D-zM'>Original</a>",
+        top: true,
+    },
+    {
+        videoID: "yI_TvT5D-zM",
+        categorie: "moody chill",
+        text: "<a target='_blank' href='#wU5xRUkUVFM'>Remix</a>",
+        top: true,
+    },
+    {
+        videoID: "VCpVBxZm9jw",
+        categorie: "phonk",
+        top: true,
+    },
 ];
 
-var VideoListType = ["rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
+var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
 
 function getVideoListType(){
     return VideoListType;
@@ -2376,6 +2429,8 @@ function getEmoji(VideoListType){
             return "⌛";
         case 'moody':
             return "😔";
+        case 'jazz':
+            return "🎷";
         default:
             return "❓";
       }
