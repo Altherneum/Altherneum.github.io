@@ -66,6 +66,7 @@
 .markdowned>p>details summary>*
 {
     display: inline;
+    scroll-margin-top: 100px;
 }
 
 .markdowned>p>details summary {

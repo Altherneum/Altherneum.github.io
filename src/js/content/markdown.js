@@ -109,8 +109,8 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
 
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="markdown">\n<summary><h1>$1</h1></summary>$2\n</details>\n')
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2">\n<summary><h2>$1</h2></summary>\n$2</details>\n')
+    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="markdown">\n<summary onclick="openAndScrollToSummary(this)"><h1>$1</h1></summary>$2\n</details>\n')
+    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2">\n<summary onclick="openAndScrollToSummary(this)"><h2>$1</h2></summary>\n$2</details>\n')
     //fix le regex laisse parfois le dernier char dans le groupe n°3 et ça fait déconner tout même si le $3 est pas use
     //semble fix par les \n ajoutés dans le replace (à vérifier par le temps)
 
@@ -585,4 +585,17 @@ function setAnchorTitles(anchorListElement, text) {
         setScrollBehavior(anchorOnList, "start");
         anchorListElement.appendChild(anchorOnList);
     }
+}
+
+function openAndScrollToSummary(element) {
+    var childs = element.children;
+    setTimeout(() => {
+        DoScrollIntoView(childs[0], false, "start");
+    }, 100);
+
+    var hrefChild = childs[0].children;
+    var URL = hrefChild[0].href;
+    
+    //window.location.hash = URL;
+    history.pushState(null, null, URL);
 }

@@ -15,6 +15,7 @@ function autoScroll(once, type) {
     DoScrollIntoView(element, once, type);
 }
 
+var pageTitle = document.title;
 function DoScrollIntoView(element, once, type) {
     if (element !== null) {
         if (once === true && onceIsDone === true) {
@@ -25,6 +26,8 @@ function DoScrollIntoView(element, once, type) {
             element.focus(); // no browser good support yet : // element.focus({ focusVisible: true });
             onceIsDone = true;
         }
+        console.log(element.id);
+        document.title = pageTitle + " # " + element.parentElement.textContent.replace("#", "");
     }
 }
 
@@ -65,7 +68,7 @@ function makeElementMoreVisible(element) {
 
             {
                 opacity: "0",
-                transform: "rotateX(90def)",
+                transform: "rotateX(90deg)",
             },
             {
                 opacity: "0.80",
