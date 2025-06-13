@@ -1,10 +1,3 @@
-button {
-    background-color: var(--main-color-transparent);
-    border-color: var(--text-color);
-    -webkit-backdrop-filter: blur(12px);
-    backdrop-filter: blur(12px);
-}
-
 body {
     position: relative;
     overflow-x: clip;
@@ -142,6 +135,13 @@ html {
     margin-block-end: 0;
 }
 
+button {
+    background-color: var(--main-color-transparent);
+    border-color: var(--text-color);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+
 input[type=checkbox].checkboxBox {
     appearance: none;
 
@@ -164,6 +164,15 @@ input[type="checkbox"].checkboxBox:checked {
         position: absolute;
         color: var(--background-color);
     }
+}
+
+button:focus-within,
+input:focus-within~span{
+    outline-color: var(--text-color);
+    outline-offset: 3px;
+    outline-width: 2px;
+    outline-style: solid;
+    transition: 0ms !important;
 }
 
 .check,
