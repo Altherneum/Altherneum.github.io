@@ -24,7 +24,7 @@
 }
 
 #console-header-topmenu{
-
+    user-select: none;
 }
 
 #console-header-topmenu>p{

@@ -61,12 +61,16 @@
 .youtubeEmbed>.videoholder>.card>.videoDiv>button:focus-visible,
 .youtubeEmbed>.videoholder>.card>.videoDiv>button:focus-within,
 .youtubeEmbed>.videoholder>.card>.videoDiv>button:focus {
-    outline-color: var(--background-color);
-    outline-offset: -3px !important;
     border-radius: inherit;
+
+    outline-color: var(--background-color);
+    outline-offset: -6px !important;
     outline-style: solid;
     outline-width: 3px;
-    box-shadow: 0 0 20px 10px var(--text-color);
+
+    border-color: var(--text-color);
+    border-style: solid;
+    border-width: 3px;
 }
 
 .menu {
@@ -78,7 +82,7 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-bottom: 25px;
-    gap: 5px;
+    gap: 20px;
 }
 
 
