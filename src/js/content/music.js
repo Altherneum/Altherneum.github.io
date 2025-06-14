@@ -1990,6 +1990,7 @@ var videolinks = [
         videoID: "91GTuZWCQmY",
         categorie: "histoire chill rock slavic",
         top: true,
+        text: "<a target='_blank' href='#s1ATTIQrmIQ'>Copy</a>",
     },
     {
         videoID: "K1NP4UTL8d8",
@@ -2387,6 +2388,11 @@ var videolinks = [
         videoID: "MFhKnRLEihE",
         categorie: "histoire",
     },
+    {
+        videoID: "s1ATTIQrmIQ",
+        categorie: "slavic histoire rock chill",
+        text: "<a target='_blank' href='#91GTuZWCQmY'>Copy</a>",
+    }
 ];
 
 var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
