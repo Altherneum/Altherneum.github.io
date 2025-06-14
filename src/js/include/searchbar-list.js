@@ -1269,6 +1269,12 @@ const links = [
         tag: "URL Web outils Queryable",
         svg: "/assets/svg/book.svg",
         queryURL: "https://fr.wikipedia.org/wiki/",
+    },
+    {
+        href: "https://chat.mistral.ai/chat",
+        text: "Mistral AI chat",
+        tag: "URL Web outils IA",
+        svg: "/assets/svg/ai-ml.svg",
     }
 ];
 
