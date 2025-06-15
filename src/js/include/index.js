@@ -202,8 +202,11 @@ function pathNameMatchPage(path, strict) {
 
 function devMode() {
     if (window.location.hostname === "127.0.0.1") {
-        return true;
+        return true; //Preview on local vscode
+    } else if (window.location.hostname === "3000.code.altherneum.fr"){
+        return true; //Preview mode on code-server
     }
+
     if (localStorage.getItem('devMode') === "true") {
         return true;
     }
