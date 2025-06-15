@@ -22,12 +22,13 @@ footer {
     user-select: none;
 }
 
-footer>div>a,
-footer>div>p {
+footer>div>div>a,
+footer>div>div>p {
     margin: 5px;
     text-decoration: none;
 }
-footer>*{
+footer>div>div,
+footer>nav{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
