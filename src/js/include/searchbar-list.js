@@ -1275,6 +1275,27 @@ const links = [
         text: "Mistral AI chat",
         tag: "URL Web outils IA",
         svg: "/assets/svg/ai-ml.svg",
+    },
+    {
+        href: "https://code.altherneum.fr/",
+        text: "Code-Server @ Altherneum .fr",
+        tag: "URL :// Outils Github Admin Développement Queryable",
+        svg: "/assets/svg/language.svg",
+        queryURL: "https://code.altherneum.fr/?folder=",
+    },
+    {
+        href: "https://code.altherneum.fr/?folder=/home/vscode/repo/",
+        text: "Code-Server ~/repo /...",
+        tag: "URL :// Outils Github Admin Développement Queryable",
+        svg: "/assets/svg/language.svg",
+        queryURL: "https://code.altherneum.fr/?folder=/home/vscode/repo/",
+    },
+    {
+        href: "https://3000.code.altherneum.fr/",
+        text: "Live Preview - Code-Server @ Altherneum .fr",
+        tag: "URL :// Outils Github Admin Développement Queryable",
+        svg: "/assets/svg/language.svg",
+        queryURL: "https://3000.code.altherneum.fr/",
     }
 ];
 
