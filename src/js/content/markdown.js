@@ -109,12 +109,37 @@ const parseMarkdown = async (text) => {
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)>)\`{2} (.*?) \`{2}/gm, '<code>$1</code>') // backtick inside <code>
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)>)\`{1,2}(.*?)\`{1,2}/gm, '<code>$1</code>') // <code>
 
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="markdown">\n<summary onclick="openAndScrollToSummary(this)"><h1>$1</h1></summary>$2\n</details>\n')
-    toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2">\n<summary onclick="openAndScrollToSummary(this)"><h2>$1</h2></summary>\n$2</details>\n')
-    //fix le regex laisse parfois le dernier char dans le groupe n°3 et ça fait déconner tout même si le $3 est pas use
-    //semble fix par les \n ajoutés dans le replace (à vérifier par le temps)
+    let openAll=true;
+    if (localStorage.getItem('OpenAllChapter') === "false") {
+        openAll=false
+    }
 
-    //ajouter l'auto scroll quand cliqué sur un chapitre
+    let closeOnOpen=false;
+    if (localStorage.getItem('CloseOnOpen') === "true") {
+        openAll=true
+    }
+
+    if(openAll === true){
+        if(closeOnOpen === true){
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="markdown" open>\n<summary onclick="openAndScrollToSummary(this)"><h1>$1</h1></summary>$2\n</details>\n')
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2" open>\n<summary onclick="openAndScrollToSummary(this)"><h2>$1</h2></summary>\n$2</details>\n')
+        }
+        else{
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="$1" open>\n<summary onclick="openAndScrollToSummary(this)"><h1>$1</h1></summary>$2\n</details>\n')
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="$1" open>\n<summary onclick="openAndScrollToSummary(this)"><h2>$1</h2></summary>\n$2</details>\n')
+        }
+    }
+    else{
+        if(closeOnOpen === true){
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="markdown">\n<summary onclick="openAndScrollToSummary(this)"><h1>$1</h1></summary>$2\n</details>\n')
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="markdown2">\n<summary onclick="openAndScrollToSummary(this)"><h2>$1</h2></summary>\n$2</details>\n')
+        }
+        else{
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{1} (.*)(([\s\S](?!^#{1} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*)))*)/gim, '<details name="$1">\n<summary onclick="openAndScrollToSummary(this)"><h1>$1</h1></summary>$2\n</details>\n')
+            toHTML = toHTML.replace(/(?<!<(?:textarea|code|!)[^>]*>[^<]*)^#{2} (.*)(([\s\S](?!^#{2} .*(?<!<(?:textarea|code|!)[^>]*>[^<]*))(?!<\/(?:details)[^>]*>[^<]*))*)/gim, '<details name="$1">\n<summary onclick="openAndScrollToSummary(this)"><h2>$1</h2></summary>\n$2</details>\n')
+
+        }
+    }
 
     toHTML = toHTML.replace(/(?<!.)(-{3,})(?!.)/g, '<hr/>') //hr (Decoration line)
 
@@ -486,23 +511,35 @@ function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     checkbox.classList = "checkboxToggle invert";
     var input = document.createElement("input");
     input.type = "checkbox";
-    var isOn = false;
+    
+    var hideSummary = false;
+    if (localStorage.getItem('Titre2') === "false" && ElementClassName === "summary-h2") {
+        hideSummary = true;
+    }
+    else if (localStorage.getItem('Titre3Plus') === "false" && ElementClassName === "summary-hidder") {
+        hideSummary = true;
+    }
+    input.checked = hideSummary;
+
     input.onclick = () => {
         var list = document.getElementById('anchorList').getElementsByClassName(ElementClassName);
 
-        if (isOn) {
-            isOn = false;
-        } else {
-            isOn = true;
-        }
+        console.log(input.checked);
 
         for (i = 0; i < list.length; i++) {
             var childDiv = list[i];
-            if (isOn) {
-                childDiv.style.display = "none";
-            } else {
+            if (!input.checked) {
                 childDiv.style.display = "block";
+            } else {
+                childDiv.style.display = "none";
             }
+        }
+
+        if(ElementClassName === "summary-h2"){
+            localStorage.setItem("Titre2", !input.checked);
+        }
+        else if(ElementClassName === "summary-hidder"){
+            localStorage.setItem("Titre3Plus", !input.checked);
         }
     };
 
@@ -539,47 +576,73 @@ function setAnchorTitles(anchorListElement, text) {
 
         var anchorOnList = document.createElement("a");
         anchorOnList.href = "#" + text;
+        /*
+
+        under condition H1/H2... the localstorage to set if block or none display
+
+        */
         if (childDivs[i].tagName.toLocaleLowerCase() === "h1") {
             anchorOnList.textContent = "#1 " + textPre;
             anchor.textContent = "# ";
             anchorOnList.style = "margin-left:5px;font-size: large;";
             anchorOnList.className = "summary-h1";
+            if(localStorage.getItem("Titre2") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h2") {
             anchorOnList.textContent = "#2 " + textPre;
             anchor.textContent = "## ";
             anchorOnList.style = "margin-left:10px;text-decoration:none;font-size: medium;";
             anchorOnList.className = "summary-h2";
+            if(localStorage.getItem("Titre3Plus") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h3") {
             anchorOnList.textContent = "#3 " + textPre;
             anchor.textContent = "### ";
             anchorOnList.style = "margin-left:15px;text-decoration:none;font-size: small;";
             anchorOnList.className = "summary-hidder";
+            if(localStorage.getItem("Titre3Plus") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h4") {
             anchorOnList.textContent = "#4 " + textPre;
             anchor.textContent = "#### ";
             anchorOnList.style = "margin-left:20px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
+            if(localStorage.getItem("Titre3Plus") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h5") {
             anchorOnList.textContent = "#5 " + textPre;
             anchor.textContent = "##### ";
             anchorOnList.style = "margin-left:25px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
+            if(localStorage.getItem("Titre3Plus") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h6") {
             anchorOnList.textContent = "#6 " + textPre;
             anchor.textContent = "###### ";
             anchorOnList.style = "margin-left:30px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
+            if(localStorage.getItem("Titre3Plus") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
         else {
             anchorOnList.textContent = "#7+ " + textPre;
             anchor.textContent = "#7+";
             anchorOnList.style = "margin-left:35px;text-decoration:none;font-size: xx-small;";
             anchorOnList.className = "summary-hidder";
+            if(localStorage.getItem("Titre3Plus") === "true"){
+                anchorOnList.style.display = "none";
+            }
         }
 
         setScrollBehavior(anchorOnList, "start");

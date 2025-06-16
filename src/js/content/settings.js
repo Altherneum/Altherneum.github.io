@@ -61,6 +61,22 @@ function SwitchLogLogging() {
     Switcher("LogLogging");
 }
 
+function SwitchOpenAllChapter() {
+    Switcher("OpenAllChapter");
+}
+
+function SwitchCloseOnOpen() {
+    Switcher("CloseOnOpen");
+}
+
+function SwitchTitre2() {
+    Switcher("Titre2");
+}
+
+function SwitchTitre3Plus() {
+    Switcher("Titre3Plus");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -109,4 +125,8 @@ function loadSettingsSwitch() {
     setSwitch("ErrorLogging", false);
     setSwitch("VisitedLogs", true);
     setSwitch("AllLogs", false);
+    setSwitch("OpenAllChapter", true);
+    setSwitch("CloseOnOpen", false);
+    setSwitch("Titre2", true);
+    setSwitch("Titre3Plus", true);
 }

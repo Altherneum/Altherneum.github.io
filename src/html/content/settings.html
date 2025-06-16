@@ -53,6 +53,40 @@
 
     <div class="check">
         <div class="checkboxToggle">
+            <input type="checkbox" id="OpenAllChapter" onclick="SwitchOpenAllChapter()" />
+            <span></span>
+        </div>
+        <p>Ouvrir tout les chapitres à l'ouverture de Markdown</p>
+    </div>
+    <div class="check">
+        <div class="checkboxToggle">
+            <input type="checkbox" id="CloseOnOpen" onclick="SwitchCloseOnOpen()" />
+            <span></span>
+        </div>
+        <p>Fermer les chapiters à l'ouverture d'un autre</p>
+    </div>
+
+    <hr>
+
+    <div class="check">
+        <div class="checkboxToggle invert">
+            <input type="checkbox" id="Titre2" onclick="SwitchTitre2()" />
+            <span></span>
+        </div>
+        <p>Titre 2 dans le sommaire</p>
+    </div>
+    <div class="check">
+        <div class="checkboxToggle invert">
+            <input type="checkbox" id="Titre3Plus" onclick="SwitchTitre3Plus()" />
+            <span></span>
+        </div>
+        <p>Titres 3+ dans le sommaire</p>
+    </div>
+    
+    <hr>
+
+    <div class="check">
+        <div class="checkboxToggle">
             <input type="checkbox" id="OldSearchBar" onclick="SwitchOldSearchBar()" />
             <span></span>
         </div>

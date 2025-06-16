@@ -38,11 +38,11 @@
 .markdowned {
     margin-bottom: 50px;
     border-radius: 16px;
-    border-style: solid;
+    border-left-style: solid;
 }
 
 .markdowned>p details[open] {
-    border-style: dashed;
+    border-left-style: dashed;
     border-radius: 16px;
 }
 
