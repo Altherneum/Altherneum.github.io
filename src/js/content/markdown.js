@@ -586,16 +586,13 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "# ";
             anchorOnList.style = "margin-left:5px;font-size: large;";
             anchorOnList.className = "summary-h1";
-            if(localStorage.getItem("Titre2") === "true"){
-                anchorOnList.style.display = "none";
-            }
         }
         else if (childDivs[i].tagName.toLocaleLowerCase() === "h2") {
             anchorOnList.textContent = "#2 " + textPre;
             anchor.textContent = "## ";
             anchorOnList.style = "margin-left:10px;text-decoration:none;font-size: medium;";
             anchorOnList.className = "summary-h2";
-            if(localStorage.getItem("Titre3Plus") === "true"){
+            if(localStorage.getItem("Titre2") === "false"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -604,7 +601,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "### ";
             anchorOnList.style = "margin-left:15px;text-decoration:none;font-size: small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "true"){
+            if(localStorage.getItem("Titre3Plus") === "false"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -613,7 +610,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "#### ";
             anchorOnList.style = "margin-left:20px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "true"){
+            if(localStorage.getItem("Titre3Plus") === "false"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -622,7 +619,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "##### ";
             anchorOnList.style = "margin-left:25px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "true"){
+            if(localStorage.getItem("Titre3Plus") === "false"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -631,7 +628,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "###### ";
             anchorOnList.style = "margin-left:30px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "true"){
+            if(localStorage.getItem("Titre3Plus") === "false"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -640,7 +637,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "#7+";
             anchorOnList.style = "margin-left:35px;text-decoration:none;font-size: xx-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "true"){
+            if(localStorage.getItem("Titre3Plus") === "false"){
                 anchorOnList.style.display = "none";
             }
         }
