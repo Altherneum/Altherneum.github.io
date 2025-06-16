@@ -524,8 +524,6 @@ function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     input.onclick = () => {
         var list = document.getElementById('anchorList').getElementsByClassName(ElementClassName);
 
-        console.log(input.checked);
-
         for (i = 0; i < list.length; i++) {
             var childDiv = list[i];
             if (!input.checked) {
