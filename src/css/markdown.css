@@ -79,6 +79,9 @@
 .markdowned>p>details summary {
     padding: 10px;
     padding-left: 15px;
+    
+    position: relative;
+    z-index: 999 !important;
 }
 
 .markdowned>p>details:not(:first-child){
