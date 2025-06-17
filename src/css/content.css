@@ -21,6 +21,7 @@
     border-radius: 16px;
 
     margin-bottom: 2.5vh;
+    z-index: 1000;
 }
 
 #content-right,

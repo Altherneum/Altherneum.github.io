@@ -26,7 +26,7 @@ function DoScrollIntoView(element, once, type) {
             element.focus(); // no browser good support yet : // element.focus({ focusVisible: true });
             onceIsDone = true;
         }
-        console.log(element.id);
+        console.log("Scrolling to : " + element.id);
         document.title = pageTitle + " # " + element.parentElement.textContent.replaceAll("#", "");
     }
 }
@@ -56,6 +56,10 @@ function openParentSummaryIfFound(element, once) {
 
 function makeElementMoreVisible(element) {
     var newNode = element.parentNode;
+    if(element.id === "header" || element.id === "footer"){
+        return;
+    }
+    
     newNode.animate(
         [
         /*

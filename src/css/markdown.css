@@ -41,9 +41,16 @@
     border-left-style: solid;
 }
 
-.markdowned>p details[open] {
-    border-left-style: dashed;
+.markdowned>p>details[open] {
+    border-left-style: dotted;
     border-radius: 16px;
+    border-color: var(--second-default);
+}
+
+.markdowned>p>details>details[open]{
+    border-left-style: dashed;
+    border-radius: 10px;
+    border-color: var(--second-hover);
 }
 
 .markdowned>p details {
@@ -142,11 +149,25 @@
     display: contents;
 }
 
+#AnchorSummary>div.check{
+    width: fit-content;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #anchorList>#AnchorSummary>button {
     margin-bottom: 15px;
+
     border-radius: 16px;
+
     position: sticky;
     top: 0;
+
+    width: 75%;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #anchorList>#AnchorSummary>button>.svg {
@@ -260,6 +281,9 @@
         left: 0vw;
         right: 0vw;
         z-index: 1005;
+
+        scrollbar-width: none;
+        padding-right: 20%;
     }
 
     #content-left{
