@@ -2397,6 +2397,74 @@ var videolinks = [
         videoID: "FUBy7SrQ1PE",
         categorie: "rap moody histoire",
         top: true,
+    },
+    {
+        videoID: "Qy9LTRu89FA",
+        categorie: "histoire chill classic",
+        top: true,
+    },
+    {
+        videoID: "LZyybvVx-js",
+        categorie: "moody chill",
+    },
+    {
+        videoID: "fzeWc3zh01g",
+        categorie: "moody chill",
+        top: true,
+    },
+    {
+        videoID: "DmWWqogr_r8",
+        categorie: "Rap moody histoire",
+        top: true,
+    },
+    {
+        videoID: "HyHNuVaZJ-k",
+        categorie: "histoire chill rock",
+        top: true,
+    },
+    {
+        videoID: "1V_xRb0x9aw",
+        categorie: "histoire rock rap",
+        top: true,
+    },
+    {
+        videoID: "cLnkQAeMbIM",
+        categorie: "histoire chill rock",
+        top: true,
+    },
+    {
+        videoID: "nhPaWIeULKk",
+        categorie: "chill rock histoire",
+    },
+    {
+        videoID: "170sceOWWXc",
+        categorie: "histoire rock",
+        top: true,
+    },
+    {
+        videoID: "",
+        categorie: "",
+        top: true,
+    },
+    {
+        videoID: "",
+        categorie: "",
+        top: true,
+    },
+    {
+        videoID: "",
+        categorie: "",
+        top: true,
+    },
+    {
+        videoID: "",
+        categorie: "",
+        top: true,
+    },
+    {
+        videoID: "",
+        categorie: "",
+        top: true,
     }
 ];
 

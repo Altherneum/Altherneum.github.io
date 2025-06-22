@@ -1296,6 +1296,13 @@ const links = [
         tag: "URL :// Outils Github Admin Développement Queryable",
         svg: "/assets/svg/language.svg",
         queryURL: "https://3000.code.altherneum.fr/",
+    },
+    {
+        href: "https://ipinfo.io/",
+        text: "ipinfo.io",
+        tag: "IP Queryable URL Outils OpSec Web",
+        svg: "/assets/svg/ip.svg",
+        queryURL: "https://ipinfo.io/",
     }
 ];
 
