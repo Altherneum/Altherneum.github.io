@@ -1303,6 +1303,13 @@ const links = [
         tag: "IP Queryable URL Outils OpSec Web",
         svg: "/assets/svg/ip.svg",
         queryURL: "https://ipinfo.io/",
+    },
+    {
+        href: "https://quickref.me/",
+        text: "quickref.me",
+        tag: "Queryable URL Outils Admin Web Cours Développement",
+        svg: "/assets/svg/book.svg",
+        queryURL: "https://quickref.me/",
     }
 ];
 
