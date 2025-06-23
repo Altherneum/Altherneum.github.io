@@ -1471,6 +1471,22 @@ var videolinks = [
         short: true,
         top: true,
     },
+    {
+        videoID: "UZ5d5UYx2jc",
+        categorie: "science IT hardware",
+        short: true,
+        top: true,
+    },
+    {
+        videoID: "FPNOSiqtj1U",
+        categorie: "science OpSec",
+        short:true,
+    },
+    {
+        videoID: "MTAfmypX-hI",
+        categorie: "IT science OpSec archive politique",
+        short: true,
+    }
 ];
 
 var VideoListType = ["politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
