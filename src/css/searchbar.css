@@ -35,12 +35,15 @@ a.cardTitle{
 }
 
 #NavBarHolder,
-#searchbar,
+#searchbar{
+    z-index: 990;
+}
+
 #search-box,
 #result-box,
 #search-box>input,
 #search-tips {
-    z-index: 990;
+    z-index: 1005;
 }
 
 #search-box,
