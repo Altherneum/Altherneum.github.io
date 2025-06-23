@@ -1979,6 +1979,13 @@ var videolinks = [
     {
         videoID: "R9PNKMwVW5M",
         categorie: "chill histoire chilljp",
+        text: "<a target='_blank' href='#ETvIJFa1c-0'>Anime version</a>",
+        top: true,
+    },
+    {
+        videoID: "ETvIJFa1c-0",
+        categorie: "chill histoire chilljp",
+        text: "<a target='_blank' href='#R9PNKMwVW5M'>Original</a>",
         top: true,
     },
     {
@@ -2442,30 +2449,59 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "XOsY3W3dlI0",
+        categorie: "histoire chill",
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "LjtvF_UuRIU",
+        categorie: "histoire chill",
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "tqxRidAWER8",
+        categorie: "histoire rap",
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "RgKAFK5djSk",
+        categorie: "histoire moody chill",
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "HCjNJDNzw8Y",
+        categorie: "histoire chill",
         top: true,
-    }
+    },
+    {
+        videoID: "nidQCt_HEsY",
+        categorie: "slavic histoire chill",
+        top: true,
+    },
+    {
+        videoID: "IKEUlAc7v_w",
+        categorie: "moody rap histoire",
+        top: true,
+    },
+    {
+        videoID: "oorVWW9ywG0",
+        categorie: "rap histoire",
+        top: true,
+    },
+    {
+        videoID: "pvy9km7g6fw",
+        categorie: "rock",
+        top: true,
+    },
+    {
+        videoID: "IlRDZUaJ8fs",
+        categorie: "rock histoire",
+    },
+    {
+        videoID: "ljryOkkRlKA",
+        categorie: "histoire trool chill",
+        top: true,
+    },
 ];
 
 var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];

@@ -1405,20 +1405,72 @@ var videolinks = [
         short: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "0KcpqJZlQbo",
+        categorie: "code IT",
+        short: true,
+    },
+    {
+        videoID: "Nt9sQDZTdb4",
+        categorie: "politique archive",
+    },
+    {
+        videoID: "qbGtDfBfEV4",
+        categorie: "hack science IT",
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "vrz7-0pt2DU",
+        categorie: "code science IT hack",
         top: true,
     },
     {
-        videoID: "",
-        categorie: "",
+        videoID: "GQjDAmdsWjU",
+        categorie: "archive politique police",
         top: true,
-    }
+    },
+    {
+        videoID: "qHa0h8SWI00",
+        categorie: "code science IT hack",
+        top: true,
+    },
+    {
+        videoID: "v0oOGELKkZ4",
+        categorie: "hack game",
+        top: true,
+    },
+    {
+        videoID: "ag6-52_1SDA",
+        categorie: "police science IT hack DeepWeb OpSec malware",
+        top: true,
+    },
+    {
+        videoID: "zBCWfMrebHA",
+        categorie: "IT science OpSec politique",
+        top: true,
+    },
+    {
+        videoID: "jEluW-OANUE",
+        categorie: "DeepWeb OpSec",
+        top: true,
+    },
+    {
+        videoID: "bQyqROZ8HxI",
+        categorie: "humour IT linux",
+        short: true,
+        top: true,
+    },
+    {
+        videoID: "tjFA9WkwojE",
+        categorie: "game archive politique IT",
+        short: true,
+        top: true,
+    },
+    {
+        videoID: "Xj6K8RrFE1A",
+        categorie: "politique science IT archive hardware",
+        short: true,
+        top: true,
+    },
 ];
 
 var VideoListType = ["politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
