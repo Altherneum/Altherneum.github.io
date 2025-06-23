@@ -914,6 +914,12 @@ const links = [
         text: "Steamdb",
     },
     {
+        href: "https://store.steampowered.com/stats/content/",
+        svg: "/assets/svg/trademark/steam.svg",
+        tag: "URL Outils Jeux",
+        text: "Statistiques de téléchargement Steam & carte",
+    },
+    {
         href: "https://steamladder.com/",
         svg: "/assets/svg/trademark/steam.svg",
         tag: "URL Outils Jeux",
