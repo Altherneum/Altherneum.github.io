@@ -74,7 +74,7 @@
     padding-left: 15px;
     
     position: relative;
-    z-index: 999 !important;
+    z-index: 985 !important;
 }
 
 .markdowned>p>details:not(:first-child){
@@ -267,7 +267,7 @@
     padding-left: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
     #anchorList{
         padding-right: 25px;
         display: none;
@@ -298,7 +298,7 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     #anchorList {
         top: 20vh;
         max-height: 75vh;

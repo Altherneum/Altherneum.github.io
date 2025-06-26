@@ -34,11 +34,11 @@ a.cardTitle{
     display: inline-flex;
 }
 
-#NavBarHolder,
-#searchbar{
+#NavBarHolder{
     z-index: 990;
 }
 
+#searchbar,
 #search-box,
 #result-box,
 #search-box>input,
