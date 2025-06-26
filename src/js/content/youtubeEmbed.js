@@ -541,57 +541,138 @@ async function setVideoScreenLocking() {
 }
 
 var categorieList;
-var smallAutoMix;
-var fullAutoMix;
+
+var smallAutoMixTop;
+var fullAutoMixTop;
+
+var smallAutoMixMixed;
+var fullAutoMixMixed;
+
+var smallAutoMixNoTop;
+var fullAutoMixNoTop;
+
 function createPlayListList() {
     categorieList = getVideoListType();
-    smallAutoMix = [];
-    fullAutoMix = [];
+    smallAutoMixTop = [];
+    fullAutoMixTop = [];
+    
+    smallAutoMixMixed = [];
+    fullAutoMixMixed = [];
+
+    smallAutoMixNoTop = [];
+    fullAutoMixNoTop = [];
     for (categorieType in categorieList) {
-        smallAutoMix.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
-        fullAutoMix.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        smallAutoMixTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        fullAutoMixTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+    
+        smallAutoMixMixed.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        fullAutoMixMixed.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+    
+        smallAutoMixNoTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        fullAutoMixNoTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
     }
 }
 
 async function constructPlayList(videoID, playlist, top, categorie) {
-    if (top === true && playlist == false) {
+    if (playlist == false) {
         var VideoCategorieList = categorie.split(" ");
         for (categorieType in VideoCategorieList) {
             var tag = VideoCategorieList[categorieType];
+            
+            if(top === true){
+                var objectIndex = smallAutoMixTop.findIndex(obj => obj.tag == tag);
+                smallAutoMixTop[objectIndex].videoIDList += videoID + ",";
+                smallAutoMixTop[objectIndex].amount += 1;
 
-            var objectIndex = smallAutoMix.findIndex(obj => obj.tag == tag);
-            smallAutoMix[objectIndex].videoIDList += videoID + ",";
-            smallAutoMix[objectIndex].amount += 1;
+                var objectIndex = fullAutoMixTop.findIndex(obj => obj.tag == tag);
+                fullAutoMixTop[objectIndex].videoIDList += videoID + ",";
+                fullAutoMixTop[objectIndex].amount += 1;
+                
+                await CheckIfPlayListAtLimit(tag, true, false);
+            }
+            else
+            {
+                var objectIndex = smallAutoMixNoTop.findIndex(obj => obj.tag == tag);
+                smallAutoMixNoTop[objectIndex].videoIDList += videoID + ",";
+                smallAutoMixNoTop[objectIndex].amount += 1;
 
-            var objectIndex = fullAutoMix.findIndex(obj => obj.tag == tag);
-            fullAutoMix[objectIndex].videoIDList += videoID + ",";
-            fullAutoMix[objectIndex].amount += 1;
+                var objectIndex = fullAutoMixNoTop.findIndex(obj => obj.tag == tag);
+                fullAutoMixNoTop[objectIndex].videoIDList += videoID + ",";
+                fullAutoMixNoTop[objectIndex].amount += 1;
+                
+                await CheckIfPlayListAtLimit(tag, false, false);
+            }
+            var objectIndex = smallAutoMixMixed.findIndex(obj => obj.tag == tag);
+            smallAutoMixMixed[objectIndex].videoIDList += videoID + ",";
+            smallAutoMixMixed[objectIndex].amount += 1;
 
-            await CheckIfPlayListAtLimit(tag);
+            var objectIndex = fullAutoMixMixed.findIndex(obj => obj.tag == tag);
+            fullAutoMixMixed[objectIndex].videoIDList += videoID + ",";
+            fullAutoMixMixed[objectIndex].amount += 1;
+            
+            await CheckIfPlayListAtLimit(tag, false, true);
         }
     }
 }
 
-async function CheckIfPlayListAtLimit(tag) {
-    let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].videoIDList;
-    let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].amount;
-    if (videoAmount >= 20) {
-        smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].videoIDList = "";
-        smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag)].amount = 0;
-        let div_card = addCard(true, true, videoIDList, tag, false, true);
-        addIFrame(true, videoIDList, true, tag, "Auto Mix : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
+async function CheckIfPlayListAtLimit(tag, top, mixed) {
+    if(top === true){
+        let videoIDList = smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmount = smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].amount;
+        if (videoAmount >= 20) {
+            smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList = "";
+            smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].amount = 0;
+            let div_card = addCard(true, true, videoIDList, tag, false, true);
+            addIFrame(true, videoIDList, true, tag, "Auto Mix Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
+        }
+    }
+    else if(mixed === true){
+        let videoIDList = smallAutoMixMixed[smallAutoMixMixed.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmount = smallAutoMixMixed[smallAutoMixMixed.findIndex(obj => obj.tag == tag)].amount;
+        if (videoAmount >= 20) {
+            smallAutoMixMixed[smallAutoMixMixed.findIndex(obj => obj.tag == tag)].videoIDList = "";
+            smallAutoMixMixed[smallAutoMixMixed.findIndex(obj => obj.tag == tag)].amount = 0;
+            let div_card = addCard(false, true, videoIDList, tag, false, true);
+            addIFrame(true, videoIDList, false, tag, "Auto Mix Mixed : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
+        }
+    }
+    else if (top === false && mixed === false){
+        let videoIDList = smallAutoMixNoTop[smallAutoMixNoTop.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmount = smallAutoMixNoTop[smallAutoMixNoTop.findIndex(obj => obj.tag == tag)].amount;
+        if (videoAmount >= 20) {
+            smallAutoMixNoTop[smallAutoMixNoTop.findIndex(obj => obj.tag == tag)].videoIDList = "";
+            smallAutoMixNoTop[smallAutoMixNoTop.findIndex(obj => obj.tag == tag)].amount = 0;
+            let div_card = addCard(false, true, videoIDList, tag, false, true);
+            addIFrame(true, videoIDList, false, tag, "Auto Mix No Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
+        }
     }
 }
 
+//Need update to playlist no top & mixed
 async function setGlobalPlayList() {
     let categorieList = getVideoListType();
     for (categorieType in categorieList) {
         var tag = categorieList[categorieType];
 
-        let videoIDList = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag)].videoIDList;
-        let videoAmount = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag)].amount;
+        //top
+        let videoIDListTop = fullAutoMixTop[fullAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmountTop = fullAutoMixTop[fullAutoMixTop.findIndex(obj => obj.tag == tag)].amount;
 
-        let div_card = addCard(true, true, videoIDList, tag, false, true);
-        addIFrame(true, videoIDList, true, tag, "Auto Mix : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card);
+        let div_cardTop = addCard(true, true, videoIDListTop, tag, false, true);
+        addIFrame(true, videoIDListTop, true, tag, "Auto Mix Top : " + videoAmountTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardTop);
+    
+        //Mixed
+        let videoIDListMixed = fullAutoMixMixed[fullAutoMixMixed.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmountMixed = fullAutoMixMixed[fullAutoMixMixed.findIndex(obj => obj.tag == tag)].amount;
+        
+        let div_cardMixed = addCard(false, true, videoIDListMixed, tag, false, true);
+        addIFrame(true, videoIDListMixed, false, tag, "Auto Mix Mixed : " + videoAmountMixed, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardMixed);
+    
+        //NoTop
+        let videoIDListNoTop = fullAutoMixNoTop[fullAutoMixNoTop.findIndex(obj => obj.tag == tag)].videoIDList;
+        let videoAmountNoTop = fullAutoMixNoTop[fullAutoMixNoTop.findIndex(obj => obj.tag == tag)].amount;
+
+        let div_cardNoTop = addCard(false, true, videoIDListNoTop, tag, false, true);
+        addIFrame(false, videoIDListNoTop, true, tag, "Auto Mix No Top: " + videoAmountNoTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardNoTop);
     }
 }
