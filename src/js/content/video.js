@@ -1498,6 +1498,11 @@ var videolinks = [
         videoID: "KeWjY-j00mY",
         categorie: "science hardware archive",
         short: true,
+    },
+    {
+        videoID: "_p5S1kfdnYs",
+        categorie: "IT science humour OpSec",
+        short: true,
     }
 ];
 
