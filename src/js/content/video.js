@@ -1486,6 +1486,17 @@ var videolinks = [
         videoID: "MTAfmypX-hI",
         categorie: "IT science OpSec archive politique",
         short: true,
+    },
+    {
+        videoID: "IO5ml4FUCj0",
+        categorie: "science IT code",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "KeWjY-j00mY",
+        categorie: "science hardware archive",
+        short: true,
     }
 ];
 

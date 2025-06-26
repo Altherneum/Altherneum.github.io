@@ -2501,7 +2501,25 @@ var videolinks = [
         videoID: "ljryOkkRlKA",
         categorie: "histoire trool chill",
         top: true,
+        text: "<a target='_blank' href='#GTxPUFWjOlQ'>Original</a>",
     },
+    {
+        videoID: "GTxPUFWjOlQ",
+        categorie: "histoire trool chill",
+        top: true,
+        text: "<a target='_blank' href='#ljryOkkRlKA'>Sped up version</a>",
+    },
+    {
+        videoID: "j9V78UbdzWI",
+        categorie: "trool histoire electro hardbass",
+        top: true,
+        text: "<a target='_blank' href='#iLBBRuVDOo4'>Original</a>",
+    },
+    {
+        videoID: "iLBBRuVDOo4",
+        categorie: "electro hardbass",
+        text: "<a target='_blank' href='#j9V78UbdzWI'>Coffin Dance version</a>",
+    }
 ];
 
 var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
