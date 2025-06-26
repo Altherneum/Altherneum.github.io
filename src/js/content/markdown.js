@@ -65,7 +65,7 @@ const parseMarkdown = async (text) => {
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_css("/src/css/youtubeEmbed.css");
 
-        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '$1<h1>$2 - <a href=\"$3\">$4</a></h1><div class="youtubeEmbed"><div class="videoholder" id="video-id-$4"></div></div>') //$3 = URL $4 = video ID, $2 = text
+        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/watch\?v=([^)]*)*)\)/g, '\n$2 - <a href=\"$3\">$4</a>\n<div class="youtubeEmbed">\n<div class="videoholder" id="video-id-$4">\n</div>\n</div>') //$3 = URL $4 = video ID, $2 = text
         for (index in matched) {
             const words = matched[index].split("v=");
             const videoID = words[1].split("&")[0].replace(")", "");
@@ -86,7 +86,7 @@ const parseMarkdown = async (text) => {
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_css("/src/css/youtubeEmbed.css");
 
-        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/shorts\/([^)]*)*)\)/g, '$1<h1>$2 - <a href=\"$3\">$4</a></h1><div class="youtubeEmbed"><div class="videoholder" id="video-id-$4"></div></div>') //$3 = URL $4 = video ID, $2 = text
+        toHTML = toHTML.replace(/([^!])\[([^\[]+)\]\((https:\/\/youtube\.com\/shorts\/([^)]*)*)\)/g, '\n$2 - <a href=\"$3\">$4</a>\n<div class="youtubeEmbed">\n<div class="videoholder" id="video-id-$4">\n</div>\n</div>') //$3 = URL $4 = video ID, $2 = text
         for (index in matchedShort) {
             const words = matchedShort[index].split("/");
             const videoID = words[4].replace(")", "");

@@ -43,7 +43,7 @@ a.cardTitle{
 #result-box,
 #search-box>input,
 #search-tips {
-    z-index: 1005;
+    z-index: 1005 !important;
 }
 
 #search-box,

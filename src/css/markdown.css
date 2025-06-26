@@ -16,14 +16,7 @@
     max-width: 75%;
 }
 
-.markdowned .youtubeEmbed{
-    display: flex;
-    justify-content: center;
-}
 
-.markdowned .youtubeEmbed>.videoholder{
-    justify-content: center !important;
-}
 
 .markdowned>p img {
     max-width: 90%;
