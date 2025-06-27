@@ -1511,6 +1511,11 @@ var videolinks = [
     {
         videoID: "YCHkdXgdWUk",
         categorie: "science archive",
+    },
+    {
+        videoID: "4v9Rji39YZ8",
+        categorie: "IT science code linux",
+        short: true,
     }
 ];
 
