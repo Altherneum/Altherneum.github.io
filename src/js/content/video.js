@@ -1503,6 +1503,10 @@ var videolinks = [
         videoID: "_p5S1kfdnYs",
         categorie: "IT science humour OpSec",
         short: true,
+    },
+    {
+        videoID: "u_Lxkt50xOg",
+        categorie: "OpSec IT science Linux",
     }
 ];
 
