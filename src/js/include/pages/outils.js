@@ -90,6 +90,11 @@ async function CheckPage() {
         await include_multiple("donut", "contentArticle", true);
     }
 
+    else if (pathNameMatchPage("/outils/frames", true)) {
+        await includes();
+        await include_multiple("frames", "contentArticle", true);
+    }
+
     else {
         return false;
     }

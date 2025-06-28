@@ -1316,6 +1316,12 @@ const links = [
         tag: "Queryable URL Outils Admin Web Cours Développement",
         svg: "/assets/svg/book.svg",
         queryURL: "https://quickref.me/",
+    },
+    {
+        href: "/outils/frames",
+        text: "Frames animés",
+        tag: "URL Outils Admin Web Cours Développement",
+        svg: "/assets/svg/book.svg",
     }
 ];
 
