@@ -17,13 +17,15 @@ function getValue(){
 
 async function start(animationName){
     console.log("starting");
-    await GetFile(animationName);
 
+    console.log("clearing data");
     clearInterval(intervalID);
     JSONFile = undefined;
     FramesJSON = undefined;
     maxFrames = 0;
 
+    console.log("downloading data");
+    await GetFile(animationName);
     intervalID = setInterval(StreamAllFrames, frameSpeed);
 }
 
