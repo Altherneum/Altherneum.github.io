@@ -18,7 +18,12 @@ function getValue(){
 async function start(animationName){
     console.log("starting");
     await GetFile(animationName);
+
     clearInterval(intervalID);
+    JSONFile = undefined;
+    FramesJSON = undefined;
+    maxFrames = 0;
+
     intervalID = setInterval(StreamAllFrames, frameSpeed);
 }
 

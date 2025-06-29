@@ -6,6 +6,10 @@ textarea#frames-textarea{
     max-height: 70vh;
 
     text-align: center;
+
+    background-color: transparent;
+    border-style: none;
+    background: transparent;
 }
 
 #frames-frames,
