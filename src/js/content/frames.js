@@ -2,33 +2,47 @@ var JSONFile;
 var FramesJSON;
 var maxFrames = 0;
 var frameNumber = 1;
+var frameSpeed = 0;
+var animation = "";
+var intervalID;
 
-start("earth");
+getValue();
+
+function getValue(){
+    frameSpeed = document.getElementById("text-animation-speed").value;
+    animation = document.getElementById("text-animation-name").value;
+
+    start(animation);
+}
 
 async function start(animationName){
     console.log("starting");
     await GetFile(animationName);
-    setInterval(StreamAllFrames, 100);
+    clearInterval(intervalID);
+    intervalID = setInterval(StreamAllFrames, frameSpeed);
 }
 
 async function GetFile(fileName){
-    console.log("running");
+    console.log("running : " + fileName);
 
     if(JSONFile === undefined){
         JSONFile = await fetch("/assets/txt/frames/" + fileName + ".json");
+        console.log("setting JSONFile");
     }
 
     if(FramesJSON === undefined){
         FramesJSON = await JSONFile.json();
+        console.log("setting FramesJSON");
     }
 
-    maxFrames = Object.keys(FramesJSON.animation).length;
+    if(maxFrames === 0){
+        maxFrames = Object.keys(FramesJSON.animation).length;
+        console.log("setting MaxFrames");
+    }
 }
 
 async function runFrames(frameNumber){    
     document.getElementById("frames-textarea").textContent = await getFrame(frameNumber);
-
-    console.log("Frame run ended")
 }
 
 async function getFrame(frameNumber){
@@ -43,5 +57,3 @@ async function StreamAllFrames(){
 
     await runFrames(frameNumber);
 }
-
-console.log("end")

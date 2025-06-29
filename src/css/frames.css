@@ -1,5 +1,35 @@
 textarea#frames-textarea{
-    width: 90vw;
-    height: 80vh;
+    width: 80vw;
+    height: 70vh;
+    
+    max-width: 80vw;
+    max-height: 70vh;
+
     text-align: center;
+}
+
+#frames-frames,
+#frames-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+}
+
+#frames-menu{
+    padding: 25px;
+}
+
+#frames-menu>*{
+    padding: 15px;
+}
+
+#frames-frames{
+
+}
+
+#frames-menu>details>*{
+    display: block;
+    padding: 5px;
 }
