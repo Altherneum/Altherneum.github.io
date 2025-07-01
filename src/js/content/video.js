@@ -5,13 +5,24 @@ var videolinks = [
         top: true,
     },
     {
+        videoID: "Ny5vjwA-3hU",
+        categorie: "hack science IT code",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "L7dnmHnJbww",
+        categorie: "science IT hack hardware",
+        top: true,
+    },
+    {
         videoID: "THtsXAewIVc",
         categorie: "science IT politique code",
         top: true,
     },
     {
         videoID: "fPlumnuhTco",
-        categorie: "science IT politique  ",
+        categorie: "science IT politique code",
         top: true,
     },
     {
