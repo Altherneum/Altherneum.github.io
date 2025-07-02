@@ -15,6 +15,24 @@ function getValue(){
     start(animation);
 }
 
+var defaultStyle = document.getElementById("frames-menu").style.display;
+function setMenuVisible(willBeVisible){
+    let menu = document.getElementById("frames-menu");
+    if(willBeVisible){
+        menu.style.display = defaultStyle;
+    }
+    else{
+        menu.style.display = "none";
+    }
+}
+
+function injectAsBackground(){
+    let menu = document.getElementById("frames-textarea");
+    menu.style.borderStyle = "none";
+    menu.style.outlineStyle = "none";
+    menu.style.resize = "none";
+}
+
 async function start(animationName){
     console.log("starting");
 
