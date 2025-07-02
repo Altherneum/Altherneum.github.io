@@ -177,6 +177,14 @@ const linksList = [
     image: "https://doc.Altherneum.fr/assets/gif/small.gif",
     creator: "Altherneum",
   },
+  {
+    title: "/outils /frames",
+    link: "https://doc.altherneum.fr/outils/frames.html",
+    description: "Des images qui tournent 💫",
+    publicationDate: buildRFC822Date("2025-05-10T00:00:00.0000"),
+    image: "https://doc.Altherneum.fr/assets/gif/small.gif",
+    creator: "Altherneum",
+  },
 ];
 
 const channelImage = channel.image
