@@ -75,7 +75,7 @@ async function Metadata() {
 }
 
 async function randomInclude(excludeSettings) {
-    var max = 8;
+    var max = 9;
     var random = Math.round(Math.random() * (max - 1) + 1);
 
     if (random == 1) {
@@ -114,6 +114,11 @@ async function randomInclude(excludeSettings) {
     }
     else if (random == 8) {
         await include_multiple("donut", "contentArticle", true);
+    }
+    else if (random == 9) {
+        await include_multiple("frames", "contentArticle", true);
+        setMenuVisible(false);
+        injectAsBackground();
     }
 }
 

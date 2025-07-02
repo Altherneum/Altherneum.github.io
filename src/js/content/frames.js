@@ -7,7 +7,7 @@ var animation = "";
 var intervalID;
 
 getValue();
-
+ 
 function getValue(){
     frameSpeed = document.getElementById("text-animation-speed").value;
     animation = document.getElementById("text-animation-name").value;
