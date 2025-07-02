@@ -1,5 +1,21 @@
 var videolinks = [
     {
+        videoID: "DIoEeo2Ftnw",
+        categorie: "hack IT politique",
+        top: true,
+    },
+    {
+        videoID: "jo6U429l3JM",
+        categorie: "IT science discord",
+        short: true,
+        top: true,
+    },
+    {
+        videoID: "9CISphpvapI",
+        categorie: "hack IT science OpSec linux",
+        top: true,
+    },
+    {
         videoID: "tYL6a5XQpfE",
         categorie: "malware code IT hack",
         top: true,
@@ -137,7 +153,7 @@ var videolinks = [
     },
     {
         videoID: "bVmukCdg7SQ",
-        categorie: "Linux",
+        categorie: "linux",
         short: true,
     },
     {
@@ -176,7 +192,7 @@ var videolinks = [
     },
     {
         videoID: "mVKAyw0xqxw",
-        categorie: "Linux",
+        categorie: "linux",
     },
     {
         videoID: "RhfM24skj34",
@@ -184,7 +200,7 @@ var videolinks = [
     },
     {
         videoID: "vNxl7L3Zuck",
-        categorie: "Linux",
+        categorie: "linux",
     },
     {
         videoID: "WLJGZlt5y2E",
@@ -201,7 +217,7 @@ var videolinks = [
     },
     {
         videoID: "KdoaiGTIBY4",
-        categorie: "Linux IT humour",
+        categorie: "linux IT humour",
         top: true,
     },
     {
@@ -211,7 +227,7 @@ var videolinks = [
     },
     {
         videoID: "LKCVKw9CzFo",
-        categorie: "Linux",
+        categorie: "linux",
     },
     {
         videoID: "JdxfhMbSwL0",
@@ -267,7 +283,7 @@ var videolinks = [
     },
     {
         videoID: "PLp31D6HATKfeEHEFqFo5hlCOYwHi4Sl9O",
-        categorie: "Linux",
+        categorie: "linux",
         playlist: true,
         top: true,
     },
@@ -297,7 +313,7 @@ var videolinks = [
     },
     {
         videoID: "lXuKTSU2XBY",
-        categorie: "Linux",
+        categorie: "linux",
         short: true,
     },
     {
@@ -370,7 +386,7 @@ var videolinks = [
     },
     {
         videoID: "7YM2EKc0Tk4",
-        categorie: "Linux humour",
+        categorie: "linux humour",
         short: true,
     },
     {
@@ -484,7 +500,7 @@ var videolinks = [
     },
     {
         videoID: "kUtarOlOT3Y",
-        categorie: "IT science Linux code",
+        categorie: "IT science linux code",
     },
     {
         videoID: "tLdRBsuvVKc",
@@ -594,7 +610,7 @@ var videolinks = [
     },
     {
         videoID: "fwBIZRq-vzY",
-        categorie: "Linux IT science",
+        categorie: "linux IT science",
         short: true,
         top: true,
     },
@@ -691,7 +707,7 @@ var videolinks = [
     },
     {
         videoID: "9hMh98FHRp4",
-        categorie: "science IT code humour Linux",
+        categorie: "science IT code humour linux",
     },
     {
         videoID: "ZYkLgZyiUkQ",
@@ -757,7 +773,7 @@ var videolinks = [
     },
     {
         videoID: "SlIZxdeoWDY",
-        categorie: "science IT Linux OpSec",
+        categorie: "science IT linux OpSec",
         top: true,
     },
     {
@@ -864,7 +880,7 @@ var videolinks = [
     },
     {
         videoID: "wrOvb94UvVE",
-        categorie: "humour Linux IT",
+        categorie: "humour linux IT",
         short: true,
     },
     {
@@ -970,7 +986,7 @@ var videolinks = [
     },
     {
         videoID: "xE6xULuLpEA",
-        categorie: "Linux science IT",
+        categorie: "linux science IT",
     },
     {
         videoID: "OsDweYCQpOI",
@@ -1107,7 +1123,7 @@ var videolinks = [
     },
     {
         videoID: "2H5EGNSR_O8",
-        categorie: "science IT Linux OpSec",
+        categorie: "science IT linux OpSec",
         short: true,
     },
     {
@@ -1137,11 +1153,11 @@ var videolinks = [
     },
     {
         videoID: "WPCxtFkLa7g",
-        categorie: "code IT science Linux",
+        categorie: "code IT science linux",
     },
     {
         videoID: "HxRwRMFhAdE",
-        categorie: "science IT code Linux",
+        categorie: "science IT code linux",
     },
     {
         videoID: "gPjsdsZJ42A",
@@ -1270,19 +1286,19 @@ var videolinks = [
     },
     {
         videoID: "f-x5cB6qCzA",
-        categorie: "science IT code Linux",
+        categorie: "science IT code linux",
     },
     {
         videoID: "CHAN-S3WYqg",
-        categorie: "science IT code Linux game",
+        categorie: "science IT code linux game",
     },
     {
         videoID: "pr9s8779FkA",
-        categorie: "hack IT OpSec malware Linux",
+        categorie: "hack IT OpSec malware linux",
     },
     {
         videoID: "yxWW7IlugQA",
-        categorie: "science IT Linux code",
+        categorie: "science IT linux code",
     },
     {
         videoID: "GN1Oaw3iEmQ",
@@ -1355,12 +1371,12 @@ var videolinks = [
     },
     {
         videoID: "WxyrFOis70U",
-        categorie: "hack IT archive code OpSec Linux malware",
+        categorie: "hack IT archive code OpSec linux malware",
         top: true,
     },
     {
         videoID: "7g1eCC05Ud0",
-        categorie: "science politique code IT Linux",
+        categorie: "science politique code IT linux",
         top: true,
     },
     {
@@ -1532,7 +1548,7 @@ var videolinks = [
     },
     {
         videoID: "u_Lxkt50xOg",
-        categorie: "OpSec IT science Linux",
+        categorie: "OpSec IT science linux",
     },
     {
         videoID: "YCHkdXgdWUk",
@@ -1545,7 +1561,7 @@ var videolinks = [
     }
 ];
 
-var VideoListType = ["politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "Linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
+var VideoListType = ["politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
 
 function getVideoListType(){
     return VideoListType;
@@ -1590,7 +1606,7 @@ function getEmoji(VideoListType){
             return "🔬";
         case 'DeepWeb':
             return "🕸️";
-        case 'Linux':
+        case 'linux':
             return "🐧";
         case 'humour':
             return "🤣";
