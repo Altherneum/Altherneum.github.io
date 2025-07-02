@@ -193,6 +193,16 @@
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="/outils /donut" />]]></content:encoded>
       </item>
     
+      <item>
+        <title><![CDATA[/outils /frames]]></title>
+        <link>https://doc.altherneum.fr/outils/frames.html</link>
+        <guid isPermaLink="true">https://doc.altherneum.fr/outils/frames.html</guid>
+        <pubDate>Fri, 09 May 2025 22:00:00 GMT</pubDate>
+        <dc:creator><![CDATA[doc.Altherneum.fr]]></dc:creator>
+        <description><![CDATA[Des images qui tournent 💫]]></description>
+        <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="/outils /frames" />]]></content:encoded>
+      </item>
+    
     </channel>
   </rss>
   
