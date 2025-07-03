@@ -1212,11 +1212,13 @@ var videolinks = [
     {
         videoID: "uT3_6ct-WGE",
         categorie: "phonk",
+        text: "<a target='_blank' href='#jNd_LxLnIkM'>Original</a>",
     },
     {
         videoID: "jNd_LxLnIkM",
         top: true,
         categorie: "phonk",
+        text: "<a target='_blank' href='#uT3_6ct-WGE'>Slowed version</a>",
     },
     {
         videoID: "OLAK5uy_k78kIlOnPe61B7Xv56LDwVBX-hVikh9B8",
@@ -1647,7 +1649,7 @@ var videolinks = [
     },
     {
         videoID: "NRtnUVaRwXM",
-        categorie: "rock histoire",
+        categorie: "rock histoire moody",
         top: true,
     },
     {
@@ -1931,7 +1933,7 @@ var videolinks = [
     },
     {
         videoID: "qU9mHegkTc4",
-        categorie: "rock histoire",
+        categorie: "rock histoire moody",
         top: true,
     },
     {
