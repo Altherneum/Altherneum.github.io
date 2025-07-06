@@ -206,7 +206,7 @@ const links = [
     {
         href: "/admin/software.html",
         tag: "Admin Outils URL",
-        text: "Software de l'administrateur du projet",
+        text: "Software de l'administrateur du projet (Windows, Arch, et logiciels)",
         svg: "/assets/svg/computer-configuration.svg",
     },
     {
