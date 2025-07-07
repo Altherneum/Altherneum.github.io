@@ -75,7 +75,7 @@ async function Metadata() {
 }
 
 async function randomInclude(excludeSettings) {
-    var max = 9;
+    var max = 10;
     var random = Math.round(Math.random() * (max - 1) + 1);
 
     if (random == 1) {
@@ -119,6 +119,9 @@ async function randomInclude(excludeSettings) {
         await include_multiple("frames", "contentArticle", true);
         setMenuVisible(false);
         injectAsBackground();
+    }
+    else if(random == 10){
+        await include_multiple("minesweeper", "contentArticle", true);
     }
 }
 
