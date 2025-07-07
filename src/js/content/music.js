@@ -2527,10 +2527,21 @@ var videolinks = [
         videoID: "iLBBRuVDOo4",
         categorie: "electro hardbass",
         text: "<a target='_blank' href='#j9V78UbdzWI'>Coffin Dance version</a>",
+    },
+    {
+        videoID: "3fS2HloUZgc",
+        categorie: "nightcore electro",
+        top: true,
+        text: "<a target='_blank' href='#rp53irFjzYg'>Original</a>",
+    },
+    {
+        videoID: "rp53irFjzYg",
+        categorie: "electro hardbass",
+        text: "<a target='_blank' href='#3fS2HloUZgc'>Nightcore</a>",
     }
 ];
 
-var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody"];
+var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
 
 function getVideoListType(){
     return VideoListType;
@@ -2568,6 +2579,8 @@ function getEmoji(VideoListType){
             return "🥁";
         case 'electro':
             return "⚡";
+        case 'nightcore':
+            return "🌃";
         case 'slavic':
             return "❄️";
         case 'long':
