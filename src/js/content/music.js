@@ -2539,6 +2539,11 @@ var videolinks = [
         videoID: "rp53irFjzYg",
         categorie: "electro hardbass",
         text: "<a target='_blank' href='#3fS2HloUZgc'>Nightcore</a>",
+    },
+    {
+        videoID: "ZfWSOs5YbQ8",
+        categorie: "moody histoire classic chill",
+        top: true,
     }
 ];
 
