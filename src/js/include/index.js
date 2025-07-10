@@ -245,7 +245,7 @@ async function devFooter() {
 
     var codeServerImg = document.getElementById("code-server-footer");
     if(codeServerImg != null){
-        devFooter.style = "";
+        codeServerImg.style = "";
     }
 
     await devTest();
