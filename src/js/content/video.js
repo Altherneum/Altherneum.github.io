@@ -14,6 +14,7 @@ var videolinks = [
         videoID: "ud7xI7UdfdU",
         categorie: "science IT code linux humour",
         top: true,
+        short: true,
     },
     {
         videoID: "DIoEeo2Ftnw",
