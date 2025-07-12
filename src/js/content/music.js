@@ -2598,6 +2598,23 @@ var videolinks = [
         videoID: "ZHwVBirqD2s",
         categorie: "histoire rock chill",
         top: true,
+    },
+    {
+        videoID: "JAlVVpqNeRA",
+        categorie: "classic chill histoire",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "9f-VLs-7xFU",
+        categorie: "classic chill histoire",
+        top: true,
+        short: true,
+    },
+    {
+        videoID: "l3AluKhU8GY",
+        categorie: "classic chill histoire",
+        top: true,
     }
 ];
 
