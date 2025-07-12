@@ -2569,6 +2569,11 @@ var videolinks = [
         videoID: "bFNq9iS4Xn4",
         categorie: "moody chill histoire",
         top: true,
+    },
+    {
+        videoID: "b4-7UG6WtnQ",
+        categorie: "classic chill histoire",
+        top: true,
     }
 ];
 
