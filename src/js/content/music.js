@@ -2576,6 +2576,11 @@ var videolinks = [
         top: true,
     },
     {
+        videoID: "fOmibteK5RM",
+        categorie: "rock histoire",
+        top: true,
+    },
+    {
         videoID: "fJ9rUzIMcZQ",
         categorie: "histoire rock",
         top: true,
