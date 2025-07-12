@@ -3,12 +3,13 @@ var videolinks = [
         videoID: "ZhfI0EboPU0",
         categorie: "hack IT malware politique OpSec science",
         top: true,
+        short: true,
     },
     {
         videoID: "ImtFQbU40HI",
         categorie: "hardware science IT",
         top: true,
-    }
+    },
     {
         videoID: "ud7xI7UdfdU",
         categorie: "science IT code linux humour",
