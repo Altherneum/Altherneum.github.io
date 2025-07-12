@@ -9,6 +9,7 @@ var videolinks = [
         videoID: "ImtFQbU40HI",
         categorie: "hardware science IT",
         top: true,
+        short: true,
     },
     {
         videoID: "ud7xI7UdfdU",
