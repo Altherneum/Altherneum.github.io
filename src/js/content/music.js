@@ -2587,7 +2587,7 @@ var videolinks = [
     },
     {
         videoID: "WQR8fbPFJ9E",
-        categorie: "trool chill classic",
+        categorie: "trool chill classic jazz",
     }
 ];
 
