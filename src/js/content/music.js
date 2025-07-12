@@ -2588,6 +2588,16 @@ var videolinks = [
     {
         videoID: "WQR8fbPFJ9E",
         categorie: "trool chill classic jazz",
+    },
+    {
+        videoID: "2MHsDNV9lgY",
+        categorie: "classic chill histoire",
+        top: true,
+    },
+    {
+        videoID: "ZHwVBirqD2s",
+        categorie: "histoire rock chill",
+        top: true,
     }
 ];
 
