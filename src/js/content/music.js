@@ -2574,6 +2574,16 @@ var videolinks = [
         videoID: "b4-7UG6WtnQ",
         categorie: "classic chill histoire",
         top: true,
+    },
+    {
+        videoID: "fJ9rUzIMcZQ",
+        categorie: "histoire rock",
+        top: true,
+    },
+    {
+        videoID: "DHSsb9dv9Rc",
+        categorie: "chill classic chilljp electro moody",
+        top: true,
     }
 ];
 
