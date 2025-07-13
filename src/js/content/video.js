@@ -259,8 +259,13 @@ var videolinks = [
     },
     {
         videoID: "JdxfhMbSwL0",
-        categorie: "science",
+        categorie: "politique science chem archive IT",
         text: "🐍 Basilic de Roko",
+        top: true,
+    },
+    {
+        videoID: "a_O8u0YT8T0",
+        categorie: "politique science chem archive",
         top: true,
     },
     {
