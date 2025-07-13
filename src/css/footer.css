@@ -7,7 +7,7 @@ footer {
     padding-bottom: 2.5vh;
     padding-top: 2.5vh;
 
-    z-index: 998;
+    z-index: 989;
 
     background: linear-gradient(var(--background-color-transparent), var(--main-color));
 
