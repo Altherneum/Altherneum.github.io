@@ -2623,7 +2623,7 @@ var videolinks = [
     }
 ];
 
-var VideoListType = ["jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
+var VideoListType = ["todo", "jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
 
 function getVideoListType(){
     return VideoListType;
@@ -2671,6 +2671,8 @@ function getEmoji(VideoListType){
             return "😔";
         case 'jazz':
             return "🎷";
+        case 'todo':
+            return "⏰";
         default:
             return "❓";
       }
