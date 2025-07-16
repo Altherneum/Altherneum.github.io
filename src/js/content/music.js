@@ -2620,7 +2620,8 @@ var videolinks = [
         videoID: "l3AluKhU8GY",
         categorie: "classic chill histoire",
         top: true,
-    }    {
+    },
+    {
         videoID: "Gz_HEtzYT1o",
         categorie: "todo",
     },
