@@ -103,6 +103,8 @@
 .markdowned>p h6 {
     display: block;
 
+    padding-top: 50px;
+
     text-decoration: underline;
     text-decoration-color: var(--link-color);
 }
