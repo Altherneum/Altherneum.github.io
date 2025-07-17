@@ -2738,14 +2738,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "cemh5oC9wwE",
-        categorie: "todo",
-    },
-    {
-        videoID: "NyjQUBhfE30",
-        categorie: "todo",
-    },
-    {
         videoID: "hcuvmcNbaJg",
         categorie: "todo",
     },
