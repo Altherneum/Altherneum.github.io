@@ -2628,11 +2628,13 @@ var videolinks = [
     },
     {
         videoID: "nQzdkowvURA",
-        categorie: "todo",
+        categorie: "electro jazz",
+        top: true,
     },
     {
-        videoID: "Mdu0MZwJCRo",
-        categorie: "todo",
+        videoID: "DqmKDgugVtw",
+        categorie: "electro hardbass",
+        top: true,
     },
     {
         videoID: "G1QjyskJ9jw",
@@ -2640,7 +2642,8 @@ var videolinks = [
     },
     {
         videoID: "EfqsJm6BKng",
-        categorie: "todo",
+        categorie: "histoire",
+        top: true,
     },
     {
         videoID: "pIgZ7gMze7A",
@@ -2692,7 +2695,8 @@ var videolinks = [
     },
     {
         videoID: "S8fi4FmzK9E",
-        categorie: "todo",
+        categorie: "histoire moody",
+        top: true,
     },
     {
         videoID: "nkLDh-UNqGI",
@@ -2724,7 +2728,8 @@ var videolinks = [
     },
     {
         videoID: "FsfVmCgfU5U",
-        categorie: "todo",
+        categorie: "rap moody",
+        top: true,
     },
     {
         videoID: "MHCsrKA9gh8",
@@ -2752,7 +2757,7 @@ var videolinks = [
     },
     {
         videoID: "vyQDlQOcVFU",
-        categorie: "todo",
+        categorie: "trool",
     },
     {
         videoID: "M3AQ6W116jo",
@@ -2792,7 +2797,8 @@ var videolinks = [
     },
     {
         videoID: "5QRi29jKeHE",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "qveCkmte2DQ",
@@ -2833,7 +2839,8 @@ var videolinks = [
     },
     {
         videoID: "oBm0DJx9g8A",
-        categorie: "todo",
+        categorie: "histoire electro",
+        top: true,
     },
     {
         videoID: "MgT80H8EQ14",
@@ -2849,11 +2856,20 @@ var videolinks = [
     },
     {
         videoID: "ieJ-uXYWAwI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
+        text: "<a target='_blank' href='#-XEavwcHU78'>Original</a>, <a target='_blank' href='#fwGmJbcAUcE'>alternative upload</a>",
+    },
+    {
+        videoID: "-XEavwcHU78",
+        categorie: "histoire",
+        text: "<a target='_blank' href='#ieJ-uXYWAwI'>Remix</a>, <a target='_blank' href='#fwGmJbcAUcE'>alternative upload</a>",
     },
     {
         videoID: "fwGmJbcAUcE",
-        categorie: "todo",
+        categorie: "histoire",
+        top: true,
+        text: "<a target='_blank' href='#-XEavwcHU78'>Original</a>, <a target='_blank' href='#ieJ-uXYWAwI'>remix</a>",
     },
     {
         videoID: "drz6RoWRQXs",
