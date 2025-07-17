@@ -1603,6 +1603,11 @@ var videolinks = [
     {
         videoID: "HIkBIfst8oA",
         categorie: "OpSec IT science linux police hardware DeepWeb",
+    },
+    {
+        videoID: "0vaSsJ9sGy4",
+        categorie: "IA archive IT humour",
+        top: true,
     }
 ];
 
