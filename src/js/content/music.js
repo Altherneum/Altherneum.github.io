@@ -2735,7 +2735,7 @@ var videolinks = [
     },
     {
         videoID: "PvT8Kx1WC64",
-        categorie: "todo",
+        categorie: "histoire slavic",
     },
     {
         videoID: "hcuvmcNbaJg",
