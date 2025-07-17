@@ -2744,10 +2744,6 @@ var videolinks = [
         categorie: "histoire slavic",
     },
     {
-        videoID: "hcuvmcNbaJg",
-        categorie: "todo",
-    },
-    {
         videoID: "lukT_WB5IB0",
         categorie: "todo",
     },
@@ -2848,10 +2844,6 @@ var videolinks = [
     },
     {
         videoID: "RVDCeVG90Rg",
-        categorie: "todo",
-    },
-    {
-        videoID: "BvPszccELCA",
         categorie: "todo",
     },
     {
