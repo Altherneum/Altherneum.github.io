@@ -2656,7 +2656,7 @@ var videolinks = [
     },
     {
         videoID: "XItmK0tmHXY",
-        categorie: "todo",
+        categorie: "histoire jazz chill",
     },
     {
         videoID: "L-FXp3xVDFE",
@@ -2677,15 +2677,18 @@ var videolinks = [
     },
     {
         videoID: "cLKIClEo_S4",
-        categorie: "todo",
+        categorie: "histoire electro",
+        top: true,
     },
     {
         videoID: "oZjFfhNmtjg",
-        categorie: "todo",
+        categorie: "phonk trool",
+        top: true,
     },
     {
         videoID: "fKopy74weus",
-        categorie: "todo",
+        categorie: "electro histoire",
+        top: true,
     },
     {
         videoID: "K_idN3P5_yk",
@@ -2850,7 +2853,8 @@ var videolinks = [
     },
     {
         videoID: "RVDCeVG90Rg",
-        categorie: "todo",
+        categorie: "moody histoire chill",
+        top: true,
     },
     {
         videoID: "ieJ-uXYWAwI",
