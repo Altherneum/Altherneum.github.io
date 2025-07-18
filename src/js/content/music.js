@@ -2624,7 +2624,8 @@ var videolinks = [
     },
     {
         videoID: "Gz_HEtzYT1o",
-        categorie: "todo",
+        categorie: "histoire chill",
+        top: true,
     },
     {
         videoID: "nQzdkowvURA",
@@ -2638,7 +2639,8 @@ var videolinks = [
     },
     {
         videoID: "G1QjyskJ9jw",
-        categorie: "todo",
+        categorie: "chill jazz",
+        top: true,
     },
     {
         videoID: "EfqsJm6BKng",
@@ -2692,7 +2694,8 @@ var videolinks = [
     },
     {
         videoID: "K_idN3P5_yk",
-        categorie: "todo",
+        categorie: "histoire chill",
+        top: true,
     },
     {
         videoID: "CkFYV9S0YDo",
@@ -2813,7 +2816,7 @@ var videolinks = [
     },
     {
         videoID: "mLCKdyhYY94",
-        categorie: "todo",
+        categorie: "phonk",
     },
     {
         videoID: "EXeXTc7IqJE",
