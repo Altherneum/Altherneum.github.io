@@ -2830,10 +2830,6 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "QChwm0w9nxc",
-        categorie: "todo",
-    },
-    {
         videoID: "HMuYfScGpbE",
         categorie: "todo",
     },
