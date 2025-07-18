@@ -30,7 +30,7 @@ const links = [
         svg: "/assets/svg/trademark/discord.svg",
     },
     {
-        href: "https://mc.Altherneum.fr",
+        href: "https://play.Altherneum.fr",
         tag: "URL",
         text: "Serveur Minecraft",
         svg: "/assets/svg/trademark/minecraft.svg",
