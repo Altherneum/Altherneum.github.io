@@ -2673,7 +2673,7 @@ var videolinks = [
     },
     {
         videoID: "DmhdcDQt7Dk",
-        categorie: "todo",
+        categorie: "moody histoire rap",
     },
     {
         videoID: "cLKIClEo_S4",
@@ -2754,7 +2754,8 @@ var videolinks = [
     },
     {
         videoID: "HyklZmIjQRk",
-        categorie: "todo",
+        categorie: "phonk electro hardbass",
+        top: true,
     },
     {
         videoID: "vyQDlQOcVFU",
