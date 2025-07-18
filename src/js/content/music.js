@@ -2647,7 +2647,8 @@ var videolinks = [
     },
     {
         videoID: "pIgZ7gMze7A",
-        categorie: "todo",
+        categorie: "histoire",
+        top: true,
     },
     {
         videoID: "xxybC_eS60Y",
@@ -2659,7 +2660,8 @@ var videolinks = [
     },
     {
         videoID: "L-FXp3xVDFE",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "ukiM8FOHiOs",
@@ -2691,7 +2693,8 @@ var videolinks = [
     },
     {
         videoID: "CkFYV9S0YDo",
-        categorie: "todo",
+        categorie: "rap moody",
+        top: true,
     },
     {
         videoID: "S8fi4FmzK9E",
@@ -2724,7 +2727,8 @@ var videolinks = [
     },
     {
         videoID: "zAhvexjKCvs",
-        categorie: "todo",
+        categorie: "histoire",
+        top: true,
     },
     {
         videoID: "FsfVmCgfU5U",
@@ -2785,7 +2789,8 @@ var videolinks = [
     },
     {
         videoID: "QChwm0w9nxc",
-        categorie: "todo",
+        categorie: "histoire chill",
+        top: true,
     },
     {
         videoID: "2TBTJL46rg8",
@@ -2831,7 +2836,7 @@ var videolinks = [
     },
     {
         videoID: "YFTWeAv5Njw",
-        categorie: "todo",
+        categorie: "histoire classic trool",
     },
     {
         videoID: "oBm0DJx9g8A",
