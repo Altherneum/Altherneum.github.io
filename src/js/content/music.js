@@ -2719,7 +2719,7 @@ var videolinks = [
     },
     {
         videoID: "KavaUJxnNVU",
-        categorie: "todo",
+        categorie: "rap",
     },
     {
         videoID: "93ZVMw0w178",
@@ -2746,7 +2746,7 @@ var videolinks = [
     },
     {
         videoID: "YBZ6GPCJcxM",
-        categorie: "todo",
+        categorie: "histoire trool jazz",
     },
     {
         videoID: "PvT8Kx1WC64",
@@ -2803,7 +2803,8 @@ var videolinks = [
     },
     {
         videoID: "2TBTJL46rg8",
-        categorie: "todo",
+        categorie: "trool electro",
+        top: true,
     },
     {
         videoID: "5QRi29jKeHE",
