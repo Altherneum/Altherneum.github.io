@@ -2708,10 +2708,6 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "nkLDh-UNqGI",
-        categorie: "todo",
-    },
-    {
         videoID: "9mahKFNuHqM",
         categorie: "todo",
     },
