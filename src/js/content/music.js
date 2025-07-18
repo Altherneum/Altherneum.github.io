@@ -2709,11 +2709,13 @@ var videolinks = [
     },
     {
         videoID: "9mahKFNuHqM",
-        categorie: "todo",
+        categorie: "rap moody",
+        top: true,
     },
     {
         videoID: "HtUTJb-FGdo",
-        categorie: "todo",
+        categorie: "histoire rock trool",
+        top: true,
     },
     {
         videoID: "KavaUJxnNVU",
@@ -2769,7 +2771,8 @@ var videolinks = [
     },
     {
         videoID: "9wCfNFmpL1s",
-        categorie: "todo",
+        categorie: "chill trool classic",
+        top: true,
     },
     {
         videoID: "nkLDh-UNqGI",
@@ -2809,7 +2812,8 @@ var videolinks = [
     },
     {
         videoID: "qveCkmte2DQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "mLCKdyhYY94",
