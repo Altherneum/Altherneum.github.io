@@ -166,8 +166,6 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/alias.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/apt.md', false);
 
-            // await addMarkdown('Altherneum/.github', 'note/OS/Linux/arch.md', false);
-
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/who.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/whoami.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD.md', false);
