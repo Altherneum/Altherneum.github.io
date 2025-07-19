@@ -186,10 +186,12 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/ssh.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD-SSH.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/scp.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/wget.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/UFW.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/HTTPD-from-src.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/code-server-apache.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/user.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/sudo.md', false);
