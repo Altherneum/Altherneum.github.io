@@ -269,7 +269,7 @@
     padding-left: 10px;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
     #anchorList{
         padding-right: 25px;
         display: none;
