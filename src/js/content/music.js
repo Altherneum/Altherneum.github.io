@@ -2767,10 +2767,6 @@ var videolinks = [
         categorie: "trool",
     },
     {
-        videoID: "M3AQ6W116jo",
-        categorie: "todo",
-    },
-    {
         videoID: "9wCfNFmpL1s",
         categorie: "chill trool classic",
         top: true,
