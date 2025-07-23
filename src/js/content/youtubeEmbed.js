@@ -112,6 +112,7 @@ async function GetVideos(videoList, VideoListType) {
         else {
             await parseVideoParam(videoList, video, videoID, false, "videoholder");
             total += 1;
+            checkForDuplicate(videoID);
         }
 
         autoScroll(true, "center");
@@ -674,5 +675,18 @@ async function setGlobalPlayList() {
 
         let div_cardNoTop = addCard(false, true, videoIDListNoTop, tag, false, true);
         addIFrame(false, videoIDListNoTop, true, tag, "Auto Mix No Top: " + videoAmountNoTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardNoTop);
+    }
+}
+
+var stringVideoList = "";
+var stringDuplicated = "";
+function checkForDuplicate(videoID){
+    if(stringVideoList.includes(videoID)){
+        stringDuplicated += videoID;
+        console.log("New duplicate found : " + videoID);
+        console.log("Duplicate list : " + stringDuplicated);
+    }
+    else{
+        stringVideoList += videoID;
     }
 }
