@@ -682,7 +682,7 @@ var stringVideoList = "";
 var stringDuplicated = "";
 function checkForDuplicate(videoID){
     if(stringVideoList.includes(videoID)){
-        stringDuplicated += videoID;
+        stringDuplicated += videoID + ", ";
         console.log("New duplicate found : " + videoID);
         console.log("Duplicate list : " + stringDuplicated);
     }
