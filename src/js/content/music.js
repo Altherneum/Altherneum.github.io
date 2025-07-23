@@ -1666,10 +1666,6 @@ var videolinks = [
         categorie: "rock histoire",
     },
     {
-        videoID: "uThdFoa3sNY",
-        categorie: "rock histoire",
-    },
-    {
         videoID: "djV11Xbc914",
         categorie: "histoire chill rock",
         top: true,
@@ -1964,7 +1960,7 @@ var videolinks = [
     },
     {
         videoID: "uThdFoa3sNY",
-        categorie: "chill histoire",
+        categorie: "chill rock histoire",
         top: true,
     },
     {
