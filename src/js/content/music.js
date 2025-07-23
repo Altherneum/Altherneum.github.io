@@ -1766,10 +1766,6 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "3rkJ3L5Ce80",
-        categorie: "rap",
-    },
-    {
         videoID: "K1FlAphL2p8",
         categorie: "histoire chill",
         top: true,
