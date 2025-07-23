@@ -646,10 +646,6 @@ var videolinks = [
         categorie: "phonk",
     },
     {
-        videoID: "SreKbSWY4QY",
-        categorie: "phonk",
-    },
-    {
         videoID: "GAHkYbiQU9A",
         categorie: "phonk",
     },
@@ -1275,11 +1271,6 @@ var videolinks = [
         categorie: "histoire",
     },
     {
-        videoID: "RBtlPT23PTM",
-        categorie: "histoire",
-        top: true,
-    },
-    {
         videoID: "8UVNT4wvIGY",
         categorie: "histoire",
     },
@@ -1887,7 +1878,7 @@ var videolinks = [
     },
     {
         videoID: "RBtlPT23PTM",
-        categorie: "moody chill",
+        categorie: "moody histoire chill",
         top: true,
     },
     {
