@@ -175,6 +175,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/uptime.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/Jobs.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/screen.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/kill.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/PIDof.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/systemctl.md', false);
