@@ -1595,10 +1595,6 @@ var videolinks = [
         categorie: "trool",
     },
     {
-        videoID: "fJ9rUzIMcZQ",
-        categorie: "histoire rock",
-    },
-    {
         videoID: "uT3SBzmDxGk",
         categorie: "classic rock",
     },
