@@ -1,6 +1,7 @@
 
 
-.visible {
+#statsContentConsoleInfo.visible,
+#ContentLatestRSS.visible {
     display: flex !important;
     align-items: center;
     z-index: 980;
@@ -10,49 +11,46 @@
 
     border-bottom-width: 0px;
     margin-bottom: -2px;
+
+    padding-top: 10px;
 }
 
-.visible>* {
+#statsContentConsoleInfo.visible>*,
+#ContentLatestRSS.visible>* {    
+    width: 65%;
+}
+
+#statsContentConsoleInfo.visible>*{
     display: inline-block;
     height: 100%;
     max-width: 100%;
 }
 
-#statsContentConsoleInfoAll{
-    width: 100%;
-    
-    min-height: 100px;
-    height: 180px;
-
-    backdrop-filter: var(--blur);
-    resize: vertical;
-
-    border: 2px solid var(--main-color);
-    border-style: solid;
-    border-width: 2px;
-
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-
-    border-radius: 0px;
-}
-
-#ContentLatestRSS{
-    width: 100%;
-
+#statsContentConsoleInfoAll,
+#RSSFeed{
     padding: 16px;
-
+    
+    backdrop-filter: var(--blur);
 
     border: 2px solid var(--main-color);
     border-style: solid;
     border-width: 2px;
 
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
+    border-radius: 12px;
 }
 
-#ContentLatestRSS>img {
+#statsContentConsoleInfoAll{
+    min-height: 20px;
+    height: 20px;
+    resize: vertical;
+}
+
+#ContentLatestRSS>#RSSFeed>img {
     width: 25px;
+}
+
+#RSSFeed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
