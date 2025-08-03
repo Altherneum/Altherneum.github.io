@@ -32,7 +32,7 @@
     
     backdrop-filter: var(--blur);
 
-    border: 2px solid var(--main-color);
+    border: 2px solid var(--second-hover);
     border-style: solid;
     border-width: 2px;
 
