@@ -53,12 +53,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
 #ContentLatestRSS>#RSSFeed>button{
     border-radius: 12px;
 
-    margin-left: 10px;
+    margin-left: auto;
     
     width: 40px;
     height: 40px;
