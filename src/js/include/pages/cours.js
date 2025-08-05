@@ -153,6 +153,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/cmd-parameters.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/directory.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/tmp.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/lister.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/file.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/permission.md', false);
