@@ -132,6 +132,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/shortcut.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/learning.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/console.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Windows/Windows/wsl.md', false);
         });
     }
 
