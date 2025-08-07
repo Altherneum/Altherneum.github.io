@@ -4,9 +4,13 @@ a.cardTitle{
 }
 #NavBarHolder{
     position: sticky;
+
     top: 0;
+
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #searchbar {
@@ -14,24 +18,21 @@ a.cardTitle{
 
     padding-top: 12px;
     padding-bottom: 6px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%;
-    padding-right: 25px;
 }
 
 #searchbar,
 #result-box,
 #search-tips,
 #search-tips-holder {
-    max-width: 80%;
-    width: 80%;
+    max-width: 65%;
+    min-width: 60%;
 }
 
 #search-box{
     padding-bottom: 5px;
     position: relative;
     display: inline-flex;
+    justify-content: center;
 }
 
 #NavBarHolder{
@@ -47,9 +48,7 @@ a.cardTitle{
 }
 
 #search-box,
-#result-box,
-#search-box>input,
-#searchbar {
+#search-box>input {
     width: 100%;
 }
 

@@ -17,13 +17,13 @@
 
 #statsContentConsoleInfo.visible>*,
 #ContentLatestRSS.visible>* {    
-    min-width: 65%;
+    min-width: 30%;
 }
 
 #statsContentConsoleInfo.visible>*{
     display: inline-block;
     height: 100%;
-    max-width: 100%;
+    max-width: 60%;
 }
 
 #statsContentConsoleInfoAll,
