@@ -27,9 +27,7 @@
 }
 
 #statsContentConsoleInfoAll,
-#RSSFeed{
-    padding: 16px;
-    
+#RSSFeed{    
     backdrop-filter: var(--blur);
 
     border: 2px solid var(--second-hover);
@@ -40,6 +38,7 @@
 }
 
 #statsContentConsoleInfoAll{
+    padding: 16px;
     min-height: 20px;
     height: 20px;
     resize: vertical;
@@ -58,6 +57,8 @@
     margin-top: 10px;
     margin-bottom: 10px;
     gap: 10px;
+
+    padding: 6px;
 }
 
 #ContentLatestRSS>#RSSFeed>button{
