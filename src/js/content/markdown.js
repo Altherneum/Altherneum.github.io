@@ -29,7 +29,7 @@ async function addMarkdown(repo, file, gist) {
     content.appendChild(textElem);
     setAnchorTitles(anchorList, content);
 
-    autoScroll(true, "start");
+    autoScroll(true, "center");
     console.log("Fin markdown");
 }
 
@@ -640,7 +640,7 @@ function setAnchorTitles(anchorListElement, text) {
             }
         }
 
-        setScrollBehavior(anchorOnList, "start");
+        setScrollBehavior(anchorOnList, "center");
         anchorListElement.appendChild(anchorOnList);
     }
 }
@@ -648,7 +648,7 @@ function setAnchorTitles(anchorListElement, text) {
 function openAndScrollToSummary(element) {
     var childs = element.children;
     setTimeout(() => {
-        DoScrollIntoView(childs[0], false, "start");
+        DoScrollIntoView(childs[0], false, "center");
     }, 100);
 
     var hrefChild = childs[0].children;
