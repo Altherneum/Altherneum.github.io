@@ -3079,7 +3079,7 @@ var videolinks = [
         videoID: "Wu_wk1k16b8",
         categorie: "todo phonk",
         text: "<a target='_blank' href='#QKBjAb4en4E'>Original</a>",
-    },,
+    },
     {
         videoID: "F4DaMdsijwE",
         categorie: "todo phonk",
