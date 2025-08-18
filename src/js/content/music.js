@@ -2940,6 +2940,118 @@ var videolinks = [
         videoID: "PM0v7f5UmYo",
         categorie: "rock todo",
     },
+    {
+        videoID: "I6clX1LknkU",
+        categorie: "todo",
+    },
+    {
+        videoID: "aZ5fQyiZgns",
+        categorie: "todo",
+    },
+    {
+        videoID: "nWKPYs54INA",
+        categorie: "todo",
+    },
+    {
+        videoID: "n7Oz_7-Y9fk",
+        categorie: "todo",
+    },
+    {
+        videoID: "tiGPMuR6xzg",
+        categorie: "todo",
+    },
+    {
+        videoID: "TiVIFMbwxOc",
+        categorie: "todo",
+    },
+    {
+        videoID: "evny_w98PjI",
+        categorie: "todo",
+    },
+    {
+        videoID: "HhP6V4igJOg",
+        categorie: "todo",
+    },
+    {
+        videoID: "r5NzAksjfDI",
+        categorie: "todo",
+    },
+    {
+        videoID: "TD5A2BB1GqQ",
+        categorie: "todo",
+    },
+    {
+        videoID: "j3OzH8URrng",
+        categorie: "todo",
+    },
+    {
+        videoID: "r1O9SBPGcuM",
+        categorie: "todo",
+    },
+    {
+        videoID: "Zp28HnEU5hg",
+        categorie: "todo",
+    },
+    {
+        videoID: "zoUNCoOzAGo",
+        categorie: "todo",
+    },
+    {
+        videoID: "v7GMG1aLyPw",
+        categorie: "todo",
+    },
+    {
+        videoID: "NajmHZ6kcUg",
+        categorie: "todo",
+    },
+    {
+        videoID: "w2sY_26_Sco",
+        categorie: "todo",
+    },
+    {
+        videoID: "e7hR5RHUQII",
+        categorie: "todo",
+    },
+    {
+        videoID: "aAHoJMqktQc",
+        categorie: "todo",
+    },
+    {
+        videoID: "QEpc7F6sS4M",
+        categorie: "todo",
+    },
+    {
+        videoID: "3VxbaYySZv4",
+        categorie: "todo",
+    },
+    {
+        videoID: "O1PkZaFy61Y",
+        categorie: "todo",
+    },
+    {
+        videoID: "eLOH-1uYt9w",
+        categorie: "todo",
+    },
+    {
+        videoID: "9hKEIMl8AVk",
+        categorie: "todo",
+    },
+    {
+        videoID: "GYmulKNSpDA",
+        categorie: "todo",
+    },
+    {
+        videoID: "fPO76Jlnz6c",
+        categorie: "todo",
+    },
+    {
+        videoID: "2cnloO84LA0",
+        categorie: "todo",
+    },
+    {
+        videoID: "9-HsYATW7yA",
+        categorie: "todo",
+    },
 ];
 
 var VideoListType = ["todo", "jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
