@@ -2942,7 +2942,8 @@ var videolinks = [
     },
     {
         videoID: "I6clX1LknkU",
-        categorie: "todo",
+        categorie: "rap histoire moody",
+        top: true,
     },
     {
         videoID: "aZ5fQyiZgns",
@@ -2959,7 +2960,8 @@ var videolinks = [
     },
     {
         videoID: "tiGPMuR6xzg",
-        categorie: "todo",
+        categorie: "trool phonk",
+        top: true,
     },
     {
         videoID: "TiVIFMbwxOc",
@@ -3015,7 +3017,8 @@ var videolinks = [
     },
     {
         videoID: "e7hR5RHUQII",
-        categorie: "todo",
+        categorie: "trool histoire",
+        top: true,
     },
     {
         videoID: "aAHoJMqktQc",
@@ -3037,11 +3040,13 @@ var videolinks = [
     },
     {
         videoID: "9hKEIMl8AVk",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "GYmulKNSpDA",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "fPO76Jlnz6c",
@@ -3054,7 +3059,8 @@ var videolinks = [
     },
     {
         videoID: "c7TNPiryDyg",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "yHcHGyg-mY0",
@@ -3068,13 +3074,15 @@ var videolinks = [
     },
     {
         videoID: "QKBjAb4en4E",
-        categorie: "todo phonk",
+        categorie: "phonk",
         text: "<a target='_blank' href='#Wu_wk1k16b8'>Slowed</a>",
+        top: true,
     },
     {
         videoID: "Wu_wk1k16b8",
-        categorie: "todo phonk",
+        categorie: "phonk",
         text: "<a target='_blank' href='#QKBjAb4en4E'>Original</a>",
+        top: true,
     },
     {
         videoID: "F4DaMdsijwE",
