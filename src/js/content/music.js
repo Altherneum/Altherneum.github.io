@@ -2707,7 +2707,8 @@ var videolinks = [
     },
     {
         videoID: "sVZpHFXcFJw",
-        categorie: "todo",
+        categorie: "chill",
+        top: true,
     },
     {
         videoID: "zAhvexjKCvs",
@@ -2767,7 +2768,8 @@ var videolinks = [
     },
     {
         videoID: "vbvyNnw8Qjg",
-        categorie: "todo",
+        categorie: "rock histoire moody",
+        top: true,
     },
     {
         videoID: "f4Mc-NYPHaQ",
@@ -2818,7 +2820,8 @@ var videolinks = [
     },
     {
         videoID: "HMuYfScGpbE",
-        categorie: "todo",
+        categorie: "rap trool",
+        top: true,
     },
     {
         videoID: "YFTWeAv5Njw",
@@ -2965,7 +2968,8 @@ var videolinks = [
     },
     {
         videoID: "TiVIFMbwxOc",
-        categorie: "todo",
+        categorie: "nightcore electro",
+        top: true,
     },
     {
         videoID: "evny_w98PjI",
@@ -3050,7 +3054,8 @@ var videolinks = [
     },
     {
         videoID: "fPO76Jlnz6c",
-        categorie: "todo",
+        categorie: "histoire rap",
+        top: true,
     },
     {
         videoID: "2cnloO84LA0",
@@ -3064,13 +3069,15 @@ var videolinks = [
     },
     {
         videoID: "yHcHGyg-mY0",
-        categorie: "todo phonk",
+        categorie: "phonk",
         text: "<a target='_blank' href='#FNXUolrn9Hg'>Slowed</a>",
+        top: true,
     },
     {
         videoID: "FNXUolrn9Hg",
-        categorie: "todo phonk",
+        categorie: "phonk",
         text: "<a target='_blank' href='#yHcHGyg-mY0'>Original</a>",
+        top: true,
     },
     {
         videoID: "QKBjAb4en4E",
