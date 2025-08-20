@@ -18,13 +18,14 @@ function toggleTheme() {
     }
 
     else {
-        console.log("Default color scheme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         if (systemSettingDark) {
             setTheme('dark');
+        console.log("Default color scheme : Dark");
         }
         else {
             setTheme('light');
+            console.log("Default color scheme : Light");
         }
     }
 }
