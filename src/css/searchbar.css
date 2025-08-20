@@ -18,6 +18,8 @@ a.cardTitle{
 
     padding-top: 12px;
     padding-bottom: 6px;
+
+    pointer-events: all;
 }
 
 #searchbar,
@@ -36,6 +38,7 @@ a.cardTitle{
 }
 
 #NavBarHolder{
+    pointer-events: none;
     z-index: 990;
 }
 

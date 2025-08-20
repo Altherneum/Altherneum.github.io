@@ -35,6 +35,8 @@
     border-width: 2px;
 
     border-radius: 12px;
+
+    pointer-events: all;
 }
 
 #statsContentConsoleInfoAll{
