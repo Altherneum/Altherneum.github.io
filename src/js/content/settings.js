@@ -117,9 +117,9 @@ function loadSettingsSwitch() {
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", false);
-    setSwitch("OldSearchBar", false);
+    setSwitch("OldSearchBar", true);
     setSwitch("SearchBarList", true);
-    setSwitch("AllSearchBar", false);
+    setSwitch("AllSearchBar", true);
     setSwitch("LogLogging", false);
     setSwitch("WarningLogging", false);
     setSwitch("ErrorLogging", false);

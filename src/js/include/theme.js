@@ -21,7 +21,7 @@ function toggleTheme() {
         console.log("Default color scheme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         if (systemSettingDark) {
-            setTheme('day');
+            setTheme('dark');
         }
         else {
             setTheme('light');
