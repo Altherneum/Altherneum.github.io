@@ -67,6 +67,9 @@ textarea {
 
     color: var(--text-color);
 
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+
     overflow-y: auto;
 }
 

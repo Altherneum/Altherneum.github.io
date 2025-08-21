@@ -22,6 +22,9 @@
 
     width: 17vw;
     overflow-x: auto;
+
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
 }
 
 

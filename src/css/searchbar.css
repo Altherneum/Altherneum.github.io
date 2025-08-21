@@ -86,7 +86,8 @@ a.cardTitle{
     border-radius: 10px;
     background-color: var(--main-color-transparent);
     border: 2px solid var(--second-hover);
-    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
 }
 
 #search-box>input {

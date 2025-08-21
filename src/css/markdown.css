@@ -121,9 +121,6 @@
     border-radius: 16px;
 
     position: sticky;
-
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
     
     opacity: 1;
 

@@ -101,6 +101,9 @@
 
     background: linear-gradient(var(--background-color), var(--main-color-transparent));
     box-shadow: var(--box-shadow-all-inset-main-transparent-color-small);
+
+    -webkit-backdrop-filter: var(--blur-light);
+    backdrop-filter: var(--blur-light);
 }
 
 .software>div>div:hover{
@@ -125,7 +128,8 @@
     border-bottom-width: 3px;
 
     padding: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
+    margin-top: 12px;
 }
 
 .software>div>div>div:not(:first-of-type)>img

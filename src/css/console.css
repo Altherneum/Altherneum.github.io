@@ -4,7 +4,8 @@
 }
 
 #console-border{
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
 
     height: 100%;
     width: 100%;

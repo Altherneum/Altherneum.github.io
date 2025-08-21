@@ -81,6 +81,9 @@
     text-decoration: none !important;
 
     background: linear-gradient(var(--background-color), var(--main-color-transparent));
+    
+    -webkit-backdrop-filter: var(--blur-light);
+    backdrop-filter: var(--blur-light);
 }
 
 .contact>div>a:hover,

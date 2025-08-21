@@ -14,6 +14,9 @@
     margin: 10px;
     
     background: linear-gradient(var(--background-color), var(--main-color-transparent));
+    
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
 }
 
 #donation>.holder>.card>div>*,

@@ -33,6 +33,8 @@
     margin-top: 12px;
     padding: 12px;
     padding-top: 0px;
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
 }
 
 

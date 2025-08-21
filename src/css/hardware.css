@@ -25,6 +25,9 @@
 
     max-width: 40vw;
     min-width: 20vw;
+
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
 }
 
 #hardware>div>div{

@@ -138,9 +138,6 @@ li::marker {
     color: transparent !important;
     background: var(--gradient-color-all);
 
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
-
     background-size: 400% 400%;
     animation: animate 30s ease-in-out infinite;
 }
