@@ -202,6 +202,8 @@ async function CheckPage() {
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/copy-paste.md', false);
 
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/0x0.st.md', false);
+
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/LVM.md', false);
         });
     }
