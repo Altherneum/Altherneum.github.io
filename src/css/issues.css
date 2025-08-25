@@ -29,6 +29,8 @@
     padding-bottom: 35px;
 
     background: linear-gradient(var(--background-color), var(--main-color));
+
+    z-index: 900;
 }
 
 #github_issue>.repo>.RepoName>div>img{
@@ -53,7 +55,8 @@
     border-width: 3px;
     border-radius: 16px;
     border-color: var(--main-color);
-    background-color: var(--main-color-transparent);
+
+    backdrop-filter: var(--blur);
 }
 
 #github_issue>.repo>.issues>.issue>img.profile {
