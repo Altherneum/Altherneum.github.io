@@ -10,6 +10,7 @@ textarea#frames-textarea{
     background-color: transparent;
     border-style: none;
     background: transparent;
+    backdrop-filter: none;
 }
 
 #frames-frames,
