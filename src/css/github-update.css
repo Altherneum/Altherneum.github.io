@@ -16,6 +16,8 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    backdrop-filter: var(--blur);
 }
 
 #github-update>div>h1 {

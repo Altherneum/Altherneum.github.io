@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: row;
     max-height: 50px;
+    backdrop-filter: var(--blur);
 }
 
 .github-commits>div:not(:first-child)>img {
