@@ -3160,6 +3160,18 @@ var videolinks = [
         videoID: "f1COTHSQlfo",
         categorie: "phonk",
         top: true,
+    },
+    {
+        videoID: "iS_8v1tos0U",
+        categorie: "phonk",
+        top: true,
+        text: "<a target='_blank' href='#IUq7xu6HtrI'>Extended</a>",
+    },
+    {
+        videoID: "IUq7xu6HtrI",
+        categorie: "phonk",
+        top: true,
+        text: "<a target='_blank' href='#iS_8v1tos0U'>Original</a>",
     }
 ];
 
