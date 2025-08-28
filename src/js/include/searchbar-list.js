@@ -1149,6 +1149,20 @@ const links = [
         svg: "/assets/svg/langue.svg",
     },
     {
+        href: "https://translate.google.fr/?sl=auto&tl=en&op=translate&text=",
+        queryURL: "https://translate.google.fr/?sl=auto&tl=en&op=translate&text=",
+        text: "Traduction vers l'Anglais",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/langue.svg",
+    },
+    {
+        href: "https://translate.google.fr/?sl=auto&tl=fr&op=translate&text=",
+        queryURL: "https://translate.google.fr/?sl=auto&tl=fr&op=translate&text=",
+        text: "Traduction vers le Français",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/langue.svg",
+    },
+    {
         href: "https://maps.google.fr/",
         text: "Google map",
         tag: "Google URL Web Outils Queryable",
