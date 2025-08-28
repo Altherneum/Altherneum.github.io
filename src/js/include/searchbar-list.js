@@ -1144,16 +1144,16 @@ const links = [
     },
     {
         href: "https://translate.google.fr/",
-        queryURL: "https://translate.google.fr/?sl=auto&tl=en&op=translate&text=",
         text: "Traduction vers l'Anglais",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils Queryable",
+        queryURL: "https://translate.google.fr/?sl=auto&tl=en&op=translate&text=",
         svg: "/assets/svg/langue.svg",
     },
     {
         href: "https://translate.google.fr/",
-        queryURL: "https://translate.google.fr/?sl=auto&tl=fr&op=translate&text=",
         text: "Traduction vers le Français",
-        tag: "Google URL Web Outils",
+        tag: "Google URL Web Outils Queryable",
+        queryURL: "https://translate.google.fr/?sl=auto&tl=fr&op=translate&text=",
         svg: "/assets/svg/langue.svg",
     },
     {
