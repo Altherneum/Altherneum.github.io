@@ -1617,6 +1617,7 @@ function getVideoListType(){
     return VideoListType;
 }
 
+//getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, text, top, latest)
 function getVideoChannel(){
     getLatestVideoOfChannel("UCYnvxJ-PKiGXo_tYXpWAC-w", 2, "IT", "", false, true);
     getLatestVideoOfChannel("UCWedHS9qKebauVIK2J7383g", 2, "IT", "", false, true);

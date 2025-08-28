@@ -3093,13 +3093,15 @@ var videolinks = [
     },
     {
         videoID: "F4DaMdsijwE",
-        categorie: "todo phonk",
+        categorie: "phonk electro",
         text: "<a target='_blank' href='#N5kcpkQuNv8'>Slowed</a>",
+        top: true,
     },
     {
         videoID: "N5kcpkQuNv8",
-        categorie: "todo phonk",
+        categorie: "phonk electro",
         text: "<a target='_blank' href='#F4DaMdsijwE'>Original</a>",
+        top: true,
     },
     {
         videoID: "bXr_jvgmiyU",
@@ -3172,6 +3174,56 @@ var videolinks = [
         categorie: "phonk",
         top: true,
         text: "<a target='_blank' href='#iS_8v1tos0U'>Original</a>",
+    },
+    {
+        videoID: "rGxqD6ucdZg",
+        categorie: "phonk electro jazz",
+        top: true,
+    },
+    {
+        videoID: "fxuyPBcnzXA",
+        categorie: "phonk electro",
+        top: true,
+        text: "<a target='_blank' href='#3P7w4SSZ27g'>Alternative</a>",
+    },
+    {
+        videoID: "3P7w4SSZ27g",
+        categorie: "phonk electro slavic",
+        top: true,
+        text: "<a target='_blank' href='#fxuyPBcnzXA'>Original</a>",
+    },
+    {
+        videoID: "vKVjOiVN_i0",
+        categorie: "phonk electro chill",
+        top: true,
+    },
+    {
+        videoID: "CVGUP7bgFcY",
+        categorie: "phonk electro",
+        top: true,
+    },
+    {
+        videoID: "x2R314btHoo",
+        categorie: "phonk electro hardbass",
+        top: true,
+        text: "<a target='_blank' href='#ZlrVr0D0CKM'>Alternative</a>, <a target='_blank' href='#8G5jka9aDSw'>slowed</a>",
+    },
+    {
+        videoID: "ZlrVr0D0CKM",
+        categorie: "phonk electro hardbass",
+        top: true,
+        text: "<a target='_blank' href='#x2R314btHoo'>Original</a>, <a target='_blank' href='#8G5jka9aDSw'>slowed</a>",
+    },
+    {
+        videoID: "8G5jka9aDSw",
+        categorie: "phonk electro hardbass",
+        top: true,
+        text: "<a target='_blank' href='#x2R314btHoo'>Original</a>, <a target='_blank' href='#ZlrVr0D0CKM'>alternative</a>",
+    },
+    {
+        videoID: "Ss7xjKj9LdQ",
+        categorie: "phonk electro",
+        top: true,
     }
 ];
 
@@ -3181,8 +3233,9 @@ function getVideoListType(){
     return VideoListType;
 }
 
+//getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, text, top, latest)
 function getVideoChannel() {
-    // getLatestVideoOfChannel("UCYnvxJ-PKiGXo_tYXpWAC-w", 1, "IT", "", false, true);
+    getLatestVideoOfChannel("UC7MHUhc3xSd3Y4p2yTzrx9A", 5, "phonk electro", "", true, true);
 }
 
 function GetVideoList(){
