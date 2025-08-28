@@ -1022,9 +1022,10 @@ const links = [
         text: "Rufus",
     },
     {
-        href: "https://drive.google.com/drive/home",
+        href: "https://drive.google.com/",
         svg: "/assets/svg/trademark/google-drive.svg",
-        tag: "URL OS Outils Web Windows Google",
+        tag: "URL OS Outils Web Windows Google Queryable",
+        queryURL: "https://drive.google.com/drive/search?q=",
         text: "Google Drive",
     },
     {
