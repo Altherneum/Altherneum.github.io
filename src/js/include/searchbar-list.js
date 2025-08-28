@@ -1144,19 +1144,13 @@ const links = [
     },
     {
         href: "https://translate.google.fr/",
-        text: "Google traduction",
-        tag: "Google URL Web Outils",
-        svg: "/assets/svg/langue.svg",
-    },
-    {
-        href: "https://translate.google.fr/?sl=auto&tl=en&op=translate&text=",
         queryURL: "https://translate.google.fr/?sl=auto&tl=en&op=translate&text=",
         text: "Traduction vers l'Anglais",
         tag: "Google URL Web Outils",
         svg: "/assets/svg/langue.svg",
     },
     {
-        href: "https://translate.google.fr/?sl=auto&tl=fr&op=translate&text=",
+        href: "https://translate.google.fr/",
         queryURL: "https://translate.google.fr/?sl=auto&tl=fr&op=translate&text=",
         text: "Traduction vers le Français",
         tag: "Google URL Web Outils",
@@ -1336,7 +1330,25 @@ const links = [
         text: "Frames animés",
         tag: "URL Outils Admin Web Cours Développement",
         svg: "/assets/svg/book.svg",
-    }
+    },
+    {
+        href: "https://systeminformer.sourceforge.io/",
+        svg: "/assets/svg/link.svg",
+        tag: "OS Windows OpSec",
+        text: "System Informer",
+    },
+    {
+        href: "https://sourceforge.net/projects/processhacker/",
+        svg: "/assets/svg/link.svg",
+        tag: "OS Windows OpSec",
+        text: "Process hacker",
+    },
+    {
+        href: "https://winaero.com/",
+        svg: "/assets/svg/link.svg",
+        tag: "OS Windows OpSec",
+        text: "WinAero",
+    },
 ];
 
 /*
