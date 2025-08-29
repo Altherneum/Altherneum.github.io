@@ -146,7 +146,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/cours/linux", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'note/OS/Linux/readme.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/README.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/introduction.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/man.md', false);
