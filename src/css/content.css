@@ -73,8 +73,6 @@ article>div>h3 {
         left: 0;
         right: 0;
         bottom: 0;
-
-        pointer-events: none;
         
         min-width: 100vw;
         min-height: 100vh;
