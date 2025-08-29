@@ -456,13 +456,14 @@ function setAnchorButton(id, asset) {
         var anchorList = document.getElementById("anchorList");
         var contentLeft = document.getElementById("content-left");
 
-        if (anchorList.style.display === "none" || contentLeft.style.display === "none") {
-            anchorList.style.display = "grid";
-            contentLeft.style.display = "block";
-        }
-        else {
+        if (anchorList.style.display === "grid" && contentLeft.style.display === "block"){
             anchorList.style.display = "none";
             contentLeft.style.display = "none";
+        }
+        else if ((anchorList.style.display === "none" && contentLeft.style.display === "none") 
+        || (anchorList.style.display === "" && contentLeft.style.display === "")) {
+            anchorList.style.display = "grid";
+            contentLeft.style.display = "block";
         }
     }
 
