@@ -269,12 +269,15 @@
 @media screen and (max-width: 1439px) {
     #anchorList{
         padding-right: 25px;
+        
         display: none;
         position: fixed;
+        
         top: 0vh;
         bottom: 0vh;
         left: 0vw;
         right: 0vw;
+
         z-index: 1005;
 
         scrollbar-width: none;

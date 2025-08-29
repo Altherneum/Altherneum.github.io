@@ -57,11 +57,19 @@ article>div>h3 {
     display: inline-block;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1439px) {
     #content {
     }
 
     #content-left {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        margin-top: 0px;
     }
 
     #contentArticle {
@@ -80,7 +88,7 @@ article>div>h3 {
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
     #content {
     }
 
