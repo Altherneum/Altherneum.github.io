@@ -80,11 +80,6 @@ article>div>h3 {
         margin-top: 0px;
     }
 
-    #content-left>#anchorList{
-        -webkit-backdrop-filter: var(--blur);
-        backdrop-filter: var(--blur);
-    }
-
     #contentArticle {
         overflow-x: scroll;
         overflow-wrap: break-word;

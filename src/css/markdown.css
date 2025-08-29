@@ -266,6 +266,11 @@
     padding-left: 10px;
 }
 
+#content-left>#anchorList{
+    -webkit-backdrop-filter: var(--blur);
+    backdrop-filter: var(--blur);
+}
+
 @media screen and (max-width: 1439px) {
     #anchorList{
         padding-right: 25px;
