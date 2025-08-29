@@ -454,12 +454,15 @@ function setAnchorButton(id, asset) {
 
     button.onclick = function () {
         var anchorList = document.getElementById("anchorList");
+        var contentLeft = document.getElementById("content-left");
 
-        if (anchorList.style.display === "none") {
+        if (anchorList.style.display === "none" || contentLeft.style.display === "none") {
             anchorList.style.display = "grid";
+            contentLeft.style.display = "block";
         }
         else {
             anchorList.style.display = "none";
+            contentLeft.style.display = "none";
         }
     }
 
