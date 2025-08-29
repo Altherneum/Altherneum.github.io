@@ -74,7 +74,9 @@ article>div>h3 {
         min-height: 100vh;
         
         margin-top: 0px;
-        
+    }
+
+    #content-left>#anchorList{
         -webkit-backdrop-filter: var(--blur);
         backdrop-filter: var(--blur);
     }
