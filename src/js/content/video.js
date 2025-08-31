@@ -1608,6 +1608,12 @@ var videolinks = [
         videoID: "0vaSsJ9sGy4",
         categorie: "IA archive IT humour",
         top: true,
+    },
+    {
+        videoID: "uuCYq64Ww7o",
+        categorie: "IT code linux science",
+        short: true,
+        top: true,
     }
 ];
 
