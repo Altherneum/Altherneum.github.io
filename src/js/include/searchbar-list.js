@@ -1350,6 +1350,30 @@ const links = [
         tag: "OS Windows OpSec",
         text: "WinAero",
     },
+    {
+        href: "https://regexr.com/",
+        svg: "/assets/svg/.svg",
+        tag: "Outils Web Développement URL",
+        text: "Regular expression",
+    },
+    {
+        href: "https://regex101.com/",
+        svg: "/assets/svg/.svg",
+        tag: "Outils Web Développement URL",
+        text: "Regular expression",
+    },
+    {
+        href: "https://sed.js.org/",
+        svg: "/assets/svg/.svg",
+        tag: "Outils Web Développement URL",
+        text: "GNU sed REPL (Regex)",
+    },
+    {
+        href: "https://usebottles.com/",
+        svg: "/assets/svg/.svg",
+        tag: "Linux OS Outils Jeux Windows",
+        text: "Run Windows in a Bottle",
+    },
 ];
 
 /*
