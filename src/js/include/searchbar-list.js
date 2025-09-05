@@ -998,10 +998,10 @@ const links = [
         text: ".github Arch",
     },
     {
-        href: "https://raw.githubusercontent.com/Altherneum/.github/refs/heads/main/note/OS/Linux/Arch/install.sh",
+        href: "https://raw.githubusercontent.com/Altherneum/.github/refs/heads/main/note/OS/Linux/Arch/Archterneum/install.sh",
         svg: "/assets/svg/link.svg",
         tag: "Repo Github Linux OS Outils URL",
-        text: "Arch install.sh",
+        text: "arch.sh auto install",
     },
     {
         href: "https://guacamole.apache.org/",
