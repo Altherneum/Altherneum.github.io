@@ -1374,6 +1374,12 @@ const links = [
         tag: "Linux OS Outils Jeux Windows",
         text: "Run Windows in a Bottle",
     },
+    {
+        href: "https://www.nerdfonts.com/cheat-sheet",
+        svg: "/assets/svg/link.svg",
+        tag: "Linux OS Outils Web Développement Windows",
+        text: "Nerd Fonts",
+    },
 ];
 
 /*
