@@ -1380,6 +1380,12 @@ const links = [
         tag: "Linux OS Outils Web Développement Windows",
         text: "Nerd Fonts",
     },
+    {
+        href: "https://bash-prompt-generator.org/",
+        svg: "/assets/svg/console.svg",
+        tag: "Linux OS Outils CMD",
+        text: "Bash prompt generator",
+    },
 ];
 
 /*
