@@ -3224,6 +3224,30 @@ var videolinks = [
         videoID: "Ss7xjKj9LdQ",
         categorie: "phonk electro moody jazz",
         top: true,
+    },
+    {
+        videoID: "AayuhXNGTCA",
+        categorie: "phonk electro moody",
+        top: true,
+        text: "<a target='_blank' href='#XwaP_bcYp64'>Sped up</a>, <a target='_blank' href='#KJ-TnT5Mxqs'>Original</a>, <a target='_blank' href='#Fb5jGmMvhtM'>Extended</a>",
+    },
+    {
+        videoID: "XwaP_bcYp64",
+        categorie: "phonk electro moody",
+        top: true,
+        text: "<a target='_blank' href='#AayuhXNGTCA'>Vidéo</a>, <a target='_blank' href='#KJ-TnT5Mxqs'>Original</a>, <a target='_blank' href='#Fb5jGmMvhtM'>Extended</a>",
+    },
+    {
+        videoID: "KJ-TnT5Mxqs",
+        categorie: "phonk electro moody",
+        top: true,
+        text: "<a target='_blank' href='#XwaP_bcYp64'>Sped up</a>, <a target='_blank' href='#AayuhXNGTCA'>Vidéo</a>, <a target='_blank' href='#Fb5jGmMvhtM'>Extended</a>",
+    },
+    {
+        videoID: "Fb5jGmMvhtM",
+        categorie: "phonk electro moody",
+        top: true,
+        text: "<a target='_blank' href='#XwaP_bcYp64'>Sped up</a>, <a target='_blank' href='#AayuhXNGTCA'>Vidéo</a>, <a target='_blank' href='#KJ-TnT5Mxqs'>Original</a>",
     }
 ];
 
