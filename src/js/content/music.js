@@ -3248,6 +3248,18 @@ var videolinks = [
         categorie: "phonk electro moody",
         top: true,
         text: "<a target='_blank' href='#XwaP_bcYp64'>Sped up</a>, <a target='_blank' href='#AayuhXNGTCA'>Vidéo</a>, <a target='_blank' href='#KJ-TnT5Mxqs'>Original</a>",
+    },
+    {
+        videoID: "Iyv905Q2omU",
+        categorie: "histoire chill electro",
+        top: true,
+        text: "<a target='_blank' href='#4B7bYrARvUU'>The boys OST</a>",
+    },
+    {
+        videoID: "4B7bYrARvUU",
+        categorie: "histoire chill electro",
+        top: true,
+        text: "<a target='_blank' href='#Iyv905Q2omU'>Original</a>",
     }
 ];
 
