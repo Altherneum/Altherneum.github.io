@@ -2502,6 +2502,51 @@ var videolinks = [
         videoID: "ZP7T6WAK3Ow",
         categorie: "todo",
     },
+    {
+        videoID: "KFbUQPouVy8",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "lhVpxQK2XuI",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "oRe3rSHmfdk",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "hIp44TdYdkI",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "1M5jj1wo75c",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "5yc244Pn3Sg",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "_pvFClRujDo",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "mcsg_0km8IU",
+        short: true,
+        categorie: "todo",
+    },
+    {
+        videoID: "w_XbBvrHURQ",
+        short: true,
+        categorie: "todo",
+    },
 ];
 
 var VideoListType = ["todo", "politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
