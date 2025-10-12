@@ -3318,10 +3318,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "DO_iFL6Nh-I",
-        categorie: "todo",
-    },
-    {
         videoID: "MaLqO_parbc",
         categorie: "todo",
     },
@@ -3355,10 +3351,6 @@ var videolinks = [
     },
     {
         videoID: "OjpX8ILe2N4",
-        categorie: "todo",
-    },
-    {
-        videoID: "W4C-NEWrnSQ",
         categorie: "todo",
     },
     {
@@ -3450,10 +3442,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "rngLO3tF2mA",
-        categorie: "todo",
-    },
-    {
         videoID: "vh03nBIQV80",
         categorie: "todo",
     },
@@ -3506,14 +3494,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "2cnloO84LA0",
-        categorie: "todo",
-    },
-    {
-        videoID: "lpvmm2IwlwQ",
-        categorie: "todo",
-    },
-    {
         videoID: "SqjQUe61hU0",
         categorie: "todo",
     },
@@ -3555,14 +3535,6 @@ var videolinks = [
     },
     {
         videoID: "xEldLhbUVjA",
-        categorie: "todo",
-    },
-    {
-        videoID: "j9V78UbdzWI",
-        categorie: "todo",
-    },
-    {
-        videoID: "iLBBRuVDOo4",
         categorie: "todo",
     },
     {
