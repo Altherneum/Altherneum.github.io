@@ -1768,10 +1768,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "MiVn1VAU3W8",
-        categorie: "todo",
-    },
-    {
         videoID: "2qN_98tEG_k",
         categorie: "todo",
     },
