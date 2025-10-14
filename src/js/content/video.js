@@ -1988,10 +1988,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "OnK0_6onurc",
-        categorie: "todo",
-    },
-    {
         videoID: "vpSkBV5vydg",
         categorie: "todo",
     },
