@@ -2,9 +2,17 @@
 var total = 0;
 
 async function loadYouTubeEmbed() {
+    checkURL();
     await setVideoScreenLocking();
     createPlayListList();
     GetVideos(shuffle(GetVideoList()), getVideoListType());
+}
+
+function checkURL(){
+    let hash = window.location.hash
+    if(hash == "footer" || hash == "header"){
+        window.history.replaceState({page: ""}, "", window.location.pathname);   
+    }
 }
 
 var shown = ["all"];
