@@ -10,7 +10,7 @@ async function loadYouTubeEmbed() {
 
 function checkURL(){
     let hash = window.location.hash
-    if(hash == "footer" || hash == "header"){
+    if(hash == "#footer" || hash == "#header"){
         window.history.replaceState({page: ""}, "", window.location.pathname);   
     }
 }
