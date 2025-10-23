@@ -1602,6 +1602,12 @@ const links = [
         tag: "URL Jeux Repo",
         text: "Wurst Repo",
     },
+    {
+        href: "https://gchq.github.io/CyberChef/",
+        svg: "/assets/svg/tools.svg",
+        tag: "Outils Web URL Admin OpSec",
+        text: "Cyber Chef",
+    },
 ];
 
 /*
