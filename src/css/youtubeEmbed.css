@@ -96,6 +96,11 @@
     border-radius: 5px;
 }
 
+.menu>.menu-all {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
 .menu>div>div.check{
     transform: translate(25px, -10%);
 }
