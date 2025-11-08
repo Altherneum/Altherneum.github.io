@@ -1,46 +1,39 @@
-main();
+await main();
 
 async function main() {
-    var deviseType = "USD";
+    var deviseType = "usdt";
 
-    setTokenData("BTC", deviseType);
-    setTokenData("ETH", deviseType);
-    setTokenData("XMR", deviseType);
-    setTokenData("XRP", deviseType);
-    setTokenData("ADA", deviseType);
-    setTokenData("USDT", deviseType);
+    await getPriceBinance("btc", deviseType);
+    await getPriceBinance("eth", deviseType);
+    await getPriceBinance("xmr", deviseType);
+    await getPriceBinance("xrp", deviseType);
+    await getPriceBinance("ada", deviseType);
+    await getPriceBinance("usdt", deviseType);
 }
 
-async function setTokenData(token, deviseType) {
-    var price = await getPriceBinance(token, deviseType);
+function setData(id, data, deviseType) {
     var priceFormat = new Intl.NumberFormat('fr-FR', { style: 'currency', currency: deviseType });
-
-    setData(token, priceFormat.format(price));
-}
-
-function setData(id, data) {
+    let price = priceFormat.format(data);
+    id = id.toUpperCase();
     var elem = document.getElementById("prix-" + id);
-    elem.textContent = data;
+    elem.textContent = price;
 }
 
-async function getPriceBlockChainAPI(token, deviseType) {
-    var x = await gather('https://api.blockchain.com/v3/exchange/tickers/' + token + "-" + deviseType);
-    var price = getValue(x, "last_trade_price");
-    if(price !== undefined){
-       return getValue(x, "last_trade_price");
-    }
-    else {
-        return "...";
-    }
-}
-
+//https://developers.binance.com/docs/derivatives/option/websocket-market-streams/24-hour-TICKER-by-underlying-asset-and-expiration-data
 async function getPriceBinance(token, deviseType) {
-    var x = await gather("https://api.binance.com/api/v3/ticker/price?symbol=" + token + deviseType);
-    var price = getValue(x, "price");
-    if(price !== undefined){
-       return getValue(x, "price");
-    }
-    else {
-        return "...";
-    }
+    let URL = "wss://stream.binance.com:9443/ws/" + token + deviseType + "@ticker"
+    const ws = new WebSocket(URL);
+
+    ws.onmessage = (event) => {
+        const data = JSON.parse(event.data);
+        let price = getValue(data, "c");
+        console.log(price)
+        if(price !== undefined){
+            setData(token, price, "USD");
+        }else {
+            setData(token, 0, "USD");
+        }
+    };
+
 }
+
