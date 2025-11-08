@@ -27,7 +27,6 @@ async function getPriceBinance(token, deviseType) {
     ws.onmessage = (event) => {
         const data = JSON.parse(event.data);
         let price = getValue(data, "c");
-        console.log(price)
         if(price !== undefined){
             setData(token, price, "USD");
         }else {
