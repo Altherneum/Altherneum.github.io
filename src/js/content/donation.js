@@ -1,4 +1,4 @@
-await main();
+main();
 
 async function main() {
     var deviseType = "usdt";
