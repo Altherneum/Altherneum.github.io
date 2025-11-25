@@ -99,3 +99,27 @@
 .contact>#techno{
     padding-top: 16px;
 }
+
+#contact-mail {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+
+    gap: 5px;
+
+    flex-direction: row;
+}
+
+#contact-mail > .contact-mail-text {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#contact-mail > .contact-mail-split {
+    text-decoration: none;
+    opacity: 0.75;
+}
