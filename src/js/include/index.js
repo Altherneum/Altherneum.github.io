@@ -132,16 +132,16 @@ async function pages() {
     var lockdown = true;
     var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n+m99^ic;";
 
-    if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
-        await includes();
-        await include_css("/src/css/maintenance.css");
-        await include_html("/src/html/content/maintenance.html", "contentArticle", true);
-        randomInclude(true);
-    }
-    else if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
+    if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
         await includes();
         await include_css("/src/css/lockdown.css");
         await include_html("/src/html/content/lockdown.html", "contentArticle", true);
+        randomInclude(true);
+    }
+    else if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
+        await includes();
+        await include_css("/src/css/maintenance.css");
+        await include_html("/src/html/content/maintenance.html", "contentArticle", true);
         randomInclude(true);
     }
     else {
