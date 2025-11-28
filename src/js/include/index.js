@@ -127,6 +127,9 @@ async function randomInclude(excludeSettings) {
 
 async function pages() {
     console.log("Loading custom page");
+
+    var block = true;
+
     var maintenance = true;
 
     var lockdown = true;

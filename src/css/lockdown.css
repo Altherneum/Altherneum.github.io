@@ -1,0 +1,48 @@
+header, 
+#searchbar,
+#anchor>:not(#theme, #date-holder){
+    display: none;
+}
+
+#contentArticle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#lockdown{
+    text-align: center;
+}
+
+#lockdown-title > * {
+    display: inline-block; 
+}
+
+#lockdown-title{
+    margin-bottom: 1vh;
+}
+
+#lockdown-title>img{
+    animation-duration: 3s;
+    animation-delay: 0ms;
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+    animation-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotateZ(45deg);
+    }
+
+    50% {
+        transform:  rotateZ(120deg);
+    }
+
+    100% {
+        transform: rotateZ(45deg);
+    }
+}
