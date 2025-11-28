@@ -133,7 +133,7 @@ async function pages() {
     var maintenance = true;
 
     var lockdown = true;
-    var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n+m99^ic;";
+    var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n m99^ic;";
 
     if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
         await includes();
