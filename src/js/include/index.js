@@ -139,14 +139,14 @@ async function pages() {
         await includes();
         await include_css("/src/css/lockdown.css");
         await include_html("/src/html/content/lockdown.html", "contentArticle", true);
-        statsConsoleInfo(pathname, undefined, "LockDown");
+        statsConsoleInfo(window.location.pathname, undefined, "LockDown");
         randomInclude(true);
     }
     else if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
         await includes();
         await include_css("/src/css/maintenance.css");
         await include_html("/src/html/content/maintenance.html", "contentArticle", true);
-        statsConsoleInfo(window.location.pathname;, undefined, "Maintenance");
+        statsConsoleInfo(window.location.pathname, undefined, "Maintenance");
         randomInclude(true);
     }
     else {
