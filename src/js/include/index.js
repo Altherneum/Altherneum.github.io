@@ -146,7 +146,7 @@ async function pages() {
         await includes();
         await include_css("/src/css/maintenance.css");
         await include_html("/src/html/content/maintenance.html", "contentArticle", true);
-        statsConsoleInfo(pathname, undefined, "Maintenance");
+        statsConsoleInfo(window.location.pathname;, undefined, "Maintenance");
         randomInclude(true);
     }
     else {
