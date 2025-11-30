@@ -517,32 +517,17 @@ function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     input.type = "checkbox";
     
     var hideSummary = false;
-    if (localStorage.getItem('Titre2') === "false" && ElementClassName === "summary-h2") {
+    if (localStorage.getItem('Titre2') === "true" && ElementClassName === "summary-h2") {
         hideSummary = true;
     }
-    else if (localStorage.getItem('Titre3Plus') === "false" && ElementClassName === "summary-hidder") {
+    else if (localStorage.getItem('Titre3Plus') === "true" && ElementClassName === "summary-hidder") {
         hideSummary = true;
     }
-    input.checked = !hideSummary; //color is inverted
+    input.checked = hideSummary; //color is inverted    
+    updateSummarySettings(ElementClassName, input);
 
     input.onclick = () => {
-        var list = document.getElementById('anchorList').getElementsByClassName(ElementClassName);
-
-        for (i = 0; i < list.length; i++) {
-            var childDiv = list[i];
-            if (!input.checked) {
-                childDiv.style.display = "block";
-            } else {
-                childDiv.style.display = "none";
-            }
-        }
-
-        if(ElementClassName === "summary-h2"){
-            localStorage.setItem("Titre2", !input.checked);
-        }
-        else if(ElementClassName === "summary-hidder"){
-            localStorage.setItem("Titre3Plus", !input.checked);
-        }
+        updateSummarySettings(ElementClassName, input);
     };
 
     var textCheck = document.createElement("p");
@@ -555,6 +540,29 @@ function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     checkbox.appendChild(input);
     checkbox.appendChild(span);
     AnchorSummaryElement.appendChild(check);
+}
+
+function updateSummarySettings(ElementClassName, input){
+    //get H2 or H3+
+    var list = document.getElementById('anchorList').getElementsByClassName(ElementClassName);
+
+    //update each link on the summary
+    for (i = 0; i < list.length; i++) {
+        var childDiv = list[i];
+        if (!input.checked) {
+            childDiv.style.display = "block";
+        } else {
+            childDiv.style.display = "none";
+        }
+    }
+
+    //update the settings
+    if(ElementClassName === "summary-h2"){
+        localStorage.setItem("Titre2", input.checked);
+    }
+    else if(ElementClassName === "summary-hidder"){
+        localStorage.setItem("Titre3Plus", input.checked);
+    }
 }
 
 function setAnchorTitles(anchorListElement, text) {
@@ -594,7 +602,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "## ";
             anchorOnList.style = "margin-left:10px;text-decoration:none;font-size: medium;";
             anchorOnList.className = "summary-h2";
-            if(localStorage.getItem("Titre2") === "false"){
+            if(localStorage.getItem("Titre2") === "true"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -603,7 +611,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "### ";
             anchorOnList.style = "margin-left:15px;text-decoration:none;font-size: small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "false"){
+            if(localStorage.getItem("Titre3Plus") === "true"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -612,7 +620,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "#### ";
             anchorOnList.style = "margin-left:20px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "false"){
+            if(localStorage.getItem("Titre3Plus") === "true"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -621,7 +629,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "##### ";
             anchorOnList.style = "margin-left:25px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "false"){
+            if(localStorage.getItem("Titre3Plus") === "true"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -630,7 +638,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "###### ";
             anchorOnList.style = "margin-left:30px;text-decoration:none;font-size: x-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "false"){
+            if(localStorage.getItem("Titre3Plus") === "true"){
                 anchorOnList.style.display = "none";
             }
         }
@@ -639,7 +647,7 @@ function setAnchorTitles(anchorListElement, text) {
             anchor.textContent = "#7+";
             anchorOnList.style = "margin-left:35px;text-decoration:none;font-size: xx-small;";
             anchorOnList.className = "summary-hidder";
-            if(localStorage.getItem("Titre3Plus") === "false"){
+            if(localStorage.getItem("Titre3Plus") === "true"){
                 anchorOnList.style.display = "none";
             }
         }
