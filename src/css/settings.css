@@ -1,4 +1,4 @@
-#settingsmenu{
+#settingsmenu>div{
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -6,12 +6,13 @@
     padding: 50px;
 }
 
-#settingsmenu>* {
-}
-
 #settingsmenu>button {
     border-radius: 6px;
     padding: 10px;
+}
+
+.check {
+    display: block;
 }
 
 .check>p{
