@@ -261,6 +261,7 @@
 .H5,
 .H6,
 .H7 {
+    user-select: none !important;
     text-decoration: none;
     scroll-margin-top: 100px;
     padding-left: 10px;
