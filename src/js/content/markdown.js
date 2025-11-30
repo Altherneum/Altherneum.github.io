@@ -523,7 +523,7 @@ function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     else if (localStorage.getItem('Titre3Plus') === "false" && ElementClassName === "summary-hidder") {
         hideSummary = true;
     }
-    input.checked = hideSummary;
+    input.checked = !hideSummary;
 
     input.onclick = () => {
         var list = document.getElementById('anchorList').getElementsByClassName(ElementClassName);
