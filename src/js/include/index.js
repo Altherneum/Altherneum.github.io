@@ -128,11 +128,11 @@ async function randomInclude(excludeSettings) {
 async function pages() {
     console.log("Loading custom page");
 
-    var block = true;
+    var block = false;
 
-    var maintenance = true;
+    var maintenance = false;
 
-    var lockdown = true;
+    var lockdown = false;
     var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n m99^ic;";
 
     if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
