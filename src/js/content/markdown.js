@@ -479,6 +479,14 @@ function setAnchor() {
     var anchorList = document.createElement("div");
     anchorList.id = "anchorList";
     var contentLeft = document.getElementById("content-left");
+
+        console.warn("TEST ---------------------------------------------");
+    if (localStorage.getItem('ShowSummary') === "true") {
+        console.warn("OKKKKKK ---------------------------------------------");
+        contentLeft.style.display = "none";
+    }
+        console.warn("END ---------------------------------------------");
+    
     contentLeft.appendChild(anchorList);
 
     var divAnchorTitle = document.createElement("div");
@@ -503,10 +511,6 @@ function setAnchor() {
     anchorList.appendChild(divAnchorTitle);
     anchorList.appendChild(AnchorSummary);
     setAnchorButton("#AnchorSummary", "/assets/svg/close.svg");
-
-    if (localStorage.getItem('ShowSummary') === "true") {
-        contentLeft.style.display = "none";
-    }
 
     return anchorList;
 }
