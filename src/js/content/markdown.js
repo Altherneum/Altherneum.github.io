@@ -480,12 +480,9 @@ function setAnchor() {
     anchorList.id = "anchorList";
     var contentLeft = document.getElementById("content-left");
 
-        console.warn("TEST ---------------------------------------------");
     if (localStorage.getItem('ShowSummary') === "true") {
-        console.warn("OKKKKKK ---------------------------------------------");
         contentLeft.style.display = "none";
     }
-        console.warn("END ---------------------------------------------");
     
     contentLeft.appendChild(anchorList);
 
