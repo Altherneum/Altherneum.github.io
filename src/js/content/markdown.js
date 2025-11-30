@@ -504,6 +504,9 @@ function setAnchor() {
     anchorList.appendChild(AnchorSummary);
     setAnchorButton("#AnchorSummary", "/assets/svg/close.svg");
 
+    //if settings show anchor
+    //add display settings
+
     return anchorList;
 }
 

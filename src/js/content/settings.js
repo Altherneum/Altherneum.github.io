@@ -77,6 +77,10 @@ function SwitchTitre3Plus() {
     Switcher("Titre3Plus");
 }
 
+function SwitchShowSummary(){
+    Switcher("ShowSummary");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -129,4 +133,5 @@ function loadSettingsSwitch() {
     setSwitch("CloseOnOpen", false);
     setSwitch("Titre2", true);
     setSwitch("Titre3Plus", true);
+    setSwitch("ShowSummary", true);
 }
