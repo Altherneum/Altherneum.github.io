@@ -504,8 +504,9 @@ function setAnchor() {
     anchorList.appendChild(AnchorSummary);
     setAnchorButton("#AnchorSummary", "/assets/svg/close.svg");
 
-    //if settings show anchor
-    //add display settings
+    if (localStorage.getItem('ShowSummary') === "false") {
+        contentLeft.style.display = "none";
+    }
 
     return anchorList;
 }
