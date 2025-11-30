@@ -1,8 +1,4 @@
 #settingsmenu>div{
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 50px;
     padding: 50px;
 }
 
@@ -13,6 +9,9 @@
 
 .check {
     display: block;
+    
+    padding-top: 15px;
+    padding-left: 50px;
 }
 
 .check>p{
