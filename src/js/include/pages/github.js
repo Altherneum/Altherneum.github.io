@@ -35,12 +35,14 @@ async function CheckPage() {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'profile/README.md', false);
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
         });
     }
 
     else if (pathNameMatchPage("/github/contribuer", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/.github', 'CONTRIBUTING.md', false);
         });
     }
@@ -48,6 +50,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/support", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/.github', 'SUPPORT.md', false);
         });
     }
@@ -55,6 +58,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/security", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/.github', 'SECURITY.md', false);
         });
     }
@@ -62,6 +66,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/license", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/.github', 'LICENSE.md', false);
         });
     }
@@ -69,6 +74,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/code_of_conduct", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/.github', 'CODE_OF_CONDUCT.md', false);
         });
     }
@@ -76,6 +82,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/Altherneum.github.io", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/Altherneum.github.io', 'README.md', false);
         });
     }
@@ -83,6 +90,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/.github", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/.github', 'README.md', false);
         });
     }
@@ -90,6 +98,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/plugin", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/plugin', 'README.md', false);
         });
     }
@@ -97,6 +106,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/resourcePack", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/resourcePack', 'README.md', false);
         });
     }
@@ -104,6 +114,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/bot", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/bot', 'README.md', false);
         });
     }
@@ -111,6 +122,7 @@ async function CheckPage() {
     else if (pathNameMatchPage("/github/server", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'profile/URL.md', false);
             await addMarkdown('Altherneum/server', 'README.md', false);
         });
     }
