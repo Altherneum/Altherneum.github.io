@@ -2688,6 +2688,10 @@ function GetVideoList(){
     return videolinks;
 }
 
+function getType(){
+    return "video";
+}
+
 function getEmoji(VideoListType){
     switch (VideoListType) {
         case 'hack':

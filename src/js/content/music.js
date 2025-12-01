@@ -3772,6 +3772,10 @@ function GetVideoList(){
     return videolinks;
 }
 
+function getType(){
+    return "music";
+}
+
 function getEmoji(VideoListType){
     switch (VideoListType) {
         case 'rain':
