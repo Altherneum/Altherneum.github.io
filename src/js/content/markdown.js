@@ -456,12 +456,11 @@ function setAnchorButton(id, asset) {
         var anchorList = document.getElementById("anchorList");
         var contentLeft = document.getElementById("content-left");
 
-        if (anchorList.style.display === "grid" && contentLeft.style.display === "block"){
+        if (contentLeft.style.display === "block" || anchorList.style.display === "grid"){
             anchorList.style.display = "none";
             contentLeft.style.display = "none";
         }
-        else if ((anchorList.style.display === "none" && contentLeft.style.display === "none") 
-        || (anchorList.style.display === "" && contentLeft.style.display === "")) {
+        else if (contentLeft.style.display === "none" || anchorList.style.display === "none") {
             anchorList.style.display = "grid";
             contentLeft.style.display = "block";
         }
@@ -478,12 +477,18 @@ function setAnchor() {
     setAnchorButton("#anchor-button", "/assets/svg/book.svg");
     var anchorList = document.createElement("div");
     anchorList.id = "anchorList";
+
     var contentLeft = document.getElementById("content-left");
 
     if (localStorage.getItem('ShowSummary') === "true") {
+        anchorList.style.display = "none";
         contentLeft.style.display = "none";
     }
-    
+    else{
+        anchorList.style.display = "gride";
+        contentLeft.style.display = "block";
+    }
+
     contentLeft.appendChild(anchorList);
 
     var divAnchorTitle = document.createElement("div");
