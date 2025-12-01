@@ -335,7 +335,6 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
         divLogoHolder.appendChild(imagepremadePlayList);
     }
 
-
     var urlOpenYoutube = document.createElement("a");
 
     let tag = "";
