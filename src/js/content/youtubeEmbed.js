@@ -340,7 +340,6 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
     var urlOpenYoutube = document.createElement("a");
 
     let url = getURL(premadePlayList, short, playlist, videoID, false);
-    console.log(url);
 
     if(videoType === "music"){
         urlOpenYoutube.href = url;
@@ -424,8 +423,8 @@ async function createIframe(event) {
     var youtubePlaceholder = event.parentNode;
 
     console.log(premadePlayList + " : " + short + " : " + playlist + " : " + videoID + " : " + "true")
-    var url = getURL(premadePlayList, short, playlist, videoID, true);
-    console.log(url);
+    console.log(typeof premadePlayList +":"+ typeof short+":" + typeof playlist+":" + typeof videoID+":");
+    var url = getURL(premadePlayList === "true", short === "true", playlist === "true", videoID, true);
 
     console.log("Loading embed : " + url);
 
@@ -456,8 +455,6 @@ async function createIframe(event) {
 }
 
 function getURL(premadePlayList, short, playlist, videoID, emebed) {
-    console.log(typeof premadePlayList +":"+ typeof short+":" + typeof playlist+":" + typeof videoID+":" + typeof emebed);
-    //add youtube music vs youtube
     let loop;
     let autoplay = "&autoplay=1";
     let playlistarg;
@@ -465,104 +462,77 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
     let prot = "https://";
     let sitename = "youtube.com/"
 
-    //force cast to bool to avoid issue
-    premadePlayList = Boolean(premadePlayList);
-    short = Boolean(short);
-    playlist = Boolean(playlist);
-    emebed = Boolean(emebed);
-
     //http://www.youtube.com/watch_videos?video_ids=6yuDBFn7Suo,OBbHZoEylNk,wCQfkEkePx8
     //https://www.youtube.com/embed/Zby2JOL-R0k?playlist=Zby2JOL-R0k,HzdD8kbDzZA
 
     let preURL;
     if(emebed === true){
         preURL = prot + sitename + "embed/";
-        console.log("-------------------------------------- embed");
     }
     else
     {
-        console.log("-------------------------------------- not embed");
         preURL = prot + sitename + "";
     }
 
     if (premadePlayList === true) {
-            console.log("-------------------------------------- premade");
-        console.log("-------------------------------------- premade");
         if(emebed === true){
             playlistarg = "?playlist=" + videoID;
         }
         else
         {
-            console.log("-------------------------------------- not premade");
             playlistarg = "watch_videos?video_ids=" + videoID; 
         }
 
         loop = "";
         
         if(emebed === true){
-            console.log("-------------------------------------- embed 2");
             let firstVideoID = videoID.split(",")[0];
             return preURL + firstVideoID + playlistarg + autoplay + loop + rel;
         }
         else
         {
-            console.log("-------------------------------------- not embed 2");
             return preURL + playlistarg + autoplay + loop + rel;
         }
     }
     else {
-        console.log("-------------------------------------- not premade");
         if (short === false) {
-            console.log("-------------------------------------- not short");
-            
             let YouTubeLoop = localStorage.getItem('YouTubeLoop');
             if(YouTubeLoop === null){ YouTubeLoop = false;}
             
             if (YouTubeLoop === true && playlist === false && emebed === true) {
-                console.log("--------------------------------------A");
                 loop = "&loop=1";
                 playlistarg = videoID + "?playlist=" + videoID;
             }
             else if (YouTubeLoop === true && playlist === false && emebed === false) {
                 loop = "&loop=1";
-                console.log("--------------------------------------B");
                 playlistarg = "watch?v=" + videoID + "&playlist=" + videoID;
             }
             else if (YouTubeLoop === true && playlist === true && emebed === true) {
                 loop = "&loop=1";
-                console.log("--------------------------------------C");
                 playlistarg = "?list=" + videoID + "&listType=playlist";
             }
             else if (YouTubeLoop === true && playlist === true && emebed === false) {
                 loop = "&loop=1";
-                console.log("--------------------------------------D");
-                playlistarg = "watch?list=" + videoID + "&listType=playlist";
+                playlistarg = "playlist?list=" + videoID + "&listType=playlist";
             }
             else if (YouTubeLoop === false && playlist === false && emebed === true) {
                 loop = "&loop=0";
-                console.log("--------------------------------------E");
                 playlistarg = videoID + "?si=Altherneum.fr";
             }
             else if (YouTubeLoop === false && playlist === false && emebed === false) {
                 loop = "&loop=0";
-                console.log("--------------------------------------F");
                 playlistarg = "watch?v=" + videoID + "?si=Altherneum.fr";
             }
             else if (YouTubeLoop === false && playlist === true && emebed === true) {
                 loop = "&loop=0";
-                console.log("--------------------------------------G");
                 playlistarg = "?list=" + videoID + "&listType=playlist";
             }
             else if (YouTubeLoop === false && playlist === true && emebed === false) {
                 loop = "&loop=0";
-                console.log("--------------------------------------H");
-                playlistarg = "?list=" + videoID + "&listType=playlist";
+                playlistarg = "playlist?list=" + videoID + "&listType=playlist";
             }
-            console.log(playlistarg);
-            console.log("finished !!!!!!!!!!!!!!")
         }
         else {
-                console.log("--------------------------------------Else");
             loop = "";
             autoplay = "?autoplay=1";
             playlistarg = videoID;
