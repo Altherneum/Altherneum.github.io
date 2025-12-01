@@ -459,11 +459,8 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
     let autoplay = "&autoplay=1";
     let playlistarg;
     let rel = "&rel=0";
-    let prot = "https://";
+    let prot = "https://www.";
     let sitename = "youtube.com/"
-
-    //http://www.youtube.com/watch_videos?video_ids=6yuDBFn7Suo,OBbHZoEylNk,wCQfkEkePx8
-    //https://www.youtube.com/embed/Zby2JOL-R0k?playlist=Zby2JOL-R0k,HzdD8kbDzZA
 
     let preURL;
     if(emebed === true){
