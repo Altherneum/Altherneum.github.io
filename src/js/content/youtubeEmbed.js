@@ -107,8 +107,10 @@ async function GetVideos(videoList, VideoListType, videoType) {
         hideMenu("menu-link");
     }
 
+    let short;
     for (video in videoList) {
         var videoID = videoList[video].videoID;
+        short = videoList[video].short;
 
         if (LoadSingleVideo) {
             if (videoID === hash) {
@@ -127,14 +129,14 @@ async function GetVideos(videoList, VideoListType, videoType) {
     }
 
     if (LoadSingleVideo && total !== 1) {
-        var div_card = addCard(false, false, hash, "", false, false);
+        var div_card = addCard(false, false, hash, "", false, false, videoType, short);
         addCardData(div_card, "404", "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
         videoholder.appendChild(div_card);
         div_card.style.display = "flex";
     }
     else if (!LoadSingleVideo) {
         getVideoChannel();
-        setGlobalPlayList();
+        setGlobalPlayList(videoType, short);
     }
 
     console.log(total);
@@ -235,7 +237,7 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
         var status = response.status;
 
         var videoholder = document.getElementById(element);
-        let div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType);
+        let div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType, short);
 
         if (status === 200) {
             var jsonResponse = await response.json();
@@ -272,7 +274,7 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
     }
 }
 
-function addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType) {
+function addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType, short) {
     var div_card = document.createElement("div");
     var classname = "";
     if (top) {
@@ -337,21 +339,17 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
 
     var urlOpenYoutube = document.createElement("a");
 
-    let tag = "";
-    if(playlist || premadePlayList){
-        tag="list";
-    }else{
-        tag="v";
-    }
+    let url = getURL(premadePlayList, short, playlist, videoID, false);
+    console.log(url);
 
     if(videoType === "music"){
-        urlOpenYoutube.href = "https://music.youtube.com/watch?" + tag +"=" + videoID;
+        urlOpenYoutube.href = url;
         var imageOpenOnYoutube = document.createElement("img");
         imageOpenOnYoutube.src = "/assets/svg/trademark/youtube-music.svg";
         imageOpenOnYoutube.className = "OpenOnYoutube svg";
     }
     else {
-        urlOpenYoutube.href = "https://youtube.com/watch?"+ tag + "=" + videoID;
+        urlOpenYoutube.href = url;
         var imageOpenOnYoutube = document.createElement("img");
         imageOpenOnYoutube.src = "/assets/svg/trademark/youtube.svg";
         imageOpenOnYoutube.className = "OpenOnYoutube svg";
@@ -425,7 +423,7 @@ async function createIframe(event) {
     var premadePlayList = event.dataset.youtubePremadePlayList;
     var youtubePlaceholder = event.parentNode;
 
-    var url = getURL(premadePlayList, short, playlist, videoID);
+    var url = getURL(premadePlayList, short, playlist, videoID, true);
 
     console.log("Loading embed : " + url);
 
@@ -441,7 +439,7 @@ async function createIframe(event) {
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
     youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
 
-    if (premadePlayList === "true") {
+    if (premadePlayList == true) {
         //Décharge et recharge la vidéo car l'API YT est à chier :3 ...        //NB:Uniquement sur les PlayList temporaires "TL" "TempList"
         setTimeout(() => {
             console.log("deleting video");
@@ -455,41 +453,100 @@ async function createIframe(event) {
     }
 }
 
-function getURL(premadePlayList, short, playlist, videoID) {
+function getURL(premadePlayList, short, playlist, videoID, emebed) {
+    //add youtube music vs youtube
     let loop;
     let autoplay = "&autoplay=1";
     let playlistarg;
     let rel = "&rel=0";
-    let preURL = "https://www.youtube.com/embed/";
+    let prot = "https://";
+    let sitename = "youtube.com/"
 
-    if (premadePlayList === "true") {
-        playlistarg = "?playlist=" + videoID;
+    //http://www.youtube.com/watch_videos?video_ids=6yuDBFn7Suo,OBbHZoEylNk,wCQfkEkePx8
+    //https://www.youtube.com/embed/Zby2JOL-R0k?playlist=Zby2JOL-R0k,HzdD8kbDzZA
+
+    let preURL;
+    if(emebed == true){
+        preURL = prot + sitename + "embed/";
+        console.log("-------------------------------------- embed");
+    }
+    else
+    {
+        console.log("-------------------------------------- not embed");
+        preURL = prot + sitename + "";
+    }
+
+    if (premadePlayList == true) {
+        console.log("-------------------------------------- premade");
+        if(emebed == true){
+            playlistarg = "?playlist=" + videoID;
+        }
+        else
+        {
+            console.log("-------------------------------------- not premade");
+            playlistarg = "watch_videos?video_ids=" + videoID; 
+        }
+
         loop = "";
-        let firstVideoID = videoID.split(",")[0];
-        return preURL + firstVideoID + playlistarg + autoplay + loop + rel;
+        
+        if(emebed == true){
+            console.log("-------------------------------------- embed 2");
+            let firstVideoID = videoID.split(",")[0];
+            return preURL + firstVideoID + playlistarg + autoplay + loop + rel;
+        }
+        else
+        {
+            console.log("-------------------------------------- not embed 2");
+            return preURL + playlistarg + autoplay + loop + rel;
+        }
     }
     else {
-        if (short === "false") {
+        if (short == false) {
+                console.log("-------------------------------------- not short");
             let YouTubeLoop = localStorage.getItem('YouTubeLoop');
-            if (YouTubeLoop === "true" && playlist !== "true") {
+            if (YouTubeLoop == true && playlist == false && emebed == true) {
+                console.log("--------------------------------------A");
                 loop = "&loop=1";
                 playlistarg = videoID + "?playlist=" + videoID;
             }
-            else if (YouTubeLoop === "true" && playlist === "true") {
+            else if (YouTubeLoop == true && playlist == false && emebed == false) {
                 loop = "&loop=1";
+                console.log("--------------------------------------B");
+                playlistarg = "watch?v=" + videoID + "&playlist=" + videoID;
+            }
+            else if (YouTubeLoop == true && playlist == true && emebed == true) {
+                loop = "&loop=1";
+                console.log("--------------------------------------C");
                 playlistarg = "?list=" + videoID + "&listType=playlist";
             }
-            else if (YouTubeLoop !== "true" && playlist !== "true") {
+            else if (YouTubeLoop == true && playlist == true && emebed == false) {
+                loop = "&loop=1";
+                console.log("--------------------------------------D");
+                playlistarg = "watch?list=" + videoID + "&listType=playlist";
+            }
+            else if (YouTubeLoop == false && playlist == false && emebed == true) {
                 loop = "&loop=0";
+                console.log("--------------------------------------E");
                 playlistarg = videoID + "?si=Altherneum.fr";
             }
-            else if (YouTubeLoop !== "true" && playlist === "true") {
+            else if (YouTubeLoop == false && playlist == false && emebed == false) {
                 loop = "&loop=0";
+                console.log("--------------------------------------F");
+                playlistarg = "watch?v=" + videoID + "?si=Altherneum.fr";
+            }
+            else if (YouTubeLoop == false && playlist == true && emebed == true) {
+                loop = "&loop=0";
+                console.log("--------------------------------------G");
+                playlistarg = "?list=" + videoID + "&listType=playlist";
+            }
+            else if (YouTubeLoop == false && playlist == true && emebed == false) {
+                loop = "&loop=0";
+                console.log("--------------------------------------H");
                 playlistarg = "?list=" + videoID + "&listType=playlist";
             }
         }
         else {
-            console.log("short");
+                console.log("--------------------------------------Else");
             loop = "";
             autoplay = "?autoplay=1";
             playlistarg = videoID;
@@ -650,14 +707,14 @@ async function constructPlayList(videoID, playlist, top, categorie, videoType) {
     }
 }
 
-async function CheckIfPlayListAtLimit(tag, top, mixed, videoType) {
+async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short) {
     if(top === true){
         let videoIDList = smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmount = smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].amount;
         if (videoAmount >= 20) {
             smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList = "";
             smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].amount = 0;
-            let div_card = addCard(true, true, videoIDList, tag, false, true, videoType);
+            let div_card = addCard(true, true, videoIDList, tag, false, true, videoType, short);
             addIFrame(true, videoIDList, true, tag, "Auto Mix Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
         }
     }
@@ -667,7 +724,7 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType) {
         if (videoAmount >= 20) {
             smallAutoMixMixed[smallAutoMixMixed.findIndex(obj => obj.tag == tag)].videoIDList = "";
             smallAutoMixMixed[smallAutoMixMixed.findIndex(obj => obj.tag == tag)].amount = 0;
-            let div_card = addCard(false, true, videoIDList, tag, false, true, videoType);
+            let div_card = addCard(false, true, videoIDList, tag, false, true, videoType, short);
             addIFrame(true, videoIDList, false, tag, "Auto Mix Mixed : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
         }
     }
@@ -677,14 +734,14 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType) {
         if (videoAmount >= 20) {
             smallAutoMixNoTop[smallAutoMixNoTop.findIndex(obj => obj.tag == tag)].videoIDList = "";
             smallAutoMixNoTop[smallAutoMixNoTop.findIndex(obj => obj.tag == tag)].amount = 0;
-            let div_card = addCard(false, true, videoIDList, tag, false, true, videoType);
+            let div_card = addCard(false, true, videoIDList, tag, false, true, videoType, short);
             addIFrame(true, videoIDList, false, tag, "Auto Mix No Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
         }
     }
 }
 
 //Need update to playlist no top & mixed
-async function setGlobalPlayList() {
+async function setGlobalPlayList(videoType, short) {
     let categorieList = getVideoListType();
     for (categorieType in categorieList) {
         var tag = categorieList[categorieType];
@@ -693,21 +750,21 @@ async function setGlobalPlayList() {
         let videoIDListTop = fullAutoMixTop[fullAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmountTop = fullAutoMixTop[fullAutoMixTop.findIndex(obj => obj.tag == tag)].amount;
 
-        let div_cardTop = addCard(true, true, videoIDListTop, tag, false, true);
+        let div_cardTop = addCard(true, true, videoIDListTop, tag, false, true, videoType, short);
         addIFrame(true, videoIDListTop, true, tag, "Auto Mix Top : " + videoAmountTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardTop, videoType);
     
         //Mixed
         let videoIDListMixed = fullAutoMixMixed[fullAutoMixMixed.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmountMixed = fullAutoMixMixed[fullAutoMixMixed.findIndex(obj => obj.tag == tag)].amount;
         
-        let div_cardMixed = addCard(false, true, videoIDListMixed, tag, false, true);
+        let div_cardMixed = addCard(false, true, videoIDListMixed, tag, false, true, videoType, short);
         addIFrame(true, videoIDListMixed, false, tag, "Auto Mix Mixed : " + videoAmountMixed, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardMixed, videoType);
     
         //NoTop
         let videoIDListNoTop = fullAutoMixNoTop[fullAutoMixNoTop.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmountNoTop = fullAutoMixNoTop[fullAutoMixNoTop.findIndex(obj => obj.tag == tag)].amount;
 
-        let div_cardNoTop = addCard(false, true, videoIDListNoTop, tag, false, true);
+        let div_cardNoTop = addCard(false, true, videoIDListNoTop, tag, false, true, videoType, short);
         addIFrame(false, videoIDListNoTop, true, tag, "Auto Mix No Top: " + videoAmountNoTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardNoTop, videoType);
     }
 }
