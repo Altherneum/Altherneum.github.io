@@ -29,6 +29,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/music", true)) {
         await includes();
+        await setIcon("/assets/svg/music.svg");
 
         await include_css("/src/css/youtubeEmbed.css");
         await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
