@@ -1,4 +1,6 @@
 async function CheckPage() {
+    await setIcon("/assets/svg/book.svg");
+
     if (pathNameMatchPage("/cours/readme", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {

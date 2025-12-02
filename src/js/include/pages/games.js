@@ -1,4 +1,6 @@
 async function CheckPage() {
+    await setIcon("/assets/svg/game.svg");
+
     if (pathNameMatchPage("/games/fruits", true)) {
         await include_css("/src/css/user-agent.css");
         await include_css("/src/css/font.css");

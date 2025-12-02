@@ -1,4 +1,6 @@
 async function CheckPage() {
+    await setIcon("/assets/svg/trademark/discord.svg");
+
     if (pathNameMatchPage("/discord/login", true)) {
         await includes();
 

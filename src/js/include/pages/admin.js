@@ -1,6 +1,9 @@
 async function CheckPage() {
+    await setIcon("/assets/svg/administrator.svg");
+
     if (pathNameMatchPage("/admin/film", true)) {
         await includes();
+        await setIcon("/assets/svg/film.svg");
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/film.html", "contentArticle", true);
@@ -8,6 +11,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/animes", true)) {
         await includes();
+        await setIcon("/assets/svg/draw.svg");
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/animes.html", "contentArticle", true);
@@ -15,6 +19,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/series", true)) {
         await includes();
+        await setIcon("/assets/svg/tv.svg");
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/series.html", "contentArticle", true);
@@ -22,6 +27,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/to-watch", true)) {
         await includes();
+        await setIcon("/assets/svg/help-question.svg");
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/to-watch.html", "contentArticle", true);
@@ -42,6 +48,7 @@ async function CheckPage() {
         
     else if (pathNameMatchPage("/admin/video", true)) {
         await includes();
+        await setIcon("/assets/svg/tv2.svg");
 
         await include_css("/src/css/youtubeEmbed.css");
         await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
@@ -54,6 +61,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/contact", true)) {
         await includes();
+        await setIcon("/assets/svg/contact.svg");
 
         await include_css("/src/css/contact.css");
         await include_html("/src/html/content/contact.html", "contentArticle", true);
@@ -76,6 +84,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/donation", true)) {
         await includes();
+        await setIcon("/assets/svg/donation.svg");
 
         await include_css("/src/css/donation.css");
         await include_html("/src/html/content/donation.html", "contentArticle", true);
@@ -84,6 +93,8 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/note", true)) {
         await includes();
+        await setIcon("/assets/svg/note.svg");
+
         await include_script("/src/js/content/markdown.js").then(async () => {
             await addMarkdown('Altherneum/.github', 'note.md', false);
         });

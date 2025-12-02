@@ -1,4 +1,6 @@
 async function CheckPage() {
+    await setIcon("/assets/svg/tools.svg");
+
     if (pathNameMatchPage("/outils/matrice", true)) {
         await include_html("/src/html/include/content.html", "body", false);
         await include_css("/src/css/theme.css");
