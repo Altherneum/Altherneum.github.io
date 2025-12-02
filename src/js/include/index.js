@@ -64,11 +64,11 @@ async function styles() {
 }
 
 async function Metadata() {
-    setTitle("");
-    setIcon("/assets/gif/small-round-50.gif");
+    await setTitle("");
+    await setIcon("/assets/gif/small-round-50.gif");
 }
 
-function setTitle(title){
+async function setTitle(title){
     if(title === ""){
         var title = getShortPathname().replaceAll("/", " ");
         document.title = "Altherneum 📰 " + title;
@@ -78,7 +78,7 @@ function setTitle(title){
     }
 }
 
-function setIcon(iconPath){
+async function setIcon(iconPath){
     link = document.createElement("link");
     link.rel = "icon";
     link.type = "image/x-icon";
