@@ -1,10 +1,11 @@
-stopTime("load");
-startTime("index");
-
 index();
 
 async function index() {
+    stopTime("load");
+    startTime("index");
+
     console.log("Loading website");
+
     await Metadata();
     await pages();
     stopTime("index");
