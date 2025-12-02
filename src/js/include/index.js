@@ -70,7 +70,7 @@ async function Metadata() {
     link = document.createElement("link");
     link.rel = "icon";
     link.type = "image/x-icon";
-    link.href = "/assets/icon/icone.png";
+    link.href = "/assets/gif/small-round-50.gif";
     document.head.appendChild(link);
 }
 
