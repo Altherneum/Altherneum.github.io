@@ -64,13 +64,25 @@ async function styles() {
 }
 
 async function Metadata() {
-    var title = getShortPathname().replaceAll("/", " ");
-    document.title = "Altherneum 📰 " + title;
+    setTitle("");
+    setIcon("/assets/gif/small-round-50.gif");
+}
 
+function setTitle(title){
+    if(title === ""){
+        var title = getShortPathname().replaceAll("/", " ");
+        document.title = "Altherneum 📰 " + title;
+    }
+    else{
+        document.title = title;
+    }
+}
+
+function setIcon(iconPath){
     link = document.createElement("link");
     link.rel = "icon";
     link.type = "image/x-icon";
-    link.href = "/assets/gif/small-round-50.gif";
+    link.href = iconPath;
     document.head.appendChild(link);
 }
 
