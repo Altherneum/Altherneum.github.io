@@ -115,11 +115,9 @@
 }
 
 #contact-mail > .contact-mail-text {
-    text-decoration: underline;
     font-weight: bolder;
 }
 
 #contact-mail > .contact-mail-split {
-    text-decoration: none;
     opacity: 0.75;
 }
