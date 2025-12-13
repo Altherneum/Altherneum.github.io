@@ -485,7 +485,7 @@ function setAnchor() {
         contentLeft.style.display = "none";
     }
     else{
-        anchorList.style.display = "gride";
+        anchorList.style.display = "grid";
         contentLeft.style.display = "block";
     }
 
