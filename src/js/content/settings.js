@@ -81,6 +81,10 @@ function SwitchShowSummary(){
     Switcher("ShowSummary");
 }
 
+function SwitchThemeTransparent(){
+    Switcher("ThemeTransparent");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -134,4 +138,5 @@ function loadSettingsSwitch() {
     setSwitch("Titre2", true);
     setSwitch("Titre3Plus", true);
     setSwitch("ShowSummary", true);
+    setSwitch("ThemeTransparent", false);
 }
