@@ -142,7 +142,7 @@ function loadSettingsSwitch() {
     setSwitch("Titre2", true);
     setSwitch("Titre3Plus", true);
     setSwitch("ShowSummary", true);
-    setSwitch("SwitchBackgroundGride", true);
+    setSwitch("BackgroundGride", true);
 
     setSwitch("ThemeTransparent", false);
     if(localStorage.getItem("ThemeTransparent") === "true"){
