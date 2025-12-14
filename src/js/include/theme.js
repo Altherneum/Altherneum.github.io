@@ -1,9 +1,20 @@
 toggleTheme();
+toggleBackgroundGride();
 
 function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
     console.log("Loading theme : " + themeName);
+}
+
+function toggleBackgroundGride(){
+    let body = document.body.classList;
+    if(localStorage.getItem("BackgroundGride") === "true"){
+        body.add("gride");
+    }
+    else{
+        body.remove("gride");
+    }
 }
 
 function toggleTheme() {

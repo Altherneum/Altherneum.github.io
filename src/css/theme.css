@@ -73,7 +73,9 @@
 
 body {
     background-color: var(--background-color);
+}
 
+body.gride{
     background-size: 100px 100px;
     background-image: linear-gradient(0deg,  var(--main-color-transparent) 3px, transparent 1px), linear-gradient(90deg,  var(--main-color-transparent) 3px, transparent 1px)
 }

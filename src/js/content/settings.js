@@ -85,6 +85,10 @@ function SwitchThemeTransparent(){
     Switcher("ThemeTransparent");
 }
 
+function SwitchBackgroundGride(){
+    Switcher("BackgroundGride");
+}
+
 function Switcher(name) {
     var checkbox = document.getElementById(name);
     var state = checkbox.checked;
@@ -139,4 +143,5 @@ function loadSettingsSwitch() {
     setSwitch("Titre3Plus", true);
     setSwitch("ShowSummary", true);
     setSwitch("ThemeTransparent", false);
+    setSwitch("SwitchBackgroundGride", true);
 }
