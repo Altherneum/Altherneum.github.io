@@ -142,6 +142,10 @@ function loadSettingsSwitch() {
     setSwitch("Titre2", true);
     setSwitch("Titre3Plus", true);
     setSwitch("ShowSummary", true);
-    setSwitch("ThemeTransparent", false);
     setSwitch("SwitchBackgroundGride", true);
+
+    setSwitch("ThemeTransparent", false);
+    if(localStorage.getItem("ThemeTransparent") === "true"){
+        document.getElementById("TransparencyPower").value = localStorage.getItem('TransparencyPower');
+    }
 }

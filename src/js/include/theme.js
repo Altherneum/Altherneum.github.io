@@ -5,6 +5,7 @@ function setTheme(themeName) {
     localStorage.setItem('theme', themeName);
     document.documentElement.className = themeName;
     console.log("Loading theme : " + themeName);
+    setTransparencyPower();
 }
 
 function toggleBackgroundGride(){
@@ -84,4 +85,22 @@ async function setIconTheme() {
     }
 
     else { img.src = "/assets/svg/settings.svg"; }
+}
+
+function setTransparencyPower(){
+    let root = document.querySelector(':root');
+    let transparencyPower = localStorage.getItem("TransparencyPower");
+    let rootStyle = getComputedStyle(root);
+
+    let R = rootStyle.getPropertyValue('--background-color-R');
+    let G = rootStyle.getPropertyValue('--background-color-G');
+    let B = rootStyle.getPropertyValue('--background-color-B');
+    
+    if(localStorage.getItem("ThemeTransparent") === "true"){
+        console.log(rootStyle.getPropertyValue('--background-color') + " to " + transparencyPower);
+        document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 0." + transparencyPower + ")";
+    }
+    else{
+        document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 1)";
+    }
 }

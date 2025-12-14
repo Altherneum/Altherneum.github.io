@@ -11,6 +11,7 @@
 
     <div>
         <h1>Paramètres généraux</h1>
+        <h2>Autres paramètres généraux</h2>
 
         <div class="check">
             <div class="checkboxToggle">
@@ -36,14 +37,21 @@
             <p>Curseur personnalisé</p>
         </div>
 
+        <h2>Thème</h2>
         <div class="check">
             <div class="checkboxToggle">
-                <input type="checkbox" id="ThemeTransparent" onclick="SwitchThemeTransparent()" />
+                <input type="checkbox" id="ThemeTransparent" onclick="SwitchThemeTransparent();setTransparencyPower();" />
                 <span></span>
             </div>
             <p>Thème transparent</p>
             <br><br>
             <p>(<u>Navigateur spécial <b>requis</b></u>)</p>
+        </div>
+        <div>
+            <div>
+                <input type="range" min="1" max="9" value="6" step="1" id="TransparencyPower" onChange="localStorage.setItem('TransparencyPower', this.value);setTransparencyPower();">
+            </div>
+            <p>Transparence</p>
         </div>
 
         <div class="check">
@@ -54,6 +62,7 @@
             <p>Grille de fond</p>
         </div>
 
+        <h2>Technique</h2>
         <div class="check">
             <div class="checkboxToggle">
                 <input type="checkbox" id="Granted" onclick="SwitchGranted()" />
