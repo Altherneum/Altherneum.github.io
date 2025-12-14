@@ -83,6 +83,9 @@ function SwitchShowSummary(){
 
 function SwitchThemeTransparent(){
     Switcher("ThemeTransparent");
+    if (localStorage.getItem('theme') !== 'transparent' && localStorage.getItem('ThemeTransparent') === "true") {
+        setTheme('transparent');
+    }
 }
 
 function SwitchBackgroundGride(){
@@ -146,6 +149,11 @@ function loadSettingsSwitch() {
 
     setSwitch("ThemeTransparent", false);
     if(localStorage.getItem("ThemeTransparent") === "true"){
-        document.getElementById("TransparencyPower").value = localStorage.getItem('TransparencyPower');
+        if(localStorage.getItem('TransparencyPower') instanceof Number){
+            document.getElementById("TransparencyPower").value = localStorage.getItem('TransparencyPower');
+        }
+        else{
+            document.getElementById("TransparencyPower").value = 0.1;
+        }
     }
 }

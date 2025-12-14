@@ -6,6 +6,7 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
     console.log("Loading theme : " + themeName);
     setTransparencyPower();
+    setIconTheme();
 }
 
 function toggleBackgroundGride(){
@@ -63,8 +64,6 @@ function changeTheme() {
     }
 
     else { setTheme('dark'); }
-
-    setIconTheme();
 }
 
 async function setIconTheme() {
@@ -101,6 +100,9 @@ function setTransparencyPower(){
         document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 0." + transparencyPower + ")";
     }
     else{
+        if (localStorage.getItem('theme') === 'transparent') {
+            changeTheme();
+        }
         document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 1)";
     }
 }
