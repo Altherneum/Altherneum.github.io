@@ -148,12 +148,19 @@ function loadSettingsSwitch() {
     setSwitch("BackgroundGride", true);
 
     setSwitch("ThemeTransparent", false);
+    setTransparencyPowerSetting();
+}
+
+function setTransparencyPowerSetting(){
     if(localStorage.getItem("ThemeTransparent") === "true"){
-        if(localStorage.getItem('TransparencyPower') instanceof Number){
+        if(Number.isInteger(parseInt(localStorage.getItem('TransparencyPower')))){
             document.getElementById("TransparencyPower").value = localStorage.getItem('TransparencyPower');
         }
         else{
             document.getElementById("TransparencyPower").value = 0.1;
         }
+    }
+    else{
+        document.getElementById("TransparencyPower").value = 1;
     }
 }
