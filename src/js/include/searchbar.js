@@ -255,7 +255,9 @@ window.addEventListener('click', function (e) {
     }
         
     if (document.getElementById('input-box').contains(e.target)) {
-        showTips();
+        if(document.getElementById("result-box").style.display === "none"){
+            showTips();
+        }
         return;
     }
 });
