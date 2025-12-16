@@ -11,7 +11,7 @@ function setTheme(themeName) {
 
 function toggleBackgroundGride(){
     let body = document.body.classList;
-    if(localStorage.getItem("BackgroundGride") === "true"){
+    if(localStorage.getItem("BackgroundGride") !== "false"){
         body.add("gride");
     }
     else{
