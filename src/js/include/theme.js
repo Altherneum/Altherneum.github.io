@@ -5,7 +5,7 @@ function setTheme(themeName) {
     localStorage.setItem("theme", themeName);
     document.documentElement.className = themeName;
     console.log("Loading theme : " + themeName);
-    setTransparencyPower(themeName);
+    setTransparencyPower();
     //setIconTheme(); //already done in the index
 }
 
@@ -83,10 +83,16 @@ async function setIconTheme() {
     else { img.src = "/assets/svg/settings.svg"; }
 }
 
-function setTransparencyPower(themeName){
+function setTransparencyPower(){
     console.log("Loading transparency module");
 
-    let root = document.querySelector(":root." + themeName);
+    let tempThemeName = localStorage.getItem("theme");
+    let finalThemeName;
+    if(tempThemeName !== "" && tempThemeName !== null){
+        finalThemeName = "." + tempThemeName;
+    }
+
+    let root = document.querySelector(":root" + finalThemeName);
     let transparencyPower = localStorage.getItem("TransparencyPower");
     let rootStyle = getComputedStyle(root);
 
