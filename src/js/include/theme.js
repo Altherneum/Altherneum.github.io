@@ -6,7 +6,7 @@ function setTheme(themeName) {
     document.documentElement.className = themeName;
     console.log("Loading theme : " + themeName);
     setTransparencyPower();
-    //setIconTheme(); //already done in the index
+    setIconTheme();
 }
 
 function toggleBackgroundGride(){
@@ -65,6 +65,11 @@ function changeTheme() {
 
 async function setIconTheme() {
     var themeButton = document.getElementById("theme");
+    if(themeButton === null){
+        console.log("No content left : Anchor : present so returning")
+        return;
+    }
+
     var img = themeButton.children[0];
 
     if (localStorage.getItem("theme") === "dark") {
