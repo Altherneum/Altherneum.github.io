@@ -315,4 +315,8 @@
         max-width: 20vw;
         display: grid;
     }
+
+    :root.transparent #content>#content-left>#anchorList{
+        background-color: var(--background-color-transparent);
+    }
 }
