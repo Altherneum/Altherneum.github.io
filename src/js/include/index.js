@@ -50,11 +50,12 @@ async function styles() {
     console.log("Loading style");
 
     await include_css("/src/css/theme.css");
-    await include_script("/src/js/include/theme.js");
     await include_css("/src/css/font.css");
     await include_css("/src/css/user-agent.css");
     await include_css("/src/css/header.css");
     await include_css("/src/css/anchor.css");
+    
+    await include_script("/src/js/include/theme.js");
 
     await include_css("/src/css/content.css");
     await include_css("/src/css/contentTopmodule.css");
