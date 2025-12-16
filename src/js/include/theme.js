@@ -5,7 +5,7 @@ function setTheme(themeName) {
     localStorage.setItem("theme", themeName);
     document.documentElement.className = themeName;
     console.log("Loading theme : " + themeName);
-    setTransparencyPower();
+    setTransparencyPower(themeName);
     //setIconTheme(); //already done in the index
 }
 
@@ -47,16 +47,16 @@ function toggleTheme() {
 }
 
 function changeTheme() {
-    if (localStorage.getItem("theme") === "day" && localStorage.getItem("ThemeTransparent") === "true") {
-        setTheme("transparent");
-    }
-    else if (localStorage.getItem("theme") === "day") {
+    if (localStorage.getItem("theme") === "day") {
         setTheme("dark");
     }
     else if (localStorage.getItem("theme") === "dark") {
         setTheme("light");
     }
-    else if (localStorage.getItem("theme") === "light") {
+    else if(localStorage.getItem("theme") === "light" && localStorage.getItem("ThemeTransparent") === "true"){
+        setTheme("transparent")
+    }
+    else if (localStorage.getItem("theme") === "transparent") {
         setTheme("day");
     }
 
@@ -83,17 +83,18 @@ async function setIconTheme() {
     else { img.src = "/assets/svg/settings.svg"; }
 }
 
-function setTransparencyPower(){
+function setTransparencyPower(themeName){
     console.log("Loading transparency module");
 
-    let root = document.querySelector(":root");
+    let root = document.querySelector(":root." + themeName);
     let transparencyPower = localStorage.getItem("TransparencyPower");
     let rootStyle = getComputedStyle(root);
 
     let R = rootStyle.getPropertyValue("--background-color-R");
     let G = rootStyle.getPropertyValue("--background-color-G");
     let B = rootStyle.getPropertyValue("--background-color-B");
-    
+        console.log("theme color ; " + R + ", "  + G + ", " + B);
+
     if(localStorage.getItem("ThemeTransparent") === "true" && localStorage.getItem("theme") === "transparent"){
         console.log("Transparent module ON");
         console.log(rootStyle.getPropertyValue("--background-color") + " to " + transparencyPower);
@@ -107,4 +108,5 @@ function setTransparencyPower(){
         }
         document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 1)";
     }
+    console.log("CSS style ; " + document.documentElement.style.cssText);
 }
