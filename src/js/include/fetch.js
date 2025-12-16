@@ -1,6 +1,6 @@
 var time;
 function startTime(name) {
-    console.log("start timer for " + name);
+    console.log("⏲️ Start timer for " + name);
     console.time(name);
 
     time = window.performance.now();
@@ -11,12 +11,12 @@ function stopTime(name) {
 
     var end = window.performance.now();
     var timing = end - time;
-    console.log("stop timer for " + name + "\nEnded in " + (timing / 1000) + " s" + "\nOr in " + timing + " ms");
+    console.log("⏲️ Stop timer for " + name + "\nEnded in " + (timing / 1000) + " s" + "\nOr in " + timing + " ms");
 }
 
 include();
 async function include() {
-    console.log("Loading included files ...");
+    console.log("⭐️ Loading included files ...");
     await include_script("/src/js/include/consoleStats.js"); await loadFiles();
     startTime("load");
     await include_script("/src/js/include/index.js");
@@ -48,7 +48,7 @@ async function include_html(link, query, queryOrIndex) {
 }
 
 async function include_script(url) {
-    console.log("Loading script file : " + url);
+    console.log("Loading script file : " + url + " ⚙️");
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src = url;
@@ -65,7 +65,7 @@ async function include_script(url) {
 }
 
 async function include_css(url) {
-    console.log("Loading CSS file : " + url);
+    console.log("Loading CSS file : " + url + " 🖼️");
     var head = document.getElementsByTagName('HEAD')[0];
 
     var link = document.createElement('link');
