@@ -3881,9 +3881,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "gWmBY3qva_s",
-        categorie: "todo",
-    },
     {
         videoID: "YE4uZua79l8",
         categorie: "todo",
@@ -3910,14 +3907,6 @@ var videolinks = [
     },
     {
         videoID: "cybiybssF5o",
-        categorie: "todo",
-    },
-    {
-        videoID: "tm9GpM3lV3s",
-        categorie: "todo",
-    },
-    {
-        videoID: "htXY770KDdk",
         categorie: "todo",
     },
     {
@@ -3981,10 +3970,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "3TBx2s3YelE",
-        categorie: "todo",
-    },
-    {
         videoID: "kB9ydUHZmR4",
         categorie: "todo",
     },
@@ -3997,10 +3982,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "tCFsSPPGdH0",
-        categorie: "todo",
-    },
-    {
         videoID: "pRvuLfLhm3c",
         categorie: "todo",
     },
@@ -4008,18 +3989,6 @@ var videolinks = [
         videoID: "7U4XUPRoIQk",
         categorie: "todo",
         short: true,
-    },
-    {
-        videoID: "sCz5y84dwuA",
-        categorie: "todo",
-    },
-    {
-        videoID: "sCz5y84dwuA",
-        categorie: "todo",
-    },
-    {
-        videoID: "3TBx2s3YelE",
-        categorie: "todo",
     },
     {
         videoID: "Zwh1gfsgVHA",
@@ -4079,10 +4048,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "6y2t1EILiYY",
-        categorie: "todo",
-    },
-    {
         videoID: "ceYeDX5WTms",
         categorie: "todo",
     },
@@ -4132,15 +4097,7 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "MwpMEbgC7DA",
-        categorie: "todo",
-    },
-    {
         videoID: "yeHa_X6787g",
-        categorie: "todo",
-    },
-    {
-        videoID: "Jm48pJVy3AY",
         categorie: "todo",
     },
     {
@@ -4249,10 +4206,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "X9FMvw8V6ZY",
-        categorie: "todo",
-    },
-    {
         videoID: "2p_AxoaHeRw",
         categorie: "todo",
     },
@@ -4261,20 +4214,11 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "7U4XUPRoIQk",
-        categorie: "todo",
-        short: true,
-    },
-    {
         videoID: "sCz5y84dwuA",
         categorie: "todo",
     },
     {
         videoID: "ig58Z5YIcPo",
-        categorie: "todo",
-    },
-    {
-        videoID: "3TBx2s3YelE",
         categorie: "todo",
     },
     {
@@ -4320,10 +4264,6 @@ var videolinks = [
         videoID: "h6eLfcwg7KU",
         categorie: "todo",
         short: true,
-    },
-    {
-        videoID: "QNYT9wVwQ8A",
-        categorie: "todo",
     },
 ];
 
