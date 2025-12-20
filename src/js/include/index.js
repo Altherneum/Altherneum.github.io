@@ -150,6 +150,85 @@ async function pages() {
     var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n m99^ic;";
     //This key is not meant to be secure, just to slow down stupid peoples that can't right click
 
+    let playSong = true;
+    var videolinks = [
+        {
+            videoID: "TADxdahPBUA",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "QNYT9wVwQ8A",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "B93RUaUx_0k",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "d11xns8lE4w",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "Lgs9QUtWc3M",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "ovvbCPqgX5E",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "M3mdHmhI3cs",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "N72U-NFu44k",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "CqnU_sJ8V-E",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "YR2Nx39Hfik",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "miZ5SQYCqxU",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "fJhtohbLo0A",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "TmIwm5RElRs",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "4mNDYWhRSaw",
+            categorie: "",
+            top: true,
+        },
+        {
+            videoID: "KvmRDZy93Nc",
+            categorie: "",
+            top: true,
+        }
+    ];
+
     if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
         await includes();
         await include_css("/src/css/lockdown.css");
@@ -163,6 +242,18 @@ async function pages() {
         await include_html("/src/html/content/maintenance.html", "contentArticle", true);
         await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
         randomInclude(true);
+    }
+    if((block || maintenance || lockdown) && playSong === true){
+        if(localStorage.getItem('Granted') === "true" || new URLSearchParams(window.location.search).get('key') === LocalKey){
+            return;
+        }
+
+        await include_css("/src/css/youtubeEmbed.css");
+        await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
+        await include_script("/src/js/content/youtubeEmbed.js");
+        await include_script("/src/js/content/music.js");
+        document.getElementsByClassName("menu")[0].style.display = "none"
+        await GetVideos(videolinks, getVideoListType(), getType(), false);
     }
     else {
         if (pathNameMatchPage("/", true) || pathNameMatchPage("/index", true)) {

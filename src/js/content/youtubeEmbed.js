@@ -5,7 +5,7 @@ async function loadYouTubeEmbed() {
     checkURL();
     await setVideoScreenLocking();
     createPlayListList();
-    GetVideos(shuffle(GetVideoList()), getVideoListType(), getType());
+    GetVideos(shuffle(GetVideoList()), getVideoListType(), getType(), true);
 }
 
 function checkURL(){
@@ -92,7 +92,7 @@ function shuffle(array) {
     return array;
 }
 
-async function GetVideos(videoList, VideoListType, videoType) {
+async function GetVideos(videoList, VideoListType, videoType, includeLatestVideoOfChannel) {
     await include_script("/src/js/content/auto-scroll.js");
     addButtons(VideoListType);
 
@@ -135,7 +135,9 @@ async function GetVideos(videoList, VideoListType, videoType) {
         div_card.style.display = "flex";
     }
     else if (!LoadSingleVideo) {
-        getVideoChannel();
+        if(includeLatestVideoOfChannel === true){
+            getVideoChannel();
+        }
         setGlobalPlayList(videoType, short);
     }
 
