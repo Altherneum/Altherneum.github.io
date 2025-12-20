@@ -235,18 +235,18 @@ async function pages() {
             await include_css("/src/css/lockdown.css");
             await include_html("/src/html/content/lockdown.html", "contentArticle", true);
             await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
-            randomInclude(true);
+            await randomInclude(true);
         }
         else if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
             await includes();
             await include_css("/src/css/maintenance.css");
             await include_html("/src/html/content/maintenance.html", "contentArticle", true);
             await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
-            randomInclude(true);
+            await randomInclude(true);
         }
 
         if((block || maintenance || lockdown) && playSong === true){
-            if(localStorage.getItem('Granted') === "true" || new URLSearchParams(window.location.search).get('key') === LocalKey){
+            if((localStorage.getItem('Granted') === "true" && maintenance) && (new URLSearchParams(window.location.search).get('key') === LocalKey && lockdown)){
                 return;
             }
 

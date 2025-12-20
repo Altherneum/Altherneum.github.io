@@ -117,7 +117,6 @@ function setTransparencyPower(){
             changeTheme();
             console.log("Theme is transparent, changeTheme");
         }
-        document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 1)";
     }
     console.log("CSS style ; " + document.documentElement.style.cssText);
 }
