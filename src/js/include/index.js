@@ -229,31 +229,34 @@ async function pages() {
         }
     ];
 
-    if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
-        await includes();
-        await include_css("/src/css/lockdown.css");
-        await include_html("/src/html/content/lockdown.html", "contentArticle", true);
-        await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
-        randomInclude(true);
-    }
-    else if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
-        await includes();
-        await include_css("/src/css/maintenance.css");
-        await include_html("/src/html/content/maintenance.html", "contentArticle", true);
-        await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
-        randomInclude(true);
-    }
-    if((block || maintenance || lockdown) && playSong === true){
-        if(localStorage.getItem('Granted') === "true" || new URLSearchParams(window.location.search).get('key') === LocalKey){
-            return;
+    if(block || maintenance || lockdown){
+        if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
+            await includes();
+            await include_css("/src/css/lockdown.css");
+            await include_html("/src/html/content/lockdown.html", "contentArticle", true);
+            await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
+            randomInclude(true);
+        }
+        else if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
+            await includes();
+            await include_css("/src/css/maintenance.css");
+            await include_html("/src/html/content/maintenance.html", "contentArticle", true);
+            await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
+            randomInclude(true);
         }
 
-        await include_css("/src/css/youtubeEmbed.css");
-        await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
-        await include_script("/src/js/content/youtubeEmbed.js");
-        await include_script("/src/js/content/music.js");
-        document.getElementsByClassName("menu")[0].style.display = "none"
-        await GetVideos(videolinks, getVideoListType(), getType(), false);
+        if((block || maintenance || lockdown) && playSong === true){
+            if(localStorage.getItem('Granted') === "true" || new URLSearchParams(window.location.search).get('key') === LocalKey){
+                return;
+            }
+
+            await include_css("/src/css/youtubeEmbed.css");
+            await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
+            await include_script("/src/js/content/youtubeEmbed.js");
+            await include_script("/src/js/content/music.js");
+            document.getElementsByClassName("menu")[0].style.display = "none"
+            await GetVideos(videolinks, getVideoListType(), getType(), false);
+        }
     }
     else {
         if (pathNameMatchPage("/", true) || pathNameMatchPage("/index", true)) {
