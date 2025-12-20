@@ -230,8 +230,8 @@ async function pages() {
     ];
 
     if((block || maintenance || lockdown)
-        && (block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey
-        && (block || maintenance) && localStorage.getItem('Granted') !== "true") {
+        && ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey
+        || (block || maintenance) && localStorage.getItem('Granted') !== "true")) {
         if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
             await includes();
             await include_css("/src/css/lockdown.css");
