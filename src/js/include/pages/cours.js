@@ -114,13 +114,6 @@ async function CheckPage() {
         });
     }
 
-    else if (pathNameMatchPage("/cours/scam", true)) {
-        await includes();
-        await include_script("/src/js/content/markdown.js").then(async () => {
-            await addMarkdown('Altherneum/.github', 'note/Scam/learning.md', false);
-        });
-    }
-
     else if (pathNameMatchPage("/cours/retraite", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {

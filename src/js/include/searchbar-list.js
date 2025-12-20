@@ -462,12 +462,6 @@ const links = [
         svg: "/assets/svg/old-man.svg",
     },
     {
-        href: "/cours/scam.html",
-        tag: "OpSec",
-        text: "Liste de scam existant",
-        svg: "/assets/svg/thief.svg",
-    },
-    {
         href: "/cours/sql.html",
         tag: "Cours Web",
         text: "SQL",
