@@ -144,7 +144,7 @@ async function pages() {
 
     var block = true;
 
-    var maintenance = true;
+    var maintenance = false;
 
     var lockdown = true;
     var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n m99^ic;";
