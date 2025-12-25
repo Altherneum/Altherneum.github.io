@@ -22,13 +22,14 @@ footer {
     user-select: none;
 }
 
-footer>div>div>a,
-footer>div>div>p {
+footer>div>nav>a,
+footer>div>nav>p {
     margin: 5px;
     text-decoration: none;
 }
-footer>div>div,
-footer>nav{
+
+footer>nav,
+footer>div>nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,7 +38,8 @@ footer>nav{
     flex-direction: row;
 }
 
-footer>nav>a {
+footer>nav>a,
+footer>div>nav>a {
     padding: 8px;
     transform: translateY(20%);
 }
