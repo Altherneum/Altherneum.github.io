@@ -1602,6 +1602,18 @@ const links = [
         tag: "Outils Web URL Admin OpSec",
         text: "Cyber Chef",
     },
+    {
+        href: "https://keeweb.altherneum.fr/",
+        svg: "/assets/svg/password.svg",
+        tag: "Outils Web URL Admin OpSec",
+        text: "KeeWeb - Web KeePass",
+    },
+    {
+        href: "https://git.altherneum.fr/",
+        svg: "/assets/svg/trademark/repo.svg",
+        tag: "Outils Web URL Admin OpSec Repo Github",
+        text: "Forgejo - Web Git",
+    },
 ];
 
 /*
