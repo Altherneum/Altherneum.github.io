@@ -369,11 +369,6 @@ async function devFooter() {
         mixed.href = "https://3000.code.altherneum.fr" + window.location.pathname;
     }
 
-    var codeServerImg = document.getElementById("code-server-footer");
-    if(codeServerImg != null){
-        codeServerImg.style = "";
-    }
-
     await devTest();
 }
 
