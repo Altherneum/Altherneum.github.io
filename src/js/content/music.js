@@ -4192,6 +4192,42 @@ var videolinks = [
         videoID: "MeOoJOt1P0Y",
         categorie: "todo",
     },
+    {
+        videoID: "voU687NZLPk",
+        categorie: "todo",
+    },
+    {
+        videoID: "HyHZjnEccUk",
+        categorie: "todo",
+    },
+    {
+        videoID: "IB8TFMAWhpY",
+        categorie: "todo",
+    },
+    {
+        videoID: "JJjEl_EVsLA",
+        categorie: "todo",
+    },
+    {
+        videoID: "hIzQVlkdcjA",
+        categorie: "todo",
+    },
+    {
+        videoID: "UKjU_IsDbbY",
+        categorie: "todo",
+    },
+    {
+        videoID: "L0srUPE2zBo",
+        categorie: "todo",
+    },
+    {
+        videoID: "P_veSEhmVBc",
+        categorie: "todo",
+    },
+    {
+        videoID: "bD9PqQN9Vvo",
+        categorie: "todo",
+    },
 ];
 
 var VideoListType = ["todo", "jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
