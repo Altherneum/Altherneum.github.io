@@ -43,7 +43,9 @@ async function CheckPage() {
         await include_script("/src/js/content/music.js");
 
         loadYouTubeEmbed();
-        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", null);
+        await include_script("/src/js/content/settings.js");
+            setSwitch("YouTubeLoop", null);
+            setSwitch("YoutubeShuffle", null);
     }
         
     else if (pathNameMatchPage("/admin/video", true)) {
