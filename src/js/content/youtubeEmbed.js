@@ -81,7 +81,8 @@ function showOrHideSong(name, element) {
 
 function shuffle(array) {
     let currentIndex = array.length;
-    console.log("array length is : " + array.length)
+    console.log("array length is : " + array.length);
+    
     let ShuffleSettings = localStorage.getItem('YoutubeShuffle');
     if(ShuffleSettings === null || ShuffleSettings === "true"){ ShuffleSettings = true;}
     else{ ShuffleSettings = false; }
