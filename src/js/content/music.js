@@ -4931,6 +4931,10 @@ var videolinks = [
         videoID: "Ucmo6hDZRSY",
         categorie: "todo",
     },
+    {
+        videoID: "OCq_bGUb2SA",
+        categorie: "todo slavic",
+    },
 ];
 
 var VideoListType = ["todo", "jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
