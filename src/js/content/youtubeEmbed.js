@@ -344,7 +344,7 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
     let url = getURL(premadePlayList, short, playlist, videoID, false);
 
     if(videoType === "music"){
-        urlOpenYoutube.href = url;
+        urlOpenYoutube.href = url.replace("www.", "music.");
         var imageOpenOnYoutube = document.createElement("img");
         imageOpenOnYoutube.src = "/assets/svg/trademark/youtube-music.svg";
         imageOpenOnYoutube.className = "OpenOnYoutube svg";
