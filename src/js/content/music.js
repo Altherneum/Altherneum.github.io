@@ -4904,15 +4904,7 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "lyO-Sveg6a8",
-        categorie: "todo",
-    },
-    {
         videoID: "lhg9bYNLvOg",
-        categorie: "todo",
-    },
-    {
-        videoID: "eWNdST0mWxk",
         categorie: "todo",
     },
     {
@@ -4920,23 +4912,7 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "BUYLdVeny5g",
-        categorie: "todo",
-    },
-    {
-        videoID: "lyO-Sveg6a8",
-        categorie: "todo",
-    },
-    {
-        videoID: "lhg9bYNLvOg",
-        categorie: "todo",
-    },
-    {
         videoID: "eWNdST0mWxk",
-        categorie: "todo",
-    },
-    {
-        videoID: "LkWgQzZrrnY",
         categorie: "todo",
     },
     {
@@ -4952,35 +4928,7 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "x2R314btHoo",
-        categorie: "todo",
-    },
-    {
-        videoID: "UeSDvg5xsWI",
-        categorie: "todo",
-    },
-    {
-        videoID: "OBbHZoEylNk",
-        categorie: "todo",
-    },
-    {
-        videoID: "rfJHduzTbV8",
-        categorie: "todo",
-    },
-    {
-        videoID: "VrXVHZimv9g",
-        categorie: "todo",
-    },
-    {
         videoID: "zoIKhJhCe0E",
-        categorie: "todo",
-    },
-    {
-        videoID: "yIZw-Tg5cFg",
-        categorie: "todo",
-    },
-    {
-        videoID: "o4yCEc5AgUY",
         categorie: "todo",
     },
     {
@@ -5013,22 +4961,6 @@ var videolinks = [
     },
     {
         videoID: "luTSHCFx_so",
-        categorie: "todo",
-    },
-    {
-        videoID: "ke1wSerqAuU",
-        categorie: "todo",
-    },
-    {
-        videoID: "8O9l05_YmgM",
-        categorie: "todo",
-    },
-    {
-        videoID: "lukT_WB5IB0",
-        categorie: "todo",
-    },
-    {
-        videoID: "R2CzFQpWoLs",
         categorie: "todo",
     },
     {
@@ -5092,10 +5024,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "0nlJuwO0GDs",
-        categorie: "todo",
-    },
-    {
         videoID: "KUtwor9dkMY",
         categorie: "todo",
     },
@@ -5117,10 +5045,6 @@ var videolinks = [
     },
     {
         videoID: "k8eY0UGrA3U",
-        categorie: "todo",
-    },
-    {
-        videoID: "FsfVmCgfU5U",
         categorie: "todo",
     },
     {
@@ -5152,19 +5076,11 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "BvPszccELCA",
-        categorie: "todo",
-    },
-    {
         videoID: "BzHuqiAsv4I",
         categorie: "todo",
     },
     {
         videoID: "eDjevyoTIaE",
-        categorie: "todo",
-    },
-    {
-        videoID: "about:blank",
         categorie: "todo",
     },
     {
@@ -5432,10 +5348,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "F5tSoaJ93ac",
-        categorie: "todo",
-    },
-    {
         videoID: "ObGOmFoxFdU",
         categorie: "todo",
     },
@@ -5516,19 +5428,11 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "about:blank",
-        categorie: "todo",
-    },
-    {
         videoID: "B0VkyroX6Ns",
         categorie: "todo",
     },
     {
         videoID: "2RYbucYamzg",
-        categorie: "todo",
-    },
-    {
-        videoID: "z65Flj8PBq8",
         categorie: "todo",
     },
     {
@@ -6332,10 +6236,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "BvPszccELCA",
-        categorie: "todo",
-    },
-    {
         videoID: "dPM9wfRtErM",
         categorie: "todo",
     },
@@ -6600,10 +6500,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "z65Flj8PBq8",
-        categorie: "todo",
-    },
-    {
         videoID: "FRrsSZFsoQU",
         categorie: "todo",
     },
@@ -6769,10 +6665,6 @@ var videolinks = [
     },
     {
         videoID: "JAqIrUCZQSA",
-        categorie: "todo",
-    },
-    {
-        videoID: "FsfVmCgfU5U",
         categorie: "todo",
     },
     {
