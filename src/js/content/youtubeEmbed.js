@@ -87,7 +87,10 @@ function shuffle(array) {
 
     console.log("Shuffle : " + ShuffleSettings);
 
-    if(ShuffleSettings === false){ console.log("No shuffling made "); return array; }
+    if(ShuffleSettings === false){
+        console.log("No shuffling made ");
+        return array;
+    }
     else{
         console.log("Shuffling songs ! ...");
         while (currentIndex != 0) {
