@@ -83,8 +83,8 @@ function shuffle(array) {
     let currentIndex = array.length;
     console.log("array length is : " + array.length)
     let ShuffleSettings = localStorage.getItem('YoutubeShuffle');
-    if(ShuffleSettings === null){ ShuffleSettings = true;}
-    else{ ShuffleSettings = true; }
+    if(ShuffleSettings === null || ShuffleSettings === "true"){ ShuffleSettings = true;}
+    else{ ShuffleSettings = false; }
 
     console.log("Shuffle : " + ShuffleSettings);
 
@@ -508,7 +508,7 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
     else {
         if (short === false) {
             let YouTubeLoop = localStorage.getItem('YouTubeLoop');
-            if(YouTubeLoop === null){ YouTubeLoop = false;}
+            if(YouTubeLoop === null || YouTubeLoop === "false"){ YouTubeLoop = false;}
             else{ YouTubeLoop = true; }
             
             if (YouTubeLoop === true && playlist === false && emebed === true) {
