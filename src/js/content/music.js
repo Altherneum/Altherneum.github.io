@@ -4388,10 +4388,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "bFoFN9Sbk2w",
-        categorie: "todo",
-    },
-    {
         videoID: "CdXesX6mYUE",
         categorie: "todo",
     },
@@ -4417,10 +4413,6 @@ var videolinks = [
     },
     {
         videoID: "SZ_I0KZvezw",
-        categorie: "todo",
-    },
-    {
-        videoID: "Ro0vTEuSUuo",
         categorie: "todo",
     },
     {
@@ -4452,10 +4444,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "iLBBRuVDOo4",
-        categorie: "todo",
-    },
-    {
         videoID: "7CNHJLh8omE",
         categorie: "todo",
     },
@@ -4465,10 +4453,6 @@ var videolinks = [
     },
     {
         videoID: "6dOwHzCHfgA",
-        categorie: "todo",
-    },
-    {
-        videoID: "Bznxx12Ptl0",
         categorie: "todo",
     },
     {
@@ -4613,10 +4597,6 @@ var videolinks = [
     },
     {
         videoID: "mEveOIoiHg4",
-        categorie: "todo",
-    },
-    {
-        videoID: "2MHsDNV9lgY",
         categorie: "todo",
     },
     {
@@ -4812,19 +4792,7 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "CkFYV9S0YDo",
-        categorie: "todo",
-    },
-    {
         videoID: "vx4kLgnFexo",
-        categorie: "todo",
-    },
-    {
-        videoID: "Qy9LTRu89FA",
-        categorie: "todo",
-    },
-    {
-        videoID: "wL8DVHuWI7Y",
         categorie: "todo",
     },
     {
@@ -4833,14 +4801,6 @@ var videolinks = [
     },
     {
         videoID: "B1vetUM4-LQ",
-        categorie: "todo",
-    },
-    {
-        videoID: "hK59OMfBN8E",
-        categorie: "todo",
-    },
-    {
-        videoID: "eLOH-1uYt9w",
         categorie: "todo",
     },
     {
@@ -4901,10 +4861,6 @@ var videolinks = [
     },
     {
         videoID: "nLnp0tpZ0ok",
-        categorie: "todo",
-    },
-    {
-        videoID: "XpdpW0z9xnQ",
         categorie: "todo",
     },
     {
@@ -5485,10 +5441,6 @@ var videolinks = [
     },
     {
         videoID: "KyAcMpQUY5s",
-        categorie: "todo",
-    },
-    {
-        videoID: "CkFYV9S0YDo",
         categorie: "todo",
     },
     {
