@@ -5454,6 +5454,14 @@ var videolinks = [
         categorie: "todo",
         short: true,
     },
+    {
+        videoID: "T7JHxSouIkA",
+        categorie: "todo",&
+    },
+    {
+        videoID: "ceYeDX5WTms",
+        categorie: "todo",
+    },
 ];
 
 var VideoListType = ["todo", "politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];

@@ -3892,10 +3892,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "T7JHxSouIkA",
-        categorie: "todo",
-    },
-    {
         videoID: "G7b4VMEATNo",
         categorie: "todo",
     },
@@ -3996,11 +3992,6 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "LilAqMyzZw0",
-        categorie: "todo",
-        short: true,
-    },
-    {
         videoID: "LaEgpNBt-bQ",
         categorie: "todo",
     },
@@ -4026,10 +4017,6 @@ var videolinks = [
     },
     {
         videoID: "jsQXgDZIIrY",
-        categorie: "todo",
-    },
-    {
-        videoID: "ceYeDX5WTms",
         categorie: "todo",
     },
     {
@@ -4154,10 +4141,6 @@ var videolinks = [
     },
     {
         videoID: "ElV8mADN9EI",
-        categorie: "todo",
-    },
-    {
-        videoID: "JAI28_Ksbss",
         categorie: "todo",
     },
     {
