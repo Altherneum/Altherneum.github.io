@@ -84,6 +84,7 @@ function shuffle(array) {
     console.log("array length is : " + array.length)
     let ShuffleSettings = localStorage.getItem('YoutubeShuffle');
     if(ShuffleSettings === null){ ShuffleSettings = true;}
+    else{ ShuffleSettings = true; }
 
     console.log("Shuffle : " + ShuffleSettings);
 
@@ -508,6 +509,7 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
         if (short === false) {
             let YouTubeLoop = localStorage.getItem('YouTubeLoop');
             if(YouTubeLoop === null){ YouTubeLoop = false;}
+            else{ YouTubeLoop = true; }
             
             if (YouTubeLoop === true && playlist === false && emebed === true) {
                 loop = "&loop=1";
