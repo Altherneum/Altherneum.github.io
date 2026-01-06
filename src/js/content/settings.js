@@ -53,6 +53,10 @@ function SwitchAllLogs() {
     Switcher("AllLogs");
 }
 
+function SwitchYoutubeShuffle() {
+    Switcher("YoutubeShuffle");
+}
+
 function SwitchVisitedLogs() {
     Switcher("VisitedLogs");
 }
@@ -132,6 +136,7 @@ function loadSettingsSwitch() {
     setSwitch("customCursor", true);
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", false);
+    setSwitch("YoutubeShuffle", true);
     setSwitch("OldSearchBar", true);
     setSwitch("SearchBarList", true);
     setSwitch("AllSearchBar", true);

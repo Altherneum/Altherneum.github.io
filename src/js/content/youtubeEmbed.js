@@ -82,14 +82,17 @@ function showOrHideSong(name, element) {
 function shuffle(array) {
     let currentIndex = array.length;
     console.log("array length is : " + array.length)
+    let ShuffleSettings = localStorage.getItem('YoutubeShuffle');
+    if(ShuffleSettings === false){ return array; }
+    else{
+        while (currentIndex != 0) {
+            let randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
 
-    while (currentIndex != 0) {
-        let randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex--;
-
-        [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+            [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+        }
+        return array;
     }
-    return array;
 }
 
 async function GetVideos(videoList, VideoListType, videoType, includeLatestVideoOfChannel) {
