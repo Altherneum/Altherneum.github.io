@@ -83,7 +83,7 @@ function shuffle(array) {
     let currentIndex = array.length;
     console.log("array length is : " + array.length)
     let ShuffleSettings = localStorage.getItem('YoutubeShuffle');
-    if(ShuffleSettings === null){ ShuffleSettings = false;}
+    if(ShuffleSettings === null){ ShuffleSettings = true;}
 
     console.log("Shuffle : " + ShuffleSettings);
 
