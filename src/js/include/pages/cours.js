@@ -147,6 +147,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/man.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/cmd-parameters.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/shutdown-reboot.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/history.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/directory.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/tmp.md', false);
@@ -168,6 +169,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/who.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/whoami.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/PS1.md', false);
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/free.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/top.md', false);
