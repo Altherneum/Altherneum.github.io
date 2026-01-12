@@ -5100,43 +5100,53 @@ var videolinks = [
     },
     {
         videoID: "BPO9bmSm_Ls",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "8R8I7R8FunU",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "aXf-2lcCOUc",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "tFyNR3k221k",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "Q4orEIVs4d4",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "PXNfg73vqn4",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "dPM9wfRtErM",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "TyOPlrwLaN4",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "qo007iikiEc",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "RQ778BVB1MA",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "SjVyYFagYJM",
@@ -5144,7 +5154,8 @@ var videolinks = [
     },
     {
         videoID: "hw5FzjFrKgc",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "AJvWhELZDIY",
@@ -5152,19 +5163,23 @@ var videolinks = [
     },
     {
         videoID: "zvEIrQ2NSQY",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "XWGwCgvYUBc",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "KUtwor9dkMY",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "8ggNJRHwCMc",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "hvzI_z65Xfs",
@@ -5176,7 +5191,8 @@ var videolinks = [
     },
     {
         videoID: "DPZUbkc1Ef0",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "k8eY0UGrA3U",
@@ -5200,19 +5216,23 @@ var videolinks = [
     },
     {
         videoID: "Oy4Cm_17hTU",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "ZuFlsM8pP58",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "xtJ6COMT4bE",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "BzHuqiAsv4I",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "eDjevyoTIaE",
@@ -5228,11 +5248,13 @@ var videolinks = [
     },
     {
         videoID: "j-auJPTCu4k",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "vLQYoZRoBzk",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "vz1yxZZ4zOE",
@@ -5256,39 +5278,48 @@ var videolinks = [
     },
     {
         videoID: "COVBEUfTdCo",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "l4UqP-sZ0GQ",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "lki-fwETg7k",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "6m91IuevGWI",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "_whiTy6B9hE",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "YCrkbA8D1nM",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "VEc-vq2IiU4",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "6xh39oO6e3s",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "4XbgdNarD8Y",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "Z7mxQLy9E6U",
@@ -5324,11 +5355,13 @@ var videolinks = [
     },
     {
         videoID: "05OHFenFNDE",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "xcxaXHk2MGw",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "X7UqPXvWUzw",
@@ -5396,23 +5429,28 @@ var videolinks = [
     },
     {
         videoID: "Bqg9-sUsPcU",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "AoxSXpWpr68",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "DFH1r76aORs",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "70OSfwsFJ5U",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "fWVTp63stlQ",
-        categorie: "todo",
+        categorie: "rap",
+        top: true,
     },
     {
         videoID: "7X181m6w6Pc",
