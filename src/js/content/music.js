@@ -2632,7 +2632,7 @@ var videolinks = [
     },
     {
         videoID: "xxybC_eS60Y",
-        categorie: "todo",
+        categorie: "rap",
     },
     {
         videoID: "XItmK0tmHXY",
@@ -2735,7 +2735,7 @@ var videolinks = [
     },
     {
         videoID: "lukT_WB5IB0",
-        categorie: "todo",
+        categorie: "rap histoire trool",
     },
     {
         videoID: "HyklZmIjQRk",
@@ -2773,7 +2773,8 @@ var videolinks = [
     },
     {
         videoID: "f4Mc-NYPHaQ",
-        categorie: "todo",
+        categorie: "histoire rock",
+        top: true,
     },
     {
         videoID: "QChwm0w9nxc",
@@ -2801,7 +2802,8 @@ var videolinks = [
     },
     {
         videoID: "EXeXTc7IqJE",
-        categorie: "todo",
+        categorie: "electro histoire",
+        top: true,
     },
     {
         videoID: "9fQasCJb19Y",
@@ -2941,7 +2943,7 @@ var videolinks = [
     },
     {
         videoID: "PM0v7f5UmYo",
-        categorie: "rock todo",
+        categorie: "rock",
     },
     {
         videoID: "I6clX1LknkU",
@@ -2955,11 +2957,15 @@ var videolinks = [
     },
     {
         videoID: "nWKPYs54INA",
-        categorie: "todo",
+        categorie: "electro moody chill",
+        text: "<a target='_blank' href='#n7Oz_7-Y9fk'>Alternative</a>",
+        top: true,
     },
     {
         videoID: "n7Oz_7-Y9fk",
-        categorie: "todo",
+        categorie: "electro moody chill",
+        text: "<a target='_blank' href='#nWKPYs54INA'>Alternative</a>",
+        top: true,
     },
     {
         videoID: "tiGPMuR6xzg",
@@ -2973,11 +2979,15 @@ var videolinks = [
     },
     {
         videoID: "evny_w98PjI",
-        categorie: "todo",
+        categorie: "histoire chill moody electro",
+        text: "<a target='_blank' href='#HhP6V4igJOg'>Alternative</a>",
+        top: true,
     },
     {
         videoID: "HhP6V4igJOg",
-        categorie: "todo",
+        categorie: "histoire chill moody electro",
+        text: "<a target='_blank' href='#evny_w98PjI'>Alternative</a>",
+        top: true,
     },
     {
         videoID: "r5NzAksjfDI",
@@ -3004,7 +3014,8 @@ var videolinks = [
     },
     {
         videoID: "zoUNCoOzAGo",
-        categorie: "todo",
+        categorie: "moody rock histoire",
+        top: true,
     },
     {
         videoID: "v7GMG1aLyPw",
@@ -3013,7 +3024,8 @@ var videolinks = [
     },
     {
         videoID: "NajmHZ6kcUg",
-        categorie: "todo",
+        categorie: "moody rap histoire",
+        top: true,
     },
     {
         videoID: "w2sY_26_Sco",
@@ -3035,12 +3047,9 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "3VxbaYySZv4",
-        categorie: "todo",
-    },
-    {
         videoID: "O1PkZaFy61Y",
-        categorie: "todo",
+        categorie: "moody histoire",
+        top: true,
     },
     {
         videoID: "9hKEIMl8AVk",
@@ -3263,180 +3272,221 @@ var videolinks = [
     },
     {
         videoID: "lnUiopggh60",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "w9PoDUO2ynE",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "rXPDWlXl_18",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "6_Llr-CBQx0",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "twq7tVTGG-E",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "i5zR6toPVQ8",
-        categorie: "todo",
+        categorie: "phonk moody",
+        top: true,
     },
     {
         videoID: "iwbCwGkFGBE",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "bODpjB3JolQ",
-        categorie: "todo",
+        categorie: "chilljp rock",
+        top: true,
     },
     {
         videoID: "sKJvJCsey84",
-        categorie: "todo",
+        categorie: "moody chill histoire jazz",
+        top: true,
     },
     {
         videoID: "OUwSOgnmDw8",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "Cwkej79U3ek",
-        categorie: "todo",
+        categorie: "histoire chill",
+        top: true,
     },
     {
         videoID: "StZcUAPRRac",
-        categorie: "todo",
+        categorie: "rock histoire",
+        top: true,
     },
     {
         videoID: "kZ2YtvvsDYk",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "DO_iFL6Nh-I",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "MaLqO_parbc",
-        categorie: "todo",
+        categorie: "phonk moody chill",
+        top: true,
     },
     {
         videoID: "gGJzJzVQNjs",
-        categorie: "todo",
+        categorie: "histoire chill moody rock",
+        top: true,
     },
     {
         videoID: "kSzdjXails8",
-        categorie: "todo",
+        categorie: "histoire chill moody",
+        top: true,
     },
     {
         videoID: "bRHb99evKU4",
-        categorie: "todo",
+        categorie: "phonk moody",
+        top: true,
     },
     {
         videoID: "_EBvXpjudf8",
-        categorie: "todo",
+        categorie: "histoire rock",
+        top: true,
     },
     {
         videoID: "q1b_cRmB1T8",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "lpQQ_o8DlGI",
-        categorie: "todo",
+        categorie: "electro chill",
+        top: true,
     },
     {
         videoID: "nGFmH4w3V8I",
-        categorie: "todo",
+        categorie: "electro chill moody",
+        top: true,
     },
     {
         videoID: "qv5-RtpcdQQ",
-        categorie: "todo",
+        categorie: "electro chill classic",
     },
     {
         videoID: "OjpX8ILe2N4",
-        categorie: "todo",
+        categorie: "histoire chill",
+        top: true,
     },
     {
         videoID: "W4C-NEWrnSQ",
-        categorie: "todo",
+        categorie: "histoire chill rock",
+        top: true,
     },
     {
         videoID: "vF7kpG16udM",
-        categorie: "todo",
+        categorie: "chill histoire rock",
+        top: true,
     },
     {
         videoID: "wEQQhw9evNA",
-        categorie: "todo",
+        categorie: "histoire chill rock",
+        top: true,
     },
     {
         videoID: "nSkDpIj0Y7w",
-        categorie: "todo",
+        categorie: "electro histoire chill",
+        top: true,
     },
     {
         videoID: "bpEmjxobvbY",
-        categorie: "todo",
+        categorie: "histoire trool",
     },
     {
         videoID: "3fVlM7D6d8U",
-        categorie: "todo",
+        categorie: "electro chill moody",
+        top: true,
     },
     {
         videoID: "JHiqGqoIGII",
-        categorie: "todo",
+        categorie: "rock histoire",
+        top: true,
     },
     {
         videoID: "6glQdaQUZ1U",
-        categorie: "todo",
+        categorie: "histoire rock chill",
+        top: true,
     },
     {
         videoID: "iJ2AzYfLFCQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "DLg1m4a_oCM",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "o5Xq9SpILGU",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "CoSszFkg3Ns",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "ia-DpJo15b0",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "KFbUQPouVy8",
         short: true,
-        categorie: "todo",
+        categorie: "histoire",
     },
     {
         videoID: "q95Hulyck20",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "i9jWGQt_j_I",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "rngLO3tF2mA",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "v1K4EAXe2oo",
-        categorie: "todo",
+        categorie: "electro trool chill",
+        top: true,
     },
     {
         videoID: "qCmGkTqehW4",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "IDUTD9-uywo",
-        categorie: "todo",
+        categorie: "phonk electro",
+        top: true,
     },
     {
         videoID: "Mhj15W23IjA",
@@ -3452,7 +3502,8 @@ var videolinks = [
     },
     {
         videoID: "QVjEkXBOeVk",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "vh03nBIQV80",
@@ -3460,7 +3511,8 @@ var videolinks = [
     },
     {
         videoID: "z8nVXxnLA-0",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "IxX_QHay02M",
@@ -3468,7 +3520,8 @@ var videolinks = [
     },
     {
         videoID: "rqWYsLohPZc",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "Te11UaHOHMQ",
@@ -3476,7 +3529,8 @@ var videolinks = [
     },
     {
         videoID: "-aytZ0n_KNQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "iDDQWHpmwWY",
@@ -3484,23 +3538,28 @@ var videolinks = [
     },
     {
         videoID: "Tgz2OshpnTQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "oozW_CTmovA",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "Znh5h1NpV9s",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "4C-b3ml5xQc",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "6-8r_6r6bLQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "lpvmm2IwlwQ",
@@ -3508,7 +3567,8 @@ var videolinks = [
     },
     {
         videoID: "SqjQUe61hU0",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "wAeDVL-SBbU",
@@ -3757,7 +3817,8 @@ var videolinks = [
     },
     {
         videoID: "FmH7Ryo06bU",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "AiosKUO7oqo",
@@ -3769,79 +3830,97 @@ var videolinks = [
     },
     {
         videoID: "9S1JiPS2a6c",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "YbjvoqBcrcM",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "tCFsSPPGdH0",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "dADkIzMOAk4",
-        categorie: "todo",
+        categorie: "phonk",
     },
     {
         videoID: "cy7dNFvtyv4",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "XEJKTObiDU4",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "uvUdN4gblAw",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "okZJnkYuvA0",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "7ZTwtBzoVWU",
-        categorie: "todo",
+        categorie: "phonk electro hardbass",
+        top: true,
     },
     {
         videoID: "YR2Nx39Hfik",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "BTk66-Nd_kw",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "ET6Hn_iADIs",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "VkyNqGsfJdM",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "CvG7IIBq2nA",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "2taYw_osCMQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "3ZkE4GrF4iQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "Q7UvhJpyMsk",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "W169118z330",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "eOMX2PytlmQ",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "Xu3FTEmN-eg",
@@ -3849,43 +3928,53 @@ var videolinks = [
     },
     {
         videoID: "_N7Iy1PzfFI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "LcD6GKqkypE",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "fJhtohbLo0A",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "miZ5SQYCqxU",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "3TBx2s3YelE",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "5OZ-JOSWx1Q",
-        categorie: "todo",
+        categorie: "electro hardbass phonk",
+        top: true,
     },
     {
         videoID: "Y-Pt1NQPoyA",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "YE4uZua79l8",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "-98b_Na7mFI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "0T7eMctuJLQ",
-        categorie: "todo",
+        categorie: "histoire classic chill",
+        top: true,
     },
     {
         videoID: "TKGE6B9QqVs",
@@ -3893,35 +3982,43 @@ var videolinks = [
     },
     {
         videoID: "G7b4VMEATNo",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "cybiybssF5o",
-        categorie: "todo",
+        categorie: "phonk electro",
+        top: true,
     },
     {
         videoID: "rMNo3MKiNb8",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "B9VH-JZ1744",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "bfgStrRLPdU",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "VOCxGuDadGI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "eKw4I2FZxRI",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "pTAnSekzE-E",
-        categorie: "todo",
+        categorie: "phonk hardbass electro",
+        top: true,
     },
     {
         videoID: "z86nDI0cs8U",
@@ -3941,83 +4038,103 @@ var videolinks = [
     },
     {
         videoID: "CdnaNh1_jks",
-        categorie: "todo",
+        categorie: "phonk long",
+        top: true,
     },
     {
         videoID: "k5uayenx6oU",
-        categorie: "todo",
+        categorie: "phonk long",
+        top: true,
     },
     {
         videoID: "NT4eF9YsYnM",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "vV4YN1YJqmI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
-        videoID: "kB9ydUHZmR4",
-        categorie: "todo",
+        videoID: "kB9ydUHZmR4 hardbass",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "sq04GzTrb3c",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "Cc3OON0mIVA",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "Zwh1gfsgVHA",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "57gqWXZMm2Y",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "BibAGQCq6Zw",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "vHXrj49_WZs",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "_36WCqLgv2g",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "_J18Yh4NCuQ",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "LaEgpNBt-bQ",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "NocXEwsJGOQ",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "jhl5afLEKdo",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "OuLZlZ18APQ",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "_-2dIuV34cs",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "E938KHTMCac",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "jsQXgDZIIrY",
-        categorie: "todo",
+        categorie: "electro nightcore chilljp",
+        top: true,
     },
     {
         videoID: "9N8MpjTm534",
@@ -4025,35 +4142,43 @@ var videolinks = [
     },
     {
         videoID: "GNd2-zrgBxI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "WuglphJ2Slk",
-        categorie: "todo",
+        categorie: "phonk moody electro",
+        top: true,
     },
     {
         videoID: "x_7zkQO0lPs",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "LPIc5deNcHM",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "tlWiHOYV0Rs",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "GuYxOjHt2wY",
-        categorie: "todo",
+        categorie: "phonk moody",
+        top: true,
     },
     {
         videoID: "gWmBY3qva_s",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "n5EE_AB7ao8",
-        categorie: "todo",
+        categorie: "phonk hardbass",
+        top: true,
     },
     {
         videoID: "eNvUS-6PTbs",
@@ -4061,7 +4186,8 @@ var videolinks = [
     },
     {
         videoID: "yeHa_X6787g",
-        categorie: "todo",
+        categorie: "phonk hardbass electro",
+        top: true,
     },
     {
         videoID: "YuGe533mWiA",
@@ -4069,43 +4195,53 @@ var videolinks = [
     },
     {
         videoID: "fL9mf_gP-Ow",
-        categorie: "todo",
+        categorie: "phonk moody electro",
+        top: true,
     },
     {
         videoID: "gbupmg-zwcI",
-        categorie: "todo",
+        categorie: "phonk electro",
+        top: true,
     },
     {
         videoID: "-msVseh3ocM",
-        categorie: "todo",
+        categorie: "phonk electro",
+        top: true,
     },
     {
         videoID: "-KMk2Y7vZ_M",
-        categorie: "todo",
+        categorie: "phonk electro",
+        top: true,
     },
     {
         videoID: "x_XpOZVM1xo",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "m6nFOtV-suc",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "w6wTVx4R0xk",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "72grpeIJvoI",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "vAAATOSaWP8",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "Gr7mOdz1l9E",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "m1G_TMtnXF0",
@@ -4121,19 +4257,18 @@ var videolinks = [
     },
     {
         videoID: "IjeGuBxGnR4",
-        categorie: "todo",
+        categorie: "phonk jazz electro chill",
+        top: true,
     },
     {
         videoID: "gzoaRUdaBMk",
-        categorie: "todo",
-    },
-    {
-        videoID: "aHaC30nXJd0",
-        categorie: "todo",
+        categorie: "phonk jazz electro chill",
+        top: true,
     },
     {
         videoID: "Jx5Q1XdfWrI",
-        categorie: "todo",
+        categorie: "phonk electro hardbass",
+        top: true,
     },
     {
         videoID: "ElV8mADN9EI",
@@ -6077,6 +6212,14 @@ var videolinks = [
     },
     {
         videoID: "st7gRhh2SzE",
+        categorie: "todo",
+    },
+    {
+        videoID: "3VxbaYySZv4",
+        categorie: "todo",
+    },
+    {
+        videoID: "aHaC30nXJd0",
         categorie: "todo",
     },
     {
