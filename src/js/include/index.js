@@ -79,13 +79,13 @@ async function setTitle(title){
     }
 }
 
-async function setIcon(iconPath){
+/*async function setIcon(iconPath){
     link = document.createElement("link");
     link.rel = "icon";
     link.type = "image/x-icon";
     link.href = iconPath;
     document.head.appendChild(link);
-}
+}*/
 
 async function randomInclude(excludeSettings) {
     var max = 10;

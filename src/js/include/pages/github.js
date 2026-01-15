@@ -1,5 +1,4 @@
 async function CheckPage() {
-    await setIcon("/assets/svg/trademark/github.svg");
 
     if (pathNameMatchPage("/github/statistiques", true)) {
         await includes();
