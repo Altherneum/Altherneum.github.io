@@ -1,5 +1,4 @@
 async function CheckPage() {
-    await setIcon("/assets/svg/administrator.svg");
 
     if (pathNameMatchPage("/admin/film", true)) {
         await includes();
@@ -35,7 +34,7 @@ async function CheckPage() {
 
     else if (pathNameMatchPage("/admin/music", true)) {
         await includes();
-        await setIcon("/assets/svg/music.svg");
+        await setIcon("/assets/svg/music-white.svg");
 
         await include_css("/src/css/youtubeEmbed.css");
         await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
@@ -102,8 +101,12 @@ async function CheckPage() {
         });
     }
 
+
     else {
         return false;
     }
+
+    await setIcon("/assets/svg/administrator.svg");
+
     return true;
 }
