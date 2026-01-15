@@ -67,7 +67,6 @@ async function styles() {
 
 async function Metadata() {
     await setTitle("");
-    await setIcon("/assets/gif/small-round-50.gif");
 }
 
 async function setTitle(title){
