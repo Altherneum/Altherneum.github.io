@@ -3490,15 +3490,20 @@ var videolinks = [
     },
     {
         videoID: "Mhj15W23IjA",
-        categorie: "todo",
+        categorie: "histoire chill moody",
+        top: true,
     },
     {
         videoID: "nOeJuoFs6sM",
-        categorie: "todo",
+        categorie: "moody slavic histoire chill",
+        top: true,
+        text: "<a target='_blank' href='#6SEr1XcZG4M'>Vidéo</a>",
     },
     {
         videoID: "6SEr1XcZG4M",
-        categorie: "todo",
+        categorie: "moody slavic histoire chill",
+        top: true,
+        text: "<a target='_blank' href='#nOeJuoFs6sM'>Musique</a>",
     },
     {
         videoID: "QVjEkXBOeVk",
@@ -3507,7 +3512,8 @@ var videolinks = [
     },
     {
         videoID: "vh03nBIQV80",
-        categorie: "todo",
+        categorie: "chill histoire classic electro",
+        top: true,
     },
     {
         videoID: "z8nVXxnLA-0",
@@ -3516,7 +3522,7 @@ var videolinks = [
     },
     {
         videoID: "IxX_QHay02M",
-        categorie: "todo",
+        categorie: "trool histoire electro",
     },
     {
         videoID: "rqWYsLohPZc",
@@ -3525,7 +3531,8 @@ var videolinks = [
     },
     {
         videoID: "Te11UaHOHMQ",
-        categorie: "todo",
+        categorie: "moody histoire chill",
+        top: true,
     },
     {
         videoID: "-aytZ0n_KNQ",
@@ -3533,8 +3540,9 @@ var videolinks = [
         top: true,
     },
     {
-        videoID: "iDDQWHpmwWY",
-        categorie: "todo",
+        videoID: "84VRfysYJfA",
+        categorie: "phonk moody chill",
+        top: true,
     },
     {
         videoID: "Tgz2OshpnTQ",
@@ -3563,7 +3571,8 @@ var videolinks = [
     },
     {
         videoID: "lpvmm2IwlwQ",
-        categorie: "todo",
+        categorie: "histoire moody classic",
+        top: true,
     },
     {
         videoID: "SqjQUe61hU0",
@@ -3572,87 +3581,108 @@ var videolinks = [
     },
     {
         videoID: "wAeDVL-SBbU",
-        categorie: "todo",
+        categorie: "histoire chill rock",
+        top: true,
     },
     {
         videoID: "FM7MFYoylVs",
-        categorie: "todo",
+        categorie: "moody histoire chill",
+        top: true,
     },
     {
         videoID: "GjTTB6yII4o",
-        categorie: "todo",
+        categorie: "histoire rock moody chill",
+        top: true,
     },
     {
         videoID: "Hy8kmNEo1i8",
-        categorie: "todo",
+        categorie: "histoire trool chill",
+        top: true,
     },
     {
         videoID: "juJkNKodgdE",
-        categorie: "todo",
+        categorie: "histoire electro classic",
+        top: true,
     },
     {
         videoID: "8WEe-MmC4ag",
-        categorie: "todo",
+        categorie: "electro hardbass histoire trool",
+        top: true,
     },
     {
         videoID: "di18hTFTwIw",
-        categorie: "todo",
+        categorie: "histoire moody classic rock trool",
+        top: true,
     },
     {
         videoID: "TNqw1ayK56Y",
-        categorie: "todo",
+        categorie: "phonk electro",
+        top: true,
     },
     {
         videoID: "r6zIGXun57U",
-        categorie: "todo",
+        categorie: "chill moody histoire",
+        top: true,
     },
     {
         videoID: "xEldLhbUVjA",
-        categorie: "todo",
+        categorie: "phonk",
+        top: true,
     },
     {
         videoID: "fV4DiAyExN0",
-        categorie: "todo",
+        categorie: "histoire rock moody",
+        top: true,
     },
     {
         videoID: "Lc1Ll-euRSg",
-        categorie: "todo",
+        categorie: "histoire rock",
     },
     {
         videoID: "R4xWbRBLj2I",
-        categorie: "todo",
+        categorie: "histoire moody chill rock",
+        top: true,
     },
     {
         videoID: "LpNVf8sczqU",
-        categorie: "todo",
+        categorie: "histoire moody chill classic",
+        top: true,
     },
     {
         videoID: "rymYToIEL9o",
-        categorie: "todo",
+        categorie: "histoire rock chill",
+        top: true,
     },
     {
         videoID: "Tp0D2XJecOk",
-        categorie: "todo",
+        categorie: "phonk electro chill",
+        top: true,
     },
     {
         videoID: "49FB9hhoO6c",
-        categorie: "todo",
+        categorie: "rock moody histoire",
+        top: true,
     },
     {
         videoID: "hW3NVZDG_eQ",
-        categorie: "todo",
+        categorie: "chill chilljp moody histoire",
+        text: "<a target='_blank' href='#H9R1Hl6sJeE'>Original</a>",
+        top: true,
     },
     {
         videoID: "H9R1Hl6sJeE",
-        categorie: "todo",
+        categorie: "chill chilljp moody histoire",
+        text: "<a target='_blank' href='#hW3NVZDG_eQ'>Teto Cover</a>",
+        top: true,
     },
     {
         videoID: "N72U-NFu44k",
-        categorie: "todo",
+        categorie: "rock histoire",
     },
     {
         videoID: "qQzdAsjWGPg",
-        categorie: "todo",
+        categorie: "histoire chill",
+        top: true,
     },
     {
         videoID: "m2OR_JaXDaM",
@@ -3696,7 +3726,8 @@ var videolinks = [
     },
     {
         videoID: "QNYT9wVwQ8A",
-        categorie: "todo",
+        categorie: "chill chilljp histoire moody",
+        top: true,
     },
     {
         videoID: "zXMB0DOV7j0",
@@ -4307,8 +4338,9 @@ var videolinks = [
         categorie: "todo",
     },
     {
-        videoID: "voU687NZLPk",
-        categorie: "todo",
+        videoID: "58G7DzOWGnw",
+        categorie: "chill chilljp histoire",
+        top: true,
     },
     {
         videoID: "HyHZjnEccUk",
@@ -4368,55 +4400,68 @@ var videolinks = [
     },
     {
         videoID: "DFmIVOKnw84",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill moody",
+        top: true,
     },
     {
         videoID: "l0Tyay2EDKU",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill moody",
+        top: true,
     },
     {
         videoID: "3uXFSvMZIwQ",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill",
+        top: true,
     },
     {
         videoID: "chsalQa0Fzc",
-        categorie: "todo",
+        categorie: "chill chilljp histoire rock",
+        top: true,
     },
     {
         videoID: "Wey2yM_dNfc",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill moody",
+        top: true,
     },
     {
         videoID: "eJHP7mk4aaA",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill moody",
+        top: true,
     },
     {
         videoID: "gATsNrzcr1s",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill electro",
+        top: true,
     },
     {
         videoID: "ok2OLH4GWyw",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill",
+        top: true,
     },
     {
         videoID: "uWqnsVMc8CQ",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill moody",
+        top: true,
     },
     {
         videoID: "U1W7sX_Gd1g",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill",
+        top: true,
     },
     {
         videoID: "hci81q8Q49Q",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill jazz",
+        top: true,
     },
     {
         videoID: "M-OlgCZpMR0",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill rock jazz",
+        top: true,
     },
     {
         videoID: "cQjW6OOpo4g",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill rock jazz",
+        top: true,
     },
     {
         videoID: "BBj3SCImk_A",
@@ -4424,11 +4469,13 @@ var videolinks = [
     },
     {
         videoID: "QLHMhVonF-s",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill jazz",
+        top: true,
     },
     {
         videoID: "FVikHLyW500",
-        categorie: "todo",
+        categorie: "chill chilljp histoire chill jazz",
+        top: true,
     },
     {
         videoID: "oVhaYKq8ba8",
