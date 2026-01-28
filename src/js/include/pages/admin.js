@@ -38,8 +38,8 @@ async function CheckPage() {
 
         loadYouTubeEmbed();
         await include_script("/src/js/content/settings.js");
-            setSwitch("YouTubeLoop", null);
-            setSwitch("YoutubeShuffle", null);
+            setSwitch("YouTubeLoop", false);
+            setSwitch("YoutubeShuffle", true);
     }
         
     else if (pathNameMatchPage("/admin/video", true)) {
