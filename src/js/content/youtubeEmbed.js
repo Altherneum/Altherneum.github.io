@@ -643,29 +643,30 @@ function createPlayListList() {
     categorieList = getVideoListType();
     smallAutoMix = [];
     fullAutoMix = [];
+    comboAlreadyDone = "";
 
     let categorieName = "";
     for(categorieType in categorieList) {
         for(categorieType2 in categorieList){
-            if(categorieType != categorieType2){
-                categorieName = categorieList[categorieType] + " " + categorieList[categorieType2];
-            } else{ categorieName = categorieList[categorieType]; }
-            console.log("categorieName ; " + categorieName);
 
-            smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
-            fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
+            if(!comboAlreadyDone.includes(categorieList[categorieType] + " " + categorieList[categorieType2]) && !comboAlreadyDone.includes(categorieList[categorieType2] + " " + categorieList[categorieType])){
+                comboAlreadyDone += categorieList[categorieType] + " " + categorieList[categorieType2];
 
-            smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "false" });
-            fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "false" });
+                if(categorieType != categorieType2){
+                    categorieName = categorieList[categorieType] + " " + categorieList[categorieType2];
+                } else{ categorieName = categorieList[categorieType]; }
 
-            smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "mixed" });
-            fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "mixed" });
+                console.log("categorieName ; " + categorieName);
 
-            //Check if categorie exist (in revert so check with logique for each tag spitted)
-            // As it will make categories like
-            // a & b
-            // b & a
-            // and only one should exist
+                smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
+                fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
+
+                smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "false" });
+                fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "false" });
+
+                smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "mixed" });
+                fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "mixed" });
+            }
         }
     }
 }
