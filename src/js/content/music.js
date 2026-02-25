@@ -440,42 +440,42 @@ var videolinks = [
     {
         text: "神秘的BGM】蒼ノ世界 / 幻想世界の音楽たち",
         videoID: "uqUP66TTXiY",
-        categorie: "chilljp long chill",
+        categorie: "asian long chill",
     },
     {
         videoID: "Jg73p9udbAQ",
         top: true,
-        categorie: "chilljp",
+        categorie: "asian",
     },
     {
         videoID: "OLAK5uy_mXM3z_ByZFdM3fPV3XaAOYLfkri_b1w7g",
         playlist: true,
-        categorie: "chilljp",
+        categorie: "asian",
     },
     {
         videoID: "jrTMMG0zJyI",
-        categorie: "chilljp phonk electro chill long",
+        categorie: "asian phonk electro chill long",
     },
     {
         videoID: "goxmvGJkoi0",
-        categorie: "chilljp",
+        categorie: "asian",
     },
     {
         videoID: "LUxd9GUJHN8",
-        categorie: "chilljp long phonk electro",
+        categorie: "asian long phonk electro",
     },
     {
         videoID: "MgOXIbgPfeI",
         top: true,
-        categorie: "chilljp phonk",
+        categorie: "asian phonk",
     },
     {
         videoID: "eSZFIXbqmhs",
-        categorie: "chilljp long phonk electro",
+        categorie: "asian long phonk electro",
     },
     {
         videoID: "OntcAJYG29A",
-        categorie: "chilljp long electro phonk",
+        categorie: "asian long electro phonk",
     },
     {
         text: "😈",
@@ -847,12 +847,12 @@ var videolinks = [
     },
     {
         videoID: "i8lDuo9yqfs",
-        categorie: "trool chilljp",
+        categorie: "trool asian",
         text: "PoV Dev's life, <a target='_blank' href='#FtutLA63Cp8'>Original</a>",
     },
     {
         videoID: "FtutLA63Cp8",
-        categorie: "trool chilljp",
+        categorie: "trool asian",
         text: "<a target='_blank' href='#i8lDuo9yqfs'>Remix</a>"
     },
     {
@@ -1167,7 +1167,7 @@ var videolinks = [
     },
     {
         videoID: "zj10k3XytQ4",
-        categorie: "chilljp",
+        categorie: "asian",
     },
     {
         videoID: "Lgs9QUtWc3M",
@@ -1204,7 +1204,7 @@ var videolinks = [
         videoID: "PLLkGVD9RIO_BI66nhaUxFS8V72gl1tbyM",
         text: "<a target='_blank' href='https://www.youtube.com/@uni_mafumafu'>@uni_mafumafu</a>",
         playlist: true,
-        categorie: "chilljp",
+        categorie: "asian",
     },
     {
         videoID: "L4oK_b82hxU",
@@ -1284,7 +1284,7 @@ var videolinks = [
     },
     {
         videoID: "iRvkMzy4Gcg",
-        categorie: "chilljp trool",
+        categorie: "asian trool",
         text: "Serani Poji - Pipo pipo"
     },
     {
@@ -1380,7 +1380,7 @@ var videolinks = [
     },
     {
         videoID: "yzC4hFK5P3g",
-        categorie: "chilljp",
+        categorie: "asian",
     },
     {
         videoID: "xl1B0kNhRy0",
@@ -1439,7 +1439,7 @@ var videolinks = [
     },
     {
         videoID: "oC2HvHKDjeU",
-        categorie: "chilljp trool",
+        categorie: "asian trool",
     },
     {
         videoID: "yAxWl72m2fc",
@@ -1473,12 +1473,12 @@ var videolinks = [
     },
     {
         videoID: "Ra5qZDJefJs",
-        categorie: "phonk electro chilljp",
+        categorie: "phonk electro asian",
         text: "<a target='_blank' href='#mw7Y0jQ8_BU'>Spinnin Records 1st upload</a>",
     },
     {
         videoID: "mw7Y0jQ8_BU",
-        categorie: "phonk electro chilljp",
+        categorie: "phonk electro asian",
         top: true,
         text: "<a target='_blank' href='#Ra5qZDJefJs'>Re-upload by YouTube</a>",
     },
@@ -1521,7 +1521,7 @@ var videolinks = [
     },
     {
         videoID: "W7Q54_BEhgQ",
-        categorie: "chilljp",
+        categorie: "asian",
         top: true,
     },
     {
@@ -1966,13 +1966,13 @@ var videolinks = [
     },
     {
         videoID: "R9PNKMwVW5M",
-        categorie: "chill histoire chilljp",
+        categorie: "chill histoire asian",
         text: "<a target='_blank' href='#ETvIJFa1c-0'>Anime version</a>",
         top: true,
     },
     {
         videoID: "ETvIJFa1c-0",
-        categorie: "chill histoire chilljp",
+        categorie: "chill histoire asian",
         text: "<a target='_blank' href='#R9PNKMwVW5M'>Original</a>",
         top: true,
     },
@@ -2007,7 +2007,7 @@ var videolinks = [
     },
     {
         videoID: "n6B5gQXlB-0",
-        categorie: "chilljp",
+        categorie: "asian",
         top: true,
     },
     {
@@ -2017,7 +2017,7 @@ var videolinks = [
     },
     {
         videoID: "L9dnK_WNDcg",
-        categorie: "chilljp moody",
+        categorie: "asian moody",
     },
     {
         videoID: "RkZkekS8NQU",
@@ -2217,7 +2217,7 @@ var videolinks = [
     },
     {
         videoID: "tOq_kHo6jNc",
-        categorie: "chilljp chill classic",
+        categorie: "asian chill classic",
         top: true,
     },
     {
@@ -2566,7 +2566,7 @@ var videolinks = [
     },
     {
         videoID: "DHSsb9dv9Rc",
-        categorie: "chill classic chilljp electro moody",
+        categorie: "chill classic asian electro moody",
         top: true,
     },
     {
@@ -3307,7 +3307,7 @@ var videolinks = [
     },
     {
         videoID: "bODpjB3JolQ",
-        categorie: "chilljp rock",
+        categorie: "asian rock",
         top: true,
     },
     {
@@ -3665,13 +3665,13 @@ var videolinks = [
     },
     {
         videoID: "hW3NVZDG_eQ",
-        categorie: "chill chilljp moody histoire",
+        categorie: "chill asian moody histoire",
         text: "<a target='_blank' href='#H9R1Hl6sJeE'>Original</a>",
         top: true,
     },
     {
         videoID: "H9R1Hl6sJeE",
-        categorie: "chill chilljp moody histoire",
+        categorie: "chill asian moody histoire",
         text: "<a target='_blank' href='#hW3NVZDG_eQ'>Teto Cover</a>",
         top: true,
     },
@@ -3726,7 +3726,7 @@ var videolinks = [
     },
     {
         videoID: "QNYT9wVwQ8A",
-        categorie: "chill chilljp histoire moody",
+        categorie: "chill asian histoire moody",
         top: true,
     },
     {
@@ -4134,37 +4134,37 @@ var videolinks = [
     },
     {
         videoID: "LaEgpNBt-bQ",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
         videoID: "NocXEwsJGOQ",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
         videoID: "jhl5afLEKdo",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
         videoID: "OuLZlZ18APQ",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
         videoID: "_-2dIuV34cs",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
         videoID: "E938KHTMCac",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
         videoID: "jsQXgDZIIrY",
-        categorie: "electro nightcore chilljp",
+        categorie: "electro nightcore asian",
         top: true,
     },
     {
@@ -4339,7 +4339,7 @@ var videolinks = [
     },
     {
         videoID: "58G7DzOWGnw",
-        categorie: "chill chilljp histoire",
+        categorie: "chill asian histoire",
         top: true,
     },
     {
@@ -4400,67 +4400,67 @@ var videolinks = [
     },
     {
         videoID: "DFmIVOKnw84",
-        categorie: "chill chilljp histoire chill moody",
+        categorie: "chill asian histoire chill moody",
         top: true,
     },
     {
         videoID: "l0Tyay2EDKU",
-        categorie: "chill chilljp histoire chill moody",
+        categorie: "chill asian histoire chill moody",
         top: true,
     },
     {
         videoID: "3uXFSvMZIwQ",
-        categorie: "chill chilljp histoire chill",
+        categorie: "chill asian histoire chill",
         top: true,
     },
     {
         videoID: "chsalQa0Fzc",
-        categorie: "chill chilljp histoire rock",
+        categorie: "chill asian histoire rock",
         top: true,
     },
     {
         videoID: "Wey2yM_dNfc",
-        categorie: "chill chilljp histoire chill moody",
+        categorie: "chill asian histoire chill moody",
         top: true,
     },
     {
         videoID: "eJHP7mk4aaA",
-        categorie: "chill chilljp histoire chill moody",
+        categorie: "chill asian histoire chill moody",
         top: true,
     },
     {
         videoID: "gATsNrzcr1s",
-        categorie: "chill chilljp histoire chill electro",
+        categorie: "chill asian histoire chill electro",
         top: true,
     },
     {
         videoID: "ok2OLH4GWyw",
-        categorie: "chill chilljp histoire chill",
+        categorie: "chill asian histoire chill",
         top: true,
     },
     {
         videoID: "uWqnsVMc8CQ",
-        categorie: "chill chilljp histoire chill moody",
+        categorie: "chill asian histoire chill moody",
         top: true,
     },
     {
         videoID: "U1W7sX_Gd1g",
-        categorie: "chill chilljp histoire chill",
+        categorie: "chill asian histoire chill",
         top: true,
     },
     {
         videoID: "hci81q8Q49Q",
-        categorie: "chill chilljp histoire chill jazz",
+        categorie: "chill asian histoire chill jazz",
         top: true,
     },
     {
         videoID: "M-OlgCZpMR0",
-        categorie: "chill chilljp histoire chill rock jazz",
+        categorie: "chill asian histoire chill rock jazz",
         top: true,
     },
     {
         videoID: "cQjW6OOpo4g",
-        categorie: "chill chilljp histoire chill rock jazz",
+        categorie: "chill asian histoire chill rock jazz",
         top: true,
     },
     {
@@ -4469,12 +4469,12 @@ var videolinks = [
     },
     {
         videoID: "QLHMhVonF-s",
-        categorie: "chill chilljp histoire chill jazz",
+        categorie: "chill asian histoire chill jazz",
         top: true,
     },
     {
         videoID: "FVikHLyW500",
-        categorie: "chill chilljp histoire chill jazz",
+        categorie: "chill asian histoire chill jazz",
         top: true,
     },
     {
@@ -7694,7 +7694,7 @@ var videolinks = [
     },
 ];
 
-var VideoListType = ["todo", "jazz", "rain", "chill", "chilljp", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
+var VideoListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
 
 function getVideoListType(){
     return VideoListType;
@@ -7719,7 +7719,7 @@ function getEmoji(VideoListType){
             return "☔";
         case 'chill':
             return "☕";
-        case 'chilljp':
+        case 'asian':
             return "🀄";
         case 'classic':
             return "🎹";
