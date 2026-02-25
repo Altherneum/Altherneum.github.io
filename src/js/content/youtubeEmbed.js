@@ -669,7 +669,7 @@ async function constructPlayList(videoID, playlist, top, categorie, videoType) {
         var VideoCategorieList = categorie.split(" ");
         for (categorieType in VideoCategorieList) {
             var tag = VideoCategorieList[categorieType];
-            
+
             if(top === true){
                 var objectIndex = smallAutoMixTop.findIndex(obj => obj.tag == tag);
                 smallAutoMixTop[objectIndex].videoIDList += videoID + ",";
