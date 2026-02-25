@@ -652,18 +652,38 @@ function createPlayListList() {
 
     smallAutoMixNoTop = [];
     fullAutoMixNoTop = [];
+
+    let categorieName = "";
     for (categorieType in categorieList) {
-        smallAutoMixTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
-        fullAutoMixTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
-    
-        smallAutoMixMixed.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
-        fullAutoMixMixed.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
-    
-        smallAutoMixNoTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
-        fullAutoMixNoTop.push({ tag: categorieList[categorieType], videoIDList: "", amount: 0 });
+        for(categorieType2 in categorieList){
+            if(categorieType != categorieType2){
+                categorieName = categorieList[categorieType] + " " + categorieList[categorieType2];
+            } else{ categorieName = categorieList[categorieType]; }
+            console.log("categorieName ; " + categorieName);
+
+            smallAutoMixTop.push({ tag: categorieName, videoIDList: "", amount: 0 });
+            fullAutoMixTop.push({ tag: categorieName, videoIDList: "", amount: 0 });
+
+            smallAutoMixMixed.push({ tag: categorieName, videoIDList: "", amount: 0 });
+            fullAutoMixMixed.push({ tag: categorieName, videoIDList: "", amount: 0 });
+        
+            smallAutoMixNoTop.push({ tag: categorieName, videoIDList: "", amount: 0 });
+            fullAutoMixNoTop.push({ tag: categorieName, videoIDList: "", amount: 0 });
+        }
     }
 }
 
+
+// Pour finir les doubles catégories de musiques ;
+/*
+
+Modifier ConstructPlayList()
+    Pour qu'il fasse un for dans smallAutoMix et regarde si la categorie match (est contenu dans le tag de la playlist)
+
+Modifier les autoMix
+    Ajouter comme tag, dans l'array, une catégorie top sur false ou true, ou mixed (string, not boolean)
+    Quand on ajoutera la vidéo dans l'array, check si top ou pas dans la boucle for (plus haut, voire update 1 à faire)
+*/
 async function constructPlayList(videoID, playlist, top, categorie, videoType) {
     if (playlist == false) {
         var VideoCategorieList = categorie.split(" ");
@@ -679,7 +699,7 @@ async function constructPlayList(videoID, playlist, top, categorie, videoType) {
                 fullAutoMixTop[objectIndex].videoIDList += videoID + ",";
                 fullAutoMixTop[objectIndex].amount += 1;
                 
-                await CheckIfPlayListAtLimit(tag, true, false, videoType);
+                await CheckIfPlayListAtLimit(tag, true, false, videoType, false);
             }
             else
             {
@@ -691,7 +711,7 @@ async function constructPlayList(videoID, playlist, top, categorie, videoType) {
                 fullAutoMixNoTop[objectIndex].videoIDList += videoID + ",";
                 fullAutoMixNoTop[objectIndex].amount += 1;
                 
-                await CheckIfPlayListAtLimit(tag, false, false);
+                await CheckIfPlayListAtLimit(tag, false, false, videoType, false);
             }
             var objectIndex = smallAutoMixMixed.findIndex(obj => obj.tag == tag);
             smallAutoMixMixed[objectIndex].videoIDList += videoID + ",";
@@ -701,12 +721,14 @@ async function constructPlayList(videoID, playlist, top, categorie, videoType) {
             fullAutoMixMixed[objectIndex].videoIDList += videoID + ",";
             fullAutoMixMixed[objectIndex].amount += 1;
             
-            await CheckIfPlayListAtLimit(tag, false, true);
+            await CheckIfPlayListAtLimit(tag, false, true, videoType, false);
         }
     }
 }
 
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short) {
+    console.log("debug --- " + videoType + " ; " + tag);
+
     if(top === true){
         let videoIDList = smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmount = smallAutoMixTop[smallAutoMixTop.findIndex(obj => obj.tag == tag)].amount;
@@ -739,7 +761,6 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short) {
     }
 }
 
-//Need update to playlist no top & mixed
 async function setGlobalPlayList(videoType, short) {
     let categorieList = getVideoListType();
     for (categorieType in categorieList) {
@@ -751,14 +772,14 @@ async function setGlobalPlayList(videoType, short) {
 
         let div_cardTop = addCard(true, true, videoIDListTop, tag, false, true, videoType, short);
         addIFrame(true, videoIDListTop, true, tag, "Auto Mix Top : " + videoAmountTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardTop, videoType);
-    
+
         //Mixed
         let videoIDListMixed = fullAutoMixMixed[fullAutoMixMixed.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmountMixed = fullAutoMixMixed[fullAutoMixMixed.findIndex(obj => obj.tag == tag)].amount;
-        
+
         let div_cardMixed = addCard(false, true, videoIDListMixed, tag, false, true, videoType, short);
         addIFrame(true, videoIDListMixed, false, tag, "Auto Mix Mixed : " + videoAmountMixed, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardMixed, videoType);
-    
+
         //NoTop
         let videoIDListNoTop = fullAutoMixNoTop[fullAutoMixNoTop.findIndex(obj => obj.tag == tag)].videoIDList;
         let videoAmountNoTop = fullAutoMixNoTop[fullAutoMixNoTop.findIndex(obj => obj.tag == tag)].amount;
