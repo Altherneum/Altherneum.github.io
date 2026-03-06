@@ -244,7 +244,7 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
 
     videoholder.appendChild(div_card);
 
-    constructPlayList(videoID, playlist, top, categorie, videoType);
+    await constructPlayList(videoID, playlist, top, categorie, videoType);
 
     showOrHideSong(shown, div_card);
 }
@@ -671,17 +671,6 @@ function createPlayListList() {
     }
 }
 
-
-// Pour finir les doubles catégories de musiques ;
-/*
-
-Modifier ConstructPlayList()
-    Pour qu'il fasse un for dans smallAutoMix et regarde si la categorie match (est contenu dans le tag de la playlist)
-
-Modifier les autoMix
-    Ajouter comme tag, dans l'array, une catégorie top sur false ou true, ou mixed (string, not boolean)
-    Quand on ajoutera la vidéo dans l'array, check si top ou pas dans la boucle for(plus haut, voire update 1 à faire)
-*/
 async function constructPlayList(videoID, playlist, top, categorie, videoType) {
     if (playlist == false) {
         var VideoCategorieList = categorie.split(" ");
@@ -689,13 +678,13 @@ async function constructPlayList(videoID, playlist, top, categorie, videoType) {
             var tag = VideoCategorieList[categorieType];
 
             if(top === true){
-                setInPlayList("true", videoID, playlist, top, categorie, videoType, tag);//top small&full
+                await setInPlayList("true", videoID, playlist, top, categorie, videoType, tag);//top small&full
             }
             else
             {
-                setInPlayList("false", videoID, playlist, top, categorie, videoType, tag);//notop small&full
+                await setInPlayList("false", videoID, playlist, top, categorie, videoType, tag);//notop small&full
             }
-            setInPlayList("mixed", videoID, playlist, top, categorie, videoType, tag); //mixed small&full
+            await setInPlayList("mixed", videoID, playlist, top, categorie, videoType, tag); //mixed small&full
         }
     }
 }
@@ -713,10 +702,11 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
             }
 
             if(include == true){
+                include = false;
                 if(!smallAutoMix[categorieInList].videoIDList.includes(videoID)){
                     smallAutoMix[categorieInList].videoIDList += videoID + ",";
                     smallAutoMix[categorieInList].amount += 1;
-                    await CheckIfPlayListAtLimit(smallAutoMix[categorieInList].tag, true, false, videoType, false, topType);
+                    await CheckIfPlayListAtLimit(smallAutoMix[categorieInList].tag, top, false, videoType, false, topType);
                 }
             }
         }
@@ -724,34 +714,39 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
 }
 
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType) {
-    if(top === true){
+    console.info("--- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
+    if(topType === "true"){
+
+        console.info("INSIDE TOP --- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
         if (videoAmount >= 20) {
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList = "";
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount = 0;
             let div_card = addCard(true, true, videoIDList, tag, false, true, videoType, short);
-            addIFrame(true, videoIDList, true, tag, "Auto Mix Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
+            await addIFrame(true, videoIDList, true, tag, "Auto Mix Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
         }
     }
-    else if(mixed === true){
+    else if (topType === "false"){
+        console.info("INSIDE NOTOP --- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
         if (videoAmount >= 20) {
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList = "";
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount = 0;
             let div_card = addCard(false, true, videoIDList, tag, false, true, videoType, short);
-            addIFrame(true, videoIDList, false, tag, "Auto Mix Mixed : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
+            await addIFrame(true, videoIDList, false, tag, "Auto Mix No Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
         }
     }
-    else if (top === false && mixed === false){
+    else if(topType === "mixed") {
+        console.info("INSIDE MIXED --- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
         if (videoAmount >= 20) {
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList = "";
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount = 0;
             let div_card = addCard(false, true, videoIDList, tag, false, true, videoType, short);
-            addIFrame(true, videoIDList, false, tag, "Auto Mix No Top : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
+            await addIFrame(true, videoIDList, false, tag, "Auto Mix Mixed : " + videoAmount, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_card, videoType);
         }
     }
 }
