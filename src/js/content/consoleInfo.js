@@ -4,7 +4,7 @@ console.warn = async function (msg) {
     warnCount++;
     warnMsg = msg;
     await statsConsoleInfo(msg, warnCount, "Warn");
-    console.log(msg);
+    console.dir(msg);
 }
 
 var errorCount = 0;
@@ -13,7 +13,7 @@ console.error = async function (msg) {
     errorCount++;
     errorMsg = msg;
     await statsConsoleInfo(msg, errorCount, "Error");
-    console.log(msg);
+    console.dir(msg);
 }
 
 var infoCount = 0;
@@ -22,7 +22,7 @@ console.info = async function (msg) {
     infoCount++;
     infoMsg = msg;
     await statsConsoleInfo(msg, infoCount, "Info");
-    console.log(msg);
+    console.dir(msg);
 }
 
 var traceCount = 0;
@@ -31,7 +31,7 @@ console.trace = async function (msg) {
     traceCount++;
     traceMsg = msg;
     await statsConsoleInfo(msg, traceCount, "Trace");
-    console.log(msg);
+    console.dir(msg);
 }
 
 var logsCount = 0;
@@ -69,8 +69,7 @@ async function statsConsoleInfo(msg, count, text) {
 }
 
 function SendToLog(text, textOutput) {
-    if (localStorage.getItem('AllLogs') === "true") {}
-    else {
+    if (localStorage.getItem('AllLogs') !== "true") {
         if (text === "Error" || text === "ErrorType") {
             if (localStorage.getItem('ErrorLogging') !== "true") {
                 return;
@@ -78,6 +77,21 @@ function SendToLog(text, textOutput) {
         }
         else if (text === "Warn") {
             if (localStorage.getItem('WarningLogging') !== "true") {
+                return;
+            }
+        }
+        else if (text === "Info") {
+            if (localStorage.getItem('LogLogging') !== "true") {
+                return;
+            }
+        }
+        else if (text === "Trace") {
+            if (localStorage.getItem('LogLogging') !== "true") {
+                return;
+            }
+        }
+        else if (text === "Log") {
+            if (localStorage.getItem('LogLogging') !== "true") {
                 return;
             }
         }
