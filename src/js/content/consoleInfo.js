@@ -18,7 +18,7 @@ console.error = async function (msg) {
 
 var infoCount = 0;
 var infoMsg = "";
-console.log = async function (msg) {
+console.info = async function (msg) {
     infoCount++;
     infoMsg = msg;
     await statsConsoleInfo(msg, infoCount, "Info");
