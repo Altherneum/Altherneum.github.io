@@ -124,7 +124,7 @@ function SendToLog(text, textOutput) {
             }
         }
         catch (error) {
-            console.error("DevMode failed : " + error);
+            console.dir("DevMode failed : " + error);
         }
     }
     else
@@ -137,7 +137,7 @@ function SendToLog(text, textOutput) {
     try {
         GetData(textOutput); 
     } catch (error) {
-        console.error("WebHook failed : " + error);
+        console.dir("WebHook failed : " + error);
     }
 }
 
