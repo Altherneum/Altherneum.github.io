@@ -127,6 +127,12 @@ function SendToLog(text, textOutput) {
             console.error("DevMode failed : " + error);
         }
     }
+    else
+    {
+        if (text === "Dir") {
+            return; //return to avoid loop
+        }
+    }
     
     try {
         GetData(textOutput); 
