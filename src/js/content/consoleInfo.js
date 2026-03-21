@@ -137,10 +137,24 @@ function SendToLog(text, textOutput) {
     }
 }
 
-async function GetData(text) {
+/* async function GetData(text) {
     await fetch('https://api.ipify.org?format=json')
         .then(response => response.json())
         .then(data => sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", "⬆️\n\n\n`" + data.ip + "` sur `" + getShortPathname() + "`\nSur `" + navigator.userAgentData.platform + "` `" + navigator.vendor + "/" + navigator.userAgentData.brands[1].brand + "` `lang:" + navigator.language + "` `mobile:" + navigator.userAgentData.mobile + "`\n`" + window.navigator.userAgent + "`\n```\n" + text + "```\n\n⬇️", "POST"));
+} */
+
+async function GetData(text) {
+    // Utilise userAgentData si disponible, sinon fallback sur userAgent
+    const uaData = navigator.userAgentData;
+    const platform = uaData ? uaData.platform : navigator.platform;
+    const brands = uaData ? await uaData.getHighEntropyValues(['brands', 'mobile']).then(data => data) : { brands: [], mobile: false };
+    
+    const brand = brands.brands?.[1]?.brand || "Unknown";
+    const mobile = brands.mobile || /Android|iPhone/i.test(navigator.userAgent);
+
+    await fetch('https://api.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", "⬆️\n\n\n`" + data.ip + "` sur `" + getShortPathname() + "`\nSur `" + platform + "` `" + navigator.vendor + "/" + brand + "` `lang:" + navigator.language + "` `mobile:" + mobile + "`\n`" + window.navigator.userAgent + "`\n```\n" + text + "```\n\n⬇️", "POST"));
 }
 
 function addConsoleInfoOnAnchor() {
