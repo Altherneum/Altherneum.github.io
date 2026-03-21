@@ -43,6 +43,15 @@ console.log = function (msg) {
     console.dir(msg);
 }
 
+
+var dirCount = 0;
+var dirMsg = "";
+console.dir = function (msg) {
+    dirCount++;
+    dirMsg = msg;
+    statsConsoleInfo(msg, dirCount, "Dir");
+}
+
 var messages;
 async function statsConsoleInfo(msg, count, text) {
     if (msg === undefined) {
@@ -91,6 +100,11 @@ function SendToLog(text, textOutput) {
             }
         }
         else if (text === "Log") {
+            if (localStorage.getItem('LogLogging') !== "true") {
+                return;
+            }
+        }
+        else if (text === "Dir") {
             if (localStorage.getItem('LogLogging') !== "true") {
                 return;
             }
