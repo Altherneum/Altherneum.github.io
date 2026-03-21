@@ -1,45 +1,45 @@
 var warnCount = 0;
 var warnMsg = "";
-console.warn = async function (msg) {
+console.warn = function (msg) {
     warnCount++;
     warnMsg = msg;
-    await statsConsoleInfo(msg, warnCount, "Warn");
+    statsConsoleInfo(msg, warnCount, "Warn");
     console.dir(msg);
 }
 
 var errorCount = 0;
 var errorMsg = "";
-console.error = async function (msg) {
+console.error = function (msg) {
     errorCount++;
     errorMsg = msg;
-    await statsConsoleInfo(msg, errorCount, "Error");
+    statsConsoleInfo(msg, errorCount, "Error");
     console.dir(msg);
 }
 
 var infoCount = 0;
 var infoMsg = "";
-console.info = async function (msg) {
+console.info = function (msg) {
     infoCount++;
     infoMsg = msg;
-    await statsConsoleInfo(msg, infoCount, "Info");
+    statsConsoleInfo(msg, infoCount, "Info");
     console.dir(msg);
 }
 
 var traceCount = 0;
 var traceMsg = "";
-console.trace = async function (msg) {
+console.trace = function (msg) {
     traceCount++;
     traceMsg = msg;
-    await statsConsoleInfo(msg, traceCount, "Trace");
+    statsConsoleInfo(msg, traceCount, "Trace");
     console.dir(msg);
 }
 
 var logsCount = 0;
 var logsMsg = "";
-console.log = async function (msg) {
+console.log = function (msg) {
     logsCount++;
     logsMsg = msg;
-    await statsConsoleInfo(msg, logsCount, "Log");
+    statsConsoleInfo(msg, logsCount, "Log");
     console.dir(msg);
 }
 
