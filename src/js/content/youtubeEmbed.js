@@ -716,8 +716,6 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType) {
     console.info("--- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
     if(topType === "true"){
-
-        console.info("INSIDE TOP --- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
         if (videoAmount >= 20) {
@@ -728,7 +726,6 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType
         }
     }
     else if (topType === "false"){
-        console.info("INSIDE NOTOP --- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
         if (videoAmount >= 20) {
@@ -739,7 +736,6 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType
         }
     }
     else if(topType === "mixed") {
-        console.info("INSIDE MIXED --- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
         if (videoAmount >= 20) {
