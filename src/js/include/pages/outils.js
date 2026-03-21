@@ -75,7 +75,7 @@ async function CheckPage() {
         await includes();
         await include_multiple("rsa" , "contentArticle");
     }
-        
+
     else if (pathNameMatchPage("/outils/crashmybrowser", true)) {
         await includes();
         await include_multiple("crashmybrowser", "contentArticle");

@@ -101,7 +101,7 @@ async function show() {
     try {
         logIntoDocument("Browser : ", navigator.vendor);
     } catch { }
-    
+
     try {
         logIntoDocument("AgentData : ", navigator.userAgentData.brands[1].brand + " v." + navigator.userAgentData.brands[1].version);
     } catch { }

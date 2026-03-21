@@ -10,7 +10,7 @@
 
 async function getCommits(amount, repoName) {
     console.log("Getting Github-Commits : " + repoName);
-    
+
     var x = await gather('https://api.github.com/repos/Altherneum/' + repoName + '/commits');
     for (let i = 0; i < amount; i++) {
         var y = getValue(x[i], "sha");

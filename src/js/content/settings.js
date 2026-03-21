@@ -107,7 +107,7 @@ function Switcher(name) {
 function setSwitch(name, defaultTrue) {
     var checkbox = document.getElementById(name);
     var state = localStorage.getItem(name);
-    
+
     if(state === undefined || state === null){
         if (defaultTrue) {
             checkbox.indeterminate = true;

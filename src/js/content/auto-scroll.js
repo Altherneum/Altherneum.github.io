@@ -10,7 +10,7 @@ function setScrollBehavior(anchor, type) {
 var onceIsDone = false;
 function autoScroll(once, type) {
     var hash = decodeURIComponent(window.location.hash);
-    
+
     if(hash === ""){ return; }
 
     var element = document.getElementById(hash.replace("#", ""));
@@ -62,7 +62,7 @@ function makeElementMoreVisible(element) {
     if(element.id === "header" || element.id === "footer"){
         return;
     }
-    
+
     newNode.animate(
         [
         /*

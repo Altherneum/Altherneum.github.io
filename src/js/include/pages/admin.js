@@ -41,7 +41,7 @@ async function CheckPage() {
             setSwitch("YouTubeLoop", false);
             setSwitch("YoutubeShuffle", true);
     }
-        
+
     else if (pathNameMatchPage("/admin/video", true)) {
         await includes();
 

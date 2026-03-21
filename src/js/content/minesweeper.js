@@ -116,7 +116,7 @@ function createTable() {
     table.addEventListener("contextmenu", e => { e.preventDefault(); });
 
     var holder = document.createElement("div");
-    
+
     var thead = document.createElement("thead");
     table.appendChild(thead);
 
@@ -161,7 +161,7 @@ function createTable() {
                 tr.appendChild(td);
             }
         }
-        
+
         var th = document.createElement("th");
         th.scope = "row";
         th.textContent = x;
@@ -170,8 +170,8 @@ function createTable() {
             th.style.visibility = "hidden";
         }
     }
-    
-    
+
+
     var thead = document.createElement("thead");
     table.appendChild(thead);
 

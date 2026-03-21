@@ -34,7 +34,7 @@ async function CheckPage() {
         await includes();
         await include_multiple("snake", "contentArticle");
     }
-    
+
     else if (pathNameMatchPage("/games/slot", true)) {
         await includes();
         await include_multiple("slot", "contentArticle");

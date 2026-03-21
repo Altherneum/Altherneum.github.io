@@ -75,7 +75,7 @@ a.cardTitle{
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: flex-start;
-    
+
     user-select: none;
 }
 
@@ -157,7 +157,7 @@ a.cardTitle{
     align-items: center;
 
     width: 40px;
-    
+
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     margin-left: 5px;

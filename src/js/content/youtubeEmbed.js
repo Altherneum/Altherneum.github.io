@@ -82,7 +82,7 @@ function showOrHideSong(name, element) {
 function shuffle(array) {
     let currentIndex = array.length;
     console.log("array length is : " + array.length);
-    
+
     let ShuffleSettings = localStorage.getItem('YoutubeShuffle');
     if(ShuffleSettings === null || ShuffleSettings === "true"){ ShuffleSettings = true;}
     else{ ShuffleSettings = false; }
@@ -499,7 +499,7 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
         }
 
         loop = "";
-        
+
         if(emebed === true){
             let firstVideoID = videoID.split(",")[0];
             return preURL + firstVideoID + playlistarg + autoplay + loop + rel;
@@ -514,7 +514,7 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
             let YouTubeLoop = localStorage.getItem('YouTubeLoop');
             if(YouTubeLoop === null || YouTubeLoop === "false"){ YouTubeLoop = false;}
             else{ YouTubeLoop = true; }
-            
+
             if (YouTubeLoop === true && playlist === false && emebed === true) {
                 loop = "&loop=1";
                 playlistarg = videoID + "?playlist=" + videoID;

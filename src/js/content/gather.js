@@ -14,7 +14,7 @@ function gather(url, tries) {
 
                         var delay = Math.floor((Math.random() * 60 * 1000) + 1000); // 0 à 1 * minutes * secondes + 1 seconde
                         console.warn("Retry in : " + (delay / 1000) + " sec");
-                        
+
                         if (tries > 0){
                             setTimeout(() => { gather(url, tries - 1); }, delay);
                         }

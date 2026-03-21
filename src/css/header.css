@@ -13,9 +13,9 @@ header {
 
 header>#navlinklist {
     position: relative;
-    
+
     z-index: 999;
-    
+
     width: 100%;
 
     background: linear-gradient(var(--main-color-transparent), var(--background-color-transparent));
@@ -26,7 +26,7 @@ header>#navlinklist {
     border-bottom-style: solid;
     border-bottom-color: var(--main-color);
     border-bottom-width: 3px;
-    
+
     user-select: none;
     pointer-events: all;
 }

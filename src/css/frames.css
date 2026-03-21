@@ -1,7 +1,7 @@
 textarea#frames-textarea{
     width: 80vw;
     height: 70vh;
-    
+
     max-width: 80vw;
     max-height: 70vh;
 
@@ -18,7 +18,7 @@ textarea#frames-textarea{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     text-align: center;
 }
 

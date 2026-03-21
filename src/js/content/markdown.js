@@ -58,7 +58,7 @@ const parseMarkdown = async (text) => {
     console.log("Loading markdown parser");
     isFinished = false;
     var toHTML = text;
-    
+
     const regex = /\(https:\/\/youtube\.com\/watch\?v=(.*)\)/g;
     var matched = toHTML.match(regex);
     if (matched) {
@@ -90,7 +90,7 @@ const parseMarkdown = async (text) => {
         for (index in matchedShort) {
             const words = matchedShort[index].split("/");
             const videoID = words[4].replace(")", "");
-            
+
             let timer = setInterval(async function () {
                 console.log("check ----------------------------" + timer);
                 if (isFinished) {
@@ -164,7 +164,7 @@ const parseMarkdown = async (text) => {
 
     toHTML = toHTML.replace(/\[\x\]/gim, '<input type="checkbox" class="checkboxBox" checked/>')
     toHTML = toHTML.replace(/\[ \]/gim, '<input type="checkbox" class="checkboxBox"/>')
-    
+
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{7,} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h7+ tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{6} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h6>$2</h6>') // h6 tag
     toHTML = toHTML.replace(/(?<!<(?:textarea|code)[^>]*>[^<]*)(^#{5} (.*))(?![^<]*<\/(?:textarea|code)>)/gim, '<h5>$2</h5>') // h5 tag
@@ -186,7 +186,7 @@ const parseMarkdown = async (text) => {
 
 
     //toHTML = toHTML.replace(/(?![^<]*>|[^>]*<\/)(.+)(?![^<]*>|[^>]*<\/.)/gim, '<p>$1</p>') // text p balise
-    
+
     //text inside summary to do
 
     //toHTML = toHTML.replace(/[\n]{1,}/g, "<br>") //new line
@@ -525,7 +525,7 @@ function addChapterHidder(AnchorSummaryElement, ElementClassName, Title) {
     checkbox.classList = "checkboxToggle invert";
     var input = document.createElement("input");
     input.type = "checkbox";
-    
+
     var hideSummary = false;
     if (localStorage.getItem('Titre2') === "true" && ElementClassName === "summary-h2") {
         hideSummary = true;
@@ -675,7 +675,7 @@ function openAndScrollToSummary(element) {
 
     var hrefChild = childs[0].children;
     var URL = hrefChild[0].href;
-    
+
     //window.location.hash = URL;
     history.pushState(null, null, URL);
 }

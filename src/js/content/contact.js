@@ -10,7 +10,7 @@ async function setContactNameRandom(){
         var y = intToChar(x);
         name += y;
     }
- 
+
     var text = document.getElementById("contact-name");
     text.textContent = name;
 }
@@ -18,7 +18,7 @@ async function setContactNameRandom(){
 function swapNameLetter(){
     var text = document.getElementById("contact-name");
     var textLength = text.textContent.length;
-    
+
     var charToSwap = getRandomInt(0, textLength+1);
     var textContent = text.textContent;
 

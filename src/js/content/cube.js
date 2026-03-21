@@ -26,7 +26,7 @@ function spawnCube(divID) {
         childDiv.id = "cubeSlice" + i;
         childDiv.className = "sphereSlice"; 
         childDiv.style.animationDelay = (i * 200 + "ms");
-        
+
         cubeHolder.appendChild(div); 
     }
 }

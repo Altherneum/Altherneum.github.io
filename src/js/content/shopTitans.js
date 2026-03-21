@@ -12,7 +12,7 @@ async function fetchShopTitansDataStart(statsType, id) {
             return;
         }
     }
-     
+
     if (id !== null && id !== 'undefined' && id !== '') { 
         var docMenu;
 
@@ -20,10 +20,10 @@ async function fetchShopTitansDataStart(statsType, id) {
 
         hideDivShopTitans(["ShopTitansData", "ShopTitansDataGuild", "ShopTitansDataInvest", "ShopTitansDataInvestVIP"]);
         hideButtons(["statsButton", "investButton", "guildButton"]);
-        
+
         if (statsType === "stats"){
             docMenu = document.getElementById("ShopTitansData");
-            
+
             await fetchShopTitansData(id);
         }
         else if (statsType === "invest") {
@@ -37,7 +37,7 @@ async function fetchShopTitansDataStart(statsType, id) {
         }
         else if (statsType === "guilde") {
             docMenu = document.getElementById("ShopTitansDataGuild");
-            
+
             await fetchShopTitansDataGuilde(id);
         }
 
@@ -197,7 +197,7 @@ async function fetchShopTitansDataInvest(id) {
 async function fetchShopTitansData(id) {
     var player = await gather(APIURL + 'player/' + id);
     console.log(player);
-    
+
     var data = await getValue(player, "data");
     console.log(data);
     var stats = await getValue(data, "stats");
@@ -215,7 +215,7 @@ async function fetchShopTitansData(id) {
 
     var lvl = await getValue(stats, "lvl");
     await addData("ShopTitansData", "Niveau de marchand", lvl);
-    
+
     var vip = await getValue(stats, "vip");
     if (vip === 0) {
         await addData("ShopTitansData", "VIP", "🔴");
@@ -245,7 +245,7 @@ async function fetchShopTitansData(id) {
 
     var invst = await getValue(stats, "invst");
     await addData("ShopTitansData", "Investissement", formatCompactNumber(invst));
-    
+
     await addDataHR("ShopTitansData",);
 
     var bounty = await getValue(stats, "bounty");

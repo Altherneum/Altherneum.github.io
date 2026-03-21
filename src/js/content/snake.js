@@ -75,7 +75,7 @@ function gameLoop(){
 function PreMoveCell(x, y, direction, prevX, prevY){
     console.log(x + " : " + y);
     let nextStateX; let nextStateY;
-    
+
     switch(direction){
         case "left":
           movementList[x][y] = 1;
@@ -100,9 +100,9 @@ function PreMoveCell(x, y, direction, prevX, prevY){
         default:
           return;
     }
-    
+
     setMineText(nextStateX, nextStateY, getTD(nextStateX,nextStateY));
-    
+
     var next = getNextBodyPart(x, y, prevX, prevY);
     if(next != null){
         PreMoveCell(next[0], next[1], getNextDirectionFromHead(next[0], next[1], x, y), x, y);
@@ -152,7 +152,7 @@ function createTable() {
     var table = document.createElement("table");
 
     var holder = document.createElement("div");
-    
+
     var thead = document.createElement("thead");
     table.appendChild(thead);
 
@@ -192,7 +192,7 @@ function createTable() {
                 tr.appendChild(td);
             }
         }
-        
+
         var th = document.createElement("th");
         th.scope = "row";
         tr.appendChild(th);
@@ -200,8 +200,8 @@ function createTable() {
             th.style.visibility = "hidden";
         }
     }
-    
-    
+
+
     var thead = document.createElement("thead");
     table.appendChild(thead);
 

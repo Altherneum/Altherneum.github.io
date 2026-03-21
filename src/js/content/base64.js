@@ -31,7 +31,7 @@ function base64Encoder() {
             output = base64ToString(text);
         }
         console.log(output);
-        
+
     }
     catch (error) {
         output = "erreur : " + error;

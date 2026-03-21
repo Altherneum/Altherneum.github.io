@@ -45,7 +45,7 @@ function getCoprime(prime, maxBits) {
     let value = getRandomKey(maxBits);
     while (!IsFactorOf(prime, value) && value > prime) {
         consoleHTML.textContent += "\ntesting : " + value;
-        
+
         if (value > 1) {
             value -= 1;
             consoleHTML.textContent += "\ntesting new coprime " + value;
@@ -79,14 +79,14 @@ function modInverse(value, modulo) {
     if (gcd(value, modulo) > 1) {
         return -1;
     }
-    
+
     for(let x = 1; x < modulo; x++){
         if (((value % modulo) * (x % modulo)) % modulo == 1){
             return x;
         }
     }
 }
- 
+
 function RSAKeyGen() {
     var maxBits = document.getElementById("valueMaxBits").value;
     consoleHTML.textContent += "\nstarting RSA keyGen";
@@ -115,7 +115,7 @@ function RSAKeyGen() {
 
     privateKey = {n,d};
     publicKey = {n,e};
-    
+
     return;
 }
 
@@ -137,12 +137,12 @@ function isPrivateKeyOK(e, phi, value) {
 function encrypt() {
     let value = document.getElementById("value").value;
     let maxBits = document.getElementById("valueMaxBits").value;
-    
+
     if (value < 0 || value >= publicKey.n) {
         consoleHTML.textContent += "Condition 0 <= m < n not met. m = " + value;
         RSAKeyGen(maxBits); encrypt(value);
     }
-    
+
     if (gcd(value, publicKey.n) !== 1) {
         consoleHTML.textContent += "Condition gcd(value, n) = 1 not met.";
         RSAKeyGen(maxBits); encrypt(value);
@@ -150,7 +150,7 @@ function encrypt() {
 
     //var x = Math.pow(BigInt(value), BigInt(publicKey.e)) % BigInt(publicKey.n);
     let x = Number(BigInt(value) ** BigInt(publicKey.e) % BigInt(publicKey.n));
-    
+
     //BigInt(60n ** 41n % 133n) = 72n // is OK
 
     consoleHTML.textContent += "\n\n---------------------- crypt  " + x;
@@ -174,19 +174,19 @@ function test() {
     RSAKeyGen();
 
 
-    
-    
+
+
     consoleHTML.textContent += "\n\nvalue to crypt ; " + valueToCrypt;
-    
-    
+
+
     let x1 = Math.round(encrypt(valueToCrypt, maxBits));
     consoleHTML.textContent += "\n\ncrypt  "+x1;
-    
-    
+
+
     let x2 = Math.round(decrypt(x1));
     consoleHTML.textContent += "\n\ndecrypt  " + x2;
-    
-    
+
+
     if (valueToCrypt === x2)
     {
         consoleHTML.textContent += "\nOK result\n\n";

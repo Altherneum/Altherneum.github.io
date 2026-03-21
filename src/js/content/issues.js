@@ -87,9 +87,9 @@ async function getRepo(orgs) {
 
         div.appendChild(repoName);
         div.appendChild(divIssue);
-        
+
         root.append(div);
-        
+
         await getIssues(repo, orgs);
     }
 }

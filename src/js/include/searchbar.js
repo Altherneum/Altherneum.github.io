@@ -21,7 +21,7 @@ async function getResult(query, addCursorTag) {
         var result = checkIfInputMatchLink(query).then(result => {
 
             console.log("SearchBar : " + query + " : " + result.length + " resultat !");
-            
+
             var needToShowMore = false;
             if (result.length > 6 && showMore === false) {
                 result = result.slice(0, 6);
@@ -34,16 +34,16 @@ async function getResult(query, addCursorTag) {
                 }
 
                 showSearchbarResult(result);
-                
+
                 if (needToShowMore) {
                     AddShowMoreButton(query, addCursorTag);
                 }
-                
+
                 if (addCursorTag) {
                     addAllTags();
                 }
             }
-            
+
             hideTips();
 
             lastResult = result;
@@ -61,7 +61,7 @@ function AddShowMoreButton(PrevQuery, addCursorTag) {
     var ShowMore = document.createElement("div");
     ShowMore.id = "showMore";
     ShowMore.className = "showMoreElem";
-    
+
     var showMoreLink = document.createElement("a");
     showMoreLink.tabIndex = 0;
     showMoreLink.textContent = "Plus de résultat";
@@ -121,7 +121,7 @@ function compareLinks(linkID, queryListed) {
         if(linkTag.toLowerCase().includes("queryable")){
             return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText, "query": queryListed.slice(1), "queryURL": links[linkID].queryURL};
         }
-        
+
         return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText };
     }
     return null;
@@ -248,12 +248,12 @@ window.addEventListener('click', function (e) {
     if (e.target.classList.contains("showMoreElem")) {
         return;
     }
-    
+
     if (!document.getElementById('searchbar').contains(e.target)) {
         closeSearchBar();
         return;
     }
-        
+
     if (document.getElementById('input-box').contains(e.target)) {
         if(document.getElementById("result-box").style.display === "none"){
             showTips();

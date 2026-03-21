@@ -206,7 +206,7 @@ const channelFeed = feedItems?.map((node) => {
   } else {
     link = baseUrl + "/" + node.link;
   }
-  
+
   console.log("RSS feed : " + link)
   const meta = node.meta || {}
   const title = node.title

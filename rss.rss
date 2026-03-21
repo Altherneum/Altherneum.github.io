@@ -5,14 +5,14 @@
       <link>https://doc.Altherneum.fr</link>
       <atom:link href="https://doc.Altherneum.fr/rss.rss" rel="self" type="application/rss+xml" />
       <description>Test description RSS feed for doc.Altherneum.fr</description>
-      
+
       <language>fr</language>
       <image>
         <title>doc.Altherneum.fr</title>
         <url>https://doc.Altherneum.fr/assets/gif/small.gif</url>
         <link>https://doc.Altherneum.fr</link>
       </image>
-      
+
       <item>
         <title><![CDATA[Création cours sur le HTML]]></title>
         <link>https://doc.Altherneum.fr/cours/html</link>
@@ -22,7 +22,7 @@
         <description><![CDATA[Début du cours sur le HTML (Date, histoire, syntaxe)]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Création cours sur le HTML" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Création flux RSS (Bêta)]]></title>
         <link>https://doc.Altherneum.fr/outils/rss</link>
@@ -32,7 +32,7 @@
         <description><![CDATA[Flux RSS]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Création flux RSS (Bêta)" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Cube & sphère en 3D]]></title>
         <link>https://doc.Altherneum.fr/outils/cube</link>
@@ -42,7 +42,7 @@
         <description><![CDATA[3D]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Cube & sphère en 3D" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Connexion via Discord OAuth]]></title>
         <link>https://doc.Altherneum.fr/discord/login</link>
@@ -52,7 +52,7 @@
         <description><![CDATA[Discord OAuth]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Connexion via Discord OAuth" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Chiffrement de César]]></title>
         <link>https://doc.Altherneum.fr/outils/caesar</link>
@@ -62,7 +62,7 @@
         <description><![CDATA[Chiffrement par décalage]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Chiffrement de César" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Cours sur le binaire]]></title>
         <link>https://doc.Altherneum.fr/cours/binaire</link>
@@ -72,7 +72,7 @@
         <description><![CDATA[Un cours rapide et facile sur le binaire]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Cours sur le binaire" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mise à jour QOL]]></title>
         <link>https://doc.Altherneum.fr/</link>
@@ -82,7 +82,7 @@
         <description><![CDATA[Mise à jour de qualité de vie sur le site]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mise à jour QOL" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mise à jour du système d'issues]]></title>
         <link>https://doc.Altherneum.fr/github/issues</link>
@@ -92,7 +92,7 @@
         <description><![CDATA[Mise à jour de qualité de vie sur le site]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mise à jour du système d'issues" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mise à jour admin music]]></title>
         <link>https://doc.Altherneum.fr/admin/music</link>
@@ -102,7 +102,7 @@
         <description><![CDATA[Mise à jour de qualité de vie sur le site (musique)]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mise à jour admin music" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Ajout d'un module info (RSS, music, console, ...)]]></title>
         <link>https://doc.Altherneum.fr/github/statistiques</link>
@@ -112,7 +112,7 @@
         <description><![CDATA[Mise à jour de qualité de vie sur le site et ajouts de fonctions]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Ajout d'un module info (RSS, music, console, ...)" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mise à jour de la documentation]]></title>
         <link>https://doc.Altherneum.fr/github/readme</link>
@@ -122,7 +122,7 @@
         <description><![CDATA[Les documentations, README, liens, etc ..., ont étés mises à jour]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mise à jour de la documentation" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mises à jour multiples]]></title>
         <link>https://doc.Altherneum.fr/github/readme</link>
@@ -132,7 +132,7 @@
         <description><![CDATA[Les documentations, noms, codes, et erreurs, et de nouvelles pages ont étés ajoutés ]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mises à jour multiples" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mises à jour multiples]]></title>
         <link>https://doc.Altherneum.fr/settings</link>
@@ -142,7 +142,7 @@
         <description><![CDATA[Ajout de cours et changement d'UI header]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mises à jour multiples" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Mise à jour de la barre de recherche]]></title>
         <link>https://github.com/Altherneum/Altherneum.github.io/compare/b6a61b951601...db327599ff04</link>
@@ -152,7 +152,7 @@
         <description><![CDATA[Mise à jour de QOL sur la barre de recherche]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Mise à jour de la barre de recherche" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[MàJ du parser MarkDown vers HTML]]></title>
         <link>https://github.com/Altherneum/Altherneum.github.io/commit/c44e019b33e43a78cd02f61465beb99428f3dfcf</link>
@@ -162,7 +162,7 @@
         <description><![CDATA[Plus rapide et bloque moins la page lors de gros document MarkDown]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="MàJ du parser MarkDown vers HTML" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[MàJ des embed YouTube]]></title>
         <link>https://doc.altherneum.fr/admin/video</link>
@@ -172,7 +172,7 @@
         <description><![CDATA[Plus rapide, puissant, gère les short, etc ...]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="MàJ des embed YouTube" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[Ajout d'un démineur]]></title>
         <link>https://doc.altherneum.fr/games/minesweeper</link>
@@ -182,7 +182,7 @@
         <description><![CDATA[MineSweeper 💣]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="Ajout d'un démineur" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[/outils /donut]]></title>
         <link>https://doc.altherneum.fr/outils/donut.html</link>
@@ -192,7 +192,7 @@
         <description><![CDATA[Donut 3D 🍩]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="/outils /donut" />]]></content:encoded>
       </item>
-    
+
       <item>
         <title><![CDATA[/outils /frames]]></title>
         <link>https://doc.altherneum.fr/outils/frames.html</link>
@@ -202,7 +202,6 @@
         <description><![CDATA[Des images qui tournent 💫]]></description>
         <content:encoded><![CDATA[<img src="https://doc.Altherneum.fr/assets/gif/small.gif" alt="/outils /frames" />]]></content:encoded>
       </item>
-    
+
     </channel>
   </rss>
-  

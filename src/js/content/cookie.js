@@ -121,7 +121,7 @@ function setPrice(Bonus) {
     else if (Bonus == 4) {
         bonusName = "prix-jesus";
     }
-    
+
     document.getElementById(bonusName).textContent = price;
 }
 
@@ -171,7 +171,7 @@ function bonusClick(bonus) {
             lastBuyOK = true;
         }
     }
-        
+
     else if (bonus == 3) {
         var BonusAmount = Number(localStorage.getItem("cookie-multiplicator"));
         if (buyBonus(getPriceFormula(bonus))) {
@@ -188,7 +188,7 @@ function bonusClick(bonus) {
         }
     }
 
-    
+
     buyAmountInt -= 1;
 
     if (buyAmountInt >= 1 && lastBuyOK) {

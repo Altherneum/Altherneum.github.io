@@ -11,7 +11,7 @@ function sendMessage(Version, Token, AccountType, Methode, ChannelID, Message, S
 
 // sendToAPI(9, "TOKEN", "Bot", "POST", "", "");
 function sendToAPI(Version, Token, AccountType, Methode, URL, Message, referrer){
-    
+
     fetch(`https://discord.com/api/v` + Version + `/` + URL, {
         body: JSON.stringify({
         content: Message,

@@ -30,7 +30,7 @@ async function includes() {
         await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
     }
-    
+
     await include_html("/src/html/include/scrollPercentage.html", "body", false);
     await include_script("/src/js/include/scrollPercentage.js");
 
@@ -54,7 +54,7 @@ async function styles() {
     await include_css("/src/css/user-agent.css");
     await include_css("/src/css/header.css");
     await include_css("/src/css/anchor.css");
-    
+
     await include_script("/src/js/include/theme.js");
 
     await include_css("/src/css/content.css");

@@ -9,7 +9,7 @@ function redirect(path, time) {
     setTimeout(() => {
         document.location.href = path;
     }, time * 1000);
-    
+
     var link = document.getElementById("link");
     link.href = path;
 }

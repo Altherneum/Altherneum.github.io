@@ -45,7 +45,7 @@
 
 #content>article {
     width: 100%;
-    
+
     padding-top: 1.5vh;
 
     padding-left: 2vw;
@@ -67,15 +67,15 @@ article>div>h3 {
 
     #content-left {
         position: fixed;
-        
+
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        
+
         min-width: 100vw;
         min-height: 100vh;
-        
+
         margin-top: 0px;
     }
 

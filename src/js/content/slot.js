@@ -41,7 +41,7 @@ function setRawSlot(SlotAmount){
         p.style = "";
 
         creditFrame.appendChild(p);
-        
+
         console.log("set raw N°" + slot);
     }
 }
@@ -82,7 +82,7 @@ function rotateSlot(SlotAmount){
         let element = document.getElementById(slotID);
 
         element.style.tran
-        
+
 	    document.querySelector("#box").style.animationPlayState = 'running';
     }
     //for slot, push px per px

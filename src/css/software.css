@@ -78,7 +78,7 @@
     margin-bottom: 16px;
 
     border-radius: 8px;
-    
+
     overflow-wrap: normal;
     white-space: nowrap;
 }
@@ -95,7 +95,7 @@
 
     min-width: 20vw;
     min-height: 15vh;
-    
+
     margin: 5px;
     margin-bottom: 12px;
 
@@ -113,7 +113,7 @@
 
 .software>div>div>div{
     display: flex;
-    
+
     align-items: center;
     justify-content: center;
 }
