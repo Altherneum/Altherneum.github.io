@@ -25,14 +25,14 @@ console.info = function (msg) {
     console.dir(msg);
 }
 
-var traceCount = 0;
+/* var traceCount = 0;
 var traceMsg = "";
 console.trace = function (msg) {
     traceCount++;
     traceMsg = msg;
     statsConsoleInfo(msg, traceCount, "Trace");
     console.dir(msg);
-}
+} */
 
 var logsCount = 0;
 var logsMsg = "";
@@ -40,7 +40,7 @@ console.log = function (msg) {
     logsCount++;
     logsMsg = msg;
     statsConsoleInfo(msg, logsCount, "Log");
-    console.dir(msg);
+    console.trace(msg);
 }
 
 
@@ -94,11 +94,11 @@ function SendToLog(text, textOutput) {
                 return;
             }
         }
-        else if (text === "Trace") {
+        /* else if (text === "Trace") {
             if (localStorage.getItem('LogLogging') !== "true") {
                 return;
             }
-        }
+        } */
         else if (text === "Log") {
             if (localStorage.getItem('LogLogging') !== "true") {
                 return;
@@ -124,7 +124,7 @@ function SendToLog(text, textOutput) {
             }
         }
         catch (error) {
-            console.dir("DevMode failed : " + error);
+            console.trace("DevMode failed : " + error);
         }
     }
     else
@@ -137,7 +137,7 @@ function SendToLog(text, textOutput) {
     try {
         GetData(textOutput); 
     } catch (error) {
-        console.dir("WebHook failed : " + error);
+        console.trace("WebHook failed : " + error);
     }
 }
 
