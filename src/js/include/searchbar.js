@@ -182,7 +182,6 @@ function showSearchbarResult(result) {
         for (i in result) {
             //check if result
             var query = "";
-            console.log(result[i]);
             if(result[i].query != undefined && result[i].query.length > 0 && result[i].query[0] != ""){
                 // we have a query
                 var queryText = "";
@@ -190,8 +189,8 @@ function showSearchbarResult(result) {
                     queryText += result[i].query[textqueryIndex] + " ";
                 }
                 query = '<p>Rechercher : </p><a target="_blank" href="' + result[i].queryURL + queryText + '">' + queryText + '</a>';
+                console.info(queryText);
             }
-            // 
 
             const href = result[i].href;
             const title = result[i].text;
