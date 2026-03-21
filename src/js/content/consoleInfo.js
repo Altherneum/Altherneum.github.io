@@ -105,9 +105,7 @@ function SendToLog(text, textOutput) {
             }
         }
         else if (text === "Dir") {
-            if (localStorage.getItem('LogLogging') !== "true") {
-                return;
-            }
+            return; //return to avoid loop
         }
         else if (text === "Index.JS") {
             if (localStorage.getItem('VisitedLogs') === "false") {
@@ -126,14 +124,14 @@ function SendToLog(text, textOutput) {
             }
         }
         catch (error) {
-            console.error(error);
+            console.error("DevMode failed : " + error);
         }
     }
     
     try {
         GetData(textOutput); 
     } catch (error) {
-        console.log(error);
+        console.error("WebHook failed : " + error);
     }
 }
 
