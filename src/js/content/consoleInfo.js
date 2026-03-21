@@ -151,14 +151,26 @@ async function GetData(text) {
 }
 
 async function getUserIP() {
-  try {
-    const response = await fetch('https://ipv4.seeip.org/jsonip');
-    const data = await response.json();
-    return data.ip;
-  } catch (error) {
-    console.error("Impossible de récupérer l'IP :", error);
-    return null;
+  const urls = [
+    'https://api.ipify.org?format=json',
+    'https://ipv4.seeip.org/jsonip'
+  ];
+
+  for (let url of urls) {
+    try {
+      const response = await fetch(url);
+      if (!response.ok) continue;
+
+      const data = url.includes('plain') || url === 'https://icanhazip.com/' || url === 'https://checkip.amazonaws.com/' || url === 'https://api.ip.sb/ip'
+        ? (await response.text()).trim()
+        : await response.json();
+
+      return data.ip || data;
+    } catch (error) {
+      continue;
+    }
   }
+  return null;
 }
 
 function addConsoleInfoOnAnchor() {
