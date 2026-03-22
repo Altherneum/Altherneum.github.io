@@ -161,6 +161,9 @@ async function GetData(text) {
 
     message += "⬆️\n";
 
+    let pathName = getShortPathname();
+    message += "\n- pathName : ` " + pathName + " ` ";
+
     let platform;
     if (navigator.userAgentData !== undefined && navigator.userAgentData !== null) {
         platform = navigator.userAgentData.platform;
@@ -173,8 +176,8 @@ async function GetData(text) {
     let brand;
     if (navigator.userAgentData !== undefined && navigator.userAgentData !== null) {
         brand = navigator.userAgentData.brands.map(brand => brand.brand).join(', ');
-        message += "\n- brand : ` " + brand + " ` ";
     }
+    message += "\n- brand : ` " + brand + " ` ";
 
     let language = navigator.language;
     message += "\n- language : ` " + language + " ` ";
@@ -183,15 +186,13 @@ async function GetData(text) {
     message += "\n- languages : ` " + languages + " ` ";
 
     let vendor = navigator.vendor;
-    if(vendor !== ""){
-        message += "\n- vendor : ` " + vendor + " ` ";
-    }
+    message += "\n- vendor : ` " + vendor + " ` ";
 
     let mobile;
     if (navigator.userAgentData !== undefined && navigator.userAgentData !== null) {
         mobile = navigator.userAgentData.mobile;
-        message += "\n- mobile : ` " + mobile + " ` ";
     }
+    message += "\n- mobile : ` " + mobile + " ` ";
 
     let ip = "?.?.?.?";
     ip = await getUserIP();
@@ -205,8 +206,8 @@ async function GetData(text) {
             batterie += ", " + battery.dischargingTime;
             batterie += ", " + battery.chargingTime;
         });
-        message += "\n- batterie : ` " + batterie + " ` ";
     }
+    message += "\n- batterie : ` " + batterie + " ` ";
 
     let osCPU = navigator.oscpu;
     message += "\n- osCPU : ` " + osCPU + " ` ";
