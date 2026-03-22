@@ -159,6 +159,10 @@ async function GetData(text) {
 
     message += "⬆️\n";
 
+    if(text !== ""){
+        message += "\n" + text;
+    }
+
     let pathName = getShortPathname();
     message += "\n- pathName : ` " + pathName + " ` ";
 
