@@ -160,7 +160,7 @@ async function GetData(text) {
     message += "⬆️\n";
 
     if(text !== ""){
-        message += "\n" + text;
+        message += "\n- **__text__** : ` " + text + " ` ";
     }
 
     let pathName = getShortPathname();
