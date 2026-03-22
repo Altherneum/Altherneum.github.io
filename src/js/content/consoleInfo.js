@@ -141,7 +141,7 @@ function SendToLog(text, textOutput) {
     }
 }
 
-async function GetData(text) {
+/* async function GetData(text) {
     // Utilise userAgentData si disponible, sinon fallback sur userAgent
     const uaData = navigator.userAgentData;
     const platform = uaData ? uaData.platform : navigator.platform;
@@ -151,7 +151,88 @@ async function GetData(text) {
     const mobile = brands.mobile || /Android|iPhone/i.test(navigator.userAgent);
     const ip = await getUserIP();
 
-    sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", "⬆️\n\n\n`" + ip + "` sur `" + getShortPathname() + "`\nSur `" + platform + "` `" + navigator.vendor + "/" + brand + "` `lang:" + navigator.language + "` `mobile:" + mobile + "`\n`" + window.navigator.userAgent + "`\n```\n" + text + "```\n\n⬇️", "POST");
+    sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", "⬆️\n\n\n` " + ip + " ` sur ` " + getShortPathname() + " `\nSur ` " + platform + " ` ` " + navigator.vendor + "/" + brand + " ` ` lang:" + navigator.language + " ` ` mobile:" + mobile + " `\n` " + window.navigator.userAgent + " `\n```\n" + text + "```\n\n⬇️", "POST");
+} */
+
+async function GetData(text) {
+    let message = "";
+    let uA = navigator.userAgent;
+    let uAD = navigator.userAgentData;
+
+    message += "⬆️\n";
+
+    let platform;
+    if (navigator.userAgentData !== undefined && navigator.userAgentData !== null) {
+        platform = navigator.userAgentData.platform;
+    }
+    else {
+        platform = navigator.platform;
+    }
+    message += "\n- platform : ` " + platform + " ` ";
+
+    let brand;
+    if (navigator.userAgentData !== undefined && navigator.userAgentData !== null) {
+        brand = navigator.userAgentData.brands.map(brand => brand.brand).join(', ');
+        message += "\n- brand : ` " + brand + " ` ";
+    }
+
+    let language = navigator.language;
+    message += "\n- language : ` " + language + " ` ";
+
+    let languages = navigator.languages;
+    message += "\n- languages : ` " + languages + " ` ";
+
+    let vendor = navigator.vendor;
+    if(vendor !== ""){
+        message += "\n- vendor : ` " + vendor + " ` ";
+    }
+
+    let mobile;
+    if (navigator.userAgentData !== undefined && navigator.userAgentData !== null) {
+        mobile = navigator.userAgentData.mobile;
+        message += "\n- mobile : ` " + mobile + " ` ";
+    }
+
+    let ip = "?.?.?.?";
+    ip = await getUserIP();
+    message += "\n- IP : ` " + ip + " ` ";
+
+    let batterie; 
+    if(navigator.getBattery){
+        navigator.getBattery().then(battery => {
+            batterie += battery.level;
+            batterie += ", " + battery.charging;
+            batterie += ", " + battery.dischargingTime;
+            batterie += ", " + battery.chargingTime;
+        });
+        message += "\n- batterie : ` " + batterie + " ` ";
+    }
+
+    let osCPU = navigator.oscpu;
+    message += "\n- osCPU : ` " + osCPU + " ` ";
+
+    let product = navigator.product;
+    message += "\n- product : ` " + product + " ` ";
+
+    let productSub = navigator.productSub;
+    message += "\n- productSub : ` " + productSub + " ` ";
+
+    let appCodeName = navigator.appCodeName;
+    message += "\n- appCodeName : ` " + appCodeName + " ` ";
+
+    let appName = navigator.appName;
+    message += "\n- appName : ` " + appName + " ` ";
+
+    let appVersion = navigator.appVersion;
+    message += "\n- appVersion : ` " + appVersion + " ` ";
+
+    let webDriver = navigator.webdriver;
+    message += "\n- webDriver : ` " + webDriver + " ` ";
+
+
+    message += "\n\n⬇️"
+
+    sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", message, "POST");
 }
 
 async function getUserIP() {
