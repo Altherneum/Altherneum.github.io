@@ -251,41 +251,51 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
 
 async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element, videoType) {
     try {
-        var response = await fetch(fetchUrl);
-        var status = response.status;
+        //skip query with settings ?
+        //Create a setting flag, retrieve it for here
+        let doQuery = false;
+        if(doQuery === true){
+            var response = await fetch(fetchUrl);
+            var status = response.status;
 
-        var videoholder = document.getElementById(element);
-        let div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType, short);
+            var videoholder = document.getElementById(element);
+            let div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType, short);
 
-        if (status === 200) {
-            var jsonResponse = await response.json();
-            JSONdata = jsonResponse;
+            if (status === 200) {
+                var jsonResponse = await response.json();
+                JSONdata = jsonResponse;
 
-            var title = JSONdata.title;
-            var length = 75;
-            var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
-            var thumbnail = JSONdata.thumbnail_url;
+                var title = JSONdata.title;
+                var length = 75;
+                var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
+                var thumbnail = JSONdata.thumbnail_url;
 
-            addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType);
-            return;
-        }
-        else if (status === 404) {
-            addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
-            videoholder.appendChild(div_card);
-        }
-        else if (status === 403) {
-            addCardData(div_card, "403", "Vidéo privée !", "/assets/svg/link-broken.svg", true);
-            videoholder.appendChild(div_card);
-        }
-        else if (status === 401) {
-            addCardData(div_card, "401", "Vidéo sans embed !", "/assets/svg/link-broken.svg", true);
-            videoholder.appendChild(div_card);
-        }
-        else {
-            console.error(response);
-            var jsonResponse = null;
-        }
+                //skip add iframe with settings ?
+                addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType);
 
+
+                return;
+            }
+            else if (status === 404) {
+                addCardData(div_card, "404", "Vidéo supprimée !", "/assets/svg/link-broken.svg", true);
+                videoholder.appendChild(div_card);
+            }
+            else if (status === 403) {
+                addCardData(div_card, "403", "Vidéo privée !", "/assets/svg/link-broken.svg", true);
+                videoholder.appendChild(div_card);
+            }
+            else if (status === 401) {
+                addCardData(div_card, "401", "Vidéo sans embed !", "/assets/svg/link-broken.svg", true);
+                videoholder.appendChild(div_card);
+            }
+            else {
+                console.error(response);
+                var jsonResponse = null;
+            }
+        }
+        else{
+            await constructPlayList(videoID, playlist, top, categorie, videoType);
+        }
         showOrHideSong(shown, div_card);
     } catch (error) {
         console.error(error + "\n" + videoID);
