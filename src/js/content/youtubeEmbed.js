@@ -123,7 +123,7 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
     let short;
     let count = 0;
     for(video in videoList) {
-        count++; if(count>=Infinity){break;} //limiter for testing
+        //count++; if(count>=Infinity){break;} //limiter for testing
 
         var videoID = videoList[video].videoID;
         short = videoList[video].short;
