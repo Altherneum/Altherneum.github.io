@@ -270,9 +270,7 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
                 var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
                 var thumbnail = JSONdata.thumbnail_url;
 
-                //skip add iframe with settings ?
                 addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType);
-
 
                 return;
             }
@@ -292,11 +290,11 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
                 console.error(response);
                 var jsonResponse = null;
             }
+            showOrHideSong(shown, div_card);
         }
         else{
-            await constructPlayList(videoID, playlist, top, categorie, videoType);
+            constructPlayList(videoID, playlist, top, categorie, videoType);
         }
-        showOrHideSong(shown, div_card);
     } catch (error) {
         console.error(error + "\n" + videoID);
     }
@@ -375,7 +373,7 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
         imageOpenOnYoutubeMusic.src = "/assets/svg/trademark/youtube-music.svg";
         imageOpenOnYoutubeMusic.className = "OpenOnYoutube svg";
 
-        urlOpenYoutube.appendChild(imageOpenOnYoutubeMusic);
+        urlOpenYoutubeMusic.appendChild(imageOpenOnYoutubeMusic);
         divLogoHolder.appendChild(urlOpenYoutubeMusic);
     }
 
@@ -721,6 +719,11 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
                     smallAutoMix[categorieInList].amount += 1;
                     await CheckIfPlayListAtLimit(smallAutoMix[categorieInList].tag, top, false, videoType, false, topType);
                 }
+                if(!fullAutoMix[categorieInList].videoIDList.includes(videoID)){
+                    fullAutoMix[categorieInList].videoIDList += videoID + ",";
+                    fullAutoMix[categorieInList].amount += 1;
+                    //await CheckIfPlayListAtLimit(fullAutoMix[categorieInList].tag, top, false, videoType, false, topType);
+                }
             }
         }
     }
@@ -765,6 +768,7 @@ async function setGlobalPlayList(videoType, short) {
     for(categorieType in categorieList) {
         var tag = categorieList[categorieType];
 
+        let topType = "true";
         //top
         let videoIDListTop = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmountTop = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
@@ -773,6 +777,7 @@ async function setGlobalPlayList(videoType, short) {
         addIFrame(true, videoIDListTop, true, tag, "Auto Mix Top : " + videoAmountTop, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardTop, videoType);
 
         //Mixed
+        topType = "mixed"
         let videoIDListMixed = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmountMixed = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
 
@@ -780,6 +785,7 @@ async function setGlobalPlayList(videoType, short) {
         addIFrame(true, videoIDListMixed, false, tag, "Auto Mix Mixed : " + videoAmountMixed, false, true, tag, "/assets/gif/logo.gif", document.getElementById("videoholder"), div_cardMixed, videoType);
 
         //NoTop
+        topType = "false";
         let videoIDListNoTop = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmountNoTop = fullAutoMix[fullAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
 
