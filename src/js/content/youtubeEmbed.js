@@ -355,22 +355,25 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
         divLogoHolder.appendChild(imagepremadePlayList);
     }
 
-    var urlOpenYoutube = document.createElement("a");
 
     let url = getURL(premadePlayList, short, playlist, videoID, false);
 
-    if(videoType === "music"){
-        urlOpenYoutube.href = url.replace("www.", "music.");
-        var imageOpenOnYoutube = document.createElement("img");
-        imageOpenOnYoutube.src = "/assets/svg/trademark/youtube-music.svg";
-        imageOpenOnYoutube.className = "OpenOnYoutube svg";
+    if(videoType === "music"){ //add also a music.youtube if it's a song
+        var urlOpenYoutubeMusic = document.createElement("a");
+        urlOpenYoutubeMusic.href = url.replace("www.", "music.");
+        var imageOpenOnYoutubeMusic = document.createElement("img");
+        imageOpenOnYoutubeMusic.src = "/assets/svg/trademark/youtube-music.svg";
+        imageOpenOnYoutubeMusic.className = "OpenOnYoutube svg";
+
+        urlOpenYoutube.appendChild(imageOpenOnYoutubeMusic);
+        divLogoHolder.appendChild(urlOpenYoutubeMusic);
     }
-    else {
-        urlOpenYoutube.href = url;
-        var imageOpenOnYoutube = document.createElement("img");
-        imageOpenOnYoutube.src = "/assets/svg/trademark/youtube.svg";
-        imageOpenOnYoutube.className = "OpenOnYoutube svg";
-    }
+
+    var urlOpenYoutube = document.createElement("a");
+    urlOpenYoutube.href = url;
+    var imageOpenOnYoutube = document.createElement("img");
+    imageOpenOnYoutube.src = "/assets/svg/trademark/youtube.svg";
+    imageOpenOnYoutube.className = "OpenOnYoutube svg";
 
     urlOpenYoutube.appendChild(imageOpenOnYoutube);
     divLogoHolder.appendChild(urlOpenYoutube);
