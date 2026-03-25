@@ -105,6 +105,8 @@ function shuffle(array) {
     }
 }
 
+const wait = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
 async function GetVideos(videoList, VideoListType, videoType, includeLatestVideoOfChannel) {
     await include_script("/src/js/content/auto-scroll.js");
     addButtons(VideoListType);
@@ -123,7 +125,13 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
     let short;
     let count = 0;
     for(video in videoList) {
-        //count++; if(count>=Infinity){break;} //limiter for testing
+        count++;
+        //if(count>=Infinity){break;} //limiter for testing
+        
+        if(count >= 20){
+            await wait(50);
+            count = 0;
+        }
 
         var videoID = videoList[video].videoID;
         short = videoList[video].short;
