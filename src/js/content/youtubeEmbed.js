@@ -128,7 +128,7 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         count++;
         //if(count>=Infinity){break;} //limiter for testing
         
-        if(count >= 20){
+        if(count >= 3){
             await wait(50);
             count = 0;
         }
