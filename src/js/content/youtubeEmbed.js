@@ -729,7 +729,7 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
 }
 
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType) {
-    let videoAmountForPlayList = 40;
+    let videoAmountForPlayList = 10;
     if(topType === "true"){
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
