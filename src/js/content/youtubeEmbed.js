@@ -164,7 +164,7 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         setGlobalPlayList(videoType, short);
     }
 
-    console.log(total);
+    console.log("Total : " + total);
 }
 
 async function parseVideoParam(videoList, video, videoID, premadePlayList, divName, videoType) {
@@ -458,8 +458,6 @@ async function createIframe(event) {
     var premadePlayList = event.dataset.youtubePremadePlayList;
     var youtubePlaceholder = event.parentNode;
 
-    console.log(premadePlayList + " : " + short + " : " + playlist + " : " + videoID + " : " + "true")
-    console.log(typeof premadePlayList +":"+ typeof short+":" + typeof playlist+":" + typeof videoID+":");
     var url = getURL(premadePlayList === "true", short === "true", playlist === "true", videoID, true);
 
     console.log("Loading embed : " + url);
@@ -471,7 +469,6 @@ async function createIframe(event) {
     var classname = card.className;
     card.className = classname + " playing";
 
-    console.log(youtubePlaceholder);
     youtubePlaceholder.style.display = 'none';
     youtubePlaceholder.insertAdjacentHTML('beforebegin', htmlString);
     youtubePlaceholder.parentNode.removeChild(youtubePlaceholder);
@@ -479,10 +476,8 @@ async function createIframe(event) {
     if (premadePlayList == true) {
         //Décharge et recharge la vidéo car l'API YT est à chier :3 ...        //NB:Uniquement sur les PlayList temporaires "TL" "TempList"
         setTimeout(() => {
-            console.log("deleting video");
             var vid = document.getElementById(videoID);
             vid.firstChild.remove();
-            console.log("reinserting video");
             vid.innerHTML += iframe;
         }, 1500);
         // reloading too fast dont help,
@@ -582,7 +577,6 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
         .then(resp => resp.json())
         .then(responseData => responseData.items)
         .then(items => {
-            console.log(items);
             for(i in items) {
                 if (i > maxVideoAmount) {
                     break;
@@ -674,8 +668,6 @@ function createPlayListList() {
                     categorieName = categorieList[categorieType] + " " + categorieList[categorieType2];
                 } else{ categorieName = categorieList[categorieType]; }
 
-                console.log("categorieName ; " + categorieName);
-
                 smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
                 fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
 
@@ -738,7 +730,6 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
 
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType) {
     let videoAmountForPlayList = 40;
-    console.info("--- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
     if(topType === "true"){
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
