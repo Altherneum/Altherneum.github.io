@@ -125,13 +125,12 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
     let short;
     let count = 0;
     for(video in videoList) {
-        count++;
         //if(count>=Infinity){break;} //limiter for testing
-        
-        if(count >= 3){
+        if(count >= 1){
             await wait(50);
             count = 0;
         }
+        count++;
 
         var videoID = videoList[video].videoID;
         short = videoList[video].short;
@@ -738,11 +737,12 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
 }
 
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType) {
+    let videoAmountForPlayList = 40;
     console.info("--- Top:"+ top + "  --- mixed:"+mixed + "  --- TopType:"+topType + " ---")
     if(topType === "true"){
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
-        if (videoAmount >= 20) {
+        if (videoAmount >= videoAmountForPlayList) {
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList = "";
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount = 0;
             let div_card = addCard(true, true, videoIDList, tag, false, true, videoType, short);
@@ -752,7 +752,7 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType
     else if (topType === "false"){
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
-        if (videoAmount >= 20) {
+        if (videoAmount >= videoAmountForPlayList) {
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList = "";
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount = 0;
             let div_card = addCard(false, true, videoIDList, tag, false, true, videoType, short);
@@ -762,7 +762,7 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType
     else if(topType === "mixed") {
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;
-        if (videoAmount >= 20) {
+        if (videoAmount >= videoAmountForPlayList) {
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList = "";
             smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount = 0;
             let div_card = addCard(false, true, videoIDList, tag, false, true, videoType, short);
