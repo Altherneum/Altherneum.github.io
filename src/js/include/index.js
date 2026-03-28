@@ -88,7 +88,7 @@ async function setTitle(title){
 }*/
 
 async function randomInclude(excludeSettings) {
-    var max = 10;
+    var max = 11;
     var random = Math.round(Math.random() * (max - 1) + 1);
 
     if (random == 1) {
@@ -135,6 +135,9 @@ async function randomInclude(excludeSettings) {
     }
     else if(random == 10){
         await include_multiple("minesweeper", "contentArticle", true);
+    }
+    else if(random == 11){
+        await include_multiple("donation", "contentArticle", true);
     }
 }
 
