@@ -226,6 +226,13 @@ async function GetData(text) {
     }
     message += "\n- batterie : ` " + batterie + " ` ";
 
+    let GPU = getGPUModel();
+    message += "\n- GPU : ` " + GPU + " ` ";
+
+    let TimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    let TimeZoneOffset = new Date().getTimezoneOffset();
+    message += "\n- TimeZone : ` " + TimeZone + " ` ( Offset : ` " + TimeZoneOffset + " ` ) ";
+
     let webDriver = navigator.webdriver;
     message += "\n- webDriver : ` " + webDriver + " ` ";
 
@@ -261,6 +268,19 @@ async function getUserIP() {
     }
   }
   return null;
+}
+
+function getGPUModel() {
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    
+    if (!gl) return 'WebGL non supporté';
+
+    const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+    if (!debugInfo) return 'Extension non disponible';
+
+    const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+    return renderer;
 }
 
 function addConsoleInfoOnAnchor() {
