@@ -266,9 +266,9 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
         //skip query with settings ?
         //Create a setting flag, retrieve it for here
         let doQuery = localStorage.getItem("IndividualsVids");
-        if(doQuery == null){ doQuery = true; }
+        if(doQuery == null){ doQuery = "true"; }
         
-        if(doQuery === true){
+        if(doQuery === "true"){
             var response = await fetch(fetchUrl);
             var status = response.status;
 

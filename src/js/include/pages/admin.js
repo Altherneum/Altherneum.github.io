@@ -32,6 +32,7 @@ async function CheckPage() {
         await includes();
 
         await include_css("/src/css/youtubeEmbed.css");
+        await include_html("/src/html/content/dataList.html", "contentArticle", true);
         await include_html("/src/html/content/youtubeEmbed.html", "contentArticle", true);
         await include_script("/src/js/content/youtubeEmbed.js");
         await include_script("/src/js/content/music.js");
