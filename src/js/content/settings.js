@@ -155,17 +155,17 @@ function setInputValue(name, defaultValue) {
 
 function loadSettingsSwitch() {
     setSwitch("devMode", false);
-    setSwitch("viewCount", true);
-    setSwitch("customCursor", true);
+    setSwitch("viewCount", false);
+    setSwitch("customCursor", false);
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", false);
     setSwitch("YoutubeShuffle", true);
     setInputValue("PlayListVideoAmount", 20);
     setInputValue("YouTubeVideoDelay", 20);
     setSwitch("IndividualsVids", true);
-    setSwitch("OldSearchBar", true);
+    setSwitch("OldSearchBar", false);
     setSwitch("SearchBarList", true);
-    setSwitch("AllSearchBar", true);
+    setSwitch("AllSearchBar", false);
     setSwitch("LogLogging", false);
     setSwitch("WarningLogging", false);
     setSwitch("ErrorLogging", false);

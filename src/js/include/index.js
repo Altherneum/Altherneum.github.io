@@ -20,11 +20,11 @@ async function includes() {
     await include_html("/src/html/include/header.html", "body", false);
     console.log("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
     console.log("All search Bar : " + localStorage.getItem('AllSearchBar'));
-    if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') !== "false") {
+    if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') === "true") {
         await include_css("/src/css/header-navbar.css");
         await include_html("/src/html/include/navlink.html", "navlinklist", true);
     }
-    if (localStorage.getItem('SearchBarList') !== "false" || localStorage.getItem('AllSearchBar') !== "false") {
+    if (localStorage.getItem('SearchBarList') !== "false" || localStorage.getItem('AllSearchBar') === "true") {
         await include_css("/src/css/searchbar.css");
         await include_html("/src/html/include/searchbar.html", "NavBarHolder", true);
         await include_script("/src/js/include/searchbar-list.js");
@@ -146,7 +146,7 @@ async function pages() {
 
     var block = false;
     var maintenance = false;
-    var lockdown = true;
+    var lockdown = false;
     var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n m99^ic;"; // This key is not meant to be secure, just to slow down stupid peoples that can't right click
 
     if((block || maintenance || lockdown) &&

@@ -6,7 +6,7 @@ console.log("Loading cursor");
 getCursorSetting();
 
 function getCursorSetting() {
-    if (localStorage.getItem('customCursor') === "true" || localStorage.getItem('customCursor') === null) {
+    if (localStorage.getItem('customCursor') === "true") {
         destroyCursor();
         createCursor();
     }
