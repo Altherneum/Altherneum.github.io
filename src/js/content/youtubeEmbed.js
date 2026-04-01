@@ -124,10 +124,15 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
 
     let short;
     let count = 0;
+    let delay = localStorage.getItem("YouTubeVideoDelay");
+    if(delay == null){
+        delay = 25;
+    }
+
     for(video in videoList) {
         //if(count>=Infinity){break;} //limiter for testing
         if(count >= 1){
-            await wait(50);
+            await wait(delay);
             count = 0;
         }
         count++;
@@ -260,7 +265,9 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
     try {
         //skip query with settings ?
         //Create a setting flag, retrieve it for here
-        let doQuery = false;
+        let doQuery = localStorage.getItem("IndividualsVids");
+        if(doQuery == null){ doQuery = true; }
+        
         if(doQuery === true){
             var response = await fetch(fetchUrl);
             var status = response.status;
@@ -729,7 +736,11 @@ async function setInPlayList(topType, videoID, playlist, top, categorie, videoTy
 }
 
 async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType) {
-    let videoAmountForPlayList = 10;
+    let videoAmountForPlayList = localStorage.getItem("PlayListVideoAmount");
+    if(videoAmountForPlayList == null){
+        videoAmountForPlayList = 20;
+    }
+    
     if(topType === "true"){
         let videoIDList = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].videoIDList;
         let videoAmount = smallAutoMix[smallAutoMix.findIndex(obj => obj.tag == tag && obj.top == topType)].amount;

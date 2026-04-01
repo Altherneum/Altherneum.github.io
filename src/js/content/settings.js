@@ -12,6 +12,10 @@ function SwitchViewCount() {
     Switcher("viewCount");
 }
 
+function SwitchYTIndividualsVids() {
+    Switcher("IndividualsVids");
+}
+
 function SwitchDevMode() {
     Switcher("devMode");
 }
@@ -106,6 +110,9 @@ function Switcher(name) {
 
 function setSwitch(name, defaultTrue) {
     var checkbox = document.getElementById(name);
+    console.log("setting switch " + name);
+    if(checkbox == null){ return; }
+    
     var state = localStorage.getItem(name);
 
     if(state === undefined || state === null){
@@ -130,6 +137,22 @@ function setSwitch(name, defaultTrue) {
     }
 }
 
+function setInputValue(name, defaultValue) {
+    var input = document.getElementById(name);
+    if(input == null){ return; }
+    
+    var GotValue = localStorage.getItem(name);
+
+    if(GotValue === undefined || GotValue === null){
+        input.value = defaultValue;
+        console.error("Setting input " + name + " to default value ; " + defaultValue);
+    }
+    else {
+        input.value = GotValue;
+        console.error("Setting input " + name + " to found value ; " + GotValue);
+    }
+}
+
 function loadSettingsSwitch() {
     setSwitch("devMode", false);
     setSwitch("viewCount", true);
@@ -137,6 +160,9 @@ function loadSettingsSwitch() {
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", false);
     setSwitch("YoutubeShuffle", true);
+    setInputValue("PlayListVideoAmount", 20);
+    setInputValue("YouTubeVideoDelay", 20);
+    setSwitch("IndividualsVids", true);
     setSwitch("OldSearchBar", true);
     setSwitch("SearchBarList", true);
     setSwitch("AllSearchBar", true);

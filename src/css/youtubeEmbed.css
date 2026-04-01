@@ -105,6 +105,10 @@
     transform: translate(25px, -10%);
 }
 
+div:has(> div > input[type="range"]) {
+    transform: translate(25px, -10%);
+}
+
 .menu>div>button.active, .menu>div>button:active{
     background-color: var(--text-color);
 }

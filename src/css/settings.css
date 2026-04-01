@@ -17,3 +17,8 @@
 .check>p{
     padding-left: 10px;
 }
+
+div:has(> div > input[type="range"]) {
+    padding-left: 50px;
+    padding-top: 30px;
+}
