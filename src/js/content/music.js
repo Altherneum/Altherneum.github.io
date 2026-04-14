@@ -7882,7 +7882,7 @@ var videolinks = [
     },
     {
         videoID: "nru_qUVD4Ts",
-        categorie: "todo",
+        categorie: "hardbass trool phonk electro",
     },
     {
         videoID: "PtApgLa94Yo",
@@ -8099,6 +8099,32 @@ var videolinks = [
     {
         videoID: "_0_pnVFNOTI",
         categorie: "todo",
+    },
+    {
+        videoID: "3eAS-8pNtBg",
+        categorie: "electro",
+    },
+    {
+        videoID: "KKhnDzRgsW8",
+        categorie: "phonk trool electro",
+    },
+    {
+        videoID: "4vZIO8Ig9NQ",
+        top: true,
+        categorie: "phonk trool electro",
+    },
+    {
+        videoID: "60JWzOfj0DU",
+        categorie: "slavic chill histoire",
+    },
+    {
+        videoID: "TjUhXbGdLYo",
+        categorie: "chill histoire",
+    },
+    {
+        videoID: "pCgFZMLico0",
+        top: true,
+        categorie: "phonk hardbass electro",
     },
 ];
 
