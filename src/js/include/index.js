@@ -146,7 +146,7 @@ async function pages() {
 
     var block = false;
     var maintenance = false;
-    var lockdown = true;
+    var lockdown = false;
     var LocalKey = "Ct2T29v_ds,7283BJp(%Fsj]L.FP:VJ39n m99^ic;"; // This key is not meant to be secure, just to slow down stupid peoples that can't right click
 
     if((block || maintenance || lockdown) &&
