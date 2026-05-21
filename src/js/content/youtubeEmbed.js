@@ -1,13 +1,13 @@
 // https://developers.google.com/youtube/player_parameters
 var total = 0;
-let videoIDList;
+let GlobalVideoIDList;
 
 async function loadYouTubeEmbed() {
     checkURL();
     await setVideoScreenLocking();
     createPlayListList();
-    videoIDList = GetVideoList();
-    GetVideos(shuffle(videoIDList), getVideoListType(), getType(), true);
+    GlobalVideoIDList = GetVideoList();
+    GetVideos(shuffle(GlobalVideoIDList), getVideoListType(), getType(), true);
 }
 
 function checkURL(){
@@ -158,7 +158,7 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         autoScroll(true, "center");
     }
 
-    console.log(videoIDList);
+    console.log(GlobalVideoIDList);
 
     if (LoadSingleVideo && total !== 1) {
         var div_card = addCard(false, false, hash, "", false, false, videoType, short);
@@ -266,10 +266,11 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
 }
 
 function setTitleInVar(videoIDParam, title){
-    for(video in videoIDList) {
+    for(video in GlobalVideoIDList) {
         let videoID = videoList[video].videoID;
         if(videoID === videoIDParam){
-            videoIDList[video].title = title;
+            console.log("found & replaced video Title : " + video);
+            GlobalVideoIDList[video].title = title;
         }
     }
 }
