@@ -44,6 +44,7 @@ async function CheckPage() {
             setInputValue("PlayListVideoAmount", 20);
             setInputValue("YouTubeVideoDelay", 20);
             setSwitch("IndividualsVids", true);
+            setSwitch("YoutubeTitleSaving", false);
     }
 
     else if (pathNameMatchPage("/admin/video", true)) {

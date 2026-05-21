@@ -266,10 +266,17 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
 }
 
 async function setTitleInVar(videoIDParam, title){
-    for(video in GlobalVideoIDList) {
-        let videoID = GlobalVideoIDList[video].videoID;
-        if(videoID === videoIDParam){
-            GlobalVideoIDList[video].title = title;
+    let SaveTitle = localStorage.getItem('YoutubeTitleSaving');
+    if(SaveTitle === "true"){ SaveTitle = true;}
+    else{ SaveTitle = false; }
+
+    if(SaveTitle === true){
+        for(video in GlobalVideoIDList) {
+            let videoID = GlobalVideoIDList[video].videoID;
+            if(videoID === videoIDParam){
+                console.log("title saved for video " + video + " and ID " + videoID);
+                GlobalVideoIDList[video].title = title;
+            }
         }
     }
 }

@@ -61,6 +61,10 @@ function SwitchYoutubeShuffle() {
     Switcher("YoutubeShuffle");
 }
 
+function SwitchYoutubeTitleSaving() {
+    Switcher("YoutubeTitleSaving");
+}
+
 function SwitchVisitedLogs() {
     Switcher("VisitedLogs");
 }
@@ -160,6 +164,7 @@ function loadSettingsSwitch() {
     setSwitch("Granted", false);
     setSwitch("YouTubeLoop", false);
     setSwitch("YoutubeShuffle", true);
+    setSwitch("YoutubeTitleSaving", false);
     setInputValue("PlayListVideoAmount", 20);
     setInputValue("YouTubeVideoDelay", 20);
     setSwitch("IndividualsVids", true);
