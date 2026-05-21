@@ -1,11 +1,12 @@
 // https://developers.google.com/youtube/player_parameters
 var total = 0;
-let videoIDList = GetVideoList();
+let videoIDList;
 
 async function loadYouTubeEmbed() {
     checkURL();
     await setVideoScreenLocking();
     createPlayListList();
+    videoIDList = GetVideoList();
     GetVideos(shuffle(videoIDList), getVideoListType(), getType(), true);
 }
 
