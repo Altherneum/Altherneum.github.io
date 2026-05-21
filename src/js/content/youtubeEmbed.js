@@ -1,11 +1,12 @@
 // https://developers.google.com/youtube/player_parameters
 var total = 0;
+let videoIDList = GetVideoList();
 
 async function loadYouTubeEmbed() {
     checkURL();
     await setVideoScreenLocking();
     createPlayListList();
-    GetVideos(shuffle(GetVideoList()), getVideoListType(), getType(), true);
+    GetVideos(shuffle(videoIDList), getVideoListType(), getType(), true);
 }
 
 function checkURL(){
@@ -156,6 +157,8 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         autoScroll(true, "center");
     }
 
+    console.log(videoIDList);
+
     if (LoadSingleVideo && total !== 1) {
         var div_card = addCard(false, false, hash, "", false, false, videoType, short);
         addCardData(div_card, "404", "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
@@ -261,6 +264,15 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
     showOrHideSong(shown, div_card);
 }
 
+function setTitleInVar(videoIDParam, title){
+    for(video in videoIDList) {
+        let videoID = videoList[video].videoID;
+        if(videoID === videoIDParam){
+            videoIDList[video].title = title;
+        }
+    }
+}
+
 async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element, videoType) {
     try {
         //skip query with settings ?
@@ -279,7 +291,9 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
                 var jsonResponse = await response.json();
                 JSONdata = jsonResponse;
 
+
                 var title = JSONdata.title;
+                    setTitleInVar(videoID, title);
                 var length = 75;
                 var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
                 var thumbnail = JSONdata.thumbnail_url;
