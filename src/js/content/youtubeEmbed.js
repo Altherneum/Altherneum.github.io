@@ -265,11 +265,10 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
     showOrHideSong(shown, div_card);
 }
 
-function setTitleInVar(videoIDParam, title){
+async function setTitleInVar(videoIDParam, title){
     for(video in GlobalVideoIDList) {
-        let videoID = videoList[video].videoID;
+        let videoID = GlobalVideoIDList[video].videoID;
         if(videoID === videoIDParam){
-            console.log("found & replaced video Title : " + video);
             GlobalVideoIDList[video].title = title;
         }
     }
