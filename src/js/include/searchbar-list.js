@@ -1,4 +1,4 @@
-const links = [
+let links = [
     {
         href: "/discord.html",
         tag: ".gg URL Discord",

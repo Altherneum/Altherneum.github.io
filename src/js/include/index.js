@@ -29,6 +29,19 @@ async function includes() {
         await include_html("/src/html/include/searchbar.html", "NavBarHolder", true);
         await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
+
+        var musicListMerge;
+
+        await include_script("/src/js/content/music.js");
+        let songs = videoLinks;
+
+        await include_script("/src/js/content/video.js");
+        let vids = videoLinks;
+
+        songs.push(vids);
+        musicListMerge = songs;
+        
+        mergeYouTubeTitles(musicListMerge);
     }
 
     await include_html("/src/html/include/scrollPercentage.html", "body", false);

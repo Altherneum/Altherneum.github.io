@@ -99,6 +99,23 @@ async function checkIfInputMatchLink(query) {
     return result;
 }
 
+function mergeYouTubeTitles(musicListMerge){
+    for (link in musicListMerge) {
+        let linked = musicListMerge[link]
+
+        if(linked.title !== undefined){
+            object = {
+                href: "/admin/music#" + linked.videoID,
+                tag: linked.category,
+                text: linked.title,
+                svg: "/assets/svg/music.svg",
+            };
+            
+            links.push(object);
+        }
+    }
+}
+
 function compareLinks(linkID, queryListed) {
     var linkText = links[linkID].text;
     var linkHref = links[linkID].href;
