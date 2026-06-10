@@ -37,9 +37,8 @@ async function includes() {
 
         await include_script("/src/js/content/video.js");
         let vids = videoLinks;
-
-        songs.push(vids);
-        musicListMerge = songs;
+        
+        musicListMerge = songs.concat(vids);
         
         mergeYouTubeTitles(musicListMerge, devMode());
     }
