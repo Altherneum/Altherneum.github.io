@@ -423,7 +423,12 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
     divLogoHolder.appendChild(urlOpenYoutube);
 
     var urlOpenGithub = document.createElement("a");
-    urlOpenGithub.href = "https://github.com/search?q=" + videoID + "+repo:Altherneum/Altherneum.github.io+path:src/js/content/music.js&type=code";
+    if(videoType === "music"){
+        urlOpenGithub.href = "https://github.com/search?q=" + videoID + "+repo:Altherneum/Altherneum.github.io+path:src/js/content/music.js&type=code";
+    }
+    else{
+        urlOpenGithub.href = "https://github.com/search?q=" + videoID + "+repo:Altherneum/Altherneum.github.io+path:src/js/content/video.js&type=code";    
+    }
     var imageOpenOnGithub = document.createElement("img");
     imageOpenOnGithub.src = "/assets/svg/trademark/github.svg";
     imageOpenOnGithub.className = "OpenOnGithub svg";
