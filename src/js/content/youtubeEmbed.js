@@ -423,12 +423,12 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
     divLogoHolder.appendChild(urlOpenYoutube);
 
     var urlOpenGithub = document.createElement("a");
-    urlOpenGithub.href = "https://github.com/search?q=" + videoID + "+repo:Altherneum/Altherneum.github.io+path:src/js/content/music.js&type=code;
+    urlOpenGithub.href = "https://github.com/search?q=" + videoID + "+repo:Altherneum/Altherneum.github.io+path:src/js/content/music.js&type=code";
     var imageOpenOnGithub = document.createElement("img");
-    imageOpenOnYoutube.src = "/assets/svg/trademark/github.svg";
-    imageOpenOnYoutube.className = "OpenOnGithub svg";
+    imageOpenOnGithub.src = "/assets/svg/trademark/github.svg";
+    imageOpenOnGithub.className = "OpenOnGithub svg";
 
-    urlOpenYoutube.appendChild(imageOpenOnGithub);
+    urlOpenGithub.appendChild(imageOpenOnGithub);
     divLogoHolder.appendChild(urlOpenGithub);
 
     div_card.appendChild(divLogoHolder);
