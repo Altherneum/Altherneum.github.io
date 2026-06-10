@@ -1,6 +1,7 @@
 var isAnchorListSet = false;
 var isAutoScrollLoaded = false;
 var anchorList;
+var isFinished = false;
 
 async function addMarkdown(repo, file, gist) {
     console.log("Loading markdown CSS");
@@ -22,7 +23,10 @@ async function addMarkdown(repo, file, gist) {
         isAnchorListSet = true;
     }
 
-    var text = await getMarkdownTextParsed(gist, content, repo, file); isFinished = true;
+    var text = await getMarkdownTextParsed(gist, content, repo, file);
+    
+    isFinished = true;
+    
     //content.innerHTML += text;
     var textElem = document.createElement("p");
     textElem.innerHTML += text;
@@ -53,7 +57,6 @@ function setMarkdownFileDiv(repo, file, markdownHolder) {
     return content;
 }
 
-var isFinished = false;
 const parseMarkdown = async (text) => {
     console.log("Loading markdown parser");
     isFinished = false;
