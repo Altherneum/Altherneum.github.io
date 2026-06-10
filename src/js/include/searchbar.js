@@ -395,5 +395,3 @@ function getURLParameter() {
         document.getElementById("input-box").setAttribute('value', searchQuery);
     }
 }
-
-getURLParameter();

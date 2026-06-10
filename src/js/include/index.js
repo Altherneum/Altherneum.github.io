@@ -41,6 +41,8 @@ async function includes() {
         musicListMerge = songs.concat(vids);
         
         mergeYouTubeTitles(musicListMerge, devMode());
+
+        getURLParameter();
     }
 
     await include_html("/src/html/include/scrollPercentage.html", "body", false);
