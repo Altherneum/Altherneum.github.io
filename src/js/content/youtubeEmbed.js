@@ -180,7 +180,7 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList, divNa
     var short;
     var top;
     var premadePlayList;
-    var categorie;
+    var category;
     var text;
     var playlist;
 
@@ -201,7 +201,7 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList, divNa
             premadePlayList = false;
         }
 
-        categorie = videoList[video].categorie;
+        category = videoList[video].category;
 
         if (videoList[video].text !== undefined) {
             text = videoList[video].text;
@@ -218,7 +218,7 @@ async function parseVideoParam(videoList, video, videoID, premadePlayList, divNa
 
     let fetchURL = getFetchURL(playlist, premadePlayList, videoID);
 
-    await parseResponse(playlist, videoID, top, categorie, fetchURL, text, short, premadePlayList, false, divName, videoType);
+    await parseResponse(playlist, videoID, top, category, fetchURL, text, short, premadePlayList, false, divName, videoType);
 }
 
 function getFetchURL(playlist, premadePlayList, videoID) {
@@ -250,7 +250,7 @@ function addButtons(Types) {
     }
 }
 
-async function addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType) {
+async function addIFrame(playlist, videoID, top, category, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType) {
     var length = 75;
     var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
 
@@ -260,7 +260,7 @@ async function addIFrame(playlist, videoID, top, categorie, text, short, premade
 
     videoholder.appendChild(div_card);
 
-    await constructPlayList(videoID, playlist, top, categorie, videoType);
+    await constructPlayList(videoID, playlist, top, category, videoType);
 
     showOrHideSong(shown, div_card);
 }
@@ -281,7 +281,7 @@ async function setTitleInVar(videoIDParam, title){
     }
 }
 
-async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, short, premadePlayList, latest, element, videoType) {
+async function parseResponse(playlist, videoID, top, category, fetchUrl, text, short, premadePlayList, latest, element, videoType) {
     try {
         //skip query with settings ?
         //Create a setting flag, retrieve it for here
@@ -293,7 +293,7 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
             var status = response.status;
 
             var videoholder = document.getElementById(element);
-            let div_card = addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType, short);
+            let div_card = addCard(top, playlist, videoID, category, latest, premadePlayList, videoType, short);
 
             if (status === 200) {
                 var jsonResponse = await response.json();
@@ -306,7 +306,7 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
                 var title = title.length > length ? title.substring(0, length - 3) + "..." : title;
                 var thumbnail = JSONdata.thumbnail_url;
 
-                addIFrame(playlist, videoID, top, categorie, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType);
+                addIFrame(playlist, videoID, top, category, text, short, premadePlayList, title, thumbnail, videoholder, div_card, videoType);
 
                 return;
             }
@@ -329,14 +329,14 @@ async function parseResponse(playlist, videoID, top, categorie, fetchUrl, text, 
             showOrHideSong(shown, div_card);
         }
         else{
-            constructPlayList(videoID, playlist, top, categorie, videoType);
+            constructPlayList(videoID, playlist, top, category, videoType);
         }
     } catch (error) {
         console.error(error + "\n" + videoID);
     }
 }
 
-function addCard(top, playlist, videoID, categorie, latest, premadePlayList, videoType, short) {
+function addCard(top, playlist, videoID, category, latest, premadePlayList, videoType, short) {
     var div_card = document.createElement("div");
     var classname = "";
     if (top) {
@@ -353,7 +353,7 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
         classname += "premadePlayList ";
     }
 
-    classname += "card " + categorie;
+    classname += "card " + category;
     div_card.className = classname;
 
     var divLogoHolder = document.createElement("div");
@@ -438,18 +438,18 @@ function addCard(top, playlist, videoID, categorie, latest, premadePlayList, vid
 
     div_card.appendChild(divLogoHolder);
 
-    var categories = categorie;
-    let categorieList = categories.split(" ");
-    var categorieHolder = document.createElement("p");
-    categorieHolder.className = "categorieList";
+    var categorys = category;
+    let categoryList = categorys.split(" ");
+    var categoryHolder = document.createElement("p");
+    categoryHolder.className = "categoryList";
 
-    if (categories !== "Markdown") {
-        for(categorieIndex in categorieList) {
-            categorieHolder.textContent += " " + getEmoji(categorieList[categorieIndex]);
+    if (categorys !== "Markdown") {
+        for(categoryIndex in categoryList) {
+            categoryHolder.textContent += " " + getEmoji(categoryList[categoryIndex]);
         }
     }
 
-    div_card.appendChild(categorieHolder);
+    div_card.appendChild(categoryHolder);
 
     return div_card;
 }
@@ -614,7 +614,7 @@ function getURL(premadePlayList, short, playlist, videoID, emebed) {
     }
 }
 
-async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, text, top, latest) {
+async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, category, text, top, latest) {
     const channelURL = "https://www.youtube.com/feeds/videos.xml?channel_id=" + ChannelID;
     var data = await fetch("https://api.rss2json.com/v1/api.json?rss_url=" + channelURL)
         .then(resp => resp.json())
@@ -627,7 +627,7 @@ async function getLatestVideoOfChannel(ChannelID, maxVideoAmount, categorie, tex
 
                 let videoID = items[i].link.replace("https://www.youtube.com/watch?v=", "");
 
-                parseResponse(false, videoID, top, categorie, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, false, latest, "videoholder")
+                parseResponse(false, videoID, top, category, "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", text, false, false, latest, "videoholder")
             }
         });
 }
@@ -689,82 +689,82 @@ async function setVideoScreenLocking() {
     }
 }
 
-var categorieList;
+var categoryList;
 
 var smallAutoMix;
 var fullAutoMix;
 
 function createPlayListList() {
-    categorieList = getVideoListType();
+    categoryList = getVideoListType();
     smallAutoMix = [];
     fullAutoMix = [];
     comboAlreadyDone = "";
 
-    let categorieName = "";
-    for(categorieType in categorieList) {
-        for(categorieType2 in categorieList){
+    let categoryName = "";
+    for(categoryType in categoryList) {
+        for(categoryType2 in categoryList){
 
-            if(!comboAlreadyDone.includes(categorieList[categorieType] + " " + categorieList[categorieType2]) && !comboAlreadyDone.includes(categorieList[categorieType2] + " " + categorieList[categorieType])){
-                comboAlreadyDone += categorieList[categorieType] + " " + categorieList[categorieType2];
+            if(!comboAlreadyDone.includes(categoryList[categoryType] + " " + categoryList[categoryType2]) && !comboAlreadyDone.includes(categoryList[categoryType2] + " " + categoryList[categoryType])){
+                comboAlreadyDone += categoryList[categoryType] + " " + categoryList[categoryType2];
 
-                if(categorieType != categorieType2){
-                    categorieName = categorieList[categorieType] + " " + categorieList[categorieType2];
-                } else{ categorieName = categorieList[categorieType]; }
+                if(categoryType != categoryType2){
+                    categoryName = categoryList[categoryType] + " " + categoryList[categoryType2];
+                } else{ categoryName = categoryList[categoryType]; }
 
-                smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
-                fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "true" });
+                smallAutoMix.push({ tag: categoryName, videoIDList: "", amount: 0, top: "true" });
+                fullAutoMix.push({ tag: categoryName, videoIDList: "", amount: 0, top: "true" });
 
-                smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "false" });
-                fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "false" });
+                smallAutoMix.push({ tag: categoryName, videoIDList: "", amount: 0, top: "false" });
+                fullAutoMix.push({ tag: categoryName, videoIDList: "", amount: 0, top: "false" });
 
-                smallAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "mixed" });
-                fullAutoMix.push({ tag: categorieName, videoIDList: "", amount: 0, top: "mixed" });
+                smallAutoMix.push({ tag: categoryName, videoIDList: "", amount: 0, top: "mixed" });
+                fullAutoMix.push({ tag: categoryName, videoIDList: "", amount: 0, top: "mixed" });
             }
         }
     }
 }
 
-async function constructPlayList(videoID, playlist, top, categorie, videoType) {
+async function constructPlayList(videoID, playlist, top, category, videoType) {
     if (playlist == false) {
-        var VideoCategorieList = categorie.split(" ");
-        for(categorieType in VideoCategorieList) {
-            var tag = VideoCategorieList[categorieType];
+        var VideocategoryList = category.split(" ");
+        for(categoryType in VideocategoryList) {
+            var tag = VideocategoryList[categoryType];
 
             if(top === true){
-                await setInPlayList("true", videoID, playlist, top, categorie, videoType, tag);//top small&full
+                await setInPlayList("true", videoID, playlist, top, category, videoType, tag);//top small&full
             }
             else
             {
-                await setInPlayList("false", videoID, playlist, top, categorie, videoType, tag);//notop small&full
+                await setInPlayList("false", videoID, playlist, top, category, videoType, tag);//notop small&full
             }
-            await setInPlayList("mixed", videoID, playlist, top, categorie, videoType, tag); //mixed small&full
+            await setInPlayList("mixed", videoID, playlist, top, category, videoType, tag); //mixed small&full
         }
     }
 }
 
-async function setInPlayList(topType, videoID, playlist, top, categorie, videoType, tag)
+async function setInPlayList(topType, videoID, playlist, top, category, videoType, tag)
 {
-    for(categorieInList in smallAutoMix){
-        if(smallAutoMix[categorieInList].tag.includes(tag) && smallAutoMix[categorieInList].top === topType){
+    for(categoryInList in smallAutoMix){
+        if(smallAutoMix[categoryInList].tag.includes(tag) && smallAutoMix[categoryInList].top === topType){
             let include = true;
-            let categorieToCheck = smallAutoMix[categorieInList].tag.split(" ");
-            for(Currenttag in categorieToCheck){
-                if(!categorie.includes(categorieToCheck[Currenttag])){
+            let categoryToCheck = smallAutoMix[categoryInList].tag.split(" ");
+            for(Currenttag in categoryToCheck){
+                if(!category.includes(categoryToCheck[Currenttag])){
                     include = false;
                 }
             }
 
             if(include == true){
                 include = false;
-                if(!smallAutoMix[categorieInList].videoIDList.includes(videoID)){
-                    smallAutoMix[categorieInList].videoIDList += videoID + ",";
-                    smallAutoMix[categorieInList].amount += 1;
-                    await CheckIfPlayListAtLimit(smallAutoMix[categorieInList].tag, top, false, videoType, false, topType);
+                if(!smallAutoMix[categoryInList].videoIDList.includes(videoID)){
+                    smallAutoMix[categoryInList].videoIDList += videoID + ",";
+                    smallAutoMix[categoryInList].amount += 1;
+                    await CheckIfPlayListAtLimit(smallAutoMix[categoryInList].tag, top, false, videoType, false, topType);
                 }
-                if(!fullAutoMix[categorieInList].videoIDList.includes(videoID)){
-                    fullAutoMix[categorieInList].videoIDList += videoID + ",";
-                    fullAutoMix[categorieInList].amount += 1;
-                    //await CheckIfPlayListAtLimit(fullAutoMix[categorieInList].tag, top, false, videoType, false, topType);
+                if(!fullAutoMix[categoryInList].videoIDList.includes(videoID)){
+                    fullAutoMix[categoryInList].videoIDList += videoID + ",";
+                    fullAutoMix[categoryInList].amount += 1;
+                    //await CheckIfPlayListAtLimit(fullAutoMix[categoryInList].tag, top, false, videoType, false, topType);
                 }
             }
         }
@@ -810,9 +810,9 @@ async function CheckIfPlayListAtLimit(tag, top, mixed, videoType, short, topType
 }
 
 async function setGlobalPlayList(videoType, short) {
-    let categorieList = getVideoListType();
-    for(categorieType in categorieList) {
-        var tag = categorieList[categorieType];
+    let categoryList = getVideoListType();
+    for(categoryType in categoryList) {
+        var tag = categoryList[categoryType];
 
         let topType = "true";
         //top
