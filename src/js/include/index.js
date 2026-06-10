@@ -30,17 +30,10 @@ async function includes() {
         await include_script("/src/js/include/searchbar-list.js");
         await include_script("/src/js/include/searchbar.js");
 
-        var musicListMerge;
-
         await include_script("/src/js/content/music.js");
-        let songs = videoLinks;
-
+        mergeYouTubeTitles(videoLinks, devMode(), true, false);
         await include_script("/src/js/content/video.js");
-        let vids = videoLinks;
-        
-        musicListMerge = songs.concat(vids);
-        
-        mergeYouTubeTitles(musicListMerge, devMode());
+        mergeYouTubeTitles(videoLinks, devMode(), false, true);
 
         getURLParameter();
     }

@@ -99,7 +99,7 @@ async function checkIfInputMatchLink(query) {
     return result;
 }
 
-function mergeYouTubeTitles(musicListMerge, devMode){
+function mergeYouTubeTitles(musicListMerge, devMode, song, video){
     for (link in musicListMerge) {
         let linked = musicListMerge[link];
         let htmlOffline = "";
@@ -107,12 +107,23 @@ function mergeYouTubeTitles(musicListMerge, devMode){
             htmlOffline = ".html";
         }
 
+        let url;
+        let icon;
+        if(song === true){
+            url = "music";
+            icon = "-music"
+        }
+        else if(video === true){
+            url = "video";
+            icon = "";
+        }
+
         if(linked.title !== undefined){
             object = {
-                href: "/admin/music" + htmlOffline + "#" + linked.videoID,
+                href: "/admin/" + url + htmlOffline + "#" + linked.videoID,
                 tag: linked.category,
                 text: linked.title,
-                svg: "/assets/svg/trademark/youtube.svg",
+                svg: "/assets/svg/trademark/youtube" + icon + ".svg",
             };
             
             links.push(object);
