@@ -112,7 +112,7 @@ function mergeYouTubeTitles(musicListMerge, devMode){
                 href: "/admin/music" + htmlOffline + "#" + linked.videoID,
                 tag: linked.category,
                 text: linked.title,
-                svg: "/assets/svg/music.svg",
+                svg: "/assets/svg/trademark/youtube.svg",
             };
             
             links.push(object);
