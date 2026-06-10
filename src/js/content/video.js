@@ -1,4 +1,4 @@
-var videolinks = [
+var videoLinks = [
     {
         videoID: "ZhfI0EboPU0",
         category: "hack IT malware politique OpSec science",
@@ -6592,7 +6592,7 @@ function getVideoChannel(){
 }
 
 function GetVideoList(){
-    return videolinks;
+    return videoLinks;
 }
 
 function getType(){

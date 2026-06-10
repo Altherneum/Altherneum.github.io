@@ -1,4 +1,4 @@
-var videolinks = [
+var videoLinks = [
     {
         videoID: "eLOH-1uYt9w",
         category: "moody histoire chill",
@@ -11443,7 +11443,7 @@ function getVideoChannel() {
 }
 
 function GetVideoList(){
-    return videolinks;
+    return videoLinks;
 }
 
 function getType(){
