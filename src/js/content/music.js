@@ -4592,17 +4592,20 @@ var videolinks = [
     },
     {
         videoID: "A2P9GRLyWjg",
-        categorie: "todo",
+        categorie: "electro classic",
+        top: true,
         title: "Vidrado Em Você"
     },
     {
         videoID: "f7sn7zctO_c",
-        categorie: "todo",
+        categorie: "electro hardbass histoire",
+        top: true,
         title: "Artemas - i like the way you kiss me (TRAVYP Techno Remix) [Extended]"
     },
     {
         videoID: "TADxdahPBUA",
-        categorie: "todo",
+        categorie: "moody histoire classic electro",
+        top: true,
         title: "Happy Nation"
     },
     {
