@@ -271,12 +271,24 @@ async function setTitleInVar(videoIDParam, title){
     else{ SaveTitle = false; }
 
     if(SaveTitle === true){
+        let counter = 0;
         for(video in GlobalVideoIDList) {
             let videoID = GlobalVideoIDList[video].videoID;
             if(videoID === videoIDParam){
-                console.log("title saved for video " + video + " and ID " + videoID);
-                GlobalVideoIDList[video].title = title;
+                if(GlobalVideoIDList[video].title !== title){
+                    counter++;
+                    console.log("title saved for video " + video + " and ID " + videoID);
+                    GlobalVideoIDList[video].title = title;
+
+                    let x = video % 50;
+                    if(x === 0){
+                        console.debug(counter);
+                        console.log(GlobalVideoIDList);
+                    }
+                }
             }
+
+            
         }
     }
 }
