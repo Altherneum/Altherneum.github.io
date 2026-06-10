@@ -1442,7 +1442,7 @@ var videolinks = [
     },
     {
         videoID: "ARIt2684fiM",
-        categorie: "AI OpSec humour news politique IT",
+        categorie: "IA OpSec humour news politique IT",
     },
     {
         videoID: "T-qzNtc1pi8",
