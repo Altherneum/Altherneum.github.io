@@ -1560,7 +1560,7 @@ var videolinks = [
     {
         videoID: "FPNOSiqtj1U",
         categorie: "science OpSec",
-        short:true,
+        short: true,
     },
     {
         videoID: "MTAfmypX-hI",
