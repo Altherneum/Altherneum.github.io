@@ -41,7 +41,7 @@ async function includes() {
         songs.push(vids);
         musicListMerge = songs;
         
-        mergeYouTubeTitles(musicListMerge);
+        mergeYouTubeTitles(musicListMerge, devMode());
     }
 
     await include_html("/src/html/include/scrollPercentage.html", "body", false);

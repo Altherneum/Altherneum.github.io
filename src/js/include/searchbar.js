@@ -99,13 +99,17 @@ async function checkIfInputMatchLink(query) {
     return result;
 }
 
-function mergeYouTubeTitles(musicListMerge){
+function mergeYouTubeTitles(musicListMerge, devMode){
     for (link in musicListMerge) {
-        let linked = musicListMerge[link]
+        let linked = musicListMerge[link];
+        let htmlOffline = "";
+        if(devMode == true){
+            htmlOffline = ".html";
+        }
 
         if(linked.title !== undefined){
             object = {
-                href: "/admin/music#" + linked.videoID,
+                href: "/admin/music" + htmlOffline + "#" + linked.videoID,
                 tag: linked.category,
                 text: linked.title,
                 svg: "/assets/svg/music.svg",
