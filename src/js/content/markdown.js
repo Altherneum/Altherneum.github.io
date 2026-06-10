@@ -264,7 +264,7 @@ async function githubData(repo, file, content, gist) {
         anchorRaw(repo, file, holder, gist);
         anchorHolder(repo.split('/')[0], holder);
         anchorUpdate(htmlUrl, holder);
-        anchorAuthor(authorLogin, holder, commitAuthorName, authorLogin, holder);
+        anchorAuthor(authorLogin, holder, commitAuthorName);
         textData(commitMessage, commitAuthorDate, holder);
     }
 }
@@ -310,7 +310,7 @@ function anchorUpdate(url, holder) {
     holder.appendChild(link);
 }
 
-function anchorAuthor(authorLogin, holder, commitAuthorName, authorLogin, holder) {
+function anchorAuthor(authorLogin, holder, commitAuthorName) {
     if (authorLogin === undefined) {
         return;
     }
