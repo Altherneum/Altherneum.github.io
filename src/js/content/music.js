@@ -4433,52 +4433,61 @@ var videolinks = [
     },
     {
         videoID: "m2OR_JaXDaM",
-        categorie: "todo",
+        categorie: "classic histoire",
+        top: true,
         title: "Snake Eater"
     },
     {
         videoID: "OYGkzgsakVE",
-        categorie: "todo",
+        categorie: "rock classic histoire",
+        top: true,
         title: "Snake Eater"
     },
     {
         videoID: "CqnU_sJ8V-E",
-        categorie: "todo",
+        categorie: "classic rock histoire",
+        top: true,
         title: "Free Bird"
     },
     {
         videoID: "E8gmARGvPlI",
-        categorie: "todo",
+        categorie: "classic histoire",
+        top: true,
         title: "Wham! - Last Christmas (Official Video)"
     },
     {
         videoID: "Bznxx12Ptl0",
-        categorie: "todo",
+        categorie: "electro trool classic",
+        top: true,
         title: "AronChupa, Little Sis Nora - I'm an Albatraoz | OFFICIAL VIDEO"
     },
     {
         videoID: "9Zj0JOHJR-s",
-        categorie: "todo",
+        categorie: "electro classic rock trool",
+        top: true,
         title: "My Ordinary Life-The Living Tombstone"
     },
     {
         videoID: "Zby2JOL-R0k",
-        categorie: "todo",
+        categorie: "slavic trool histoire",
         title: "Loituma - Ieva's Polka (Original) (Long Version) HQ"
     },
     {
         videoID: "fxx5p8KnZ3w",
-        categorie: "todo",
+        categorie: "slavic electro trool",
+        top: true,
         title: "Säkkijärven Polkka / Eurobeat Remix"
     },
     {
         videoID: "qrO4YZeyl0I",
-        categorie: "todo",
+        categorie: "electro classic histoire",
+        top: true,
         title: "Lady Gaga - Bad Romance (Official Music Video)"
     },
     {
         videoID: "16y1AkoZkmQ",
-        categorie: "todo",
+        categorie: "slavic electro histoire",
+        top: true,
         title: "Boney M. - Rasputin (Sopot Festival 1979)"
     },
     {
@@ -4489,82 +4498,96 @@ var videolinks = [
     },
     {
         videoID: "zXMB0DOV7j0",
-        categorie: "todo",
+        categorie: "histoire moody",
+        top: true,
         title: "California Dreamin' in Baghdad"
     },
     {
         videoID: "K59mWngm4jQ",
-        categorie: "todo",
+        categorie: "classic rock histoire moody",
+        top: true,
         title: "California Dreamin'"
     },
     {
         videoID: "CW5oGRx9CLM",
-        categorie: "todo",
+        categorie: "histoire electro rock",
+        top: true,
         title: "The Weeknd - False Alarm (Official Video)"
     },
     {
         videoID: "MwpMEbgC7DA",
-        categorie: "todo",
+        categorie: "moody classic histoire",
+        top: true,
         title: "Tom Odell - Another Love (Official Video)"
     },
     {
         videoID: "PVjiKRfKpPI",
-        categorie: "todo",
+        categorie: "classic histoire moody",
+        top: true,
         title: "Hozier - Take Me To Church"
     },
     {
         videoID: "cPCLFtxpadE",
-        categorie: "todo",
+        categorie: "classic histoire trool rock",
+        top: true,
         title: "Roundabout (2008 Remaster)"
     },
     {
         videoID: "atuFSv2bLa8",
-        categorie: "todo",
+        categorie: "electro histoire trool",
+        top: true,
         title: "Manuel - Gas Gas Gas"
     },
     {
         videoID: "FhgFtXESdPk",
-        categorie: "todo",
+        categorie: "rock histoire",
+        top: true,
         title: "The Chain (2004 Remaster)"
     },
     {
         videoID: "B93RUaUx_0k",
-        categorie: "todo",
+        categorie: "chill electro histoire",
+        top: true,
         title: "Everybody Wants To Rule The World (Sped Up Version)"
     },
     {
         videoID: "O4irXQhgMqg",
-        categorie: "todo",
+        categorie: "moody classic chill rock histoire",
+        top: true,
         title: "The Rolling Stones - Paint It, Black (Official Lyric Video)"
     },
     {
         videoID: "rIfNbSk7kbE",
-        categorie: "todo",
+        categorie: "asian electro",
         title: "ラグトレイン"
     },
     {
         videoID: "k1BneeJTDcU",
-        categorie: "todo",
+        categorie: "classic trool moody",
         title: "Welcome to the Internet - Bo Burnham (from \"Inside\" -- ALBUM OUT NOW)"
     },
     {
         videoID: "HzdD8kbDzZA",
-        categorie: "todo",
+        categorie: "classic histoire rock electro",
+        top: true,
         title: "Take on Me"
     },
     {
         videoID: "7374CZQoS2Y",
-        categorie: "todo",
+        categorie: "moody classic histoire rock",
+        top: true,
         title: "No Surprises (Remastered)"
     },
     {
         videoID: "aBKEt3MhNMM",
-        categorie: "todo",
+        categorie: "classic histoire rock moody",
+        top: true,
         title: "Starman (2012 Remaster)"
     },
     {
         videoID: "ovvbCPqgX5E",
-        categorie: "todo",
+        categorie: "rap classic histoire trool electro",
+        top: true,
         title: "Ziak - I WILL SURVIVE  (Disco Remix)"
     },
     {
