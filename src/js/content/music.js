@@ -11816,330 +11816,412 @@ var videoLinks = [
     {
         "videoID": "Z6ZSNRCODjQ",
         "category": "todo",
+        "title": "не расслабляйся"
     },
     {
         "videoID": "nNwCMosASNE",
         "category": "todo",
+        "title": "RALLY STATION"
     },
     {
         "videoID": "cvaIgq5j2Q8",
         "category": "todo",
+        "title": "Nightcore - Angel With A Shotgun"
     },
     {
         "videoID": "gG4P3ayBzVY",
         "category": "todo",
+        "title": "Hands Held High - Linkin Park (Minutes To Midnight)"
     },
     {
         "videoID": "JTp0hYhAkVs",
         "category": "todo",
+        "title": "Hands Held High"
     },
     {
         "videoID": "A1MdThqGarI",
         "category": "todo",
+        "title": "Connie Francis - Pretty Little Baby (Official Audio)"
     },
     {
         "videoID": "r1O9SBPGcuM",
         "category": "todo",
+        "title": "GOOBA"
     },
     {
         "videoID": "vHXrj49_WZs",
         "category": "todo",
+        "title": "Outlaw"
     },
     {
         "videoID": "Mr3NovPap1U",
         "category": "todo",
+        "title": "HUMAN ERROR"
     },
     {
         "videoID": "DFmIVOKnw84",
         "category": "todo",
+        "title": "STAY BY ME"
     },
     {
         "videoID": "_36WCqLgv2g",
         "category": "todo",
+        "title": "Thalassophobia"
     },
     {
         "videoID": "K7L7Zec4L3c",
         "category": "todo",
+        "title": "C'était pas gagné"
     },
     {
         "videoID": "Vkza0celHEg",
         "category": "todo",
+        "title": "BEST TOMORROWLAND EDM SONGS [PART 2]"
     },
     {
         "videoID": "Ljom6qOnFeE",
         "category": "todo",
+        "title": "playlist jumpstyle hardstyle // I'm fine"
     },
     {
         "videoID": "gD5lWdW6vkI",
         "category": "todo",
+        "title": "여름에 듣는 일본 시티팝"
     },
     {
         "videoID": "pTAnSekzE-E",
         "category": "todo",
+        "title": "Poseidon Was A Raver"
     },
     {
         "videoID": "9LSyWM2CL-U",
         "category": "todo",
+        "title": "Juice WRLD - Empty (Official Audio)"
     },
     {
         "videoID": "uQi2-XAIxjg",
         "category": "todo",
+        "title": "FORGOTTENAGE - HA-HA (PHONK)"
     },
     {
         "videoID": "ZyhrYis509A",
         "category": "todo",
+        "title": "Aqua - Barbie Girl (Official Music Video)"
     },
     {
         "videoID": "AWFQx0gGXjs",
         "category": "todo",
+        "title": "Aqua - Barbie Girl"
     },
     {
         "videoID": "nRmlLrI0OVk",
         "category": "todo",
+        "title": "【松原みき】Miki Matsubara ’Mayonaka no Door -stay with me’ (Music Video)  2023 by Fridman Sisters"
     },
     {
         "videoID": "Jx5Q1XdfWrI",
         "category": "todo",
+        "title": "BRATECH – FUEGO SIN CONTROL 🔥 (Reggaeton x Hardstyle)"
     },
     {
         "videoID": "zABLecsR5UE",
         "category": "todo",
+        "title": "Lewis Capaldi - Someone You Loved"
     },
     {
         "videoID": "1A6calS4CY8",
         "category": "todo",
+        "title": "L'Amour Toujours (Hardstyle)"
     },
     {
         "videoID": "aB2LJcLbvSc",
         "category": "todo",
+        "title": "Pomme De Reinette (Hard Techno)"
     },
     {
         "videoID": "znl9VpUdOd8",
         "category": "todo",
+        "title": "Offenbach - Can Can (Hardstyle)"
     },
     {
         "videoID": "BMm71FZ6L2U",
         "category": "todo",
+        "title": "Bach Hardstyle (Toccata & Fugue)"
     },
     {
         "videoID": "RqiyStOMcYQ",
         "category": "todo",
+        "title": "AURA"
     },
     {
         "videoID": "6id2V16vS3E",
         "category": "todo",
+        "title": "dança zip"
     },
     {
         "videoID": "glucWS42wJY",
         "category": "todo",
+        "title": "✻H+3+ЯД✻7luCJIo0T6... (second drop + super slowed)"
     },
     {
         "videoID": "qai2Qx_vduA",
         "category": "todo",
+        "title": "FUNK SIGILO (SLOWED)"
     },
     {
         "videoID": "SJDtXEQEEQg",
         "category": "todo",
+        "title": "ACIDO III"
     },
     {
         "videoID": "DCtbBdRhtoc",
         "category": "todo",
+        "title": "fragment 2"
     },
     {
         "videoID": "AfJm4CtlcWA",
         "category": "todo",
+        "title": "SIX SEVEN - Laurinha Costa (DJ CABELO) (DJ TCHOUZEN)"
     },
     {
         "videoID": "cB-LxZlB7KI",
         "category": "todo",
+        "title": "Tank Triad (Super Slowed)"
     },
     {
         "videoID": "d6j2xb0FPPM",
         "category": "todo",
+        "title": "Black Beatles (Hardtekk)"
     },
     {
         "videoID": "_XRapzEt6-w",
         "category": "todo",
+        "title": "CUTE JUMPSTYLE (Slowed)"
     },
     {
         "videoID": "t-p9FslWcoM",
         "category": "todo",
+        "title": "Tank Triad 2"
     },
     {
         "videoID": "9ZdIQJKEr6g",
         "category": "todo",
+        "title": "Tank Triad 2 (Slowed)"
     },
     {
         "videoID": "OE06AD_O-AA",
         "category": "todo",
+        "title": "𝐓𝐚𝐧𝐤 𝐓𝐫𝐢𝐚𝐝 𝟐 · 𝐇𝐄𝐋𝐋𝐁𝐋𝐀𝐃𝐄 (𝐒𝐥𝐨𝐰𝐞𝐝 - 𝐫𝐞𝐯𝐞𝐫𝐛)"
     },
     {
         "videoID": "uGSxkRifGPc",
         "category": "todo",
+        "title": "Faouzia - Unethical (MAPHRA Vocal Cover)"
     },
     {
         "videoID": "TjUhXbGdLYo",
         "category": "todo",
+        "title": "Jeanette - Porque te vas"
     },
     {
         "videoID": "pTNQbdSXXOI",
         "category": "todo",
+        "title": "Daydreamin' (feat. Jill Scott)"
     },
     {
         "videoID": "7XOAStfv-v0",
         "category": "todo",
+        "title": "Lupe Fiasco - Daydreamin' (feat. Jill Scott) [Official Video]"
     },
     {
         "videoID": "iwOs94-XHrc",
         "category": "todo",
+        "title": "Dreamin'"
     },
     {
         "videoID": "ibfqzdtwypM",
         "category": "todo",
+        "title": "The Eye of the Tiger"
     },
     {
         "videoID": "BTnM71u_v2I",
         "category": "todo",
+        "title": "Golden Brown (Slowed Down Version)"
     },
     {
         "videoID": "GmxkNB-QihI",
         "category": "todo",
+        "title": "Golden Brown - The Stranglers (slowed + reverb)"
     },
     {
         "videoID": "W2o_HupXq1g",
         "category": "todo",
+        "title": "Golden Brown"
     },
     {
         "videoID": "Efzv_4WfuRY",
         "category": "todo",
+        "title": "The Stranglers - Golden Brown (Knight and Princess Version) Slowed | 4ndr3y + Dakijko"
     },
     {
         "videoID": "EA8gVeiIboA",
         "category": "todo",
+        "title": "HARDTEKK PAPA"
     },
     {
         "videoID": "gti_PQn8fLg",
         "category": "todo",
+        "title": "TEKKMAXX (SLOWED)"
     },
     {
         "videoID": "keFMrEmNpT8",
         "category": "todo",
+        "title": "SUPRA STUTUTUTU (Slowed + Reverb)"
     },
     {
         "videoID": "SJDtXEQEEQg",
         "category": "todo",
+        "title": "ACIDO III"
     },
     {
         "videoID": "uFeZ_x--aRg",
         "category": "todo",
+        "title": "Johnny B. Goode"
     },
     {
         "videoID": "xfTjI_RJFhA",
         "category": "todo",
+        "title": "Dolce Nonna"
     },
     {
         "videoID": "6Y1Emb7Jyks",
         "category": "todo",
+        "title": "Eric B. & Rakim - Don't Sweat The Technique"
     },
     {
         "videoID": "3ndd9fcaUP8",
         "category": "todo",
+        "title": "You've Got a Friend in Me"
     },
     {
         "videoID": "ZWijx_AgPiA",
         "category": "todo",
+        "title": "Creedence Clearwater Revival - Fortunate Son"
     },
     {
         "videoID": "_NzLs-xSss0",
         "category": "todo",
+        "title": "Won't Get Fooled Again (Original Album Version)"
     },
     {
         "videoID": "39zPuBFPOhE",
         "category": "todo",
+        "title": "Where We're Going"
     },
     {
         "videoID": "BTnM71u_v2I",
         "category": "todo",
+        "title": "Golden Brown (Slowed Down Version)"
     },
     {
         "videoID": "S-LO6dctBms",
         "category": "todo",
+        "title": "Eye of the Tiger"
     },
     {
         "videoID": "1j6jndklPH8",
         "category": "todo",
+        "title": "MAO ZEDONG DRIP Red Sun In The Sky Trap Remix prod  by BBMusic"
     },
     {
         "videoID": "J8TZAjM4lAg",
         "category": "todo",
+        "title": "\"Red Sun in the Sky\" - Slowed + Reverb"
     },
     {
         "videoID": "ZHwVBirqD2s",
         "category": "todo",
+        "title": "Elton John - I'm Still Standing"
     },
     {
         "videoID": "Yj8ZufvGfvk",
         "category": "todo",
+        "title": "Thank You"
     },
     {
         "videoID": "2Q3dGZPguSM",
         "category": "todo",
+        "title": "Bad Boys (Theme from Cops)"
     },
     {
         "videoID": "on9TXY8kYyk",
         "category": "todo",
+        "title": "Inner Circle- Bad Boys"
     },
     {
         "videoID": "EwzyQg_Pqrw",
         "category": "todo",
+        "title": "Inner Circle - Bad Boys (Theme from COPS)"
     },
     {
         "videoID": "2bOUjNKjZ4s",
         "category": "todo",
+        "title": "Bad Boys"
     },
     {
         "videoID": "UKDl5sjcy7I",
         "category": "todo",
+        "title": "It's Been a Long Long Time (Alternate Take)"
     },
     {
         "videoID": "YTVzWyTGp3U",
         "category": "todo",
+        "title": "Sunshine, Lollipops and Rainbows (Rerecorded)"
     },
     {
         "videoID": "y1VnRmBTnaI",
         "category": "todo",
+        "title": "Alone"
     },
     {
         "videoID": "jyyt0T-4dc4",
         "category": "todo",
+        "title": "Hey Ya!"
     },
     {
         "videoID": "xGxj2iHAtzE",
         "category": "todo",
+        "title": "Red Sun in the Sky"
     },
     {
         "videoID": "Kb4OoztXwhg",
         "category": "todo",
+        "title": "Mao Zedong propaganda Red sun in the Sky - Techno remix (original)"
     },
     {
         "videoID": "z68TX6cyS6w",
         "category": "todo",
+        "title": "Red Sun In The Sky (Phonk Remix)"
     },
     {
         "videoID": "X6yoB3PZU3I",
         "category": "todo",
+        "title": "Messages from the Stars (feat. Holybrune)"
     },
     {
         "videoID": "aBhrEv5Z7uc",
         "category": "todo",
+        "title": "Resonance"
     },
     {
         "videoID": "RmgFh8Gq34Y",
         "category": "todo",
+        "title": "Memories"
     },
     {
         "videoID": "dYtThnbPy5M",
         "category": "todo",
+        "title": "Right Now"
     },
 ];
 
