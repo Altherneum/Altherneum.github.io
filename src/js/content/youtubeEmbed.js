@@ -119,6 +119,8 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         LoadSingleVideo = true;
         hideMenu("menu-all");
         hideMenu("menu-default");
+        
+        await parseVideoParam(videoList, -1, hash, false, "videoholder", videoType); //pre load (even if video code dont exist)
     }
     else {
         hideMenu("menu-link");
@@ -143,7 +145,7 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         short = videoList[video].short;
 
         if (LoadSingleVideo) {
-            if (videoID === hash) {
+            if (videoID === hash) { //video code match requested page
                 await parseVideoParam(videoList, video, videoID, false, "videoholder", videoType);
                 total = 1;
                 break;
@@ -160,7 +162,8 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
 
     console.log(GlobalVideoIDList);
 
-    if (LoadSingleVideo && total !== 1) {
+    if (LoadSingleVideo && total !== 1) { //if video code don't match requested page
+        videoholder.replaceChildren();
         var div_card = addCard(false, false, hash, "", false, false, videoType, short);
         addCardData(div_card, "404", "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
         videoholder.appendChild(div_card);
@@ -177,15 +180,14 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
 }
 
 async function parseVideoParam(videoList, video, videoID, premadePlayList, divName, videoType) {
-    var short;
-    var top;
-    var premadePlayList;
-    var category;
-    var text;
-    var playlist;
+    var short = false;
+    var top = false;
+    var premadePlayList = false;
+    var category = "";
+    var text = "";
+    var playlist = false;
 
-
-    if (premadePlayList == false) {
+    if (premadePlayList == false && videoList[video] != undefined) {
         short = videoList[video].short;
         if (short === undefined) {
             short = false;
