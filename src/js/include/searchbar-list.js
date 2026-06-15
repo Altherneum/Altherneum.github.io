@@ -1242,6 +1242,19 @@ let links = [
         svg: "/assets/svg/chart-column.svg"
     },
     {
+        href: "https://keep.google.com/",
+        text: "Google Notes",
+        tag: "Google Queryable URL Web Outils",
+        queryURL: "https://keep.google.com/u/1/#search/text/",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://tasks.google.com/",
+        text: "Google Actualités",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
         href: "https://news.google.com/",
         text: "Google Actualités",
         tag: "Google Queryable URL Web Outils",
