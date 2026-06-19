@@ -5276,47 +5276,54 @@ var videoLinks = [
     },
     {
         "videoID": "hIzQVlkdcjA",
-        "category": "todo",
+        "category": "phonk trool chill",
+        top: true,
         "title": "MONTAGEM MIAU (ULTRA SLOWED) - Lenar, Leonardo P"
     },
     {
         "videoID": "UKjU_IsDbbY",
-        "category": "todo",
+        "category": "phonk trool electro",
+        top: true,
         "title": "Montagem Miau (Letra/Lyrics)"
     },
     {
         "videoID": "L0srUPE2zBo",
-        "category": "todo",
+        "category": "phonk trool electro",
         "title": "Montagem Miau (Slowed) (Letra/Lyrics)"
     },
     {
         "videoID": "P_veSEhmVBc",
-        "category": "todo",
+        "category": "slavic rock moody",
         "title": "SUDNO - ПТАХИ (АКУСТИЧНА ВЕРСІЯ) | POST PUNK | DOOMER MUSIC"
     },
     {
         "videoID": "bD9PqQN9Vvo",
-        "category": "todo",
+        "category": "phonk electro",
+        top: true,
         "title": "Melodia Extraordinária (Super Slowed)"
     },
     {
         "videoID": "dRBDRoLfhz4",
-        "category": "todo",
+        "category": "slavic histoire chill classic",
+        top: true,
         "title": "🎧 Soviet Connection + GTA IV theme | SLOWED & REVERB"
     },
     {
         "videoID": "xUH8Kvpo7u8",
-        "category": "todo",
+        "category": "hardbass phonk electro",
+        top: true,
         "title": "Tekketastisch"
     },
     {
         "videoID": "uG-rsW0z_fI",
-        "category": "todo",
+        "category": "phonk hardbass",
+        top: true,
         "title": "Struwwelpeter"
     },
     {
         "videoID": "3tfQsCdBelc",
-        "category": "todo",
+        "category": "electro chill moody histoire",
+        top: true,
         "title": "dreamloader - space.info"
     },
     {
@@ -5326,7 +5333,8 @@ var videoLinks = [
     },
     {
         "videoID": "HZ_9Kqc75Ws",
-        "category": "todo",
+        "category": "hardbass electro",
+        top: true,
         "title": "Blue Fun Pattern 2"
     },
     {
@@ -5431,37 +5439,43 @@ var videoLinks = [
     },
     {
         "videoID": "adtntJCreYE",
-        "category": "todo",
+        "category": "chill histoire",
         "title": "Bôa - Duvet"
     },
     {
         "videoID": "brk1FKmHoIQ",
-        "category": "todo",
+        "category": "electro hardbass",
+        top: true,
         "title": "Technologic (VIP MIX)"
     },
     {
         "videoID": "Dc-ItGNPS1U",
-        "category": "todo",
+        "category": "histoire moody chill classic",
+        top: true,
         "title": "Sheila - Bang Bang"
     },
     {
         "videoID": "rm2Eg-4cED8",
-        "category": "todo",
+        "category": "histoire moody chill classic",
+        top: true,
         "title": "Sheila - Bang Bang"
     },
     {
         "videoID": "zNPXnAVyAUA",
-        "category": "todo",
+        "category": "chill classic histoire",
+        top: true,
         "title": "Tuyo (Narcos Theme) (Extended Version)"
     },
     {
         "videoID": "npL0_ZAXg9E",
-        "category": "todo",
+        "category": "chill classic histoire",
+        top: true,
         "title": "Rodrigo Amarante - Tuyo - Narcos intro song (live @Le Guess Who? 2018)"
     },
     {
         "videoID": "PtJ6yAGjsIs",
-        "category": "todo",
+        "category": "chill classic histoire",
+        top: true,
         "title": "Narcos | Opening Credits [HD] | Netflix"
     },
     {
