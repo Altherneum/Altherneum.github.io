@@ -1250,7 +1250,7 @@ let links = [
     },
     {
         href: "https://tasks.google.com/",
-        text: "Google Actualités",
+        text: "Google Task",
         tag: "Google URL Web Outils",
         svg: "/assets/svg/book.svg"
     },
