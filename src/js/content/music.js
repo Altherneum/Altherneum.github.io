@@ -5261,7 +5261,7 @@ var videoLinks = [
     },
     {
         "videoID": "HyHZjnEccUk",
-        "category": "todo",
+        "category": "asian histoire chill",
         "title": "Rainy Day Woman"
     },
     {
@@ -5331,19 +5331,19 @@ var videoLinks = [
     },
     {
         "videoID": "DFmIVOKnw84",
-        "category": "chill asian histoire chill moody",
+        "category": "asian histoire chill moody",
         "top": true,
         "title": "STAY BY ME"
     },
     {
         "videoID": "l0Tyay2EDKU",
-        "category": "chill asian histoire chill moody",
+        "category": "asian histoire chill moody",
         "top": true,
         "title": "GOOD-NIGHT FOR YOU"
     },
     {
         "videoID": "3uXFSvMZIwQ",
-        "category": "chill asian histoire chill",
+        "category": "chill asian histoire",
         "top": true,
         "title": "DRIVING MY LOVE"
     },
@@ -5355,55 +5355,55 @@ var videoLinks = [
     },
     {
         "videoID": "Wey2yM_dNfc",
-        "category": "chill asian histoire chill moody",
+        "category": "chill asian histoire moody",
         "top": true,
         "title": "黄昏のBay City (DISCOバージョン) (ボーナストラック)"
     },
     {
         "videoID": "eJHP7mk4aaA",
-        "category": "chill asian histoire chill moody",
+        "category": "chill asian histoire moody",
         "top": true,
         "title": "愛が生まれた日"
     },
     {
         "videoID": "gATsNrzcr1s",
-        "category": "chill asian histoire chill electro",
+        "category": "chill asian histoire electro",
         "top": true,
         "title": "Reiko Takahashi – Sunset Road (Official Audio)"
     },
     {
         "videoID": "ok2OLH4GWyw",
-        "category": "chill asian histoire chill",
+        "category": "chill asian histoire",
         "top": true,
         "title": "Meiko Nakahara - Fantasy"
     },
     {
         "videoID": "uWqnsVMc8CQ",
-        "category": "chill asian histoire chill moody",
+        "category": "chill asian histoire moody",
         "top": true,
         "title": "ANRI アンリ 杏里    ”Last Summer  Whisper”  Heaven Beach🎤♪🎶🎸［Official Video］"
     },
     {
         "videoID": "U1W7sX_Gd1g",
-        "category": "chill asian histoire chill",
+        "category": "chill asian histoire",
         "top": true,
         "title": "Keiko Utsumi  - 誰にもわからない私の痛み(No one understands my pain)"
     },
     {
         "videoID": "hci81q8Q49Q",
-        "category": "chill asian histoire chill jazz",
+        "category": "chill asian histoire jazz",
         "top": true,
         "title": "Fly-day Chinatown"
     },
     {
         "videoID": "M-OlgCZpMR0",
-        "category": "chill asian histoire chill rock jazz",
+        "category": "chill asian histoire rock jazz",
         "top": true,
         "title": "SPECTRUM / F-L-Y (Music Video)"
     },
     {
         "videoID": "cQjW6OOpo4g",
-        "category": "chill asian histoire chill rock jazz",
+        "category": "chill asian histoire rock jazz",
         "top": true,
         "title": "F・L・Y"
     },
@@ -5414,13 +5414,13 @@ var videoLinks = [
     },
     {
         "videoID": "QLHMhVonF-s",
-        "category": "chill asian histoire chill jazz",
+        "category": "chill asian histoire jazz",
         "top": true,
         "title": "黄昏のBAY CITY"
     },
     {
         "videoID": "FVikHLyW500",
-        "category": "chill asian histoire chill jazz",
+        "category": "chill asian histoire jazz",
         "top": true,
         "title": "Just A Joke"
     },
