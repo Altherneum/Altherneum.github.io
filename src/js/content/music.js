@@ -23,7 +23,7 @@ var videoLinks = [
     },
     {
         "videoID": "6dYWe1c3OyU",
-        "category": "histoire",
+        "category": "histoire chill classic",
         "title": "Gloria Gaynor - I Will Survive"
     },
     {
@@ -34,18 +34,18 @@ var videoLinks = [
     },
     {
         "videoID": "8Nzy1cfnKh4",
-        "category": "histoire",
+        "category": "histoire chill classic",
         "top": true,
         "title": "We'll Meet Again"
     },
     {
         "videoID": "FYGTT7YhywA",
-        "category": "histoire",
+        "category": "histoire chill classic",
         "title": "Boney M. - Daddy Cool (Sopot Festival 1979)"
     },
     {
         "videoID": "iQEpTa3VqLU",
-        "category": "histoire",
+        "category": "histoire chill classic",
         "top": true,
         "title": "Daddy Cool"
     },
