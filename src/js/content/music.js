@@ -11845,34 +11845,9 @@ var videoLinks = [
         "title": "Connie Francis - Pretty Little Baby (Official Audio)"
     },
     {
-        "videoID": "r1O9SBPGcuM",
-        "category": "todo",
-        "title": "GOOBA"
-    },
-    {
-        "videoID": "vHXrj49_WZs",
-        "category": "todo",
-        "title": "Outlaw"
-    },
-    {
         "videoID": "Mr3NovPap1U",
         "category": "todo",
         "title": "HUMAN ERROR"
-    },
-    {
-        "videoID": "DFmIVOKnw84",
-        "category": "todo",
-        "title": "STAY BY ME"
-    },
-    {
-        "videoID": "_36WCqLgv2g",
-        "category": "todo",
-        "title": "Thalassophobia"
-    },
-    {
-        "videoID": "K7L7Zec4L3c",
-        "category": "todo",
-        "title": "C'était pas gagné"
     },
     {
         "videoID": "Vkza0celHEg",
@@ -11888,16 +11863,6 @@ var videoLinks = [
         "videoID": "gD5lWdW6vkI",
         "category": "todo",
         "title": "여름에 듣는 일본 시티팝"
-    },
-    {
-        "videoID": "pTAnSekzE-E",
-        "category": "todo",
-        "title": "Poseidon Was A Raver"
-    },
-    {
-        "videoID": "9LSyWM2CL-U",
-        "category": "todo",
-        "title": "Juice WRLD - Empty (Official Audio)"
     },
     {
         "videoID": "uQi2-XAIxjg",
@@ -11918,16 +11883,6 @@ var videoLinks = [
         "videoID": "nRmlLrI0OVk",
         "category": "todo",
         "title": "【松原みき】Miki Matsubara ’Mayonaka no Door -stay with me’ (Music Video)  2023 by Fridman Sisters"
-    },
-    {
-        "videoID": "Jx5Q1XdfWrI",
-        "category": "todo",
-        "title": "BRATECH – FUEGO SIN CONTROL 🔥 (Reggaeton x Hardstyle)"
-    },
-    {
-        "videoID": "zABLecsR5UE",
-        "category": "todo",
-        "title": "Lewis Capaldi - Someone You Loved"
     },
     {
         "videoID": "1A6calS4CY8",
@@ -11965,11 +11920,6 @@ var videoLinks = [
         "title": "✻H+3+ЯД✻7luCJIo0T6... (second drop + super slowed)"
     },
     {
-        "videoID": "qai2Qx_vduA",
-        "category": "todo",
-        "title": "FUNK SIGILO (SLOWED)"
-    },
-    {
         "videoID": "SJDtXEQEEQg",
         "category": "todo",
         "title": "ACIDO III"
@@ -11985,19 +11935,9 @@ var videoLinks = [
         "title": "SIX SEVEN - Laurinha Costa (DJ CABELO) (DJ TCHOUZEN)"
     },
     {
-        "videoID": "cB-LxZlB7KI",
-        "category": "todo",
-        "title": "Tank Triad (Super Slowed)"
-    },
-    {
         "videoID": "d6j2xb0FPPM",
         "category": "todo",
         "title": "Black Beatles (Hardtekk)"
-    },
-    {
-        "videoID": "_XRapzEt6-w",
-        "category": "todo",
-        "title": "CUTE JUMPSTYLE (Slowed)"
     },
     {
         "videoID": "t-p9FslWcoM",
@@ -12018,11 +11958,6 @@ var videoLinks = [
         "videoID": "uGSxkRifGPc",
         "category": "todo",
         "title": "Faouzia - Unethical (MAPHRA Vocal Cover)"
-    },
-    {
-        "videoID": "TjUhXbGdLYo",
-        "category": "todo",
-        "title": "Jeanette - Porque te vas"
     },
     {
         "videoID": "pTNQbdSXXOI",
@@ -12080,16 +12015,6 @@ var videoLinks = [
         "title": "SUPRA STUTUTUTU (Slowed + Reverb)"
     },
     {
-        "videoID": "SJDtXEQEEQg",
-        "category": "todo",
-        "title": "ACIDO III"
-    },
-    {
-        "videoID": "uFeZ_x--aRg",
-        "category": "todo",
-        "title": "Johnny B. Goode"
-    },
-    {
         "videoID": "xfTjI_RJFhA",
         "category": "todo",
         "title": "Dolce Nonna"
@@ -12120,11 +12045,6 @@ var videoLinks = [
         "title": "Where We're Going"
     },
     {
-        "videoID": "BTnM71u_v2I",
-        "category": "todo",
-        "title": "Golden Brown (Slowed Down Version)"
-    },
-    {
         "videoID": "S-LO6dctBms",
         "category": "todo",
         "title": "Eye of the Tiger"
@@ -12138,11 +12058,6 @@ var videoLinks = [
         "videoID": "J8TZAjM4lAg",
         "category": "todo",
         "title": "\"Red Sun in the Sky\" - Slowed + Reverb"
-    },
-    {
-        "videoID": "ZHwVBirqD2s",
-        "category": "todo",
-        "title": "Elton John - I'm Still Standing"
     },
     {
         "videoID": "Yj8ZufvGfvk",
