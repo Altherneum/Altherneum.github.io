@@ -121,3 +121,49 @@
 #contact-mail > .contact-mail-split {
     opacity: 0.75;
 }
+
+.gpg {
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.gpg > textarea {
+    color: var(--text-color);
+
+    width: 600px;
+    height: 215px;
+
+    text-align: center;
+
+    resize: none;
+}
+
+.gpg > div {
+    display: flex;
+    gap: 15px;
+}
+
+.gpg > div > button {
+    border-color: var(--main-color);
+    border-width: 3px;
+    border-style: solid;
+
+    border-radius: 15px;
+
+    padding: 10px;
+
+    box-shadow: var(--box-shadow-all-inset-main-color);
+
+    color: var(--text-color);
+
+}
+
+.gpg > div > button:hover,
+.gpg > div > button:hover {
+    background-color: var(--text-color);
+    box-shadow: var(--box-shadow-all-inset-main-color);
+
+    color: var(--background-color);
+    
+}

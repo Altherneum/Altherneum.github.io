@@ -44,3 +44,14 @@ function replaceCharWith(textContent, newLetter, charToSwap) {
 
 setContactNameRandom();
 setInterval(swapNameLetter, 150);
+
+getPubKey("");
+function getPubKey(URL){
+    const response = await fetch(URL);
+
+    const data = await response.json(); 
+
+    const textarea = document.getElementById("pub-key");
+
+    textarea.textContent = data;
+}
