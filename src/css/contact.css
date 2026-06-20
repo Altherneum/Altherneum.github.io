@@ -145,7 +145,7 @@
 }
 
 .gpg > div > button {
-    border-color: var(--main-color);
+    border-color: var(--text-color);
     border-width: 3px;
     border-style: solid;
 
@@ -162,8 +162,7 @@
 .gpg > div > button:hover,
 .gpg > div > button:hover {
     background-color: var(--text-color);
-    box-shadow: var(--box-shadow-all-inset-main-color);
 
-    color: var(--background-color);
-    
+    color: var(--main-color);
+    border-color: var(--main-color-transparent);
 }
