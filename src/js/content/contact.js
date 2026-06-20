@@ -45,13 +45,40 @@ function replaceCharWith(textContent, newLetter, charToSwap) {
 setContactNameRandom();
 setInterval(swapNameLetter, 150);
 
-getPubKey("");
-function getPubKey(URL){
+let pubkeyURL = "https://raw.githubusercontent.com/Altherneum/Altherneum.github.io/refs/heads/main/assets/txt/GPG/pub.asc";
+getPubKey(pubkeyURL);
+
+async function getPubKey(URL){
     const response = await fetch(URL);
 
-    const data = await response.json(); 
+    const data = await response.text(); 
 
     const textarea = document.getElementById("pub-key");
 
     textarea.textContent = data;
+}
+
+function copyGPG() {
+    const textarea = document.getElementById("pub-key");
+    navigator.clipboard.writeText(textarea.textContent);
+}
+
+function downloadGPG() {
+    const content = document.getElementById("pub-key").textContent;
+    let filename = "altherneum.pub.asc";
+
+    const blob = new Blob([content], { type: 'text/plain' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+
+    document.body.appendChild(a);
+    a.click();
+
+    setTimeout(() => {
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    }, 0);
 }
