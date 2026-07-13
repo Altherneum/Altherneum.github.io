@@ -470,7 +470,7 @@ let links = [
     {
         href: "/cours/linux/ssh.html",
         tag: "Cours OS Linux CMD",
-        text: "Gestion des connexions SSH sur Linux",
+        text: "Installation et gestion des connexions SSH sur Linux",
         svg: "/assets/svg/console.svg",
     },
     {
