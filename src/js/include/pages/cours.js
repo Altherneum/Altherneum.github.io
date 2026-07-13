@@ -215,7 +215,6 @@ async function CheckPage() {
             await include_script("/src/js/content/markdown.js").then(async () => {
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/ssh.md', false);
-                await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD-SSH.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/scp.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/wget.md', false);
             });
@@ -321,7 +320,6 @@ async function CheckPage() {
 
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/ssh.md', false);
-            await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD-SSH.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/scp.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/wget.md', false);
 
