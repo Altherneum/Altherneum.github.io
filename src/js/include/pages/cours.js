@@ -137,6 +137,140 @@ async function CheckPage() {
         });
     }
 
+    else if (pathNameMatchPage("/cours/linux/", false)){
+        if(pathNameMatchPage("/cours/linux/readme", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/README.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/introduction.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/shell", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/man.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/cmd-parameters.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/alias.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/history.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/copy-paste.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/file", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/directory.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/more.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/grep.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/tmp.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/lister.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/file.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/permission.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/tar.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/bash", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/arithmetique.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/logique.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/variable.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/os-version.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/shebang.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/package", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/apt.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/pacman.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/motd", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/ps1", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/PS1.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/process", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/free.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/top.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/uptime.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/Jobs.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/screen.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/kill.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/PIDof.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/systemctl.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/ssh", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/remote.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/ssh.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/MOTD-SSH.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/scp.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/wget.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/user", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/who.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/whoami.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/user.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/sudo.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/password.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/faillock.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/network", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/netstat.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/ps.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/UFW.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/code-server", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/code-server-apache.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/0x0", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/0x0.st.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/httpd-src-build", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/HTTPD-from-src.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/lvm", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/LVM.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/shutdown", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/shutdown-reboot.md', false);
+            });
+        }
+    }
+
     else if (pathNameMatchPage("/cours/linux", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {
