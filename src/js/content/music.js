@@ -1,4 +1,4 @@
-var videoLinks = [
+var musicLinks = [
     {
         "videoID": "eLOH-1uYt9w",
         "category": "moody histoire chill",
@@ -12159,10 +12159,10 @@ var videoLinks = [
     },
 ];
 
-var VideoListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
+var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
 
 function getVideoListType(){
-    return VideoListType;
+    return MusicListType;
 }
 
 //getLatestVideoOfChannel(ChannelID, maxVideoAmount, category, text, top, latest)
@@ -12171,15 +12171,15 @@ function getVideoChannel() {
 }
 
 function GetVideoList(){
-    return videoLinks;
+    return musicLinks;
 }
 
 function getType(){
     return "music";
 }
 
-function getEmoji(VideoListType){
-    switch (VideoListType) {
+function getEmoji(MusicListType){
+    switch (MusicListType) {
         case 'rain':
             return "☔";
         case 'chill':

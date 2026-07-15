@@ -86,6 +86,13 @@
 .card.love>img.svg {
     content: url(/assets/svg/heart.svg);
 }
+.card.bad>img.svg {
+    content: url(/assets/svg/thumbs-down.svg);
+}
+
+.card.zero>img.svg {
+    content: url(/assets/svg/warning.svg);
+}
 
 /*CSS mobile une seule carte par rangé 100%*/
 @media screen and (max-width: 1024px) {
