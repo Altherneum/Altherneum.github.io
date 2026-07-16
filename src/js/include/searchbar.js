@@ -130,7 +130,7 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
                 text: linked.title,
                 svg: "/assets/svg/trademark/" + icon + ".svg",
             };
-            
+
             links.push(object);
         }
         else if (linked.title !== undefined && film === true){
