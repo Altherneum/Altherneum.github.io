@@ -3,8 +3,8 @@ var filmLinks = [
         "filmID": "45264",
         "category": "todo",
         "note": "5",
-        "title": "",
-        "description": "",
+        "title": "abc test film",
+        "description": "test description",
         "imageURL": "",
     },
 ];
