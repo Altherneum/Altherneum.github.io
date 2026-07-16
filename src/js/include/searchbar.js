@@ -117,7 +117,7 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
             url = "video";
             icon = "youtube";
         }else if(film === true){
-            if(linked.category != null) {
+            if(linked.category != undefined) {
                 url = linked.category;
             }
             icon = "film"
