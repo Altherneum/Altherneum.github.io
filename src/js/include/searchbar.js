@@ -117,7 +117,9 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
             url = "video";
             icon = "youtube";
         }else if(film === true){
-            url = "film";
+            if(linked.category != null) {
+                url = linked.category;
+            }
             icon = "film"
         }
 
@@ -136,7 +138,7 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
                 href: "/admin/" + url + htmlOffline + "#" + linked.filmID,
                 tag: linked.category,
                 text: linked.title,
-                svg: "/assets/svg/trademark/" + icon + ".svg",
+                svg: "/assets/svg/" + icon + ".svg",
             };
 
             links.push(object);
