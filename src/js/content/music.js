@@ -5250,7 +5250,7 @@ var musicLinks = [
     {
         "videoID": "MeOoJOt1P0Y",
         "category": "phonk histoire",
-        top: true,
+        "top": true,
         "title": "NO BATIDÃO (SLOWED) - ZXKAI"
     },
     {
@@ -5267,7 +5267,7 @@ var musicLinks = [
     {
         "videoID": "IB8TFMAWhpY",
         "category": "asian histoire chill",
-        top: true,
+        "top": true,
         "title": "THE WINNER"
     },
     {
@@ -5277,13 +5277,13 @@ var musicLinks = [
     {
         "videoID": "hIzQVlkdcjA",
         "category": "phonk trool chill",
-        top: true,
+        "top": true,
         "title": "MONTAGEM MIAU (ULTRA SLOWED) - Lenar, Leonardo P"
     },
     {
         "videoID": "UKjU_IsDbbY",
         "category": "phonk trool electro",
-        top: true,
+        "top": true,
         "title": "Montagem Miau (Letra/Lyrics)"
     },
     {
@@ -5299,31 +5299,31 @@ var musicLinks = [
     {
         "videoID": "bD9PqQN9Vvo",
         "category": "phonk electro",
-        top: true,
+        "top": true,
         "title": "Melodia Extraordinária (Super Slowed)"
     },
     {
         "videoID": "dRBDRoLfhz4",
         "category": "slavic histoire chill classic",
-        top: true,
+        "top": true,
         "title": "🎧 Soviet Connection + GTA IV theme | SLOWED & REVERB"
     },
     {
         "videoID": "xUH8Kvpo7u8",
         "category": "hardbass phonk electro",
-        top: true,
+        "top": true,
         "title": "Tekketastisch"
     },
     {
         "videoID": "uG-rsW0z_fI",
         "category": "phonk hardbass",
-        top: true,
+        "top": true,
         "title": "Struwwelpeter"
     },
     {
         "videoID": "3tfQsCdBelc",
         "category": "electro chill moody histoire",
-        top: true,
+        "top": true,
         "title": "dreamloader - space.info"
     },
     {
@@ -5334,7 +5334,7 @@ var musicLinks = [
     {
         "videoID": "HZ_9Kqc75Ws",
         "category": "hardbass electro",
-        top: true,
+        "top": true,
         "title": "Blue Fun Pattern 2"
     },
     {
@@ -5445,37 +5445,37 @@ var musicLinks = [
     {
         "videoID": "brk1FKmHoIQ",
         "category": "electro hardbass",
-        top: true,
+        "top": true,
         "title": "Technologic (VIP MIX)"
     },
     {
         "videoID": "Dc-ItGNPS1U",
         "category": "histoire moody chill classic",
-        top: true,
+        "top": true,
         "title": "Sheila - Bang Bang"
     },
     {
         "videoID": "rm2Eg-4cED8",
         "category": "histoire moody chill classic",
-        top: true,
+        "top": true,
         "title": "Sheila - Bang Bang"
     },
     {
         "videoID": "zNPXnAVyAUA",
         "category": "chill classic histoire",
-        top: true,
+        "top": true,
         "title": "Tuyo (Narcos Theme) (Extended Version)"
     },
     {
         "videoID": "npL0_ZAXg9E",
         "category": "chill classic histoire",
-        top: true,
+        "top": true,
         "title": "Rodrigo Amarante - Tuyo - Narcos intro song (live @Le Guess Who? 2018)"
     },
     {
         "videoID": "PtJ6yAGjsIs",
         "category": "chill classic histoire",
-        top: true,
+        "top": true,
         "title": "Narcos | Opening Credits [HD] | Netflix"
     },
     {
@@ -5866,13 +5866,13 @@ var musicLinks = [
     {
         "videoID": "D1Fw6CbGAX4",
         "category": "histoire classic chill moody",
-        top: true,
+        "top": true,
         "title": "Running Up That Hill (A Deal With God)"
     },
     {
         "videoID": "wp43OdtAAkM",
         "category": "histoire classic chill moody",
-        top: true,
+        "top": true,
         "title": "Kate Bush - Running Up That Hill - Official Music Video"
     },
     {
@@ -10085,7 +10085,7 @@ var musicLinks = [
         "videoID": "3K0Bkm8Os_s",
         "category": "phonk electro moody",
         "title": "MEMORIES FUNK",
-        top: true,
+        "top": true
     },
     {
         "videoID": "vlFy1Nu_7mo",
@@ -11109,7 +11109,7 @@ var musicLinks = [
     {
         "videoID": "EWbH6WT5KZ4",
         "category": "todo",
-        "title": "BABY I'M A GANGSTER TOO (BASS BOOSTED) | GANGSTA'S PARADISE [VISUALIZER]"
+        "title": "BABY I'M A GANGSTER TOO (BASS BOOSTED) REVIVED | GANGSTA'S PARADISE [OFFICIAL VISUALIZER] | WiZZREX"
     },
     {
         "videoID": "tZ243tliADA",
@@ -12160,303 +12160,377 @@ var musicLinks = [
     {
         "videoID": "ou0phHbzz-0",
         "category": "todo",
+        "title": "Dj Kantik - Teriyaki Boyz - Tokyo Drift & Sean Paul - Temperature (Remix)"
     },
     {
         "videoID": "YAAxVI_NerI",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "B_HSa1dEL9s",
         "category": "todo",
+        "title": "For Whom The Bell Tolls (Remastered)"
     },
     {
         "videoID": "C6FgEC3TFns",
         "category": "todo",
+        "title": "MONTAGEM ALQUIMIA (ULTRA SLOWED)"
     },
     {
         "videoID": "d-diB65scQU",
         "category": "todo",
+        "title": "Bobby McFerrin - Don't Worry Be Happy (Official Music Video)"
     },
     {
         "videoID": "aJsSsOFtopQ",
         "category": "todo",
+        "title": "Welcome to Jurassic World"
     },
     {
         "videoID": "IxJjY5T9yag",
         "category": "todo",
+        "title": "The Box"
     },
     {
         "videoID": "4E4VaL5krv8",
         "category": "todo",
+        "title": "MONTAGEM PEGADORA (Slowed)"
     },
     {
         "videoID": "y1N-AdyLnvM",
         "category": "todo",
+        "title": "BASSTEKK (Slowed)"
     },
     {
         "videoID": "HR7N01QeFCY",
         "category": "todo",
+        "title": "Yara Yara Ya Phonk - Sua Amiga Eu Vou Pegar (Super Slowed)"
     },
     {
         "videoID": "nSA3h6PoPrE",
         "category": "todo",
+        "title": "VEM!"
     },
     {
         "videoID": "e4Gy0i_n-9Q",
         "category": "todo",
+        "title": "Automotivo TicTac"
     },
     {
         "videoID": "RGvKLa0CYzE",
         "category": "todo",
+        "title": "I Can Do Anything / Finale"
     },
     {
         "videoID": "5WyLhwYFgmk",
         "category": "todo",
+        "title": "Johnny Cash - Ring of Fire (Official Audio)"
     },
     {
         "videoID": "SB6_7dWHL30",
         "category": "todo",
+        "title": "KISLOTA"
     },
     {
         "videoID": "B6GdsRIbTSk",
         "category": "todo",
+        "title": "What's Up?"
     },
     {
         "videoID": "i8ju_10NkGY",
         "category": "todo",
+        "title": "Lazy Town | You Are A Pirate Music Video"
     },
     {
         "videoID": "NdzOv1t8Ie4",
         "category": "todo",
+        "title": "Madonna - Like A Prayer (Choir Version) [Vinyl Visualizer]"
     },
     {
         "videoID": "ZP8nkbMIuPE",
         "category": "todo",
+        "title": "Red Sun in the Sky (Official Music Video)"
     },
     {
         "videoID": "Wy9ErjEMYa8",
         "category": "todo",
+        "title": "延边人民热爱毛主席 The People of Yanbian Love Chairman Mao"
     },
     {
         "videoID": "10z6-vQm23w",
         "category": "todo",
+        "title": "Heaven Knows I'm Miserable Now (2011 Remaster)"
     },
     {
         "videoID": "bZj4dNTs8WY",
         "category": "todo",
+        "title": "IM SO LUCKY JUMPSTYLE"
     },
     {
         "videoID": "-LaWn5OjX-Q",
         "category": "todo",
+        "title": "You Are an Idiot"
     },
     {
         "videoID": "3rYoRaxgOE0",
         "category": "todo",
+        "title": "Chordettes - Lollipop"
     },
     {
         "videoID": "_kXKUSAbvuM",
         "category": "todo",
+        "title": "Lollipop"
     },
     {
         "videoID": "pudFH72f2iY",
         "category": "todo",
+        "title": "Sh Boom Life Could Be a Dream"
     },
     {
         "videoID": "SHpkPxjIxKY",
         "category": "todo",
+        "title": "Rainy Day Woman"
     },
     {
         "videoID": "dEOmR6b0IqM",
         "category": "todo",
+        "title": "What Is Love (7\" Mix)"
     },
     {
         "videoID": "xCwAriSmaFI",
         "category": "todo",
+        "title": "What Is Love (12\" Mix)"
     },
     {
         "videoID": "_VXUiAJi5KY",
         "category": "todo",
+        "title": "In Da Club"
     },
     {
         "videoID": "GllEDACUbNo",
         "category": "todo",
+        "title": "50 Cent - Just A Lil Bit"
     },
     {
         "videoID": "UDApZhXTpH8",
         "category": "todo",
+        "title": "50 Cent - P.I.M.P. (Snoop Dogg Remix) ft. Snoop Dogg, G-Unit"
     },
     {
         "videoID": "SRcnnId15BA",
         "category": "todo",
+        "title": "50 Cent - Candy Shop (Official Music Video) ft. Olivia"
     },
     {
         "videoID": "TeNjhglXm6w",
         "category": "todo",
+        "title": "Boombastic"
     },
     {
         "videoID": "6W5pq4bIzIw",
         "category": "todo",
+        "title": "Shaggy - Boombastic (Official Music Video)"
     },
     {
         "videoID": "9ZrAYxWPN6c",
         "category": "todo",
+        "title": "KRS-One - Sound of da Police (Official Video)"
     },
     {
         "videoID": "sM1nrFkLgsE",
         "category": "todo",
+        "title": "Sound of da Police"
     },
     {
         "videoID": "Y6ljFaKRTrI",
         "category": "todo",
+        "title": "Portal - 'Still Alive'"
     },
     {
         "videoID": "-JZLqTnZZlY",
         "category": "todo",
+        "title": "Still Alive"
     },
     {
         "videoID": "pSkW_rR65-g",
         "category": "todo",
+        "title": "HEAVENLY JUMPSTYLE"
     },
     {
         "videoID": "HEXWRTEbj1I",
         "category": "todo",
+        "title": "Haddaway - What Is Love (Official 4K Video)"
     },
     {
         "videoID": "oeD1IRAAqic",
         "category": "todo",
+        "title": "Sua amiga eu vou pegar"
     },
     {
         "videoID": "_tmdD6P0oGE",
         "category": "todo",
+        "title": "FUNK ABNORMAL (SLOWED)"
     },
     {
         "videoID": "A8WhjJOf0Aw",
         "category": "todo",
+        "title": "FUNK ABNORMAL"
     },
     {
         "videoID": "UcEedU0iOis",
         "category": "todo",
+        "title": "FUNK ABNORMAL (ULTRA SLOWED)"
     },
     {
         "videoID": "z3Hr7l4FrSU",
         "category": "todo",
+        "title": "KUTE, killanoia - EROSION (THE DARK TRIAD EDIT)"
     },
     {
         "videoID": "yXbH3fmQIhI",
         "category": "todo",
+        "title": "TERRAMOG"
     },
     {
         "videoID": "1t_sMynan_k",
         "category": "todo",
+        "title": "LITTLE BIG – FARADENZA (official music video)"
     },
     {
         "videoID": "2KMGILeOpdA",
         "category": "todo",
+        "title": "DudePlaya - V-TRIADS (slowed to perfection)"
     },
     {
         "videoID": "lLb6UUw2ZVQ",
         "category": "todo",
+        "title": "War Pigs / Luke's Wall (2012 Remaster)"
     },
     {
         "videoID": "GwSSrwryxN0",
         "category": "todo",
+        "title": "Impostor Syndrome"
     },
     {
         "videoID": "XfmT38RJIqE",
         "category": "todo",
+        "title": "On the Floor (feat. Dj K. Mo) (Radio Version)"
     },
     {
         "videoID": "WZnNTLbogZM",
         "category": "todo",
+        "title": "We Are Fucking Fucked"
     },
     {
         "videoID": "ac4E_UsmB1g",
         "category": "todo",
+        "title": "MUSE - WE ARE FUCKING FUCKED (Official Performance Video)"
     },
     {
         "videoID": "74Ti4SUp6so",
         "category": "todo",
+        "title": "DEATH TRIAL (Slowed)"
     },
     {
         "videoID": "iR6oYX1D-0w",
         "category": "todo",
+        "title": "Aloe Blacc - I Need A Dollar (Official Video)"
     },
     {
         "videoID": "nFZP8zQ5kzk",
         "category": "todo",
+        "title": "Aloe Blacc - I Need A Dollar"
     },
     {
         "videoID": "R5wAGQIt39E",
         "category": "todo",
+        "title": "It's The Hard-Knock Life"
     },
     {
         "videoID": "hfymBsN3Suk",
         "category": "todo",
+        "title": "HARDTEKK AMERICANO (ULTRA SLOWED)"
     },
     {
         "videoID": "lj2gs8DuJXk",
         "category": "todo",
+        "title": "We No Speak Americano"
     },
     {
         "videoID": "lygg5Ju0nNU",
         "category": "todo",
+        "title": "We No Speak Americano (Original Mix)"
     },
     {
         "videoID": "LkjljBNTLs4",
         "category": "todo",
+        "title": "Yolanda Be Cool & DCUP - We No Speak Americano (Official Video)"
     },
     {
         "videoID": "TjPhzgxe3L0",
         "category": "todo",
+        "title": "The Smiths - Heaven Knows I'm Miserable Now (Official Music Video)"
     },
     {
         "videoID": "PQyqrlFOe5s",
         "category": "todo",
+        "title": "The Smiths - Heaven Knows I'm Miserable Now"
     },
     {
         "videoID": "0GnA8VYOfko",
         "category": "todo",
+        "title": "KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID - GUT GENUG"
     },
     {
         "videoID": "PUdyuKaGQd4",
         "category": "todo",
+        "title": "Alice Merton - No Roots"
     },
     {
         "videoID": "ZaI2IlHwmgQ",
         "category": "todo",
+        "title": "The Black Eyed Peas - Pump It (Official Music Video)"
     },
     {
         "videoID": "Cgv522f5wfU",
         "category": "todo",
+        "title": "Corona"
     },
     {
         "videoID": "iqjv1x_lOBo",
         "category": "todo",
+        "title": "Tiomnaya Noch"
     },
     {
         "videoID": "syhCToJ7L4M",
         "category": "todo",
+        "title": "Palito Ortega - Hola Carolina (Official Audio)"
     },
     {
         "videoID": "M-C2RNGWnIA",
         "category": "todo",
+        "title": "HONOUR (FIRST PART) (Ultra Slowed)"
     },
     {
         "videoID": "LTTUkVKcuRg",
         "category": "todo",
+        "title": "DJ BRATT – Odnogo (legendaris ultrafunk remix)"
     },
     {
         "videoID": "DIZSsLFq_k4",
         "category": "todo",
+        "title": "vendetta! (Slowed Reverb)"
     },
     {
         "videoID": "fXF8Zrsqsh0",
         "category": "todo",
+        "title": "WASTE (Slowed Version)"
     },
     {
         "videoID": "cV9mMLDKIbI",
         "category": "todo",
-    },
+        "title": "I Need A Dollar"
+    }
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
