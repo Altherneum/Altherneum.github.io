@@ -123,7 +123,7 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
             icon = "film"
         }
 
-        if(linked.title !== undefined && (music === true || video === true)){
+        if(linked.title !== undefined && (song === true || video === true)){
             object = {
                 href: "/admin/" + url + htmlOffline + "#" + linked.videoID,
                 tag: linked.category,
