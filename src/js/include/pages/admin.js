@@ -63,7 +63,13 @@ async function CheckPage() {
         await include_script("/src/js/content/video.js");
 
         loadYouTubeEmbed();
-        await include_script("/src/js/content/settings.js"); setSwitch("YouTubeLoop", null);
+       await include_script("/src/js/content/settings.js");
+            setSwitch("YouTubeLoop", false);
+            setSwitch("YoutubeShuffle", true);
+            setInputValue("PlayListVideoAmount", 20);
+            setInputValue("YouTubeVideoDelay", 20);
+            setSwitch("IndividualsVids", true);
+            setSwitch("YoutubeTitleSaving", false);
     }
 
     else if (pathNameMatchPage("/admin/contact", true)) {
