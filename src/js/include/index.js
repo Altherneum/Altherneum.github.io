@@ -31,9 +31,11 @@ async function includes() {
         await include_script("/src/js/include/searchbar.js");
 
         await include_script("/src/js/content/music.js");
-        mergeYouTubeTitles(musicLinks, devMode(), true, false);
+        mergeYouTubeTitles(musicLinks, devMode(), true, false, false);
         await include_script("/src/js/content/video.js");
-        mergeYouTubeTitles(videoLinks, devMode(), false, true);
+        mergeYouTubeTitles(videoLinks, devMode(), false, true, false);
+        await include_script("/src/js/content/film.js");
+        mergeYouTubeTitles(filmLinks, devMode(), false, false, true);
 
         getURLParameter();
     }
