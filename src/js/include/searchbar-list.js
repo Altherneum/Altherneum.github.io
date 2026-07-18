@@ -426,9 +426,15 @@ let links = [
         svg: "/assets/svg/console.svg",
     },
     {
-        href: "/cours/linux/shell.html",
+        href: "/cours/linux/commands.html",
         tag: "Cours OS Linux CMD",
         text: "Utiliser le terminal sur Linux",
+        svg: "/assets/svg/console.svg",
+    },
+    {
+        href: "/cours/linux/shell.html",
+        tag: "Cours OS Linux CMD",
+        text: "Histoire des shells sur Linux (Bash, korne, C shell, ...)",
         svg: "/assets/svg/console.svg",
     },
     {
