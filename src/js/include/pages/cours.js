@@ -145,7 +145,7 @@ async function CheckPage() {
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/introduction.md', false);
             });
         }
-        else if(pathNameMatchPage("/cours/linux/shell", true)){
+        else if(pathNameMatchPage("/cours/linux/commands", true)){
             await includes();
             await include_script("/src/js/content/markdown.js").then(async () => {
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/man.md', false);
@@ -153,6 +153,12 @@ async function CheckPage() {
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/alias.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/history.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/copy-paste.md', false);
+            });
+        }
+        else if(pathNameMatchPage("/cours/linux/shell", true)){
+            await includes();
+            await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/shell.md', false);
             });
         }
         else if(pathNameMatchPage("/cours/linux/file", true)){
