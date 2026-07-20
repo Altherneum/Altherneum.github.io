@@ -1741,7 +1741,7 @@ let links = [
     },
 */
 
-var tagList = ["IP", "Queryable", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://"];
+var tagList = ["IP", "Queryable", "Google", "Cours", "URL", "Network", "Github", "CMD", ".gg", "Discord", "OpSec", "Crypto", "OS", "Outils", "ReadMe", "RSS", "XML", "Windows", "Web", "IA", "Linux", "Repo", "Jeux", "Admin", "Développement", "://", "video", "music", "film", "anime", "serie"];
 
 function getTagList(maxSize){
     var tagListReturned = [];
