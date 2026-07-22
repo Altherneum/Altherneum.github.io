@@ -177,6 +177,7 @@ async function CheckPage() {
         else if(pathNameMatchPage("/cours/linux/bash", true)){
             await includes();
             await include_script("/src/js/content/markdown.js").then(async () => {
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/echo.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/arithmetique.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/logique.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/variable.md', false);
