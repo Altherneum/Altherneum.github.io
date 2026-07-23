@@ -4611,46 +4611,46 @@ var musicLinks = [
     },
     {
         "videoID": "Ye9hGotPPVk",
-        "category": "todo",
+        "category": "histoire chill rock",
+        "top": true,
         "title": "I'm Still Standing"
     },
     {
         "videoID": "d11xns8lE4w",
-        "category": "todo",
+        "category": "rock histoire",
+        "top": true,
         "title": "Take Me Out"
     },
     {
         "videoID": "8Nt9YPnYyjs",
-        "category": "todo",
+        "category": "asian rock",
         "title": "BOOM - Evil (Official Video)"
     },
     {
-        "videoID": "HeC-C7UtvyM",
-        "category": "todo"
-    },
-    {
         "videoID": "V2AfXNJImSo",
-        "category": "todo",
+        "category": "asian electro rock",
         "title": "PiNKII x DAEGHO - Addict 💞"
     },
     {
         "videoID": "Z6dqIYKIBSU",
-        "category": "todo",
+        "category": "histoire electro chill trool",
+        "top": true,
         "title": "Lipps Inc. - Funkytown (Official Audio)"
     },
     {
         "videoID": "LBPwQgis1PQ",
-        "category": "todo",
+        "category": "moody chill electro",
+        "top": true,
         "title": "Civil War - Happy nation"
     },
     {
         "videoID": "4qGAjgUZwsk",
-        "category": "todo",
+        "category": "trool",
         "title": "NORMAN - ASSASSIN DES TEMPLIERS (ft Squeezie) 4K"
     },
     {
         "videoID": "0CxacijBc8s",
-        "category": "todo",
+        "category": "rap",
         "title": "If We Being Rëal"
     },
     {
@@ -4667,12 +4667,12 @@ var musicLinks = [
     },
     {
         "videoID": "AiosKUO7oqo",
-        "category": "todo",
+        "category": "asian trool",
         "title": "Counting!!"
     },
     {
         "videoID": "AqI97zHMoQw",
-        "category": "todo",
+        "category": "chill moody asian rock",
         "title": "椎名もた(siinamota) - Young Girl A / 少女A"
     },
     {
@@ -4790,7 +4790,7 @@ var musicLinks = [
     },
     {
         "videoID": "Xu3FTEmN-eg",
-        "category": "todo",
+        "category": "rock electro histoire",
         "title": "The Chemical Brothers - Galvanize (Official Music Video)"
     },
     {
@@ -4855,7 +4855,7 @@ var musicLinks = [
     },
     {
         "videoID": "TKGE6B9QqVs",
-        "category": "todo",
+        "category": "rap",
         "title": "💥 [FREE USE] TRAP BEAT - \"DIES IRAE\" SQUID GAME (EL JUEGO DEL CALAMAR/오징어 게임) 2025 | Prod. by Janjay"
     },
     {
@@ -4908,22 +4908,23 @@ var musicLinks = [
     },
     {
         "videoID": "z86nDI0cs8U",
-        "category": "todo",
+        "category": "asian moody rock",
         "title": "【MV】死んだらどこへ行くのかな／まふまふ"
     },
     {
         "videoID": "Gfw9MzP1j2s",
-        "category": "todo",
+        "category": "classic",
         "title": "Symphonie Fantastique in C Major, Op. 14: 5. Songe d'une nuit de sabbat (Live)"
     },
     {
         "videoID": "hcstmG-PUd0",
-        "category": "todo",
+        "category": "electro trool",
         "title": "K.K SLIDER - EEEAAAOOO"
     },
     {
         "videoID": "a2I7DkYMqsE",
-        "category": "todo",
+        "category": "electro trool",
+        "top": true,
         "title": "LEEEAAAOOOST"
     },
     {
@@ -5047,7 +5048,8 @@ var musicLinks = [
     },
     {
         "videoID": "9N8MpjTm534",
-        "category": "todo",
+        "category": "histoire chill moody classic",
+        "top": true,
         "title": "Time To Say Goodbye"
     },
     {
@@ -5100,7 +5102,8 @@ var musicLinks = [
     },
     {
         "videoID": "eNvUS-6PTbs",
-        "category": "todo",
+        "category": "histoire classic chill electro",
+        "top": true,
         "title": "Modern Talking - Cheri Cheri Lady (Official Video)"
     },
     {
@@ -5111,7 +5114,8 @@ var musicLinks = [
     },
     {
         "videoID": "YuGe533mWiA",
-        "category": "todo",
+        "category": "chill histoire",
+        "top": true,
         "title": "Ramalama (Bang Bang)"
     },
     {
@@ -5176,17 +5180,19 @@ var musicLinks = [
     },
     {
         "videoID": "m1G_TMtnXF0",
-        "category": "todo",
+        "category": "rock asian",
+        "top": true,
         "title": "【MV】極楽地獄／After the Rain（そらる×まふまふ）"
     },
     {
         "videoID": "FHDyN7z-PEM",
-        "category": "todo",
+        "category": "rock asian",
+        "top": true,
         "title": "【MV】第３次カラクリ国家計画／After the Rain（そらる×まふまふ）"
     },
     {
         "videoID": "bFoFN9Sbk2w",
-        "category": "todo",
+        "category": "histoire chill rock",
         "title": "K'NAAN - Bang Bang (Official Music Video) ft. Adam Levine"
     },
     {
@@ -5209,42 +5215,49 @@ var musicLinks = [
     },
     {
         "videoID": "ElV8mADN9EI",
-        "category": "todo",
+        "category": "rap moody",
         "title": "Tout seul"
     },
     {
         "videoID": "X9FMvw8V6ZY",
-        "category": "todo",
+        "category": "rock electro phonk",
+        "top": true,
         "title": "Slash Inferno - Teminite x Boom Kitty x Waterflame"
     },
     {
         "videoID": "2p_AxoaHeRw",
-        "category": "todo",
+        "category": "histoire trool",
+        "top": true,
         "title": "Gilbert Montagné - Les sunlights des tropiques (Official Lyric Video)"
     },
     {
         "videoID": "6Jq5VoLtolk",
-        "category": "todo",
+        "category": "moody chill",
+        "top": true,
         "title": "The Hanging Tree (From \"The Hunger Games: Mockingjay\" Soundtrack)"
     },
     {
         "videoID": "sCz5y84dwuA",
-        "category": "todo",
+        "category": "histoire electro",
+        "top": true,
         "title": "Peggy Gou - (It Goes Like) Nanana - Official Video"
     },
     {
         "videoID": "ig58Z5YIcPo",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "DRXG ADXICTION, RAGEIX - I'll die next summer (no joke) [Bass Boosted]"
     },
     {
         "videoID": "6IO74QV6wHY",
-        "category": "todo",
+        "category": "histoire chill jazz",
+        "top": true,
         "title": "Grover Washington Jr. - Just the Two of Us (feat. Bill Withers) (Official Audio)"
     },
     {
         "videoID": "Sz0EGEOYLd8",
-        "category": "todo",
+        "category": "electro chill moody",
+        "top": true,
         "title": "Cat_meow.mp4"
     },
     {
@@ -5271,8 +5284,10 @@ var musicLinks = [
         "title": "THE WINNER"
     },
     {
-        "videoID": "JJjEl_EVsLA",
-        "category": "todo"
+        "videoID": "oQFNHR9U_hU",
+        "top": true,
+        "category": "phonk electro trool",
+        "title": "MONTAGEM MIAU"
     },
     {
         "videoID": "hIzQVlkdcjA",
@@ -5327,9 +5342,16 @@ var musicLinks = [
         "title": "dreamloader - space.info"
     },
     {
-        "videoID": "u6avTb4jul4",
-        "category": "todo",
+        "videoID": "hoe00PVitzU",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "GRAVEYARD HARDTEKK (Slowed Bass Boosted)"
+    },
+    {
+        "videoID": "GJ0CU_n8biM",
+        "category": "phonk hardbass",
+        "top": true,
+        "title": "Graveyard HARDTEKK - ( Ultra Slowed )"
     },
     {
         "videoID": "HZ_9Kqc75Ws",
@@ -5416,8 +5438,15 @@ var musicLinks = [
         "title": "F・L・Y"
     },
     {
-        "videoID": "BBj3SCImk_A",
-        "category": "todo",
+        "videoID": "yK4BqkaVW2w",
+        "category": "phonk hardbass moody",
+        "top": true,
+        "title": "No The Moon HARDTEKK [Bass Boosted + Slowed Perfectly]"
+    },
+    {
+        "videoID": "6xh82wErjQw",
+        "category": "asian chill moody histoire",
+        "top": true,
         "title": "真夜中のドア/Stay With Me"
     },
     {
@@ -5433,9 +5462,14 @@ var musicLinks = [
         "title": "Just A Joke"
     },
     {
-        "videoID": "oVhaYKq8ba8",
-        "category": "todo",
+        "videoID": "Xqdvns1H1Bk",
+        "category": "phonk hardbass",
         "title": "RITMO DO TAMBOR"
+    },
+    {
+        "videoID": "ppCmZcccjnA",
+        "category": "phonk hardbass moody",
+        "title": "MISERY HARDTEKK"
     },
     {
         "videoID": "adtntJCreYE",
@@ -5480,77 +5514,81 @@ var musicLinks = [
     },
     {
         "videoID": "-boDeijWuOY",
-        "category": "todo",
+        "category": "histoire rock",
         "title": "Jean-Jacques Goldman - Quand la musique est bonne (Clip officiel)"
     },
     {
         "videoID": "SMWi7CLoZ2Q",
-        "category": "todo",
+        "category": "trool electro rock",
         "title": "Nom Nom Nom Nom Nom Nom Nom - Parry Gripp"
     },
     {
         "videoID": "kb34AdRZs9o",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Aigle (Clip officiel)"
     },
     {
         "videoID": "DxKpVoSvr7Y",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Pharaon (Clip officiel)"
     },
     {
         "videoID": "KMpadTMVbGw",
-        "category": "todo",
+        "category": "rap trool",
         "title": "ALKPOTE - PYRAMIDES"
     },
     {
         "videoID": "64UKzYb9e_g",
-        "category": "todo",
+        "category": "rap trool",
+        "top": true,
         "title": "Alkpote - Fontaine de jouvence (Clip officiel)"
     },
     {
         "videoID": "jGVjarcm-_U",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Ogre"
     },
     {
         "videoID": "RE3QKkFEDBY",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Belles (Clip officiel)"
     },
     {
         "videoID": "nl51ozt_Fxo",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Ennemi public (Clip officiel)"
     },
     {
         "videoID": "hE4eTaQEIPY",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote, Alonzo - Diana Ross (Clip officiel)"
     },
     {
         "videoID": "DF1i1f0H3qk",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Dilemme (Clip officiel) ft. Mister V"
     },
     {
         "videoID": "tXolkKr7spY",
-        "category": "todo",
+        "category": "rap trool",
         "title": "Alkpote - Chargé feat. Kai Du M (Clip officiel)"
     },
     {
         "videoID": "qDJo6FnwI_8",
-        "category": "todo",
+        "category": "histoire chill moody",
+        "top": true,
         "title": "Cher - Bang Bang (My Baby Shot Me Down) [Official Audio]"
     },
     {
         "videoID": "qgDrpWWxuto",
-        "category": "todo",
+        "category": "histoire chill moody",
+        "top": true,
         "title": "Nancy Sinatra - Bang Bang (My Baby Shot Me Down)"
     },
     {
         "videoID": "4THFRpw68oQ",
-        "category": "todo",
+        "category": "chill histoire electro",
+        "top": true,
         "title": "AJR - BANG! (Official Video)"
     },
     {
@@ -9765,7 +9803,8 @@ var musicLinks = [
     },
     {
         "videoID": "ETecZsoA0jo",
-        "category": "todo",
+        "category": "rap moody histoire electro",
+        "top": true,
         "title": "Stay With Me"
     },
     {
