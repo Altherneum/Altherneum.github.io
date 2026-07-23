@@ -4,7 +4,7 @@ console.warn = function (msg) {
     warnCount++;
     warnMsg = msg;
     statsConsoleInfo(msg, warnCount, "Warn");
-    console.dir(msg);
+    console.trace(msg);
 }
 
 var errorCount = 0;
@@ -13,7 +13,16 @@ console.error = function (msg) {
     errorCount++;
     errorMsg = msg;
     statsConsoleInfo(msg, errorCount, "Error");
-    console.dir(msg);
+    console.trace(msg);
+}
+
+var exceptionCount = 0;
+var exceptionMsg = "";
+console.exception = function (msg) {
+    exceptionCount++;
+    exceptionMsg = msg;
+    statsConsoleInfo(msg, exceptionCount, "Error");
+    console.trace(msg);
 }
 
 var infoCount = 0;
@@ -22,9 +31,19 @@ console.info = function (msg) {
     infoCount++;
     infoMsg = msg;
     statsConsoleInfo(msg, infoCount, "Info");
-    console.dir(msg);
+    console.trace(msg);
 }
 
+var debugCount = 0;
+var debugMsg = "";
+console.debug = function (msg) {
+    debugCount++;
+    debugMsg = msg;
+    statsConsoleInfo(msg, debugCount, "Info");
+    console.trace(msg);
+}
+
+// avoid as it would loop and break script
 /* var traceCount = 0;
 var traceMsg = "";
 console.trace = function (msg) {
@@ -50,11 +69,13 @@ console.dir = function (msg) {
     dirCount++;
     dirMsg = msg;
     statsConsoleInfo(msg, dirCount, "Dir");
+    console.trace(msg);
 }
 
 var messages;
 async function statsConsoleInfo(msg, count, text) {
     if (msg === undefined) {
+        console.trace("msg=" + msg);
         msg = "...";
     }
     if (count === undefined) {
@@ -62,6 +83,7 @@ async function statsConsoleInfo(msg, count, text) {
     }
 
     if (text === undefined) {
+        console.trace("text" + text);
         text = "ErrorType";
     }
 
@@ -140,19 +162,6 @@ function SendToLog(text, textOutput) {
         console.trace("WebHook failed : " + error);
     }
 }
-
-/* async function GetData(text) {
-    // Utilise userAgentData si disponible, sinon fallback sur userAgent
-    const uaData = navigator.userAgentData;
-    const platform = uaData ? uaData.platform : navigator.platform;
-    const brands = uaData ? await uaData.getHighEntropyValues(['brands', 'mobile']).then(data => data) : { brands: [], mobile: false };
-
-    const brand = brands.brands?.[1]?.brand || "Unknown";
-    const mobile = brands.mobile || /Android|iPhone/i.test(navigator.userAgent);
-    const ip = await getUserIP();
-
-    sendToWebHook("1332057163564191974", "O34H4kQUU35omVFuEs1JBqiFh9d4G2uUlLFeOl5lpdL2vjfqhCJ9zHpr3XnfjvgJmdd2", "⬆️\n\n\n` " + ip + " ` sur ` " + getShortPathname() + " `\nSur ` " + platform + " ` ` " + navigator.vendor + "/" + brand + " ` ` lang:" + navigator.language + " ` ` mobile:" + mobile + " `\n` " + window.navigator.userAgent + " `\n```\n" + text + "```\n\n⬇️", "POST");
-} */
 
 async function GetData(text) {
     let message = "";
