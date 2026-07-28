@@ -1457,7 +1457,7 @@ var filmLinks = [
     },
 ];
 
-var FilmListType = ["todo", "film", "animes", "series", "towatch"];
+var FilmListType = ["todo", "film", "animes", "series", "to-watch"];
 
 function getVideoListType(){
     return FilmListType;
@@ -1481,7 +1481,7 @@ function getEmoji(FilmListType){
             return "🖌";
         case 'series':
             return "📽";
-        case 'towatch':
+        case 'to-watch':
             return "👀";
         default:
             return "❓";
