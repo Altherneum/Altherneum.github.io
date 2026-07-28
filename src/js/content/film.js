@@ -1040,12 +1040,16 @@ function showFilm(categorie){
 
             let div = document.createElement("div");
 
+            let anchor = document.createElement("a");
             let imgTop = document.createElement("img");
             let a = document.createElement("a")
             let img = document.createElement("img");
             let text = document.createElement("p");
 
             div.className = "card " + getNote(filmLinks[link].note);
+
+            anchor.href = "#" + filmID;
+            anchor.class = filmID;
 
             imgTop.className = "svg";
 
