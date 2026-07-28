@@ -1032,7 +1032,9 @@ function getEmoji(FilmListType){
       }
 }
 
-function showFilm(categorie){
+async function showFilm(categorie){
+    await include_script("/src/js/content/auto-scroll.js");
+
     let mainDiv = document.getElementsByClassName("filmsID");
     for(link in filmLinks){
         if(filmLinks[link].category === categorie){
@@ -1049,7 +1051,9 @@ function showFilm(categorie){
             div.className = "card " + getNote(filmLinks[link].note);
 
             anchor.href = "#" + filmLinks[link].filmID;
-            anchor.class = filmLinks[link].filmID;
+            anchor.id = filmLinks[link].filmID;
+            anchor.innerHTML = "#"
+            anchor.onclick  = () => { autoScroll(true, "center");}
 
             imgTop.className = "svg";
 
@@ -1061,6 +1065,7 @@ function showFilm(categorie){
             text.innerHTML = filmLinks[link].description;
 
             div.appendChild(imgTop);
+            div.appendChild(anchor);
             div.appendChild(a);
             div.appendChild(img);
             div.appendChild(text);
@@ -1068,6 +1073,8 @@ function showFilm(categorie){
             mainDiv[0].appendChild(div);
         }
     }
+
+    autoScroll(true, "center");
 }
 
 function getNote(note){
