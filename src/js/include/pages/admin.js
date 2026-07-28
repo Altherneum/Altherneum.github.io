@@ -5,7 +5,7 @@ async function CheckPage() {
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/film.html", "contentArticle", true);
-        await include_script("/src/html/content/films.js").then(async () => {showFilm("film");});
+        await include_script("/src/js/content/film.js").then(async () => {showFilm("film");});
     }
 
     else if (pathNameMatchPage("/admin/animes", true)) {
@@ -13,8 +13,8 @@ async function CheckPage() {
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/animes.html", "contentArticle", true);
-        await include_script("/src/html/content/films.js")
-        await include_script("/src/html/content/films.js").then(async () => {showFilm("animes");});
+
+        await include_script("/src/js/content/film.js").then(async () => {showFilm("animes");});
     }
 
     else if (pathNameMatchPage("/admin/series", true)) {
@@ -22,8 +22,8 @@ async function CheckPage() {
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/series.html", "contentArticle", true);
-        await include_script("/src/html/content/films.js")
-        await include_script("/src/html/content/films.js").then(async () => {showFilm("series");});
+
+        await include_script("/src/js/content/film.js").then(async () => {showFilm("series");});
     }
 
     else if (pathNameMatchPage("/admin/to-watch", true)) {
@@ -31,8 +31,8 @@ async function CheckPage() {
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/to-watch.html", "contentArticle", true);
-        await include_script("/src/html/content/films.js")
-        await include_script("/src/html/content/films.js").then(async () => {showFilm("towatch");});
+
+        await include_script("/src/html/content/film.js").then(async () => {showFilm("towatch");});
     }
 
     else if (pathNameMatchPage("/admin/music", true)) {

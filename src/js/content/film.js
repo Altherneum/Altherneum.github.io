@@ -44,7 +44,7 @@ var filmLinks = [
         "category": "film",
         "note": "love",
         "title": "V pour vendetta",
-        "description": "Dans un futur tyrannique en Grande Bretagne, un défenseur de la liberté ténébreux connu uniquement sous le pseudonyme de ""V"" complote pour renverser le régime avec l'aide d'une jeune femme.",
+        "description": "Dans un futur tyrannique en Grande Bretagne, un défenseur de la liberté ténébreux connu uniquement sous le pseudonyme de \"\"V\"\" complote pour renverser le régime avec l'aide d'une jeune femme.",
         "imageURL": "",
     },
     {
