@@ -29,8 +29,7 @@ async function CheckPage() {
 
         await include_css("/src/css/film.css");
         await include_html("/src/html/content/to-watch.html", "contentArticle", true);
-
-        await include_script("/src/html/content/film.js").then(async () => {showFilm("towatch");});
+        await include_script("/src/html/content/film.js").then(async () => {await showFilm("towatch");});
     }
 
     else if (pathNameMatchPage("/admin/music", true)) {
