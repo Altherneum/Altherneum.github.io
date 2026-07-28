@@ -1048,8 +1048,8 @@ function showFilm(categorie){
 
             div.className = "card " + getNote(filmLinks[link].note);
 
-            anchor.href = "#" + filmID;
-            anchor.class = filmID;
+            anchor.href = "#" + filmLinks[link].filmID;
+            anchor.class = filmLinks[link].filmID;
 
             imgTop.className = "svg";
 
