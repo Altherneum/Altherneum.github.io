@@ -9544,11 +9544,6 @@ var musicLinks = [
         "title": "Can You Feel My Heart"
     },
     {
-        "videoID": "hoe00PVitzU",
-        "category": "todo",
-        "title": "GRAVEYARD (HARDTEKK) (Slowed Viral Edit)"
-    },
-    {
         "videoID": "INruIVWqgLo",
         "category": "todo",
         "title": "ニートな午後3時"
@@ -12711,11 +12706,6 @@ var musicLinks = [
         "videoID": "J9T-a8JXGfA",
         "category": "todo",
         "title": "REMASTERED Sunshine, Lollipops, Rainbows Lesley Gore TRUE 1965 STEREO HiQ Hybrid JARichardsFilm"
-    },
-    {
-        "videoID": "YTVzWyTGp3U",
-        "category": "todo",
-        "title": "Sunshine, Lollipops and Rainbows (Rerecorded)"
     },
     {
         "videoID": "4cNSZflcqMI",
