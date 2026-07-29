@@ -12569,7 +12569,123 @@ var musicLinks = [
         "videoID": "cV9mMLDKIbI",
         "category": "todo",
         "title": "I Need A Dollar"
-    }
+    },
+    {
+        "videoID": "SrG0MqI8vYM",
+        "category": "long chill",
+    },
+    {
+        "videoID": "KzDqIaT21po",
+        "category": "todo",
+    },
+    {
+        "videoID": "Y2HRMyFpy4E",
+        "category": "todo",
+    },
+    {
+        "videoID": "jcIIun-uuSk",
+        "category": "todo",
+    },
+    {
+        "videoID": "CH_ykP4CiVM",
+        "category": "todo",
+    },
+    {
+        "videoID": "uX15lRSkibY",
+        "category": "todo",
+    },
+    {
+        "videoID": "snxjq59OgqU",
+        "category": "todo",
+    },
+    {
+        "videoID": "tjeDRdVhBQM",
+        "category": "todo",
+    },
+    {
+        "videoID": "lrU0a0E999w",
+        "category": "todo",
+    },
+    {
+        "videoID": "x0D6CGOttoc",
+        "category": "todo",
+    },
+    {
+        "videoID": "CwWfQ4LTTDQ",
+        "category": "todo",
+    },
+    {
+        "videoID": "SGo4ojeJPSo",
+        "category": "todo",
+    },
+    {
+        "videoID": "4IGSijtceGY",
+        "category": "todo",
+    },
+    {
+        "videoID": "vcjISydJWe8",
+        "category": "todo",
+    },
+    {
+        "videoID": "NSZxh0EAwNg",
+        "category": "todo",
+    },
+    {
+        "videoID": "1IbF0aiGEs4",
+        "category": "todo",
+    },
+    {
+        "videoID": "zlt1lYV8rvo",
+        "category": "todo",
+    },
+    {
+        "videoID": "CCRoZ3hc7WU",
+        "category": "todo",
+    },
+    {
+        "videoID": "Kt4muNgFCMw",
+        "category": "todo",
+    },
+    {
+        "videoID": "LfX6JxfND44",
+        "category": "todo",
+    },
+    {
+        "videoID": "lSD_L-xic9o",
+        "category": "todo",
+    },
+    {
+        "videoID": "BA4rSO-h9Io",
+        "category": "todo",
+    },
+    {
+        "videoID": "lcOxhH8N3Bo",
+        "category": "todo",
+    },
+    {
+        "videoID": "csZTPVCLHyk",
+        "category": "todo",
+    },
+    {
+        "videoID": "7YvAYIJSSZY",
+        "category": "todo",
+    },
+    {
+        "videoID": "YQh29RvWb7o",
+        "category": "todo",
+    },
+    {
+        "videoID": "atY7ymXAcRQ",
+        "category": "todo",
+    },
+    {
+        "videoID": "J9T-a8JXGfA",
+        "category": "todo",
+    },
+    {
+        "videoID": "YTVzWyTGp3U",
+        "category": "todo",
+    },
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
