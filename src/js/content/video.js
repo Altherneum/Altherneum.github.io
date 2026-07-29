@@ -5106,7 +5106,7 @@ var videoLinks = [
     {
         "videoID": "R9OHn5ZF4Uo",
         "category": "todo",
-        "title": "The People Who Built AI Can't Explain It"
+        "title": "AI Doesn't Know Anything. It Just Passes Tests."
     },
     {
         "videoID": "Cn5E9EI8PgQ",
@@ -6095,7 +6095,7 @@ var videoLinks = [
     {
         "videoID": "kpC-L4748Nc",
         "category": "todo",
-        "title": "La course folle pour créer un dieu | Documentaire IA"
+        "title": "La course folle pour créer un dieu | Documentaire IA - Superintelligence"
     },
     {
         "videoID": "kw2J74iLgEQ",
@@ -6335,7 +6335,7 @@ var videoLinks = [
     },
     {
         "videoID": "Q9uR4b-ifoM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "k3C518_O59c",
@@ -6374,7 +6374,7 @@ var videoLinks = [
     },
     {
         "videoID": "tMw5cx6o1Gk",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "6qs9yKGGfxM",
@@ -6483,7 +6483,7 @@ var videoLinks = [
     },
     {
         "videoID": "vqZwIeFcKyA",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "8YwLKJn5GgM",
@@ -6532,7 +6532,7 @@ var videoLinks = [
     },
     {
         "videoID": "AHPkl0CypaM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "GhyvCq8drO0",
@@ -6551,15 +6551,15 @@ var videoLinks = [
     },
     {
         "videoID": "_uLQm7nfmPk",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "NO9Ca9dgmME",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "X6jjltApu9M",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "Upi8KFu9jXc",
@@ -6868,7 +6868,7 @@ var videoLinks = [
     },
     {
         "videoID": "FssFCtEkIpQ",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "C6GIqMn9iwQ",
@@ -6957,19 +6957,19 @@ var videoLinks = [
     },
     {
         "videoID": "",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "PF2TjY06nzc",
@@ -7509,7 +7509,8 @@ var videoLinks = [
     {
         "videoID": "P9CdhMNMjRI",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Komsomolets : d’arme soviétique secrète… à \"menace radioactive\" ?"
     },
     {
         "videoID": "4WyduoGpIPo",
@@ -8154,7 +8155,8 @@ var videoLinks = [
     {
         "videoID": "RnqZrpaBwik",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Ta vie est déjà en vente sur le dark web"
     },
     {
         "videoID": "biiCMLt-K44",
@@ -8474,7 +8476,7 @@ var videoLinks = [
     {
         "videoID": "XH32psFPxao",
         "category": "todo",
-        "title": "The Worlds Deadliest Hackers"
+        "title": "The Hackers Keeping North Korea Alive"
     },
     {
         "videoID": "s5Aaur9Unew",
@@ -8484,7 +8486,7 @@ var videoLinks = [
     {
         "videoID": "SdppM8HakE0",
         "category": "todo",
-        "title": "The Spy Who Outsmarted Putin for 10 Years"
+        "title": "The Man Who Took Down EVERY Russian Spy in America"
     },
     {
         "videoID": "E0A7IrJtpUY",
@@ -8854,7 +8856,7 @@ var videoLinks = [
     {
         "videoID": "LbKY1O-WLTk",
         "category": "todo",
-        "title": "The Time Two Hackers Got Windows on the Mac Before Apple"
+        "title": "The Time Two Hackers Got Windows on the Mac Before Apple | Tech History"
     },
     {
         "videoID": "NfvxE5rUFF0",
@@ -8869,7 +8871,7 @@ var videoLinks = [
     {
         "videoID": "E9OmDr1HZ_M",
         "category": "todo",
-        "title": "Hunting Americas Most Wanted Hacker"
+        "title": "Americas Most Wanted Phreaker"
     },
     {
         "videoID": "HAyC41-EIz4",
@@ -9159,7 +9161,8 @@ var videoLinks = [
     {
         "videoID": "jFFVzcmPN48",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Le jour où leboncoin a débranché le mauvais câble"
     },
     {
         "videoID": "gYv7D83u7yQ",
@@ -9579,373 +9582,461 @@ var videoLinks = [
     {
         "videoID": "tgfVAZT5EeE",
         "category": "todo",
+        "title": "La Machine la Plus Importante du Monde"
     },
     {
         "videoID": "-88gim3ws4A",
         "category": "todo",
+        "title": "Can My ISP See I’m Using a VPN?"
     },
     {
         "videoID": "gWfKTfOxhvE",
         "category": "todo",
         "short": true,
+        "title": "DeepSeek vient de résoudre le problème à 1 milliard de l’IA"
     },
     {
         "videoID": "8r2W1EkChWQ",
         "category": "todo",
+        "title": "He Found a Loophole in the Code and Legally Stole $50M From Crypto Developer"
     },
     {
         "videoID": "YP73B9D20V4",
         "category": "todo",
+        "title": "Open-weight AI just hit 2.8 trillion parameters…"
     },
     {
         "videoID": "W9wrpuYE9Yk",
         "category": "todo",
+        "title": "Oracle : L'empire privé qui détient 99% de nos données"
     },
     {
         "videoID": "pCj0Pc0vay0",
         "category": "todo",
+        "title": "The Kid Who Took Down World's Biggest Companies"
     },
     {
         "videoID": "Tu0hAaKPxbE",
         "category": "todo",
+        "title": "L’ado qui a volé 230 millions de dollars"
     },
     {
         "videoID": "AfE_1HIf5tY",
         "category": "todo",
         "short": true,
+        "title": "POV: When a new JS module deprecates"
     },
     {
         "videoID": "zGGVVxY1uns",
         "category": "todo",
+        "title": "Comment un Français a remplacé Palantir (ChapsVision)"
     },
     {
         "videoID": "6mWSV_ju7X8",
         "category": "todo",
+        "title": "Apple ACCUSE OpenAI de vol !"
     },
     {
         "videoID": "RIqpXiedS0E",
         "category": "todo",
+        "title": "Le hacker qui a trahi le FBI… pour monter un empire du crime"
     },
     {
         "videoID": "PPJ6NJkmDAo",
         "category": "todo",
+        "title": "How easy is it to steal $10,000 from a locked phone?"
     },
     {
         "videoID": "EG8kfPy1uuU",
         "category": "todo",
+        "title": "4 ÉTAPES pour DISPARAÎTRE d'Internet 🌐😶‍🌫️"
     },
     {
         "videoID": "D0pw2Vn5JL4",
         "category": "todo",
         "short": true,
+        "title": "PDF en ligne : ton fichier part sur un serveur inconnu #OpenSource"
     },
     {
         "videoID": "1UX_iTdrtbc",
         "category": "todo",
+        "title": "The Untold Story of SSH"
     },
     {
         "videoID": "T9FS68Jz3NQ",
         "category": "todo",
+        "title": "L’ado traqué par le FBI pour 1 mail (100M$)"
     },
     {
         "videoID": "yjq8kCi2ocU",
         "category": "todo",
+        "title": "The Minecraft Kid Who Stole $100,000,000+ In Crypto"
     },
     {
         "videoID": "1GtNlsXakts",
         "category": "todo",
+        "title": "The $40,000,000 US Government Hacker"
     },
     {
         "videoID": "Yhdhr9WaVf0",
         "category": "todo",
         "short": true,
+        "title": "16 millions de CV en vente sur le dark web #Arnaque"
     },
     {
         "videoID": "HPfOYc4wY3s",
         "category": "todo",
+        "title": "Vibe Hacking is here"
     },
     {
         "videoID": "kVQfwL2ZMkQ",
         "category": "todo",
+        "title": "Do NOT Trust Your Friends on Discord."
     },
     {
         "videoID": "BkOmhCuKal4",
         "category": "todo",
+        "title": "How CIA’s Hacking Tools Were Leaked"
     },
     {
         "videoID": "4JWI-47tWeA",
         "category": "todo",
+        "title": "This Linux Backdoor Refuses to Die"
     },
     {
         "videoID": "UMMfJ4au1o4",
         "category": "todo",
+        "title": "Inside one of the world’s most efficient Data Centers"
     },
     {
         "videoID": "T7KHEXX2tA0",
         "category": "todo",
+        "title": "Le hacker qui contrôlait les réseaux de l'Armée française"
     },
     {
         "videoID": "L7UyFrHbY7A",
         "category": "todo",
+        "title": "Your Life as Every Level of a Crypto Rug-Puller"
     },
     {
         "videoID": "O8Kosae5eQQ",
         "category": "todo",
+        "title": "How I Made TempleRun in Gods Operating System (TempleOS)"
     },
     {
         "videoID": "Wm8ObO8XVSY",
         "category": "todo",
+        "title": "This Guy Stole 2,000,000 Credit Cards"
     },
     {
         "videoID": "8KSnZ_M5zvo",
         "category": "todo",
+        "title": "4 MISES à JOUR qui vous ont INFECTÉ"
     },
     {
         "videoID": "AkpRb8ENcrc",
         "category": "todo",
+        "title": "Les pièces PC que tu ne pourras jamais acheter !"
     },
     {
         "videoID": "81M62lI4mhc",
         "category": "todo",
+        "title": "\"I'm doing my part!\" [CLIP] | Starship Troopers (1997) | TNT"
     },
     {
         "videoID": "xIk0_uFV-rU",
         "category": "todo",
+        "title": "Interview with Cloud Architect in 2025"
     },
     {
         "videoID": "xP1KEIqF_BM",
         "category": "todo",
+        "title": "Interview with Computer Security Trainer"
     },
     {
         "videoID": "40SnEd1RWUU",
         "category": "todo",
+        "title": "‘Just use a VPS bro' (OpenClaw version)."
     },
     {
         "videoID": "-B18Ump18l0",
         "category": "todo",
+        "title": "La chute du plus grand hacker de cartes bleues"
     },
     {
         "videoID": "KOpTWx1Eou4",
         "category": "todo",
+        "title": "The most interesting \"hack\" in history..."
     },
     {
         "videoID": "rYUItp5ykvg",
         "category": "todo",
+        "title": "Normalement, ChatGPT ne devrait pas pouvoir faire ça"
     },
     {
         "videoID": "qiOtinFFfk8",
         "category": "todo",
+        "title": "I made my own Web"
     },
     {
         "videoID": "Rj8aq0ZmVaM",
         "category": "todo",
         "short": true,
+        "title": "System Design: Free Trial Abuse Prevention"
     },
     {
         "videoID": "RIaD63yzVYc",
         "category": "todo",
         "short": true,
+        "title": "Netflix Doesn't Stream From California"
     },
     {
         "videoID": "MMcw25O3qFI",
         "category": "todo",
         "short": true,
+        "title": "Here's Why Hard Drives Get Slower"
     },
     {
         "videoID": "24K8bRRlu5s",
         "category": "todo",
+        "title": "La véritable histoire des Anonymous"
     },
     {
         "videoID": "Sjo40en9Hns",
         "category": "todo",
+        "title": "L’histoire du plus grand mystère d’Internet"
     },
     {
         "videoID": "h8qfiE6XXeA",
         "category": "todo",
+        "title": "Le hacker le plus recherché des États-Unis"
     },
     {
         "videoID": "Xqszxa00eUg",
         "category": "todo",
+        "title": "La cyber-armée secrète de Corée du Nord"
     },
     {
         "videoID": "5Ydkg8Ea9Ik",
         "category": "todo",
+        "title": "Le prodige qui a détruit Sony"
     },
     {
         "videoID": "bBOHFnOoBaY",
         "category": "todo",
         "short": true,
+        "title": "I Logged Into Windows With This"
     },
     {
         "videoID": "94VRen5SdEY",
         "category": "todo",
+        "title": "Le Mensonge de ChatGPT à 1 000 Milliards de Dollars"
     },
     {
         "videoID": "3xdrGrFas4U",
         "category": "todo",
         "short": true,
+        "title": "Rust vient d'entrer dans le top 10 mondial des langages #Linux #DevTips"
     },
     {
         "videoID": "Q0pQk3Xw0RA",
         "category": "todo",
+        "title": "3 Most Popular Types of VPN Obfuscation (& 3 Reasons NOT to Use Them)"
     },
     {
         "videoID": "82PSZ4aGDZ4",
         "category": "todo",
+        "title": "Gabe Newell Hunted The Kid Who Hacked Steam"
     },
     {
         "videoID": "R7HxN6qj7cE",
         "category": "todo",
+        "title": "One Disc Took Down 77 Million PlayStations"
     },
     {
         "videoID": "jEluW-OANUE",
         "category": "todo",
+        "title": "La CHUTE du PLUS GROS SITE du DARK WEB 🏴‍☠️"
     },
     {
         "videoID": "TNe9-RWiqD8",
         "category": "todo",
+        "title": "Le SITE PIRATE que PERSONNE n'a jamais pu arrêter."
     },
     {
         "videoID": "T4eSn9YEVL8",
         "category": "todo",
+        "title": "50 jours pour détruire Internet"
     },
     {
         "videoID": "o0JvgIohYt4",
         "category": "todo",
+        "title": "Détruire l'informatique française par le feu - CLODO"
     },
     {
         "videoID": "Wm8ObO8XVSY",
         "category": "todo",
+        "title": "This Guy Stole 2,000,000 Credit Cards"
     },
     {
         "videoID": "v-rHH8Zezqs",
         "category": "todo",
+        "title": "He Bought the Password for $10. It Cost 10 Years."
     },
     {
         "videoID": "tCP5Z70Zvbw",
         "category": "todo",
+        "title": "Comment Wankil a été hack sans mot de passe ni 2FA"
     },
     {
         "videoID": "mtvgz1-bOXY&t=58s",
         "category": "todo",
+        "title": "Le Scandale de l'affaire Pegasus"
     },
     {
         "videoID": "jwbuGRE5yeA",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "KkEMzsZG06Q",
         "category": "todo",
+        "title": "Comment se protéger des fuites de données (avant qu'il soit trop tard)"
     },
     {
         "videoID": "iLz5FanLoUA",
         "category": "todo",
         "short": true,
+        "title": "What Happens When I Tap A Credit Card?"
     },
     {
         "videoID": "fbazZX0PGK4",
         "category": "todo",
         "short": true,
+        "title": "FFmpeg : une faille sur tes vidéos AVI (PixelSmash) #Cybersécurité"
     },
     {
         "videoID": "013au5W9ljM",
         "category": "todo",
         "short": true,
+        "title": "Ce logiciel gratuit détecte les pirates avant Splunk #Sysadmin"
     },
     {
         "videoID": "j88WTh9EBmA",
         "category": "todo",
+        "title": "How 600,000 Webcams Took Down the Internet (Mirai Botnet)"
     },
     {
         "videoID": "SkAZZxEvgsc",
         "category": "todo",
+        "title": "The Man Who Outsmarted EVERY Government"
     },
     {
         "videoID": "0XAgBq4kcdM",
         "category": "todo",
+        "title": "The Man Who Made Everything on the Internet Free"
     },
     {
         "videoID": "enrCS8E3hsM",
         "category": "todo",
+        "title": "The Man Who Tried to Unmask Anonymous"
     },
     {
         "videoID": "PmtFtWVrxFE",
         "category": "todo",
+        "title": "The Kids Who Hacked The CIA"
     },
     {
         "videoID": "LZkl0_9xFOU",
         "category": "todo",
+        "title": "The Kids Who Hacked Xbox"
     },
     {
         "videoID": "PmtFtWVrxFE",
         "category": "todo",
+        "title": "The Kids Who Hacked The CIA"
     },
     {
         "videoID": "No_GwRsgnDo",
         "category": "todo",
+        "title": "The Rapper Behind The $4.5 Billion Bitfinex Hack"
     },
     {
         "videoID": "I4EWvMFj37g",
         "category": "todo",
+        "title": "Bash in 100 Seconds"
     },
     {
         "videoID": "z__8QXXKmjE",
         "category": "todo",
+        "title": "What this \"Fixed Version\" is really doing?"
     },
     {
         "videoID": "pZiG8r-diTM",
         "category": "todo",
+        "title": "Mullvad Hides VPN Traffic Inside HTTPS With QUIC Obfuscation"
     },
     {
         "videoID": "C1pWsjVb9I8",
         "category": "todo",
         "short": true,
+        "title": "Your 32GB of RAM Is a Lie"
     },
     {
         "videoID": "pnrjTjuX9Hk",
         "category": "todo",
+        "title": "The Hacker Who Took Down North Korea"
     },
     {
         "videoID": "pxvd1YOMGxU",
         "category": "todo",
+        "title": "He Stole $3.4 BILLION - But Made One Mistake"
     },
     {
         "videoID": "YaTVlw8c2dE",
         "category": "todo",
+        "title": "Hunting The Dark Web's King of Ransomware"
     },
     {
         "videoID": "tJ-TsrK6SuY",
         "category": "todo",
+        "title": "Catching a Genius Hacker | The Mt. Gox Documentary"
     },
     {
         "videoID": "L-n4ZvCJTd8",
         "category": "todo",
+        "title": "The 15 Year Old Kid Who Stole $60,000"
     },
     {
         "videoID": "ndZKLjvLZiQ",
         "category": "todo",
+        "title": "I Investigated Today's Most Powerful Hacking Groups"
     },
     {
         "videoID": "wYpEODFNd3w",
         "category": "todo",
         "short": true,
+        "title": "Une IA a raté une attaque, puis s'est corrigée seule #Hacking"
     },
     {
         "videoID": "u_wLv6cHBg8",
         "category": "todo",
+        "title": "Why Every Hacker Needs to Know JavaScript"
     },
     {
         "videoID": "zZ5-KVDIaPg",
         "category": "todo",
+        "title": "Haskell is DONE"
     },
     {
         "videoID": "ySLPB9yT1SA",
         "category": "todo",
+        "title": "The FBI's Hunt to Destroy a Hero Hacker"
     },
     {
         "videoID": "kl6rsi7BEtk",
         "category": "todo",
-    },
+        "title": "NCIS ridiculous hacking scene: one keyboard, two typists HD"
+    }
 ];
 
 var VideoListType = ["todo", "politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
