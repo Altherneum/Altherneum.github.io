@@ -9619,6 +9619,12 @@ var videoLinks = [
     {
         "videoID": "zMr7I6yjsjc",
         "category": "hack game IT"
+    },
+    {
+        "videoID": "qCLHcHbdO84",
+        "category": "hardware science IT",
+        "top": true,
+        "short": true
     }
 ];
 
