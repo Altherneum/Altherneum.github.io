@@ -12730,6 +12730,12 @@ var musicLinks = [
         "category": "phonk hardbass",
         "top": true,
         "title": "PSL 2 (Super Slowed)"
+    },
+    {
+        "videoID": "sbYcPkJcl2k",
+        "category": "hardbass electro",
+        "top": true,
+        "title": "Hellfire"
     }
 ];
 
