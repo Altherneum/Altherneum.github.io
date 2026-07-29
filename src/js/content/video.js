@@ -9596,6 +9596,14 @@ var videoLinks = [
         "videoID": "kl6rsi7BEtk",
         "category": "todo",
         "title": "NCIS ridiculous hacking scene: one keyboard, two typists HD"
+    },
+    {
+        "videoID": "H00UfldbbHg",
+        "category": "todo"
+    },
+    {
+        "videoID": "15MaSayc28c",
+        "category": "todo"
     }
 ];
 
