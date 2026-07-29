@@ -65,11 +65,6 @@ var videoLinks = [
         "title": "Hacking Knowledge"
     },
     {
-        "videoID": "L7dnmHnJbww",
-        "category": "science IT hack hardware",
-        "top": true
-    },
-    {
         "videoID": "THtsXAewIVc",
         "category": "science IT politique code",
         "top": true,
@@ -699,12 +694,6 @@ var videoLinks = [
         "title": "Le jeu vidéo capable de prédire l'avenir."
     },
     {
-        "videoID": "bdmmkwoketM",
-        "category": "science IT",
-        "short": true,
-        "title": "The OLDEST websites EVER 👩‍💻 #technology #programmer #softwareengineer #coding #software #tech"
-    },
-    {
         "videoID": "nNK4jmekiQE",
         "category": "code IT science",
         "short": true,
@@ -900,7 +889,8 @@ var videoLinks = [
     },
     {
         "videoID": "dS01AoUF1xo",
-        "category": "hack malware OpSec code IT science police"
+        "category": "hack malware OpSec code IT science police",
+        "short": true
     },
     {
         "videoID": "BAsD84K6eeQ",
@@ -2498,10 +2488,6 @@ var videoLinks = [
         "title": "Every Hacking Technique Explained in 18 Minutes"
     },
     {
-        "videoID": "zKfdjsK7VAI",
-        "category": "todo"
-    },
-    {
         "videoID": "6d5JgDnw4-k",
         "category": "todo",
         "title": "8-bit CPU using only logic gates!"
@@ -2531,11 +2517,6 @@ var videoLinks = [
         "videoID": "dw-z10LNtm0",
         "category": "todo",
         "title": "Can Tor's Problems Be Fixed?"
-    },
-    {
-        "videoID": "uHnE6ZkSBh4",
-        "category": "todo",
-        "title": "Les Hackers qui en Savaient Trop."
     },
     {
         "videoID": "g-xEUgG3yUo",
@@ -2746,11 +2727,6 @@ var videoLinks = [
         "videoID": "91aH8jsG4cc",
         "category": "todo",
         "title": "OpenAI just made your entire tech stack obsolete..."
-    },
-    {
-        "videoID": "3f8ohjxHVmw",
-        "category": "todo",
-        "title": "How a Billion-Dollar Cambodian Cybercrime Empire Was Built"
     },
     {
         "videoID": "2vEl_fqzVKQ",
@@ -3219,11 +3195,6 @@ var videoLinks = [
         "title": "I Live 500 Feet From A Bitcoin Mine. My Life Is Hell."
     },
     {
-        "videoID": "gol_p2aWrJg",
-        "category": "todo",
-        "title": "The Underground Clocks of Paris"
-    },
-    {
         "videoID": "4-ntrSfzlBQ",
         "category": "todo",
         "title": "Every Money Laundering Tactic Explained In 27 Minutes"
@@ -3368,11 +3339,6 @@ var videoLinks = [
         "videoID": "565fkoevF0Y",
         "category": "todo",
         "title": "La VRAIE raison du crash d'AWS"
-    },
-    {
-        "videoID": "HauQtcj7UTM",
-        "category": "todo",
-        "title": "The Dumb Design of Modern Cars"
     },
     {
         "videoID": "HIp8sFB2GGw",
@@ -3577,11 +3543,6 @@ var videoLinks = [
         "videoID": "8VLovd9bS5U",
         "category": "todo",
         "title": "The Age of Laser Warfare Has Begun"
-    },
-    {
-        "videoID": "remIZ_3iIfw",
-        "category": "todo",
-        "title": "EVERYTHING Is Backdoored. By Default."
     },
     {
         "videoID": "vnjYMB4MLb0",
@@ -3881,10 +3842,6 @@ var videoLinks = [
         "category": "todo"
     },
     {
-        "videoID": "9YRk_7pYWXo",
-        "category": "todo"
-    },
-    {
         "videoID": "vtQM2e3F7aM",
         "category": "todo",
         "title": "La guerre secrète pour le contrôle de World of Warcraft"
@@ -3931,11 +3888,6 @@ var videoLinks = [
         "title": "chatbot conversation context can be inferred through encryption"
     },
     {
-        "videoID": "abM15phTCnE",
-        "category": "todo",
-        "title": "CPF : Arnaques, harcèlement téléphonique… et zone grise - Enquête"
-    },
-    {
         "videoID": "sXwDrcd1t-E",
         "category": "todo",
         "title": "This ESP32 Antenna Array Can See WiFi"
@@ -3949,16 +3901,6 @@ var videoLinks = [
         "videoID": "a0XeysQmSlw",
         "category": "todo",
         "title": "I Built a Paper Katana (it's lethal)"
-    },
-    {
-        "videoID": "illzZ1-xvg8",
-        "category": "todo",
-        "title": "Payer par téléphone est-il dangereux ? (analyse technique 🤓)"
-    },
-    {
-        "videoID": "SKwEkMrG-8A",
-        "category": "todo",
-        "title": "La première vraie faille d'Internet"
     },
     {
         "videoID": "06Krk8MFN3s",
@@ -5175,12 +5117,6 @@ var videoLinks = [
         "title": "C++ pointers in under two minutes #cpp #programming #code #coding"
     },
     {
-        "videoID": "jo6U429l3JM",
-        "category": "todo",
-        "short": true,
-        "title": "1 TRILLION messages #javascript #python #web #coding #programming"
-    },
-    {
         "videoID": "ga8WOONU12k",
         "category": "todo",
         "short": true,
@@ -5365,12 +5301,6 @@ var videoLinks = [
         "category": "todo",
         "short": true,
         "title": "Stop using rgba() and hsla()"
-    },
-    {
-        "videoID": "GqKgFdk0PfE",
-        "category": "todo",
-        "short": true,
-        "title": "The FUNNIEST Comments left in code 💻💀 #developer #softwaredeveloper #technology #tech #code"
     },
     {
         "videoID": "8pD8BmvWAVg",
@@ -5790,11 +5720,6 @@ var videoLinks = [
         "title": "The Underground Clocks of Paris"
     },
     {
-        "videoID": "m7_WDzPyoqU",
-        "category": "todo",
-        "title": "I Live 500 Feet From A Bitcoin Mine. My Life Is Hell."
-    },
-    {
         "videoID": "oOce8EHCWOI",
         "category": "todo",
         "title": "Les PARADOXES qui défient la LOGIQUE !"
@@ -5873,11 +5798,6 @@ var videoLinks = [
         "videoID": "kSQXneTgMig",
         "category": "todo",
         "title": "J'ai exploré le void de Minecraft jusqu'à l'infini"
-    },
-    {
-        "videoID": "_LiZWbBR96A",
-        "category": "todo",
-        "title": "viens, on teste des manipulations débiles"
     },
     {
         "videoID": "ws8cthz9bcw",
@@ -6285,11 +6205,6 @@ var videoLinks = [
         "videoID": "LZ259Jx8MQY",
         "category": "todo",
         "title": "Pushing Dial-up Modems Further Than We EVER Thought Possible"
-    },
-    {
-        "videoID": "xEiJTSYbJBA",
-        "category": "todo",
-        "title": "FABRIQUER un ORDINATEUR depuis la PRÉHISTOIRE 💻👴"
     },
     {
         "videoID": "1c7GQbZXTsM",
@@ -6752,11 +6667,6 @@ var videoLinks = [
         "title": "How We Date Paintings With Nuclear Bombs"
     },
     {
-        "videoID": "9D0Gwel7VJA",
-        "category": "todo",
-        "title": "APT Install n’est PAS ce que tu crois 💀 #Linux #DevHumor #SysAdmin #TechExplained"
-    },
-    {
         "videoID": "WfgOJay48Ms",
         "category": "todo",
         "title": "Process vs Thread"
@@ -7047,11 +6957,6 @@ var videoLinks = [
         "title": "How Docker Took Over the Cloud"
     },
     {
-        "videoID": "85oMrKd8afY",
-        "category": "todo",
-        "title": "Diffie-Hellman Key Exchange: How to Share a Secret"
-    },
-    {
         "videoID": "DUgzXX2_aDQ",
         "category": "todo",
         "title": "Containers Don't Exist  - Your Kernel Is Lying to You"
@@ -7090,11 +6995,6 @@ var videoLinks = [
         "videoID": "c-RPEDrv2Q0",
         "category": "todo",
         "title": "Culture IA : Chez Pizza Hut, l'IA tourne au fiasco, par Anthony Morel"
-    },
-    {
-        "videoID": "mJ5uJMW1NhM",
-        "category": "todo",
-        "title": "How to Find Bugs While you Sleep (Fuzzing Explained)"
     },
     {
         "videoID": "mJ5uJMW1NhM",
@@ -7275,11 +7175,6 @@ var videoLinks = [
         "videoID": "D7b4aZ-tyy0",
         "category": "todo",
         "title": "Un élève dévoile mon numéro de téléphone en classe … #maths #mathematiques #prof #professeur #ecole"
-    },
-    {
-        "videoID": "7YM2EKc0Tk4",
-        "category": "todo",
-        "title": "Google Linux Troll"
     },
     {
         "videoID": "ff0s7CCjfPw",
@@ -7543,11 +7438,6 @@ var videoLinks = [
         "title": "Ces 20 projets FOUS qui ont failli terraformer la Terre"
     },
     {
-        "videoID": "RQif4r7opyw",
-        "category": "todo",
-        "title": "Forward vs Reverse Proxy"
-    },
-    {
         "videoID": "oH7piyBMyhg",
         "category": "todo",
         "title": "Le fichier Linux qui fait disparaître les données 😳 #Linux #DevNull #Terminal #Tech"
@@ -7661,11 +7551,6 @@ var videoLinks = [
         "videoID": "qWJUWinWWnQ",
         "category": "todo",
         "title": "2 Vibe Coders inside you"
-    },
-    {
-        "videoID": "DIoEeo2Ftnw",
-        "category": "todo",
-        "title": "Le fiasco des sites secrets de la CIA"
     },
     {
         "videoID": "Axd-rbL6G-4",
@@ -7873,11 +7758,6 @@ var videoLinks = [
         "title": "TOP 3 FAILS BITCOIN"
     },
     {
-        "videoID": "0gQuGOJirzE",
-        "category": "todo",
-        "title": "Le jour où Internet a démasqué un agent double avec de l'OSINT"
-    },
-    {
         "videoID": "w7-yDGfTynI",
         "category": "todo",
         "title": "500 Ko de Code VS Une Nation"
@@ -7968,11 +7848,6 @@ var videoLinks = [
         "title": "Cette IA t'aurait sacrifié ?!"
     },
     {
-        "videoID": "Axd-rbL6G-4",
-        "category": "todo",
-        "title": "How a deceptively aligned AI looks perfectly fine until it takes over"
-    },
-    {
         "videoID": "LwSpKdNZ2cU",
         "category": "todo",
         "title": "You probably need this tool"
@@ -8041,11 +7916,6 @@ var videoLinks = [
         "videoID": "k0oG_jt6l7Q",
         "category": "todo",
         "title": "Google Did The Impossible"
-    },
-    {
-        "videoID": "pyCcvPfT_jU",
-        "category": "todo",
-        "title": "One Drunken Mistake Destroyed Finland's Scummiest Hacker"
     },
     {
         "videoID": "PViuz4h545k",
@@ -8148,11 +8018,6 @@ var videoLinks = [
         "title": "Les ARNAQUES IA les plus TERRIFIANTES"
     },
     {
-        "videoID": "qbB5eGWqxec",
-        "category": "todo",
-        "title": "10 HISTOIRES de HACKERS DEVENUS des HÉROS 🦸☠️"
-    },
-    {
         "videoID": "RnqZrpaBwik",
         "category": "todo",
         "short": true,
@@ -8189,19 +8054,9 @@ var videoLinks = [
         "title": "Making RAM at Home"
     },
     {
-        "videoID": "HHEQVXNCrW8",
-        "category": "todo",
-        "title": "Hacking '❤️' to Track ANY WhatsApp or Signal User"
-    },
-    {
         "videoID": "Fq2HjgJ90Jg",
         "category": "todo",
         "title": "The File Sharing Site The FBI Couldn't Take Down (MediaFire)"
-    },
-    {
-        "videoID": "EohM81Aifyo",
-        "category": "todo",
-        "title": "Microsoft Office used to be fast... #microsoft #office"
     },
     {
         "videoID": "ejfqpk0ogqc",
@@ -8247,11 +8102,6 @@ var videoLinks = [
         "videoID": "pXBwcZh2Q8E",
         "category": "todo",
         "title": "f**k it... let's try blackarch linux"
-    },
-    {
-        "videoID": "4Pa5vc0rdVc",
-        "category": "todo",
-        "title": "Every Hacking Technique Explained in 18 Minutes"
     },
     {
         "videoID": "GR_U0G-QGA0",
@@ -8314,24 +8164,9 @@ var videoLinks = [
         "title": "The Most Sophisticated Hacker Gang in History: CONTI"
     },
     {
-        "videoID": "XDsYPXRCXAs",
-        "category": "todo",
-        "title": "How hackers reverse Math.random()"
-    },
-    {
         "videoID": "s_nFH1TnN2c",
         "category": "todo",
         "title": "The Most Inventive Anti-Cheats in Gaming History"
-    },
-    {
-        "videoID": "9NI39mWOjvA",
-        "category": "todo",
-        "title": "How web scrapers avoid bans"
-    },
-    {
-        "videoID": "2cvOnm2ZDCE",
-        "category": "todo",
-        "title": "L'exploit technique derrière RollerCoaster Tycoon"
     },
     {
         "videoID": "c0xZaIV4XfU",
@@ -8347,11 +8182,6 @@ var videoLinks = [
         "videoID": "t2f0vyfABdM",
         "category": "todo",
         "title": "I Gave My AI the World's Biggest Money Printer"
-    },
-    {
-        "videoID": "SagjbnJBaWc",
-        "category": "todo",
-        "title": "What is a pi-hole?"
     },
     {
         "videoID": "B8i26g45WeY",
@@ -8372,11 +8202,6 @@ var videoLinks = [
         "videoID": "hzlR0R91lZA",
         "category": "todo",
         "title": "Do they know that we know that they know?"
-    },
-    {
-        "videoID": "7PbvcSdqskw",
-        "category": "todo",
-        "title": "Le RAVAGÉ de Minecraft"
     },
     {
         "videoID": "JddYsDZWjpc",
@@ -8407,11 +8232,6 @@ var videoLinks = [
         "videoID": "FK1zJdmtRmw",
         "category": "todo",
         "title": "This Hacker Bricked 10 Million Devices – To Save the Internet?"
-    },
-    {
-        "videoID": "EZ6TEjx7JLw",
-        "category": "todo",
-        "title": "6.pdf"
     },
     {
         "videoID": "dVnY0NF4wVo",
@@ -8454,17 +8274,7 @@ var videoLinks = [
         "title": "iOS 26.5.2 : le patch d'urgence qu'Apple n'a pas pu repousser #iOS #Cybersecurite #Apple #IA"
     },
     {
-        "videoID": "ZhfI0EboPU0",
-        "category": "todo",
-        "title": "Russia’s Most Wanted Hackers"
-    },
-    {
         "videoID": "8LHEwkV7QpY",
-        "category": "todo",
-        "short": true
-    },
-    {
-        "videoID": "dS01AoUF1xo",
         "category": "todo",
         "short": true
     },
@@ -8529,16 +8339,6 @@ var videoLinks = [
         "short": true
     },
     {
-        "videoID": "dS01AoUF1xo",
-        "category": "todo",
-        "short": true
-    },
-    {
-        "videoID": "ag6-52_1SDA",
-        "category": "todo",
-        "short": true
-    },
-    {
         "videoID": "3G_OHAa5CQg",
         "category": "todo",
         "title": "The Mistake That Cost This Hacker $10,000,000"
@@ -8554,24 +8354,9 @@ var videoLinks = [
         "title": "Why Does My PC Turn Itself On?"
     },
     {
-        "videoID": "GeMhwaF3Sno",
-        "category": "todo",
-        "title": "This is NOT how to destroy data 🤦‍♂️ #tech #technology #shorts #pc"
-    },
-    {
         "videoID": "saqLizS3aaA",
         "category": "todo",
         "title": "Secret tracking code put this hacker in jail"
-    },
-    {
-        "videoID": "e7s4MHwHpP4",
-        "category": "todo",
-        "title": "How Hackers Actually Get Caught (FBI Tactics)"
-    },
-    {
-        "videoID": "DIoEeo2Ftnw",
-        "category": "todo",
-        "title": "Le fiasco des sites secrets de la CIA"
     },
     {
         "videoID": "illzZ1-xvg8",
@@ -8582,11 +8367,6 @@ var videoLinks = [
         "videoID": "ndJmDjFRPTc",
         "category": "todo",
         "title": "This Teenager Just Hacked the Brazilian Government"
-    },
-    {
-        "videoID": "wyWnTMM1vO4",
-        "category": "todo",
-        "title": "The Hacker Who Tried to Free the Internet"
     },
     {
         "videoID": "zKfdjsK7VAI",
@@ -8617,11 +8397,6 @@ var videoLinks = [
         "videoID": "iMp6L5RljfI",
         "category": "todo",
         "title": "La plus grande opération d'espionnage de Minecraft."
-    },
-    {
-        "videoID": "SM0O_VBE-Ts",
-        "category": "todo",
-        "title": "J'ai enquêté sur l'Entreprise qui nous Espionne Tous"
     },
     {
         "videoID": "Rk1k_JWbehA",
@@ -8742,16 +8517,6 @@ var videoLinks = [
         "videoID": "7m77AwkGq4Q",
         "category": "todo",
         "title": "Does Tor Browser make you completely anonymous online?!"
-    },
-    {
-        "videoID": "Iq_r7IcNmUk",
-        "category": "todo",
-        "title": "25 crazy software bugs explained"
-    },
-    {
-        "videoID": "vX7JcpRqbEk",
-        "category": "todo",
-        "title": "RAW videos from REAL hackers"
     },
     {
         "videoID": "pw0xSFEnowk",
@@ -8944,11 +8709,6 @@ var videoLinks = [
         "title": "What is this \"Anime Wallpaper\" really doing?"
     },
     {
-        "videoID": "oH7piyBMyhg",
-        "category": "todo",
-        "title": "Le fichier Linux qui fait disparaître les données 😳 #Linux #DevNull #Terminal #Tech"
-    },
-    {
         "videoID": "xFKSKjyBVDU",
         "category": "todo",
         "title": "Privacy: For Sale"
@@ -9002,11 +8762,6 @@ var videoLinks = [
         "videoID": "AIHjcra-jvM",
         "category": "todo",
         "title": "How Hackers Make Server Crashers For ANY GAME"
-    },
-    {
-        "videoID": "9XdBltWIe-4",
-        "category": "todo",
-        "title": "The Most Secret US Hacking Operation: Eligible Receiver 97"
     },
     {
         "videoID": "G-L7lI3MJKw",
@@ -9149,16 +8904,6 @@ var videoLinks = [
         "title": "How Can Servers Have Thousands of Players without Lagging? #minecraft"
     },
     {
-        "videoID": "FUGAjhg_jWM",
-        "category": "todo",
-        "title": "How a Cheater Broke Into RuneScape's Most Secret Room"
-    },
-    {
-        "videoID": "9eRI3EmqohI",
-        "category": "todo",
-        "title": "L'entreprise la plus dangereuse du monde"
-    },
-    {
         "videoID": "jFFVzcmPN48",
         "category": "todo",
         "short": true,
@@ -9200,11 +8945,6 @@ var videoLinks = [
         "title": "L'Iceberg des Pires Horreurs de 4chan !"
     },
     {
-        "videoID": "heBrCo9ondM",
-        "category": "todo",
-        "title": "Windows VS Linux Installing Browser #memes #linux #windows"
-    },
-    {
         "videoID": "2YibAiSQxwA",
         "category": "todo",
         "title": "If You See Me Use Ubuntu (Song Parody)"
@@ -9220,24 +8960,9 @@ var videoLinks = [
         "title": "10 open source tools that feel illegal..."
     },
     {
-        "videoID": "W2D5T5Gkyic",
-        "category": "todo",
-        "title": "How Linux users watch YouTube."
-    },
-    {
-        "videoID": "uuKOkaZJb6Q",
-        "category": "todo",
-        "title": "Piracy is morally correct, actually."
-    },
-    {
         "videoID": "jcA28W6uwwQ",
         "category": "todo",
         "title": "I Set a Trap With Fake “Top Secret” Files and Someone used the Credentials."
-    },
-    {
-        "videoID": "uRGljemfwUE",
-        "category": "todo",
-        "title": "The Website is Down #1: Sales Guy vs. Web Dude"
     },
     {
         "videoID": "S6Iq6HubIAw",
@@ -9258,21 +8983,6 @@ var videoLinks = [
         "videoID": "ZomYyWDazMU",
         "category": "todo",
         "title": "They Just Hacked Microsoft…"
-    },
-    {
-        "videoID": "XbKYW4Pg7QA",
-        "category": "todo",
-        "title": "Comment une armée d'IA a percé le code de GTA"
-    },
-    {
-        "videoID": "GA8s59pD3h8",
-        "category": "todo",
-        "title": "Le mail qui a terrorisé le monde de la crypto"
-    },
-    {
-        "videoID": "rBDO2WBpQXw",
-        "category": "todo",
-        "title": "4Chan Hackers vs FBI"
     },
     {
         "videoID": "wCDGEjhL6eQ",
@@ -9355,16 +9065,6 @@ var videoLinks = [
         "title": "What Happens If You Edit an Audio File's Bytes?"
     },
     {
-        "videoID": "620CmJK53So",
-        "category": "todo",
-        "title": "Ton terminal peut être manipulé par du simple texte 😳 #CyberSécurité #Linux #Terminal #Tech"
-    },
-    {
-        "videoID": "jcA28W6uwwQ",
-        "category": "todo",
-        "title": "I Set a Trap With Fake “Top Secret” Files and Someone used the Credentials."
-    },
-    {
         "videoID": "HSOSWHIg7Mk",
         "category": "todo",
         "title": "SHADOW ITEMS are BACK!!! | Shadow Stack Technology"
@@ -9378,11 +9078,6 @@ var videoLinks = [
         "videoID": "N5ksGRpnhAs",
         "category": "todo",
         "title": "I Invented Redstone Hacking"
-    },
-    {
-        "videoID": "q2cbdv9POW0",
-        "category": "todo",
-        "title": "Hunting A Dark Web Insider Trader"
     },
     {
         "videoID": "hMArdJ1qJT0",
@@ -9440,56 +9135,6 @@ var videoLinks = [
         "title": "The Sphere looks like one giant screen"
     },
     {
-        "videoID": "GtT93csNleY",
-        "category": "todo",
-        "title": "Le RAVAGÉ de Discord"
-    },
-    {
-        "videoID": "wweE_TwNl5o",
-        "category": "todo",
-        "title": "3 choses à ABSOLUMENT savoir sur ton SSD"
-    },
-    {
-        "videoID": "BxKgVjUOrNg",
-        "category": "todo",
-        "title": "Es-tu un génie de l'informatique ? #11"
-    },
-    {
-        "videoID": "uPnDUeg3oxg",
-        "category": "todo",
-        "title": "Real AI Costs"
-    },
-    {
-        "videoID": "Q5Ory_JCAfQ",
-        "category": "todo",
-        "title": "Hacker la Switch 2 va être compliqué... 🚫"
-    },
-    {
-        "videoID": "JOV_nLWAKrg",
-        "category": "todo",
-        "title": "2026 Backend Engineer Roadmap"
-    },
-    {
-        "videoID": "uuLAOOS4vds",
-        "category": "todo",
-        "title": "The Future of PC Cooling?"
-    },
-    {
-        "videoID": "NyBFS_d-0pY",
-        "category": "todo",
-        "title": "He's a marketing \"engineer\"!? 🤨"
-    },
-    {
-        "videoID": "oBHMUGLgOlc",
-        "category": "todo",
-        "title": "The Creator of MySQL’s Wants to Replace It"
-    },
-    {
-        "videoID": "h1RCjbJOEzc",
-        "category": "todo",
-        "title": "A Google Engineer Made $1.2 million with Your Data on Polymarket"
-    },
-    {
         "videoID": "9wwbjodvB9A",
         "category": "todo",
         "title": "CEO finds out tokens cost money"
@@ -9498,11 +9143,6 @@ var videoLinks = [
         "videoID": "DJxEYOC8IRc",
         "category": "todo",
         "title": "Magic Swap"
-    },
-    {
-        "videoID": "ejfqpk0ogqc",
-        "category": "todo",
-        "title": "TOP 3 VIRUS DRÔLES"
     },
     {
         "videoID": "1phOvlru0F0",
@@ -9520,11 +9160,6 @@ var videoLinks = [
         "title": "TOP 3 LANGAGES DRÔLES"
     },
     {
-        "videoID": "mXA-r0yiSKs",
-        "category": "todo",
-        "title": "System Design: Google Drive"
-    },
-    {
         "videoID": "fkYaAdxXARQ",
         "category": "todo",
         "title": "When Metal Expands… Does the Hole Shrink?"
@@ -9538,46 +9173,6 @@ var videoLinks = [
         "videoID": "WYXx33_kCHY",
         "category": "todo",
         "title": "CODER AVEC FOURMIS ?!!"
-    },
-    {
-        "videoID": "ql56K3sveqo",
-        "category": "todo",
-        "title": "What it's like to Vibe Code"
-    },
-    {
-        "videoID": "C4oWaXkRpcQ",
-        "category": "todo",
-        "title": "Un simple yay -Syu… et tes secrets peuvent partir 😳 #ArchLinux #AUR #CyberSecurity #Linux"
-    },
-    {
-        "videoID": "0-thlJCgXdc",
-        "category": "todo",
-        "title": "what is graceful degradation?"
-    },
-    {
-        "videoID": "YHFSRnjwTEI",
-        "category": "todo",
-        "title": "What is an IDOR? Google and Uber got hacked this way."
-    },
-    {
-        "videoID": "HoeVMHwETwo",
-        "category": "todo",
-        "title": "Why you never touch fiber optic cables (the tips)"
-    },
-    {
-        "videoID": "-MvgSzIBLYg",
-        "category": "todo",
-        "title": "L'hélice est de travers pour voler droit ? 🤨"
-    },
-    {
-        "videoID": "7EPNGUaEe0o",
-        "category": "todo",
-        "title": "Intel in EACH ERA!"
-    },
-    {
-        "videoID": "ad1ZzHLUJ_M",
-        "category": "todo",
-        "title": "Hacker la PS3 avec une CALCULETTE ?! 😧"
     },
     {
         "videoID": "tgfVAZT5EeE",
@@ -9774,11 +9369,6 @@ var videoLinks = [
         "title": "Normalement, ChatGPT ne devrait pas pouvoir faire ça"
     },
     {
-        "videoID": "qiOtinFFfk8",
-        "category": "todo",
-        "title": "I made my own Web"
-    },
-    {
         "videoID": "Rj8aq0ZmVaM",
         "category": "todo",
         "short": true,
@@ -9854,11 +9444,6 @@ var videoLinks = [
         "title": "One Disc Took Down 77 Million PlayStations"
     },
     {
-        "videoID": "jEluW-OANUE",
-        "category": "todo",
-        "title": "La CHUTE du PLUS GROS SITE du DARK WEB 🏴‍☠️"
-    },
-    {
         "videoID": "TNe9-RWiqD8",
         "category": "todo",
         "title": "Le SITE PIRATE que PERSONNE n'a jamais pu arrêter."
@@ -9872,11 +9457,6 @@ var videoLinks = [
         "videoID": "o0JvgIohYt4",
         "category": "todo",
         "title": "Détruire l'informatique française par le feu - CLODO"
-    },
-    {
-        "videoID": "Wm8ObO8XVSY",
-        "category": "todo",
-        "title": "This Guy Stole 2,000,000 Credit Cards"
     },
     {
         "videoID": "v-rHH8Zezqs",
@@ -9936,21 +9516,6 @@ var videoLinks = [
         "title": "The Man Who Made Everything on the Internet Free"
     },
     {
-        "videoID": "enrCS8E3hsM",
-        "category": "todo",
-        "title": "The Man Who Tried to Unmask Anonymous"
-    },
-    {
-        "videoID": "PmtFtWVrxFE",
-        "category": "todo",
-        "title": "The Kids Who Hacked The CIA"
-    },
-    {
-        "videoID": "LZkl0_9xFOU",
-        "category": "todo",
-        "title": "The Kids Who Hacked Xbox"
-    },
-    {
         "videoID": "PmtFtWVrxFE",
         "category": "todo",
         "title": "The Kids Who Hacked The CIA"
@@ -9969,11 +9534,6 @@ var videoLinks = [
         "videoID": "z__8QXXKmjE",
         "category": "todo",
         "title": "What this \"Fixed Version\" is really doing?"
-    },
-    {
-        "videoID": "pZiG8r-diTM",
-        "category": "todo",
-        "title": "Mullvad Hides VPN Traffic Inside HTTPS With QUIC Obfuscation"
     },
     {
         "videoID": "C1pWsjVb9I8",
