@@ -2464,9 +2464,10 @@ var musicLinks = [
         "title": "Clint Eastwood"
     },
     {
-        "videoID": "D_LgE4bSWE",
+        "videoID": "-D_LgE4bSWE",
         "category": "phonk",
-        "top": true
+        "top": true,
+        "title": "Why Not"
     },
     {
         "videoID": "6XvMofl_T9M",
@@ -4952,9 +4953,10 @@ var musicLinks = [
         "title": "HOMAGE FUNK (SLOWED)"
     },
     {
-        "videoID": "kB9ydUHZmR4 hardbass",
-        "category": "phonk",
-        "top": true
+        "videoID": "kB9ydUHZmR4",
+        "category": "phonk hardbass",
+        "top": true,
+        "title": "STOFF UND GEWALT (Slowed)"
     },
     {
         "videoID": "sq04GzTrb3c",
@@ -5345,7 +5347,7 @@ var musicLinks = [
         "videoID": "hoe00PVitzU",
         "category": "phonk hardbass",
         "top": true,
-        "title": "GRAVEYARD HARDTEKK (Slowed Bass Boosted)"
+        "title": "GRAVEYARD (HARDTEKK) (Slowed Viral Edit)"
     },
     {
         "videoID": "GJ0CU_n8biM",
@@ -5447,7 +5449,7 @@ var musicLinks = [
         "videoID": "6xh82wErjQw",
         "category": "asian chill moody histoire",
         "top": true,
-        "title": "真夜中のドア/Stay With Me"
+        "title": "真夜中のドア〜stay with me (シングルver.)"
     },
     {
         "videoID": "QLHMhVonF-s",
@@ -12573,138 +12575,172 @@ var musicLinks = [
     {
         "videoID": "SrG0MqI8vYM",
         "category": "long chill",
+        "title": "Inan, pandora. - Comfort chain (Ambient - 1hour loop)"
     },
     {
         "videoID": "KzDqIaT21po",
         "category": "todo",
+        "title": "PSL"
     },
     {
         "videoID": "Y2HRMyFpy4E",
         "category": "todo",
+        "title": "SKORN"
     },
     {
         "videoID": "jcIIun-uuSk",
         "category": "todo",
+        "title": "Skins"
     },
     {
         "videoID": "CH_ykP4CiVM",
         "category": "todo",
+        "title": "Skins 2"
     },
     {
         "videoID": "uX15lRSkibY",
         "category": "todo",
+        "title": "Heroine"
     },
     {
         "videoID": "snxjq59OgqU",
         "category": "todo",
+        "title": "GRAVEYARD (HARDTEKK) (Viral Edit)"
     },
     {
         "videoID": "tjeDRdVhBQM",
         "category": "todo",
+        "title": "EGO"
     },
     {
         "videoID": "lrU0a0E999w",
         "category": "todo",
+        "title": "eins zwei polizei hardtekk"
     },
     {
         "videoID": "x0D6CGOttoc",
         "category": "todo",
+        "title": "HONOUR"
     },
     {
         "videoID": "CwWfQ4LTTDQ",
         "category": "todo",
+        "title": "SLAYER"
     },
     {
         "videoID": "SGo4ojeJPSo",
         "category": "todo",
+        "title": "WHOOPS!"
     },
     {
         "videoID": "4IGSijtceGY",
         "category": "todo",
+        "title": "DANCEMAXX"
     },
     {
         "videoID": "vcjISydJWe8",
         "category": "todo",
+        "title": "TREN"
     },
     {
         "videoID": "NSZxh0EAwNg",
         "category": "todo",
+        "title": "DEATH TANK"
     },
     {
         "videoID": "1IbF0aiGEs4",
         "category": "todo",
+        "title": "PHARAOTEKK"
     },
     {
         "videoID": "zlt1lYV8rvo",
         "category": "todo",
+        "title": "MI MI MI (TRVXER, HEXDLESS, LXST GARDEN HARDTEKK SLOWED MIX)"
     },
     {
         "videoID": "CCRoZ3hc7WU",
         "category": "todo",
+        "title": "PPAPTEKK"
     },
     {
         "videoID": "Kt4muNgFCMw",
         "category": "todo",
+        "title": "discipline"
     },
     {
         "videoID": "LfX6JxfND44",
         "category": "todo",
+        "title": "Messages from the Stars"
     },
     {
         "videoID": "lSD_L-xic9o",
         "category": "todo",
+        "title": "Laufey - From The Start (Official Music Video)"
     },
     {
         "videoID": "BA4rSO-h9Io",
         "category": "todo",
+        "title": "Redbone - Come and Get Your Love (Official Music Video)"
     },
     {
         "videoID": "lcOxhH8N3Bo",
         "category": "todo",
+        "title": "Bonnie Tyler - Total Eclipse of the Heart (Turn Around) (Official Video)"
     },
     {
         "videoID": "csZTPVCLHyk",
         "category": "todo",
+        "title": "Kxllswxtch - WASTE [Official Video]"
     },
     {
         "videoID": "7YvAYIJSSZY",
         "category": "todo",
+        "title": "Rockwell - Somebody's Watching Me (Official Music Video)"
     },
     {
         "videoID": "YQh29RvWb7o",
         "category": "todo",
+        "title": "Lesley Gore • “Sunshine, Lollipops and Rainbows” • 1964 [Reelin' In The Years Archive]"
     },
     {
         "videoID": "atY7ymXAcRQ",
         "category": "todo",
+        "title": "Sunshine, Lollipops And Rainbows"
     },
     {
         "videoID": "J9T-a8JXGfA",
         "category": "todo",
+        "title": "REMASTERED Sunshine, Lollipops, Rainbows Lesley Gore TRUE 1965 STEREO HiQ Hybrid JARichardsFilm"
     },
     {
         "videoID": "YTVzWyTGp3U",
         "category": "todo",
-    },    {
+        "title": "Sunshine, Lollipops and Rainbows (Rerecorded)"
+    },
+    {
         "videoID": "4cNSZflcqMI",
         "category": "phonk hardbass",
-        "top": true
+        "top": true,
+        "title": "PSL 2"
     },
     {
         "videoID": "yfLApgREUNE",
         "category": "phonk hardbass",
-        "top": true
+        "top": true,
+        "title": "PSL 2 (Sped Up)"
     },
     {
         "videoID": "e--p9_7EH3E",
         "category": "phonk hardbass",
-        "top": true
+        "top": true,
+        "title": "PSL 2 (Slowed)"
     },
     {
         "videoID": "BdZAxTSvJm0",
         "category": "phonk hardbass",
-        "top": true
-    },
+        "top": true,
+        "title": "PSL 2 (Super Slowed)"
+    }
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
