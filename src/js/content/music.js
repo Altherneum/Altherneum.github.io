@@ -12736,7 +12736,33 @@ var musicLinks = [
         "category": "hardbass electro",
         "top": true,
         "title": "Hellfire"
-    }
+    },
+    {
+        "videoID": "qA1Ozm2fVA4",
+        "category": "electro histoire chill",
+        "title": "Lucky Twice - Lucky (Lyrics) \"I'm So Lucky Lucky I'm So Lovely Lovely\" [TikTok Remix]"
+    },
+    {
+        "videoID": "mJRaSYE3-Uk",
+        "category": "hardbass electro",
+        "title": "Lucky Twice - I'm So Lucky (Hardstyle Lyric Video)"
+    },
+    {
+        "videoID": "3_TvpBwSZDM",
+        "category": "chill histoire",
+        "title": "Kylie Minogue - I Should Be So Lucky - Official Video"
+    },
+    {
+        "videoID": "2UuXld2s6g0",
+        "category": "histoire chill",
+        "title": "Lucky Twice - Lucky (Official Music Video)"
+    },
+    {
+        "videoID": "2OjrmxEwItw",
+        "category": "chill histoire",
+        "title": "I'm so Lucky Lucky Lyrics",
+        "top": true
+    },
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
