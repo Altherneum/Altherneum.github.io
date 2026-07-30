@@ -40,6 +40,11 @@ async function CheckPage() {
         await include_multiple("slot", "contentArticle");
     }
 
+    else if (pathNameMatchPage("/games/idle", true)) {
+        await includes();
+        await include_multiple("idle", "contentArticle");
+    }
+
     else {
         return false;
     }
