@@ -9625,6 +9625,11 @@ var videoLinks = [
         "category": "hardware science IT",
         "top": true,
         "short": true
+    },
+    {
+        "videoID": "SXhK8shduyA",
+        "category": "code science IT",
+        "top": true,
     }
 ];
 
