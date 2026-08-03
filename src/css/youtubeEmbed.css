@@ -204,15 +204,14 @@ div:has(> div > input[type="range"]) {
 
 @media screen and (max-width: 1024px) {
     .youtubeEmbed>.videoholder>.card {
-        width: 90%;
+        width: 80%;
         height: 100%;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .youtubeEmbed>.videoholder>.card {
-        min-width: 25%;
-        max-width: 25%;
+        width: 300px;
     }
 }
 
