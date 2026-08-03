@@ -9639,7 +9639,6 @@ var videoLinks = [
     {
         "videoID": "nB3PDQfTfng",
         "category": "code science IT",
-        "top": true,
     }
 ];
 
