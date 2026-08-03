@@ -1357,6 +1357,48 @@ let links = [
         svg: "/assets/svg/book.svg"
     },
     {
+        href: "https://docs.google.com/videos/u/0/",
+        text: "Google Vids (capture et enregistrement d'écran)",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://notebook.google.com/notebook/",
+        text: "Google NoteBook",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://photos.google.com/",
+        text: "Google Photos",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://docs.google.com/forms/",
+        text: "Google Forms",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://www.google.com/android/find/",
+        text: "Google Android Find (Localiser)",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://fonts.google.com",
+        text: "Google Fonts",
+        tag: "Google URL Web Outils",
+        svg: "/assets/svg/book.svg"
+    },
+    {
+        href: "https://gemini.google.com/app",
+        text: "Google Gemini (AI)",
+        tag: "Google URL Web Outils IA",
+        svg: "/assets/svg/book.svg"
+    },
+    {
         href: "https://news.google.com/",
         text: "Google Actualités",
         tag: "Google Queryable URL Web Outils",
