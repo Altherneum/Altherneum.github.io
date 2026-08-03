@@ -12767,6 +12767,12 @@ var musicLinks = [
         "title": "I'm so Lucky Lucky Lyrics",
         "top": true
     },
+    {
+        "videoID": "tGloNIXBG8U",
+        "category": "classic chill histoire",
+        "title": "Antonín Dvořák - Z Nového světa (From the New World) Largo",
+        "top": true
+    },
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
