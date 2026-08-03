@@ -1847,6 +1847,38 @@ var filmLinks = [
         "description": "Un homme qui se plaint trop souvent de Dieu se voit accorder des pouvoirs tout-puissants pour lui apprendre combien il est difficile de diriger le monde.",
         "imageURL": "",
     },
+    {
+        "filmID": "tt2119532",
+        "category": "to-watch",
+        "note": "unknown",
+        "title": "Tu ne tueras point",
+        "description": "Médecin de l'armée américaine de la Seconde Guerre mondiale Desmond T. Doss, servant pendant la bataille d'Okinawa, refuse de tuer des gens et devient le premier homme de l'histoire américaine à recevoir la Médaille d'honneur sans tirer un coup de feu.",
+        "imageURL": "",
+    },
+    {
+        "filmID": "tt0450259",
+        "category": "to-watch",
+        "note": "unknown",
+        "title": "Blood Diamond",
+        "description": "Un pêcheur, un contrebandier et un syndicat d'hommes d'affaires s'affrontent pour la possession d'un diamant à prix inestimable.",
+        "imageURL": "",
+    },
+    {
+        "filmID": "tt6811018",
+        "category": "to-watch",
+        "note": "unknown",
+        "title": "Alex, le destin d'un roi",
+        "description": "Un groupe d'enfants s'engage dans une quête héroïque pour contrecarrer une menace médiévale.",
+        "imageURL": "",
+    },
+    {
+        "filmID": "tt0265086",
+        "category": "to-watch",
+        "note": "unknown",
+        "title": "La Chute du faucon noir",
+        "description": "L'histoire de cent soixante soldats américains d'élite qui sont arrivés à Mogadiscio en octobre 1993 pour capturer deux des principaux lieutenants d'un chef de guerre renégat, mais qui se sont retrouvés dans une bataille désespérée contre une importante force de Somaliens lourdement armés.",
+        "imageURL": "",
+    },
 ];
 
 var FilmListType = ["todo", "film", "animes", "series", "to-watch"];
