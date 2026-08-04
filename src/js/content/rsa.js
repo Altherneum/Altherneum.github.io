@@ -3,7 +3,7 @@ var publicKey;
 var consoleHTML = document.getElementById("rsa-console");
 consoleHTML.textContent += "\n- RSA (Info console) -";
 
-function getRandomKey(maxBits) {
+async function getRandomKey(maxBits) {
     consoleHTML.textContent += "\nStarting generation of random prime number";
     let value = getRandomNumber(maxBits);
     consoleHTML.textContent += "\nStarting with randome prime : " + value;
@@ -11,6 +11,8 @@ function getRandomKey(maxBits) {
     while(!isPrime(value)){
         value += 1;
         consoleHTML.textContent += "\ntesting prime : " + value;
+
+        await yieldControl(); //Give browser control for UI & event & rendering pipeline
     }
 
     return value;
@@ -102,11 +104,11 @@ function modInverse(value, modulo) {
     }
 }
 
-function RSAKeyGen() {
+async function RSAKeyGen() {
     var maxBits = document.getElementById("valueMaxBits").value;
     consoleHTML.textContent += "\nstarting RSA keyGen";
 
-    var p = getRandomKey(maxBits);
+    var p = await getRandomKey(maxBits);
     consoleHTML.textContent += "\n\np = " + p;
 
     var q = getRandomKey(maxBits);
@@ -183,10 +185,10 @@ function decrypt() {
     //value ** privateKey.d % privateKey.n
 }
 
-function test() {
+async function test() {
     consoleHTML.textContent += "\n\nSTARTING RSA TEST";
 
-    RSAKeyGen();
+    await RSAKeyGen();
 
 
 
