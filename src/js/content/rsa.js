@@ -40,6 +40,21 @@ function isPrime(value) {
     else { return false; }
 }
 
+// Might be faster (to test if working)
+function isPrimeBis(value) {
+    if (value < 2) return false;
+    if (value === 2 || value === 3) return true;
+    if (value % 2 === 0 || value % 3 === 0) return false;
+
+    // Check divisibility only up to the square root of value
+    for (let i = 5; i * i <= value; i += 6) {
+        if (value % i === 0 || value % (i + 2) === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
 function getCoprime(prime, maxBits) {
     consoleHTML.textContent += "\ngetting coprime";
     let value = getRandomKey(maxBits);
