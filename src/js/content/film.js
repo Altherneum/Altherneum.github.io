@@ -131,7 +131,7 @@ var filmLinks = [
         "note": "best",
         "title": "Pulp Fiction",
         "description": "Les vies de deux hommes de main, d'un boxeur, de la femme d'un gangster et de deux braqueurs s'entremêlent dans quatre histoires de violence et de rédemption.",
-    },
+    },// chercher cette balise "sc-ee214c29-0 bifmdc" sur inspecteur eleme
     {
         "filmID": "tt0137523",
         "category": "film",
@@ -1705,7 +1705,7 @@ async function showFilm(categorie, divID){
             a.href = "https://www.imdb.com/title/" + filmLinks[link].filmID;
             a.innerHTML = filmLinks[link].title;
 
-            img.src = "/assets/image/film/" + filmLinks[link].filmID + ".png";
+            img.src = "/assets/image/film/" + filmLinks[link].filmID + ".jpg";
 
             text.innerHTML = filmLinks[link].description;
 
