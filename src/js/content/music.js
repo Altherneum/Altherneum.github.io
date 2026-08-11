@@ -13425,30 +13425,6 @@ var musicLinks = [
         "videoID": "JNJJ-QkZ8cM",
         "category": "todo",
     },
-    {
-        "videoID": "",
-        "category": "todo",
-    },
-    {
-        "videoID": "",
-        "category": "todo",
-    },
-    {
-        "videoID": "",
-        "category": "todo",
-    },
-    {
-        "videoID": "",
-        "category": "todo",
-    },
-    {
-        "videoID": "",
-        "category": "todo",
-    },
-    {
-        "videoID": "",
-        "category": "todo",
-    },
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
