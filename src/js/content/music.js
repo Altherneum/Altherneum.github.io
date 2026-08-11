@@ -13431,6 +13431,18 @@ var musicLinks = [
         "videoID": "JNJJ-QkZ8cM",
         "category": "todo",
         "title": "Pokemon Blue/Red - Lavender Town"
+    },
+    {
+        "videoID": "K17df81RL9Y",
+        "category": "moody electro histoire chill",
+        "top": true,
+        "title": "AURORA - Cure For Me"
+    },
+    {
+        "videoID": "VoGilr7ediw",
+        "category": "moody electro histoire chill",
+        "top": true,
+        "title": "Cure For Me"
     }
 ];
 
