@@ -343,7 +343,7 @@ var musicLinks = [
         "videoID": "R2CzFQpWoLs",
         "top": true,
         "category": "chill",
-        "title": "City Of stars  - WangOK"
+        "title": "Wang OK - City Of Stars (cover)"
     },
     {
         "videoID": "A2zFBoeZrE0",
@@ -1328,7 +1328,7 @@ var musicLinks = [
         "videoID": "u-wEeg4YNoY",
         "top": true,
         "category": "chill",
-        "title": "Fly me to the moon WangOK"
+        "title": "Wang OK - Fly Me To The Moon (cover)"
     },
     {
         "videoID": "ZEcqHA7dbwM",
@@ -1338,7 +1338,7 @@ var musicLinks = [
     {
         "videoID": "Y2rDb4Ur2dw",
         "category": "histoire",
-        "title": "Frank Sinatra - Fly Me To The Moon (Live At The Kiel Opera House, St. Louis, MO/1965)"
+        "title": "Frank Sinatra - Fly Me To The Moon (Live At The Kiel Opera House, 1965)"
     },
     {
         "videoID": "6POZlJAZsok",
@@ -1363,7 +1363,7 @@ var musicLinks = [
     {
         "videoID": "bLM7pGOxeTs",
         "category": "chill",
-        "title": "golden hour ｜WangOK cover"
+        "title": "Wang OK - golden hour (cover)"
     },
     {
         "videoID": "UsR08cY8k0A",
@@ -1373,7 +1373,7 @@ var musicLinks = [
     {
         "videoID": "pM3CFiZOU4k",
         "category": "chill",
-        "title": "Shadow of the sun ｜WangOK cover"
+        "title": "Wang OK - Shadow Of The Sun (cover)"
     },
     {
         "videoID": "OLAK5uy_nUwHtzonyTavwJePfgeD17qQTEWKhjFME",
@@ -11149,7 +11149,7 @@ var musicLinks = [
     {
         "videoID": "EWbH6WT5KZ4",
         "category": "todo",
-        "title": "BABY I'M A GANGSTER TOO (BASS BOOSTED) REVIVED | GANGSTA'S PARADISE [OFFICIAL VISUALIZER] | WiZZREX"
+        "title": "BABY I'M A GANGSTER TOO (BASS BOOSTED) | GANGSTA'S PARADISE [OFFICIAL VISUALIZER]"
     },
     {
         "videoID": "tZ243tliADA",
@@ -12739,7 +12739,7 @@ var musicLinks = [
         "videoID": "sbYcPkJcl2k",
         "category": "hardbass electro",
         "top": true,
-        "title": "Hellfire"
+        "title": "Holy Priest, Warface & Catalyst - Hellfire (Official Musicvideo)"
     },
     {
         "videoID": "qA1Ozm2fVA4",
@@ -12776,531 +12776,662 @@ var musicLinks = [
     {
         "videoID": "qJKcADiAuAw",
         "category": "todo",
+        "title": "misery."
     },
     {
         "videoID": "3Mr0pDNVms0",
         "category": "todo",
+        "title": "Heaven Knows I'm Miserable Now (2008 Remaster)"
     },
     {
         "videoID": "sioyWSvvb5A",
         "category": "todo",
+        "title": "Roi (Instrumental Slowed)"
     },
     {
         "videoID": "IGQH1FS89jE",
         "category": "todo",
+        "title": "Monstruo"
     },
     {
         "videoID": "JzMB9ovf-nY",
         "category": "todo",
+        "title": "void (slowed)"
     },
     {
         "videoID": "NpNi7Gsz8_Q",
         "category": "todo",
+        "title": "A Thousand Miles"
     },
     {
         "videoID": "BJxudKhtd9c",
         "category": "todo",
+        "title": "SugarCrash!"
     },
     {
         "videoID": "6uaq8GJJxAQ",
         "category": "todo",
+        "title": "ElyOtto - SugarCrash! (Official Video)"
     },
     {
         "videoID": "JJnUiv61fFg",
         "category": "todo",
+        "title": "ElyOtto - SugarCrash! (Visualizer) ft. Kim Petras, Curtis Waters"
     },
     {
         "videoID": "NMRhx71bGo4",
         "category": "todo",
+        "title": "Let It Happen"
     },
     {
         "videoID": "yzjI_JMuM0k",
         "category": "todo",
+        "title": "adore  -  \"did i tell u that i miss u\"  (slowed) lyric video"
     },
     {
         "videoID": "PHeNqKreoDg",
         "category": "todo",
+        "title": "XvallariX - BALLINTEKK (SLOWED)"
     },
     {
         "videoID": "IMclXRHCBjw",
         "category": "todo",
+        "title": "#BrooklynBloodPop! (Phonk Remix)"
     },
     {
         "videoID": "FNE6cAwglQg",
         "category": "todo",
+        "title": "MADIZON feat. Syko - #BrooklynBloodPop! (Phonk Remix) [HOUSE PHONK]"
     },
     {
         "videoID": "xfN3nqxvmOU",
         "category": "todo",
+        "title": "#BrooklynBloodPop!"
     },
     {
         "videoID": "ydCLZTJUsKA",
         "category": "todo",
+        "title": "STEREO LOVE 2 (Slowed)"
     },
     {
         "videoID": "NfMegACVJQw",
         "category": "todo",
+        "title": "Surf Curse - Freaks [Official Audio]"
     },
     {
         "videoID": "5CmR5QCLTRE",
         "category": "todo",
+        "title": "VIOLIN HARDTEKK (Ultra Slowed)"
     },
     {
         "videoID": "YBdyc1WDlBQ",
         "category": "todo",
+        "title": "Livin' On A Prayer"
     },
     {
         "videoID": "o7fgFaXKVa0",
         "category": "todo",
+        "title": "Duvet"
     },
     {
         "videoID": "keVH4_WdgmI",
         "category": "todo",
+        "title": "Bohemian Rhapsody / Radio Ga Ga (Live at Live Aid, Wembley Stadium, 13th July 1985)"
     },
     {
         "videoID": "vZAj6xfyHIw",
         "category": "todo",
+        "title": "mazie - dumb dumb (official video)"
     },
     {
         "videoID": "HC_yWXv8xUk",
         "category": "todo",
+        "title": "Roi (Instrumental Slowed)"
     },
     {
         "videoID": "7KIHvuMl4Kk",
         "category": "todo",
+        "title": "The Stranglers - Golden Brown"
     },
     {
         "videoID": "baZXHHHThWc",
         "category": "todo",
+        "title": "𝙫𝙞𝙙𝙚𝙤𝙘𝙡𝙪𝙗 - 𝙍𝙊𝙄 | 𝙄𝙉𝙎𝙏𝙍𝙐𝙈𝙀𝙉𝙏𝘼𝙇 | 𝘼𝙨𝙪𝙠𝙖 - 𝙀𝙫𝙖𝙣𝙜𝙚𝙡𝙞𝙤𝙣 [𝙏𝙞𝙠𝙏𝙤𝙠 𝙀𝙙𝙞𝙩]"
     },
     {
         "videoID": "PeMvMNpvB5M",
         "category": "todo",
+        "title": "Heart - \"Barracuda\" (1977)"
     },
     {
         "videoID": "gn63Siphu3M",
         "category": "todo",
+        "title": "Seven Nation Army can't stop the United States (ww2 edit)"
     },
     {
         "videoID": "XNXZ_G2ho4U",
         "category": "todo",
+        "title": "Operation - Gasolina (Absolute Resolve) Edit"
     },
     {
         "videoID": "CCF1_jI8Prk",
         "category": "todo",
+        "title": "Daddy Yankee - Gasolina (Video Oficial)"
     },
     {
         "videoID": "Th2qSOGPXFo",
         "category": "todo",
+        "title": "Gasolina - Daddy yankee"
     },
     {
         "videoID": "GJP9ZTsgxJs",
         "category": "todo",
+        "title": "Daddy Yankee - Gasolina"
     },
     {
         "videoID": "WGU_4-5RaxU",
         "category": "todo",
+        "title": "Blondie - Heart Of Glass"
     },
     {
         "videoID": "J43OKxcNTD4",
         "category": "todo",
+        "title": "chrmbchrmb - matrix (bl studio loop) (slowed)"
     },
     {
         "videoID": "tVdr_JWmnsA",
         "category": "todo",
+        "title": "Toxic"
     },
     {
         "videoID": "cuMuMnCRfqk",
         "category": "todo",
+        "title": "Dracula"
     },
     {
         "videoID": "ZU9V1AQrg0o",
         "category": "todo",
+        "title": "Heavenly jumpstyle (But it hits hard) (Sped Up)"
     },
     {
         "videoID": "Yh-9Qk8DZG0",
         "category": "todo",
+        "title": "MEN OF DESTINY"
     },
     {
         "videoID": "5EYYJbMJrFU",
         "category": "todo",
+        "title": "Silent Voice"
     },
     {
         "videoID": "ojQfhIhPPDs",
         "category": "todo",
+        "title": "PHARAOTEKK (SLOWED)"
     },
     {
         "videoID": "mH1QkmJdXy0",
         "category": "todo",
+        "title": "PHARAOTEKK (SUPER SLOWED)"
     },
     {
         "videoID": "qCOnRdIubx4",
         "category": "todo",
+        "title": "PHARAOTEKK (ULTRA SLOWED)"
     },
     {
         "videoID": "_vPVYlIqeDk",
         "category": "todo",
+        "title": "𝘊𝘜𝘙𝘌 𝘍𝘖𝘙 𝘔𝘌 𝘏𝘈𝘙𝘋𝘛𝘌𝘒𝘒  [𝘛𝘪𝘬𝘛𝘰𝘬 𝘝𝘦𝘳𝘴𝘪𝘰𝘯]"
     },
     {
         "videoID": "G-UprB0hBuE",
         "category": "todo",
+        "title": "VIOLIN HARDTEKK"
     },
     {
         "videoID": "gaaNN5WxKK8",
         "category": "todo",
+        "title": "VIOLIN HARDTEKK (Slowed)"
     },
     {
         "videoID": "be7pTTmltFg",
         "category": "todo",
+        "title": "VIOLIN HARDTEKK (Super Slowed)"
     },
     {
         "videoID": "4A6_mBW03EI",
         "category": "todo",
+        "title": "Carbonne - Imagine (Lyrics video)"
     },
     {
         "videoID": "0lZtPA0pCdM",
         "category": "todo",
+        "title": "isolate.exe - crystals (slowed € reverb)"
     },
     {
         "videoID": "zE7SUi37RVo",
         "category": "todo",
+        "title": "Dutch Disorder - Heroine (PAT B Remix) [TOZA Edit] (slowed+short version)"
     },
     {
         "videoID": "tsuL7ygMILc",
         "category": "todo",
+        "title": "1992.avi (No Intro Slowed)"
     },
     {
         "videoID": "-0bROerjPZA",
         "category": "todo",
+        "title": "STAKILLAZ - я҉ ҉н҉е҉ ҉с҉ч҉а҉с҉т҉л҉и҉в҉"
     },
     {
         "videoID": "cDqL9SHVhFk",
         "category": "todo",
+        "title": "PPAPTEKK (Super Slowed)"
     },
     {
         "videoID": "SmlaoWAcFuI",
         "category": "todo",
+        "title": "SyKo - #BrooklynBloodPop!"
     },
     {
         "videoID": "Se237UXFKlQ",
         "category": "todo",
+        "title": "A Touch Of Class - Around the World (La La La La La) (Official Video)"
     },
     {
         "videoID": "qeMFqkcPYcg",
         "category": "todo",
+        "title": "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This) (Official Video)"
     },
     {
         "videoID": "lLxAbevUyIQ",
         "category": "todo",
+        "title": "SUICIDAL-IDOL - ecstacy (slowed)"
     },
     {
         "videoID": "0UPDBODtxzw",
         "category": "todo",
+        "title": "Tame Impala, JENNIE - Dracula (JENNIE Remix - Official Lyric Video)"
     },
     {
         "videoID": "6KjVYeQ9SRw",
         "category": "todo",
+        "title": "Dracula (JENNIE Remix)"
     },
     {
         "videoID": "VkQuZADpRCU",
         "category": "todo",
+        "title": "я не счастлив - Super Slowed Remix"
     },
     {
         "videoID": "4IKHox-DKrM",
         "category": "todo",
+        "title": "【Ado】モンストロ"
     },
     {
         "videoID": "d_HlPboLRL8",
         "category": "todo",
+        "title": "AURORA - Runaway"
     },
     {
         "videoID": "Qc7_zRjH808",
         "category": "todo",
+        "title": "FIFTY FIFTY (피프티피프티) - 'Cupid'  Official MV"
     },
     {
         "videoID": "4NOMFBRfaT0",
         "category": "todo",
+        "title": "VIDEOCLUB – Roi (Clip officiel)"
     },
     {
         "videoID": "5NjJLFI_oYs",
         "category": "todo",
+        "title": "VIDEOCLUB - Amour plastique (clip officiel)"
     },
     {
         "videoID": "xKJkzro8ArA",
         "category": "todo",
+        "title": "VIDEOCLUB – En nuit (Clip officiel)"
     },
     {
         "videoID": "Eb2I9z6q0n4",
         "category": "todo",
+        "title": "sadsvit - небо (slowed)"
     },
     {
         "videoID": "sx0NSPrEIYc",
         "category": "todo",
+        "title": "NGAL!’MEIJHA"
     },
     {
         "videoID": "BKapPQxcR3Q",
         "category": "todo",
+        "title": "Ｙｏｕ Ｓｐｉｎ Ｍｅ Ｒｏｕｎｄ （Ｌｉｋｅ ａ Ｒｅｃｏｒｄ） － Ｖａｐｏｒｗａｖｅ"
     },
     {
         "videoID": "N0rt01IITq8",
         "category": "todo",
+        "title": "La la La (Siren)"
     },
     {
         "videoID": "qsmGXc6cQLY",
         "category": "todo",
+        "title": "idontloveyouanymore"
     },
     {
         "videoID": "Gh7iwBIzOT0",
         "category": "todo",
+        "title": "anybody can find love (except you.)"
     },
     {
         "videoID": "maWHojZTnTg",
         "category": "todo",
+        "title": "Aria Math"
     },
     {
         "videoID": "jKUMYhUIFbU",
         "category": "todo",
+        "title": "brooklyn bloodpop (hardstyle)"
     },
     {
         "videoID": "Jmz8CXm8JLY",
         "category": "todo",
+        "title": "Syko - #BrooklynBloodPop! (prod. Duvaal)"
     },
     {
         "videoID": "xnP7qKxwzjg",
         "category": "todo",
+        "title": "Tame Impala - Dracula (Official Video)"
     },
     {
         "videoID": "3kfgg2pEl_E",
         "category": "todo",
+        "title": "Tame Impala - Dracula (Best Part Looped + slowed + reverb to perfection + Intro + Outro )"
     },
     {
         "videoID": "U9t-w-CqFeQ",
         "category": "todo",
+        "title": "Let it Happen Alternate Version || Tame Impala"
     },
     {
         "videoID": "PwILkY9gRrc",
         "category": "todo",
+        "title": "Daft Punk - Da Funk (Official Audio)"
     },
     {
         "videoID": "99EmaU44pTU",
         "category": "todo",
+        "title": "nekisekai - AGGRESSIVE MEOW ft. dj timausik [angelcore + brazilian funk 2026]"
     },
     {
         "videoID": "yIAsrNc76-Y",
         "category": "todo",
+        "title": "Say So (Japanese Version)"
     },
     {
         "videoID": "EsZbWAqU8xY",
         "category": "todo",
+        "title": "【Rainych】 SAY SO - Doja Cat | Japanese Version (cover)"
     },
     {
         "videoID": "8CsuLbpBuN4",
         "category": "todo",
+        "title": "Fairytale"
     },
     {
         "videoID": "CUGMZlvrR4c",
         "category": "todo",
+        "title": "Verdi's Requiem: II. Dies Irae"
     },
     {
         "videoID": "GXFSK0ogeg4",
         "category": "todo",
+        "title": "Carl Orff - O Fortuna ~ Carmina Burana"
     },
     {
         "videoID": "0BNh7zpBoBU",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "iCEDfZgDPS8",
         "category": "todo",
+        "title": "Mussorgsky - Night on Bald Mountain"
     },
     {
         "videoID": "9LW9DpmhrPE",
         "category": "todo",
+        "title": "Suzume (feat. Toaka)"
     },
     {
         "videoID": "89dGC8de0CA",
         "category": "todo",
+        "title": "Aerosmith - Dream On (Audio)"
     },
     {
         "videoID": "HWjCStB6k4o",
         "category": "todo",
+        "title": "Ace of Base - Happy Nation (Official Music Video)"
     },
     {
         "videoID": "ETxmCCsMoD0",
         "category": "todo",
+        "title": "ABBA - Money, Money, Money (Official Music Video)"
     },
     {
         "videoID": "NMNsvyDbdMQ",
         "category": "todo",
+        "title": "V PUTIN / GANSTA’S PARADISE"
     },
     {
         "videoID": "hqVBsNrwHYc",
         "category": "todo",
+        "title": "Operation Epic Fury—Macarena edit"
     },
     {
         "videoID": "RDuzszjrdcc",
         "category": "todo",
+        "title": "Seven Nation Army"
     },
     {
         "videoID": "0J2QdDbelmY",
         "category": "todo",
+        "title": "The White Stripes - Seven Nation Army (Official Music Video)"
     },
     {
         "videoID": "IbvNgLYPSIs",
         "category": "todo",
+        "title": "Seven Nation Army (The Glitch Mob Remix)"
     },
     {
         "videoID": "p3l7fgvrEKM",
         "category": "todo",
+        "title": "GALA - Freed from desire [Official Video]"
     },
     {
         "videoID": "OHAjc-ayhus",
         "category": "todo",
+        "title": "ヨルシカ - あぶく（OFFICIAL VIDEO）"
     },
     {
         "videoID": "-sOadAaGiq4",
         "category": "todo",
+        "title": "Lavender Town (Original Japanese Version from Pokemon Red and Green)"
     },
     {
         "videoID": "Nr-WemEPw48",
         "category": "todo",
+        "title": "Watashitachi o Shinjite Ite"
     },
     {
         "videoID": "GzU8KqOY8YA",
         "category": "todo",
+        "title": "Sean Paul - No Lie ft. Dua Lipa"
     },
     {
         "videoID": "nb8CnIo_-_A",
         "category": "todo",
+        "title": "Dominic Fike \"Babydoll\" (Official Audio)"
     },
     {
         "videoID": "vzxdfYgDUec",
         "category": "todo",
+        "title": "Hate Me"
     },
     {
         "videoID": "UZwi9SHgzGY",
         "category": "todo",
+        "title": "Ellie Goulding, Juice WRLD - Hate Me (Official Video)"
     },
     {
         "videoID": "MqIxrUrXAG0",
         "category": "todo",
+        "title": "Модель (Model)"
     },
     {
         "videoID": "JmatYW77zN8",
         "category": "todo",
+        "title": "Bibi Babydoll - BIBI PHONK BR (Prod. DJ FKU)"
     },
     {
         "videoID": "gn4pWLKnYmM",
         "category": "todo",
+        "title": "Bibi Babydoll - BIBI PHONK BR (BRAZILIAN PHONK)"
     },
     {
         "videoID": "dxjC7vL1eNM",
         "category": "todo",
+        "title": "BIBI PHONK BR - DJ FKU (Brazilian Phonk)"
     },
     {
         "videoID": "uxpDa-c-4Mc",
         "category": "todo",
+        "title": "Drake - Hotline Bling"
     },
     {
         "videoID": "PFLoeUPmMF4",
         "category": "todo",
+        "title": "Lonely"
     },
     {
         "videoID": "RfBg9A1Zpvg",
         "category": "todo",
+        "title": "lonely - vonuzal. (Ultra slowed + Reverb)"
     },
     {
         "videoID": "9L5Nkx_EamM",
         "category": "todo",
+        "title": "DXNUS, Xantesha - MONTAGEM FEBRE (SUPER SLOWED)"
     },
     {
         "videoID": "YpfWvdlflkg",
         "category": "todo",
+        "title": "Катя Лель - Мой мармеладный (Katya Lel’ - My Marmalade) (English Lyrics / Türkçe Çeviri)"
     },
     {
         "videoID": "kFJonMzqdig",
         "category": "todo",
+        "title": "Babydoll"
     },
     {
         "videoID": "9gVUjyCc2Io",
         "category": "todo",
+        "title": "XvallariX - BALLINTEKK (SPED UP)"
     },
     {
         "videoID": "X5hWxI08GU0",
         "category": "todo",
+        "title": "XvallariX - BALLINTEKK"
     },
     {
         "videoID": "PGeKygKA2iY",
         "category": "todo",
+        "title": "chrmbchrmb - matrix (BL studio loop)"
     },
     {
         "videoID": "G9jHiifI74Q",
         "category": "todo",
+        "title": "David McCallum- The Edge"
     },
     {
         "videoID": "mq9Q4ykt-Wk",
         "category": "todo",
+        "title": "NETSU FUNK"
     },
     {
         "videoID": "vfE9yTD50Mo",
         "category": "todo",
+        "title": "niteboi - u. [speed up]"
     },
     {
         "videoID": "vlwRmJQ--fc",
         "category": "todo",
+        "title": "MI GENTE (HARDTEKK) (SUPER SLOWED)"
     },
     {
         "videoID": "Fa1pmDMaoyc",
         "category": "todo",
+        "title": "Ｇｉｇｉ　Ｄ＇Ａｇｏｓｔｉｎｏ　－　Ｌ＇Ａｍｏｕｒ　Ｔｏｕｊｏｕｒｓ　（Ｖａｐｏｒｗａｖｅ）"
     },
     {
         "videoID": "TRJSko8bx30",
         "category": "todo",
+        "title": "Misery - (HARDSTYLE)"
     },
     {
         "videoID": "PBz5ShLwVY0",
         "category": "todo",
+        "title": "HEM - Zinzin (Audio Officiel)"
     },
     {
         "videoID": "qDqVFYCfozY",
         "category": "todo",
+        "title": "Funk tribu - Phonky tribu (slowed + reverb)"
     },
     {
         "videoID": "0Uhh62MUEic",
         "category": "todo",
+        "title": "宇多田ヒカル『One Last Kiss』"
     },
     {
         "videoID": "4y5CZ5Cp3Fs",
         "category": "todo",
+        "title": "ooes - права"
     },
     {
         "videoID": "5XCzgXJOyEI",
         "category": "todo",
+        "title": "ERROR (UNWANTEDNESS, PHONK)"
     },
     {
         "videoID": "lbULIfn8b2Q",
         "category": "todo",
+        "title": "Freaks - Ultra Hardstyle (Slowed)"
     },
     {
         "videoID": "1ZG_tPmhk00",
         "category": "todo",
+        "title": "BALLINTEKK"
     },
     {
         "videoID": "n9Nrl9qXxow",
         "category": "todo",
+        "title": "宇多田ヒカル『Mine or Yours』Music Video"
     },
     {
         "videoID": "xbxZQJvYKaY",
         "category": "todo",
+        "title": "Serenade in G Major, K. 525 \"Eine kleine Nachtmusik\": I. Allegro"
     },
     {
         "videoID": "srb0lAK5wbA",
         "category": "todo",
+        "title": "Tryo - L'hymne de nos campagnes (Clip officiel)"
     },
     {
         "videoID": "JNJJ-QkZ8cM",
         "category": "todo",
-    },
+        "title": "Pokemon Blue/Red - Lavender Town"
+    }
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
