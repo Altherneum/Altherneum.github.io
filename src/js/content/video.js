@@ -6866,22 +6866,6 @@ var videoLinks = [
         "title": "The 'yes' Command In Linux"
     },
     {
-        "videoID": "",
-        "category": "todo"
-    },
-    {
-        "videoID": "",
-        "category": "todo"
-    },
-    {
-        "videoID": "",
-        "category": "todo"
-    },
-    {
-        "videoID": "",
-        "category": "todo"
-    },
-    {
         "videoID": "PF2TjY06nzc",
         "category": "todo",
         "title": "ALL of HACKING (No BS, No Fluff) in 6 Minutes"
