@@ -462,9 +462,8 @@ function addCard(top, playlist, videoID, category, latest, premadePlayList, vide
     urlOpenGithub.appendChild(imageOpenOnGithub);
     divLogoHolder.appendChild(urlOpenGithub);
 
-    var urlCopy = document.createElement("a");
+    var urlCopy = document.createElement("button");
     urlCopy.onclick  = () => { navigator.clipboard.writeText(videoID);}
-    urlCopy.href = "#" + videoID;
 
     var copyUrlImage = document.createElement("img");
     copyUrlImage.src = "/assets/svg/copy.svg";

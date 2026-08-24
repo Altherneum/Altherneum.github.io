@@ -155,11 +155,20 @@ div:has(> div > input[type="range"]) {
         font-size: 40px;
         padding: 10px;
         padding-bottom: 0px;
+        border-radius: 15px;
 }
 
 .youtubeEmbed>.videoholder>.card>#logoHolder>a>img,
-.youtubeEmbed>.videoholder>.card>#logoHolder>.topimg {
+.youtubeEmbed>.videoholder>.card>#logoHolder>.topimg,
+.youtubeEmbed>.videoholder>.card>#logoHolder>button>img {
     max-width: 25px !important;
+}
+
+.youtubeEmbed>.videoholder>.card>#logoHolder>button {
+    border: none;
+    background-color: transparent;
+    border-radius: 15px;
+    float:right;
 }
 
 .youtubeEmbed>.videoholder>.card {
