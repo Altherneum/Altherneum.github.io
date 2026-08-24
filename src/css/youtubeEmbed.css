@@ -158,7 +158,7 @@ div:has(> div > input[type="range"]) {
 }
 
 .youtubeEmbed>.videoholder>.card>#logoHolder>a>img {
-    max-width: 40px !important;
+    max-width: 25px !important;
 }
 
 .youtubeEmbed>.videoholder>.card {
