@@ -5645,22 +5645,24 @@ var musicLinks = [
     },
     {
         "videoID": "qBWhc4qbsjo",
-        "category": "todo",
+        "category": "rap",
         "title": "Metro Boomin - Space Cadet ft. Gunna"
     },
     {
         "videoID": "z65Flj8PBq8",
-        "category": "todo",
+        "category": "rap",
         "title": "Space Cadet"
     },
     {
         "videoID": "90DKXLbzLto",
-        "category": "todo",
+        "category": "histoire chill moody",
+        "top": true,
         "title": "The Night We Met"
     },
     {
         "videoID": "zgG9-fQXl0k",
-        "category": "todo",
+        "category": "histoire moody rap",
+        "top": true,
         "title": "Into Your Arms (feat. Ava Max)"
     },
     {
@@ -11045,7 +11047,8 @@ var musicLinks = [
     },
     {
         "videoID": "9eITfGLthDI",
-        "category": "todo",
+        "category": "phonk hardbass electro",
+        "top": true,
         "title": "BALLINTEKK"
     },
     {
@@ -12837,7 +12840,8 @@ var musicLinks = [
     },
     {
         "videoID": "PHeNqKreoDg",
-        "category": "todo",
+        "category": "phonk hardbass electro",
+        "top": true,
         "title": "XvallariX - BALLINTEKK (SLOWED)"
     },
     {
@@ -13341,17 +13345,20 @@ var musicLinks = [
     },
     {
         "videoID": "9gVUjyCc2Io",
-        "category": "todo",
+        "category": "phonk hardbass electro",
+        "top": true,
         "title": "XvallariX - BALLINTEKK (SPED UP)"
     },
     {
         "videoID": "X5hWxI08GU0",
-        "category": "todo",
+        "category": "phonk hardbass electro",
+        "top": true,
         "title": "XvallariX - BALLINTEKK"
     },
     {
         "videoID": "PGeKygKA2iY",
-        "category": "todo",
+        "category": "phonk electro moody chill",
+        "top": true,
         "title": "chrmbchrmb - matrix (BL studio loop)"
     },
     {
@@ -13361,37 +13368,43 @@ var musicLinks = [
     },
     {
         "videoID": "mq9Q4ykt-Wk",
-        "category": "todo",
+        "category": "phonk asian electro",
+        "top": true,
         "title": "NETSU FUNK"
     },
     {
         "videoID": "vfE9yTD50Mo",
-        "category": "todo",
+        "category": "electro",
         "title": "niteboi - u. [speed up]"
     },
     {
         "videoID": "vlwRmJQ--fc",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "MI GENTE (HARDTEKK) (SUPER SLOWED)"
     },
     {
         "videoID": "Fa1pmDMaoyc",
-        "category": "todo",
+        "category": "phonk histoire moody electro",
+        "top": true,
         "title": "Ｇｉｇｉ　Ｄ＇Ａｇｏｓｔｉｎｏ　－　Ｌ＇Ａｍｏｕｒ　Ｔｏｕｊｏｕｒｓ　（Ｖａｐｏｒｗａｖｅ）"
     },
     {
         "videoID": "TRJSko8bx30",
-        "category": "todo",
+        "category": "phonk electro moody hardbass",
+        "top": true,
         "title": "Misery - (HARDSTYLE)"
     },
     {
         "videoID": "PBz5ShLwVY0",
-        "category": "todo",
+        "category": "rap trool",
+        "top": true,
         "title": "HEM - Zinzin (Audio Officiel)"
     },
     {
         "videoID": "qDqVFYCfozY",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "Funk tribu - Phonky tribu (slowed + reverb)"
     },
     {
@@ -13401,22 +13414,26 @@ var musicLinks = [
     },
     {
         "videoID": "4y5CZ5Cp3Fs",
-        "category": "todo",
+        "category": "slavic moody chill",
+        "top": true,
         "title": "ooes - права"
     },
     {
         "videoID": "5XCzgXJOyEI",
-        "category": "todo",
+        "category": "phonk",
+        "top": true,
         "title": "ERROR (UNWANTEDNESS, PHONK)"
     },
     {
         "videoID": "lbULIfn8b2Q",
-        "category": "todo",
+        "category": "phonk hardbass electro histoire",
+        "top": true,
         "title": "Freaks - Ultra Hardstyle (Slowed)"
     },
     {
         "videoID": "1ZG_tPmhk00",
-        "category": "todo",
+        "category": "phonk hardbass electro",
+        "top": true,
         "title": "BALLINTEKK"
     },
     {
