@@ -11018,12 +11018,14 @@ var musicLinks = [
     },
     {
         "videoID": "EwcxrkiOj6Q",
-        "category": "todo",
+        "category": "electro chill",
+        "top": true,
         "title": "MONACO 1990"
     },
     {
         "videoID": "gIgMgocb7W8",
-        "category": "todo",
+        "category": "electro chill",
+        "top": true,
         "title": "MICHELIN CLUB"
     },
     {
