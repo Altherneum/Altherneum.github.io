@@ -169,6 +169,7 @@ div:has(> div > input[type="range"]) {
     background-color: transparent;
     border-radius: 15px;
     float:right;
+    backdrop-filter: none;
 }
 
 .youtubeEmbed>.videoholder>.card {
