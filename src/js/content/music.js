@@ -11571,7 +11571,8 @@ var musicLinks = [
     },
     {
         "videoID": "d-8qQsUNeMY",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "KERNKRAFT 400 (Hardstyle)"
     },
     {
@@ -11651,7 +11652,8 @@ var musicLinks = [
     },
     {
         "videoID": "BgVlCUvrrdU",
-        "category": "todo",
+        "category": "nightcore rock histoire moody",
+        "top": true,
         "title": "[Nightcore] - California Dreamin'"
     },
     {
@@ -11826,7 +11828,8 @@ var musicLinks = [
     },
     {
         "videoID": "j7Xazud2nBU",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "I can be more"
     },
     {
@@ -11891,12 +11894,14 @@ var musicLinks = [
     },
     {
         "videoID": "nNwCMosASNE",
-        "category": "todo",
+        "category": "electro chill",
+        "top": true,
         "title": "RALLY STATION"
     },
     {
         "videoID": "cvaIgq5j2Q8",
-        "category": "todo",
+        "category": "nightcore electro histoire",
+        "top": true,
         "title": "Nightcore - Angel With A Shotgun"
     },
     {
@@ -11911,12 +11916,13 @@ var musicLinks = [
     },
     {
         "videoID": "A1MdThqGarI",
-        "category": "todo",
+        "category": "histoire chill classic",
+        "top": true,
         "title": "Connie Francis - Pretty Little Baby (Official Audio)"
     },
     {
         "videoID": "Mr3NovPap1U",
-        "category": "todo",
+        "category": "long hardbass phonk electro",
         "title": "HUMAN ERROR"
     },
     {
@@ -11926,7 +11932,8 @@ var musicLinks = [
     },
     {
         "videoID": "Ljom6qOnFeE",
-        "category": "todo",
+        "category": "long phonk hardbass electro",
+        "top": true,
         "title": "playlist jumpstyle hardstyle // I'm fine"
     },
     {
