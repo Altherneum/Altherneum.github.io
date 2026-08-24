@@ -5595,47 +5595,52 @@ var musicLinks = [
     },
     {
         "videoID": "CdXesX6mYUE",
-        "category": "todo",
+        "category": "histoire chill",
         "title": "Pitbull - International Love (Official Video) ft. Chris Brown"
     },
     {
         "videoID": "2RBhN09ZQdc",
-        "category": "todo",
+        "category": "histoire chill rock",
         "title": "Bang Bang"
     },
     {
         "videoID": "A1uES-ZzseA",
-        "category": "todo",
+        "category": "histoire chill moody rock",
+        "top": true,
         "title": "Spirits"
     },
     {
         "videoID": "F9kXstb9FF4",
-        "category": "todo",
+        "category": "histoire chill moody rock",
+        "top": true,
         "title": "The Strumbellas - Spirits"
     },
     {
         "videoID": "uSDWUx7S8dw",
-        "category": "todo",
+        "category": "histoire chill moody",
+        "top": true,
         "title": "Space Song"
     },
     {
         "videoID": "3wxyN3z9PL4",
-        "category": "todo",
+        "category": "rock histoire chill",
+        "top": true,
         "title": "Starship - Nothing's Gonna Stop Us Now (Official Music Video) [HD]"
     },
     {
         "videoID": "SZ_I0KZvezw",
-        "category": "todo",
+        "category": "rock histoire chill",
+        "top": true,
         "title": "Nothing's Gonna Stop Us Now"
     },
     {
         "videoID": "O1iV1oG1j5I",
-        "category": "todo",
+        "category": "histoire chill reggae",
         "title": "Praise Jah In The Moonlight (Radio Edit)"
     },
     {
         "videoID": "Kgh9TVm4X8s",
-        "category": "todo",
+        "category": "histoire chill reggae",
         "title": "YG Marley - Praise Jah in the Moonlight (Official Music Video)"
     },
     {
@@ -13448,7 +13453,7 @@ var musicLinks = [
     }
 ];
 
-var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
+var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "reggae", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
 
 function getVideoListType(){
     return MusicListType;
@@ -13503,6 +13508,8 @@ function getEmoji(MusicListType){
             return "🎷";
         case 'todo':
             return "⏰";
+        case 'reggae':
+            return '🌴';
         default:
             return "❓";
       }
