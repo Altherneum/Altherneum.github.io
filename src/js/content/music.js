@@ -1742,17 +1742,17 @@ var musicLinks = [
     },
     {
         "videoID": "yAxWl72m2fc",
-        "category": "trool electro hardbass phonk slavic",
+        "category": "trool electro hardbass slavic",
         "title": "XS Project - Hard Bass Star"
     },
     {
         "videoID": "3fEg1r6SH9Q",
-        "category": "trool electro hardbass phonk slavic",
+        "category": "trool electro hardbass slavic",
         "title": "XS Project - Louder"
     },
     {
         "videoID": "mM14xW7edWM",
-        "category": "trool hardbass slavic",
+        "category": "trool electro hardbass slavic",
         "top": true,
         "title": "XS Project - Bochka, Bass, Kolbaser"
     },
