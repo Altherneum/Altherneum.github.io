@@ -11094,7 +11094,8 @@ var musicLinks = [
     },
     {
         "videoID": "p3KlY_EwLoQ",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "Kernkraft 400 (feat. Zak Conner) (HardTekk)"
     },
     {
@@ -11450,22 +11451,26 @@ var musicLinks = [
     },
     {
         "videoID": "eMqWJDP28p8",
-        "category": "todo",
+        "category": "electro",
+        "top": true,
         "title": "Unwelcome School"
     },
     {
         "videoID": "aV3g-PMDQLs",
-        "category": "todo",
+        "category": "asian phonk hardbass",
+        "top": true,
         "title": "Young Girl A (Hoodtrap)"
     },
     {
         "videoID": "KY4ym9KZZ3w",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "HONOUR (Slowed)"
     },
     {
         "videoID": "xkQbISDpsjk",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "Kernkraft 400"
     },
     {
@@ -11525,7 +11530,8 @@ var musicLinks = [
     },
     {
         "videoID": "oNJqkm17unQ",
-        "category": "todo",
+        "category": "electro trool hardbass",
+        "top": true,
         "title": "Sidequest"
     },
     {
@@ -11545,22 +11551,26 @@ var musicLinks = [
     },
     {
         "videoID": "sgH6emB4UdY",
-        "category": "todo",
+        "category": "phonk electro histoire moody",
+        "top": true,
         "title": "Lullaby"
     },
     {
         "videoID": "LRmRymM0zuY",
-        "category": "todo",
+        "category": "electro trool histoire hardbass",
+        "top": true,
         "title": "Mike Gudmann & Medon - Sandstorm"
     },
     {
         "videoID": "HFhu9sxnWT0",
-        "category": "todo",
+        "category": "electro hardbass",
+        "top": true,
         "title": "Take Me to the Rave"
     },
     {
         "videoID": "xU6LYReBjQM",
-        "category": "todo",
+        "category": "electro hardbass trool",
+        "top": true,
         "title": "Bel Mercy (BEAUZ Hard Techno Remix) feat. Nokia"
     },
     {
