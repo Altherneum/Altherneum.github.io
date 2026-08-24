@@ -10529,7 +10529,8 @@ var musicLinks = [
     },
     {
         "videoID": "thBJ1jM2aSA",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "HONOUR (Slowed)"
     },
     {
@@ -11371,7 +11372,8 @@ var musicLinks = [
     },
     {
         "videoID": "VjXYDiUJKcg",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "HONOUR (FIRST PART) (Slowed)"
     },
     {
@@ -12591,7 +12593,8 @@ var musicLinks = [
     },
     {
         "videoID": "M-C2RNGWnIA",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "HONOUR (FIRST PART) (Ultra Slowed)"
     },
     {
@@ -12661,7 +12664,8 @@ var musicLinks = [
     },
     {
         "videoID": "x0D6CGOttoc",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "HONOUR"
     },
     {
