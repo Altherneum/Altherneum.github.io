@@ -9453,7 +9453,8 @@ var musicLinks = [
     },
     {
         "videoID": "UZJFFStQemI",
-        "category": "todo",
+        "category": "histoire chill classic moody",
+        "top": true,
         "title": "Golden Brown"
     },
     {
@@ -12060,22 +12061,26 @@ var musicLinks = [
     },
     {
         "videoID": "BTnM71u_v2I",
-        "category": "todo",
+        "category": "histoire chill classic moody",
+        "top": true,
         "title": "Golden Brown (Slowed Down Version)"
     },
     {
         "videoID": "GmxkNB-QihI",
-        "category": "todo",
+        "category": "histoire chill classic moody",
+        "top": true,
         "title": "Golden Brown - The Stranglers (slowed + reverb)"
     },
     {
         "videoID": "W2o_HupXq1g",
-        "category": "todo",
+        "category": "histoire chill classic moody",
+        "top": true,
         "title": "Golden Brown"
     },
     {
         "videoID": "Efzv_4WfuRY",
-        "category": "todo",
+        "category": "histoire chill classic moody",
+        "top": true,
         "title": "The Stranglers - Golden Brown (Knight and Princess Version) Slowed | 4ndr3y + Dakijko"
     },
     {
@@ -12907,17 +12912,20 @@ var musicLinks = [
     },
     {
         "videoID": "HC_yWXv8xUk",
-        "category": "todo",
+        "category": "electro chill histoire",
+        "top": true,
         "title": "Roi (Instrumental Slowed)"
     },
     {
         "videoID": "7KIHvuMl4Kk",
-        "category": "todo",
+        "category": "histoire chill classic moody",
+        "top": true,
         "title": "The Stranglers - Golden Brown"
     },
     {
         "videoID": "baZXHHHThWc",
-        "category": "todo",
+        "category": "electro chill histoire",
+        "top": true,
         "title": "𝙫𝙞𝙙𝙚𝙤𝙘𝙡𝙪𝙗 - 𝙍𝙊𝙄 | 𝙄𝙉𝙎𝙏𝙍𝙐𝙈𝙀𝙉𝙏𝘼𝙇 | 𝘼𝙨𝙪𝙠𝙖 - 𝙀𝙫𝙖𝙣𝙜𝙚𝙡𝙞𝙤𝙣 [𝙏𝙞𝙠𝙏𝙤𝙠 𝙀𝙙𝙞𝙩]"
     },
     {
@@ -12957,22 +12965,25 @@ var musicLinks = [
     },
     {
         "videoID": "J43OKxcNTD4",
-        "category": "todo",
+        "category": "phonk electro moody chill",
+        "top": true,
         "title": "chrmbchrmb - matrix (bl studio loop) (slowed)"
     },
     {
         "videoID": "tVdr_JWmnsA",
-        "category": "todo",
+        "category": "histoire chill",
         "title": "Toxic"
     },
     {
         "videoID": "cuMuMnCRfqk",
-        "category": "todo",
+        "category": "histoire rock chill moody electro",
+        "top": true,
         "title": "Dracula"
     },
     {
         "videoID": "ZU9V1AQrg0o",
-        "category": "todo",
+        "category": "hardbass electro rock phonk",
+        "top": true,
         "title": "Heavenly jumpstyle (But it hits hard) (Sped Up)"
     },
     {
@@ -12987,22 +12998,26 @@ var musicLinks = [
     },
     {
         "videoID": "ojQfhIhPPDs",
-        "category": "todo",
+        "category": "phonk hardbass classic",
+        "top": true,
         "title": "PHARAOTEKK (SLOWED)"
     },
     {
         "videoID": "mH1QkmJdXy0",
-        "category": "todo",
+        "category": "phonk hardbass classic",
+        "top": true,
         "title": "PHARAOTEKK (SUPER SLOWED)"
     },
     {
         "videoID": "qCOnRdIubx4",
-        "category": "todo",
+        "category": "phonk hardbass classic",
+        "top": true,
         "title": "PHARAOTEKK (ULTRA SLOWED)"
     },
     {
         "videoID": "_vPVYlIqeDk",
-        "category": "todo",
+        "category": "phonk electro chill moody hardbass",
+        "top": true,
         "title": "𝘊𝘜𝘙𝘌 𝘍𝘖𝘙 𝘔𝘌 𝘏𝘈𝘙𝘋𝘛𝘌𝘒𝘒  [𝘛𝘪𝘬𝘛𝘰𝘬 𝘝𝘦𝘳𝘴𝘪𝘰𝘯]"
     },
     {
@@ -13082,12 +13097,14 @@ var musicLinks = [
     },
     {
         "videoID": "0UPDBODtxzw",
-        "category": "todo",
+        "category": "histoire rock chill moody electro",
+        "top": true,
         "title": "Tame Impala, JENNIE - Dracula (JENNIE Remix - Official Lyric Video)"
     },
     {
         "videoID": "6KjVYeQ9SRw",
-        "category": "todo",
+        "category": "histoire rock chill moody electro",
+        "top": true,
         "title": "Dracula (JENNIE Remix)"
     },
     {
