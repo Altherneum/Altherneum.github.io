@@ -13285,7 +13285,8 @@ var musicLinks = [
     },
     {
         "videoID": "vzxdfYgDUec",
-        "category": "todo",
+        "category": "chill moody histoire",
+        "top": true,
         "title": "Hate Me"
     },
     {
@@ -13295,22 +13296,26 @@ var musicLinks = [
     },
     {
         "videoID": "MqIxrUrXAG0",
-        "category": "todo",
+        "category": "hardbass slavic rap",
+        "top": true,
         "title": "Модель (Model)"
     },
     {
         "videoID": "JmatYW77zN8",
-        "category": "todo",
+        "category": "phonk electro",
+        "top": true,
         "title": "Bibi Babydoll - BIBI PHONK BR (Prod. DJ FKU)"
     },
     {
         "videoID": "gn4pWLKnYmM",
-        "category": "todo",
+        "category": "phonk electro",
+        "top": true,
         "title": "Bibi Babydoll - BIBI PHONK BR (BRAZILIAN PHONK)"
     },
     {
         "videoID": "dxjC7vL1eNM",
-        "category": "todo",
+        "category": "phonk electro",
+        "top": true,
         "title": "BIBI PHONK BR - DJ FKU (Brazilian Phonk)"
     },
     {
@@ -13320,17 +13325,20 @@ var musicLinks = [
     },
     {
         "videoID": "PFLoeUPmMF4",
-        "category": "todo",
+        "category": "phonk chill moody",
+        "top": true,
         "title": "Lonely"
     },
     {
         "videoID": "RfBg9A1Zpvg",
-        "category": "todo",
+        "category": "phonk chill moody",
+        "top": true,
         "title": "lonely - vonuzal. (Ultra slowed + Reverb)"
     },
     {
         "videoID": "9L5Nkx_EamM",
-        "category": "todo",
+        "category": "phonk hardbass electro",
+        "top": true,
         "title": "DXNUS, Xantesha - MONTAGEM FEBRE (SUPER SLOWED)"
     },
     {
