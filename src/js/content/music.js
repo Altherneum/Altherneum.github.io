@@ -1693,7 +1693,7 @@ var musicLinks = [
     },
     {
         "videoID": "aCTabx4cEp0",
-        "category": "phonk slavic",
+        "category": "phonk hardbass slavic",
         "title": "✻H+3+ЯД✻7luCJIo0T6... (Super Slowed)"
     },
     {
@@ -4640,7 +4640,7 @@ var musicLinks = [
     },
     {
         "videoID": "LBPwQgis1PQ",
-        "category": "moody chill electro",
+        "category": "moody histoire classic electro",
         "top": true,
         "title": "Civil War - Happy nation"
     },
@@ -4897,7 +4897,7 @@ var musicLinks = [
     },
     {
         "videoID": "eKw4I2FZxRI",
-        "category": "phonk hardbass",
+        "category": "phonk hardbass slavic",
         "top": true,
         "title": "vyrval - ✻H+3+ЯД✻7luCJIo0T6... (best part looped + super slowed)"
     },
@@ -11564,7 +11564,8 @@ var musicLinks = [
     },
     {
         "videoID": "-N03qM3lEHk",
-        "category": "todo",
+        "category": "phonk hardbass slavic",
+        "top": true,
         "title": "✻H+3+ЯД✻7luCJIo0T6... (second drop)"
     },
     {
@@ -11969,32 +11970,38 @@ var musicLinks = [
     },
     {
         "videoID": "BMm71FZ6L2U",
-        "category": "todo",
+        "category": "phonk classic hardbass",
+        "top": true,
         "title": "Bach Hardstyle (Toccata & Fugue)"
     },
     {
         "videoID": "RqiyStOMcYQ",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "AURA"
     },
     {
         "videoID": "6id2V16vS3E",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "dança zip"
     },
     {
         "videoID": "glucWS42wJY",
-        "category": "todo",
+        "category": "slavic hardbass phonk",
+        "top": true,
         "title": "✻H+3+ЯД✻7luCJIo0T6... (second drop + super slowed)"
     },
     {
         "videoID": "SJDtXEQEEQg",
-        "category": "todo",
+        "category": "phonk electro hardbass",
+        "top": true,
         "title": "ACIDO III"
     },
     {
         "videoID": "DCtbBdRhtoc",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "fragment 2"
     },
     {
@@ -12004,22 +12011,26 @@ var musicLinks = [
     },
     {
         "videoID": "d6j2xb0FPPM",
-        "category": "todo",
+        "category": "phonk rap hardbass moody",
+        "top": true,
         "title": "Black Beatles (Hardtekk)"
     },
     {
         "videoID": "t-p9FslWcoM",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "Tank Triad 2"
     },
     {
         "videoID": "9ZdIQJKEr6g",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "Tank Triad 2 (Slowed)"
     },
     {
         "videoID": "OE06AD_O-AA",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "𝐓𝐚𝐧𝐤 𝐓𝐫𝐢𝐚𝐝 𝟐 · 𝐇𝐄𝐋𝐋𝐁𝐋𝐀𝐃𝐄 (𝐒𝐥𝐨𝐰𝐞𝐝 - 𝐫𝐞𝐯𝐞𝐫𝐛)"
     },
     {
@@ -12996,17 +13007,20 @@ var musicLinks = [
     },
     {
         "videoID": "G-UprB0hBuE",
-        "category": "todo",
+        "category": "phonk hardbass classic",
+        "top": true,
         "title": "VIOLIN HARDTEKK"
     },
     {
         "videoID": "gaaNN5WxKK8",
-        "category": "todo",
+        "category": "phonk hardbass classic",
+        "top": true,
         "title": "VIOLIN HARDTEKK (Slowed)"
     },
     {
         "videoID": "be7pTTmltFg",
-        "category": "todo",
+        "category": "phonk hardbass classic",
+        "top": true,
         "title": "VIOLIN HARDTEKK (Super Slowed)"
     },
     {
@@ -13016,32 +13030,38 @@ var musicLinks = [
     },
     {
         "videoID": "0lZtPA0pCdM",
-        "category": "todo",
+        "category": "phonk histoire",
+        "top": true,
         "title": "isolate.exe - crystals (slowed € reverb)"
     },
     {
         "videoID": "zE7SUi37RVo",
-        "category": "todo",
+        "category": "phonk hardbass trool electro",
+        "top": true,
         "title": "Dutch Disorder - Heroine (PAT B Remix) [TOZA Edit] (slowed+short version)"
     },
     {
         "videoID": "tsuL7ygMILc",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "1992.avi (No Intro Slowed)"
     },
     {
         "videoID": "-0bROerjPZA",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "STAKILLAZ - я҉ ҉н҉е҉ ҉с҉ч҉а҉с҉т҉л҉и҉в҉"
     },
     {
         "videoID": "cDqL9SHVhFk",
-        "category": "todo",
+        "category": "phonk hardbass",
+        "top": true,
         "title": "PPAPTEKK (Super Slowed)"
     },
     {
         "videoID": "SmlaoWAcFuI",
-        "category": "todo",
+        "category": "electro histoire phonk moody",
+        "top": true,
         "title": "SyKo - #BrooklynBloodPop!"
     },
     {
@@ -13056,7 +13076,8 @@ var musicLinks = [
     },
     {
         "videoID": "lLxAbevUyIQ",
-        "category": "todo",
+        "category": "electro phonk moody",
+        "top": true,
         "title": "SUICIDAL-IDOL - ecstacy (slowed)"
     },
     {
@@ -13091,17 +13112,20 @@ var musicLinks = [
     },
     {
         "videoID": "4NOMFBRfaT0",
-        "category": "todo",
+        "category": "histoire chill moody",
+        "top": true,
         "title": "VIDEOCLUB – Roi (Clip officiel)"
     },
     {
         "videoID": "5NjJLFI_oYs",
-        "category": "todo",
+        "category": "histoire chill moody",
+        "top": true,
         "title": "VIDEOCLUB - Amour plastique (clip officiel)"
     },
     {
         "videoID": "xKJkzro8ArA",
-        "category": "todo",
+        "category": "histoire chill",
+        "top": true,
         "title": "VIDEOCLUB – En nuit (Clip officiel)"
     },
     {
@@ -13126,7 +13150,8 @@ var musicLinks = [
     },
     {
         "videoID": "qsmGXc6cQLY",
-        "category": "todo",
+        "category": "electro chill",
+        "top": true,
         "title": "idontloveyouanymore"
     },
     {
@@ -13136,32 +13161,38 @@ var musicLinks = [
     },
     {
         "videoID": "maWHojZTnTg",
-        "category": "todo",
+        "category": "chill classic histoire electro",
+        "top": true,
         "title": "Aria Math"
     },
     {
         "videoID": "jKUMYhUIFbU",
-        "category": "todo",
+        "category": "electro histoire phonk hardbass moody",
+        "top": true,
         "title": "brooklyn bloodpop (hardstyle)"
     },
     {
         "videoID": "Jmz8CXm8JLY",
-        "category": "todo",
+        "category": "electro histoire phonk moody",
+        "top": true,
         "title": "Syko - #BrooklynBloodPop! (prod. Duvaal)"
     },
     {
         "videoID": "xnP7qKxwzjg",
-        "category": "todo",
+        "category": "histoire rock chill moody electro",
+        "top": true,
         "title": "Tame Impala - Dracula (Official Video)"
     },
     {
         "videoID": "3kfgg2pEl_E",
-        "category": "todo",
+        "category": "histoire rock chill moody electro phonk",
+        "top": true,
         "title": "Tame Impala - Dracula (Best Part Looped + slowed + reverb to perfection + Intro + Outro )"
     },
     {
         "videoID": "U9t-w-CqFeQ",
-        "category": "todo",
+        "category": "histoire rock chill moody electro",
+        "top": true,
         "title": "Let it Happen Alternate Version || Tame Impala"
     },
     {
@@ -13171,12 +13202,14 @@ var musicLinks = [
     },
     {
         "videoID": "99EmaU44pTU",
-        "category": "todo",
+        "category": "phonk electro asian hardbass",
+        "top": true,
         "title": "nekisekai - AGGRESSIVE MEOW ft. dj timausik [angelcore + brazilian funk 2026]"
     },
     {
         "videoID": "yIAsrNc76-Y",
-        "category": "todo",
+        "category": "asian chill",
+        "top": true,
         "title": "Say So (Japanese Version)"
     },
     {
@@ -13220,7 +13253,8 @@ var musicLinks = [
     },
     {
         "videoID": "HWjCStB6k4o",
-        "category": "todo",
+        "category": "moody histoire classic electro",
+        "top": true,
         "title": "Ace of Base - Happy Nation (Official Music Video)"
     },
     {
@@ -13230,27 +13264,32 @@ var musicLinks = [
     },
     {
         "videoID": "NMNsvyDbdMQ",
-        "category": "todo",
+        "category": "trool slavic rap", 
+        "top": true,
         "title": "V PUTIN / GANSTA’S PARADISE"
     },
     {
         "videoID": "hqVBsNrwHYc",
-        "category": "todo",
+        "category": "trool electro",
+        "top": true,
         "title": "Operation Epic Fury—Macarena edit"
     },
     {
         "videoID": "RDuzszjrdcc",
-        "category": "todo",
+        "category": "rock histoire",
+        "top": true,
         "title": "Seven Nation Army"
     },
     {
         "videoID": "0J2QdDbelmY",
-        "category": "todo",
+        "category": "rock histoire",
+        "top": true,
         "title": "The White Stripes - Seven Nation Army (Official Music Video)"
     },
     {
         "videoID": "IbvNgLYPSIs",
-        "category": "todo",
+        "category": "rock histoire",
+        "top": true,
         "title": "Seven Nation Army (The Glitch Mob Remix)"
     },
     {
