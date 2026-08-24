@@ -157,7 +157,8 @@ div:has(> div > input[type="range"]) {
         padding-bottom: 0px;
 }
 
-.youtubeEmbed>.videoholder>.card>#logoHolder>a>img {
+.youtubeEmbed>.videoholder>.card>#logoHolder>a>img,
+.youtubeEmbed>.videoholder>.card>#logoHolder>.topimg {
     max-width: 25px !important;
 }
 
