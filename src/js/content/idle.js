@@ -55,7 +55,6 @@ function setPlayerGoldToLocalStorage(gold){
 
         document.getElementById("idlegold").innerText = formatGoldText_k_m_b_t(newgold);
 
-
         // ui message
     }
 }
