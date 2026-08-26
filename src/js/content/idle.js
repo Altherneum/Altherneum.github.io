@@ -45,15 +45,15 @@ function getPlayerGoldFromLocalStorage(){
     return parseInt(storage);
 }
 
-function setPlayerGoldToLocalStorage(xp){
-    if(xp > 0) {
-        let xps = getPlayerGoldFromLocalStorage();
-        let newxp = xps + xp;
-        localStorage.setItem("playerGold", newxp);
+function setPlayerGoldToLocalStorage(gold){
+    if(gold > 0) {
+        let golds = getPlayerGoldFromLocalStorage();
+        let newgold = golds + gold;
+        localStorage.setItem("playerGold", newgold);
 
-        savePlayerGoldToLocalStorage(newxp);
+        savePlayerGoldToLocalStorage(newgold);
 
-        document.getElementById("idlexp").innerText = newxp;
+        document.getElementById("idlegold").innerText = formatGoldText_k_m_b_t(newgold);
 
 
         // ui message
@@ -84,6 +84,24 @@ function GoldLootPerAction(action, actionlvl, playerLVLWithAction){
     goldLooted = goldLooted * (1 + playerLVLWithAction);
 
     return goldLooted;
+}
+
+function formatGoldText_k_m_b_t(goldValue){
+    if(goldValue >= 1000){
+        return "k";
+    }
+    else if(goldValue >= 1_000_000){
+        return "m";
+    }
+    else if(goldValue >= 1_000_000_000){
+        return "b";
+    }
+    else if(goldValue >= 1_000_000_000_000){
+        return "t";
+    }
+    else{
+        return goldValue.toExponential();
+    }
 }
 
 function XPLootPerAction(action, actionlvl, playerLVLWithAction){
