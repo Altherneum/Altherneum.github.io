@@ -126,7 +126,14 @@ function addXPOfAnAction(actionName, actionXP){
 
 function getActionXPHandlerFromLocalStorage(){
     let storage = localStorage.getItem("playerXP");
-    let playerXP = storage === null ? {} : JSON.parse(storage);
+    let playerXP;
+
+    if(storage === null){
+        playerXP = {};
+    }
+    else{
+        playerXP = JSON.parse(storage);
+    }
 
     return playerXP;
 }
