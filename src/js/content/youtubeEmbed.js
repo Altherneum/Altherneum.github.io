@@ -300,13 +300,14 @@ async function setTitleInVar(videoIDParam, title){
 }
 
 async function parseResponse(playlist, videoID, top, category, fetchUrl, text, short, premadePlayList, latest, element, videoType) {
+
     try {
         //skip query with settings ?
         //Create a setting flag, retrieve it for here
         let doQuery = localStorage.getItem("IndividualsVids");
         if(doQuery == null){ doQuery = "true"; }
         
-        if(doQuery === "true"){
+        if(doQuery === "true" || category === "Markdown" ){
             var response = await fetch(fetchUrl);
             var status = response.status;
 
@@ -317,7 +318,7 @@ async function parseResponse(playlist, videoID, top, category, fetchUrl, text, s
             let videoList = GetVideoList();
             let index = videoList.findIndex(item => item.videoID === videoID);
             
-            if (videoList[index].title !== undefined) {
+            if (index >= 0 && videoList[index].title !== undefined) {
                 SavedText = " : " + videoList[index].title;
             }
 

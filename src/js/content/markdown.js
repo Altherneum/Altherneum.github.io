@@ -77,7 +77,7 @@ const parseMarkdown = async (text) => {
                 console.log("check ----------------------------" + timer);
                 if (isFinished) {
                     clearInterval(timer);
-                    await parseResponse(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "", false, false, false, "video-id-" + videoID);
+                    await parseResponse(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "", false, false, false, "video-id-" + videoID, "video");
                 }
             }, 100);
         }
@@ -98,7 +98,7 @@ const parseMarkdown = async (text) => {
                 console.log("check ----------------------------" + timer);
                 if (isFinished) {
                     clearInterval(timer);
-                    await parseResponse(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "", true, false, false, "video-id-" + videoID);
+                    await parseResponse(false, videoID, false, "Markdown", "https://www.youtube.com/oembed?url=https://youtube.com/watch?v=" + videoID + "&format=json", "", true, false, false, "video-id-" + videoID, "video");
                 }
             }, 100);
         }
