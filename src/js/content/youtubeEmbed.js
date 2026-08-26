@@ -300,7 +300,6 @@ async function setTitleInVar(videoIDParam, title){
 }
 
 async function parseResponse(playlist, videoID, top, category, fetchUrl, text, short, premadePlayList, latest, element, videoType) {
-
     try {
         //skip query with settings ?
         //Create a setting flag, retrieve it for here
