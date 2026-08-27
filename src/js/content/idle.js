@@ -53,7 +53,8 @@ function setPlayerGoldToLocalStorage(gold){
 
         savePlayerGoldToLocalStorage(newgold);
 
-        document.getElementById("idlegold").innerText = formatGoldText_k_m_b_t(newgold);
+        document.getElementById("idlegold").innerText = formatGoldText_k_m_b_t(newgold, false);
+        document.getElementById("idlegoldformat").innerText = formatGoldText_k_m_b_t(newgold, true);
 
         // ui message
     }
@@ -85,21 +86,46 @@ function GoldLootPerAction(action, actionlvl, playerLVLWithAction){
     return goldLooted;
 }
 
-function formatGoldText_k_m_b_t(goldValue){
+function formatGoldText_k_m_b_t(goldValue, format){
     if(goldValue >= 1000){
-        return "k";
+        if(!format){
+            return (goldValue / 1000).toFixed(2);
+        }
+        else{
+            return "k";
+        }
     }
     else if(goldValue >= 1_000_000){
-        return "m";
+        if(!format){
+            return (goldValue / 1_000_000).toFixed(2);
+        }
+        else{
+            return "m";
+        }
     }
     else if(goldValue >= 1_000_000_000){
-        return "b";
+        if(!format){
+            return (goldValue / 1_000_000_000).toFixed(2);
+        }
+        else{
+            return "b";
+        }
     }
     else if(goldValue >= 1_000_000_000_000){
-        return "t";
+        if(!format){
+            return (goldValue / 1_000_000_000_000).toFixed(2);
+        }
+        else{
+            return "t";
+        }
     }
     else{
-        return goldValue.toExponential();
+        if(!format){
+            return goldValue.toExponential();
+        }
+        else{
+            return "eˆ";
+        }
     }
 }
 
