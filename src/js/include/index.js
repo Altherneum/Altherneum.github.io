@@ -21,15 +21,18 @@ async function includes() {
     console.log("Old Search Bar : " + localStorage.getItem("OldSearchBar"));
     console.log("All search Bar : " + localStorage.getItem('AllSearchBar'));
     if (localStorage.getItem('OldSearchBar') === "true" || localStorage.getItem('AllSearchBar') === "true") {
-        await include_css("/src/css/header-navbar.css");
-        await include_html("/src/html/include/navlink.html", "navlinklist", true);
+        await Promise.all([
+            include_css("/src/css/header-navbar.css"),
+            include_html("/src/html/include/navlink.html", "navlinklist", true)
+        ])
     }
     if (localStorage.getItem('SearchBarList') !== "false" || localStorage.getItem('AllSearchBar') === "true") {
-        await include_css("/src/css/searchbar.css");
-        await include_html("/src/html/include/searchbar.html", "NavBarHolder", true);
-        await include_script("/src/js/include/searchbar-list.js");
-        await include_script("/src/js/include/searchbar.js");
-
+        await Promise.all([
+            await include_css("/src/css/searchbar.css"),
+            await include_html("/src/html/include/searchbar.html", "NavBarHolder", true),
+            await include_script("/src/js/include/searchbar-list.js"),
+            await include_script("/src/js/include/searchbar.js"),
+        ])
         await include_script("/src/js/content/music.js");
         mergeYouTubeTitles(musicLinks, devMode(), true, false, false);
         await include_script("/src/js/content/video.js");
@@ -40,13 +43,15 @@ async function includes() {
         getURLParameter();
     }
 
-    await include_html("/src/html/include/scrollPercentage.html", "body", false);
-    await include_script("/src/js/include/scrollPercentage.js");
+    await Promise.all([
+        await include_html("/src/html/include/scrollPercentage.html", "body", false),
+        await include_script("/src/js/include/scrollPercentage.js"),
 
-    await include_html("/src/html/include/contentTopModule.html", "NavTopModuleHolder", true)
-    await include_html("/src/html/include/content.html", "body", false);
+        await include_html("/src/html/include/contentTopModule.html", "NavTopModuleHolder", true),
+        await include_html("/src/html/include/content.html", "body", false),
 
-    await include_html("/src/html/include/anchor.html", "content-right", true);
+        await include_html("/src/html/include/anchor.html", "content-right", true)
+    ]);
     await setIconTheme();
 
     await include_script("/src/js/content/contentTopmodule.js");
@@ -58,20 +63,22 @@ async function includes() {
 async function styles() {
     console.log("Loading style");
 
-    await include_css("/src/css/theme.css");
-    await include_css("/src/css/font.css");
-    await include_css("/src/css/user-agent.css");
-    await include_css("/src/css/header.css");
-    await include_css("/src/css/anchor.css");
+    await Promise.all([
+        await include_css("/src/css/theme.css"),
+        await include_css("/src/css/font.css"),
+        await include_css("/src/css/user-agent.css"),
+        await include_css("/src/css/header.css"),
+        await include_css("/src/css/anchor.css"),
 
-    await include_script("/src/js/include/theme.js");
+        await include_script("/src/js/include/theme.js"),
 
-    await include_css("/src/css/content.css");
-    await include_css("/src/css/contentTopmodule.css");
+        await include_css("/src/css/content.css"),
+        await include_css("/src/css/contentTopmodule.css"),
 
-    await include_css("/src/css/footer.css");
-    await include_css("/src/css/scrollbar.css");
-    await include_css("/src/css/scrollPercentage.css");
+        await include_css("/src/css/footer.css"),
+        await include_css("/src/css/scrollbar.css"),
+        await include_css("/src/css/scrollPercentage.css")
+    ]);
 }
 
 async function Metadata() {
@@ -166,15 +173,21 @@ async function pages() {
     )) {
         if ((block || lockdown) && new URLSearchParams(window.location.search).get('key') !== LocalKey) {
             await includes();
-            await include_css("/src/css/lockdown.css");
-            await include_html("/src/html/content/lockdown.html", "contentArticle", true);
+            await Promise.all([
+                await include_css("/src/css/lockdown.css"),
+                await include_html("/src/html/content/lockdown.html", "contentArticle", true),
+            ]);
             await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
             await randomInclude(true);
         }
         else if ((block || maintenance) && localStorage.getItem('Granted') !== "true") {
             await includes();
-            await include_css("/src/css/maintenance.css");
-            await include_html("/src/html/content/maintenance.html", "contentArticle", true);
+
+            await Promise.all([
+                await include_css("/src/css/maintenance.css"),
+                await include_html("/src/html/content/maintenance.html", "contentArticle", true),
+            ]);
+
             await statsConsoleInfo(window.location.pathname + " : LockDown", undefined, "Index.JS");
             await randomInclude(true);
         }
@@ -192,10 +205,14 @@ async function pages() {
         else if (pathNameMatchPage("/settings", true)) {
             await includes();
 
-            await include_css("/src/css/settings.css");
-            await include_html("/src/html/content/dataList.html", "contentArticle", true);
-            await include_html("/src/html/content/settings.html", "contentArticle", true);
-            await include_script("/src/js/content/settings.js"); loadSettingsSwitch();
+            await Promise.all([
+                await include_css("/src/css/settings.css"),
+                await include_html("/src/html/content/dataList.html", "contentArticle", true),
+                await include_html("/src/html/content/settings.html", "contentArticle", true),
+                await include_script("/src/js/content/settings.js")
+            ]);
+            
+            loadSettingsSwitch();
         }
 
         else if (pathNameMatchPage("/github", false) && await CheckPageWith("github")) { }
@@ -217,9 +234,12 @@ async function pages() {
             }
         }
     }
-    await include_script("/src/js/include/viewcount.js");
-    await include_script("/src/js/content/date.js");
-    await include_script("/src/js/include/cursor.js");
+
+    await Promise.all([
+        await include_script("/src/js/include/viewcount.js"),
+        await include_script("/src/js/content/date.js"),
+        await include_script("/src/js/include/cursor.js")
+    ]);
 
     await includeDevFeatures();
 }
