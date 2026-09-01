@@ -1,3 +1,14 @@
+
+async function startGame(){
+    await loadFiles();
+    updateGoldUI();
+} startGame();
+
+async function loadFiles(){
+    await include_script("/src/js/content/idle-gold.js");
+    await include_script("/src/js/content/idle-xp.js");
+}
+
 function getTimeStamp(){
     return new Date().getTime();
 }
@@ -37,170 +48,6 @@ function getDurationOfAction(action, actionlvl, playerLVLWithAction){
     return duration;
 }
 
-function getPlayerGoldFromLocalStorage(){
-    let storage = localStorage.getItem("playerGold");
-    if(storage === null){
-        return 0;
-    }
-    return parseInt(storage);
-}
-
-function setPlayerGoldToLocalStorage(gold){
-    if(gold > 0) {
-        let golds = getPlayerGoldFromLocalStorage();
-        let newgold = golds + gold;
-        localStorage.setItem("playerGold", newgold);
-
-        savePlayerGoldToLocalStorage(newgold);
-
-        document.getElementById("idlegold").innerText = formatGoldText_k_m_b_t(newgold, false);
-        document.getElementById("idlegoldformat").innerText = formatGoldText_k_m_b_t(newgold, true);
-
-        // ui message
-    }
-}
-
-function GoldLootPerAction(action, actionlvl, playerLVLWithAction){
-    let goldLooted;
-
-    switch(action){
-       case "gather":
-            duration = 0;
-            break;
-        case "fight":
-            duration = 1;
-            break;
-        case "production":
-            duration = 0;
-            break;
-        case "moving":
-            duration = 1;
-            break;
-        default:
-            duration = 0;
-    }
-
-    goldLooted = goldLooted * (actionlvl + 1);
-    goldLooted = goldLooted * (1 + playerLVLWithAction);
-
-    return goldLooted;
-}
-
-function formatGoldText_k_m_b_t(goldValue, format){
-    if(goldValue >= 1000){
-        if(!format){
-            return (goldValue / 1000).toFixed(2);
-        }
-        else{
-            return "k";
-        }
-    }
-    else if(goldValue >= 1_000_000){
-        if(!format){
-            return (goldValue / 1_000_000).toFixed(2);
-        }
-        else{
-            return "m";
-        }
-    }
-    else if(goldValue >= 1_000_000_000){
-        if(!format){
-            return (goldValue / 1_000_000_000).toFixed(2);
-        }
-        else{
-            return "b";
-        }
-    }
-    else if(goldValue >= 1_000_000_000_000){
-        if(!format){
-            return (goldValue / 1_000_000_000_000).toFixed(2);
-        }
-        else{
-            return "t";
-        }
-    }
-    else{
-        if(!format){
-            return goldValue.toExponential();
-        }
-        else{
-            return "eˆ";
-        }
-    }
-}
-
-function XPLootPerAction(action, actionlvl, playerLVLWithAction){
-    let xpLooted;
-
-    switch(action){
-       case "gather":
-            duration = 10;
-            break;
-        case "fight":
-            duration = 10;
-            break;
-        case "production":
-            duration = 10;
-            break;
-        case "moving":
-            duration = 1;
-            break;
-        default:
-            duration = 0;
-    }
-
-    xpLooted = xpLooted * (actionlvl + 1);
-    xpLooted = xpLooted * (1 + playerLVLWithAction);
-
-    return xpLooted;
-}
-
-function addXPOfAnAction(actionName, actionXP){
-    let playerXP = getActionXPHandlerFromLocalStorage();
-
-    if(playerXP[actionName]){
-        playerXP[actionName] += actionXP;
-    } else {
-        playerXP[actionName] = actionXP;
-    }
-
-    saveActionXPHandlerToLocaStorage(playerXP);
-}
-
-function getActionXPHandlerFromLocalStorage(){
-    let storage = localStorage.getItem("playerXP");
-    let playerXP;
-
-    if(storage === null){
-        playerXP = {};
-    }
-    else{
-        playerXP = JSON.parse(storage);
-    }
-
-    return playerXP;
-}
-
-function getActionXP(actionName){
-    let playerXP = getActionXPHandlerFromLocalStorage();
-
-    return playerXP[actionName] || 0;
-}
-
-function getLvlFromXPOfAction(actionName) {
-    let xp = getActionXP(actionName);
-    let level = 0;
-    let xpForNextLevel = 100;
-
-    while (xp >= xpForNextLevel) {
-        level++;
-        xp -= xpForNextLevel;
-        xpForNextLevel = Math.floor(xpForNextLevel * getActionMultiplier(actionName));
-    }
-
-    return level;
-}
-
 function getActionMultiplier(actionName) {
     switch (actionName) {
         case "gather":
@@ -212,10 +59,6 @@ function getActionMultiplier(actionName) {
         default:
             return 1;
     }
-}
-
-function saveActionXPHandlerToLocaStorage(actionXP){
-    localStorage.setItem("playerXP", JSON.stringify(playerXP));
 }
 
 function getListOfItemsInInventoryFromLocalStorage(){
