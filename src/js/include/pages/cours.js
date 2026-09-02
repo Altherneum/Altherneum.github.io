@@ -98,6 +98,13 @@ async function CheckPage() {
         });
     }
 
+    else if (pathNameMatchPage("/cours/php", true)) {
+        await includes();
+        await include_script("/src/js/content/markdown.js").then(async () => {
+            await addMarkdown('Altherneum/.github', 'note/Code/Web/PHP/learning.md', false);
+        });
+    }
+
     else if (pathNameMatchPage("/cours/binaire", true)) {
         await includes();
         await include_script("/src/js/content/markdown.js").then(async () => {

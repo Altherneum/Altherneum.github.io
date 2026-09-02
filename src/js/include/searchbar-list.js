@@ -384,6 +384,12 @@ let links = [
         svg: "/assets/svg/languages/js.svg",
     },
     {
+        href: "/cours/php.html",
+        tag: "Cours Web",
+        text: "PHP",
+        svg: "/assets/svg/languages/php.svg",
+    },
+    {
         href: "/cours/binaire.html",
         tag: "Cours",
         text: "Binaire",
