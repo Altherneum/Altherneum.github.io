@@ -188,6 +188,7 @@ async function CheckPage() {
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/arithmetique.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/logique.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/variable.md', false);
+                await addMarkdown('Altherneum/.github', 'note/OS/Linux/read.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/os-version.md', false);
                 await addMarkdown('Altherneum/.github', 'note/OS/Linux/shebang.md', false);
             });
@@ -307,6 +308,7 @@ async function CheckPage() {
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/arithmetique.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/logique.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/variable.md', false);
+            await addMarkdown('Altherneum/.github', 'note/OS/Linux/read.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/os-version.md', false);
             await addMarkdown('Altherneum/.github', 'note/OS/Linux/shebang.md', false);
 
