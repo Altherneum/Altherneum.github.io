@@ -177,7 +177,10 @@ function compareLinks(linkID, queryListed) {
 function compareStringToLink(input, linkText, linkHrefTrim, linkTag, queryNumber) {
     let lowerCaseQuery = input.toLowerCase();
 
-    if (linkText.toLowerCase().includes(lowerCaseQuery) || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) || linkTag.toLowerCase().includes(lowerCaseQuery) || (linkTag.toLowerCase().includes("queryable") && queryNumber >= 1)) {
+    if (linkText.toLowerCase().includes(lowerCaseQuery) 
+        || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) 
+        || linkTag.toLowerCase().includes(lowerCaseQuery) 
+        || (linkTag.toLowerCase().includes("queryable") && queryNumber >= 1)) {
         return true;
     }
     else {
