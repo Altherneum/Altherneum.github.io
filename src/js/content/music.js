@@ -13553,7 +13553,22 @@ var musicLinks = [
         "category": "moody electro histoire chill",
         "top": true,
         "title": "Cure For Me"
-    }
+    },
+    {
+        "videoID": "1c7GQbZXTsM",
+        "category": "todo",
+        "title": "Hymn to the Fallen de John Williams par l'Orchestre d'Harmonie de Golbey"
+    },
+    {
+        "videoID": "ixKxZOyrJIA",
+        "category": "todo",
+        "title": "WhxteSxde - ARABIC PHONK EKI (BRAZILIAN PHONK, Tik Tok Remix Viral 2023)"
+    },
+    {
+        "videoID": "Xdw3jG9unQQ",
+        "category": "todo",
+        "title": "\"Safe\" (Official Video) // Fenwick & the Futures"
+    },
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "reggae", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];

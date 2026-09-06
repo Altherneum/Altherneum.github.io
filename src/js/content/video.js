@@ -2045,7 +2045,7 @@ var videoLinks = [
     {
         "videoID": "o7NB8pri56M",
         "category": "todo",
-        "title": "Peut-on vraiment faire la guerre dans l’espace ? "
+        "title": "Ce satellite est une arme secrète."
     },
     {
         "videoID": "dSwEfu7frFM",
@@ -2089,7 +2089,7 @@ var videoLinks = [
     },
     {
         "videoID": "Uh-4KO33y6c",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "2qN_98tEG_k",
@@ -2103,7 +2103,7 @@ var videoLinks = [
     },
     {
         "videoID": "Dl-jW8CWpKM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "g3BQ41KGB5U",
@@ -2142,15 +2142,15 @@ var videoLinks = [
     },
     {
         "videoID": "RkEe_M-icZA",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "1Zp8MKX82r8",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "oM-_BbiOJO0",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "fGmww9ifU4k",
@@ -2194,7 +2194,7 @@ var videoLinks = [
     },
     {
         "videoID": "IwaRmFC0Ilg",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "1sX2oL2N1Iw",
@@ -2273,7 +2273,7 @@ var videoLinks = [
     },
     {
         "videoID": "XX2UbRo44Kc",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "4Pjk_EsT9TE",
@@ -2377,7 +2377,7 @@ var videoLinks = [
     },
     {
         "videoID": "gCyBQ62Bjp8",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "GsyT3n3lgDg",
@@ -2399,7 +2399,7 @@ var videoLinks = [
     {
         "videoID": "CxVXvFOPIyQ",
         "category": "todo",
-        "title": "Exposing Why Farmers Can't Legally Replant Their Own Seeds"
+        "title": "Why Farmers Can't Legally Replant Their Own Seeds"
     },
     {
         "videoID": "QDDkfKPmD8c",
@@ -2470,7 +2470,7 @@ var videoLinks = [
     },
     {
         "videoID": "hn5RqOTOlhk",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "n82dL0Z6f78",
@@ -2577,7 +2577,7 @@ var videoLinks = [
     },
     {
         "videoID": "m74zazYPwkY",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "KW6r3s7OzqU",
@@ -2592,15 +2592,15 @@ var videoLinks = [
     },
     {
         "videoID": "QJwVUExjlC0",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "P1KKJGzXNUw",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "HntXEYnatn4",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "QSrJQ_53Zww",
@@ -2670,7 +2670,7 @@ var videoLinks = [
     {
         "videoID": "SrD6OB4DwfE",
         "category": "todo",
-        "title": "America's Secret Weapon"
+        "title": "America's Insane Secret Weapon"
     },
     {
         "videoID": "4FHkEdUFqvk",
@@ -2716,7 +2716,7 @@ var videoLinks = [
     {
         "videoID": "qL2d_CI3h6U",
         "category": "todo",
-        "title": "Qui contrôle (vraiment) votre argent ?"
+        "title": "Le secret de Wall Street pour tricher en bourse"
     },
     {
         "videoID": "yWgwm2IqMqU",
@@ -3100,7 +3100,7 @@ var videoLinks = [
     },
     {
         "videoID": "uAev-EdK3I4",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "B7k5rOgmOGY",
@@ -3347,7 +3347,7 @@ var videoLinks = [
     },
     {
         "videoID": "7gCCXCSs734",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "66Uk1UFd4e0",
@@ -3357,7 +3357,7 @@ var videoLinks = [
     },
     {
         "videoID": "ZyHwdD26BtY",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "-5SVYJzZeTk",
@@ -3479,7 +3479,7 @@ var videoLinks = [
     },
     {
         "videoID": "LvnjQQKj11M",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "KW80Yjib7RA",
@@ -3687,7 +3687,7 @@ var videoLinks = [
     },
     {
         "videoID": "mVRXhCkrtf8",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "TdulsXno-Tw",
@@ -3839,7 +3839,7 @@ var videoLinks = [
     },
     {
         "videoID": "Nt_wkcffKdM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "vtQM2e3F7aM",
@@ -3971,7 +3971,7 @@ var videoLinks = [
     },
     {
         "videoID": "aeXIgKuX_zY",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "kixSCr3gm90",
@@ -4000,11 +4000,6 @@ var videoLinks = [
         "title": "Récupère tes fichiers supprimés de clé USB ! 🔥 #astuce #pc #usb #récupérer #fichier #supprimer #tech"
     },
     {
-        "videoID": "Xdw3jG9unQQ",
-        "category": "todo",
-        "title": "\"Safe\" (Official Video) // Fenwick & the Futures"
-    },
-    {
         "videoID": "WLCwMRJBhuI",
         "category": "todo",
         "title": "The Clever Way to Count Tanks - Numberphile"
@@ -4021,7 +4016,7 @@ var videoLinks = [
     },
     {
         "videoID": "puQci0NZKyw",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "jYAQg_tww-E",
@@ -4282,7 +4277,7 @@ var videoLinks = [
     },
     {
         "videoID": "v1s5qXyxmVo",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "LGpvxUh9KAY",
@@ -4296,7 +4291,7 @@ var videoLinks = [
     },
     {
         "videoID": "LfQIJgU_W2w",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "0XumkGQFEEk",
@@ -4347,7 +4342,7 @@ var videoLinks = [
     },
     {
         "videoID": "_cF2Pm56q7A",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "Ala6PHlYjmw",
@@ -4510,11 +4505,11 @@ var videoLinks = [
     },
     {
         "videoID": "a0ua24ZlCuA",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "vTC821fpwdw",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "r7ylxX9wF6k",
@@ -4559,7 +4554,7 @@ var videoLinks = [
     },
     {
         "videoID": "fVcCU1Np4HM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "CXH2pNnBdnE",
@@ -4780,7 +4775,7 @@ var videoLinks = [
     },
     {
         "videoID": "VIh9rrgRhD4",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "xJh-ZJdH34E",
@@ -4987,7 +4982,7 @@ var videoLinks = [
     },
     {
         "videoID": "UqaDQHAIlts",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "08sbpY0USqg",
@@ -4996,7 +4991,7 @@ var videoLinks = [
     },
     {
         "videoID": "BTFNxgsrEYE",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "E2r04dKacE4",
@@ -5178,7 +5173,7 @@ var videoLinks = [
     },
     {
         "videoID": "FDeMq8W4-sU",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "K5WOkLaGS-E",
@@ -5821,7 +5816,7 @@ var videoLinks = [
     },
     {
         "videoID": "yJxUkxAwno8",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "bqXz271fT4I",
@@ -6045,7 +6040,7 @@ var videoLinks = [
     },
     {
         "videoID": "yxnKeTL2I6E",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "HIvgvV8qJDs",
@@ -6056,11 +6051,6 @@ var videoLinks = [
         "videoID": "-DnhbSbuXTc",
         "category": "todo",
         "title": "La FACE CACHÉE de GABEN (le créateur de STEAM...)"
-    },
-    {
-        "videoID": "ixKxZOyrJIA",
-        "category": "todo",
-        "title": "WhxteSxde - ARABIC PHONK EKI (BRAZILIAN PHONK, Tik Tok Remix Viral 2023)"
     },
     {
         "videoID": "qJle6Bki4Og",
@@ -6149,7 +6139,7 @@ var videoLinks = [
     },
     {
         "videoID": "SYozQgKLkJQ",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "heo5ZBet2Qo",
@@ -6207,16 +6197,6 @@ var videoLinks = [
         "title": "Pushing Dial-up Modems Further Than We EVER Thought Possible"
     },
     {
-        "videoID": "1c7GQbZXTsM",
-        "category": "todo",
-        "title": "Hymn to the Fallen de John Williams par l'Orchestre d'Harmonie de Golbey"
-    },
-    {
-        "videoID": "imTH1VT4fp4",
-        "category": "todo",
-        "title": "Sur l'autel"
-    },
-    {
         "videoID": "grIaCVFV1JA",
         "category": "todo",
         "short": true,
@@ -6250,7 +6230,7 @@ var videoLinks = [
     },
     {
         "videoID": "Q9uR4b-ifoM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "k3C518_O59c",
@@ -6289,7 +6269,7 @@ var videoLinks = [
     },
     {
         "videoID": "tMw5cx6o1Gk",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "6qs9yKGGfxM",
@@ -6309,7 +6289,8 @@ var videoLinks = [
     {
         "videoID": "lSdTHs59YKQ",
         "category": "todo",
-        "title": "In real time btw #DayZ #server"
+        "title": "In real time btw #DayZ #server",
+        "text": "packet transfer from game to server"
     },
     {
         "videoID": "J-XAJH2t6vs",
@@ -6398,7 +6379,7 @@ var videoLinks = [
     },
     {
         "videoID": "vqZwIeFcKyA",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "8YwLKJn5GgM",
@@ -6447,7 +6428,7 @@ var videoLinks = [
     },
     {
         "videoID": "AHPkl0CypaM",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "GhyvCq8drO0",
@@ -6466,15 +6447,15 @@ var videoLinks = [
     },
     {
         "videoID": "_uLQm7nfmPk",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "NO9Ca9dgmME",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "X6jjltApu9M",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "Upi8KFu9jXc",
@@ -6573,11 +6554,6 @@ var videoLinks = [
         "title": "Mes ventilos GPU sont cassés ? 🧐🙉#pcgamer #gpu #ventilos #pctips"
     },
     {
-        "videoID": "djnjSTThLcc",
-        "category": "todo",
-        "title": "Is he the most helpful man alive? 👍#shorts"
-    },
-    {
         "videoID": "keKtQ7rv4jA",
         "category": "todo",
         "title": "Logos XMP et EXPO sur les boîtes des RAM. Quelle importance ? #pcbuild #hardware #amd #intel"
@@ -6586,11 +6562,6 @@ var videoLinks = [
         "videoID": "HSNAYXkKi-A",
         "category": "todo",
         "title": "WSL2: Pourquoi coder sur Windows n’est PLUS un enfer 😅 #DevTips #WSL2 #Programming #Docker"
-    },
-    {
-        "videoID": "T86LhCQZYNQ",
-        "category": "todo",
-        "title": "The Automatons Immediately After Defending Cyberstan #helldivers2"
     },
     {
         "videoID": "MYqVQHCN2mA",
@@ -6725,7 +6696,7 @@ var videoLinks = [
     {
         "videoID": "b44TJfJv5Dk",
         "category": "todo",
-        "title": "Vibe Sort"
+        "title": "Vibe Sort | AI-powered Sorting Algorithm"
     },
     {
         "videoID": "HejEsMV0CJY",
@@ -6779,7 +6750,7 @@ var videoLinks = [
     },
     {
         "videoID": "FssFCtEkIpQ",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "C6GIqMn9iwQ",
@@ -8081,7 +8052,7 @@ var videoLinks = [
     {
         "videoID": "1Z9xx6B8p8Y",
         "category": "todo",
-        "title": "How HACKERS get FREE WIFI ANYWHERE? (and how to stop them) | Networking Ep. 3"
+        "title": "(NO AI) How HACKERS get FREE WIFI ANYWHERE? (and how to stop them) | Networking Ep.3"
     },
     {
         "videoID": "pXBwcZh2Q8E",
@@ -8141,7 +8112,7 @@ var videoLinks = [
     {
         "videoID": "3tFuQh3-heI",
         "category": "todo",
-        "title": "How a Genius Nun Broke Into America's Most Secure Nuclear Fortress"
+        "title": "The Granny Who Executed the Most Perfect Break-In EVER"
     },
     {
         "videoID": "5ITP56cyQ20",
@@ -8271,7 +8242,7 @@ var videoLinks = [
     {
         "videoID": "XH32psFPxao",
         "category": "todo",
-        "title": "The Hackers Keeping North Korea Alive"
+        "title": "The Secret Way North Korea Makes Billions | Documentary"
     },
     {
         "videoID": "s5Aaur9Unew",
@@ -8621,7 +8592,7 @@ var videoLinks = [
     {
         "videoID": "E9OmDr1HZ_M",
         "category": "todo",
-        "title": "Americas Most Wanted Phreaker"
+        "title": "How This Guy Outsmarted The US Government"
     },
     {
         "videoID": "HAyC41-EIz4",
@@ -8646,7 +8617,7 @@ var videoLinks = [
     {
         "videoID": "PD86swJH66s",
         "category": "todo",
-        "title": "DirtyClone & pedit COW Explained: Linux Privilege Escalation Deep Dive"
+        "title": "DirtyClone vs pedit COW Explained: Linux Privilege Escalation Deep Dive"
     },
     {
         "videoID": "bXrUPn1cljg",
@@ -8958,7 +8929,7 @@ var videoLinks = [
     {
         "videoID": "36I3UnYME-A",
         "category": "todo",
-        "title": "You Didn't Play Pokemon GO. It Played YOU."
+        "title": "Pokemon Go is terrifying"
     },
     {
         "videoID": "zg0IUhrvkRk",
@@ -9194,7 +9165,7 @@ var videoLinks = [
     {
         "videoID": "pCj0Pc0vay0",
         "category": "todo",
-        "title": "The Kid Who Took Down World's Biggest Companies"
+        "title": "The Kid Who Took Down the ENTIRE Internet"
     },
     {
         "videoID": "Tu0hAaKPxbE",
@@ -9312,7 +9283,7 @@ var videoLinks = [
     {
         "videoID": "8KSnZ_M5zvo",
         "category": "todo",
-        "title": "4 MISES à JOUR qui vous ont INFECTÉ"
+        "title": "Ces mises à jour de jeux vidéo qui vous ont infecté"
     },
     {
         "videoID": "AkpRb8ENcrc",
@@ -9461,7 +9432,7 @@ var videoLinks = [
     },
     {
         "videoID": "jwbuGRE5yeA",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "KkEMzsZG06Q",
@@ -9585,1413 +9556,1728 @@ var videoLinks = [
     },
     {
         "videoID": "H00UfldbbHg",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "15MaSayc28c",
         "category": "todo",
+        "title": "Why Hacking is the Future of War"
     },
     {
         "videoID": "-flkm8mqJ5s",
         "category": "hack malware IT",
         "text": "TeamPoison",
-        "top": true
+        "top": true,
+        "title": "La Descente aux Enfers d'un petit Génie"
     },
     {
         "videoID": "zMr7I6yjsjc",
-        "category": "hack game IT"
+        "category": "hack game IT",
+        "title": "How Hackers Make WORKING Aim Bot For ANY GAME"
     },
     {
         "videoID": "qCLHcHbdO84",
         "category": "hardware science IT",
         "top": true,
-        "short": true
+        "short": true,
+        "title": "Your Credit Card Has No Battery — But It Runs Code #devopsengineering"
     },
     {
         "videoID": "SXhK8shduyA",
         "category": "code science IT",
         "top": true,
+        "title": "Stack et Heap (Pile et Tas)"
     },
     {
         "videoID": "Y1W3KdUrG5I",
         "category": "code science IT",
         "top": true,
+        "title": "Pile (Stack) & Tas (Heap), les différences"
     },
     {
         "videoID": "nB3PDQfTfng",
         "category": "code science IT",
+        "title": "Différence entre Stack Memory & Heap Memory & Method Area | Comprendre la plateforme Java"
     },
     {
         "videoID": "ugSkcmqnwSk",
         "category": "todo",
+        "title": "The Hackers Who Stole $523,000,000 and Escaped(for now)"
     },
     {
         "videoID": "mObFZQlsvlo",
         "category": "todo",
+        "title": "Quelque chose de louche se trame au sein du FSB russe… Une armée de hackers criminels dévoilée"
     },
     {
         "videoID": "XvUWPeQwLMU",
         "category": "todo",
+        "title": "Ces espions volent les données des plus grandes entreprises du monde"
     },
     {
         "videoID": "c-ti_NvVZhA",
         "category": "todo",
+        "title": "Every CPU Explained in 9 Minutes"
     },
     {
         "videoID": "h4z6ly0Kd7s",
         "category": "todo",
+        "title": "Arrête de confondre Proxy, Load Balancer ou API Gateway"
     },
     {
         "videoID": "KC8KB8HTm9E",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Are CRT tvs better than OLED?"
     },
     {
         "videoID": "mqLUPeOmpi4",
         "category": "todo",
+        "title": "L'iceberg des hackers les plus dangereux de l'Histoire"
     },
     {
         "videoID": "HNyUSojHi4A",
         "category": "todo",
+        "title": "Pourquoi les hackers nord-coréens sont si forts ?"
     },
     {
         "videoID": "Wv8bPvBku4k",
         "category": "todo",
+        "title": "Lindows - The Linux Distro That Microsoft Sued… and Lost"
     },
     {
         "videoID": "HSjbCQtTTVk",
         "category": "todo",
+        "title": "Undetected Steam Malware: Sent by Viewer"
     },
     {
         "videoID": "Nx4xeORw03o",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Microsoft’s Secret OS Just Leaked"
     },
     {
         "videoID": "VeYvUE6RbRk",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "8x Your RAM"
     },
     {
         "videoID": "nUm3HTjwedM",
         "category": "todo",
+        "title": "Installing Windows 11 on an Intel Compute Stick but Everything Goes Wrong..."
     },
     {
         "videoID": "gdrrsadTtTY",
         "category": "todo",
+        "title": "Microsoft's Xbox Computer"
     },
     {
         "videoID": "nj9e2Qfe3Cc",
         "category": "todo",
+        "title": "GitHub Hacker EXPOSED BY HIS CAT"
     },
     {
         "videoID": "vd974-yLO6E",
         "category": "todo",
+        "title": "Gaming on a GPU"
     },
     {
         "videoID": "sr-Q4pgs9HE",
         "category": "todo",
+        "title": "Gaming on a Medical Display Computer"
     },
     {
         "videoID": "M9ZCjMtthqY",
         "category": "todo",
+        "title": "Gaming on a Failed Steam Machine (Sorta)"
     },
     {
         "videoID": "kghIsF_ecaU",
         "category": "todo",
+        "title": "Installing SteamOS on a Cardboard Box"
     },
     {
         "videoID": "LjvG54xszoY",
         "category": "todo",
+        "title": "A Modern OS... on a Floppy Disk?!"
     },
     {
         "videoID": "bRoRPiDOtUg",
         "category": "todo",
+        "title": "Jailbreaking a Prison Laptop to Play Prison Games"
     },
     {
         "videoID": "MmJ8NVLji84",
         "category": "todo",
+        "title": "Installing The Sonic Drive-In Operating System"
     },
     {
         "videoID": "le8-dt7gYw8",
         "category": "todo",
+        "title": "Installing SteamOS on an iBoss Firewall"
     },
     {
         "videoID": "p2bbJ4ViZSI",
         "category": "todo",
+        "title": "The Linux Experience - GNOME"
     },
     {
         "videoID": "JA9OU68_5J0",
         "category": "todo",
+        "title": "This Linux Kernel Exploit is Just 10 Lines of Python"
     },
     {
         "videoID": "peXwnSBXNXA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Biggest Hack of 2026"
     },
     {
         "videoID": "VdpqKwFXYls",
         "category": "todo",
+        "title": "Il a eu accès à Mythos, l'IA trop dangereuse pour le public"
     },
     {
         "videoID": "aeSFXqYl08A",
         "category": "todo",
+        "title": "Le signal du l̴͉̯̏̂a̷̝̥̿̆͊p̶͓̹̺̃͋̀į̸͔̩̓n̶͍̔̂b̸̡̀l̸̟͈̊a̸̗͑͐͒n̵͈͒̈́c̷̹̝̑.exe"
     },
     {
         "videoID": "uT2A2undwY4",
         "category": "todo",
+        "title": "How Lucky Patcher Became Android's Most Controversial App"
     },
     {
         "videoID": "W4-D49TgHK4",
         "category": "todo",
+        "title": "Every Dangerous Hacking Gadget Explained in 12 Minutes!"
     },
     {
         "videoID": "tGXV-ZRwcUM",
         "category": "todo",
+        "title": "How Not To Secure Your Company (Target Data Breach)"
     },
     {
         "videoID": "0Rl76cZ7Nic",
         "category": "todo",
+        "title": "How Bad Leap Day Math Took Down Microsoft"
     },
     {
         "videoID": "3-MSlNVqzYY",
         "category": "todo",
+        "title": "The Most Destructive Hack Ever Used: NotPetya"
     },
     {
         "videoID": "R7VVwfh0Wpo",
         "category": "todo",
+        "title": "How This SQL Command Blew Up a Billion Dollar Company"
     },
     {
         "videoID": "IoM5zUI8oFc",
         "category": "todo",
+        "title": "I Tried to Build an AI From Scratch"
     },
     {
         "videoID": "HRa31C7zfzk",
         "category": "todo",
+        "title": "vas-y, viens, on recrée TOUT internet... de zéro"
     },
     {
         "videoID": "zXe8yj5af3U",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Des HACKERS ont BRAQUÉ 1,9 MILLIARD de Dollars à Google ! 🏴‍☠️💸"
     },
     {
         "videoID": "WtlGB-YVLOg",
         "category": "todo",
+        "title": "What Happens When a CPU Receives an Unknown Instruction?"
     },
     {
         "videoID": "OlKvnvZKzcg",
         "category": "todo",
+        "title": "Can a Game Company Really Sabotage Your PC?"
     },
     {
         "videoID": "r28btOpO2kA",
         "category": "todo",
+        "title": "Windows Is Getting An ID Check (Linux Isn't)"
     },
     {
         "videoID": "daACE6hQhHg",
         "category": "todo",
+        "title": "Recover Deleted Files Windows 11 (Not in Recycle Bin? Microsoft's FREE Tool)"
     },
     {
         "videoID": "cbQHOESWVso",
         "category": "todo",
+        "title": "This \"Free VPN's\" official domain now spreads malware"
     },
     {
         "videoID": "NWytrZVM6WM",
         "category": "todo",
+        "title": "\"Please Hack My Computer\""
     },
     {
         "videoID": "AC8zIESRyVs",
         "category": "todo",
+        "title": "WordPress Is Eating Itself Alive"
     },
     {
         "videoID": "cUyLNSUH8Yk",
         "category": "todo",
+        "title": "Et si Internet avait été Français?"
     },
     {
         "videoID": "Vj1uh89v-Sc",
         "category": "todo",
+        "title": "Hacking Windows TrustedInstaller (GOD MODE)"
     },
     {
         "videoID": "4HPSuWYppVs",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Bloctel piraté en 10 minutes : 3 millions de numéros #Piratage"
     },
     {
         "videoID": "sGewtFGbhLM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "GitLab CVE-2026-19478 : ton repo entier disparaît #gitlab"
     },
     {
         "videoID": "nfnprRKZtkc",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Save and Restore Cursor Position"
     },
     {
         "videoID": "jD1PyySlJJ4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Leap seconds broke the internet so they changed how they worked"
     },
     {
         "videoID": "98EyEKe1MVE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Kryptos Code"
     },
     {
         "videoID": "rwe6W_5sXb8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Linux is Full of Crap"
     },
     {
         "videoID": "6w0gQ4oZivU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Free Tool That Fixes Windows Privacy"
     },
     {
         "videoID": "huGIfq5OooU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "C'est quoi ces \"assiettes\" sur les pylônes ?"
     },
     {
         "videoID": "xMSD0vn9ECg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "This Site Owes $340 Million"
     },
     {
         "videoID": "DRp-eh2pCFo",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Steam Controller Drives Itself to the Charger"
     },
     {
         "videoID": "NDAZOCakXVo",
         "category": "todo",
+        "title": "4Chan VS Scientology"
     },
     {
         "videoID": "KArch4rjU_0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "USB in USB #charger #technology #electronic #funny"
     },
     {
         "videoID": "zREEvDiHIK4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "What is the difference between USB A, B and C?"
     },
     {
         "videoID": "3CBAVf9VtNc",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Comment Microsoft gagne (vraiment) son argent ?"
     },
     {
         "videoID": "ii4AXAsE_is",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Useful PC Shortcuts"
     },
     {
         "videoID": "evce2mEeNhk",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Cybersecurity Checklist for your Website"
     },
     {
         "videoID": "73TrLfcwTTU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How to modify your prod database"
     },
     {
         "videoID": "0Le-I1-z4rk",
         "category": "todo",
+        "title": "How Terminals Actually Work Behind the Scenes?"
     },
     {
         "videoID": "fRUVme4SliA",
         "category": "todo",
+        "title": "Installing obviously fake programs to see what happens"
     },
     {
         "videoID": "UmTaBay_tbk",
         "category": "todo",
+        "title": "What if you delete the Windows Registry on EVERY Windows Version?"
     },
     {
         "videoID": "ySQQ5IKTO1c",
         "category": "todo",
+        "title": "Who Allowed This?"
     },
     {
         "videoID": "KS9u-h90fPI",
         "category": "todo",
+        "title": "the tools that real hackers use"
     },
     {
         "videoID": "SJ92rOuk9Xc",
         "category": "todo",
+        "title": "i was right."
     },
     {
         "videoID": "_YEbVSoV7qY",
         "category": "todo",
+        "title": "Ce que la Police peut extraire de votre téléphone"
     },
     {
         "videoID": "VT4OKPoJOhI",
         "category": "todo",
+        "title": "Windows Pushed Me To Linux"
     },
     {
         "videoID": "Qddzc5iqP5U",
         "category": "todo",
+        "title": "Tout le monde se trompe sur l’eau consommée par l’IA"
     },
     {
         "videoID": "FqXxvflvNi8",
         "category": "todo",
+        "title": "Indiana Jones and the Last Crusade: 80s Anti-Piracy Nightmare"
     },
     {
         "videoID": "mNvdPqlvCGk",
         "category": "todo",
+        "title": "The Time Hackers Stole Top-Secret Cyberweapons"
     },
     {
         "videoID": "Rrvrl_Oe5lA",
         "category": "todo",
+        "title": "The Windows XP Samsung Wii U Gamepad"
     },
     {
         "videoID": "a6EWIh2D1NQ",
         "category": "todo",
+        "title": "Hacking a weird TV censoring device"
     },
     {
         "videoID": "9-dvmJTm0R0",
         "category": "todo",
+        "title": "How a Random Soccer Game Activates Animal Crossing's Debug Mode"
     },
     {
         "videoID": "FnTI3u6cnsc",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Schlatt Had NO WORDS 😭"
     },
     {
         "videoID": "hLKSo4GzkAU",
         "category": "todo",
+        "title": "Ce que tes yeux ne voient pas dans un QR Code"
     },
     {
         "videoID": "Ao6H0vSXL0U",
         "category": "todo",
+        "title": "Le DERNIER Endroit sur Terre SANS Réseau 📵🛜"
     },
     {
         "videoID": "KoziBW5p--c",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Cloudflare Just Deleted 100TB of Memory #cloudflare #dns #programming"
     },
     {
         "videoID": "9KOau7CLCCU",
         "category": "todo",
+        "title": "They’re Banning Your Home Servers."
     },
     {
         "videoID": "bIZlU7J9fqg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Why Did Early 90s Computers Have A Degauss Button?"
     },
     {
         "videoID": "kTt72SrO1js",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "CD Drive Users in 2026 💿"
     },
     {
         "videoID": "b3KpFdb1pW8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "We Took $10,000 From @mkbhd's Locked iPhone"
     },
     {
         "videoID": "HWNwqyUyhgE",
         "category": "todo",
+        "title": "How Soviet People Built Computers From Almost Nothing"
     },
     {
         "videoID": "vH2vA3kvVIM",
         "category": "todo",
+        "title": "This Hacker Will Never Send Door Emojis Again"
     },
     {
         "videoID": "awFTa5rr8F8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Vibe coding vs software engineering"
     },
     {
         "videoID": "lzToMTjeTgA",
         "category": "todo",
+        "title": "Out of Bounds Secrets | System Startups - Boundary Break"
     },
     {
         "videoID": "-zbUf2EGzWg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "They want access to your confidential files"
     },
     {
         "videoID": "1wWQazBLCL4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Linux Might Not Be Doomed, Except SteamOS"
     },
     {
         "videoID": "_FF0opHuSOQ",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Windows Is Coming For Pirated Copies"
     },
     {
         "videoID": "Ij1w7SmALH8",
         "category": "todo",
+        "title": "vas-y, viens, on construit une bombe atomique"
     },
     {
         "videoID": "SJ-ibLJoCFM",
         "category": "todo",
+        "title": "Inside a Data Center with 90,000 Servers"
     },
     {
         "videoID": "hWFlgDEMPLk",
         "category": "todo",
+        "title": "9 SECRETS SUR TON PC 💻🤫"
     },
     {
         "videoID": "ihtAijebU-M",
         "category": "todo",
+        "title": "new attack leaks secrets using RAM as a radio"
     },
     {
         "videoID": "Y0O3SHrBFbE",
         "category": "todo",
+        "title": "Intro to Game Hacking: DEFCON 32"
     },
     {
         "videoID": "geX2kGnw3Ck",
         "category": "todo",
+        "title": "Identity of Top Russian Hacker Exposed... by Russia"
     },
     {
         "videoID": "casV7qv7Mr8",
         "category": "todo",
+        "title": "Hunting an Online Drug Lord | The Paul Le Roux Documentary"
     },
     {
         "videoID": "f4s1h2YETNY",
         "category": "todo",
+        "title": "An introduction to Shader Art Coding"
     },
     {
         "videoID": "gbcdwcspLYw",
         "category": "todo",
+        "title": "Gmail CENSURE vos emails ?"
     },
     {
         "videoID": "cBdiZtWib68",
         "category": "todo",
+        "title": "Google SUPPRIME les mots de passe ?"
     },
     {
         "videoID": "Zvy9AXSZbNI",
         "category": "todo",
+        "title": "L'ancêtre de l'appareil photo 📸"
     },
     {
         "videoID": "ZypKlvvBOaA",
         "category": "todo",
+        "title": "Cette technique permet de pirater toutes les données cryptées ?! 🔐"
     },
     {
         "videoID": "L_EZYhYnrDY",
         "category": "todo",
+        "title": "J'ai codé une simulation d'Épidémie et le résultat est contre-intuitif"
     },
     {
         "videoID": "MlD2h0BP0Jc",
         "category": "todo",
+        "title": "The Day China Hacked Google: Operation Aurora"
     },
     {
         "videoID": "Hs7TWwG_5bY",
         "category": "todo",
+        "title": "Le plus grand réseau d’espionnage que vous ne verrez jamais"
     },
     {
         "videoID": "lVViRoosANg",
         "category": "todo",
+        "title": "Hackers russes : les soldats invisibles du Kremlin qui changent le monde | Documentaire"
     },
     {
         "videoID": "Of_JnlMvyzk",
         "category": "todo",
+        "title": "How to Bypass Anti-Cheat Like a Pro Game Hacker"
     },
     {
         "videoID": "sImmUc1-xMg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How Hackers find vulnerable machines  #computervirus #windows"
     },
     {
         "videoID": "bUD3XMOz524",
         "category": "todo",
+        "title": "Installing Steam on the PS5"
     },
     {
         "videoID": "SYfUvyKm40Y",
         "category": "todo",
+        "title": "Why This One Line Of Code HACKS Any Website"
     },
     {
         "videoID": "V6d8Yy7Ji68",
         "category": "todo",
+        "title": "Hansa: The Infiltration of the Dark Web"
     },
     {
         "videoID": "cOAaonpTLlc",
         "category": "todo",
+        "title": "The Hunt for Lux: The Internet’s Most Disturbed User"
     },
     {
         "videoID": "l8jpiy6nePI",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How load balancers get load balanced."
     },
     {
         "videoID": "4MoNviiWBtU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Tout Internet aurait pu s'effondrer en une semaine 🫪"
     },
     {
         "videoID": "jGrJ2NAi9TY",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Is Your GPU Coil Whine Dangerous?"
     },
     {
         "videoID": "qHfMRs8dSdQ",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Peut-on mettre 3 barrettes de RAM sur son PC ?  #gaming #pc #ram #config"
     },
     {
         "videoID": "qIuMdGy9YlE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "3:2 pulldown vs speed up for conforming film frame rates for TV"
     },
     {
         "videoID": "aa0v-24EFy0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "how to destroy ai scam phone calls"
     },
     {
         "videoID": "9QxMYaQbSGQ",
         "category": "todo",
+        "title": "Tous les Réseaux Mobiles Expliqués en 10 Minutes"
     },
     {
         "videoID": "pGWSs6laAO0",
         "category": "todo",
+        "title": "Every Free App You Actually Need Explained (Part 1-4)"
     },
     {
         "videoID": "92hY7eg8bWo",
         "category": "todo",
+        "title": "Tous les Réseaux Mobiles Expliqués en 11 Minutes"
     },
     {
         "videoID": "VlH3nJ1VHcA",
         "category": "todo",
+        "title": "Pourquoi tu peux pas juste copier le jeu d'un pote"
     },
     {
         "videoID": "ima8O-DFQis",
         "category": "todo",
+        "title": "Hunting the $477,000,000 FTX Hacker"
     },
     {
         "videoID": "hny3jneSdMg",
         "category": "todo",
+        "title": "Le Dealer du DarkWeb qui a Disparu avec 300 Millions €"
     },
     {
         "videoID": "178agRLLPNc",
         "category": "todo",
+        "title": "SCANDALE : Voici Comment l'ARMÉE a Piraté votre TÉLÉ"
     },
     {
         "videoID": "fD3cWXn2yYE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Ton compte Microsoft volé sans toucher ton mot de passe #hacking"
     },
     {
         "videoID": "7uGJ1Zi94J8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Ce driver Windows donne les pleins pouvoirs à un hacker #Windows"
     },
     {
         "videoID": "UGLwLSejkNI",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Grandmas Use Linux Now"
     },
     {
         "videoID": "uWzX8Jc9tO8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Why Claude Uses 3 Different Rate Limits?"
     },
     {
         "videoID": "8lGpZkjnkt4",
         "category": "todo",
+        "title": "GitHub Pull Request in 100 Seconds - Git a FREE sticker 🔥"
     },
     {
         "videoID": "S0aH4kfy87k",
         "category": "todo",
+        "title": "Pull Request et Fork - Github - Par la pratique"
     },
     {
         "videoID": "U_y1GoT00R4",
         "category": "todo",
+        "title": "How Governments Are Tracking Your Location Using Ads"
     },
     {
         "videoID": "i5EH6EnkWYk",
         "category": "todo",
+        "title": "Les meilleurs hackeurs du monde (Corée du Nord)"
     },
     {
         "videoID": "CIOrlb8NTOI",
         "category": "todo",
+        "title": "BreachForums is Dead"
     },
     {
         "videoID": "4oxVxCXSscQ",
         "category": "todo",
+        "title": "The \"Autist\" that Became the FBI’s Most Wanted Hacker"
     },
     {
         "videoID": "0D2Gsok5wgI",
         "category": "todo",
+        "title": "This Nerdy Teen is the FBI’s Most Wanted Hacker"
     },
     {
         "videoID": "8Zb15QlCiFs",
         "category": "todo",
+        "title": "The Secret Bunker Running The Entire Dark Web"
     },
     {
         "videoID": "VG2vobAtuN4",
         "category": "todo",
+        "title": "Hacker's Guide To Burner Phones (Burner Phone 101)"
     },
     {
         "videoID": "HPyO4tw6TXo",
         "category": "todo",
+        "title": "GrapheneOS and Phone OPSEC"
     },
     {
         "videoID": "e49894rt_4I",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Did Windows Steal Your Storage?"
     },
     {
         "videoID": "0_HeVHfMAG0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "CVSS 9,8 : pourquoi ce score ne veut souvent rien dire #InfoSec"
     },
     {
         "videoID": "0AKb0lKUfCA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Will hack for pilates reservation"
     },
     {
         "videoID": "VHMzNt-Bq2E",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Your RAM Forgets Everything Thousands of Times a Second"
     },
     {
         "videoID": "G13c71GGQBQ",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How to avoid a Zip Bomb.. #carterpcs #tech #zipbomb"
     },
     {
         "videoID": "P8At2iQWt0Q",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Your Data Is Quietly Dying Right Now"
     },
     {
         "videoID": "aIHlFPouu5A",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "LE POISSON QUI JOUE À POKÉMON QUI LEAK UNE CB"
     },
     {
         "videoID": "IFJ485h2qXA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Your SSD Writes 4MB Every Time You Save 1MB"
     },
     {
         "videoID": "zooDde_aCR0",
         "category": "todo",
+        "title": "Whatsapp, Paypal : la faille du répondeur"
     },
     {
         "videoID": "ZpZbTPYB3cU",
         "category": "todo",
+        "title": "DEF CON 26  - Martin Vigo - Compromising Online Accounts by Cracking Voicemail Systems"
     },
     {
         "videoID": "g40zWR1nX0c",
         "category": "todo",
+        "title": "J'ai miné du Bitcoin pour voir si ça rapporte"
     },
     {
         "videoID": "FMB90QV08Sk",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Is Ultra Just a Marketing Buzzword?"
     },
     {
         "videoID": "ROw7-lBQgGw",
         "category": "todo",
+        "title": "Qu’est-il ARRIVÉ aux ANONYMOUS ?"
     },
     {
         "videoID": "PnMMA75LUeU",
         "category": "todo",
+        "title": "This is How Far the Feds Go to Spy on You"
     },
     {
         "videoID": "G2blhFJDeAM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "SMS 2FA : le pire choix pour ta sécu #Sécurité"
     },
     {
         "videoID": "fYLUN8zueYE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How does Claude watermarking work?"
     },
     {
         "videoID": "RlLX-62sD9o",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "GitHub en panne pour la 13e fois en 17 jours #Tech"
     },
     {
         "videoID": "zmHX-B_YN48",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "New GPU But WORSE FPS?!"
     },
     {
         "videoID": "2UHZShhBY1g",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Cette faille dans Copilot se propage toute seule (144 jours sans fix) #Microsoft"
     },
     {
         "videoID": "Y7AT93hMXw0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Your CPU Has Never Subtracted a Number"
     },
     {
         "videoID": "p_0skNo4zNE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Your CPU Can Do Math Wrong"
     },
     {
         "videoID": "9Sn-a948VHk",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "32-Bit Chips Are a Ticking Time Bomb"
     },
     {
         "videoID": "ddCLuQLMq_8",
         "category": "todo",
+        "title": "How Ad Blockers Work"
     },
     {
         "videoID": "PNWABi6Dcl8",
         "category": "todo",
+        "title": "Massive apple hack"
     },
     {
         "videoID": "1RYoBvIWEOc",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Le vrai danger avec tes données volées (c'est pas le phishing) #Hacking"
     },
     {
         "videoID": "cKmuKqRKobo",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The MacBook Cheat Code… #Shorts"
     },
     {
         "videoID": "96JPSLUZUH4",
         "category": "todo",
+        "title": "Le hacker russe le plus recherché des États-Unis"
     },
     {
         "videoID": "-2uAsJ5EPAw",
         "category": "todo",
+        "title": "The coolest anti-surveillance tools at Defcon"
     },
     {
         "videoID": "-FIdwclRTP4",
         "category": "todo",
+        "title": "I don't trust hardware wallets"
     },
     {
         "videoID": "E7la7-dtfVM",
         "category": "todo",
+        "title": "This new startup can query anywhere you've been..."
     },
     {
         "videoID": "cgiyWdC1hEM",
         "category": "todo",
+        "title": "Le rôle abject d'un garde d'Obama sur le dark web"
     },
     {
         "videoID": "GmRoqV5lxOI",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "uNRjgwP_RlY",
         "category": "todo",
+        "title": "Combien de lignes pour coder Snake en pur Javascript"
     },
     {
         "videoID": "FYpsHwkuQiw",
         "category": "todo",
+        "title": "Stealing Computer Passwords on Login"
     },
     {
         "videoID": "5JJETA_kasM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Il a hacké la NASA et le Pentagone à 15 ans 💻 #hacker #cybersécurité #histoirevraie"
     },
     {
         "videoID": "JkLjf4pJi9w",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "I Tested AI's Morality 🤯"
     },
     {
         "videoID": "FEWu8v7VIco",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Fuite Éducation nationale : les 4 réflexes à avoir maintenant #Cybersécurité"
     },
     {
         "videoID": "KSBGsK13j74",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The Space Particle That Changed An Election 🤯"
     },
     {
         "videoID": "2e5RJBkr968",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Ouvrir un port sur sa box, ce n’est pas forcément dangereux. Le problème c’est le service derrière"
     },
     {
         "videoID": "mKuC94Yk9b4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Hey there Adobe"
     },
     {
         "videoID": "lFowP3j1ELE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Offline System Design"
     },
     {
         "videoID": "YmLp8qe87A0",
         "category": "todo",
+        "title": "I Built an LLM From Scratch"
     },
     {
         "videoID": "jVpsLMCIB0Y",
         "category": "todo",
+        "title": "The Unbreakable Kryptos Code"
     },
     {
         "videoID": "lDieMm4k0_4",
         "category": "todo",
+        "title": "DÉTRUIRE un PC avec des VIRUS 💣💻"
     },
     {
         "videoID": "i8mZ_9LEROc",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Vibe Coder vs SWE: Hosting"
     },
     {
         "videoID": "yLgmAiA5ZSo",
         "category": "todo",
+        "title": "On a un PLAN pour TERRAFORMER MARS !"
     },
     {
         "videoID": "LIXAMir9-AU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Someone Built a CPU Using CSS"
     },
     {
         "videoID": "1fZWHeHICws",
-        "category": "todo",
+        "category": "todo"
     },
     {
         "videoID": "s2ENhZPZBZg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "New Acrobat Update #animation"
     },
     {
         "videoID": "Q1t4E0314KA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Ce mail de ta banque est un piège (voici comment le voir) #Phishing"
     },
     {
         "videoID": "sgZCoJ7axdA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "*Next-door Sysadmin*"
     },
     {
         "videoID": "mS3J3RUum54",
         "category": "todo",
+        "title": "Make 768 servers appear as ONE"
     },
     {
         "videoID": "_KkYdIqrRJU",
         "category": "todo",
+        "title": "Bitcoin a été piraté ?"
     },
     {
         "videoID": "glsObeN2mFE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Cette appli de notes open source pèse même pas 20 Mo #OpenSource"
     },
     {
         "videoID": "pGhFBdIzkaE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Turn Any Laptop Into a Chromebook! #pc #tech #technology #shorts"
     },
     {
         "videoID": "mNyrh1EjHeM",
         "category": "todo",
+        "title": "The Man Who Robbed Kim Jong-un"
     },
     {
         "videoID": "2X2V3xv_jik",
         "category": "todo",
+        "title": "The safest way to store Bitcoin was just hacked..."
     },
     {
         "videoID": "bnT-DWJyHuo",
         "category": "todo",
+        "title": "J'ai créé un faux réseau wifi dans un hôtel (et c'est flippant)"
     },
     {
         "videoID": "0ZrGZFWoSKA",
         "category": "todo",
+        "title": "Le jour où Wikipédia a été supprimé"
     },
     {
         "videoID": "bcgmcs4lJI8",
         "category": "todo",
+        "title": "This Hacker Can Never Visit a Playground Again"
     },
     {
         "videoID": "9uqG8qsrdQo",
         "category": "todo",
+        "title": "Jusqu’où je peux compresser cette image ? (ft. le PDG de VLC et Théorus)"
     },
     {
         "videoID": "eWwIJWirkCM",
         "category": "todo",
+        "title": "8 PIRES FAILS des GÉANTS de la TECH ❌🤖"
     },
     {
         "videoID": "t7MEKGKUkiE",
         "category": "todo",
+        "title": "Le complot le plus flippant de l’histoire"
     },
     {
         "videoID": "wV3n4BQYT1U",
         "category": "todo",
+        "title": "Le futur de la triche est terrifiant"
     },
     {
         "videoID": "cu3LoTA1cSM",
         "category": "todo",
+        "title": "These government sites were PWNed"
     },
     {
         "videoID": "2t6-AxpZXiA",
         "category": "todo",
+        "title": "I Hacked This Amazon Router. What I Found Should be Illegal."
     },
     {
         "videoID": "anzI_sMW2QA",
         "category": "todo",
+        "title": "The AUR keeps getting Malware"
     },
     {
         "videoID": "nlgFRLWHmGw",
         "category": "todo",
+        "title": "ON TESTE 50 TECHNOLOGIES OUBLIÉES (certaines sont folles)"
     },
     {
         "videoID": "m1NCjJ4b2Rg",
         "category": "todo",
+        "title": "La Guerre qui oppose CHEATERS aux devs depuis 25 ans (tout s'accélère)"
     },
     {
         "videoID": "4zJUzi-12hs",
         "category": "todo",
+        "title": "Les Pires CYBER-TUEURS du WEB 💻🔪"
     },
     {
         "videoID": "oRkg8vN0W_I",
         "category": "todo",
+        "title": "ARRÊTÉ avec 7,5M$ : L'Histoire d’un Étudiant qui Hackait les PLUS RICHES"
     },
     {
         "videoID": "A0NqN1Ogwnk",
         "category": "todo",
+        "title": "The Man Who Stole $3.4 Billion From The Dark Web's Kingpin"
     },
     {
         "videoID": "w_U5Itwiztg",
         "category": "todo",
+        "title": "Comment font les hackers ?"
     },
     {
         "videoID": "4qSBDRkU0pM",
         "category": "todo",
+        "title": "Vous connaissez Tor… mais connaissez-vous I2P ?"
     },
     {
         "videoID": "TPvOqP0-_lU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "No Wireless Transfer"
     },
     {
         "videoID": "_7cwafG_cEQ",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Copilot Diagnosis"
     },
     {
         "videoID": "N6wD3DNZsj0",
         "category": "todo",
+        "title": "Un abonné a tenté de me hacker en m'envoyant un jeu (flippant un peu)"
     },
     {
         "videoID": "L1B9IosP80s",
         "category": "todo",
+        "title": "Comment hacker 43 % du web ?"
     },
     {
         "videoID": "E-SckA-WbTo",
         "category": "todo",
+        "title": "Vous êtes surveillé au travail (c'est pire que vous le pensez)"
     },
     {
         "videoID": "jlWbkqMFHBo",
         "category": "todo",
+        "title": "They keep using games to spread malware"
     },
     {
         "videoID": "evrDACBJ_8k",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Fingerprinting : ton VPN ne te protège pas de ça #VPN"
     },
     {
         "videoID": "IO1MK81wInU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "CVE-2026-63960 : ton câble USB-C peut pirater ton kernel Linux #Linux"
     },
     {
         "videoID": "IKpLNCs4n24",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "You Can BAN Players with a SHULKERS..."
     },
     {
         "videoID": "EKzPGTXgCWU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "A 3D Printed Key can UNLOCK Every Suitcase 😭"
     },
     {
         "videoID": "XUgOc_wy_G0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "replacing a CPU while the PC is hibernating #shorts"
     },
     {
         "videoID": "STGI95NWqXw",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "A Pigeon Faster Than The Internet #funfact"
     },
     {
         "videoID": "6I_K1ZD878c",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Upgrade Already"
     },
     {
         "videoID": "s0EQUFoI1SE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Le mot de passe wifi que tu changes jamais #hacking"
     },
     {
         "videoID": "7eZVbIG26WI",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How does calling 911 ALWAYS work??"
     },
     {
         "videoID": "Xik48JzGqlk",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The Charging Pad Never Touches Your Phone"
     },
     {
         "videoID": "hZKpZc7TWyA",
         "category": "todo",
+        "title": "Activer Windows XP par téléphone en 2024 (Ça marche ?🤔)"
     },
     {
         "videoID": "OcOX92Crteg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Is This Killing Your Internet Speed?!"
     },
     {
         "videoID": "t038K2wQTjM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Cette boîte fait tourner la voix de ChatGPT (et le 911) #tech"
     },
     {
         "videoID": "wIrn-Qof8NM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Rapid Fire PC Questions Answered"
     },
     {
         "videoID": "SphMYSHPmnM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Sandboxing AI Agents"
     },
     {
         "videoID": "_XvGKXk_pJI",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "ID Generation in Distributed Systems"
     },
     {
         "videoID": "3i9IlWxRm-o",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Stocker nos données dans du verre : les disques durs du futur ? 💾 #tech @FRHardware"
     },
     {
         "videoID": "GwSSrwryxN0",
         "category": "todo",
+        "title": "Impostor Syndrome"
     },
     {
         "videoID": "VSLgKDKxxzA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The Hidden Math Inside QR Codes"
     },
     {
         "videoID": "LtYgNxfIJeM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "OLED Recoil"
     },
     {
         "videoID": "MMlXcXecr4w",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "This Simple Trick Sorts Metal Shells Perfectly"
     },
     {
         "videoID": "oacGnixyUwE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Ce PowerPoint fait 570 Ko au lieu de 2 Go #Tech"
     },
     {
         "videoID": "kej70TH07vM",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Why Zipping a File Twice Makes It Bigger #Shorts"
     },
     {
         "videoID": "yj_6deR-HD4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The Bug That Only Happens Sometimes"
     },
     {
         "videoID": "ucTesOvDtgg",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "\"High-Level\" Languages Are a Polite Lie #Shorts"
     },
     {
         "videoID": "0v9jXd-AfqE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "AI models won’t stop hacking other companies."
     },
     {
         "videoID": "QKn2z2PvMCo",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Apple is censoring “sensitive” FaceTime calls?? #carterpcs #tech #facetime #apple #ai"
     },
     {
         "videoID": "uBm8sgc05yE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "He Used AI To Balance This Pole"
     },
     {
         "videoID": "y_zOPiuEdYY",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The 3 WORST Programming Languages"
     },
     {
         "videoID": "-D_drKyJqQE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "HTML Input Types #coding #html"
     },
     {
         "videoID": "qu04VsK1Ekc",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Keep 20% Free or Slow Your SSD"
     },
     {
         "videoID": "8eEBoUt1OGo",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "OneDrive Photo Business"
     },
     {
         "videoID": "xd3rX8hEap0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "On Apple Laptops, Code Can't Hide The Camera LED"
     },
     {
         "videoID": "7yYI-fna1mg",
         "category": "todo",
+        "title": "L'histoire d'Orange : La genèse (PTT) (Partie 1/4)"
     },
     {
         "videoID": "9SdcJxX5hu0",
         "category": "todo",
+        "title": "L'histoire d'Orange : Le début des problèmes (Partie 2/4)"
     },
     {
         "videoID": "Pb6FqInMH-g",
         "category": "todo",
+        "title": "L'histoire d'Orange : La fin d'une époque"
     },
     {
         "videoID": "ShnDJR9ET6Y",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "À Quelle VITESSE tu TÉLÉCHARGES en 3G, 4G et 5G ? ⬇️☁️"
     },
     {
         "videoID": "xNcrfveKlDU",
         "category": "todo",
+        "title": "10% of the world computers were hacked"
     },
     {
         "videoID": "yZIGdSjpzU4",
         "category": "todo",
+        "title": "La meilleure alternative de messagerie anonyme et sécurisée ?"
     },
     {
         "videoID": "xmtzDmPKboY",
         "category": "todo",
+        "title": "La réalité du marché des fuites de données"
     },
     {
         "videoID": "79bghzjkYB4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "What happens when you open a ZIP Bomb?? #carterpcs #tech #pc #gaming"
     },
     {
         "videoID": "nmbphUdMhiE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "I Plugged a Hacking USB Into Linux"
     },
     {
         "videoID": "1vt6SMbeLw4",
         "category": "todo",
+        "title": "The MoneyGram Windows Kiosk PC"
     },
     {
         "videoID": "ELTwwTsR5w8",
         "category": "todo",
+        "title": "vas-y, viens, on recode Windows de zéro"
     },
     {
         "videoID": "qLgCzFN_LDo",
         "category": "todo",
+        "title": "How Tor Users Get Caught By Saying Too Much"
     },
     {
         "videoID": "ftMNQGbvCiA",
         "category": "todo",
+        "title": "Ces hackers chinois vous ont sûrement déjà piraté… (APT41)"
     },
     {
         "videoID": "8UBv8pWH3Kw",
         "category": "todo",
+        "title": "The Failed Experiment That Broke The Internet"
     },
     {
         "videoID": "5_jjTsGeGms",
         "category": "todo",
+        "title": "L’incroyable cavale du Roi du dark web"
     },
     {
         "videoID": "v_z2HkVfcEA",
         "category": "todo",
+        "title": "This Nerdy Teen Wouldn't Stop Hacking Companies"
     },
     {
         "videoID": "vyDt5NKAv_I",
         "category": "todo",
+        "title": "The Teens Hacking Famous Rappers for Profit"
     },
     {
         "videoID": "Xm2X1uKI0Sk",
         "category": "todo",
+        "title": "These Teenagers Wouldn’t Stop Robbing Millionaires"
     },
     {
         "videoID": "VOdgZ8lkS0E",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "VLC Has A Secret Live TV Mode"
     },
     {
         "videoID": "bXbi6AvODXA",
         "category": "todo",
+        "title": "How Hackers REVERSE ENGINEER Any Software"
     },
     {
         "videoID": "T8eimZHn3Fg",
         "category": "todo",
+        "title": "The WORST Advice Given To New Developers"
     },
     {
         "videoID": "z1nRvJi9d5U",
         "category": "todo",
+        "title": "This Free Tool Decodes Game Boy ROM From a Photograph"
     },
     {
         "videoID": "OUd37MWgBfs",
         "category": "todo",
+        "title": "How to get your discord token in 2026"
     },
     {
         "videoID": "y8Kagu3r3Z4",
         "category": "todo",
+        "title": "Deanonymizing Monero Transactions in Tor Network"
     },
     {
         "videoID": "ydHF3Z0oLos",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "That Engineer at 2am..."
     },
     {
         "videoID": "FOZ2EmkoZM8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Google impose l'IA sur ta recherche, voici comment la virer #Google"
     },
     {
         "videoID": "CpcEO3hShTo",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Should you use AI on personal coding projects?"
     },
     {
         "videoID": "XLfSrPUOBR8",
         "category": "todo",
+        "title": "L'histoire du dragon qui voulait hacker"
     },
     {
         "videoID": "HFPCKrFUQ8Q",
         "category": "todo",
+        "title": "Vous avez tout faux sur les climatiseurs."
     },
     {
         "videoID": "ZXbHyq0O_4k",
         "category": "todo",
+        "title": "Apple vs 4Chan"
     },
     {
         "videoID": "Tju9dYr4zd0",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Vibe Coder vs SWE: speeding up your application."
     },
     {
         "videoID": "nRAprhYSGuw",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Steam Just Changed Gifting Forever"
     },
     {
         "videoID": "xOcaz2iSJq8",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Fixing a broken laptop fan #tech #technology #shorts #pc"
     },
     {
         "videoID": "oJp5mZpTnwE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "The Fake English Words in French…"
     },
     {
         "videoID": "4HbYUB1J1io",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "2 Inertia Tricks"
     },
     {
         "videoID": "jpJnBjzlC9g",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "GrapheneOS Example"
     },
     {
         "videoID": "JlnTxLVS2ec",
         "category": "todo",
+        "title": "The [ Real ] Arch Linux User Experience"
     },
     {
         "videoID": "pb0kJXSy64E",
         "category": "todo",
+        "title": "Inside The Largest Hacker Gathering in the World"
     },
     {
         "videoID": "tJP5f3x960Y",
         "category": "todo",
+        "title": "making an ANTI-CHEAT from scratch was HELL"
     },
     {
         "videoID": "d8sRjCH80GM",
         "category": "todo",
+        "title": "Hunting The Most Wanted Hackers on Earth"
     },
     {
         "videoID": "p8y2UpIWqY4",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Why are street lights switching from orange to white?"
     },
     {
         "videoID": "IBtMxLs5TCA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How companies stop account sharing"
     },
     {
         "videoID": "GlhRGlyDx-U",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Can you fool a self driving car?"
     },
     {
         "videoID": "wlgGHRud-CE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "I use Claude in my head"
     },
     {
         "videoID": "mEf3CtHViiU",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "THE ACCIDENTAL FIRST"
     },
     {
         "videoID": "iR8gfMWRa0o",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "3 levels of search"
     },
     {
         "videoID": "qlHRikqT09w",
         "category": "todo",
+        "title": "Comment rendre n'importe quel appareil intraçable ?"
     },
     {
         "videoID": "IOXL7fUySMs",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "How Does Entity Collision Work? #minecraft"
     },
     {
         "videoID": "uDb0D6rSr2s",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "My favorite TUIs on Linux 2026"
     },
     {
         "videoID": "wEdaFKlX_Hs",
         "category": "todo",
+        "title": "Comment cacher l'incachable (anonymiser Bitcoin)"
     },
     {
         "videoID": "ztcP0F5HoyE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "NASA Flies a Jury, Not a Computer"
     },
     {
         "videoID": "3EhTn-ejgEQ",
         "category": "todo",
+        "title": "Le jeu vidéo secret de la CIA"
     },
     {
         "videoID": "nfJF_J3e5eA",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Comment les hackers ont battu la PlayStation ! 😮‍"
     },
     {
         "videoID": "9693Ix4W7IE",
         "category": "todo",
-        "short": true
+        "short": true,
+        "title": "Tricking a vibe coder into learning to code"
     },
     {
         "videoID": "_RSirsK8jr8",
         "category": "todo",
+        "title": "Comment ces forumeurs sont devenus des criminels"
     },
     {
         "videoID": "SKuJ60kD8wg",
         "category": "todo",
-    },
+        "title": "Wordpress Situation is Absolutely Insane"
+    }
 ];
 
 var VideoListType = ["todo", "politique", "hack", "IT", "discord", "code", "malware", "game", "science", "DeepWeb", "linux", "humour", "IA", "OpSec", "chem", "police", "news", "archive", "crypto", "hardware"];
