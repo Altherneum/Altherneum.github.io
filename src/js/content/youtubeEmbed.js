@@ -166,7 +166,7 @@ async function GetVideos(videoList, VideoListType, videoType, includeLatestVideo
         videoholder.replaceChildren();
         var div_card = addCard(false, false, hash, "", false, false, videoType, short);
         let savedTitle = "";
-        if (videoList[videoID].text !== undefined) {
+        if (videoList[videoID] !== undefined && videoList[videoID].text !== undefined) {
             savedTitle = " : " + videoList[videoID].text;
         }
         addCardData(div_card, "404" + savedTitle , "Code YouTube \" " + hash + " \" incorrect !", "/assets/svg/link-broken.svg", true);
