@@ -13569,6 +13569,318 @@ var musicLinks = [
         "category": "todo",
         "title": "\"Safe\" (Official Video) // Fenwick & the Futures"
     },
+    {
+        "videoID": "1IXOdjVTbcw",
+        "category": "todo",
+    },
+    {
+        "videoID": "AfSx-q51W5g",
+        "category": "todo",
+    },
+    {
+        "videoID": "VlPKk0yGOAM",
+        "category": "todo",
+    },
+    {
+        "videoID": "7KIHvuMl4Kk",
+        "category": "todo",
+    },
+    {
+        "videoID": "rZEz_xulFiA",
+        "category": "todo",
+    },
+    {
+        "videoID": "HwtEBQiuX-c",
+        "category": "todo",
+    },
+    {
+        "videoID": "3WpdCZC9q6w",
+        "category": "todo",
+    },
+    {
+        "videoID": "AZTo3iJng7U",
+        "category": "todo",
+    },
+    {
+        "videoID": "CtoO-jLSC8o",
+        "category": "todo",
+    },
+    {
+        "videoID": "bmorUXjaQgs",
+        "category": "todo",
+    },
+    {
+        "videoID": "W2Y8afd31tM",
+        "category": "todo",
+    },
+    {
+        "videoID": "wPJYvICJ5tY",
+        "category": "todo",
+    },
+    {
+        "videoID": "sKJvJCsey84",
+        "category": "todo",
+    },
+    {
+        "videoID": "5yr-r7mD_Io",
+        "category": "todo",
+    },
+    {
+        "videoID": "At8v_Yc044Y",
+        "category": "todo",
+    },
+    {
+        "videoID": "-arkKErUdLs",
+        "category": "todo",
+    },
+    {
+        "videoID": "w15oWDh02K4",
+        "category": "todo",
+    },
+    {
+        "videoID": "wD0Mm6WIcYs",
+        "category": "todo",
+    },
+    {
+        "videoID": "JINM3T45GhA",
+        "category": "todo",
+    },
+    {
+        "videoID": "FwPpAeZdIts",
+        "category": "todo",
+    },
+    {
+        "videoID": "0BNh7zpBoBU",
+        "category": "todo",
+    },
+    {
+        "videoID": "Ixu_r8wqGo4",
+        "category": "todo",
+    },
+    {
+        "videoID": "HugtGPq-sqs",
+        "category": "todo",
+    },
+    {
+        "videoID": "AqI97zHMoQw",
+        "category": "todo",
+    },
+    {
+        "videoID": "qD-sbetAjjM",
+        "category": "todo",
+    },
+    {
+        "videoID": "eFByj5kZHgE",
+        "category": "todo",
+    },
+    {
+        "videoID": "o837EeJn_XQ",
+        "category": "todo",
+    },
+    {
+        "videoID": "ZRtdQ81jPUQ",
+        "category": "todo",
+    },
+    {
+        "videoID": "dy90tA3TT1c",
+        "category": "todo",
+    },
+    {
+        "videoID": "x8VYWazR5mE",
+        "category": "todo",
+    },
+    {
+        "videoID": "3eytpBOkOFA",
+        "category": "todo",
+    },
+    {
+        "videoID": "OIBODIPC_8Y",
+        "category": "todo",
+    },
+    {
+        "videoID": "Y4nEEZwckuU",
+        "category": "todo",
+    },
+    {
+        "videoID": "8iuLXODzL04",
+        "category": "todo",
+    },
+    {
+        "videoID": "sAuEeM_6zpk",
+        "category": "todo",
+    },
+    {
+        "videoID": "kzdJkT4kp-A",
+        "category": "todo",
+    },
+    {
+        "videoID": "C7dPqrmDWxs",
+        "category": "todo",
+    },
+    {
+        "videoID": "F9kXstb9FF4",
+        "category": "todo",
+    },
+    {
+        "videoID": "A1uES-ZzseA",
+        "category": "todo",
+    },
+    {
+        "videoID": "ncHWcgju-eo",
+        "category": "todo",
+    },
+    {
+        "videoID": "47dtFZ8CFo8",
+        "category": "todo",
+    },
+    {
+        "videoID": "jWpZuFM0Qtk",
+        "category": "todo",
+    },
+    {
+        "videoID": "p6v6wWmEYvY",
+        "category": "todo",
+    },
+    {
+        "videoID": "WaURUkHtCJ0",
+        "category": "todo",
+    },
+    {
+        "videoID": "75P0QGi3RO0",
+        "category": "todo",
+    },
+    {
+        "videoID": "HjmmxX5U2VM",
+        "category": "todo",
+    },
+    {
+        "videoID": "J76S5q_ETfo",
+        "category": "todo",
+    },
+    {
+        "videoID": "cr1ApdTn6JY",
+        "category": "todo",
+    },
+    {
+        "videoID": "ATSoWTil834",
+        "category": "todo",
+    },
+    {
+        "videoID": "jiexIMlRAPI",
+        "category": "todo",
+    },
+    {
+        "videoID": "sk4QhMsTlRA",
+        "category": "todo",
+    },
+    {
+        "videoID": "_r8zB9RA37s",
+        "category": "todo",
+    },
+    {
+        "videoID": "o_Go1ah3Vds",
+        "category": "todo",
+    },
+    {
+        "videoID": "dvgZkm1xWPE",
+        "category": "todo",
+    },
+    {
+        "videoID": "ALsvdSA9tOU",
+        "category": "todo",
+    },
+    {
+        "videoID": "Uoox9fpmDP0",
+        "category": "todo",
+    },
+    {
+        "videoID": "DF3XjEhJ40Y",
+        "category": "todo",
+    },
+    {
+        "videoID": "40N4Mjjvh4c",
+        "category": "todo",
+    },
+    {
+        "videoID": "ma1pD7ugMb8",
+        "category": "todo",
+    },
+    {
+        "videoID": "5NjJLFI_oYs",
+        "category": "todo",
+    },
+    {
+        "videoID": "hBkh7DRNqw8",
+        "category": "todo",
+    },
+    {
+        "videoID": "ICDSY3BErX0",
+        "category": "todo",
+    },
+    {
+        "videoID": "ER8z-iLK91Y",
+        "category": "todo",
+    },
+    {
+        "videoID": "V2Bqt5yJSTg",
+        "category": "todo",
+    },
+    {
+        "videoID": "EeS9JN7D0p0",
+        "category": "todo",
+    },
+    {
+        "videoID": "giAYKRRuE54",
+        "category": "todo",
+    },
+    {
+        "videoID": "dowgfTcZiTw",
+        "category": "todo",
+    },
+    {
+        "videoID": "htgr3pvBr-I",
+        "category": "todo",
+    },
+    {
+        "videoID": "LatorN4P9aA",
+        "category": "todo",
+    },
+    {
+        "videoID": "Y0JepxudChw",
+        "category": "todo",
+    },
+    {
+        "videoID": "UsdGgRL1xHc",
+        "category": "todo",
+    },
+    {
+        "videoID": "Tn-z95ev64s",
+        "category": "todo",
+    },
+    {
+        "videoID": "lO_FMJ7wffw",
+        "category": "todo",
+    },
+    {
+        "videoID": "LHCob76kigA",
+        "category": "todo",
+    },
+    {
+        "videoID": "6W5pq4bIzIw",
+        "category": "todo",
+    },
+    {
+        "videoID": "pZ-oEuWMszs",
+        "category": "todo",
+    },
+    {
+        "videoID": "TeNjhglXm6w",
+        "category": "todo",
+    },
+    {
+        "videoID": "7KIHvuMl4Kk",
+        "category": "todo",
+    },
 ];
 
 var MusicListType = ["todo", "jazz", "rain", "chill", "asian", "classic", "histoire", "phonk", "rap", "reggae", "trool", "rock", "electro", "hardbass", "slavic", "long", "moody", "nightcore"];
