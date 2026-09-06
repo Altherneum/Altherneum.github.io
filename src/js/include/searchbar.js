@@ -106,6 +106,11 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
         if(devMode == true){
             htmlOffline = ".html";
         }
+        
+        var linkText = "";
+        if(linked.text !== undefined){
+            linkText = linked.text;
+        }
 
         let url;
         let icon;
@@ -127,7 +132,8 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
             object = {
                 href: "/admin/" + url + htmlOffline + "#" + linked.videoID,
                 tag: linked.category,
-                text: linked.title,
+                title: linked.title,
+                text: linkText,
                 svg: "/assets/svg/trademark/" + icon + ".svg",
             };
 
@@ -137,7 +143,7 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
             object = {
                 href: "/admin/" + url + htmlOffline + "#" + linked.filmID,
                 tag: linked.category,
-                text: linked.title,
+                title: linked.title,
                 svg: "/assets/svg/" + icon + ".svg",
             };
 
@@ -147,7 +153,11 @@ function mergeYouTubeTitles(musicListMerge, devMode, song, video, film){
 }
 
 function compareLinks(linkID, queryListed) {
-    var linkText = links[linkID].text;
+    var linkTitle = links[linkID].title;
+    var linkText = "";
+    if(links[linkID].text !== undefined){
+        linkText = links[linkID].text;
+    }
     var linkHref = links[linkID].href;
     var linkHrefTrim = links[linkID].href.replace(".html", "");
     var linkHrefTrimBis = links[linkID].href.replace("https://", "");
@@ -157,7 +167,7 @@ function compareLinks(linkID, queryListed) {
     let matchAll = true;
 
     for (singleQuery in queryListed) {
-        let match = compareStringToLink(queryListed[singleQuery], linkText, linkHrefTrimBis, linkTag, singleQuery);
+        let match = compareStringToLink(queryListed[singleQuery], linkTitle, linkText, linkHrefTrimBis, linkTag, singleQuery);
         if (!match) {
             matchAll = false;
         }
@@ -166,20 +176,21 @@ function compareLinks(linkID, queryListed) {
     if (matchAll) {
         var linkToUse = getLinkForURL(linkHref, linkHrefTrim);
         if(linkTag.toLowerCase().includes("queryable")){
-            return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText, "query": queryListed.slice(1), "queryURL": links[linkID].queryURL};
+            return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "title": linkTitle, "text": linkText, "query": queryListed.slice(1), "queryURL": links[linkID].queryURL};
         }
 
-        return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "text": linkText };
+        return { "href": linkToUse, "svg": linkSVG, "tag": linkTag, "title": linkTitle, "text": linkText };
     }
     return null;
 }
 
-function compareStringToLink(input, linkText, linkHrefTrim, linkTag, queryNumber) {
+function compareStringToLink(input, linkTitle, linkText, linkHrefTrim, linkTag, queryNumber) {
     let lowerCaseQuery = input.toLowerCase();
 
-    if (linkText.toLowerCase().includes(lowerCaseQuery) 
+    if (linkTitle.toLowerCase().includes(lowerCaseQuery) 
         || linkHrefTrim.toLowerCase().includes(lowerCaseQuery) 
         || linkTag.toLowerCase().includes(lowerCaseQuery) 
+        || linkText.toLowerCase().includes(lowerCaseQuery) 
         || (linkTag.toLowerCase().includes("queryable") && queryNumber >= 1)) {
         return true;
     }
@@ -243,7 +254,8 @@ function showSearchbarResult(result) {
             }
 
             const href = result[i].href;
-            const title = result[i].text;
+            const title = result[i].title;
+            const text = result[i].text;
             let svg;
             if (result[i].svg === undefined) {
                 svg = "/assets/svg/link.svg";
@@ -253,7 +265,7 @@ function showSearchbarResult(result) {
             }
             else { svg = result[i].svg; }
 
-            resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '</a>' + query + '</div>'
+            resultsBox.innerHTML += '<div><a href="' + href + '"><img src="' + svg + '" class="svg">' + title + '<p>' + text + '</p></a>' + query + '</div>'
         }
         resultsBox.style.display = "flex";
     } else {

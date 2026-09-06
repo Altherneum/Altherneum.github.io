@@ -138,13 +138,18 @@ a.cardTitle{
     text-align: left;
 
     display: inline-flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: row;
     gap: 10px;
 
     text-decoration: none;
     font-size: medium;
+}
+
+#result-box>div>a>p {
+    font-size: small;
+    color: var(--link-color);
 }
 
 #result-box>div>a:not(:first-of-type){
