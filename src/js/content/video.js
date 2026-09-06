@@ -11277,6 +11277,11 @@ var videoLinks = [
         "videoID": "SKuJ60kD8wg",
         "category": "todo",
         "title": "Wordpress Situation is Absolutely Insane"
+    },
+    {
+        "videoID": "da7igrK6fhk",
+        "category": "todo",
+        "title": "Discord Has Lost Control..."
     }
 ];
 
