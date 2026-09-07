@@ -11292,6 +11292,11 @@ var videoLinks = [
         "videoID": "sN-la5chrFU",
         "category": "todo",
         "title": "Your Domain Could Be Deleted"
+    },
+    {
+        "videoID": "G9Tjj3CR8WU",
+        "category": "todo",
+        "title": "Les erreurs stupides que font tous les hackers"
     }
 ];
 
