@@ -29,9 +29,6 @@ function toggleTheme() {
     else if (localStorage.getItem("theme") === "light") {
         setTheme("light");
     }
-    else if (localStorage.getItem("theme") === "transparent") {
-        setTheme("transparent");
-    }
 
     else {
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
@@ -53,10 +50,7 @@ function changeTheme() {
     else if (localStorage.getItem("theme") === "dark") {
         setTheme("light");
     }
-    else if(localStorage.getItem("theme") === "light" && localStorage.getItem("ThemeTransparent") === "true"){
-        setTheme("transparent")
-    }
-    else if (localStorage.getItem("theme") === "transparent") {
+    else if (localStorage.getItem("theme") === "light") {
         setTheme("day");
     }
 
@@ -81,9 +75,6 @@ async function setIconTheme() {
     else if (localStorage.getItem("theme") === "light") {
         img.src = "/assets/svg/moon.svg";
     }
-    else if (localStorage.getItem("theme") === "transparent") {
-        img.src = "/assets/svg/linux.svg";
-    }
 
     else { img.src = "/assets/svg/settings.svg"; }
 }
@@ -106,17 +97,15 @@ function setTransparencyPower(){
     let B = rootStyle.getPropertyValue("--background-color-B");
         console.log("theme color ; " + R + ", "  + G + ", " + B);
 
-    if(localStorage.getItem("ThemeTransparent") === "true" && localStorage.getItem("theme") === "transparent"){
+    if(localStorage.getItem("ThemeTransparent") === "true"){
         console.log("Transparent module ON");
         console.log(rootStyle.getPropertyValue("--background-color") + " to " + transparencyPower);
         document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 0." + transparencyPower + ")";
     }
     else{
-        console.log("No transparency settings");
-        if (localStorage.getItem("theme") === "transparent") {
-            changeTheme();
-            console.log("Theme is transparent, changeTheme");
-        }
+        console.log("Transparent module OFF");
+        console.log(rootStyle.getPropertyValue("--background-color"));
+        document.documentElement.style.cssText = "--background-color: rgba("+ R + ", " + G + ", " + B + ", 1)";
     }
     console.log("CSS style ; " + document.documentElement.style.cssText);
 }

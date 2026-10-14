@@ -94,10 +94,7 @@ function SwitchShowSummary(){
 }
 
 function SwitchThemeTransparent(){
-    Switcher("ThemeTransparent");
-    if (localStorage.getItem('theme') !== 'transparent' && localStorage.getItem('ThemeTransparent') === "true") {
-        setTheme('transparent');
-    }
+    Switcher("ThemeTransparent");setTransparencyPowerSetting();
 }
 
 function SwitchBackgroundGride(){
