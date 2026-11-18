@@ -16,5 +16,5 @@ o-a*e,m=40+30*          B*(f*A*n-d*c)|0
  var p = document.getElementById("d");
   p.textContent = s.join("")},//3D🍩
   $=setInterval(a,50);/////////////
-   //doc.Altherneum.fr/outils/donut
+   //altherneum.github.io/outils/donut
      //remade in 2025 by random

@@ -1418,11 +1418,11 @@ let links = [
         svg: "/assets/svg/warning.svg"
     },
     {
-        href: "https://doc.altherneum.fr",
+        href: "https://altherneum.github.io",
         title: "Doc.Altherneum",
         tag: "URL Queryable",
         svg: "/assets/svg/home.svg",
-        queryURL: "https://doc.altherneum.fr/?search=",
+        queryURL: "https://altherneum.github.io/?search=",
     },
     {
         href: "https://www.geolocation.com/",

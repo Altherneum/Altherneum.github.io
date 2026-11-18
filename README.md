@@ -36,7 +36,7 @@
 
 # altherneum.github.io
 - [Altherneum.github.io](https://Altherneum.github.io)
-- [doc.Altherneum.fr](https://doc.Altherneum.fr)
+- [altherneum.github.io](https://altherneum.github.io)
 
 # Github
 - [Repository](https://github.com/Altherneum/Altherneum.github.io)
