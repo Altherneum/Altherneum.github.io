@@ -36,7 +36,7 @@
 
 # altherneum.github.io
 - [Altherneum.github.io](https://Altherneum.github.io)
-- [altherneum.github.io](https://altherneum.github.io)
+- [doc.altherneum.fr](https://doc.altherneum.fr) nouvelle version qui écrase le [CNAME](/CNAME)
 
 # Github
 - [Repository](https://github.com/Altherneum/Altherneum.github.io)
